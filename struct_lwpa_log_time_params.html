@@ -99,65 +99,166 @@ $(document).ready(function(){initNavTree('struct_lwpa_log_time_params.html','');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1b387f98601112cad811726169680a6e"><td class="memItemLeft" align="right" valign="top">struct tm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a1b387f98601112cad811726169680a6e">cur_time</a></td></tr>
-<tr class="memdesc:a1b387f98601112cad811726169680a6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current time as specified in the C standard.  <a href="#a1b387f98601112cad811726169680a6e">More...</a><br /></td></tr>
-<tr class="separator:a1b387f98601112cad811726169680a6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7174bcdc6006eb03894beaa8664521c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#ab7174bcdc6006eb03894beaa8664521c">msec</a></td></tr>
-<tr class="memdesc:ab7174bcdc6006eb03894beaa8664521c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of milliseconds past the current second.  <a href="#ab7174bcdc6006eb03894beaa8664521c">More...</a><br /></td></tr>
-<tr class="separator:ab7174bcdc6006eb03894beaa8664521c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab5f0905f15fed8a7778ab6691b7b0318"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#ab5f0905f15fed8a7778ab6691b7b0318">utc_offset</a></td></tr>
-<tr class="memdesc:ab5f0905f15fed8a7778ab6691b7b0318"><td class="mdescLeft">&#160;</td><td class="mdescRight">The UTC offset in minutes.  <a href="#ab5f0905f15fed8a7778ab6691b7b0318">More...</a><br /></td></tr>
-<tr class="separator:ab5f0905f15fed8a7778ab6691b7b0318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeac221e38b7b9ce7df8722c842bf671"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#abeac221e38b7b9ce7df8722c842bf671">year</a></td></tr>
+<tr class="memdesc:abeac221e38b7b9ce7df8722c842bf671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute year.  <a href="#abeac221e38b7b9ce7df8722c842bf671">More...</a><br /></td></tr>
+<tr class="separator:abeac221e38b7b9ce7df8722c842bf671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#aedb06abe5aff12fa3e7e0e71a374edfb">month</a></td></tr>
+<tr class="memdesc:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Month of the year.  <a href="#aedb06abe5aff12fa3e7e0e71a374edfb">More...</a><br /></td></tr>
+<tr class="separator:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c11afc03fc3ee49bab660def6558f2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a4c11afc03fc3ee49bab660def6558f2a">day</a></td></tr>
+<tr class="memdesc:a4c11afc03fc3ee49bab660def6558f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day of the month.  <a href="#a4c11afc03fc3ee49bab660def6558f2a">More...</a><br /></td></tr>
+<tr class="separator:a4c11afc03fc3ee49bab660def6558f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15df9ba285cfd842f284025f904edc9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a15df9ba285cfd842f284025f904edc9c">hour</a></td></tr>
+<tr class="memdesc:a15df9ba285cfd842f284025f904edc9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hours since midnight.  <a href="#a15df9ba285cfd842f284025f904edc9c">More...</a><br /></td></tr>
+<tr class="separator:a15df9ba285cfd842f284025f904edc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5edffad982a0566ad01d95005474eae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a5edffad982a0566ad01d95005474eae3">minute</a></td></tr>
+<tr class="memdesc:a5edffad982a0566ad01d95005474eae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minutes past the current hour.  <a href="#a5edffad982a0566ad01d95005474eae3">More...</a><br /></td></tr>
+<tr class="separator:a5edffad982a0566ad01d95005474eae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf35be1947a62f134392fcb1b3c54d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a6cf35be1947a62f134392fcb1b3c54d2">second</a></td></tr>
+<tr class="memdesc:a6cf35be1947a62f134392fcb1b3c54d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seconds past the current minute.  <a href="#a6cf35be1947a62f134392fcb1b3c54d2">More...</a><br /></td></tr>
+<tr class="separator:a6cf35be1947a62f134392fcb1b3c54d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad957f34cd6e8272740bc231865080b22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#ad957f34cd6e8272740bc231865080b22">msec</a></td></tr>
+<tr class="memdesc:ad957f34cd6e8272740bc231865080b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Milliseconds past the current second.  <a href="#ad957f34cd6e8272740bc231865080b22">More...</a><br /></td></tr>
+<tr class="separator:ad957f34cd6e8272740bc231865080b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d5ceb6295477b5931bf54c002e36fe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html#a0d5ceb6295477b5931bf54c002e36fe9">utc_offset</a></td></tr>
+<tr class="memdesc:a0d5ceb6295477b5931bf54c002e36fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local offset from UTC in minutes.  <a href="#a0d5ceb6295477b5931bf54c002e36fe9">More...</a><br /></td></tr>
+<tr class="separator:a0d5ceb6295477b5931bf54c002e36fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A set of parameters which represent the current local time with millisecond resolution. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a id="a1b387f98601112cad811726169680a6e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b387f98601112cad811726169680a6e">&#9670;&nbsp;</a></span>cur_time</h2>
+<a id="a4c11afc03fc3ee49bab660def6558f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c11afc03fc3ee49bab660def6558f2a">&#9670;&nbsp;</a></span>day</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct tm cur_time</td>
+          <td class="memname">int day</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The current time as specified in the C standard. </p>
-<p>Note that only the tm_sec, tm_min, tm_hour, tm_mday, tm_mon, and tm_year members are used by this module. </p>
+<p>Day of the month. </p>
+<p>Valid range 1-31. </p>
 
 </div>
 </div>
-<a id="ab7174bcdc6006eb03894beaa8664521c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7174bcdc6006eb03894beaa8664521c">&#9670;&nbsp;</a></span>msec</h2>
+<a id="a15df9ba285cfd842f284025f904edc9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15df9ba285cfd842f284025f904edc9c">&#9670;&nbsp;</a></span>hour</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int msec</td>
+          <td class="memname">int hour</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The number of milliseconds past the current second. </p>
+<p>Hours since midnight. </p>
+<p>Valid range 0-23. </p>
 
 </div>
 </div>
-<a id="ab5f0905f15fed8a7778ab6691b7b0318"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5f0905f15fed8a7778ab6691b7b0318">&#9670;&nbsp;</a></span>utc_offset</h2>
+<a id="a5edffad982a0566ad01d95005474eae3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5edffad982a0566ad01d95005474eae3">&#9670;&nbsp;</a></span>minute</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">long utc_offset</td>
+          <td class="memname">int minute</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The UTC offset in minutes. </p>
+<p>Minutes past the current hour. </p>
+<p>Valid range 0-59. </p>
+
+</div>
+</div>
+<a id="aedb06abe5aff12fa3e7e0e71a374edfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedb06abe5aff12fa3e7e0e71a374edfb">&#9670;&nbsp;</a></span>month</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int month</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Month of the year. </p>
+<p>Valid range 1-12 (starting with 1 for January). </p>
+
+</div>
+</div>
+<a id="ad957f34cd6e8272740bc231865080b22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad957f34cd6e8272740bc231865080b22">&#9670;&nbsp;</a></span>msec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int msec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Milliseconds past the current second. </p>
+<p>Valid range 0-999. </p>
+
+</div>
+</div>
+<a id="a6cf35be1947a62f134392fcb1b3c54d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cf35be1947a62f134392fcb1b3c54d2">&#9670;&nbsp;</a></span>second</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int second</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Seconds past the current minute. </p>
+<p>Valid range 0-60 (to handle leap seconds). </p>
+
+</div>
+</div>
+<a id="a0d5ceb6295477b5931bf54c002e36fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d5ceb6295477b5931bf54c002e36fe9">&#9670;&nbsp;</a></span>utc_offset</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int utc_offset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The local offset from UTC in minutes. </p>
+
+</div>
+</div>
+<a id="abeac221e38b7b9ce7df8722c842bf671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abeac221e38b7b9ce7df8722c842bf671">&#9670;&nbsp;</a></span>year</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int year</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Absolute year. </p>
+<p>Valid range 0-9999. </p>
 
 </div>
 </div>

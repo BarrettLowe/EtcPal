@@ -5,6 +5,5 @@ var struct_lwpa_log_params =
     [ "log_fn", "struct_lwpa_log_params.html#a3e770b757979bd97f137d0801d3df5e4", null ],
     [ "log_mask", "struct_lwpa_log_params.html#ac695d621aaa836a9d13d65a912be9518", null ],
     [ "syslog_params", "struct_lwpa_log_params.html#ac3c58308b1be0a1a313137e208c15560", null ],
-    [ "time_fn", "struct_lwpa_log_params.html#aeb908ea1d2aeaea8c56ef914948986cc", null ],
-    [ "time_method", "struct_lwpa_log_params.html#a7cc72e95223de2129405522e65deeb73", null ]
+    [ "time_fn", "struct_lwpa_log_params.html#aeb908ea1d2aeaea8c56ef914948986cc", null ]
 ];

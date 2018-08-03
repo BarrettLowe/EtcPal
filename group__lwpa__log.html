@@ -180,9 +180,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_log_time_params.html">LwpaLogTimeParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#gad274aa6b5c42d1ff594200232ccbc0ab">LwpaLogTimeParams</a></td></tr>
 <tr class="memdesc:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters which represent the current local time with millisecond resolution.  <a href="#gad274aa6b5c42d1ff594200232ccbc0ab">More...</a><br /></td></tr>
 <tr class="separator:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9e48722349601b241c598e3e264838a0"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga9e48722349601b241c598e3e264838a0">lwpa_log_callback</a>) (void *context, const char *syslog_str, const char *human_str)</td></tr>
-<tr class="memdesc:ga9e48722349601b241c598e3e264838a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log callback function.  <a href="#ga9e48722349601b241c598e3e264838a0">More...</a><br /></td></tr>
-<tr class="separator:ga9e48722349601b241c598e3e264838a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755">lwpa_log_callback</a>) (void *context, const char *syslog_str, const char *human_str, const char *raw_str)</td></tr>
+<tr class="memdesc:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log callback function.  <a href="#gacd26df727c6a5f6d0d6fcfa4c2ac3755">More...</a><br /></td></tr>
+<tr class="separator:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga663d6e629850d5957be6634468f04755"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga663d6e629850d5957be6634468f04755">lwpa_log_time_fn</a>) (void *context, <a class="el" href="struct_lwpa_log_time_params.html">LwpaLogTimeParams</a> *time_params)</td></tr>
 <tr class="memdesc:ga663d6e629850d5957be6634468f04755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time callback function.  <a href="#ga663d6e629850d5957be6634468f04755">More...</a><br /></td></tr>
 <tr class="separator:ga663d6e629850d5957be6634468f04755"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,12 +195,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga8de04e453d8f99260abdf9b4c0a5cbec"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga8de04e453d8f99260abdf9b4c0a5cbec">lwpa_log_time_method_t</a> { <a class="el" href="group__lwpa__log.html#gga8de04e453d8f99260abdf9b4c0a5cbecadf004781838ba73f79718ef848e21635">kLwpaLogUseGmtime</a>, 
-<a class="el" href="group__lwpa__log.html#gga8de04e453d8f99260abdf9b4c0a5cbeca168d569615db9448070a960a59998d30">kLwpaLogUseTimeFn</a>, 
-<a class="el" href="group__lwpa__log.html#gga8de04e453d8f99260abdf9b4c0a5cbeca33838033977d007e97020db0d42d229f">kLwpaLogNoTime</a>
- }</td></tr>
-<tr class="memdesc:ga8de04e453d8f99260abdf9b4c0a5cbec"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method the <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> functions use to create a timestamp.  <a href="group__lwpa__log.html#ga8de04e453d8f99260abdf9b4c0a5cbec">More...</a><br /></td></tr>
-<tr class="separator:ga8de04e453d8f99260abdf9b4c0a5cbec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga87102d7ecdab1a3ba919bd750fae0507"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga87102d7ecdab1a3ba919bd750fae0507">lwpa_log_action_t</a> { <a class="el" href="group__lwpa__log.html#gga87102d7ecdab1a3ba919bd750fae0507a408d0b541c1860eb8264be42f2d0d774">kLwpaLogCreateSyslog</a>, 
 <a class="el" href="group__lwpa__log.html#gga87102d7ecdab1a3ba919bd750fae0507a21fba732cbc622fce83415718e1fb8f9">kLwpaLogCreateHumanReadableLog</a>, 
 <a class="el" href="group__lwpa__log.html#gga87102d7ecdab1a3ba919bd750fae0507a1c00ba8139d620d17be3b61a498232c5">kLwpaLogCreateBoth</a>
@@ -968,14 +962,14 @@ Log Priority</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="ga9e48722349601b241c598e3e264838a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9e48722349601b241c598e3e264838a0">&#9670;&nbsp;</a></span>lwpa_log_callback</h2>
+<a id="gacd26df727c6a5f6d0d6fcfa4c2ac3755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd26df727c6a5f6d0d6fcfa4c2ac3755">&#9670;&nbsp;</a></span>lwpa_log_callback</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* lwpa_log_callback) (void *context, const char *syslog_str, const char *human_str)</td>
+          <td class="memname">typedef void(* lwpa_log_callback) (void *context, const char *syslog_str, const char *human_str, const char *raw_str)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -987,6 +981,7 @@ Log Priority</h2></td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Optional application-provided value that was previously passed to the library module. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">syslog_str</td><td>Log string, formatted compliant to RFC 5424. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">human_str</td><td>Log string, formatted for readability per ETC convention. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">raw_str</td><td>The original log string that was passed to <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> or <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a>. Will overlap with one of syslog_str or human_str. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1010,9 +1005,7 @@ Log Priority</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Optional application-provided value that was previously passed to the library module. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">time</td><td>Fill this in with the current time. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">msec</td><td>Fill this in with the current time past the second in milliseconds, if it is available. Otherwise 0 ms will be assumed. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">utc_offset</td><td>Fill this in with the UTC offset in minutes, if it is available. Otherwise UTC will be assumed. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">time_params</td><td>Fill this in with the current local time. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1092,31 +1085,6 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
-<a id="ga8de04e453d8f99260abdf9b4c0a5cbec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8de04e453d8f99260abdf9b4c0a5cbec">&#9670;&nbsp;</a></span>lwpa_log_time_method_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group__lwpa__log.html#ga8de04e453d8f99260abdf9b4c0a5cbec">lwpa_log_time_method_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The method the <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> functions use to create a timestamp. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga8de04e453d8f99260abdf9b4c0a5cbecadf004781838ba73f79718ef848e21635"></a>kLwpaLogUseGmtime&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> use the C library gmtime() internally. </p>
-<p>Note: only UTC and whole-second precision is possible with gmtime(), although milliseconds will still be present in the timestamp as '.000'. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga8de04e453d8f99260abdf9b4c0a5cbeca168d569615db9448070a960a59998d30"></a>kLwpaLogUseTimeFn&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> use a time callback function to get the current time from the application when creating a timestamp. </p>
-</td></tr>
-<tr><td class="fieldname"><a id="gga8de04e453d8f99260abdf9b4c0a5cbeca33838033977d007e97020db0d42d229f"></a>kLwpaLogNoTime&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> omit the timestamp when building log messages. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga92091520538853c272084261bbb8bf21"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga92091520538853c272084261bbb8bf21">&#9670;&nbsp;</a></span>lwpa_create_human_log_str()</h2>
@@ -1168,7 +1136,7 @@ Log Priority</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A set of time parameters representing the current time. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A set of time parameters representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
   </table>
   </dd>
@@ -1238,7 +1206,7 @@ Log Priority</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the syslog message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A set of time parameters representing the current time. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A set of time parameters representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">syslog_params</td><td>A set of parameters for the syslog header. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority of this log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
@@ -1344,10 +1312,6 @@ Log Priority</h2></td></tr>
 
 <p>Ensure that the given lwpa_log_params are valid. </p>
 <p>This also sanitizes the syslog params using <a class="el" href="group__lwpa__log.html#ga2e1cd052c474bfbb33614a7d10b33bbb" title="Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessar...">lwpa_sanitize_syslog_params()</a> if action is set to kLwpaLogCreateSyslog or kLwpaLogCreateBoth.</p>
-<p>Some examples of invalid log parameters are:</p><ul>
-<li>Log callback function is NULL</li>
-<li>time_method is set to kLwpaLogUseTimeFn but time_fn is NULL</li>
-</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">params</td><td>lwpa_log_params to validate. </td></tr>

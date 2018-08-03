@@ -1,5 +1,6 @@
 var NAVTREEINDEX2 =
 {
+"structlwpa__rwlock__t.html#a78a962f46c1a1bf2855b5cc0dec3c28c":[2,0,1,1],
 "structlwpa__thread__t.html":[2,0,2],
 "structlwpa__thread__t.html#a146a5a0939a3a1d905bb62ffd8d9d8e7":[2,0,2,7],
 "structlwpa__thread__t.html#a2d3790037694b205e252acc5ab432933":[2,0,2,3],
@@ -18,5 +19,6 @@ var NAVTREEINDEX2 =
 "union_lwpa_ip_addr_1_1_addr_union.html#a203f5924852433cdcb71d3d137052c95":[1,0,5,0,0,1],
 "union_lwpa_ip_addr_1_1_addr_union.html#a654069046d83e652d54cae5e353051c5":[1,0,5,0,0,0],
 "windows_2lwpa__lock_8h_source.html":[3,0,0,2,0],
+"windows_2lwpa__socket__plat_8h_source.html":[3,0,0,2,1],
 "windows_2lwpa__thread_8h_source.html":[3,0,0,2,2]
 };

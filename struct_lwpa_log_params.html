@@ -102,7 +102,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a599599d80aee1a85e37ad61810456cc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__log.html#ga87102d7ecdab1a3ba919bd750fae0507">lwpa_log_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#a599599d80aee1a85e37ad61810456cc5">action</a></td></tr>
 <tr class="memdesc:a599599d80aee1a85e37ad61810456cc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">What should be done when lwpa_*log() is called.  <a href="#a599599d80aee1a85e37ad61810456cc5">More...</a><br /></td></tr>
 <tr class="separator:a599599d80aee1a85e37ad61810456cc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e770b757979bd97f137d0801d3df5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__log.html#ga9e48722349601b241c598e3e264838a0">lwpa_log_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#a3e770b757979bd97f137d0801d3df5e4">log_fn</a></td></tr>
+<tr class="memitem:a3e770b757979bd97f137d0801d3df5e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755">lwpa_log_callback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#a3e770b757979bd97f137d0801d3df5e4">log_fn</a></td></tr>
 <tr class="memdesc:a3e770b757979bd97f137d0801d3df5e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for the finished log string(s).  <a href="#a3e770b757979bd97f137d0801d3df5e4">More...</a><br /></td></tr>
 <tr class="separator:a3e770b757979bd97f137d0801d3df5e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3c58308b1be0a1a313137e208c15560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lwpa_syslog_params.html">LwpaSyslogParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#ac3c58308b1be0a1a313137e208c15560">syslog_params</a></td></tr>
@@ -111,9 +111,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac695d621aaa836a9d13d65a912be9518"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#ac695d621aaa836a9d13d65a912be9518">log_mask</a></td></tr>
 <tr class="memdesc:ac695d621aaa836a9d13d65a912be9518"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mask value that determines which priority messages can be logged.  <a href="#ac695d621aaa836a9d13d65a912be9518">More...</a><br /></td></tr>
 <tr class="separator:ac695d621aaa836a9d13d65a912be9518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7cc72e95223de2129405522e65deeb73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__log.html#ga8de04e453d8f99260abdf9b4c0a5cbec">lwpa_log_time_method_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#a7cc72e95223de2129405522e65deeb73">time_method</a></td></tr>
-<tr class="memdesc:a7cc72e95223de2129405522e65deeb73"><td class="mdescLeft">&#160;</td><td class="mdescRight">How the lwpa_*log() functions should obtain the current time.  <a href="#a7cc72e95223de2129405522e65deeb73">More...</a><br /></td></tr>
-<tr class="separator:a7cc72e95223de2129405522e65deeb73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb908ea1d2aeaea8c56ef914948986cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__log.html#ga663d6e629850d5957be6634468f04755">lwpa_log_time_fn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_params.html#aeb908ea1d2aeaea8c56ef914948986cc">time_fn</a></td></tr>
 <tr class="memdesc:aeb908ea1d2aeaea8c56ef914948986cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for lwpa_*log() functions to obtain the time from the application.  <a href="#aeb908ea1d2aeaea8c56ef914948986cc">More...</a><br /></td></tr>
 <tr class="separator:aeb908ea1d2aeaea8c56ef914948986cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,7 +160,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__lwpa__log.html#ga9e48722349601b241c598e3e264838a0">lwpa_log_callback</a> log_fn</td>
+          <td class="memname"><a class="el" href="group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755">lwpa_log_callback</a> log_fn</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -217,22 +214,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A callback function for lwpa_*log() functions to obtain the time from the application. </p>
-
-</div>
-</div>
-<a id="a7cc72e95223de2129405522e65deeb73"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7cc72e95223de2129405522e65deeb73">&#9670;&nbsp;</a></span>time_method</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__lwpa__log.html#ga8de04e453d8f99260abdf9b4c0a5cbec">lwpa_log_time_method_t</a> time_method</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>How the lwpa_*log() functions should obtain the current time. </p>
+<p>If NULL, no timestamp will be added to log messages. </p>
 
 </div>
 </div>
