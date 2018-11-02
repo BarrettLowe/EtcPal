@@ -141,7 +141,7 @@ $(document).ready(function(){initNavTree('group__lwpa__uuid.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Type and helper functions for the Component IDentifier (UUID) used in the ACN family of protocols.  
+<p>Type and helper functions for a Universally Unique Identifier (UUID).  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -179,12 +179,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gab86a23155ecf5a4c809cc7cc13420bf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#gab86a23155ecf5a4c809cc7cc13420bf8">string_to_uuid</a> (<a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *uuid, const char *buf, size_t buflen)</td></tr>
 <tr class="memdesc:gab86a23155ecf5a4c809cc7cc13420bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a UUID from a string representation.  <a href="#gab86a23155ecf5a4c809cc7cc13420bf8">More...</a><br /></td></tr>
 <tr class="separator:gab86a23155ecf5a4c809cc7cc13420bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2f06c90c01bf82ca206663ebcd7cecc9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga2f06c90c01bf82ca206663ebcd7cecc9">generate_uuid</a> (<a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *uuid, const char *devstr, const uint8_t *macaddr, uint32_t uuidnum)</td></tr>
-<tr class="memdesc:ga2f06c90c01bf82ca206663ebcd7cecc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a UUID from a combination of a custom string and MAC address.  <a href="#ga2f06c90c01bf82ca206663ebcd7cecc9">More...</a><br /></td></tr>
-<tr class="separator:ga2f06c90c01bf82ca206663ebcd7cecc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49298072c583b6358c664672e5161668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga49298072c583b6358c664672e5161668">generate_rdm_uuid</a> (<a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *uuid, const uint8_t *rdmuid)</td></tr>
-<tr class="memdesc:ga49298072c583b6358c664672e5161668"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a UUID from an RDM UID.  <a href="#ga49298072c583b6358c664672e5161668">More...</a><br /></td></tr>
-<tr class="separator:ga49298072c583b6358c664672e5161668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0ac2857af15cf5d20b1c9ab3ced15708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga0ac2857af15cf5d20b1c9ab3ced15708">generate_v3_uuid</a> (<a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *uuid, const char *devstr, const uint8_t *macaddr, uint32_t uuidnum)</td></tr>
+<tr class="memdesc:ga0ac2857af15cf5d20b1c9ab3ced15708"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a Version 3 UUID from a combination of a custom string and MAC address.  <a href="#ga0ac2857af15cf5d20b1c9ab3ced15708">More...</a><br /></td></tr>
+<tr class="separator:ga0ac2857af15cf5d20b1c9ab3ced15708"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -193,9 +190,8 @@ Variables</h2></td></tr>
 <tr class="separator:ga9d9f29e6869412c4b473a13daabf4780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">Type and helper functions for the Component IDentifier (UUID) used in the ACN family of protocols. </p>
-<p class="">ACN-based protocols use an identifier called a UUID to identify a Component, which E1.17 defines as "a distinct endpoint transmitting and receiving ACN
-data". A UUID is simply a UUID which should not change over the lifetime of a device. To this end, functions are provided which help with UUID generation.</p>
+<p class="">Type and helper functions for a Universally Unique Identifier (UUID). </p>
+<p class="">UUIDs (per RFC 4122) are used in several protocols supported by lwpa. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
 <p class="">#include "lwpa/uuid.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gaeb75693c1a74a44252144cf35c0198e3"></a>
@@ -316,52 +312,14 @@ data". A UUID is simply a UUID which should not change over the lifetime of a de
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga49298072c583b6358c664672e5161668"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga49298072c583b6358c664672e5161668">&#9670;&nbsp;</a></span>generate_rdm_uuid()</h2>
+<a id="ga0ac2857af15cf5d20b1c9ab3ced15708"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0ac2857af15cf5d20b1c9ab3ced15708">&#9670;&nbsp;</a></span>generate_v3_uuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void generate_rdm_uuid </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *&#160;</td>
-          <td class="paramname"><em>uuid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint8_t *&#160;</td>
-          <td class="paramname"><em>rdmuid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Generate a UUID from an RDM UID. </p>
-<p class="">This function is used to consistently create the same UUID for an RDM device, regardless of the ACN component/location in which the device is being instanced.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>UUID to fill in with the generation result. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rdmuid</td><td>The 6-byte RDM unique identifier. The first 2 bytes are the manufacturer ID, and the last 4 bytes are the device ID. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga2f06c90c01bf82ca206663ebcd7cecc9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga2f06c90c01bf82ca206663ebcd7cecc9">&#9670;&nbsp;</a></span>generate_uuid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void generate_uuid </td>
+          <td class="memname">void generate_v3_uuid </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a> *&#160;</td>
           <td class="paramname"><em>uuid</em>, </td>
@@ -392,8 +350,9 @@ data". A UUID is simply a UUID which should not change over the lifetime of a de
       </table>
 </div><div class="memdoc">
 
-<p>Generate a UUID from a combination of a custom string and MAC address. </p>
-<p class="">This function is for use by devices that want to create their own UUIDs, and create the same UUIDs each time. The UUID output is deterministic for each combination of devstr, macaddr and uuidnum inputs.</p>
+<p>Generate a Version 3 UUID from a combination of a custom string and MAC address. </p>
+<p class="">This function is for use by devices that want to create their own UUIDs, and create the same UUIDs each time. It creates a Version 3 UUID (defined in RFC 4122) within a constant, hardcoded namespace. The UUID output is deterministic for each combination of devstr, macaddr and uuidnum inputs.</p>
+<p class="">The namespace UUID used is: 57323103-db01-44b3-bafa-abdee3f37c1a</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>UUID to fill in with the generation result. </td></tr>
