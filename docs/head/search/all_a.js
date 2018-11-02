@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['lightweight_20platform_20abstraction',['LightWeight Platform Abstraction',['../index.html',1,'']]],
   ['l_5fflag_5fset',['l_flag_set',['../group__lwpa__pdu.html#ga7b46c39b50be48a8253dd21ab6a58b91',1,'pdu.h']]],
   ['linger',['linger',['../struct_lwpa_linger.html#a21667e862207c7c116b20764fcb8f931',1,'LwpaLinger']]],
   ['link',['link',['../struct_lwpa_rb_node.html#a791da83334fff8f52b7f4f4fbe0f4020',1,'LwpaRbNode']]],
@@ -64,7 +63,7 @@ var searchData=
   ['lwpa_5flog_5fapp_5fname_5fmax_5flen',['LWPA_LOG_APP_NAME_MAX_LEN',['../group__lwpa__log.html#gaea6845af17f90339030b7f1aed4248b6',1,'log.h']]],
   ['lwpa_5flog_5fauth',['LWPA_LOG_AUTH',['../group__lwpa__log.html#ga0e5d159ba215deea5f706fa33d71738e',1,'log.h']]],
   ['lwpa_5flog_5fauthpriv',['LWPA_LOG_AUTHPRIV',['../group__lwpa__log.html#gaa50dfd3d27e5f3774232b0271bb58e90',1,'log.h']]],
-  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755',1,'log.h']]],
+  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gac2a589008c780c465ded8c73bad09169',1,'log.h']]],
   ['lwpa_5flog_5fcrit',['LWPA_LOG_CRIT',['../group__lwpa__log.html#ga8ff207c1ddab5e2df910cc4fe464c662',1,'log.h']]],
   ['lwpa_5flog_5fcron',['LWPA_LOG_CRON',['../group__lwpa__log.html#ga1cce65659ecc6a47c1d5aa7071ae69f4',1,'log.h']]],
   ['lwpa_5flog_5fdaemon',['LWPA_LOG_DAEMON',['../group__lwpa__log.html#gaca7e4a2edd294cea9c23ebf18c881f41',1,'log.h']]],
@@ -91,7 +90,7 @@ var searchData=
   ['lwpa_5flog_5fnotice',['LWPA_LOG_NOTICE',['../group__lwpa__log.html#gaf6777f9e9a8f38724b151304d1404319',1,'log.h']]],
   ['lwpa_5flog_5fprocid_5fmax_5flen',['LWPA_LOG_PROCID_MAX_LEN',['../group__lwpa__log.html#gaf444c37d4b37d0d12a01cdd900c54343',1,'log.h']]],
   ['lwpa_5flog_5fsyslog',['LWPA_LOG_SYSLOG',['../group__lwpa__log.html#ga2441590d39aaca7c88136145b0eb880b',1,'log.h']]],
-  ['lwpa_5flog_5ftime_5ffn',['lwpa_log_time_fn',['../group__lwpa__log.html#ga663d6e629850d5957be6634468f04755',1,'log.h']]],
+  ['lwpa_5flog_5ftime_5ffn',['lwpa_log_time_fn',['../group__lwpa__log.html#ga4416e5a74647d63e52fe49aceb0e4678',1,'log.h']]],
   ['lwpa_5flog_5ftimestamp_5flen',['LWPA_LOG_TIMESTAMP_LEN',['../group__lwpa__log.html#gae9a41c527892d020281abfb31f4f01e0',1,'log.h']]],
   ['lwpa_5flog_5fuser',['LWPA_LOG_USER',['../group__lwpa__log.html#ga08e3706b92e3aeec1c44769c42fc18b5',1,'log.h']]],
   ['lwpa_5flog_5fuucp',['LWPA_LOG_UUCP',['../group__lwpa__log.html#ga3374f025fafa38717f707a047359fd30',1,'log.h']]],
@@ -230,5 +229,6 @@ var searchData=
   ['lwpathreadparams',['LwpaThreadParams',['../struct_lwpa_thread_params.html',1,'LwpaThreadParams'],['../group__lwpa__thread.html#ga57617a14defb483d477a662044d24f74',1,'LwpaThreadParams():&#160;lwpa_thread.dox']]],
   ['lwpathreadparamsmqx',['LwpaThreadParamsMqx',['../struct_lwpa_thread_params_mqx.html',1,'']]],
   ['lwpatimer',['LwpaTimer',['../struct_lwpa_timer.html',1,'LwpaTimer'],['../group__lwpa__timer.html#ga609d679562ce78f14e508a6914abbf3a',1,'LwpaTimer():&#160;timer.h']]],
-  ['lwpauuid',['LwpaUuid',['../struct_lwpa_uuid.html',1,'LwpaUuid'],['../group__lwpa__uuid.html#ga176bfe391ccacc68bd4c7c4e01b93384',1,'LwpaUuid():&#160;uuid.h']]]
+  ['lwpauuid',['LwpaUuid',['../struct_lwpa_uuid.html',1,'LwpaUuid'],['../group__lwpa__uuid.html#ga176bfe391ccacc68bd4c7c4e01b93384',1,'LwpaUuid():&#160;uuid.h']]],
+  ['lightweight_20platform_20abstraction',['LightWeight Platform Abstraction',['../md_mainpage.html',1,'']]]
 ];

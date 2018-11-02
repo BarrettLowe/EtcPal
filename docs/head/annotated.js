@@ -1,4 +1,4 @@
-var annotated_dup =
+var annotated =
 [
     [ "lwpa_mutex_t", "structlwpa__mutex__t.html", "structlwpa__mutex__t" ],
     [ "lwpa_rwlock_t", "structlwpa__rwlock__t.html", "structlwpa__rwlock__t" ],

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755',1,'log.h']]],
-  ['lwpa_5flog_5ftime_5ffn',['lwpa_log_time_fn',['../group__lwpa__log.html#ga663d6e629850d5957be6634468f04755',1,'log.h']]],
+  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gac2a589008c780c465ded8c73bad09169',1,'log.h']]],
+  ['lwpa_5flog_5ftime_5ffn',['lwpa_log_time_fn',['../group__lwpa__log.html#ga4416e5a74647d63e52fe49aceb0e4678',1,'log.h']]],
   ['lwpa_5fmutex_5ft',['lwpa_mutex_t',['../group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29',1,'lwpa_lock.dox']]],
   ['lwpa_5frwlock_5ft',['lwpa_rwlock_t',['../group__lwpa__rwlock.html#ga74e912ed8c5b1c545139f8cd6568ae45',1,'lwpa_lock.dox']]],
   ['lwpa_5fsignal_5ft',['lwpa_signal_t',['../group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef',1,'lwpa_lock.dox']]],
