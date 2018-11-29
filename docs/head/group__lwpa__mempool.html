@@ -204,7 +204,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Memory pools with fixed-size elements. </p>
-<p>#include "lwpa_mempool.h"</p>
+<p>#include "lwpa/mempool.h"</p>
 <p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a single object (e.g. int) or a fixed-size array of objects (e.g. int[60]). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__lwpa__mutex.html">lwpa_mutex</a> internally. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga974021021787bdc6dd16e5017869a556"></a>
@@ -349,7 +349,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 <div class="ttc" id="struct_lwpa_mempool_html"><div class="ttname"><a href="struct_lwpa_mempool.html">LwpaMempool</a></div><div class="ttdef"><b>Definition:</b> mempool.h:44</div></div>
 </div><!-- fragment -->
 <p>Define a new memory pool composed of arrays of elements. </p>
-<p>This is an alternative to <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE</a> for creating memory pools containing fixed-size arrays of elements.</p>
+<p>This is an alternative to <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> for creating memory pools containing fixed-size arrays of elements.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool. </td></tr>

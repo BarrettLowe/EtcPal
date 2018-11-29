@@ -148,7 +148,7 @@ Macros</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Fixed-width integer types. </p>
-<p>#include "lwpa_int.h"</p>
+<p>#include "lwpa/int.h"</p>
 <p>In the before-times, C had no fixed-width integer types. Then, C99 gave us stdint.h. But there still exist environments where a C99 compiler is not available or practical, and one allegedly modern toolchain (it rhymes with "Nicrosoft Fishual D++") picks and chooses the modern C features it supports seemingly at random.</p>
 <p>This header attempts to detect if it is being compiled with C99 or later (or C++). If so, it simply includes stdint.h (or cstdint). If not, it attempts to include a user-created file "stdint_usr.h" which the user provides. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
