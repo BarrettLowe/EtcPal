@@ -190,9 +190,9 @@ Variables</h2></td></tr>
 <tr class="separator:ga9d9f29e6869412c4b473a13daabf4780"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">Type and helper functions for a Universally Unique Identifier (UUID). </p>
-<p class="">UUIDs (per RFC 4122) are used in several protocols supported by lwpa. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
-<p class="">#include "lwpa/uuid.h" </p>
+<p>Type and helper functions for a Universally Unique Identifier (UUID). </p>
+<p>UUIDs (per RFC 4122) are used in several protocols supported by lwpa. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
+<p>#include "lwpa/uuid.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gaeb75693c1a74a44252144cf35c0198e3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaeb75693c1a74a44252144cf35c0198e3">&#9670;&nbsp;</a></span>UUID_BYTES</h2>
@@ -227,7 +227,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Determine if a UUID is null. </p>
-<p class="">A UUID is said to be 'null' when it is made up of all 0's.</p>
+<p>A UUID is said to be 'null' when it is made up of all 0's.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">uuidptr</td><td>Pointer to UUID to null-check. </td></tr>
@@ -351,8 +351,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a Version 3 UUID from a combination of a custom string and MAC address. </p>
-<p class="">This function is for use by devices that want to create their own UUIDs, and create the same UUIDs each time. It creates a Version 3 UUID (defined in RFC 4122) within a constant, hardcoded namespace. The UUID output is deterministic for each combination of devstr, macaddr and uuidnum inputs.</p>
-<p class="">The namespace UUID used is: 57323103-db01-44b3-bafa-abdee3f37c1a</p>
+<p>This function is for use by devices that want to create their own UUIDs, and create the same UUIDs each time. It creates a Version 3 UUID (defined in RFC 4122) within a constant, hardcoded namespace. The UUID output is deterministic for each combination of devstr, macaddr and uuidnum inputs.</p>
+<p>The namespace UUID used is: 57323103-db01-44b3-bafa-abdee3f37c1a</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>UUID to fill in with the generation result. </td></tr>
@@ -398,7 +398,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a UUID from a string representation. </p>
-<p class="">Parses a string-represented UUID and fills in a <a class="el" href="struct_lwpa_uuid.html" title="The UUID type.">LwpaUuid</a> structure with the result. The input should be of the form: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (hexadecimal letters can be upper- or lowercase).</p>
+<p>Parses a string-represented UUID and fills in a <a class="el" href="struct_lwpa_uuid.html" title="The UUID type.">LwpaUuid</a> structure with the result. The input should be of the form: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (hexadecimal letters can be upper- or lowercase).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>UUID to fill in with the parse result. </td></tr>
@@ -438,7 +438,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a string representation of a UUID. </p>
-<p class="">The resulting string will be of the form: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (lowercase is used for hexadecimal letters per RFC 4122 and common convention).</p>
+<p>The resulting string will be of the form: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (lowercase is used for hexadecimal letters per RFC 4122 and common convention).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Character buffer to which to write the resulting string. To avoid undefined behavior, this buffer should be at least of size <a class="el" href="group__lwpa__uuid.html#ga092ea21481ec5bda4cb7c340caaefa02" title="The maximum number of bytes required to hold an ASCII string representation of a UUID.">UUID_STRING_BYTES</a>. </td></tr>

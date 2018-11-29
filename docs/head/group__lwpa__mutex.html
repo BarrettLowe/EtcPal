@@ -163,11 +163,11 @@ Functions</h2></td></tr>
 <tr class="separator:gac4684dd66997cab2515ae883b5ac51d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">A mutual-exclusion (mutex) object. </p>
-<p class="">Sometimes also referred to as a critical section. Only one thread can take the mutex at a time using <a class="el" href="group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2" title="Acquire a mutex.">lwpa_mutex_take()</a>. Where possible on real-time platforms, the mutex provides priority inheritance.</p>
-<p class="">lwpa_mutex implementations use the following constructs under the hood on various platforms:</p>
+<p>A mutual-exclusion (mutex) object. </p>
+<p>Sometimes also referred to as a critical section. Only one thread can take the mutex at a time using <a class="el" href="group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2" title="Acquire a mutex.">lwpa_mutex_take()</a>. Where possible on real-time platforms, the mutex provides priority inheritance.</p>
+<p>lwpa_mutex implementations use the following constructs under the hood on various platforms:</p>
 <h2>On: | lwpa_mutex uses: </h2>
-<p class="">Windows | <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> FreeRTOS/lwIP | <a href="https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html">Mutexes</a> MQX | Lightweight Semaphores </p>
+<p>Windows | <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> FreeRTOS/lwIP | <a href="https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html">Mutexes</a> MQX | Lightweight Semaphores </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gadd901205c027cd6c51e26270d34b9a29"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadd901205c027cd6c51e26270d34b9a29">&#9670;&nbsp;</a></span>lwpa_mutex_t</h2>
@@ -182,7 +182,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The mutex identifier. </p>
-<p class="">Depending on the platform, this could be a scalar type or a struct. </p>
+<p>Depending on the platform, this could be a scalar type or a struct. </p>
 
 </div>
 </div>

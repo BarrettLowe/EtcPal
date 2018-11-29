@@ -102,6 +102,7 @@ var searchData=
   ['lwpa_5fmempool_5falloc',['lwpa_mempool_alloc',['../group__lwpa__mempool.html#ga974021021787bdc6dd16e5017869a556',1,'mempool.h']]],
   ['lwpa_5fmempool_5fdeclare',['LWPA_MEMPOOL_DECLARE',['../group__lwpa__mempool.html#ga94986ea8060c07cba61c85b2a99ed458',1,'mempool.h']]],
   ['lwpa_5fmempool_5fdefine',['LWPA_MEMPOOL_DEFINE',['../group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87',1,'mempool.h']]],
+  ['lwpa_5fmempool_5fdefine_5farray',['LWPA_MEMPOOL_DEFINE_ARRAY',['../group__lwpa__mempool.html#ga40f10bc28b7493a35a86c1cb4c1fd766',1,'mempool.h']]],
   ['lwpa_5fmempool_5ffree',['lwpa_mempool_free',['../group__lwpa__mempool.html#ga1962ba16f32cecfafc8ba4b60765c0de',1,'mempool.h']]],
   ['lwpa_5fmempool_5finit',['lwpa_mempool_init',['../group__lwpa__mempool.html#gaef04cee1ba289720a3a5701248ac6141',1,'mempool.h']]],
   ['lwpa_5fmempool_5fsize',['lwpa_mempool_size',['../group__lwpa__mempool.html#ga329d6610b1bb2e7ac37fc8f7ce77d7a2',1,'mempool.h']]],

@@ -193,8 +193,8 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 LwpaIpAddr macros</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p class=""><a class="anchor" id="amgrp6329ee7fb4f8b92c71412d3ac71e711f"></a>A set of macros for interacting with a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>.</p>
-<p class="">It is recommended to use these macros where possible rather than accessing the structure members directly; otherwise, it's easy to forget to fill in a field. </p>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp6329ee7fb4f8b92c71412d3ac71e711f"></a>A set of macros for interacting with a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>.</p>
+<p>It is recommended to use these macros where possible rather than accessing the structure members directly; otherwise, it's easy to forget to fill in a field. </p>
 </td></tr>
 <tr class="memitem:ga99ca443ff7adfc20ef3dfff1f668a563"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga99ca443ff7adfc20ef3dfff1f668a563">lwpaip_is_v4</a>(lwpa_ip_ptr)&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;type == <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf">LWPA_IPV4</a>)</td></tr>
 <tr class="memdesc:ga99ca443ff7adfc20ef3dfff1f668a563"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv4 address.  <a href="#ga99ca443ff7adfc20ef3dfff1f668a563">More...</a><br /></td></tr>
@@ -240,8 +240,8 @@ LwpaIpAddr macros</h2></td></tr>
 <tr class="separator:gaf0433f37c8aedbd049388bb7c08f5172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">POSIX-like identifiers for IP addresses and network interfaces. </p>
-<p class="">#include "lwpa/inet.h" </p>
+<p>POSIX-like identifiers for IP addresses and network interfaces. </p>
+<p>#include "lwpa/inet.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gad13014eeb2e4a08990536a16089be0f4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad13014eeb2e4a08990536a16089be0f4">&#9670;&nbsp;</a></span>IPV6_BYTES</h2>
@@ -288,7 +288,7 @@ LwpaIpAddr macros</h2></td></tr>
 <div class="ttc" id="group__lwpa__inet_html_gad13014eeb2e4a08990536a16089be0f4"><div class="ttname"><a href="group__lwpa__inet.html#gad13014eeb2e4a08990536a16089be0f4">IPV6_BYTES</a></div><div class="ttdeci">#define IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address.</div><div class="ttdef"><b>Definition:</b> inet.h:49</div></div>
 </div><!-- fragment -->
 <p>A comparison algorithm for lwpa_ip addresses. </p>
-<p class="">All IPv4 addresses are considered to be &lt; all IPv6 addresses. For matching types, the numerical address value is compared. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>All IPv4 addresses are considered to be &lt; all IPv6 addresses. For matching types, the numerical address value is compared. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ipptr1</td><td>Pointer to the first <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> to compare. </td></tr>
     <tr><td class="paramname">ipptr2</td><td>Pointer to the second <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> to compare. </td></tr>
@@ -328,7 +328,7 @@ LwpaIpAddr macros</h2></td></tr>
 <div class="ttc" id="group__lwpa__inet_html_gad13014eeb2e4a08990536a16089be0f4"><div class="ttname"><a href="group__lwpa__inet.html#gad13014eeb2e4a08990536a16089be0f4">IPV6_BYTES</a></div><div class="ttdeci">#define IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address.</div><div class="ttdef"><b>Definition:</b> inet.h:49</div></div>
 </div><!-- fragment -->
 <p>Determine whether two instances of <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contain identical addresses. </p>
-<p class="">The type (IPv4 or IPv6) must be the same, as well as the value of the relevant address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The type (IPv4 or IPv6) must be the same, as well as the value of the relevant address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ipptr1</td><td>Pointer to the first <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> to compare. </td></tr>
     <tr><td class="paramname">ipptr2</td><td>Pointer to the second <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> to compare. </td></tr>
@@ -384,7 +384,7 @@ LwpaIpAddr macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line">(((lwpa_ip_ptr)-&gt;type == <a class="code" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf">LWPA_IPV4</a>)                                                     \</div><div class="line">       ? (((lwpa_ip_ptr)-&gt;addr.v4 &gt; 0xe0000000) &amp;&amp; ((lwpa_ip_ptr)-&gt;addr.v4 &lt; 0xefffffff)) \</div><div class="line">       : ((lwpa_ip_ptr)-&gt;addr.v6[0] == 0xff))</div><div class="ttc" id="group__lwpa__inet_html_gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf"><div class="ttname"><a href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf">LWPA_IPV4</a></div><div class="ttdoc">This LwpaIpAddr contains an IPv4 address.</div><div class="ttdef"><b>Definition:</b> inet.h:43</div></div>
 </div><!-- fragment -->
 <p>Determine whether a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains a multicast address. </p>
-<p class="">Works for either an IPv4 or an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Works for either an IPv4 or an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
   </table>
@@ -465,7 +465,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> to the IPv4 wildcard address. </p>
-<p class="">Use this macro; do not use LWPA_INADDR_ANY directly. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Use this macro; do not use LWPA_INADDR_ANY directly. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
   </table>
@@ -556,7 +556,7 @@ LwpaIpAddr macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                            \</div><div class="line">  {                                             \</div><div class="line">    (lwpa_ip_ptr)-&gt;type = <a class="code" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf">LWPA_IPV4</a>;            \</div><div class="line">    (lwpa_ip_ptr)-&gt;addr.v4 = val;               \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__lwpa__inet_html_gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf"><div class="ttname"><a href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf">LWPA_IPV4</a></div><div class="ttdoc">This LwpaIpAddr contains an IPv4 address.</div><div class="ttdef"><b>Definition:</b> inet.h:43</div></div>
 </div><!-- fragment -->
 <p>Set the IPv4 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </p>
-<p class="">Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv4 address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv4 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
     <tr><td class="paramname">val</td><td>IPv4 address to set (uint32_t). </td></tr>
@@ -595,7 +595,7 @@ LwpaIpAddr macros</h2></td></tr>
 <div class="ttc" id="group__lwpa__inet_html_gad13014eeb2e4a08990536a16089be0f4"><div class="ttname"><a href="group__lwpa__inet.html#gad13014eeb2e4a08990536a16089be0f4">IPV6_BYTES</a></div><div class="ttdeci">#define IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address.</div><div class="ttdef"><b>Definition:</b> inet.h:49</div></div>
 </div><!-- fragment -->
 <p>Set the IPv6 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </p>
-<p class="">Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
     <tr><td class="paramname">val</td><td>IPv6 address to set (uint8_t[]). Must be at least of length IPV6_BYTES. Gets copied into the struct. </td></tr>
@@ -622,7 +622,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the IPv4 address from a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </p>
-<p class="">It is recommended to first use <a class="el" href="group__lwpa__inet.html#ga99ca443ff7adfc20ef3dfff1f668a563" title="Determine whether a LwpaIpAddr contains an IPv4 address.">lwpaip_is_v4()</a> to make sure this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains a valid IPv4 address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>It is recommended to first use <a class="el" href="group__lwpa__inet.html#ga99ca443ff7adfc20ef3dfff1f668a563" title="Determine whether a LwpaIpAddr contains an IPv4 address.">lwpaip_is_v4()</a> to make sure this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains a valid IPv4 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
   </table>
@@ -649,7 +649,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the IPv6 address from a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </p>
-<p class="">It is recommended to first use <a class="el" href="group__lwpa__inet.html#ga60fa1dee3547985e5419d7f3d4f8b233" title="Determine whether a LwpaIpAddr contains an IPv6 address.">lwpaip_is_v6()</a> to make sure this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains a valid IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>It is recommended to first use <a class="el" href="group__lwpa__inet.html#ga60fa1dee3547985e5419d7f3d4f8b233" title="Determine whether a LwpaIpAddr contains an IPv6 address.">lwpaip_is_v6()</a> to make sure this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains a valid IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </td></tr>
   </table>
@@ -711,7 +711,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An IP address. </p>
-<p class="">Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. </p>
+<p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. </p>
 
 </div>
 </div>
@@ -744,7 +744,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An IP address with associated interface and port. </p>
-<p class="">Ports are in host byte order. </p>
+<p>Ports are in host byte order. </p>
 
 </div>
 </div>
@@ -763,11 +763,11 @@ LwpaIpAddr macros</h2></td></tr>
 
 <p>Used to identify the type of IP address contained in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a>. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048a827878502eeeef634e5d0d4dd3c77e88"></a>LWPA_IP_INVALID&#160;</td><td class="fielddoc"><p class="">This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> is not valid. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048a827878502eeeef634e5d0d4dd3c77e88"></a>LWPA_IP_INVALID&#160;</td><td class="fielddoc"><p>This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> is not valid. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf"></a>LWPA_IPV4&#160;</td><td class="fielddoc"><p class="">This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv4 address. </p>
+<tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf"></a>LWPA_IPV4&#160;</td><td class="fielddoc"><p>This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv4 address. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048a474b73f5d6671c188f851d9c1d3c6a0d"></a>LWPA_IPV6&#160;</td><td class="fielddoc"><p class="">This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv6 address. </p>
+<tr><td class="fieldname"><a id="gga75918e41a21a5b4511b2b3c797e6f048a474b73f5d6671c188f851d9c1d3c6a0d"></a>LWPA_IPV6&#160;</td><td class="fielddoc"><p>This <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address.">LwpaIpAddr</a> contains an IPv6 address. </p>
 </td></tr>
 </table>
 

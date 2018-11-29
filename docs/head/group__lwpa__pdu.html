@@ -194,8 +194,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Get the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p class=""><a class="anchor" id="amgrpfe64ed379ab206fc6b2f196334e422f4"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
-<p class="">For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpfe64ed379ab206fc6b2f196334e422f4"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
+<p>For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
 </td></tr>
 <tr class="memitem:ga7b46c39b50be48a8253dd21ab6a58b91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga7b46c39b50be48a8253dd21ab6a58b91">l_flag_set</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x80))</td></tr>
 <tr class="memdesc:ga7b46c39b50be48a8253dd21ab6a58b91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the L flag is set in a PDU flags field.  <a href="#ga7b46c39b50be48a8253dd21ab6a58b91">More...</a><br /></td></tr>
@@ -212,8 +212,8 @@ Get the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p class=""><a class="anchor" id="amgrp4accfa41e968240c2274beaf5c6b2d1a"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
-<p class="">For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp4accfa41e968240c2274beaf5c6b2d1a"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
+<p>For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
 </td></tr>
 <tr class="memitem:gaa4c290b814c7db454dd912abc2712612"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gaa4c290b814c7db454dd912abc2712612">set_l_flag</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x80)</td></tr>
 <tr class="memdesc:gaa4c290b814c7db454dd912abc2712612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the L flag in a PDU flags field.  <a href="#gaa4c290b814c7db454dd912abc2712612">More...</a><br /></td></tr>
@@ -229,8 +229,8 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <tr class="separator:gaea2405bfe6dd376950dbb72fe36bb56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">Parse or pack a generic PDU or PDU block. </p>
-<p class="">#include "lwpa/pdu.h" </p>
+<p>Parse or pack a generic PDU or PDU block. </p>
+<p>#include "lwpa/pdu.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga21c0bdfc1d6580d6a7f4067c5f0e2a22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga21c0bdfc1d6580d6a7f4067c5f0e2a22">&#9670;&nbsp;</a></span>d_flag_set</h2>
@@ -410,7 +410,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                    \</div><div class="line">  {                                                                     \</div><div class="line">    (pdu_buf)[0] = (((pdu_buf)[0] &amp; 0xf0) | (((length) &gt;&gt; 16) &amp; 0x0f)); \</div><div class="line">    (pdu_buf)[1] = (((length) &gt;&gt; 8) &amp; 0xff);                            \</div><div class="line">    (pdu_buf)[2] = (length)&amp;0xff;                                       \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Fill in the Length field of a PDU which has a length 4096 or greater. </p>
-<p class="">The L flag of this PDU must be set to 1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The L flag of this PDU must be set to 1. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdu_buf</td><td>Pointer to the start of the PDU buffer. </td></tr>
     <tr><td class="paramname">length</td><td>Length of this PDU. </td></tr>
@@ -447,7 +447,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                   \</div><div class="line">  {                                                                    \</div><div class="line">    (pdu_buf)[0] = (((pdu_buf)[0] &amp; 0xf0) | (((length) &gt;&gt; 8) &amp; 0x0f)); \</div><div class="line">    (pdu_buf)[1] = (length)&amp;0xff;                                      \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Fill in the Length field of a PDU which has a length less than 4096. </p>
-<p class="">The L flag of this PDU must be set to 0. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The L flag of this PDU must be set to 0. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdu_buf</td><td>Pointer to the start of the PDU buffer. </td></tr>
     <tr><td class="paramname">length</td><td>Length of this PDU. </td></tr>
@@ -661,7 +661,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 
 <p>Parse a generic PDU. </p>
-<p class="">A function to parse a generic PDU. The specific PDU info needed for parsing is contained in a struct pdu_constraints. Uses <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block.">LwpaPdu</a> to maintain state across multiple PDUs in a block.</p>
+<p>A function to parse a generic PDU. The specific PDU info needed for parsing is contained in a struct pdu_constraints. Uses <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block.">LwpaPdu</a> to maintain state across multiple PDUs in a block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Byte buffer containing a PDU. </td></tr>

@@ -159,6 +159,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gaa0d4858b58e87161808339beba9f4c87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87">LWPA_MEMPOOL_DEFINE</a>(name,  type,  size)</td></tr>
 <tr class="memdesc:gaa0d4858b58e87161808339beba9f4c87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new memory pool.  <a href="#gaa0d4858b58e87161808339beba9f4c87">More...</a><br /></td></tr>
 <tr class="separator:gaa0d4858b58e87161808339beba9f4c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga40f10bc28b7493a35a86c1cb4c1fd766"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mempool.html#ga40f10bc28b7493a35a86c1cb4c1fd766">LWPA_MEMPOOL_DEFINE_ARRAY</a>(name,  type,  array_size,  pool_size)</td></tr>
+<tr class="memdesc:ga40f10bc28b7493a35a86c1cb4c1fd766"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define a new memory pool composed of arrays of elements.  <a href="#ga40f10bc28b7493a35a86c1cb4c1fd766">More...</a><br /></td></tr>
+<tr class="separator:ga40f10bc28b7493a35a86c1cb4c1fd766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaef04cee1ba289720a3a5701248ac6141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mempool.html#gaef04cee1ba289720a3a5701248ac6141">lwpa_mempool_init</a>(name)&#160;&#160;&#160;lwpa_mempool_init_priv(&amp;name##_pool_desc)</td></tr>
 <tr class="memdesc:gaef04cee1ba289720a3a5701248ac6141"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a memory pool.  <a href="#gaef04cee1ba289720a3a5701248ac6141">More...</a><br /></td></tr>
 <tr class="separator:gaef04cee1ba289720a3a5701248ac6141"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -200,9 +203,9 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 <tr class="separator:gafe5186bb7eebdaa57b0c009cddebc349"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">Memory pools with fixed-size elements. </p>
-<p class="">#include "lwpa_mempool.h"</p>
-<p class="">This module can be used to declare memory pools containing some number of objects of an arbitrary type. Only objects of that type can be allocated from the pool or freed back into it. Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__lwpa__mutex.html">lwpa_mutex</a> internally. </p>
+<p>Memory pools with fixed-size elements. </p>
+<p>#include "lwpa_mempool.h"</p>
+<p>This module can be used to declare memory pools containing some number of objects of an arbitrary type. Only objects of that type can be allocated from the pool or freed back into it. Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__lwpa__mutex.html">lwpa_mutex</a> internally. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga974021021787bdc6dd16e5017869a556"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga974021021787bdc6dd16e5017869a556">&#9670;&nbsp;</a></span>lwpa_mempool_alloc</h2>
@@ -248,7 +251,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>Declare a pool as an external variable. </p>
-<p class="">This optional macro is useful for header files; when used, it must be paired with a call of <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> using the same name.</p>
+<p>This optional macro is useful for header files; when used, it must be paired with a call of <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> using the same name.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool. </td></tr>
@@ -293,12 +296,66 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 <div class="ttc" id="struct_lwpa_mempool_html"><div class="ttname"><a href="struct_lwpa_mempool.html">LwpaMempool</a></div><div class="ttdef"><b>Definition:</b> mempool.h:42</div></div>
 </div><!-- fragment -->
 <p>Define a new memory pool. </p>
-<p class="">Expands to a number of variable definitions. Should not be used in a header file; if you want your memory pool to be accessible from multiple source files, use <a class="el" href="group__lwpa__mempool.html#ga94986ea8060c07cba61c85b2a99ed458" title="Declare a pool as an external variable.">LWPA_MEMPOOL_DECLARE()</a> in the header file in addition to this macro.</p>
+<p>Expands to a number of variable definitions. Should not be used in a header file; if you want your memory pool to be accessible from multiple source files, use <a class="el" href="group__lwpa__mempool.html#ga94986ea8060c07cba61c85b2a99ed458" title="Declare a pool as an external variable.">LWPA_MEMPOOL_DECLARE()</a> in the header file in addition to this macro.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool. </td></tr>
     <tr><td class="paramname">type</td><td>The type of each element in the memory pool (e.g. int, struct foo) </td></tr>
     <tr><td class="paramname">size</td><td>The number of elements in the memory pool. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga40f10bc28b7493a35a86c1cb4c1fd766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga40f10bc28b7493a35a86c1cb4c1fd766">&#9670;&nbsp;</a></span>LWPA_MEMPOOL_DEFINE_ARRAY</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_MEMPOOL_DEFINE_ARRAY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">name, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">array_size, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pool_size&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">type name##_pool[array_size][pool_size];                                                \</div><div class="line">  struct <a class="code" href="struct_lwpa_mempool.html">LwpaMempool</a> name##_pool_list[pool_size];                                         \</div><div class="line">  struct <a class="code" href="struct_lwpa_mempool_desc.html">LwpaMempoolDesc</a> name##_pool_desc = {<span class="keyword">sizeof</span>(type[array_size]), <span class="comment">/* elem_size */</span>    \</div><div class="line">                                             pool_size,                <span class="comment">/* pool_size */</span>    \</div><div class="line">                                             NULL,                     <span class="comment">/* freelist */</span>     \</div><div class="line">                                             name##_pool_list,         <span class="comment">/* list */</span>         \</div><div class="line">                                             0,                        <span class="comment">/* current_used */</span> \</div><div class="line">                                             name##_pool <span class="comment">/* pool */</span>}</div><div class="ttc" id="struct_lwpa_mempool_desc_html"><div class="ttname"><a href="struct_lwpa_mempool_desc.html">LwpaMempoolDesc</a></div><div class="ttdoc">(Not for direct usage) A memory pool description structure.</div><div class="ttdef"><b>Definition:</b> mempool.h:50</div></div>
+<div class="ttc" id="struct_lwpa_mempool_html"><div class="ttname"><a href="struct_lwpa_mempool.html">LwpaMempool</a></div><div class="ttdef"><b>Definition:</b> mempool.h:42</div></div>
+</div><!-- fragment -->
+<p>Define a new memory pool composed of arrays of elements. </p>
+<p>This is an alternative to <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE</a> for creating memory pools containing fixed-size arrays of elements.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>The name of the memory pool. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of a single array element in the memory pool. </td></tr>
+    <tr><td class="paramname">array_size</td><td>The number of elements in each array. </td></tr>
+    <tr><td class="paramname">pool_size</td><td>The number of arrays in the memory pool. </td></tr>
   </table>
   </dd>
 </dl>
@@ -332,7 +389,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>Free an element back to a memory pool. </p>
-<p class="">CAUTION: Just like with a normal free(), freeing a pointer to an element that has not previously been allocated or a pointer to somewhere outside of the memory pool will cause undefined behavior.</p>
+<p>CAUTION: Just like with a normal free(), freeing a pointer to an element that has not previously been allocated or a pointer to somewhere outside of the memory pool will cause undefined behavior.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool to which to free an element. </td></tr>
@@ -360,7 +417,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>Initialize a memory pool. </p>
-<p class="">This macro must be called on a pool before using <a class="el" href="group__lwpa__mempool.html#ga974021021787bdc6dd16e5017869a556" title="Allocate a new element from a memory pool.">lwpa_mempool_alloc()</a> or <a class="el" href="group__lwpa__mempool.html#ga1962ba16f32cecfafc8ba4b60765c0de" title="Free an element back to a memory pool.">lwpa_mempool_free()</a> on it. There is no deinitialization function because there is no cleanup necessary; to reset a pool, simply call this function again.</p>
+<p>This macro must be called on a pool before using <a class="el" href="group__lwpa__mempool.html#ga974021021787bdc6dd16e5017869a556" title="Allocate a new element from a memory pool.">lwpa_mempool_alloc()</a> or <a class="el" href="group__lwpa__mempool.html#ga1962ba16f32cecfafc8ba4b60765c0de" title="Free an element back to a memory pool.">lwpa_mempool_free()</a> on it. There is no deinitialization function because there is no cleanup necessary; to reset a pool, simply call this function again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool to initialize. </td></tr>
@@ -389,7 +446,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>Get the total size of a memory pool. </p>
-<p class="">This is a constant value that was provided in the <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> call.</p>
+<p>This is a constant value that was provided in the <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> call.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool of which to get the size. </td></tr>
@@ -457,7 +514,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>(Not for direct usage) A memory pool description structure. </p>
-<p class="">Do not declare or use this structure directly; instead, use <a class="el" href="group__lwpa__mempool.html#ga94986ea8060c07cba61c85b2a99ed458" title="Declare a pool as an external variable.">LWPA_MEMPOOL_DECLARE()</a>, <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> and the lwpa_mempool_* macros to interact with it. </p>
+<p>Do not declare or use this structure directly; instead, use <a class="el" href="group__lwpa__mempool.html#ga94986ea8060c07cba61c85b2a99ed458" title="Declare a pool as an external variable.">LWPA_MEMPOOL_DECLARE()</a>, <a class="el" href="group__lwpa__mempool.html#gaa0d4858b58e87161808339beba9f4c87" title="Define a new memory pool.">LWPA_MEMPOOL_DEFINE()</a> and the lwpa_mempool_* macros to interact with it. </p>
 
 </div>
 </div>

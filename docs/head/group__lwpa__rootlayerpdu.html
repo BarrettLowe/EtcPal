@@ -214,8 +214,8 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Protocol Vectors</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p class=""><a class="anchor" id="amgrp2980e542e3b6f126c15c92b8ec2c9c91"></a>Each ACN family protocol is defined by a protocol vector in a Root Layer PDU.</p>
-<p class="">These values occupy the vector field of a <a class="el" href="struct_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU.">RootLayerPdu</a> to identify the contents of its data segment. </p>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp2980e542e3b6f126c15c92b8ec2c9c91"></a>Each ACN family protocol is defined by a protocol vector in a Root Layer PDU.</p>
+<p>These values occupy the vector field of a <a class="el" href="struct_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU.">RootLayerPdu</a> to identify the contents of its data segment. </p>
 </td></tr>
 <tr class="memitem:gaafde356ccc6bb337fab575bd5f2c3703"><td class="memItemLeft" align="right" valign="top"><a id="gaafde356ccc6bb337fab575bd5f2c3703"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>VECTOR_ROOT_SDT</b>&#160;&#160;&#160;ACN_PROTOCOL_SDT</td></tr>
@@ -243,8 +243,8 @@ Protocol Vectors</h2></td></tr>
 <tr class="separator:ga5241d6e6a2c015d4fb82833f5857ac79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">Parse or pack a Root Layer PDU block. </p>
-<p class="">#include "lwpa/root_layer_pdu.h" </p>
+<p>Parse or pack a Root Layer PDU block. </p>
+<p>#include "lwpa/root_layer_pdu.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gab879b13847509e3bbd4b12a5e2cda0e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gab879b13847509e3bbd4b12a5e2cda0e7">&#9670;&nbsp;</a></span>ACN_TCP_PREAMBLE_SIZE</h2>
@@ -399,7 +399,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack a Root Layer PDU block into a buffer. </p>
-<p class="">The required buffer size can be calculated in advance using <a class="el" href="group__lwpa__rootlayerpdu.html#gaf778285bf86d4d5e8eaf673492fd06a6" title="Get the buffer size to allocate for a Root Layer PDU block.">root_layer_buf_size()</a>.</p>
+<p>The required buffer size can be calculated in advance using <a class="el" href="group__lwpa__rootlayerpdu.html#gaf778285bf86d4d5e8eaf673492fd06a6" title="Get the buffer size to allocate for a Root Layer PDU block.">root_layer_buf_size()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Root Layer PDU block. </td></tr>
@@ -446,7 +446,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack only the header of a Root Layer PDU block into a buffer. </p>
-<p class="">This can be useful when working with stream sockets.</p>
+<p>This can be useful when working with stream sockets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Root Layer PDU header. </td></tr>
@@ -492,7 +492,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack an ACN TCP Preamble into a buffer. </p>
-<p class="">All ACN protocol family packets sent over TCP must start with a TCP Preamble.</p>
+<p>All ACN protocol family packets sent over TCP must start with a TCP Preamble.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the preamble. </td></tr>
@@ -532,7 +532,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack an ACN UDP Preamble into a buffer. </p>
-<p class="">All ACN protocol family packets sent over UDP must start with a UDP Preamble.</p>
+<p>All ACN protocol family packets sent over UDP must start with a UDP Preamble.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the preamble. </td></tr>
@@ -583,7 +583,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse only the header of a Root Layer PDU. </p>
-<p class="">This can be useful when working with stream sockets.</p>
+<p>This can be useful when working with stream sockets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Root Layer Protocol buffer. </td></tr>
@@ -636,9 +636,9 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse a Root Layer PDU. </p>
-<p class="">Parse a Root Layer PDU from a Root Layer PDU block. Fills in the root_layer_pdu structure with the parsed PDU information, and stores state data in a pdu structure for parsing the next PDU in the block, if there is one.</p>
-<p class="">Example usage:</p>
-<p class="">After parsing an ACN protocol family preamble (perhaps by using <a class="el" href="group__lwpa__rootlayerpdu.html#gae0be0e22c075acfbbea4330cf1bec23c" title="Parse an ACN UDP Preamble.">parse_udp_preamble()</a> or <a class="el" href="group__lwpa__rootlayerpdu.html#ga5504243cf58e317bc0f61ccb3191d80d" title="Parse an ACN TCP Preamble.">parse_tcp_preamble()</a>), buf points to the data starting after the preamble and buflen is the length parsed from the preamble...</p>
+<p>Parse a Root Layer PDU from a Root Layer PDU block. Fills in the root_layer_pdu structure with the parsed PDU information, and stores state data in a pdu structure for parsing the next PDU in the block, if there is one.</p>
+<p>Example usage:</p>
+<p>After parsing an ACN protocol family preamble (perhaps by using <a class="el" href="group__lwpa__rootlayerpdu.html#gae0be0e22c075acfbbea4330cf1bec23c" title="Parse an ACN UDP Preamble.">parse_udp_preamble()</a> or <a class="el" href="group__lwpa__rootlayerpdu.html#ga5504243cf58e317bc0f61ccb3191d80d" title="Parse an ACN TCP Preamble.">parse_tcp_preamble()</a>), buf points to the data starting after the preamble and buflen is the length parsed from the preamble...</p>
 <div class="fragment"><div class="line"><a class="code" href="struct_lwpa_pdu.html">LwpaPdu</a> pdu = <a class="code" href="group__lwpa__pdu.html#ga5263d5874200e90de739e1cf453078ef">PDU_INIT</a>; <span class="comment">// Must initialize this!!</span></div><div class="line"><span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div><div class="line"><span class="keywordflow">do</span></div><div class="line">{</div><div class="line">    <a class="code" href="struct_root_layer_pdu.html">RootLayerPdu</a> cur;</div><div class="line">    res = <a class="code" href="group__lwpa__rootlayerpdu.html#ga16a05260696331878fe93a454dee8e79">parse_root_layer_pdu</a>(buf, buflen, &amp;cur, &amp;pdu);</div><div class="line">    <span class="keywordflow">if</span> (res)</div><div class="line">    {</div><div class="line">        <span class="comment">// Example application handler function that forwards the pdu</span></div><div class="line">        <span class="comment">// appropriately based on vector</span></div><div class="line">        handle_root_layer_pdu(&amp;cur);</div><div class="line">    }</div><div class="line">} <span class="keywordflow">while</span> (res);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Root Layer Protocol buffer. </td></tr>
@@ -685,7 +685,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse an ACN TCP Preamble. </p>
-<p class="">Determine whether this byte buffer, received over TCP, starts with an ACN TCP Preamble and thus contains an ACN protocol family packet. For best results, wait until you receive at least <a class="el" href="group__lwpa__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble.">ACN_TCP_PREAMBLE_SIZE</a> bytes before calling this function.</p>
+<p>Determine whether this byte buffer, received over TCP, starts with an ACN TCP Preamble and thus contains an ACN protocol family packet. For best results, wait until you receive at least <a class="el" href="group__lwpa__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble.">ACN_TCP_PREAMBLE_SIZE</a> bytes before calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Received TCP buffer. </td></tr>
@@ -731,7 +731,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse an ACN UDP Preamble. </p>
-<p class="">Determine whether this received UDP datagram contains an ACN protocol family packet by determining whether it starts with the ACN UDP preamble.</p>
+<p>Determine whether this received UDP datagram contains an ACN protocol family packet by determining whether it starts with the ACN UDP preamble.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Received UDP buffer. </td></tr>
@@ -771,7 +771,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the buffer size to allocate for a Root Layer PDU block. </p>
-<p class="">Calculate the buffer size to allocate for a future call to <a class="el" href="group__lwpa__rootlayerpdu.html#ga577897f50c0a7a5a78abe74b07520184" title="Pack a Root Layer PDU block into a buffer.">pack_root_layer_block()</a>, given an array of struct root_layer_pdu.</p>
+<p>Calculate the buffer size to allocate for a future call to <a class="el" href="group__lwpa__rootlayerpdu.html#ga577897f50c0a7a5a78abe74b07520184" title="Pack a Root Layer PDU block into a buffer.">pack_root_layer_block()</a>, given an array of struct root_layer_pdu.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pdu_block</td><td>Array of structs representing a Root Layer PDU block. </td></tr>

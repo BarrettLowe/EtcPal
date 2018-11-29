@@ -163,8 +163,8 @@ Functions</h2></td></tr>
 <tr class="separator:ga1e76d7a093cd92f01b15f8a185726399"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">A signal object. </p>
-<p class="">Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> blocks until <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a> is called. </p>
+<p>A signal object. </p>
+<p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> blocks until <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a> is called. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaad04ad0c8d71e1b5b6a4e363965e43ef"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaad04ad0c8d71e1b5b6a4e363965e43ef">&#9670;&nbsp;</a></span>lwpa_signal_t</h2>
@@ -179,7 +179,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The signal identifier. </p>
-<p class="">Depending on the platform, this could be a scalar type or a struct. </p>
+<p>Depending on the platform, this could be a scalar type or a struct. </p>
 
 </div>
 </div>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new signal. </p>
-<p class="">Signals are created in the "unsignaled" state; that is, the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> will block.</p>
+<p>Signals are created in the "unsignaled" state; that is, the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> will block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">id</td><td>Signal identifier on which to create a signal. If this function returns true, id becomes valid for calls to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> and <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a>. </td></tr>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Post a signal. </p>
-<p class="">If no threads are waiting for the signal, puts the signal object in the "signaled" state (a subsequent call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> will return immediately). Otherwise, wakes up the first thread that waited for the signal.</p>
+<p>If no threads are waiting for the signal, puts the signal object in the "signaled" state (a subsequent call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> will return immediately). Otherwise, wakes up the first thread that waited for the signal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal to post. </td></tr>
@@ -292,7 +292,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wait for a signal. </p>
-<p class="">If this is the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> after the signal object has been posted via <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a>, returns immediately. Otherwise, blocks until a call to <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a> on the signal object.</p>
+<p>If this is the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal.">lwpa_signal_wait()</a> after the signal object has been posted via <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a>, returns immediately. Otherwise, blocks until a call to <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal.">lwpa_signal_post()</a> on the signal object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal for which to wait. </td></tr>

@@ -358,10 +358,10 @@ Log Priority</h2></td></tr>
 <tr class="separator:ga4a8948b531b0cf1c68a1bdc5c84d4ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p class="">A platform-neutral module enabling applications and libraries to log messages in either or both of syslog-compliant and human-readable format. </p>
-<p class="">#include "lwpa/log.h"</p>
-<p class="">This module can be used in two ways. Applications can use the lightweight <a class="el" href="group__lwpa__log.html#ga2efb597d28fdda5796e410b43f5a631d" title="Create a log message with syslog header in the given buffer.">lwpa_create_syslog_str()</a> and <a class="el" href="group__lwpa__log.html#ga92091520538853c272084261bbb8bf21" title="Create a log message with a human-readable header in the given buffer.">lwpa_create_human_log_str()</a> to create log messages with a header defined by the Syslog protocol or with a human-readable header defined by ETC.</p>
-<p class="">This module can also be used to enable other libraries to log messages via a callback function. Library functions can take a set of parameters (lwpa_log_params) on initialization. They use these parameters and the <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> or <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> functions to call back to the application to log messages. The application can then decide what to do with these log messages (print to console, syslog, etc.) </p>
+<p>A platform-neutral module enabling applications and libraries to log messages in either or both of syslog-compliant and human-readable format. </p>
+<p>#include "lwpa/log.h"</p>
+<p>This module can be used in two ways. Applications can use the lightweight <a class="el" href="group__lwpa__log.html#ga2efb597d28fdda5796e410b43f5a631d" title="Create a log message with syslog header in the given buffer.">lwpa_create_syslog_str()</a> and <a class="el" href="group__lwpa__log.html#ga92091520538853c272084261bbb8bf21" title="Create a log message with a human-readable header in the given buffer.">lwpa_create_human_log_str()</a> to create log messages with a header defined by the Syslog protocol or with a human-readable header defined by ETC.</p>
+<p>This module can also be used to enable other libraries to log messages via a callback function. Library functions can take a set of parameters (lwpa_log_params) on initialization. They use these parameters and the <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> or <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> functions to call back to the application to log messages. The application can then decide what to do with these log messages (print to console, syslog, etc.) </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga0495001df9d738759753ecb7c9f4772a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0495001df9d738759753ecb7c9f4772a">&#9670;&nbsp;</a></span>LWPA_HUMAN_LOG_STR_MAX_LEN</h2>
@@ -1005,7 +1005,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log callback function. </p>
-<p class="">The function that library modules use to log messages. The application developer defines the function and determines where the messages go.</p>
+<p>The function that library modules use to log messages. The application developer defines the function and determines where the messages go.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Optional application-provided value that was previously passed to the library module. </td></tr>
@@ -1031,7 +1031,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Time callback function. </p>
-<p class="">A function by which the logging module can get the current local time.</p>
+<p>A function by which the logging module can get the current local time.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Optional application-provided value that was previously passed to the library module. </td></tr>
@@ -1105,11 +1105,11 @@ Log Priority</h2></td></tr>
 
 <p>Which types of log message(s) the <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> functions create. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a408d0b541c1860eb8264be42f2d0d774"></a>kLwpaLogCreateSyslog&#160;</td><td class="fielddoc"><p class=""><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create a syslog message and pass it back in the syslog_str parameter of the log callback. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a408d0b541c1860eb8264be42f2d0d774"></a>kLwpaLogCreateSyslog&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create a syslog message and pass it back in the syslog_str parameter of the log callback. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a21fba732cbc622fce83415718e1fb8f9"></a>kLwpaLogCreateHumanReadableLog&#160;</td><td class="fielddoc"><p class=""><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create a human-readable log message and pass it back in the human_str parameter of the log callback. </p>
+<tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a21fba732cbc622fce83415718e1fb8f9"></a>kLwpaLogCreateHumanReadableLog&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create a human-readable log message and pass it back in the human_str parameter of the log callback. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a1c00ba8139d620d17be3b61a498232c5"></a>kLwpaLogCreateBoth&#160;</td><td class="fielddoc"><p class=""><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create both a syslog message and a human-readable log message and pass them back in the syslog_str and human_str parameters of the log callback. </p>
+<tr><td class="fieldname"><a id="gga87102d7ecdab1a3ba919bd750fae0507a1c00ba8139d620d17be3b61a498232c5"></a>kLwpaLogCreateBoth&#160;</td><td class="fielddoc"><p><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> and <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated.">lwpa_vlog()</a> create both a syslog message and a human-readable log message and pass them back in the syslog_str and human_str parameters of the log callback. </p>
 </td></tr>
 </table>
 
@@ -1161,7 +1161,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a log message with a human-readable header in the given buffer. </p>
-<p class="">Buffer must be at least <a class="el" href="group__lwpa__log.html#ga794bc9c3568fda36ad6e26a790ae6195" title="The minimum length of a buffer passed to lwpa_create_human_log_str().">LWPA_HUMAN_LOG_STR_MIN_LEN</a> in length.</p>
+<p>Buffer must be at least <a class="el" href="group__lwpa__log.html#ga794bc9c3568fda36ad6e26a790ae6195" title="The minimum length of a buffer passed to lwpa_create_human_log_str().">LWPA_HUMAN_LOG_STR_MIN_LEN</a> in length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the log message. </td></tr>
@@ -1231,7 +1231,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a log message with syslog header in the given buffer. </p>
-<p class="">Buffer must be at least <a class="el" href="group__lwpa__log.html#ga98a9352b7969f965cf4c77af3c462f21" title="The minimum length of a buffer passed to lwpa_create_syslog_str().">LWPA_SYSLOG_STR_MIN_LEN</a> in length.</p>
+<p>Buffer must be at least <a class="el" href="group__lwpa__log.html#ga98a9352b7969f965cf4c77af3c462f21" title="The minimum length of a buffer passed to lwpa_create_syslog_str().">LWPA_SYSLOG_STR_MIN_LEN</a> in length.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the syslog message. </td></tr>
@@ -1285,7 +1285,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log a message from a library module. </p>
-<p class="">Takes a printf-style format string which is formatted and passed to the application callback.</p>
+<p>Takes a printf-style format string which is formatted and passed to the application callback.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>The log parameters to be used for this message. </td></tr>
@@ -1314,7 +1314,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessary). </p>
-<p class="">Sanitizes the three string fields (hostname, app_name and procid) by replacing characters that are not allowed by RFC 5424 with filler characters. Also ensures that the facility value is within the correct range (<a class="el" href="group__lwpa__log.html#ga9ddc5e6a9583f9d8d12e9fddd5973461" title="Current number of facilities.">LWPA_LOG_NFACILITIES</a>).</p>
+<p>Sanitizes the three string fields (hostname, app_name and procid) by replacing characters that are not allowed by RFC 5424 with filler characters. Also ensures that the facility value is within the correct range (<a class="el" href="group__lwpa__log.html#ga9ddc5e6a9583f9d8d12e9fddd5973461" title="Current number of facilities.">LWPA_LOG_NFACILITIES</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">params</td><td>Syslog params to sanitize. </td></tr>
@@ -1341,7 +1341,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Ensure that the given lwpa_log_params are valid. </p>
-<p class="">This also sanitizes the syslog params using <a class="el" href="group__lwpa__log.html#ga2e1cd052c474bfbb33614a7d10b33bbb" title="Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessar...">lwpa_sanitize_syslog_params()</a> if action is set to kLwpaLogCreateSyslog or kLwpaLogCreateBoth.</p>
+<p>This also sanitizes the syslog params using <a class="el" href="group__lwpa__log.html#ga2e1cd052c474bfbb33614a7d10b33bbb" title="Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessar...">lwpa_sanitize_syslog_params()</a> if action is set to kLwpaLogCreateSyslog or kLwpaLogCreateBoth.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in,out]</td><td class="paramname">params</td><td>lwpa_log_params to validate. </td></tr>
@@ -1391,7 +1391,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Log a message from a library module with the list of format arguments already generated. </p>
-<p class="">For normal usage, just use <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a>. However, this function is useful if you want to create a wrapper function around <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> which also takes variable format arguments.</p>
+<p>For normal usage, just use <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a>. However, this function is useful if you want to create a wrapper function around <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module.">lwpa_log()</a> which also takes variable format arguments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>The log parameters to be used for this message. </td></tr>
