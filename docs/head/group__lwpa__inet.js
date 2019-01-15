@@ -3,7 +3,7 @@ var group__lwpa__inet =
     [ "LwpaIpAddr", "struct_lwpa_ip_addr.html", [
       [ "AddrUnion", "union_lwpa_ip_addr_1_1_addr_union.html", [
         [ "v4", "union_lwpa_ip_addr_1_1_addr_union.html#a654069046d83e652d54cae5e353051c5", null ],
-        [ "v6", "union_lwpa_ip_addr_1_1_addr_union.html#a203f5924852433cdcb71d3d137052c95", null ]
+        [ "v6", "union_lwpa_ip_addr_1_1_addr_union.html#ac9750e0b36301920734010112df7ef8d", null ]
       ] ],
       [ "addr", "struct_lwpa_ip_addr.html#ae5fdffa8bfb5cdcdacf740b1eaf314b5", null ],
       [ "type", "struct_lwpa_ip_addr.html#a43f11ca9456afc383d0d550f16e3c420", null ]
@@ -18,11 +18,11 @@ var group__lwpa__inet =
       [ "gate", "struct_lwpa_netint_info.html#aab794a1d7268e4cf399af0600c73e0d8", null ],
       [ "ifindex", "struct_lwpa_netint_info.html#a01e636f8746c84f1cf3d45c4afbfde35", null ],
       [ "is_default", "struct_lwpa_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a", null ],
-      [ "mac", "struct_lwpa_netint_info.html#acfb2730f6bc990ea60b006dd2bf6e2b2", null ],
+      [ "mac", "struct_lwpa_netint_info.html#af218cb57bca9340eb78204cb81754bc9", null ],
       [ "mask", "struct_lwpa_netint_info.html#abff5b2b0f50f02db2d130bb3c59cd5b0", null ],
-      [ "name", "struct_lwpa_netint_info.html#aa1880b44aa15396b0f044c0a84d2b0f3", null ]
+      [ "name", "struct_lwpa_netint_info.html#abbe9b559861b88e242f78e5eb27b0fd5", null ]
     ] ],
-    [ "IPV6_BYTES", "group__lwpa__inet.html#gad13014eeb2e4a08990536a16089be0f4", null ],
+    [ "LWPA_IPV6_BYTES", "group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75", null ],
     [ "lwpaip_cmp", "group__lwpa__inet.html#ga7bcd89c614dbfb588d5c6bb54ce67872", null ],
     [ "lwpaip_equal", "group__lwpa__inet.html#ga1961dd86bd985153be3afa3bf3bebefa", null ],
     [ "lwpaip_is_invalid", "group__lwpa__inet.html#ga512afd056b57c62b511e44a93972f4d5", null ],
@@ -41,8 +41,8 @@ var group__lwpa__inet =
     [ "LwpaNetintInfo", "group__lwpa__inet.html#ga329f214bf9d65ca173437e227a1c5bc7", null ],
     [ "LwpaSockaddr", "group__lwpa__inet.html#gae0b2fa6bb6c8a15a8ebb0cd5fffe96c9", null ],
     [ "lwpa_iptype_t", "group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048", [
-      [ "LWPA_IP_INVALID", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a827878502eeeef634e5d0d4dd3c77e88", null ],
-      [ "LWPA_IPV4", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048af03dcc1f24060aa236145f272fbf88cf", null ],
-      [ "LWPA_IPV6", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a474b73f5d6671c188f851d9c1d3c6a0d", null ]
+      [ "kLwpaIpTypeInvalid", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048aa8b31e7862dcc08b71037384bb33945e", null ],
+      [ "kLwpaIpTypeV4", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a73563b977f0118c6094e193f57cfc2cd", null ],
+      [ "kLwpaIpTypeV6", "group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da", null ]
     ] ]
 ];

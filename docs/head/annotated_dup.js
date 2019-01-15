@@ -18,16 +18,16 @@ var annotated_dup =
     [ "LwpaRbIter", "struct_lwpa_rb_iter.html", "struct_lwpa_rb_iter" ],
     [ "LwpaRbNode", "struct_lwpa_rb_node.html", "struct_lwpa_rb_node" ],
     [ "LwpaRbTree", "struct_lwpa_rb_tree.html", "struct_lwpa_rb_tree" ],
+    [ "LwpaRootLayerPdu", "struct_lwpa_root_layer_pdu.html", "struct_lwpa_root_layer_pdu" ],
     [ "LwpaSockaddr", "struct_lwpa_sockaddr.html", "struct_lwpa_sockaddr" ],
     [ "LwpaSocketPlatformData", "struct_lwpa_socket_platform_data.html", "struct_lwpa_socket_platform_data" ],
     [ "LwpaSyslogParams", "struct_lwpa_syslog_params.html", "struct_lwpa_syslog_params" ],
+    [ "LwpaTcpPreamble", "struct_lwpa_tcp_preamble.html", "struct_lwpa_tcp_preamble" ],
     [ "LwpaThreadParams", "struct_lwpa_thread_params.html", "struct_lwpa_thread_params" ],
     [ "LwpaThreadParamsMqx", "struct_lwpa_thread_params_mqx.html", "struct_lwpa_thread_params_mqx" ],
     [ "LwpaTimer", "struct_lwpa_timer.html", "struct_lwpa_timer" ],
+    [ "LwpaUdpPreamble", "struct_lwpa_udp_preamble.html", "struct_lwpa_udp_preamble" ],
     [ "LwpaUuid", "struct_lwpa_uuid.html", "struct_lwpa_uuid" ],
     [ "MD5_CTX", "struct_m_d5___c_t_x.html", "struct_m_d5___c_t_x" ],
-    [ "RootLayerPdu", "struct_root_layer_pdu.html", "struct_root_layer_pdu" ],
-    [ "tagTHREADNAME_INFO", "structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o.html", "structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o" ],
-    [ "TcpPreamble", "struct_tcp_preamble.html", "struct_tcp_preamble" ],
-    [ "UdpPreamble", "struct_udp_preamble.html", "struct_udp_preamble" ]
+    [ "tagTHREADNAME_INFO", "structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o.html", "structtag_t_h_r_e_a_d_n_a_m_e___i_n_f_o" ]
 ];

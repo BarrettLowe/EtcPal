@@ -1,11 +1,11 @@
 var group__lwpa__pack =
 [
-    [ "pack_16b", "group__lwpa__pack.html#ga32f0584d0100019465abdae96fced391", null ],
-    [ "pack_16l", "group__lwpa__pack.html#gaeff170e309ac2e9eed5bee5b97258728", null ],
-    [ "pack_32b", "group__lwpa__pack.html#gabc8cfafb05fb11c81e8f5dbc89472de7", null ],
-    [ "pack_32l", "group__lwpa__pack.html#ga093d966b9ca2bd2669c04087e27ca1ee", null ],
-    [ "upack_16b", "group__lwpa__pack.html#ga68d1fab4542e3bfde42b2e071078024d", null ],
-    [ "upack_16l", "group__lwpa__pack.html#ga38fbf13e5a30a30bfc16f8849b9c0e13", null ],
-    [ "upack_32b", "group__lwpa__pack.html#ga442155eb9bd7cb4312b004b50aa39608", null ],
-    [ "upack_32l", "group__lwpa__pack.html#ga3b8f297f4976651c00e2dd15fae2c2b4", null ]
+    [ "lwpa_pack_16b", "group__lwpa__pack.html#ga0ff3f85ee64ed231d89baaa57bd13dad", null ],
+    [ "lwpa_pack_16l", "group__lwpa__pack.html#gac839a3e63e3a5d22fbb31c1328927d21", null ],
+    [ "lwpa_pack_32b", "group__lwpa__pack.html#ga178005bbc344ef67ee778b6617752a85", null ],
+    [ "lwpa_pack_32l", "group__lwpa__pack.html#ga4293fdfec8c32a7296fca6f3ac28dc91", null ],
+    [ "lwpa_upack_16b", "group__lwpa__pack.html#gaaaf27b0d45b7d9fdae52a4218774ec35", null ],
+    [ "lwpa_upack_16l", "group__lwpa__pack.html#gae7c40446cec9afd5a353956fb19eb2fe", null ],
+    [ "lwpa_upack_32b", "group__lwpa__pack.html#gaf1954a62e2548d796642ed114db84d5c", null ],
+    [ "lwpa_upack_32l", "group__lwpa__pack.html#ga752fcacb7a3d901a169174414408b618", null ]
 ];
