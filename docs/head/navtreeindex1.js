@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"group__lwpa__socket.html#ga2711703676dc5940b484b4831619c23d":[1,0,12,9],
+"group__lwpa__socket.html#ga2e184196155e7aba01e9f7bc315003b1":[1,0,12,8],
+"group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb":[1,0,12,16],
+"group__lwpa__socket.html#ga33867e9f8eeb3cbdd8513483026935f8":[1,0,12,6],
 "group__lwpa__socket.html#ga3f1556c87ab3fbc847768f2fdcab4e9e":[1,0,12,29],
 "group__lwpa__socket.html#ga4110e753475f9505e87b88e0097befb4":[1,0,12,45],
 "group__lwpa__socket.html#ga4391e79e13fa481add7709ec5b5cf563":[1,0,12,21],
@@ -73,8 +77,8 @@ var NAVTREEINDEX1 =
 "group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae":[1,0,14,1],
 "group__lwpa__uuid.html#ga913c775ec9337470909a993287f9a7e0":[1,0,14,8],
 "group__lwpa__uuid.html#gac0dfc2593ae51c5fc3dbc28d73ce1bd1":[1,0,14,7],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "inet_8h_source.html":[3,0,0,2,4],
 "int_8h_source.html":[3,0,0,2,5],
 "linux_2lwpa_2plat__lock_8h_source.html":[3,0,0,1,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "timer_8h_source.html":[3,0,0,2,17],
 "union_lwpa_ip_addr_1_1_addr_union.html":[1,0,4,0,0],
 "union_lwpa_ip_addr_1_1_addr_union.html#a654069046d83e652d54cae5e353051c5":[1,0,4,0,0,0],
-"union_lwpa_ip_addr_1_1_addr_union.html#ac9750e0b36301920734010112df7ef8d":[1,0,4,0,0,1],
-"uuid_8h_source.html":[3,0,0,2,18],
-"windows_2lwpa_2plat__lock_8h_source.html":[3,0,0,4,0,0],
-"windows_2lwpa_2plat__socket_8h_source.html":[3,0,0,4,0,1],
-"windows_2lwpa_2plat__thread_8h_source.html":[3,0,0,4,0,2]
+"union_lwpa_ip_addr_1_1_addr_union.html#ac9750e0b36301920734010112df7ef8d":[1,0,4,0,0,1]
 };

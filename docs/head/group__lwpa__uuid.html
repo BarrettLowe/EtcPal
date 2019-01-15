@@ -396,7 +396,7 @@ const <a class="el" href="struct_lwpa_uuid.html">LwpaUuid</a>&#160;</td><td clas
 <p>The resulting string will be of the form: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx (lowercase is used for hexadecimal letters per RFC 4122 and common convention).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Character buffer to which to write the resulting string. To avoid undefined behavior, this buffer should be at least of size #UUID_STRING_BYTES. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Character buffer to which to write the resulting string. To avoid undefined behavior, this buffer should be at least of size <a class="el" href="group__lwpa__uuid.html#ga1eaab61ad5262363f3ff5739c27f8be5" title="The maximum number of bytes required to hold an ASCII string representation of a UUID.">LWPA_UUID_STRING_BYTES</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uuid</td><td>UUID to convert to a string. </td></tr>
   </table>
   </dd>

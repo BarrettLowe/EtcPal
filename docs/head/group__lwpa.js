@@ -8,7 +8,7 @@ var group__lwpa =
     [ "lwpa_int", "group__lwpa__int.html", "group__lwpa__int" ],
     [ "lwpa_log", "group__lwpa__log.html", "group__lwpa__log" ],
     [ "lwpa_mempool", "group__lwpa__mempool.html", "group__lwpa__mempool" ],
-    [ "lwpa_netint", "group__lwpa__netint.html", null ],
+    [ "lwpa_netint", "group__lwpa__netint.html", "group__lwpa__netint" ],
     [ "lwpa_pack", "group__lwpa__pack.html", "group__lwpa__pack" ],
     [ "lwpa_pdu", "group__lwpa__pdu.html", "group__lwpa__pdu" ],
     [ "lwpa_rbtree", "group__lwpa__rbtree.html", "group__lwpa__rbtree" ],
