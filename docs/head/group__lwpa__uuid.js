@@ -8,7 +8,9 @@ var group__lwpa__uuid =
     [ "lwpa_uuid_is_null", "group__lwpa__uuid.html#ga11fe0eb25265c769b4a0abb729b41523", null ],
     [ "LWPA_UUID_STRING_BYTES", "group__lwpa__uuid.html#ga1eaab61ad5262363f3ff5739c27f8be5", null ],
     [ "LwpaUuid", "group__lwpa__uuid.html#ga176bfe391ccacc68bd4c7c4e01b93384", null ],
-    [ "lwpa_generate_v3_uuid", "group__lwpa__uuid.html#ga446b54f964cb3c0fe32b7718a83188ad", null ],
+    [ "lwpa_generate_v1_uuid", "group__lwpa__uuid.html#ga98aaae9b8d23b7a57fac6f1974ed8bd0", null ],
+    [ "lwpa_generate_v3_uuid", "group__lwpa__uuid.html#ga19d9fbaf6f594ac9ba7e576eaea91201", null ],
+    [ "lwpa_generate_v4_uuid", "group__lwpa__uuid.html#gad5a92c6e824c30a75fb7f5abda8dec7f", null ],
     [ "lwpa_string_to_uuid", "group__lwpa__uuid.html#gac0dfc2593ae51c5fc3dbc28d73ce1bd1", null ],
     [ "lwpa_uuid_to_string", "group__lwpa__uuid.html#ga913c775ec9337470909a993287f9a7e0", null ],
     [ "LWPA_NULL_UUID", "group__lwpa__uuid.html#ga530cc15affa0ab8d775bc38c4fc69806", null ]
