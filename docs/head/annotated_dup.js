@@ -1,6 +1,5 @@
 var annotated_dup =
 [
-    [ "fff_globals_t", "structfff__globals__t.html", "structfff__globals__t" ],
     [ "lwpa_mutex_t", "structlwpa__mutex__t.html", "structlwpa__mutex__t" ],
     [ "lwpa_rwlock_t", "structlwpa__rwlock__t.html", "structlwpa__rwlock__t" ],
     [ "lwpa_thread_t", "structlwpa__thread__t.html", "structlwpa__thread__t" ],

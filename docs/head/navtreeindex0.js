@@ -19,7 +19,6 @@ var NAVTREEINDEX0 =
 "dir_e14fcc25ff87fc3310b7f01390c8ad66.html":[3,0,0,5,0],
 "dir_ecfa76c5569ddc5008dc28ca5daa4ace.html":[3,0,0,2],
 "error_8h_source.html":[3,0,0,2,3],
-"fff_8h_source.html":[3,0,0,3,0],
 "files.html":[3,0],
 "freertos_2lwpa_2plat__lock_8h_source.html":[3,0,0,0,0,0],
 "freertos_2lwpa_2plat__thread_8h_source.html":[3,0,0,0,0,1],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "group__lwpa__socket.html":[1,0,12],
 "group__lwpa__socket.html#ga03acc4ad773d79b5c22644c28d27396f":[1,0,12,25],
 "group__lwpa__socket.html#ga068077e81f7e9a8613d856b6ca6d9166":[1,0,12,22],
-"group__lwpa__socket.html#ga078d3101f67934bce6f13f193a4832ea":[1,0,12,4]
+"group__lwpa__socket.html#ga078d3101f67934bce6f13f193a4832ea":[1,0,12,4],
+"group__lwpa__socket.html#ga10b6686c28d4a8e546462e2981541835":[1,0,12,56]
 };
