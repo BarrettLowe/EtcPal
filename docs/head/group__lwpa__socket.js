@@ -75,7 +75,7 @@ var group__lwpa__socket =
     [ "lwpa_setblocking", "group__lwpa__socket.html#ga846cd48d4882273a10d6f781128f03ea", null ],
     [ "lwpa_setsockopt", "group__lwpa__socket.html#gac74221647c7888f04191a50557c44ec6", null ],
     [ "lwpa_shutdown", "group__lwpa__socket.html#gae9d6a2363a94d98ee50cdfe359f3715e", null ],
-    [ "lwpa_socket", "group__lwpa__socket.html#ga10b6686c28d4a8e546462e2981541835", null ],
+    [ "lwpa_socket", "group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d", null ],
     [ "lwpa_socket_deinit", "group__lwpa__socket.html#ga6a9fbbc255caa2094bded46554aeb8c0", null ],
     [ "lwpa_socket_init", "group__lwpa__socket.html#ga7158c969eed13894a54ebb8784381e1f", null ]
 ];

@@ -251,9 +251,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gae9d6a2363a94d98ee50cdfe359f3715e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gae9d6a2363a94d98ee50cdfe359f3715e">lwpa_shutdown</a> (<a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> id, int how)</td></tr>
 <tr class="memdesc:gae9d6a2363a94d98ee50cdfe359f3715e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut down part of a full-duplex connection.  <a href="#gae9d6a2363a94d98ee50cdfe359f3715e">More...</a><br /></td></tr>
 <tr class="separator:gae9d6a2363a94d98ee50cdfe359f3715e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga10b6686c28d4a8e546462e2981541835"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga10b6686c28d4a8e546462e2981541835">lwpa_socket</a> (unsigned int family, unsigned int type)</td></tr>
-<tr class="memdesc:ga10b6686c28d4a8e546462e2981541835"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket.  <a href="#ga10b6686c28d4a8e546462e2981541835">More...</a><br /></td></tr>
-<tr class="separator:ga10b6686c28d4a8e546462e2981541835"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga00c14a0982e98d8bf1c1aaf8ceaeb64d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d">lwpa_socket</a> (unsigned int family, unsigned int type, <a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> *id)</td></tr>
+<tr class="memdesc:ga00c14a0982e98d8bf1c1aaf8ceaeb64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a socket.  <a href="#ga00c14a0982e98d8bf1c1aaf8ceaeb64d">More...</a><br /></td></tr>
+<tr class="separator:ga00c14a0982e98d8bf1c1aaf8ceaeb64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga846cd48d4882273a10d6f781128f03ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga846cd48d4882273a10d6f781128f03ea">lwpa_setblocking</a> (<a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> id, <a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> blocking)</td></tr>
 <tr class="memdesc:ga846cd48d4882273a10d6f781128f03ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the blocking behavior of a socket.  <a href="#ga846cd48d4882273a10d6f781128f03ea">More...</a><br /></td></tr>
 <tr class="separator:ga846cd48d4882273a10d6f781128f03ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1569,12 +1569,12 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga10b6686c28d4a8e546462e2981541835"></a>
+<a class="anchor" id="ga00c14a0982e98d8bf1c1aaf8ceaeb64d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> lwpa_socket </td>
+          <td class="memname"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_socket </td>
           <td>(</td>
           <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>family</em>, </td>
@@ -1583,7 +1583,13 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>type</em>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1595,15 +1601,16 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 <p>Create a socket. </p>
 <p>Refer to your favorite socket() man page for more information.</p>
-<p>Differences from POSIX: Rarely-used 'protocol' parameter is omitted. <a class="el" href="group__lwpa__socket.html#gabee47ca508b8e9b7b15ae6e7729cc087" title="An identifier for an invalid socket handle. ">LWPA_SOCKET_INVALID</a> is the only invalid return value.</p>
+<p>Differences from POSIX: Returns an error code and fills in an output parameter for the socket handle instead of returning the socket handle. Rarely-used 'protocol' parameter is omitted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">family</td><td>Protocol family that the socket should use. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Socket communication type. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Filled in with socket handle on success. Filled in with <a class="el" href="group__lwpa__socket.html#gabee47ca508b8e9b7b15ae6e7729cc087" title="An identifier for an invalid socket handle. ">LWPA_SOCKET_INVALID</a> on failure. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__socket.html#gabee47ca508b8e9b7b15ae6e7729cc087" title="An identifier for an invalid socket handle. ">LWPA_SOCKET_INVALID</a> (error occurred) or a value other than <a class="el" href="group__lwpa__socket.html#gabee47ca508b8e9b7b15ae6e7729cc087" title="An identifier for an invalid socket handle. ">LWPA_SOCKET_INVALID</a> (success). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
