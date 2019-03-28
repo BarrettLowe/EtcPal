@@ -686,7 +686,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 <p>Accept a connection on a socket. </p>
 <p>Refer to your favorite accept() man page for more information.</p>
-<p>Differences from POSIX: addrlen parameter is omitted because there is only one lwpa sockaddr type. Connected socket is returned in an output parameter rather than the return value.</p>
+<p>Differences from POSIX: addrlen parameter is omitted because there is only one <a class="el" href="struct_lwpa_sockaddr.html" title="An IP address with associated interface and port. ">LwpaSockaddr</a> type. Connected socket is returned in an output parameter rather than the return value.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Listening socket on which to accept a new connection. </td></tr>
@@ -695,7 +695,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (failure). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (failure). </dd></dl>
 
 </div>
 </div>
@@ -725,7 +725,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 <p>Bind a name to a socket. </p>
 <p>Refer to your favorite bind() man page for more information.</p>
-<p>Differences from POSIX: addrlen parameter is omitted because there is only one lwpa sockaddr type.</p>
+<p>Differences from POSIX: addrlen parameter is omitted because there is only one <a class="el" href="struct_lwpa_sockaddr.html" title="An IP address with associated interface and port. ">LwpaSockaddr</a> type.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Socket to which to bind an address (traditionally called a 'name'). </td></tr>
@@ -733,7 +733,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -760,7 +760,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -798,7 +798,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -820,7 +820,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 <p>Most platforms allocate memory when getaddrinfo() is called. This must always be called after any call to <a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990" title="Get address information for a named internet host and/or service. ">lwpa_getaddrinfo()</a> to free that memory. It can be called with any of the <a class="el" href="struct_lwpa_addrinfo.html" title="A structure containing name and address information about an internet host. ">LwpaAddrinfo</a> instances in the list, and the whole list will be freed. See the example usage in the description of <a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990" title="Get address information for a named internet host and/or service. ">lwpa_getaddrinfo()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ai</td><td>Pointer to lwpa_addrinfo struct for which to free the platform memory. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ai</td><td>Pointer to <a class="el" href="struct_lwpa_addrinfo.html" title="A structure containing name and address information about an internet host. ">LwpaAddrinfo</a> struct for which to free the platform memory. </td></tr>
   </table>
   </dd>
 </dl>
@@ -865,7 +865,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 <p>Get address information for a named internet host and/or service. </p>
 <p>Refer to your favorite getaddrinfo() man page for more information. One difference between this and the POSIX function is the way that multiple addresses are iterated. lwpa uses the <a class="el" href="group__lwpa__socket.html#gafe366acfdbaa9d98d9459660798c73fd" title="Get the next address from the list returned by lwpa_getaddrinfo(). ">lwpa_nextaddr()</a> function instead of a next pointer to iterate over multiple addresses. For example:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;LwpaAddrinfo info;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;if (0 == lwpa_getaddrinfo(&quot;www.google.com&quot;, &quot;http&quot;, NULL, &amp;info))</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  do</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    char inet_str[LWPA_INET6_ADDRSTRLEN];</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    if (LWPA_OK == lwpa_inet_ntop(&amp;info.ai_addr.ip, inet_str,</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                                  LWPA_INET6_ADDRSTRLEN))</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    {</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;      printf(&quot;Address: %s\n&quot;, inet_str);</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    }</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    else</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      printf(&quot;Address conversion error!\n&quot;);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  } while (lwpa_nextaddr(&amp;info));</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  lwpa_freeaddrinfo(&amp;info);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div></div><!-- fragment --><p>On an internet-connected machine with DNS resolution capability, the above code should print something like: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Address: 172.217.4.196</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;Address: 172.217.4.196</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Address: 2607:f8b0:4009:806::2004</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Address: 2607:f8b0:4009:806::2004</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;LwpaAddrinfo info;</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;if (0 == lwpa_getaddrinfo(&quot;www.google.com&quot;, &quot;http&quot;, NULL, &amp;info))</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;{</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  do</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  {</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    char inet_str[LWPA_INET6_ADDRSTRLEN];</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    if (kLwpaErrOk == lwpa_inet_ntop(&amp;info.ai_addr.ip, inet_str, LWPA_INET6_ADDRSTRLEN))</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    {</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;      printf(&quot;Address: %s\n&quot;, inet_str);</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    }</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    else</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;      printf(&quot;Address conversion error!\n&quot;);</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    }</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  } while (lwpa_nextaddr(&amp;info));</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;  lwpa_freeaddrinfo(&amp;info);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;}</div></div><!-- fragment --><p>On an internet-connected machine with DNS resolution capability, the above code should print something like: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;Address: 172.217.4.196</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;Address: 172.217.4.196</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;Address: 2607:f8b0:4009:806::2004</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;Address: 2607:f8b0:4009:806::2004</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">hostname</td><td>Either a string-represented numerical network address or a network hostname to resolve. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">service</td><td>Either a string-represented numerical port number or a service name. </td></tr>
@@ -874,7 +874,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (an error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (an error occurred). </dd></dl>
 
 </div>
 </div>
@@ -912,7 +912,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -950,7 +950,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1009,7 +1009,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1045,7 +1045,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 
 <p>Convert IPv4 and IPv6 addresses from binary to text form. </p>
 <p>Refer to your favorite inet_ntop() man page for more information.</p>
-<p>Differences from POSIX: af parameter is omitted because that information is contained in the struct lwpa_ip.</p>
+<p>Differences from POSIX: af parameter is omitted because that information is contained in the <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Address to convert to string form. </td></tr>
@@ -1054,9 +1054,9 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a>: Success.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96" title="An invalid argument was provided to an API function. ">LWPA_INVALID</a>: Invalid parameter.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4" title="A system call or C library call failed in a way not covered by other errors. ">LWPA_SYSERR</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success.<br />
+ <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter.<br />
+ <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1101,9 +1101,9 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a>: Success.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa9cf2f92a879c1eacc80a024bae41cd96" title="An invalid argument was provided to an API function. ">LWPA_INVALID</a>: Invalid parameter.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4" title="A system call or C library call failed in a way not covered by other errors. ">LWPA_SYSERR</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success.<br />
+ <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter.<br />
+ <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1140,7 +1140,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1159,10 +1159,10 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the next address from the list returned by <a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990" title="Get address information for a named internet host and/or service. ">lwpa_getaddrinfo()</a>. </p>
-<p>Most platforms allocate and return a linked list of address info structs in their getaddrinfo() implementation. To avoid further memory allocation in the abstraction layer, this non-POSIX-like way to iterate through the addrinfo structs is provided. To get all of the addresses returned from a <a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990" title="Get address information for a named internet host and/or service. ">lwpa_getaddrinfo()</a> call, keep calling this on the result struct until it returns false.</p>
+<p>Most platforms allocate and return a linked list of address info structs in their getaddrinfo() implementation. To avoid further memory allocation in the abstraction layer, this non-POSIX-like way to iterate through the <a class="el" href="struct_lwpa_addrinfo.html" title="A structure containing name and address information about an internet host. ">LwpaAddrinfo</a> structs is provided. To get all of the addresses returned from a <a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990" title="Get address information for a named internet host and/or service. ">lwpa_getaddrinfo()</a> call, keep calling this on the result struct until it returns false.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">ai</td><td>Pointer to last lwpa_addrinfo struct, filled in with values of the next address. </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">ai</td><td>Pointer to last <a class="el" href="struct_lwpa_addrinfo.html" title="A structure containing name and address information about an internet host. ">LwpaAddrinfo</a> struct, filled in with values of the next address. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1211,7 +1211,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of <a class="el" href="struct_lwpa_pollfd.html" title="A description for a socket to poll with lwpa_poll(). ">LwpaPollfd</a> structs which have nonzero revents fields (success), <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa227b5a6ccb818da7bcc74cecbf193f7f" title="A connection timed out. ">LWPA_TIMEDOUT</a> (timed out), or other lwpa_error_t value from the underlying system call (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of <a class="el" href="struct_lwpa_pollfd.html" title="A description for a socket to poll with lwpa_poll(). ">LwpaPollfd</a> structs which have nonzero revents fields (success), <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5411409d0e04a1291da3130d90c54a66" title="A connection timed out. ">kLwpaErrTimedOut</a> (timed out), or other lwpa_error_t value from the underlying system call (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1469,7 +1469,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1528,7 +1528,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1565,7 +1565,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1610,7 +1610,7 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1654,8 +1654,8 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa857ed78ba3e816c71b69c16c85c21647" title="The call was successful, no error occurred. ">LWPA_OK</a>: Initialization successful.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabc09b1c02b9178906e1b6984f9021ad4" title="A system call or C library call failed in a way not covered by other errors. ">LWPA_SYSERR</a>: An internal library or system call error occurred.<br />
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Initialization successful.<br />
+ <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
 </dd></dl>
 
 </div>
