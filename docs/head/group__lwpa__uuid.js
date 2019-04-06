@@ -13,5 +13,5 @@ var group__lwpa__uuid =
     [ "lwpa_generate_v4_uuid", "group__lwpa__uuid.html#gad5a92c6e824c30a75fb7f5abda8dec7f", null ],
     [ "lwpa_string_to_uuid", "group__lwpa__uuid.html#gac0dfc2593ae51c5fc3dbc28d73ce1bd1", null ],
     [ "lwpa_uuid_to_string", "group__lwpa__uuid.html#ga913c775ec9337470909a993287f9a7e0", null ],
-    [ "LWPA_NULL_UUID", "group__lwpa__uuid.html#ga530cc15affa0ab8d775bc38c4fc69806", null ]
+    [ "kLwpaNullUuid", "group__lwpa__uuid.html#gab75cca7a42a1cdc1bb901ed24fc095ee", null ]
 ];

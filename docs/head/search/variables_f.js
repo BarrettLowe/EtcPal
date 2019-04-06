@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['thread_5fname',['thread_name',['../struct_lwpa_thread_params.html#aff53d286a69bd6b453eeb29ab3a75326',1,'LwpaThreadParams']]],
-  ['thread_5fpriority',['thread_priority',['../struct_lwpa_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f',1,'LwpaThreadParams']]],
-  ['time_5ffn',['time_fn',['../struct_lwpa_log_params.html#aeb908ea1d2aeaea8c56ef914948986cc',1,'LwpaLogParams']]],
-  ['top',['top',['../struct_lwpa_rb_iter.html#ab9332a87d0af5aa12cac847eff68b7af',1,'LwpaRbIter']]],
-  ['tree',['tree',['../struct_lwpa_rb_iter.html#ac7b99c0a7b935ddc4664f3301c3642d8',1,'LwpaRbIter']]],
-  ['type',['type',['../struct_lwpa_ip_addr.html#a43f11ca9456afc383d0d550f16e3c420',1,'LwpaIpAddr']]]
+  ['scope_5fid',['scope_id',['../struct_lwpa_sockaddr.html#a1d93077fdccdb6e377b421b79e1ba15c',1,'LwpaSockaddr']]],
+  ['second',['second',['../struct_lwpa_log_time_params.html#a6cf35be1947a62f134392fcb1b3c54d2',1,'LwpaLogTimeParams']]],
+  ['sender_5fcid',['sender_cid',['../struct_lwpa_root_layer_pdu.html#addaf02226137035b7f46186c67b87fe5',1,'LwpaRootLayerPdu']]],
+  ['size',['size',['../struct_lwpa_rb_tree.html#a854352f53b148adc24983a58a1866d66',1,'LwpaRbTree']]],
+  ['stack_5fsize',['stack_size',['../struct_lwpa_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'LwpaThreadParams']]],
+  ['syslog_5fparams',['syslog_params',['../struct_lwpa_log_params.html#ac3c58308b1be0a1a313137e208c15560',1,'LwpaLogParams']]]
 ];

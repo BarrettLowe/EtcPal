@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['red',['red',['../struct_lwpa_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'LwpaRbNode']]],
-  ['reset_5ftime',['reset_time',['../struct_lwpa_timer.html#a8fb66f63094794fbbdacc69af5cc55fa',1,'LwpaTimer']]],
-  ['revents',['revents',['../struct_lwpa_pollfd.html#ae9f68e4cc4edb4a9f8413e62e6167fde',1,'LwpaPollfd']]],
-  ['rlp_5fblock',['rlp_block',['../struct_lwpa_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'LwpaTcpPreamble::rlp_block()'],['../struct_lwpa_udp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8',1,'LwpaUdpPreamble::rlp_block()']]],
-  ['rlp_5fblock_5flen',['rlp_block_len',['../struct_lwpa_tcp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'LwpaTcpPreamble::rlp_block_len()'],['../struct_lwpa_udp_preamble.html#ab27f79ca664937f91e64f868ad233935',1,'LwpaUdpPreamble::rlp_block_len()']]],
-  ['root',['root',['../struct_lwpa_rb_tree.html#a3c22ec40f8e99862b2a75a030e279648',1,'LwpaRbTree']]]
+  ['path',['path',['../struct_lwpa_rb_iter.html#aca890e30bedb607e7d2164b568197d55',1,'LwpaRbIter']]],
+  ['pd',['pd',['../struct_lwpa_addrinfo.html#aecf048e565653706ca7120829d06e047',1,'LwpaAddrinfo']]],
+  ['pdata',['pdata',['../struct_lwpa_root_layer_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07',1,'LwpaRootLayerPdu']]],
+  ['platform_5fdata',['platform_data',['../struct_lwpa_thread_params.html#abea5d4a9dc1ef714b423a1ae6afaf4ae',1,'LwpaThreadParams']]],
+  ['pool',['pool',['../struct_lwpa_mempool_desc.html#aece14e36f8731b6f1c9602fee75c1544',1,'LwpaMempoolDesc']]],
+  ['pool_5fsize',['pool_size',['../struct_lwpa_mempool_desc.html#aaeb9b2d37542fba1b318e4fcde49d9b4',1,'LwpaMempoolDesc']]],
+  ['port',['port',['../struct_lwpa_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236',1,'LwpaSockaddr']]],
+  ['procid',['procid',['../struct_lwpa_syslog_params.html#a08aa82e27aff5eddbfc578f623f54f4a',1,'LwpaSyslogParams']]]
 ];
