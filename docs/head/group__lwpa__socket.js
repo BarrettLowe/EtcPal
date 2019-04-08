@@ -34,6 +34,7 @@ var group__lwpa__socket =
     [ "LWPA_IPPROTO_IPV6", "group__lwpa__socket.html#ga60e65b01d77733f64ed2e0f119f8181f", null ],
     [ "LWPA_IPPROTO_TCP", "group__lwpa__socket.html#ga95f2416441dfe283fa14b64baa9a4523", null ],
     [ "LWPA_IPPROTO_UDP", "group__lwpa__socket.html#ga8b2221240e9f6dc96f115d7271d4fc5b", null ],
+    [ "LWPA_IPV6_V6ONLY", "group__lwpa__socket.html#gad688a623a81aca19cbba492bf263da69", null ],
     [ "LWPA_MCAST_JOIN_GROUP", "group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283", null ],
     [ "LWPA_MCAST_LEAVE_GROUP", "group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb", null ],
     [ "LWPA_SO_BROADCAST", "group__lwpa__socket.html#ga8254e203b0290da5bfb8975f670f4507", null ],

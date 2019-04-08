@@ -45,6 +45,7 @@ var searchData=
   ['lwpa_5fipproto_5fudp',['LWPA_IPPROTO_UDP',['../group__lwpa__socket.html#ga8b2221240e9f6dc96f115d7271d4fc5b',1,'socket.h']]],
   ['lwpa_5fiptype_5ft',['lwpa_iptype_t',['../group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048',1,'inet.h']]],
   ['lwpa_5fipv6_5fbytes',['LWPA_IPV6_BYTES',['../group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75',1,'inet.h']]],
+  ['lwpa_5fipv6_5fv6only',['LWPA_IPV6_V6ONLY',['../group__lwpa__socket.html#gad688a623a81aca19cbba492bf263da69',1,'socket.h']]],
   ['lwpa_5flisten',['lwpa_listen',['../group__lwpa__socket.html#gab5c6cf7dbbff0ebd338e9ef6de183890',1,'lwpa_listen(lwpa_socket_t id, int backlog):&#160;socket.c'],['../group__lwpa__socket.html#gab5c6cf7dbbff0ebd338e9ef6de183890',1,'lwpa_listen(lwpa_socket_t id, int backlog):&#160;socket.c'],['../group__lwpa__socket.html#gab5c6cf7dbbff0ebd338e9ef6de183890',1,'lwpa_listen(lwpa_socket_t id, int backlog):&#160;socket.c'],['../group__lwpa__socket.html#gab5c6cf7dbbff0ebd338e9ef6de183890',1,'lwpa_listen(lwpa_socket_t id, int backlog):&#160;socket.c']]],
   ['lwpa_5flock',['lwpa_lock',['../group__lwpa__lock.html',1,'']]],
   ['lwpa_5flog',['lwpa_log',['../group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef',1,'lwpa_log(const LwpaLogParams *params, int pri, const char *format,...):&#160;log.c'],['../group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef',1,'lwpa_log(const LwpaLogParams *params, int pri, const char *format,...):&#160;log.c'],['../group__lwpa__log.html',1,'(Global Namespace)']]],

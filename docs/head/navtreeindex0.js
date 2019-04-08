@@ -246,8 +246,8 @@ var NAVTREEINDEX0 =
 "group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef":[1,0,0,1,0],
 "group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c":[1,0,0,1,3],
 "group__lwpa__socket.html":[1,0,12],
-"group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d":[1,0,12,56],
-"group__lwpa__socket.html#ga03acc4ad773d79b5c22644c28d27396f":[1,0,12,25],
-"group__lwpa__socket.html#ga068077e81f7e9a8613d856b6ca6d9166":[1,0,12,22],
+"group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d":[1,0,12,57],
+"group__lwpa__socket.html#ga03acc4ad773d79b5c22644c28d27396f":[1,0,12,26],
+"group__lwpa__socket.html#ga068077e81f7e9a8613d856b6ca6d9166":[1,0,12,23],
 "group__lwpa__socket.html#ga078d3101f67934bce6f13f193a4832ea":[1,0,12,4]
 };
