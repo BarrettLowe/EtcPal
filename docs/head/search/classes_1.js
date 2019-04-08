@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['lwpa_5fmutex_5ft',['lwpa_mutex_t',['../structlwpa__mutex__t.html',1,'']]],
-  ['lwpa_5frwlock_5ft',['lwpa_rwlock_t',['../structlwpa__rwlock__t.html',1,'']]],
-  ['lwpa_5fthread_5ft',['lwpa_thread_t',['../structlwpa__thread__t.html',1,'']]],
   ['lwpaaddrinfo',['LwpaAddrinfo',['../struct_lwpa_addrinfo.html',1,'']]],
   ['lwpaipaddr',['LwpaIpAddr',['../struct_lwpa_ip_addr.html',1,'']]],
   ['lwpalinger',['LwpaLinger',['../struct_lwpa_linger.html',1,'']]],
@@ -20,11 +17,9 @@ var searchData=
   ['lwparbtree',['LwpaRbTree',['../struct_lwpa_rb_tree.html',1,'']]],
   ['lwparootlayerpdu',['LwpaRootLayerPdu',['../struct_lwpa_root_layer_pdu.html',1,'']]],
   ['lwpasockaddr',['LwpaSockaddr',['../struct_lwpa_sockaddr.html',1,'']]],
-  ['lwpasocketplatformdata',['LwpaSocketPlatformData',['../struct_lwpa_socket_platform_data.html',1,'']]],
   ['lwpasyslogparams',['LwpaSyslogParams',['../struct_lwpa_syslog_params.html',1,'']]],
   ['lwpatcppreamble',['LwpaTcpPreamble',['../struct_lwpa_tcp_preamble.html',1,'']]],
   ['lwpathreadparams',['LwpaThreadParams',['../struct_lwpa_thread_params.html',1,'']]],
-  ['lwpathreadparamsmqx',['LwpaThreadParamsMqx',['../struct_lwpa_thread_params_mqx.html',1,'']]],
   ['lwpatimer',['LwpaTimer',['../struct_lwpa_timer.html',1,'']]],
   ['lwpaudppreamble',['LwpaUdpPreamble',['../struct_lwpa_udp_preamble.html',1,'']]],
   ['lwpauuid',['LwpaUuid',['../struct_lwpa_uuid.html',1,'']]]

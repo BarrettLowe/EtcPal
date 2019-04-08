@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readguard',['ReadGuard',['../classlwpa_1_1_read_guard.html',1,'lwpa']]],
   ['red',['red',['../struct_lwpa_rb_node.html#a6761340706096510fd89edca40a63b9b',1,'LwpaRbNode']]],
   ['reset_5ftime',['reset_time',['../struct_lwpa_timer.html#a8fb66f63094794fbbdacc69af5cc55fa',1,'LwpaTimer']]],
   ['revents',['revents',['../struct_lwpa_pollfd.html#ae9f68e4cc4edb4a9f8413e62e6167fde',1,'LwpaPollfd']]],

@@ -93,6 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li class="current"><a href="modules.html"><span>Modules</span></a></li>
+      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li>
@@ -164,9 +165,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa829c4964206f21bf51f0171a9c81ff8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gaa829c4964206f21bf51f0171a9c81ff8">lwpa_netint_get_default_interface</a> (<a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint)</td></tr>
 <tr class="memdesc:gaa829c4964206f21bf51f0171a9c81ff8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the default network interface.  <a href="#gaa829c4964206f21bf51f0171a9c81ff8">More...</a><br /></td></tr>
 <tr class="separator:gaa829c4964206f21bf51f0171a9c81ff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad0631d5b71730d81b06b3d15fcbf7884"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gad0631d5b71730d81b06b3d15fcbf7884">lwpa_netint_get_iface_for_dest</a> (const <a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> *dest, const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint_arr, size_t netint_arr_size)</td></tr>
-<tr class="memdesc:gad0631d5b71730d81b06b3d15fcbf7884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network interface that the system will choose when routing an IP packet to the specified destination.  <a href="#gad0631d5b71730d81b06b3d15fcbf7884">More...</a><br /></td></tr>
-<tr class="separator:gad0631d5b71730d81b06b3d15fcbf7884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20eaf09781921e196281ad94de07022a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga20eaf09781921e196281ad94de07022a">lwpa_netint_get_iface_for_dest</a> (const <a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> *dest, const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint_arr, size_t netint_arr_size)</td></tr>
+<tr class="memdesc:ga20eaf09781921e196281ad94de07022a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network interface that the system will choose when routing an IP packet to the specified destination.  <a href="#ga20eaf09781921e196281ad94de07022a">More...</a><br /></td></tr>
+<tr class="separator:ga20eaf09781921e196281ad94de07022a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8a6fef891935e1c359d7e41beda2fb32"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga8a6fef891935e1c359d7e41beda2fb32">lwpa_netint_register_change_cb</a> (netint_change_notification fn, void *context)</td></tr>
+<tr class="memdesc:ga8a6fef891935e1c359d7e41beda2fb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a callback function to be called when a network interface on the system has changed.  <a href="#ga8a6fef891935e1c359d7e41beda2fb32">More...</a><br /></td></tr>
+<tr class="separator:ga8a6fef891935e1c359d7e41beda2fb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5eca4ae57153b10efee9fbce09ec684"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gae5eca4ae57153b10efee9fbce09ec684">lwpa_netint_unregister_change_cb</a> (int handle)</td></tr>
+<tr class="memdesc:gae5eca4ae57153b10efee9fbce09ec684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unregister a network change callback.  <a href="#gae5eca4ae57153b10efee9fbce09ec684">More...</a><br /></td></tr>
+<tr class="separator:gae5eca4ae57153b10efee9fbce09ec684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A platform-neutral method for enumerating network interfaces. </p>
@@ -198,12 +205,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gad0631d5b71730d81b06b3d15fcbf7884"></a>
+<a class="anchor" id="ga20eaf09781921e196281ad94de07022a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a>* lwpa_netint_get_iface_for_dest </td>
+          <td class="memname">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> * lwpa_netint_get_iface_for_dest </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> *&#160;</td>
           <td class="paramname"><em>dest</em>, </td>
@@ -292,6 +299,68 @@ Functions</h2></td></tr>
 
 <p>Get the number of network interfaces present on the system. </p>
 <dl class="section return"><dt>Returns</dt><dd>Number of interfaces present. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga8a6fef891935e1c359d7e41beda2fb32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int lwpa_netint_register_change_cb </td>
+          <td>(</td>
+          <td class="paramtype">netint_change_notification&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Register a callback function to be called when a network interface on the system has changed. </p>
+<p>On some systems, this will spawn a thread to check for network changes. Additional calls will add to the list of functions called on a network change, up to a platform-specific maximum.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">fn</td><td>Function to call when a network interface changes. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Application data to pass to the callback function. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A handle that can be used to unregister the function later on success, or -1 if an error occurred or too many functions were registered already. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gae5eca4ae57153b10efee9fbce09ec684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lwpa_netint_unregister_change_cb </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>handle</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Unregister a network change callback. </p>
+<p>Pass the value returned from netint_register_change_cb() to this function to unregister the callback. That callback will no longer be called on network change.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">handle</td><td>Handle for callback to unregister. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
