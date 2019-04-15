@@ -199,8 +199,6 @@ var searchData=
   ['lwpa_5fso_5fsndtimeo',['LWPA_SO_SNDTIMEO',['../group__lwpa__socket.html#ga70fe9d6049c2d57443614b8c1cfd84c5',1,'socket.h']]],
   ['lwpa_5fso_5ftype',['LWPA_SO_TYPE',['../group__lwpa__socket.html#gacad2c1797aca1d5a3c20c272328789c0',1,'socket.h']]],
   ['lwpa_5fsocket',['lwpa_socket',['../group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d',1,'lwpa_socket(unsigned int family, unsigned int type, lwpa_socket_t *id):&#160;socket.dox'],['../group__lwpa__socket.html',1,'(Global Namespace)']]],
-  ['lwpa_5fsocket_5fdeinit',['lwpa_socket_deinit',['../group__lwpa__socket.html#ga6a9fbbc255caa2094bded46554aeb8c0',1,'socket.dox']]],
-  ['lwpa_5fsocket_5finit',['lwpa_socket_init',['../group__lwpa__socket.html#ga7158c969eed13894a54ebb8784381e1f',1,'socket.dox']]],
   ['lwpa_5fsocket_5finvalid',['LWPA_SOCKET_INVALID',['../group__lwpa__socket.html#gabee47ca508b8e9b7b15ae6e7729cc087',1,'socket.dox']]],
   ['lwpa_5fsocket_5ft',['lwpa_socket_t',['../group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6',1,'socket.dox']]],
   ['lwpa_5fsol_5fsocket',['LWPA_SOL_SOCKET',['../group__lwpa__socket.html#ga3f1556c87ab3fbc847768f2fdcab4e9e',1,'socket.h']]],

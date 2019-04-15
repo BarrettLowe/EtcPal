@@ -339,7 +339,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(((uint16_t)0u) |                           \</div><div class="line">   (((uint16_t)((uint8_t *)(ptr))[0]) &lt;&lt; 8) | \</div><div class="line">    ((uint16_t)((uint8_t *)(ptr))[1]))</div></div><!-- fragment -->
+<b>Value:</b><div class="fragment"><div class="line">((uint16_t)(0u |                            \</div><div class="line">   (uint16_t)((((uint8_t *)(ptr))[0]) &lt;&lt; 8) | \</div><div class="line">   (uint16_t) (((uint8_t *)(ptr))[1]))        \</div><div class="line">  )</div></div><!-- fragment -->
 <p>Unpack a uint16_t from a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

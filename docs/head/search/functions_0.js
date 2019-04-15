@@ -78,8 +78,6 @@ var searchData=
   ['lwpa_5fsignal_5fpost',['lwpa_signal_post',['../group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c',1,'lock.dox']]],
   ['lwpa_5fsignal_5fwait',['lwpa_signal_wait',['../group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c',1,'lock.dox']]],
   ['lwpa_5fsocket',['lwpa_socket',['../group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d',1,'socket.dox']]],
-  ['lwpa_5fsocket_5fdeinit',['lwpa_socket_deinit',['../group__lwpa__socket.html#ga6a9fbbc255caa2094bded46554aeb8c0',1,'socket.dox']]],
-  ['lwpa_5fsocket_5finit',['lwpa_socket_init',['../group__lwpa__socket.html#ga7158c969eed13894a54ebb8784381e1f',1,'socket.dox']]],
   ['lwpa_5fstring_5fto_5fuuid',['lwpa_string_to_uuid',['../group__lwpa__uuid.html#gac0dfc2593ae51c5fc3dbc28d73ce1bd1',1,'lwpa_string_to_uuid(LwpaUuid *uuid, const char *buf, size_t buflen):&#160;uuid.c'],['../group__lwpa__uuid.html#gac0dfc2593ae51c5fc3dbc28d73ce1bd1',1,'lwpa_string_to_uuid(LwpaUuid *uuid, const char *buf, size_t buflen):&#160;uuid.c']]],
   ['lwpa_5fthread_5fcreate',['lwpa_thread_create',['../group__lwpa__thread.html#gac3533f2da6b083858517fcb2ba660649',1,'thread.dox']]],
   ['lwpa_5fthread_5fsleep',['lwpa_thread_sleep',['../group__lwpa__thread.html#ga1b3993fb872deb53b0129d43429b5cb1',1,'thread.dox']]],

@@ -204,12 +204,6 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7158c969eed13894a54ebb8784381e1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga7158c969eed13894a54ebb8784381e1f">lwpa_socket_init</a> (void *platform_data)</td></tr>
-<tr class="memdesc:ga7158c969eed13894a54ebb8784381e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the lwpa_socket module.  <a href="#ga7158c969eed13894a54ebb8784381e1f">More...</a><br /></td></tr>
-<tr class="separator:ga7158c969eed13894a54ebb8784381e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6a9fbbc255caa2094bded46554aeb8c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga6a9fbbc255caa2094bded46554aeb8c0">lwpa_socket_deinit</a> ()</td></tr>
-<tr class="memdesc:ga6a9fbbc255caa2094bded46554aeb8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deinitialize the lwpa_socket module.  <a href="#ga6a9fbbc255caa2094bded46554aeb8c0">More...</a><br /></td></tr>
-<tr class="separator:ga6a9fbbc255caa2094bded46554aeb8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac258071ec7b4f5203764ffba0c0d92a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gac258071ec7b4f5203764ffba0c0d92a7">lwpa_accept</a> (<a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> id, <a class="el" href="struct_lwpa_sockaddr.html">LwpaSockaddr</a> *address, <a class="el" href="group__lwpa__socket.html#ga8fbf24dfb5d096d9f1f2a09e0753a2a6">lwpa_socket_t</a> *conn_sock)</td></tr>
 <tr class="memdesc:gac258071ec7b4f5203764ffba0c0d92a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accept a connection on a socket.  <a href="#gac258071ec7b4f5203764ffba0c0d92a7">More...</a><br /></td></tr>
 <tr class="separator:gac258071ec7b4f5203764ffba0c0d92a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1616,52 +1610,6 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga6a9fbbc255caa2094bded46554aeb8c0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void lwpa_socket_deinit </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Deinitialize the lwpa_socket module. </p>
-<p>Some platforms require deinitialization when an application is finished using socket/networking functionality. Others do not, and on those platforms this will simply be an empty function. This function must be called for every time that <a class="el" href="group__lwpa__socket.html#ga7158c969eed13894a54ebb8784381e1f" title="Initialize the lwpa_socket module. ">lwpa_socket_init()</a> is called in an application. </p>
-
-</div>
-</div>
-<a class="anchor" id="ga7158c969eed13894a54ebb8784381e1f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_socket_init </td>
-          <td>(</td>
-          <td class="paramtype">void *&#160;</td>
-          <td class="paramname"><em>platform_data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the lwpa_socket module. </p>
-<p>Some platforms require initialization before socket/networking functionality can be used. Others do not, and on those platforms this will simply be an empty function. This function can be called multiple times in a given application, but it must be paired with an equal number of calls to <a class="el" href="group__lwpa__socket.html#ga6a9fbbc255caa2094bded46554aeb8c0" title="Deinitialize the lwpa_socket module. ">lwpa_socket_deinit()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">platform_data</td><td>A pointer to platform-specific data to use on initialization. The specific type is defined in lwpa_socket_[platform].h if it exists for a platform. NULL indicates use defaults. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Initialization successful.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: An internal library or system call error occurred.<br />
-</dd></dl>
 
 </div>
 </div>
