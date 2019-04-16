@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('group__lwpa__error.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga013383232f0cf6f60ec6fb305650149e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga013383232f0cf6f60ec6fb305650149e"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_NUM_ERROR_CODES</b>&#160;&#160;&#160;27</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_NUM_ERROR_CODES</b>&#160;&#160;&#160;28</td></tr>
 <tr class="separator:ga013383232f0cf6f60ec6fb305650149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadd5acb6baf8584951dd378c7e92ddf54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__error.html#gadd5acb6baf8584951dd378c7e92ddf54">lwpa_strerror</a>(errcode)&#160;&#160;&#160;(((int)errcode &lt;= 0 &amp;&amp; (int)errcode &gt; -LWPA_NUM_ERROR_CODES) ? lwpa_error_strings[-((int)errcode)] : NULL)</td></tr>
 <tr class="memdesc:gadd5acb6baf8584951dd378c7e92ddf54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of an error code.  <a href="#gadd5acb6baf8584951dd378c7e92ddf54">More...</a><br /></td></tr>
@@ -199,8 +199,9 @@ Enumerations</h2></td></tr>
 <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8800538947262274425437ff11e84b25">kLwpaErrNotInit</a> = -23, 
 <br />
 &#160;&#160;<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa2c6066ceb92f5c9ca1ad8aa83694d88c">kLwpaErrNoNetints</a> = -24, 
-<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf">kLwpaErrNotImpl</a> = -25, 
-<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a> = -26
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f">kLwpaErrNoSockets</a> = -25, 
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf">kLwpaErrNotImpl</a> = -26, 
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9">kLwpaErrSys</a> = -27
 <br />
  }<tr class="memdesc:ga4de447127cf0baaa9afb0188e1e6afbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of error codes that can be returned by library functions.  <a href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">More...</a><br /></td></tr>
 </td></tr>
@@ -329,6 +330,9 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_error_st
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga4de447127cf0baaa9afb0188e1e6afbfa2c6066ceb92f5c9ca1ad8aa83694d88c"></a>kLwpaErrNoNetints&#160;</td><td class="fielddoc">
 <p>No network interfaces were found on the system, or there are no network interfaces of a type that can satisfy the call being made. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f"></a>kLwpaErrNoSockets&#160;</td><td class="fielddoc">
+<p>No sockets have been added to the context. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf"></a>kLwpaErrNotImpl&#160;</td><td class="fielddoc">
 <p>A function or specific use of a function is not implemented yet. </p>

@@ -23,7 +23,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "acn__prot_8h_source.html",
-"group__lwpa__socket.html#ga10d0c83dc2a02b3b4fec265f769c4b13"
+"group__lwpa__socket.html#ga068077e81f7e9a8613d856b6ca6d9166"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

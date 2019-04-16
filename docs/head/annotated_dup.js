@@ -12,7 +12,7 @@ var annotated_dup =
     [ "LwpaNetintInfo", "struct_lwpa_netint_info.html", "struct_lwpa_netint_info" ],
     [ "LwpaPdu", "struct_lwpa_pdu.html", "struct_lwpa_pdu" ],
     [ "LwpaPduConstraints", "struct_lwpa_pdu_constraints.html", "struct_lwpa_pdu_constraints" ],
-    [ "LwpaPollfd", "struct_lwpa_pollfd.html", "struct_lwpa_pollfd" ],
+    [ "LwpaPollEvent", "struct_lwpa_poll_event.html", "struct_lwpa_poll_event" ],
     [ "LwpaRbIter", "struct_lwpa_rb_iter.html", "struct_lwpa_rb_iter" ],
     [ "LwpaRbNode", "struct_lwpa_rb_node.html", "struct_lwpa_rb_node" ],
     [ "LwpaRbTree", "struct_lwpa_rb_tree.html", "struct_lwpa_rb_tree" ],

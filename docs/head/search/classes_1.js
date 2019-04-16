@@ -11,7 +11,7 @@ var searchData=
   ['lwpanetintinfo',['LwpaNetintInfo',['../struct_lwpa_netint_info.html',1,'']]],
   ['lwpapdu',['LwpaPdu',['../struct_lwpa_pdu.html',1,'']]],
   ['lwpapduconstraints',['LwpaPduConstraints',['../struct_lwpa_pdu_constraints.html',1,'']]],
-  ['lwpapollfd',['LwpaPollfd',['../struct_lwpa_pollfd.html',1,'']]],
+  ['lwpapollevent',['LwpaPollEvent',['../struct_lwpa_poll_event.html',1,'']]],
   ['lwparbiter',['LwpaRbIter',['../struct_lwpa_rb_iter.html',1,'']]],
   ['lwparbnode',['LwpaRbNode',['../struct_lwpa_rb_node.html',1,'']]],
   ['lwparbtree',['LwpaRbTree',['../struct_lwpa_rb_tree.html',1,'']]],
