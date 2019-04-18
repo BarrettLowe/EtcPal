@@ -267,13 +267,16 @@ Functions</h2></td></tr>
 <tr class="memitem:gac75213ffc31b40209d7190dc2237e37a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gac75213ffc31b40209d7190dc2237e37a">lwpa_poll_context_init</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context)</td></tr>
 <tr class="memdesc:gac75213ffc31b40209d7190dc2237e37a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new context for waiting on events on multiple sockets.  <a href="#gac75213ffc31b40209d7190dc2237e37a">More...</a><br /></td></tr>
 <tr class="separator:gac75213ffc31b40209d7190dc2237e37a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3f5214a5a60d0727cd87509331ac31c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga3f5214a5a60d0727cd87509331ac31c7">lwpa_poll_context_deinit</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context)</td></tr>
+<tr class="memitem:ga3f5214a5a60d0727cd87509331ac31c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga3f5214a5a60d0727cd87509331ac31c7">lwpa_poll_context_deinit</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context)</td></tr>
 <tr class="memdesc:ga3f5214a5a60d0727cd87509331ac31c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate a previously-initialized LwpaPollContext structure.  <a href="#ga3f5214a5a60d0727cd87509331ac31c7">More...</a><br /></td></tr>
 <tr class="separator:ga3f5214a5a60d0727cd87509331ac31c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac127a40cf706e64bdb123785edd95be4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gac127a40cf706e64bdb123785edd95be4">lwpa_poll_add_socket</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket, <a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a> events)</td></tr>
-<tr class="memdesc:gac127a40cf706e64bdb123785edd95be4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new socket to an LwpaPollContext.  <a href="#gac127a40cf706e64bdb123785edd95be4">More...</a><br /></td></tr>
-<tr class="separator:gac127a40cf706e64bdb123785edd95be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaccbbb8445bb7a6c467807e4f7b8d2605"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gaccbbb8445bb7a6c467807e4f7b8d2605">lwpa_poll_remove_socket</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket)</td></tr>
+<tr class="memitem:ga4659720223c84abac2541a05b11eb371"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga4659720223c84abac2541a05b11eb371">lwpa_poll_add_socket</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket, <a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a> events, void *user_data)</td></tr>
+<tr class="memdesc:ga4659720223c84abac2541a05b11eb371"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new socket to an LwpaPollContext.  <a href="#ga4659720223c84abac2541a05b11eb371">More...</a><br /></td></tr>
+<tr class="separator:ga4659720223c84abac2541a05b11eb371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1961577a68ff72d7d5924928202712fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga1961577a68ff72d7d5924928202712fc">lwpa_poll_modify_socket</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket, <a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a> new_events, void *new_user_data)</td></tr>
+<tr class="memdesc:ga1961577a68ff72d7d5924928202712fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the set of events or user data associated with a monitored socket.  <a href="#ga1961577a68ff72d7d5924928202712fc">More...</a><br /></td></tr>
+<tr class="separator:ga1961577a68ff72d7d5924928202712fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaccbbb8445bb7a6c467807e4f7b8d2605"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gaccbbb8445bb7a6c467807e4f7b8d2605">lwpa_poll_remove_socket</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket)</td></tr>
 <tr class="memdesc:gaccbbb8445bb7a6c467807e4f7b8d2605"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a monitored socket from an LwpaPollContext.  <a href="#gaccbbb8445bb7a6c467807e4f7b8d2605">More...</a><br /></td></tr>
 <tr class="separator:gaccbbb8445bb7a6c467807e4f7b8d2605"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga24182f58155e7894da11e4f621ad42c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga24182f58155e7894da11e4f621ad42c8">lwpa_poll_wait</a> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="struct_lwpa_poll_event.html">LwpaPollEvent</a> *event, int timeout_ms)</td></tr>
@@ -294,12 +297,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4110e753475f9505e87b88e0097befb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga4110e753475f9505e87b88e0097befb4">lwpa_inet_pton</a> (<a class="el" href="group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048">lwpa_iptype_t</a> type, const char *src, <a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> *dest)</td></tr>
 <tr class="memdesc:ga4110e753475f9505e87b88e0097befb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from text to binary form.  <a href="#ga4110e753475f9505e87b88e0097befb4">More...</a><br /></td></tr>
 <tr class="separator:ga4110e753475f9505e87b88e0097befb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4659720223c84abac2541a05b11eb371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4659720223c84abac2541a05b11eb371"></a>
-<a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_poll_add_socket</b> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket, <a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a> events, void *user_data)</td></tr>
-<tr class="separator:ga4659720223c84abac2541a05b11eb371"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1961577a68ff72d7d5924928202712fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1961577a68ff72d7d5924928202712fc"></a>
-<a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_poll_modify_socket</b> (<a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *context, <a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> socket, <a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a> new_events, void *new_user_data)</td></tr>
-<tr class="separator:ga1961577a68ff72d7d5924928202712fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Flags for lwpa_recvfrom()</h2></td></tr>
@@ -839,7 +836,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (failure). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (failure). </dd></dl>
 
 </div>
 </div>
@@ -877,7 +874,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -904,7 +901,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -942,7 +939,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1018,7 +1015,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (an error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (an error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1056,7 +1053,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1094,7 +1091,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1153,7 +1150,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1198,9 +1195,11 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1245,9 +1244,11 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Success. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid parameter. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1284,7 +1285,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1314,7 +1315,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac127a40cf706e64bdb123785edd95be4"></a>
+<a class="anchor" id="ga4659720223c84abac2541a05b11eb371"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -1334,7 +1335,13 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a>&#160;</td>
-          <td class="paramname"><em>events</em>&#160;</td>
+          <td class="paramname"><em>events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>user_data</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1352,13 +1359,17 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
     <tr><td class="paramdir">[in,out]</td><td class="paramname">context</td><td>Pointer to LwpaPollContext to which to add new socket. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">socket</td><td>Socket to start monitoring. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">events</td><td>Events to monitor for on this socket. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">user_data</td><td>Opaque data pointer that is passed back with events on this socket. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Socket added successfully.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8f782e7c6ea448431c50f088147c5c43" title="A dynamic memory allocation failed, or there is no space left in a statically allocated array...">kLwpaErrNoMem</a>: <a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is exceeded in this context.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Socket added successfully. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8f782e7c6ea448431c50f088147c5c43" title="A dynamic memory allocation failed, or there is no space left in a statically allocated array...">kLwpaErrNoMem</a>: <a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is exceeded in this context. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1384,8 +1395,6 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Deinit successful.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd></dl>
 
 </div>
 </div>
@@ -1412,9 +1421,68 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Init successful.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Init successful. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1961577a68ff72d7d5924928202712fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_poll_modify_socket </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690">LwpaPollContext</a> *&#160;</td>
+          <td class="paramname"><em>context</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a>&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f">lwpa_poll_events_t</a>&#160;</td>
+          <td class="paramname"><em>new_events</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>new_user_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Change the set of events or user data associated with a monitored socket. </p>
+<p>The new events and/or user data will be used on the next call to <a class="el" href="group__lwpa__socket.html#ga24182f58155e7894da11e4f621ad42c8" title="Wait for an event on a set of sockets defined by an LwpaPollContext. ">lwpa_poll_wait()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">context</td><td>Pointer to LwpaPollContext on which to modify socket parameters. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">socket</td><td>Socket to modify. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_events</td><td>New set of events to monitor for on this socket. Passing the same events as before is also valid if only the user data is being changed. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">new_user_data</td><td>New opaque data pointer that is passed back with events on this socket. Passing the same pointer as before is also valid if only the events are being changed. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Socket modified successfully. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa41ff891710b19b8613b5db809a124cf4" title="An identifier or handle passed to a function was not valid or not previously initialized. ">kLwpaErrNotFound</a>: Socket was not previously added to this context. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1451,10 +1519,6 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Socket removed successfully.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa41ff891710b19b8613b5db809a124cf4" title="An identifier or handle passed to a function was not valid or not previously initialized. ">kLwpaErrNotFound</a>: Socket was not previously added to the context.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
@@ -1489,7 +1553,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Wait for an event on a set of sockets defined by an LwpaPollContext. </p>
-<p>Waits for events defined by previous calls to <a class="el" href="group__lwpa__socket.html#gac127a40cf706e64bdb123785edd95be4" title="Add a new socket to an LwpaPollContext. ">lwpa_poll_add_socket()</a> on this context structure. Reports one event at a time in the output 'event' parameter. Waits up to timeout_ms milliseconds; use <a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861" title="For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely. ">LWPA_WAIT_FOREVER</a> to wait indefinitely. If there are no sockets currently added to the context structure, returns the special error code <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f" title="No sockets have been added to the context. ">kLwpaErrNoSockets</a> immediately.</p>
+<p>Waits for events defined by previous calls to <a class="el" href="group__lwpa__socket.html#ga4659720223c84abac2541a05b11eb371" title="Add a new socket to an LwpaPollContext. ">lwpa_poll_add_socket()</a> on this context structure. Reports one event at a time in the output 'event' parameter. Waits up to timeout_ms milliseconds; use <a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861" title="For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely. ">LWPA_WAIT_FOREVER</a> to wait indefinitely. If there are no sockets currently added to the context structure, returns the special error code <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f" title="No sockets have been added to the context. ">kLwpaErrNoSockets</a> immediately.</p>
 <p>Uses OS-specific APIs for monitoring multiple sockets under the hood. Details:</p>
 <table class="doxtable">
 <tr>
@@ -1505,12 +1569,17 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: An event occurred, and information is available in the event argument.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f" title="No sockets have been added to the context. ">kLwpaErrNoSockets</a>: The context has no sockets added to it.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5411409d0e04a1291da3130d90c54a66" title="A connection timed out. ">kLwpaErrTimedOut</a>: Timed out waiting for an event to occur.<br />
- <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System or socket call failed.<br />
- Other lwpa_error_t values are possible from underlying socket calls. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: An event occurred, and information is available in the event argument. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f" title="No sockets have been added to the context. ">kLwpaErrNoSockets</a>: The context has no sockets added to it. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5411409d0e04a1291da3130d90c54a66" title="A connection timed out. ">kLwpaErrTimedOut</a>: Timed out waiting for an event to occur. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9" title="A system call or C library call failed in a way not covered by other errors. ">kLwpaErrSys</a>: System or socket call failed. </dd>
+<dd>
+Other <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> values are possible from underlying socket calls. </dd></dl>
 
 </div>
 </div>
@@ -1561,7 +1630,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes received (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes received (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1620,7 +1689,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes received (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes received (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1672,7 +1741,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1731,7 +1800,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes sent (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1768,7 +1837,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1827,7 +1896,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1864,7 +1933,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>
@@ -1909,7 +1978,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or lwpa_error_t code from system (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
 
 </div>
 </div>

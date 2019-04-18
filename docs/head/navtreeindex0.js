@@ -247,7 +247,7 @@ var NAVTREEINDEX0 =
 "group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef":[1,0,0,1,0],
 "group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c":[1,0,0,1,3],
 "group__lwpa__socket.html":[1,0,12],
-"group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d":[1,0,12,69],
+"group__lwpa__socket.html#ga00c14a0982e98d8bf1c1aaf8ceaeb64d":[1,0,12,70],
 "group__lwpa__socket.html#ga01f60de71f46a394a6421a702475fe2a":[1,0,12,43],
 "group__lwpa__socket.html#ga03acc4ad773d79b5c22644c28d27396f":[1,0,12,31]
 };

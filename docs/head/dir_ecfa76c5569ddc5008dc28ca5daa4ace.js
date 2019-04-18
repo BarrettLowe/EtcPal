@@ -18,5 +18,6 @@ var dir_ecfa76c5569ddc5008dc28ca5daa4ace =
     [ "socket.h", "socket_8h_source.html", null ],
     [ "thread.h", "thread_8h_source.html", null ],
     [ "timer.h", "timer_8h_source.html", null ],
-    [ "uuid.h", "uuid_8h_source.html", null ]
+    [ "uuid.h", "uuid_8h_source.html", null ],
+    [ "version.h", "version_8h.html", "version_8h" ]
 ];
