@@ -8,6 +8,10 @@ var group__lwpa__socket =
       [ "group", "struct_lwpa_mreq.html#a9d92abf5e7c4488e5d9dfc5ab9376e89", null ],
       [ "netint", "struct_lwpa_mreq.html#aeb9189718092613b721ca97f43942753", null ]
     ] ],
+    [ "LwpaGroupReq", "struct_lwpa_group_req.html", [
+      [ "group", "struct_lwpa_group_req.html#a9d92abf5e7c4488e5d9dfc5ab9376e89", null ],
+      [ "ifindex", "struct_lwpa_group_req.html#a01e636f8746c84f1cf3d45c4afbfde35", null ]
+    ] ],
     [ "LwpaPollEvent", "struct_lwpa_poll_event.html", [
       [ "err", "struct_lwpa_poll_event.html#a2d84f39897e3cbaf81be57d00dce398b", null ],
       [ "events", "struct_lwpa_poll_event.html#a10ea004722be835cfea1f0c588d6d39c", null ],
@@ -23,8 +27,8 @@ var group__lwpa__socket =
       [ "ai_socktype", "struct_lwpa_addrinfo.html#a2109130e73586150c41fed16311e1af6", null ],
       [ "pd", "struct_lwpa_addrinfo.html#aecf048e565653706ca7120829d06e047", null ]
     ] ],
-    [ "LWPA_INET6_ADDRSTRLEN", "group__lwpa__socket.html#ga078d3101f67934bce6f13f193a4832ea", null ],
-    [ "LWPA_INET_ADDRSTRLEN", "group__lwpa__socket.html#gac9a7a8dbe7def9af922af1a99b4c6569", null ],
+    [ "LWPA_IP_ADD_MEMBERSHIP", "group__lwpa__socket.html#ga5c54cc7bb91aa5d1d06491b74515fb45", null ],
+    [ "LWPA_IP_DROP_MEMBERSHIP", "group__lwpa__socket.html#gaffd798a26996201a08ae7489f69adb57", null ],
     [ "LWPA_IP_MULTICAST_IF", "group__lwpa__socket.html#ga33867e9f8eeb3cbdd8513483026935f8", null ],
     [ "LWPA_IP_MULTICAST_LOOP", "group__lwpa__socket.html#gad0175e8affc43157d2487763ef6660fc", null ],
     [ "LWPA_IP_MULTICAST_TTL", "group__lwpa__socket.html#ga2e184196155e7aba01e9f7bc315003b1", null ],
@@ -59,6 +63,7 @@ var group__lwpa__socket =
     [ "lwpa_poll_events_t", "group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f", null ],
     [ "lwpa_socket_t", "group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6", null ],
     [ "LwpaAddrinfo", "group__lwpa__socket.html#ga10d0c83dc2a02b3b4fec265f769c4b13", null ],
+    [ "LwpaGroupReq", "group__lwpa__socket.html#gaf497966f431d877d7219574b42e94f4c", null ],
     [ "LwpaLinger", "group__lwpa__socket.html#ga9976c8ca91c28be5e163945e1e1df0eb", null ],
     [ "LwpaMreq", "group__lwpa__socket.html#gaf4b1e36ceb83d78b0e4aa513d9fc7af1", null ],
     [ "LwpaPollContext", "group__lwpa__socket.html#ga78118eb52c46ee1c731ac66c443a4690", null ],

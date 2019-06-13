@@ -166,9 +166,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7e2c2e183c84b10d80c57fccdd49c9f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__signal.html#ga7e2c2e183c84b10d80c57fccdd49c9f7">lwpa_signal_create</a> (<a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *id)</td></tr>
 <tr class="memdesc:ga7e2c2e183c84b10d80c57fccdd49c9f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new signal.  <a href="#ga7e2c2e183c84b10d80c57fccdd49c9f7">More...</a><br /></td></tr>
 <tr class="separator:ga7e2c2e183c84b10d80c57fccdd49c9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga64d1e2d7b517cdb5f2c3d33081ff6d7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c">lwpa_signal_wait</a> (<a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *id, int wait_ms)</td></tr>
-<tr class="memdesc:ga64d1e2d7b517cdb5f2c3d33081ff6d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal.  <a href="#ga64d1e2d7b517cdb5f2c3d33081ff6d7c">More...</a><br /></td></tr>
-<tr class="separator:ga64d1e2d7b517cdb5f2c3d33081ff6d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1e8c49a266c700a182c907ef7aa29bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf">lwpa_signal_wait</a> (<a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *id)</td></tr>
+<tr class="memdesc:gad1e8c49a266c700a182c907ef7aa29bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal.  <a href="#gad1e8c49a266c700a182c907ef7aa29bf">More...</a><br /></td></tr>
+<tr class="separator:gad1e8c49a266c700a182c907ef7aa29bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga704ec739497e224a990037524a9086ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__signal.html#ga704ec739497e224a990037524a9086ab">lwpa_signal_poll</a> (<a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *id)</td></tr>
+<tr class="memdesc:ga704ec739497e224a990037524a9086ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the state of a signal.  <a href="#ga704ec739497e224a990037524a9086ab">More...</a><br /></td></tr>
+<tr class="separator:ga704ec739497e224a990037524a9086ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab967464bd5c6bd05d8d110155777159c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c">lwpa_signal_post</a> (<a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *id)</td></tr>
 <tr class="memdesc:gab967464bd5c6bd05d8d110155777159c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a signal.  <a href="#gab967464bd5c6bd05d8d110155777159c">More...</a><br /></td></tr>
 <tr class="separator:gab967464bd5c6bd05d8d110155777159c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,7 +181,20 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A signal object. </p>
-<p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal. ">lwpa_signal_wait()</a> blocks until <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a> is called. </p>
+<p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf" title="Wait for a signal. ">lwpa_signal_wait()</a> blocks until <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a> is called.</p>
+<p>lwpa_signal implementations use the following constructs under the hood on various platforms:</p>
+<table class="doxtable">
+<tr>
+<th>On: </th><th>lwpa_mutex uses:  </th></tr>
+<tr>
+<td>FreeRTOS/lwIP </td><td><a href="https://www.freertos.org/Embedded-RTOS-Binary-Semaphores.html">Binary Semaphores</a> </td></tr>
+<tr>
+<td>Linux </td><td><a href="https://linux.die.net/man/3/pthread_cond_init">pthread_cond</a> </td></tr>
+<tr>
+<td>MQX </td><td>Lightweight Events </td></tr>
+<tr>
+<td>Windows </td><td><a href="https://docs.microsoft.com/en-us/windows/desktop/sync/using-event-objects">Event objects</a> </td></tr>
+</table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="gaad04ad0c8d71e1b5b6a4e363965e43ef"></a>
 <div class="memitem">
@@ -211,14 +227,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new signal. </p>
-<p>Signals are created in the "unsignaled" state; that is, the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal. ">lwpa_signal_wait()</a> will block.</p>
+<p>Signals are created in the "unsignaled" state; that is, the first call to <a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf" title="Wait for a signal. ">lwpa_signal_wait()</a> will block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Signal identifier on which to create a signal. If this function returns true, id becomes valid for calls to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal. ">lwpa_signal_wait()</a> and <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Signal identifier on which to create a signal. If this function returns true, id becomes valid for calls to <a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf" title="Wait for a signal. ">lwpa_signal_wait()</a> and <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the signal was created) or false (the signal was not created). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The signal was created. </dd>
+<dd>
+false: The signal was not created. </dd></dl>
 
 </div>
 </div>
@@ -246,6 +264,34 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga704ec739497e224a990037524a9086ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_signal_poll </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Poll the state of a signal. </p>
+<p>Returns immediately whether the object is in a "signaled" state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal to poll. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The signal is in a signaled state. </dd>
+<dd>
+false: The signal is not in a signaled state (or the signal is invalid). </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="gab967464bd5c6bd05d8d110155777159c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -261,7 +307,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Post a signal. </p>
-<p>If no threads are waiting for the signal, puts the signal object in the "signaled" state (a subsequent call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal. ">lwpa_signal_wait()</a> will return immediately). Otherwise, wakes up the first thread that waited for the signal.</p>
+<p>If no threads are waiting for the signal, puts the signal object in the "signaled" state (a subsequent call to <a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf" title="Wait for a signal. ">lwpa_signal_wait()</a> will return immediately). Otherwise, wakes up the first thread that waited for the signal.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal to post. </td></tr>
@@ -271,7 +317,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga64d1e2d7b517cdb5f2c3d33081ff6d7c"></a>
+<a class="anchor" id="gad1e8c49a266c700a182c907ef7aa29bf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -279,32 +325,23 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_signal_wait </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef">lwpa_signal_t</a> *&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>wait_ms</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Wait for a signal. </p>
-<p>If this is the first call to <a class="el" href="group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c" title="Wait for a signal. ">lwpa_signal_wait()</a> after the signal object has been posted via <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a>, returns immediately. Otherwise, blocks until a call to <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a> on the signal object.</p>
+<p>If this is the first call to <a class="el" href="group__lwpa__signal.html#gad1e8c49a266c700a182c907ef7aa29bf" title="Wait for a signal. ">lwpa_signal_wait()</a> after the signal object has been posted via <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a>, returns immediately. Otherwise, blocks until a call to <a class="el" href="group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c" title="Post a signal. ">lwpa_signal_post()</a> on the signal object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal for which to wait. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wait_ms</td><td>How long to wait for the signal, in milliseconds (use <a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861" title="For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely. ">LWPA_WAIT_FOREVER</a> to wait indefinitely). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the signal was received) or false (timeout or failure while waiting for the signal). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The signal was received. </dd>
+<dd>
+false: The signal is invalid or an error occurred. </dd></dl>
 
 </div>
 </div>

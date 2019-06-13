@@ -4,5 +4,6 @@ var group__lwpa__mutex =
     [ "lwpa_mutex_create", "group__lwpa__mutex.html#ga33eb7f5c98da5276a454e906cafeea87", null ],
     [ "lwpa_mutex_destroy", "group__lwpa__mutex.html#gac4684dd66997cab2515ae883b5ac51d8", null ],
     [ "lwpa_mutex_give", "group__lwpa__mutex.html#ga2d9b3e1d0507bc519c6da8cf1c1981f4", null ],
-    [ "lwpa_mutex_take", "group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2", null ]
+    [ "lwpa_mutex_take", "group__lwpa__mutex.html#gaddfd883159e43fd194fbf3b355411263", null ],
+    [ "lwpa_mutex_try_take", "group__lwpa__mutex.html#gadc322cce9079e4f7f7ab9e9e685633b0", null ]
 ];

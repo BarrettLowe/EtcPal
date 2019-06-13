@@ -153,11 +153,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>lwpa modules are typically optimized for embedded platforms and thus designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
 <p>To jump right into the documentation, check out the <a class="el" href="group__lwpa.html">Modules Overview</a>.</p>
 <h2>Source Location</h2>
-<p>the sources for lwpa are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  [platform_name]/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [platform-specific lwpa sources]</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  [platform-neutral lwpa sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  [platform_name]/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [platform-specific lwpa headers]</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  [platform-neutral lwpa headers]</div></div><!-- fragment --><p> Some lwpa headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
-<h2>Platforms</h2>
-<p>lwpa is currently ported for the following platforms:</p>
+<p>the sources for lwpa are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS name]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa sources]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS name]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa headers]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa headers]</div></div><!-- fragment --><p> Some lwpa headers are platform-specific and duplicated for each OS. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
+<h2>Supported Platforms</h2>
+<p>lwpa is currently ported for the following operating systems:</p>
 <ul>
 <li>Microsoft Windows</li>
+<li>Linux</li>
 <li>MQX RTOS</li>
 </ul>
 <h3>Building lwpa for Your Platform</h3>
@@ -174,7 +175,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h3>Platform Dependencies</h3>
 <p>The platform ports of lwpa have the following dependencies:</p><ul>
 <li>Microsoft Windows<ul>
-<li>Windows XP or higher</li>
+<li>Windows XP SP1 or later</li>
 </ul>
 </li>
 <li>MQX RTOS<ul>
@@ -182,7 +183,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 </li>
 <li>Linux<ul>
-<li>libuuid (<code>sudo apt-get install uuid-dev</code>) </li>
+<li>libuuid (if compiling lwpa, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
+<li>Optional Features:<ul>
+<li>lwpa_netint (Network Interfaces): Linux 2.2, glibc 2.3.3</li>
+<li>lwpa_socket (Socket interface): Linux 2.6 </li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

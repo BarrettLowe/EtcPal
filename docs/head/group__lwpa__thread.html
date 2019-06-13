@@ -193,9 +193,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gac3533f2da6b083858517fcb2ba660649"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__thread.html#gac3533f2da6b083858517fcb2ba660649">lwpa_thread_create</a> (<a class="el" href="group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c">lwpa_thread_t</a> *id, const <a class="el" href="struct_lwpa_thread_params.html">LwpaThreadParams</a> *params, void(*thread_fn)(void *), void *thread_arg)</td></tr>
 <tr class="memdesc:gac3533f2da6b083858517fcb2ba660649"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="#gac3533f2da6b083858517fcb2ba660649">More...</a><br /></td></tr>
 <tr class="separator:gac3533f2da6b083858517fcb2ba660649"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac98ab5b271d1fdf59b2df4d04f38f7f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__thread.html#gac98ab5b271d1fdf59b2df4d04f38f7f3">lwpa_thread_stop</a> (<a class="el" href="group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c">lwpa_thread_t</a> *id, int wait_ms)</td></tr>
-<tr class="memdesc:gac98ab5b271d1fdf59b2df4d04f38f7f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stop a thread.  <a href="#gac98ab5b271d1fdf59b2df4d04f38f7f3">More...</a><br /></td></tr>
-<tr class="separator:gac98ab5b271d1fdf59b2df4d04f38f7f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac43cbc0cdfd62e365ad76e1110fe359c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__thread.html#gac43cbc0cdfd62e365ad76e1110fe359c">lwpa_thread_join</a> (<a class="el" href="group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c">lwpa_thread_t</a> *id)</td></tr>
+<tr class="memdesc:gac43cbc0cdfd62e365ad76e1110fe359c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a thread to finish execution.  <a href="#gac43cbc0cdfd62e365ad76e1110fe359c">More...</a><br /></td></tr>
+<tr class="separator:gac43cbc0cdfd62e365ad76e1110fe359c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b3993fb872deb53b0129d43429b5cb1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__thread.html#ga1b3993fb872deb53b0129d43429b5cb1">lwpa_thread_sleep</a> (int sleep_ms)</td></tr>
 <tr class="memdesc:ga1b3993fb872deb53b0129d43429b5cb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a platform-neutral sleep.  <a href="#ga1b3993fb872deb53b0129d43429b5cb1">More...</a><br /></td></tr>
 <tr class="separator:ga1b3993fb872deb53b0129d43429b5cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -316,7 +316,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new thread. </p>
-<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to <a class="el" href="group__lwpa__thread.html#gac98ab5b271d1fdf59b2df4d04f38f7f3" title="Stop a thread. ">lwpa_thread_stop()</a> on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless <a class="el" href="group__lwpa__thread.html#gac98ab5b271d1fdf59b2df4d04f38f7f3" title="Stop a thread. ">lwpa_thread_stop()</a> is called.</p>
+<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to lwpa_thread_stop() on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless lwpa_thread_stop() is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Identifier for the thread that was created. </td></tr>
@@ -326,7 +326,37 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the thread was created) or false (the thread was not created). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The thread was created. </dd>
+<dd>
+false: The thread was not created. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac43cbc0cdfd62e365ad76e1110fe359c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_thread_join </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c">lwpa_thread_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Wait for a thread to finish execution. </p>
+<p>Blocks until the thread has exited.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the thread to stop. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The thread was stopped. </dd>
+<dd>
+false: An error occurred. </dd></dl>
 
 </div>
 </div>
@@ -351,43 +381,6 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="gac98ab5b271d1fdf59b2df4d04f38f7f3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_thread_stop </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c">lwpa_thread_t</a> *&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>wait_ms</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stop a thread. </p>
-<p>On some platforms, wait_ms is ignored and you always wait forever for a thread to stop.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the thread to stop. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wait_ms</td><td>How long to wait for the thread to stop, in milliseconds (use <a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861" title="For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely. ">LWPA_WAIT_FOREVER</a> to wait indefinitely). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the thread was stopped) or false (an error occurred). </dd></dl>
 
 </div>
 </div>

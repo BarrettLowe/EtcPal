@@ -1,7 +1,10 @@
 var annotated_dup =
 [
     [ "lwpa", "namespacelwpa.html", "namespacelwpa" ],
+    [ "CachedNetintInfo", "struct_cached_netint_info.html", "struct_cached_netint_info" ],
+    [ "DefaultNetint", "struct_default_netint.html", "struct_default_netint" ],
     [ "LwpaAddrinfo", "struct_lwpa_addrinfo.html", "struct_lwpa_addrinfo" ],
+    [ "LwpaGroupReq", "struct_lwpa_group_req.html", "struct_lwpa_group_req" ],
     [ "LwpaIpAddr", "struct_lwpa_ip_addr.html", "struct_lwpa_ip_addr" ],
     [ "LwpaLinger", "struct_lwpa_linger.html", "struct_lwpa_linger" ],
     [ "LwpaLogParams", "struct_lwpa_log_params.html", "struct_lwpa_log_params" ],

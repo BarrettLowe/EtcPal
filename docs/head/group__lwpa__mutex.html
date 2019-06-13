@@ -166,9 +166,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga33eb7f5c98da5276a454e906cafeea87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mutex.html#ga33eb7f5c98da5276a454e906cafeea87">lwpa_mutex_create</a> (<a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *id)</td></tr>
 <tr class="memdesc:ga33eb7f5c98da5276a454e906cafeea87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new mutex.  <a href="#ga33eb7f5c98da5276a454e906cafeea87">More...</a><br /></td></tr>
 <tr class="separator:ga33eb7f5c98da5276a454e906cafeea87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7726931cda1cdbf1307283b3894c4af2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2">lwpa_mutex_take</a> (<a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *id, int wait_ms)</td></tr>
-<tr class="memdesc:ga7726931cda1cdbf1307283b3894c4af2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a mutex.  <a href="#ga7726931cda1cdbf1307283b3894c4af2">More...</a><br /></td></tr>
-<tr class="separator:ga7726931cda1cdbf1307283b3894c4af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaddfd883159e43fd194fbf3b355411263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mutex.html#gaddfd883159e43fd194fbf3b355411263">lwpa_mutex_take</a> (<a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *id)</td></tr>
+<tr class="memdesc:gaddfd883159e43fd194fbf3b355411263"><td class="mdescLeft">&#160;</td><td class="mdescRight">Acquire a mutex.  <a href="#gaddfd883159e43fd194fbf3b355411263">More...</a><br /></td></tr>
+<tr class="separator:gaddfd883159e43fd194fbf3b355411263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc322cce9079e4f7f7ab9e9e685633b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mutex.html#gadc322cce9079e4f7f7ab9e9e685633b0">lwpa_mutex_try_take</a> (<a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *id)</td></tr>
+<tr class="memdesc:gadc322cce9079e4f7f7ab9e9e685633b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to acquire a mutex.  <a href="#gadc322cce9079e4f7f7ab9e9e685633b0">More...</a><br /></td></tr>
+<tr class="separator:gadc322cce9079e4f7f7ab9e9e685633b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2d9b3e1d0507bc519c6da8cf1c1981f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__mutex.html#ga2d9b3e1d0507bc519c6da8cf1c1981f4">lwpa_mutex_give</a> (<a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *id)</td></tr>
 <tr class="memdesc:ga2d9b3e1d0507bc519c6da8cf1c1981f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a mutex.  <a href="#ga2d9b3e1d0507bc519c6da8cf1c1981f4">More...</a><br /></td></tr>
 <tr class="separator:ga2d9b3e1d0507bc519c6da8cf1c1981f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -178,17 +181,19 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A mutual-exclusion (mutex) object. </p>
-<p>Sometimes also referred to as a critical section. Only one thread can take the mutex at a time using <a class="el" href="group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2" title="Acquire a mutex. ">lwpa_mutex_take()</a>. Where possible on real-time platforms, the mutex provides priority inheritance.</p>
+<p>Sometimes also referred to as a critical section. Only one thread can take the mutex at a time using <a class="el" href="group__lwpa__mutex.html#gaddfd883159e43fd194fbf3b355411263" title="Acquire a mutex. ">lwpa_mutex_take()</a>. Where possible on real-time platforms, the mutex provides priority inheritance.</p>
 <p>lwpa_mutex implementations use the following constructs under the hood on various platforms:</p>
 <table class="doxtable">
 <tr>
 <th>On: </th><th>lwpa_mutex uses:  </th></tr>
 <tr>
-<td>Windows </td><td><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> </td></tr>
-<tr>
 <td>FreeRTOS/lwIP </td><td><a href="https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html">Mutexes</a> </td></tr>
 <tr>
+<td>Linux </td><td><a href="https://linux.die.net/man/3/pthread_mutex_init">pthread_mutex</a> </td></tr>
+<tr>
 <td>MQX </td><td>Lightweight Semaphores </td></tr>
+<tr>
+<td>Windows </td><td><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> </td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="gadd901205c027cd6c51e26270d34b9a29"></a>
@@ -224,11 +229,13 @@ Functions</h2></td></tr>
 <p>Create a new mutex. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Mutex identifier on which to create a mutex. If this function returns true, id becomes valid for calls to <a class="el" href="group__lwpa__mutex.html#ga7726931cda1cdbf1307283b3894c4af2" title="Acquire a mutex. ">lwpa_mutex_take()</a> and <a class="el" href="group__lwpa__mutex.html#ga2d9b3e1d0507bc519c6da8cf1c1981f4" title="Release a mutex. ">lwpa_mutex_give()</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Mutex identifier on which to create a mutex. If this function returns true, id becomes valid for calls to <a class="el" href="group__lwpa__mutex.html#gaddfd883159e43fd194fbf3b355411263" title="Acquire a mutex. ">lwpa_mutex_take()</a> and <a class="el" href="group__lwpa__mutex.html#ga2d9b3e1d0507bc519c6da8cf1c1981f4" title="Release a mutex. ">lwpa_mutex_give()</a>. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the mutex was created) or false (the mutex was not created). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The mutex was created. </dd>
+<dd>
+false: The mutex was not created. </dd></dl>
 
 </div>
 </div>
@@ -280,7 +287,7 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga7726931cda1cdbf1307283b3894c4af2"></a>
+<a class="anchor" id="gaddfd883159e43fd194fbf3b355411263"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -288,31 +295,51 @@ Functions</h2></td></tr>
           <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_mutex_take </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>wait_ms</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Acquire a mutex. </p>
+<p>Blocks until the mutex is acquired.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the mutex to acquire. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">wait_ms</td><td>How long to wait to acquire the mutex, in milliseconds (use <a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861" title="For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely. ">LWPA_WAIT_FOREVER</a> to wait indefinitely). </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (the mutex was acquired) or false (timeout or failure while waiting to acquire the mutex). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The mutex was acquired. </dd>
+<dd>
+false: The mutex is invalid or an error occurred. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gadc322cce9079e4f7f7ab9e9e685633b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_mutex_try_take </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29">lwpa_mutex_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to acquire a mutex. </p>
+<p>Returns immediately either failure or success.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the mutex to try to acquire. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The mutex was acquired. </dd>
+<dd>
+false: The mutex was held by another thread, the mutex was invalid or an error occurred. </dd></dl>
 
 </div>
 </div>

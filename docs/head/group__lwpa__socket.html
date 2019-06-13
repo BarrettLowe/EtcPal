@@ -163,7 +163,10 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#ga55a81e9ec4a9aba857524b726ec75256" title="Get/Set, value is LwpaLinger. ">LWPA_SO_LINGER</a>.  <a href="struct_lwpa_linger.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_mreq.html">LwpaMreq</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaMreq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaMreq. ">LWPA_MCAST_LEAVE_GROUP</a>.  <a href="struct_lwpa_mreq.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#ga5c54cc7bb91aa5d1d06491b74515fb45" title="[Legacy IPv4-only option, use of LWPA_MCAST_JOIN_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_ADD_MEMBERSHIP</a> and <a class="el" href="group__lwpa__socket.html#gaffd798a26996201a08ae7489f69adb57" title="[Legacy IPv4-only option, use of LWPA_MCAST_LEAVE_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_DROP_MEMBERSHIP</a>.  <a href="struct_lwpa_mreq.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_group_req.html">LwpaGroupReq</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_LEAVE_GROUP</a>.  <a href="struct_lwpa_group_req.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_poll_event.html">LwpaPollEvent</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an event that occurred on a socket, for usage with <a class="el" href="group__lwpa__socket.html#ga24182f58155e7894da11e4f621ad42c8" title="Wait for an event on a set of sockets defined by an LwpaPollContext. ">lwpa_poll_wait()</a>.  <a href="struct_lwpa_poll_event.html#details">More...</a><br /></td></tr>
@@ -183,12 +186,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8b1613c8f5b5b7f5725e122db713b599"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8b1613c8f5b5b7f5725e122db713b599"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_POLL_VALID_INPUT_EVENT_MASK</b>&#160;&#160;&#160;0x0fu</td></tr>
 <tr class="separator:ga8b1613c8f5b5b7f5725e122db713b599"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac9a7a8dbe7def9af922af1a99b4c6569"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gac9a7a8dbe7def9af922af1a99b4c6569">LWPA_INET_ADDRSTRLEN</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:gac9a7a8dbe7def9af922af1a99b4c6569"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IPv4 address.  <a href="#gac9a7a8dbe7def9af922af1a99b4c6569">More...</a><br /></td></tr>
-<tr class="separator:gac9a7a8dbe7def9af922af1a99b4c6569"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga078d3101f67934bce6f13f193a4832ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga078d3101f67934bce6f13f193a4832ea">LWPA_INET6_ADDRSTRLEN</a>&#160;&#160;&#160;46</td></tr>
-<tr class="memdesc:ga078d3101f67934bce6f13f193a4832ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IPv6 address.  <a href="#ga078d3101f67934bce6f13f193a4832ea">More...</a><br /></td></tr>
-<tr class="separator:ga078d3101f67934bce6f13f193a4832ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -205,8 +202,11 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga9976c8ca91c28be5e163945e1e1df0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#ga55a81e9ec4a9aba857524b726ec75256" title="Get/Set, value is LwpaLinger. ">LWPA_SO_LINGER</a>.  <a href="#ga9976c8ca91c28be5e163945e1e1df0eb">More...</a><br /></td></tr>
 <tr class="separator:ga9976c8ca91c28be5e163945e1e1df0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf4b1e36ceb83d78b0e4aa513d9fc7af1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_mreq.html">LwpaMreq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gaf4b1e36ceb83d78b0e4aa513d9fc7af1">LwpaMreq</a></td></tr>
-<tr class="memdesc:gaf4b1e36ceb83d78b0e4aa513d9fc7af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaMreq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaMreq. ">LWPA_MCAST_LEAVE_GROUP</a>.  <a href="#gaf4b1e36ceb83d78b0e4aa513d9fc7af1">More...</a><br /></td></tr>
+<tr class="memdesc:gaf4b1e36ceb83d78b0e4aa513d9fc7af1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#ga5c54cc7bb91aa5d1d06491b74515fb45" title="[Legacy IPv4-only option, use of LWPA_MCAST_JOIN_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_ADD_MEMBERSHIP</a> and <a class="el" href="group__lwpa__socket.html#gaffd798a26996201a08ae7489f69adb57" title="[Legacy IPv4-only option, use of LWPA_MCAST_LEAVE_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_DROP_MEMBERSHIP</a>.  <a href="#gaf4b1e36ceb83d78b0e4aa513d9fc7af1">More...</a><br /></td></tr>
 <tr class="separator:gaf4b1e36ceb83d78b0e4aa513d9fc7af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf497966f431d877d7219574b42e94f4c"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_group_req.html">LwpaGroupReq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gaf497966f431d877d7219574b42e94f4c">LwpaGroupReq</a></td></tr>
+<tr class="memdesc:gaf497966f431d877d7219574b42e94f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_LEAVE_GROUP</a>.  <a href="#gaf497966f431d877d7219574b42e94f4c">More...</a><br /></td></tr>
+<tr class="separator:gaf497966f431d877d7219574b42e94f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga01f60de71f46a394a6421a702475fe2a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_poll_event.html">LwpaPollEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga01f60de71f46a394a6421a702475fe2a">LwpaPollEvent</a></td></tr>
 <tr class="memdesc:ga01f60de71f46a394a6421a702475fe2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of an event that occurred on a socket, for usage with <a class="el" href="group__lwpa__socket.html#ga24182f58155e7894da11e4f621ad42c8" title="Wait for an event on a set of sockets defined by an LwpaPollContext. ">lwpa_poll_wait()</a>.  <a href="#ga01f60de71f46a394a6421a702475fe2a">More...</a><br /></td></tr>
 <tr class="separator:ga01f60de71f46a394a6421a702475fe2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,32 +382,35 @@ Options for level LWPA_IPPROTO_IP or LWPA_IPPROTO_IPV6</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp97821d0c8053869a0d40417b52204563"></a>Used in the option parameter to <a class="el" href="group__lwpa__socket.html#gac74221647c7888f04191a50557c44ec6" title="Set an option value on a socket. ">lwpa_setsockopt()</a> and <a class="el" href="group__lwpa__socket.html#ga76b8fb450bb999d48e6a21f132d75e03" title="Get an option value for a socket. ">lwpa_getsockopt()</a>.</p>
 <p>Refer to the similarly-named option on your favorite man page for more details. </p>
 </td></tr>
-<tr class="memitem:ga2711703676dc5940b484b4831619c23d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2711703676dc5940b484b4831619c23d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga2711703676dc5940b484b4831619c23d">LWPA_IP_TTL</a>&#160;&#160;&#160;11</td></tr>
-<tr class="memdesc:ga2711703676dc5940b484b4831619c23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is int. <br /></td></tr>
+<tr class="memitem:ga2711703676dc5940b484b4831619c23d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga2711703676dc5940b484b4831619c23d">LWPA_IP_TTL</a>&#160;&#160;&#160;11</td></tr>
+<tr class="memdesc:ga2711703676dc5940b484b4831619c23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is int.  <a href="#ga2711703676dc5940b484b4831619c23d">More...</a><br /></td></tr>
 <tr class="separator:ga2711703676dc5940b484b4831619c23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33867e9f8eeb3cbdd8513483026935f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga33867e9f8eeb3cbdd8513483026935f8"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga33867e9f8eeb3cbdd8513483026935f8">LWPA_IP_MULTICAST_IF</a>&#160;&#160;&#160;12</td></tr>
-<tr class="memdesc:ga33867e9f8eeb3cbdd8513483026935f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. <br /></td></tr>
+<tr class="memitem:ga33867e9f8eeb3cbdd8513483026935f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga33867e9f8eeb3cbdd8513483026935f8">LWPA_IP_MULTICAST_IF</a>&#160;&#160;&#160;12</td></tr>
+<tr class="memdesc:ga33867e9f8eeb3cbdd8513483026935f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a> indicating interface IP address for IPv4, or int representing interface index for IPv6.  <a href="#ga33867e9f8eeb3cbdd8513483026935f8">More...</a><br /></td></tr>
 <tr class="separator:ga33867e9f8eeb3cbdd8513483026935f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2e184196155e7aba01e9f7bc315003b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2e184196155e7aba01e9f7bc315003b1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga2e184196155e7aba01e9f7bc315003b1">LWPA_IP_MULTICAST_TTL</a>&#160;&#160;&#160;13</td></tr>
-<tr class="memdesc:ga2e184196155e7aba01e9f7bc315003b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is int. <br /></td></tr>
+<tr class="memitem:ga2e184196155e7aba01e9f7bc315003b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga2e184196155e7aba01e9f7bc315003b1">LWPA_IP_MULTICAST_TTL</a>&#160;&#160;&#160;13</td></tr>
+<tr class="memdesc:ga2e184196155e7aba01e9f7bc315003b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is int.  <a href="#ga2e184196155e7aba01e9f7bc315003b1">More...</a><br /></td></tr>
 <tr class="separator:ga2e184196155e7aba01e9f7bc315003b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad0175e8affc43157d2487763ef6660fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad0175e8affc43157d2487763ef6660fc"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gad0175e8affc43157d2487763ef6660fc">LWPA_IP_MULTICAST_LOOP</a>&#160;&#160;&#160;14</td></tr>
 <tr class="memdesc:gad0175e8affc43157d2487763ef6660fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is boolean int. <br /></td></tr>
 <tr class="separator:gad0175e8affc43157d2487763ef6660fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga5c54cc7bb91aa5d1d06491b74515fb45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga5c54cc7bb91aa5d1d06491b74515fb45">LWPA_IP_ADD_MEMBERSHIP</a>&#160;&#160;&#160;15</td></tr>
+<tr class="memdesc:ga5c54cc7bb91aa5d1d06491b74515fb45"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Legacy IPv4-only option, use of <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_JOIN_GROUP</a> is preferred] Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_IP_ADD_MEMBERSHIP and LWPA_IP_DROP_MEMBERSHIP. ">LwpaMreq</a>.  <a href="#ga5c54cc7bb91aa5d1d06491b74515fb45">More...</a><br /></td></tr>
+<tr class="separator:ga5c54cc7bb91aa5d1d06491b74515fb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaffd798a26996201a08ae7489f69adb57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gaffd798a26996201a08ae7489f69adb57">LWPA_IP_DROP_MEMBERSHIP</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memdesc:gaffd798a26996201a08ae7489f69adb57"><td class="mdescLeft">&#160;</td><td class="mdescRight">[Legacy IPv4-only option, use of <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_LEAVE_GROUP</a> is preferred] Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_IP_ADD_MEMBERSHIP and LWPA_IP_DROP_MEMBERSHIP. ">LwpaMreq</a>.  <a href="#gaffd798a26996201a08ae7489f69adb57">More...</a><br /></td></tr>
+<tr class="separator:gaffd798a26996201a08ae7489f69adb57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab43a3e2b335d9bd16dd775829d259283"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab43a3e2b335d9bd16dd775829d259283"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283">LWPA_MCAST_JOIN_GROUP</a>&#160;&#160;&#160;15</td></tr>
-<tr class="memdesc:gab43a3e2b335d9bd16dd775829d259283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_MCAST_JOIN_GROUP and LWPA_MCAST_LEAVE_GROUP. ">LwpaMreq</a>. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283">LWPA_MCAST_JOIN_GROUP</a>&#160;&#160;&#160;17</td></tr>
+<tr class="memdesc:gab43a3e2b335d9bd16dd775829d259283"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set only, value is <a class="el" href="struct_lwpa_group_req.html" title="Option value for LWPA_MCAST_JOIN_GROUP and LWPA_MCAST_LEAVE_GROUP. ">LwpaGroupReq</a>. <br /></td></tr>
 <tr class="separator:gab43a3e2b335d9bd16dd775829d259283"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30d044b29e2f4a000f282ab64a0d74fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga30d044b29e2f4a000f282ab64a0d74fb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb">LWPA_MCAST_LEAVE_GROUP</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:ga30d044b29e2f4a000f282ab64a0d74fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_MCAST_JOIN_GROUP and LWPA_MCAST_LEAVE_GROUP. ">LwpaMreq</a>. <br /></td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb">LWPA_MCAST_LEAVE_GROUP</a>&#160;&#160;&#160;18</td></tr>
+<tr class="memdesc:ga30d044b29e2f4a000f282ab64a0d74fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set only, value is <a class="el" href="struct_lwpa_group_req.html" title="Option value for LWPA_MCAST_JOIN_GROUP and LWPA_MCAST_LEAVE_GROUP. ">LwpaGroupReq</a>. <br /></td></tr>
 <tr class="separator:ga30d044b29e2f4a000f282ab64a0d74fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad688a623a81aca19cbba492bf263da69"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gad688a623a81aca19cbba492bf263da69"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gad688a623a81aca19cbba492bf263da69">LWPA_IPV6_V6ONLY</a>&#160;&#160;&#160;17</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#gad688a623a81aca19cbba492bf263da69">LWPA_IPV6_V6ONLY</a>&#160;&#160;&#160;19</td></tr>
 <tr class="memdesc:gad688a623a81aca19cbba492bf263da69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get/Set, value is boolean int. <br /></td></tr>
 <tr class="separator:gad688a623a81aca19cbba492bf263da69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -481,31 +484,75 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 <p>#include "lwpa/socket.h"</p>
 <p>This module attempts to abstract the network socket interface from various platforms into one platform-neutral interface. The functions and flags are modeled after the BSD sockets interface. <em>UNIX Network Programming: The Sockets Networking API</em> by Stevens, Fenner, and Rudoff is highly recommended reading for those unfamiliar with this interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga078d3101f67934bce6f13f193a4832ea"></a>
+<a class="anchor" id="ga5c54cc7bb91aa5d1d06491b74515fb45"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LWPA_INET6_ADDRSTRLEN&#160;&#160;&#160;46</td>
+          <td class="memname">#define LWPA_IP_ADD_MEMBERSHIP&#160;&#160;&#160;15</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum length of the string representation of an IPv6 address. </p>
+<p>[Legacy IPv4-only option, use of <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_JOIN_GROUP</a> is preferred] Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_IP_ADD_MEMBERSHIP and LWPA_IP_DROP_MEMBERSHIP. ">LwpaMreq</a>. </p>
 
 </div>
 </div>
-<a class="anchor" id="gac9a7a8dbe7def9af922af1a99b4c6569"></a>
+<a class="anchor" id="gaffd798a26996201a08ae7489f69adb57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define LWPA_INET_ADDRSTRLEN&#160;&#160;&#160;16</td>
+          <td class="memname">#define LWPA_IP_DROP_MEMBERSHIP&#160;&#160;&#160;16</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Maximum length of the string representation of an IPv4 address. </p>
+<p>[Legacy IPv4-only option, use of <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_LEAVE_GROUP</a> is preferred] Set only, value is <a class="el" href="struct_lwpa_mreq.html" title="Option value for LWPA_IP_ADD_MEMBERSHIP and LWPA_IP_DROP_MEMBERSHIP. ">LwpaMreq</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga33867e9f8eeb3cbdd8513483026935f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_IP_MULTICAST_IF&#160;&#160;&#160;12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/Set, value is <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a> indicating interface IP address for IPv4, or int representing interface index for IPv6. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2e184196155e7aba01e9f7bc315003b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_IP_MULTICAST_TTL&#160;&#160;&#160;13</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/Set, value is int. </p>
+<p>Value indicates TTL for IPv4 or hop limit for IPv6. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga2711703676dc5940b484b4831619c23d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_IP_TTL&#160;&#160;&#160;11</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get/Set, value is int. </p>
+<p>Value indicates TTL for IPv4 or hop limit for IPv6. </p>
 
 </div>
 </div>
@@ -737,6 +784,20 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gaf497966f431d877d7219574b42e94f4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_lwpa_group_req.html">LwpaGroupReq</a>  <a class="el" href="struct_lwpa_group_req.html">LwpaGroupReq</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaGroupReq. ">LWPA_MCAST_LEAVE_GROUP</a>. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga9976c8ca91c28be5e163945e1e1df0eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -761,7 +822,7 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Option value for <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283" title="Set only, value is LwpaMreq. ">LWPA_MCAST_JOIN_GROUP</a> and <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb" title="Set only, value is LwpaMreq. ">LWPA_MCAST_LEAVE_GROUP</a>. </p>
+<p>Option value for <a class="el" href="group__lwpa__socket.html#ga5c54cc7bb91aa5d1d06491b74515fb45" title="[Legacy IPv4-only option, use of LWPA_MCAST_JOIN_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_ADD_MEMBERSHIP</a> and <a class="el" href="group__lwpa__socket.html#gaffd798a26996201a08ae7489f69adb57" title="[Legacy IPv4-only option, use of LWPA_MCAST_LEAVE_GROUP is preferred] Set only, value is LwpaMreq...">LWPA_IP_DROP_MEMBERSHIP</a>. </p>
 
 </div>
 </div>

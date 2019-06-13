@@ -21,6 +21,7 @@ var group__lwpa__error =
       [ "kLwpaErrNotConn", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae2395fe58a3c8e5b2a9961acfb3bc382", null ],
       [ "kLwpaErrShutdown", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfaa207564d0e57b7d7a0a3b8d42ab67321", null ],
       [ "kLwpaErrTimedOut", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa5411409d0e04a1291da3130d90c54a66", null ],
+      [ "kLwpaErrConnAborted", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa6d3e2a994acb0c378ce59660db281084", null ],
       [ "kLwpaErrConnRefused", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfae077aadad03eec8faad0c0898ee467ed", null ],
       [ "kLwpaErrAlready", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa39b9636ec0941f04c09909fd762abf04", null ],
       [ "kLwpaErrInProgress", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfabd9b5ff345fe83ebaa753e15f1615649", null ],
@@ -29,6 +30,7 @@ var group__lwpa__error =
       [ "kLwpaErrNoNetints", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa2c6066ceb92f5c9ca1ad8aa83694d88c", null ],
       [ "kLwpaErrNoSockets", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfad52bd3d08c7896fc789446dfb635243f", null ],
       [ "kLwpaErrNotImpl", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa88c03c75f09818b154ac60720977adcf", null ],
+      [ "kLwpaErrPerm", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfab2b2faed88fad885e984309f9c6423b7", null ],
       [ "kLwpaErrSys", "group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa43124f55ae7c2e0f869a49f1fc6e21c9", null ]
     ] ]
 ];

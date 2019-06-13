@@ -13,6 +13,7 @@ var searchData=
   ['lwpa_5fsocket_5ft',['lwpa_socket_t',['../group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6',1,'socket.dox']]],
   ['lwpa_5fthread_5ft',['lwpa_thread_t',['../group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c',1,'thread.dox']]],
   ['lwpaaddrinfo',['LwpaAddrinfo',['../group__lwpa__socket.html#ga10d0c83dc2a02b3b4fec265f769c4b13',1,'socket.h']]],
+  ['lwpagroupreq',['LwpaGroupReq',['../group__lwpa__socket.html#gaf497966f431d877d7219574b42e94f4c',1,'socket.h']]],
   ['lwpaipaddr',['LwpaIpAddr',['../group__lwpa__inet.html#ga42d5bf98514c41052f6f19d2e0a8691e',1,'inet.h']]],
   ['lwpalinger',['LwpaLinger',['../group__lwpa__socket.html#ga9976c8ca91c28be5e163945e1e1df0eb',1,'socket.h']]],
   ['lwpalogparams',['LwpaLogParams',['../group__lwpa__log.html#ga4e65f5bb723d9280bfece5770a224f2c',1,'log.h']]],

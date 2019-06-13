@@ -172,9 +172,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:abff5b2b0f50f02db2d130bb3c59cd5b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#abff5b2b0f50f02db2d130bb3c59cd5b0">mask</a></td></tr>
 <tr class="memdesc:abff5b2b0f50f02db2d130bb3c59cd5b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The subnet mask for this interface.  <a href="#abff5b2b0f50f02db2d130bb3c59cd5b0">More...</a><br /></td></tr>
 <tr class="separator:abff5b2b0f50f02db2d130bb3c59cd5b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab794a1d7268e4cf399af0600c73e0d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#aab794a1d7268e4cf399af0600c73e0d8">gate</a></td></tr>
-<tr class="memdesc:aab794a1d7268e4cf399af0600c73e0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The address of the default gateway for this interface.  <a href="#aab794a1d7268e4cf399af0600c73e0d8">More...</a><br /></td></tr>
-<tr class="separator:aab794a1d7268e4cf399af0600c73e0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af218cb57bca9340eb78204cb81754bc9"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#af218cb57bca9340eb78204cb81754bc9">mac</a> [LWPA_NETINTINFO_MAC_LEN]</td></tr>
 <tr class="memdesc:af218cb57bca9340eb78204cb81754bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter MAC address.  <a href="#af218cb57bca9340eb78204cb81754bc9">More...</a><br /></td></tr>
 <tr class="separator:af218cb57bca9340eb78204cb81754bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,20 +196,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The interface ip address. </p>
-
-</div>
-</div>
-<a class="anchor" id="aab794a1d7268e4cf399af0600c73e0d8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> gate</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The address of the default gateway for this interface. </p>
 
 </div>
 </div>
@@ -242,6 +225,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Whether this is the default network interface. </p>
+<p>The default network interface is defined as the network interface chosen for the default IP route on a system. </p>
 
 </div>
 </div>

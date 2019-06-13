@@ -3,7 +3,8 @@ var group__lwpa__thread =
     [ "LwpaThreadParams", "struct_lwpa_thread_params.html", [
       [ "platform_data", "struct_lwpa_thread_params.html#abea5d4a9dc1ef714b423a1ae6afaf4ae", null ],
       [ "stack_size", "struct_lwpa_thread_params.html#adde5266300e9cdd7ca1134daba9adf24", null ],
-      [ "thread_name", "struct_lwpa_thread_params.html#aff53d286a69bd6b453eeb29ab3a75326", null ],
+      [ "thread_name", "struct_lwpa_thread_params.html#a9c15c6e0b10239673fa9d8be6ad08128", null ],
+      [ "thread_name", "struct_lwpa_thread_params.html#af081a07b0c5074db7c1896da8fb72e81", null ],
       [ "thread_priority", "struct_lwpa_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f", null ]
     ] ],
     [ "LWPA_THREAD_DEFAULT_NAME", "group__lwpa__thread.html#gab11c37b97da30254b66ecaf215062632", null ],
@@ -13,6 +14,6 @@ var group__lwpa__thread =
     [ "lwpa_thread_t", "group__lwpa__thread.html#ga772303b983e1df853a66868f1419257c", null ],
     [ "LwpaThreadParams", "group__lwpa__thread.html#ga57617a14defb483d477a662044d24f74", null ],
     [ "lwpa_thread_create", "group__lwpa__thread.html#gac3533f2da6b083858517fcb2ba660649", null ],
-    [ "lwpa_thread_sleep", "group__lwpa__thread.html#ga1b3993fb872deb53b0129d43429b5cb1", null ],
-    [ "lwpa_thread_stop", "group__lwpa__thread.html#gac98ab5b271d1fdf59b2df4d04f38f7f3", null ]
+    [ "lwpa_thread_join", "group__lwpa__thread.html#gac43cbc0cdfd62e365ad76e1110fe359c", null ],
+    [ "lwpa_thread_sleep", "group__lwpa__thread.html#ga1b3993fb872deb53b0129d43429b5cb1", null ]
 ];
