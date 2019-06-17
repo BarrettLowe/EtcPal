@@ -226,12 +226,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga0495001df9d738759753ecb7c9f4772a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga0495001df9d738759753ecb7c9f4772a">LWPA_HUMAN_LOG_STR_MAX_LEN</a>&#160;&#160;&#160;((<a class="el" href="group__lwpa__log.html#gae9a41c527892d020281abfb31f4f01e0">LWPA_LOG_TIMESTAMP_LEN</a> - 1u) + 1u /*SP*/ + LWPA_LOG_MSG_MAX_LEN)</td></tr>
 <tr class="memdesc:ga0495001df9d738759753ecb7c9f4772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a human-readable string that will be passed to an lwpa_log_callback function.  <a href="#ga0495001df9d738759753ecb7c9f4772a">More...</a><br /></td></tr>
 <tr class="separator:ga0495001df9d738759753ecb7c9f4772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga95ca154d4628f93f75c65906cef7f1d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga95ca154d4628f93f75c65906cef7f1d6"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_setlogmask</b>(logparamsptr,  newlogmask)&#160;&#160;&#160;((logparamsptr)-&gt;log_mask = newlogmask)</td></tr>
-<tr class="separator:ga95ca154d4628f93f75c65906cef7f1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga69d9b8beecd18e0b90bf99d07cfa4ce9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga69d9b8beecd18e0b90bf99d07cfa4ce9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_canlog</b>(logparamsptr,  pri)&#160;&#160;&#160;((LWPA_LOG_MASK(pri) &amp; (logparamsptr)-&gt;log_mask) != 0)</td></tr>
-<tr class="separator:ga69d9b8beecd18e0b90bf99d07cfa4ce9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaafd65b24ebbb219b07c710db72a34aab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaafd65b24ebbb219b07c710db72a34aab"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_SET_LOG_MASK</b>(logparamsptr,  newlogmask)&#160;&#160;&#160;((logparamsptr)-&gt;log_mask = newlogmask)</td></tr>
+<tr class="separator:gaafd65b24ebbb219b07c710db72a34aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabe42faf633d7341b166e6ac315233cfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabe42faf633d7341b166e6ac315233cfb"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_CAN_LOG</b>(logparamsptr,  pri)&#160;&#160;&#160;((logparamsptr) ? ((LWPA_LOG_MASK(pri) &amp; (logparamsptr)-&gt;log_mask) != 0) : <a class="el" href="group__lwpa__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
+<tr class="separator:gabe42faf633d7341b166e6ac315233cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
