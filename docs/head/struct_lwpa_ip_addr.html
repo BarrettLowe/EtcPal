@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('struct_lwpa_ip_addr.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="union_lwpa_ip_addr_1_1_addr_union.html">AddrUnion</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The address, use either v4 or v6 depending on the value of type.  <a href="union_lwpa_ip_addr_1_1_addr_union.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The address (use the macros to access), either v4 or v6 depending on the value of type.  <a href="union_lwpa_ip_addr_1_1_addr_union.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -180,7 +180,7 @@ union <a class="el" href="union_lwpa_ip_addr_1_1_addr_union.html">LwpaIpAddr::Ad
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An IP address. </p>
-<p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. </p>
+<p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. IPv6 addresses also contain a scope ID, which is also sometimes referred to as a zone index (RFC 4007), to help disambiguate link-local addresses, among other uses. In most cases, this field can be left at its default value, which is set by the <a class="el" href="group__lwpa__inet.html#ga4217ea63c7520ea2fe349be430c8cfec" title="Set the IPv6 address in a LwpaIpAddr. ">LWPA_IP_SET_V6_ADDRESS()</a> macro. </p>
 </div><hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/lwpa/<a class="el" href="inet_8h_source.html">inet.h</a></li>
 </ul>

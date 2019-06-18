@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: LwpaLinger Struct Reference</title>
+  <title>lwpa: src/lwpa/private/socket.h Source File</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -94,8 +94,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -116,9 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -133,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('struct_lwpa_linger.html','');});
+$(document).ready(function(){initNavTree('src_2lwpa_2private_2socket_8h_source.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -151,38 +149,17 @@ $(document).ready(function(){initNavTree('struct_lwpa_linger.html','');});
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">LwpaLinger Struct Reference<div class="ingroups"><a class="el" href="group__lwpa.html">lwpa</a> &raquo; <a class="el" href="group__lwpa__socket.html">lwpa_socket</a></div></div>  </div>
+<div class="title">socket.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Option value for <a class="el" href="group__lwpa__socket.html#ga55a81e9ec4a9aba857524b726ec75256" title="Get/Set, value is LwpaLinger. ">LWPA_SO_LINGER</a>.  
- <a href="struct_lwpa_linger.html#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a7730494d5c90b034d5937c758f354997"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7730494d5c90b034d5937c758f354997"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_linger.html#a7730494d5c90b034d5937c758f354997">onoff</a></td></tr>
-<tr class="memdesc:a7730494d5c90b034d5937c758f354997"><td class="mdescLeft">&#160;</td><td class="mdescRight">0 = off, nonzero = on <br /></td></tr>
-<tr class="separator:a7730494d5c90b034d5937c758f354997"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21667e862207c7c116b20764fcb8f931"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21667e862207c7c116b20764fcb8f931"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_linger.html#a21667e862207c7c116b20764fcb8f931">linger</a></td></tr>
-<tr class="memdesc:a21667e862207c7c116b20764fcb8f931"><td class="mdescLeft">&#160;</td><td class="mdescRight">Linger time in seconds. <br /></td></tr>
-<tr class="separator:a21667e862207c7c116b20764fcb8f931"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Option value for <a class="el" href="group__lwpa__socket.html#ga55a81e9ec4a9aba857524b726ec75256" title="Get/Set, value is LwpaLinger. ">LWPA_SO_LINGER</a>. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>include/lwpa/<a class="el" href="include_2lwpa_2socket_8h_source.html">socket.h</a></li>
-</ul>
-</div><!-- contents -->
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/******************************************************************************</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright 2019 ETC Inc.</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * you may not use this file except in compliance with the License.</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> * You may obtain a copy of the License at</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *    http://www.apache.org/licenses/LICENSE-2.0</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * Unless required by applicable law or agreed to in writing, software</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * See the License for the specific language governing permissions and</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * limitations under the License.</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> *******************************************************************************</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * This file is a part of lwpa. For more information, go to:</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * https://github.com/ETCLabs/lwpa</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> ******************************************************************************/</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifndef _LWPA_PRIVATE_SOCKET_H_</span></div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define _LWPA_PRIVATE_SOCKET_H_</span></div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &quot;lwpa/error.h&quot;</span></div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<a class="code" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_socket_init();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> lwpa_socket_deinit();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _LWPA_PRIVATE_SOCKET_H_ */</span><span class="preprocessor"></span></div><div class="ttc" id="group__lwpa__error_html_ga4de447127cf0baaa9afb0188e1e6afbf"><div class="ttname"><a href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a></div><div class="ttdeci">lwpa_error_t</div><div class="ttdoc">A set of error codes that can be returned by library functions. </div><div class="ttdef"><b>Definition:</b> error.h:36</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="struct_lwpa_linger.html">LwpaLinger</a></li>
+    <li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_4dd052c5386a985fe27395f2d9bb08d9.html">lwpa</a></li><li class="navelem"><a class="el" href="dir_0496a279fd09aed05be97e302922b806.html">private</a></li><li class="navelem"><b>socket.h</b></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

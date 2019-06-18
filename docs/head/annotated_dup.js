@@ -11,6 +11,7 @@ var annotated_dup =
     [ "LwpaLogTimeParams", "struct_lwpa_log_time_params.html", "struct_lwpa_log_time_params" ],
     [ "LwpaMempool", "struct_lwpa_mempool.html", "struct_lwpa_mempool" ],
     [ "LwpaMempoolDesc", "struct_lwpa_mempool_desc.html", "struct_lwpa_mempool_desc" ],
+    [ "LwpaModuleInit", "struct_lwpa_module_init.html", "struct_lwpa_module_init" ],
     [ "LwpaMreq", "struct_lwpa_mreq.html", "struct_lwpa_mreq" ],
     [ "LwpaNetintInfo", "struct_lwpa_netint_info.html", "struct_lwpa_netint_info" ],
     [ "LwpaPdu", "struct_lwpa_pdu.html", "struct_lwpa_pdu" ],

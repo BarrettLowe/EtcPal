@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['scope_5fid',['scope_id',['../struct_lwpa_sockaddr.html#a1d93077fdccdb6e377b421b79e1ba15c',1,'LwpaSockaddr']]],
   ['second',['second',['../struct_lwpa_log_time_params.html#a6cf35be1947a62f134392fcb1b3c54d2',1,'LwpaLogTimeParams']]],
   ['sender_5fcid',['sender_cid',['../struct_lwpa_root_layer_pdu.html#addaf02226137035b7f46186c67b87fe5',1,'LwpaRootLayerPdu']]],
   ['size',['size',['../struct_lwpa_rb_tree.html#a854352f53b148adc24983a58a1866d66',1,'LwpaRbTree']]],

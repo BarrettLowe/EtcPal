@@ -280,15 +280,18 @@ LwpaIpAddr macros</h2></td></tr>
 <tr class="memitem:gab58ee5657f5ec2e0a33fe6108d15acfc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#gab58ee5657f5ec2e0a33fe6108d15acfc">LWPA_IP_V4_ADDRESS</a>(lwpa_ip_ptr)&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;addr.v4)</td></tr>
 <tr class="memdesc:gab58ee5657f5ec2e0a33fe6108d15acfc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IPv4 address from a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#gab58ee5657f5ec2e0a33fe6108d15acfc">More...</a><br /></td></tr>
 <tr class="separator:gab58ee5657f5ec2e0a33fe6108d15acfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga505ee023d06f2a90976dd50b596ba963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga505ee023d06f2a90976dd50b596ba963">LWPA_IP_V6_ADDRESS</a>(lwpa_ip_ptr)&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;addr.v6)</td></tr>
+<tr class="memitem:ga505ee023d06f2a90976dd50b596ba963"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga505ee023d06f2a90976dd50b596ba963">LWPA_IP_V6_ADDRESS</a>(lwpa_ip_ptr)&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;addr.v6.addr_buf)</td></tr>
 <tr class="memdesc:ga505ee023d06f2a90976dd50b596ba963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IPv6 address from a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#ga505ee023d06f2a90976dd50b596ba963">More...</a><br /></td></tr>
 <tr class="separator:ga505ee023d06f2a90976dd50b596ba963"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7a29e94ac67df250504e56ac9257a8c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga7a29e94ac67df250504e56ac9257a8c8">LWPA_IP_SET_V4_ADDRESS</a>(lwpa_ip_ptr,  val)</td></tr>
 <tr class="memdesc:ga7a29e94ac67df250504e56ac9257a8c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the IPv4 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#ga7a29e94ac67df250504e56ac9257a8c8">More...</a><br /></td></tr>
 <tr class="separator:ga7a29e94ac67df250504e56ac9257a8c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga108a6faef443d5113e59ae4a5a43c0fc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga108a6faef443d5113e59ae4a5a43c0fc">LWPA_IP_SET_V6_ADDRESS</a>(lwpa_ip_ptr,  val)</td></tr>
-<tr class="memdesc:ga108a6faef443d5113e59ae4a5a43c0fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the IPv6 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#ga108a6faef443d5113e59ae4a5a43c0fc">More...</a><br /></td></tr>
-<tr class="separator:ga108a6faef443d5113e59ae4a5a43c0fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4217ea63c7520ea2fe349be430c8cfec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga4217ea63c7520ea2fe349be430c8cfec">LWPA_IP_SET_V6_ADDRESS</a>(lwpa_ip_ptr,  addr_val)&#160;&#160;&#160;<a class="el" href="group__lwpa__inet.html#ga2d1a4c527a80069754dbc3f08b66723b">LWPA_IP_SET_V6_ADDRESS_WITH_SCOPE_ID</a>(lwpa_ip_ptr, addr_val, 0u)</td></tr>
+<tr class="memdesc:ga4217ea63c7520ea2fe349be430c8cfec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the IPv6 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#ga4217ea63c7520ea2fe349be430c8cfec">More...</a><br /></td></tr>
+<tr class="separator:ga4217ea63c7520ea2fe349be430c8cfec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d1a4c527a80069754dbc3f08b66723b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#ga2d1a4c527a80069754dbc3f08b66723b">LWPA_IP_SET_V6_ADDRESS_WITH_SCOPE_ID</a>(lwpa_ip_ptr,  addr_val,  scope_id_val)</td></tr>
+<tr class="memdesc:ga2d1a4c527a80069754dbc3f08b66723b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an IPv6 address with an explicit scope ID in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>.  <a href="#ga2d1a4c527a80069754dbc3f08b66723b">More...</a><br /></td></tr>
+<tr class="separator:ga2d1a4c527a80069754dbc3f08b66723b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf8587cfa1476afaae1c34081f2b9e061"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__inet.html#gaf8587cfa1476afaae1c34081f2b9e061">LWPA_IP_SET_INVALID</a>(lwpa_ip_ptr)&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;type = <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048aa8b31e7862dcc08b71037384bb33945e">kLwpaIpTypeInvalid</a>)</td></tr>
 <tr class="memdesc:gaf8587cfa1476afaae1c34081f2b9e061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type field in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a> to indicate that it does not contain a valid address.  <a href="#gaf8587cfa1476afaae1c34081f2b9e061">More...</a><br /></td></tr>
 <tr class="separator:gaf8587cfa1476afaae1c34081f2b9e061"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -460,7 +463,7 @@ LwpaIpAddr macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga108a6faef443d5113e59ae4a5a43c0fc"></a>
+<a class="anchor" id="ga4217ea63c7520ea2fe349be430c8cfec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -474,7 +477,48 @@ LwpaIpAddr macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">val&#160;</td>
+          <td class="paramname">addr_val&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="group__lwpa__inet.html#ga2d1a4c527a80069754dbc3f08b66723b">LWPA_IP_SET_V6_ADDRESS_WITH_SCOPE_ID</a>(lwpa_ip_ptr, addr_val, 0u)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the IPv6 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. </p>
+<p>Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a> contains an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. </td></tr>
+    <tr><td class="paramname">addr_val</td><td>IPv6 address to set (uint8_t[]). Must be at least of length <a class="el" href="group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75" title="The number of bytes in an IPv6 address. ">LWPA_IPV6_BYTES</a>. Gets copied into the struct. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2d1a4c527a80069754dbc3f08b66723b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_IP_SET_V6_ADDRESS_WITH_SCOPE_ID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">lwpa_ip_ptr, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">addr_val, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">scope_id_val&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -483,14 +527,15 @@ LwpaIpAddr macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                      \</div><div class="line">  {                                                       \</div><div class="line">    (lwpa_ip_ptr)-&gt;type = <a class="code" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da">kLwpaIpTypeV6</a>;                  \</div><div class="line">    memcpy((lwpa_ip_ptr)-&gt;addr.v6, val, <a class="code" href="group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75">LWPA_IPV6_BYTES</a>); \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__lwpa__inet_html_gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da"><div class="ttname"><a href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da">kLwpaIpTypeV6</a></div><div class="ttdoc">This LwpaIpAddr contains an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:51</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                              \</div><div class="line">  {                                                                               \</div><div class="line">    (lwpa_ip_ptr)-&gt;type = <a class="code" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da">kLwpaIpTypeV6</a>;                                          \</div><div class="line">    memcpy((lwpa_ip_ptr)-&gt;addr.v6.addr_buf, (addr_val), <a class="code" href="group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75">LWPA_IPV6_BYTES</a>);         \</div><div class="line">    (lwpa_ip_ptr)-&gt;addr.v6.scope_id = (scope_id_val);                             \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__lwpa__inet_html_gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da"><div class="ttname"><a href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da">kLwpaIpTypeV6</a></div><div class="ttdoc">This LwpaIpAddr contains an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:51</div></div>
 <div class="ttc" id="group__lwpa__inet_html_gadf510df24e827cbeeeca96a00d6cdd75"><div class="ttname"><a href="group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75">LWPA_IPV6_BYTES</a></div><div class="ttdeci">#define LWPA_IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:55</div></div>
 </div><!-- fragment -->
-<p>Set the IPv6 address in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. </p>
+<p>Set an IPv6 address with an explicit scope ID in a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. </p>
 <p>Also sets the type field to indicate that this <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a> contains an IPv6 address. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">lwpa_ip_ptr</td><td>Pointer to a <a class="el" href="struct_lwpa_ip_addr.html" title="An IP address. ">LwpaIpAddr</a>. </td></tr>
-    <tr><td class="paramname">val</td><td>IPv6 address to set (uint8_t[]). Must be at least of length LWPA_IPV6_BYTES. Gets copied into the struct. </td></tr>
+    <tr><td class="paramname">addr_val</td><td>IPv6 address to set (uint8_t[]). Must be at least of length <a class="el" href="group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75" title="The number of bytes in an IPv6 address. ">LWPA_IPV6_BYTES</a>. Gets copied into the struct. </td></tr>
+    <tr><td class="paramname">scope_id_val</td><td>IPv6 scope ID to set. </td></tr>
   </table>
   </dd>
 </dl>
@@ -531,7 +576,7 @@ LwpaIpAddr macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">lwpa_ip_ptr</td><td>)</td>
-          <td>&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;addr.v6)</td>
+          <td>&#160;&#160;&#160;((lwpa_ip_ptr)-&gt;addr.v6.addr_buf)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -573,7 +618,7 @@ LwpaIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 
 <p>An IP address. </p>
-<p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. </p>
+<p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. IPv6 addresses also contain a scope ID, which is also sometimes referred to as a zone index (RFC 4007), to help disambiguate link-local addresses, among other uses. In most cases, this field can be left at its default value, which is set by the <a class="el" href="group__lwpa__inet.html#ga4217ea63c7520ea2fe349be430c8cfec" title="Set the IPv6 address in a LwpaIpAddr. ">LWPA_IP_SET_V6_ADDRESS()</a> macro. </p>
 
 </div>
 </div>

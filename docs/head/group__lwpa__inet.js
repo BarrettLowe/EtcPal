@@ -2,16 +2,19 @@ var group__lwpa__inet =
 [
     [ "LwpaIpAddr", "struct_lwpa_ip_addr.html", [
       [ "AddrUnion", "union_lwpa_ip_addr_1_1_addr_union.html", [
+        [ "LwpaIpv6Addr", "struct_lwpa_ip_addr_1_1_addr_union_1_1_lwpa_ipv6_addr.html", [
+          [ "addr_buf", "struct_lwpa_ip_addr_1_1_addr_union_1_1_lwpa_ipv6_addr.html#a507366708f440f5eb6c6cc8cec8da394", null ],
+          [ "scope_id", "struct_lwpa_ip_addr_1_1_addr_union_1_1_lwpa_ipv6_addr.html#a77c3e8275263425c8924ad010b38fae7", null ]
+        ] ],
         [ "v4", "union_lwpa_ip_addr_1_1_addr_union.html#a654069046d83e652d54cae5e353051c5", null ],
-        [ "v6", "union_lwpa_ip_addr_1_1_addr_union.html#ac9750e0b36301920734010112df7ef8d", null ]
+        [ "v6", "union_lwpa_ip_addr_1_1_addr_union.html#a97532f96ae974795eabef4106faf51fe", null ]
       ] ],
       [ "addr", "struct_lwpa_ip_addr.html#ae5fdffa8bfb5cdcdacf740b1eaf314b5", null ],
       [ "type", "struct_lwpa_ip_addr.html#a43f11ca9456afc383d0d550f16e3c420", null ]
     ] ],
     [ "LwpaSockaddr", "struct_lwpa_sockaddr.html", [
       [ "ip", "struct_lwpa_sockaddr.html#aaafd70d57737ab374198d3d754411129", null ],
-      [ "port", "struct_lwpa_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236", null ],
-      [ "scope_id", "struct_lwpa_sockaddr.html#a1d93077fdccdb6e377b421b79e1ba15c", null ]
+      [ "port", "struct_lwpa_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236", null ]
     ] ],
     [ "LwpaNetintInfo", "struct_lwpa_netint_info.html", [
       [ "addr", "struct_lwpa_netint_info.html#a070c3843626368d0129cf7295c10296e", null ],
@@ -28,7 +31,8 @@ var group__lwpa__inet =
     [ "LWPA_IP_IS_V6", "group__lwpa__inet.html#ga6e008633fe046017e20ad036175400a4", null ],
     [ "LWPA_IP_SET_INVALID", "group__lwpa__inet.html#gaf8587cfa1476afaae1c34081f2b9e061", null ],
     [ "LWPA_IP_SET_V4_ADDRESS", "group__lwpa__inet.html#ga7a29e94ac67df250504e56ac9257a8c8", null ],
-    [ "LWPA_IP_SET_V6_ADDRESS", "group__lwpa__inet.html#ga108a6faef443d5113e59ae4a5a43c0fc", null ],
+    [ "LWPA_IP_SET_V6_ADDRESS", "group__lwpa__inet.html#ga4217ea63c7520ea2fe349be430c8cfec", null ],
+    [ "LWPA_IP_SET_V6_ADDRESS_WITH_SCOPE_ID", "group__lwpa__inet.html#ga2d1a4c527a80069754dbc3f08b66723b", null ],
     [ "LWPA_IP_V4_ADDRESS", "group__lwpa__inet.html#gab58ee5657f5ec2e0a33fe6108d15acfc", null ],
     [ "LWPA_IP_V6_ADDRESS", "group__lwpa__inet.html#ga505ee023d06f2a90976dd50b596ba963", null ],
     [ "LWPA_IPV6_BYTES", "group__lwpa__inet.html#gadf510df24e827cbeeeca96a00d6cdd75", null ],

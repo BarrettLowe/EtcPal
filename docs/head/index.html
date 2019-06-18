@@ -157,6 +157,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>Supported Platforms</h2>
 <p>lwpa is currently ported for the following operating systems:</p>
 <ul>
+<li>macOS</li>
 <li>Microsoft Windows</li>
 <li>Linux</li>
 <li>MQX RTOS</li>
@@ -174,6 +175,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>Alternatively, if you don't want to use CMake, your project can simply build in the lwpa sources directly using the appropriate directories for your target platform. This is currently the only option for MQX RTOS.</p>
 <h3>Platform Dependencies</h3>
 <p>The platform ports of lwpa have the following dependencies:</p><ul>
+<li>macOS<ul>
+<li>If compiling with macOS 10.7 or earlier, you might need to install a UUID package like <code>ossp-uuid</code>.</li>
+</ul>
+</li>
 <li>Microsoft Windows<ul>
 <li>Windows XP SP1 or later</li>
 </ul>

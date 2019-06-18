@@ -210,24 +210,21 @@ Macros</h2></td></tr>
 <tr class="memitem:ga1c2b0e972201228ff6c55879bab82861"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861">LWPA_WAIT_FOREVER</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="memdesc:ga1c2b0e972201228ff6c55879bab82861"><td class="mdescLeft">&#160;</td><td class="mdescRight">For lwpa_ functions that take a millisecond timeout, this means to wait indefinitely.  <a href="#ga1c2b0e972201228ff6c55879bab82861">More...</a><br /></td></tr>
 <tr class="separator:ga1c2b0e972201228ff6c55879bab82861"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga51e7968caa7cc29fad18ec872c739cbb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga51e7968caa7cc29fad18ec872c739cbb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_SOCKETS</b>&#160;&#160;&#160;0x00000001u</td></tr>
-<tr class="separator:ga51e7968caa7cc29fad18ec872c739cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4830c5a79855564b312b2c12e869702a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4830c5a79855564b312b2c12e869702a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_NETINTS</b>&#160;&#160;&#160;0x00000002u</td></tr>
-<tr class="separator:ga4830c5a79855564b312b2c12e869702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga14efb0458ae41274fe96f0797d35e1f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga14efb0458ae41274fe96f0797d35e1f1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_TIMERS</b>&#160;&#160;&#160;0x00000004u</td></tr>
-<tr class="separator:ga14efb0458ae41274fe96f0797d35e1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga20bf4148474b69f45813f818e16ea0d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga20bf4148474b69f45813f818e16ea0d7"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_LOGGING</b>&#160;&#160;&#160;0x00000008u</td></tr>
-<tr class="separator:ga20bf4148474b69f45813f818e16ea0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1c807b4b9009a27514f7895791ecf49a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c807b4b9009a27514f7895791ecf49a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURES_ALL</b>&#160;&#160;&#160;0xffffffffu</td></tr>
-<tr class="separator:ga1c807b4b9009a27514f7895791ecf49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1effd03384104d4edff4ea16a1c26c9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1effd03384104d4edff4ea16a1c26c9b"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURES_ALL_BUT</b>(mask)&#160;&#160;&#160;(((uint32_t)LWPA_FEATURES_ALL) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td></tr>
-<tr class="separator:ga1effd03384104d4edff4ea16a1c26c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4e3ec4f0bf80c7fad8e3df7f617f5cbf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4e3ec4f0bf80c7fad8e3df7f617f5cbf"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_SOCKETS_OFFSET</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ga4e3ec4f0bf80c7fad8e3df7f617f5cbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0672e17af65f1a720d39e2b1f2192e7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gac0672e17af65f1a720d39e2b1f2192e7"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_NETINTS_OFFSET</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:gac0672e17af65f1a720d39e2b1f2192e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga264d43bc42e6f7b24f7956879a7f741c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga264d43bc42e6f7b24f7956879a7f741c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_TIMERS_OFFSET</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:ga264d43bc42e6f7b24f7956879a7f741c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga026b2305a1fd9403f76b44a7bea4bd1e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga026b2305a1fd9403f76b44a7bea4bd1e"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURE_LOGGING_OFFSET</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:ga026b2305a1fd9403f76b44a7bea4bd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0c45d1444326ea510bfaf52a7c17a508"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga0c45d1444326ea510bfaf52a7c17a508"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_NUM_FEATURES</b>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ga0c45d1444326ea510bfaf52a7c17a508"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -243,11 +240,116 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa5af7daa1612ac3fc98f49a166a0c669"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa5af7daa1612ac3fc98f49a166a0c669"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_deinit</b> (lwpa_features_t features)</td></tr>
 <tr class="separator:gaa5af7daa1612ac3fc98f49a166a0c669"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+lwpa feature masks</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpcb4f7e3754da7ad012865390f86d9623"></a>Pass one or more of these to lwpa_init() to initialize the relevant lwpa feature.</p>
+<p>lwpa modules not represented here require no initialization and are enabled by default. </p>
+</td></tr>
+<tr class="memitem:ga51e7968caa7cc29fad18ec872c739cbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga51e7968caa7cc29fad18ec872c739cbb">LWPA_FEATURE_SOCKETS</a>&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_SOCKETS_OFFSET))</td></tr>
+<tr class="memdesc:ga51e7968caa7cc29fad18ec872c739cbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the lwpa_socket module.  <a href="#ga51e7968caa7cc29fad18ec872c739cbb">More...</a><br /></td></tr>
+<tr class="separator:ga51e7968caa7cc29fad18ec872c739cbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4830c5a79855564b312b2c12e869702a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga4830c5a79855564b312b2c12e869702a">LWPA_FEATURE_NETINTS</a>&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_NETINTS_OFFSET))</td></tr>
+<tr class="memdesc:ga4830c5a79855564b312b2c12e869702a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the lwpa_netint module.  <a href="#ga4830c5a79855564b312b2c12e869702a">More...</a><br /></td></tr>
+<tr class="separator:ga4830c5a79855564b312b2c12e869702a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14efb0458ae41274fe96f0797d35e1f1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga14efb0458ae41274fe96f0797d35e1f1">LWPA_FEATURE_TIMERS</a>&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_TIMERS_OFFSET))</td></tr>
+<tr class="memdesc:ga14efb0458ae41274fe96f0797d35e1f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the lwpa_timer module.  <a href="#ga14efb0458ae41274fe96f0797d35e1f1">More...</a><br /></td></tr>
+<tr class="separator:ga14efb0458ae41274fe96f0797d35e1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga20bf4148474b69f45813f818e16ea0d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga20bf4148474b69f45813f818e16ea0d7">LWPA_FEATURE_LOGGING</a>&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_LOGGING_OFFSET))</td></tr>
+<tr class="memdesc:ga20bf4148474b69f45813f818e16ea0d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the lwpa_log module.  <a href="#ga20bf4148474b69f45813f818e16ea0d7">More...</a><br /></td></tr>
+<tr class="separator:ga20bf4148474b69f45813f818e16ea0d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c807b4b9009a27514f7895791ecf49a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga1c807b4b9009a27514f7895791ecf49a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_FEATURES_ALL</b>&#160;&#160;&#160;0xffffffffu /*! Use every available module. */</td></tr>
+<tr class="separator:ga1c807b4b9009a27514f7895791ecf49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1effd03384104d4edff4ea16a1c26c9b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa.html#ga1effd03384104d4edff4ea16a1c26c9b">LWPA_FEATURES_ALL_BUT</a>(mask)&#160;&#160;&#160;(((uint32_t)LWPA_FEATURES_ALL) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td></tr>
+<tr class="memdesc:ga1effd03384104d4edff4ea16a1c26c9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module except the ones passed in mask.  <a href="#ga1effd03384104d4edff4ea16a1c26c9b">More...</a><br /></td></tr>
+<tr class="separator:ga1effd03384104d4edff4ea16a1c26c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Lightweight Platform Abstraction (lwpa): A set of platform abstraction and utility modules. </p>
 <p>Lightweight Platform Abstraction (lwpa) supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (e.g. data structures, logging) thrown in here and there for convenience. lwpa headers can be either platform-neutral (contained in include/) or platform-specific (contained in include/[platform]). All platform-specific headers of the same lwpa module will conform to an identical interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga20bf4148474b69f45813f818e16ea0d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_FEATURE_LOGGING&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_LOGGING_OFFSET))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the lwpa_log module. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga4830c5a79855564b312b2c12e869702a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_FEATURE_NETINTS&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_NETINTS_OFFSET))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the lwpa_netint module. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga51e7968caa7cc29fad18ec872c739cbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_FEATURE_SOCKETS&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_SOCKETS_OFFSET))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the lwpa_socket module. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga14efb0458ae41274fe96f0797d35e1f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_FEATURE_TIMERS&#160;&#160;&#160;((lwpa_features_t)(1u &lt;&lt; LWPA_FEATURE_TIMERS_OFFSET))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use the lwpa_timer module. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga1effd03384104d4edff4ea16a1c26c9b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_FEATURES_ALL_BUT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">mask</td><td>)</td>
+          <td>&#160;&#160;&#160;(((uint32_t)LWPA_FEATURES_ALL) &amp; ((uint32_t)(~((uint32_t)(mask)))))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Use every available module except the ones passed in mask. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mask</td><td>Mask of LWPA_FEATURE_* macros to not include in the feature mask. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Resulting lwpa feature mask to pass to lwpa_init(). </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga1c2b0e972201228ff6c55879bab82861"></a>
 <div class="memitem">
 <div class="memproto">
