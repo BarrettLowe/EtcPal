@@ -19,6 +19,10 @@ var group__lwpa =
     [ "LWPA_FEATURE_NETINTS", "group__lwpa.html#ga4830c5a79855564b312b2c12e869702a", null ],
     [ "LWPA_FEATURE_SOCKETS", "group__lwpa.html#ga51e7968caa7cc29fad18ec872c739cbb", null ],
     [ "LWPA_FEATURE_TIMERS", "group__lwpa.html#ga14efb0458ae41274fe96f0797d35e1f1", null ],
+    [ "LWPA_FEATURES_ALL", "group__lwpa.html#ga1c807b4b9009a27514f7895791ecf49a", null ],
     [ "LWPA_FEATURES_ALL_BUT", "group__lwpa.html#ga1effd03384104d4edff4ea16a1c26c9b", null ],
-    [ "LWPA_WAIT_FOREVER", "group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861", null ]
+    [ "LWPA_WAIT_FOREVER", "group__lwpa.html#ga1c2b0e972201228ff6c55879bab82861", null ],
+    [ "lwpa_features_t", "group__lwpa.html#gad114d8d0d8fc2b500bbe5cd815f050c6", null ],
+    [ "lwpa_deinit", "group__lwpa.html#gaa5af7daa1612ac3fc98f49a166a0c669", null ],
+    [ "lwpa_init", "group__lwpa.html#gad3f4f0f94eeaede46d9f5f089129446b", null ]
 ];

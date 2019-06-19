@@ -1,5 +1,9 @@
 var NAVTREEINDEX2 =
 {
+"struct_lwpa_syslog_params.html#a101da4fbfd94ee9467e2931768d64488":[1,0,6,1,2],
+"struct_lwpa_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f":[1,0,6,1,1],
+"struct_lwpa_syslog_params.html#ac56492caa804aa3574dec4e755384200":[1,0,6,1,0],
+"struct_lwpa_tcp_preamble.html":[1,0,10,0,0],
 "struct_lwpa_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8":[1,0,10,0,0,0],
 "struct_lwpa_tcp_preamble.html#ab27f79ca664937f91e64f868ad233935":[1,0,10,0,0,1],
 "struct_lwpa_thread_params.html":[1,0,1,0],

@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"group__lwpa__rootlayerpdu.html#gaffc1246bd07dc0e4a884e94f558eae34":[1,0,10,0,11],
+"group__lwpa__rwlock.html":[1,0,0,2],
+"group__lwpa__rwlock.html#ga33dd48c0866e13f3bccbaffc8d227b9c":[1,0,0,2,8],
+"group__lwpa__rwlock.html#ga5422591a8e0f2f3ca52816e531fc9815":[1,0,0,2,2],
 "group__lwpa__rwlock.html#ga74e912ed8c5b1c545139f8cd6568ae45":[1,0,0,2,0],
 "group__lwpa__rwlock.html#ga7f42819fdf2e713b03bf74325e2823f3":[1,0,0,2,6],
 "group__lwpa__rwlock.html#ga84a16e1e575e5bef32c0f5d50725b7a1":[1,0,0,2,1],
@@ -245,9 +249,5 @@ var NAVTREEINDEX1 =
 "struct_lwpa_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[1,0,4,1,1],
 "struct_lwpa_sockaddr.html#aaafd70d57737ab374198d3d754411129":[1,0,4,1,0],
 "struct_lwpa_syslog_params.html":[1,0,6,1],
-"struct_lwpa_syslog_params.html#a08aa82e27aff5eddbfc578f623f54f4a":[1,0,6,1,3],
-"struct_lwpa_syslog_params.html#a101da4fbfd94ee9467e2931768d64488":[1,0,6,1,2],
-"struct_lwpa_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f":[1,0,6,1,1],
-"struct_lwpa_syslog_params.html#ac56492caa804aa3574dec4e755384200":[1,0,6,1,0],
-"struct_lwpa_tcp_preamble.html":[1,0,10,0,0]
+"struct_lwpa_syslog_params.html#a08aa82e27aff5eddbfc578f623f54f4a":[1,0,6,1,3]
 };

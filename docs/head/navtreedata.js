@@ -23,8 +23,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "acn__prot_8h_source.html",
-"group__lwpa__rwlock.html#ga74e912ed8c5b1c545139f8cd6568ae45",
-"struct_lwpa_tcp_preamble.html#a6df9d0f27538da177c52996a97e0a1d8"
+"group__lwpa__rootlayerpdu.html#gaffc1246bd07dc0e4a884e94f558eae34",
+"struct_lwpa_syslog_params.html#a101da4fbfd94ee9467e2931768d64488"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

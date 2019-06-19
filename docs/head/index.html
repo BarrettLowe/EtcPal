@@ -172,10 +172,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Use CMake to invoke the generated build system to build the lwpa library and unit tests: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
 <li>To run the unit tests after building: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# On Windows</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt; .\test\[Build_Configuration]\test_lwpa.exe</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Elsewhere</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$ ./test/test_lwpa</div></div><!-- fragment --> Or, if you are generating IDE project files, simply run the test_lwpa project from your IDE.</li>
 </ol>
-<p>Alternatively, if you don't want to use CMake, your project can simply build in the lwpa sources directly using the appropriate directories for your target platform. This is currently the only option for MQX RTOS.</p>
+<p>Alternatively, if you don't want to use CMake, your project can simply build in the lwpa sources directly using the appropriate directories for your target platform.</p>
 <h3>Platform Dependencies</h3>
 <p>The platform ports of lwpa have the following dependencies:</p><ul>
 <li>macOS<ul>
+<li>The macOS port has been tested back to macOS 10.11. It is not guaranteed to work on older versions.</li>
 <li>If compiling with macOS 10.7 or earlier, you might need to install a UUID package like <code>ossp-uuid</code>.</li>
 </ul>
 </li>
