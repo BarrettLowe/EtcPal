@@ -8,6 +8,7 @@ var annotated_dup =
     [ "LwpaIpAddr", "struct_lwpa_ip_addr.html", "struct_lwpa_ip_addr" ],
     [ "LwpaLinger", "struct_lwpa_linger.html", "struct_lwpa_linger" ],
     [ "LwpaLogParams", "struct_lwpa_log_params.html", "struct_lwpa_log_params" ],
+    [ "LwpaLogStrings", "struct_lwpa_log_strings.html", "struct_lwpa_log_strings" ],
     [ "LwpaLogTimeParams", "struct_lwpa_log_time_params.html", "struct_lwpa_log_time_params" ],
     [ "LwpaMempool", "struct_lwpa_mempool.html", "struct_lwpa_mempool" ],
     [ "LwpaMempoolDesc", "struct_lwpa_mempool_desc.html", "struct_lwpa_mempool_desc" ],

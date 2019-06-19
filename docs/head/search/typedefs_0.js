@@ -1,7 +1,7 @@
 var searchData=
 [
   ['lwpa_5ffeatures_5ft',['lwpa_features_t',['../group__lwpa.html#gad114d8d0d8fc2b500bbe5cd815f050c6',1,'common.h']]],
-  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755',1,'log.h']]],
+  ['lwpa_5flog_5fcallback',['lwpa_log_callback',['../group__lwpa__log.html#gab5ffbb4d8e2168a0c51b10e5b3099de8',1,'log.h']]],
   ['lwpa_5flog_5ftime_5ffn',['lwpa_log_time_fn',['../group__lwpa__log.html#ga663d6e629850d5957be6634468f04755',1,'log.h']]],
   ['lwpa_5fmutex_5ft',['lwpa_mutex_t',['../group__lwpa__mutex.html#gadd901205c027cd6c51e26270d34b9a29',1,'lock.dox']]],
   ['lwpa_5fpoll_5fevents_5ft',['lwpa_poll_events_t',['../group__lwpa__socket.html#gaed05e6a48385343f315c4f1899530a8f',1,'socket.h']]],
@@ -18,6 +18,7 @@ var searchData=
   ['lwpaipaddr',['LwpaIpAddr',['../group__lwpa__inet.html#ga42d5bf98514c41052f6f19d2e0a8691e',1,'inet.h']]],
   ['lwpalinger',['LwpaLinger',['../group__lwpa__socket.html#ga9976c8ca91c28be5e163945e1e1df0eb',1,'socket.h']]],
   ['lwpalogparams',['LwpaLogParams',['../group__lwpa__log.html#ga4e65f5bb723d9280bfece5770a224f2c',1,'log.h']]],
+  ['lwpalogstrings',['LwpaLogStrings',['../group__lwpa__log.html#ga25c13b78ecd42cad3de3341f66199974',1,'log.h']]],
   ['lwpalogtimeparams',['LwpaLogTimeParams',['../group__lwpa__log.html#gad274aa6b5c42d1ff594200232ccbc0ab',1,'log.h']]],
   ['lwpamempool',['LwpaMempool',['../group__lwpa__mempool.html#ga61998e19568afbba25a80d83ef22e380',1,'mempool.h']]],
   ['lwpamempooldesc',['LwpaMempoolDesc',['../group__lwpa__mempool.html#gabafec40001d48ebd0f6ebfe9fff572d9',1,'mempool.h']]],

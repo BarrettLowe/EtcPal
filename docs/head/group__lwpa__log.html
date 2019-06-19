@@ -163,6 +163,9 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_time_params.html">LwpaLogTimeParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters which represent the current local time with millisecond resolution.  <a href="struct_lwpa_log_time_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of log strings passed with a call to an lwpa_log_callback function.  <a href="struct_lwpa_log_strings.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_syslog_params.html">LwpaSyslogParams</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters for the syslog header.  <a href="struct_lwpa_syslog_params.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -238,9 +241,12 @@ Typedefs</h2></td></tr>
 <tr class="memitem:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_log_time_params.html">LwpaLogTimeParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#gad274aa6b5c42d1ff594200232ccbc0ab">LwpaLogTimeParams</a></td></tr>
 <tr class="memdesc:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters which represent the current local time with millisecond resolution.  <a href="#gad274aa6b5c42d1ff594200232ccbc0ab">More...</a><br /></td></tr>
 <tr class="separator:gad274aa6b5c42d1ff594200232ccbc0ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755">lwpa_log_callback</a>) (void *context, const char *syslog_str, const char *human_str, const char *raw_str)</td></tr>
-<tr class="memdesc:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log callback function.  <a href="#gacd26df727c6a5f6d0d6fcfa4c2ac3755">More...</a><br /></td></tr>
-<tr class="separator:gacd26df727c6a5f6d0d6fcfa4c2ac3755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga25c13b78ecd42cad3de3341f66199974"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga25c13b78ecd42cad3de3341f66199974">LwpaLogStrings</a></td></tr>
+<tr class="memdesc:ga25c13b78ecd42cad3de3341f66199974"><td class="mdescLeft">&#160;</td><td class="mdescRight">The set of log strings passed with a call to an lwpa_log_callback function.  <a href="#ga25c13b78ecd42cad3de3341f66199974">More...</a><br /></td></tr>
+<tr class="separator:ga25c13b78ecd42cad3de3341f66199974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab5ffbb4d8e2168a0c51b10e5b3099de8"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#gab5ffbb4d8e2168a0c51b10e5b3099de8">lwpa_log_callback</a>) (void *context, const <a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a> *strings)</td></tr>
+<tr class="memdesc:gab5ffbb4d8e2168a0c51b10e5b3099de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log callback function.  <a href="#gab5ffbb4d8e2168a0c51b10e5b3099de8">More...</a><br /></td></tr>
+<tr class="separator:gab5ffbb4d8e2168a0c51b10e5b3099de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga663d6e629850d5957be6634468f04755"><td class="memItemLeft" align="right" valign="top">typedef void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga663d6e629850d5957be6634468f04755">lwpa_log_time_fn</a>) (void *context, <a class="el" href="struct_lwpa_log_time_params.html">LwpaLogTimeParams</a> *time_params)</td></tr>
 <tr class="memdesc:ga663d6e629850d5957be6634468f04755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Time callback function.  <a href="#ga663d6e629850d5957be6634468f04755">More...</a><br /></td></tr>
 <tr class="separator:ga663d6e629850d5957be6634468f04755"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -928,24 +934,23 @@ Log Priority</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gacd26df727c6a5f6d0d6fcfa4c2ac3755"></a>
+<a class="anchor" id="gab5ffbb4d8e2168a0c51b10e5b3099de8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef void(* lwpa_log_callback) (void *context, const char *syslog_str, const char *human_str, const char *raw_str)</td>
+          <td class="memname">typedef void(* lwpa_log_callback) (void *context, const <a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a> *strings)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Log callback function. </p>
 <p>The function that library modules use to log messages. The application developer defines the function and determines where the messages go.</p>
+<p><b>Do not call <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> or <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a> from this function; a deadlock will result.</b></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">context</td><td>Optional application-provided value that was previously passed to the library module. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">syslog_str</td><td>Log string, formatted compliant to RFC 5424. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">human_str</td><td>Log string, formatted for readability per ETC convention. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">raw_str</td><td>The original log string that was passed to <a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef" title="Log a message from a library module. ">lwpa_log()</a> or <a class="el" href="group__lwpa__log.html#ga4d3b4176e7d17c30aaa9dd82b6c5c3da" title="Log a message from a library module with the list of format arguments already generated. ">lwpa_vlog()</a>. Will overlap with one of syslog_str or human_str. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">strings</td><td>Strings associated with the log message. Will contain valid strings corresponding to the log actions requested in the corresponding <a class="el" href="struct_lwpa_log_params.html" title="A set of parameters used for the lwpa_*log() functions. ">LwpaLogParams</a> struct. </td></tr>
   </table>
   </dd>
 </dl>
@@ -985,6 +990,21 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A set of parameters used for the lwpa_*log() functions. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga25c13b78ecd42cad3de3341f66199974"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a>  <a class="el" href="struct_lwpa_log_strings.html">LwpaLogStrings</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The set of log strings passed with a call to an lwpa_log_callback function. </p>
+<p>Any members not requested in the corresponding <a class="el" href="struct_lwpa_log_params.html" title="A set of parameters used for the lwpa_*log() functions. ">LwpaLogParams</a> struct will be NULL. </p>
 
 </div>
 </div>

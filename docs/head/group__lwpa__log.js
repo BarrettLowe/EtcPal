@@ -10,6 +10,11 @@ var group__lwpa__log =
       [ "utc_offset", "struct_lwpa_log_time_params.html#a0d5ceb6295477b5931bf54c002e36fe9", null ],
       [ "year", "struct_lwpa_log_time_params.html#abeac221e38b7b9ce7df8722c842bf671", null ]
     ] ],
+    [ "LwpaLogStrings", "struct_lwpa_log_strings.html", [
+      [ "human_readable", "struct_lwpa_log_strings.html#a4ac8b9667178849660fd3b1f99e93366", null ],
+      [ "raw", "struct_lwpa_log_strings.html#a8129637af8920bc9328bbce2a00bfeb4", null ],
+      [ "syslog", "struct_lwpa_log_strings.html#a5911dbe6a47cb2b9cfbab87a8881b5b6", null ]
+    ] ],
     [ "LwpaSyslogParams", "struct_lwpa_syslog_params.html", [
       [ "app_name", "struct_lwpa_syslog_params.html#ac56492caa804aa3574dec4e755384200", null ],
       [ "facility", "struct_lwpa_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f", null ],
@@ -63,9 +68,10 @@ var group__lwpa__log =
     [ "LWPA_SYSLOG_HEADER_MAX_LEN", "group__lwpa__log.html#gaef6b15895880ea225057a79bbb120945", null ],
     [ "LWPA_SYSLOG_STR_MAX_LEN", "group__lwpa__log.html#ga8cd1e1b2619e012f10e62b91f3574e27", null ],
     [ "LWPA_SYSLOG_STR_MIN_LEN", "group__lwpa__log.html#ga98a9352b7969f965cf4c77af3c462f21", null ],
-    [ "lwpa_log_callback", "group__lwpa__log.html#gacd26df727c6a5f6d0d6fcfa4c2ac3755", null ],
+    [ "lwpa_log_callback", "group__lwpa__log.html#gab5ffbb4d8e2168a0c51b10e5b3099de8", null ],
     [ "lwpa_log_time_fn", "group__lwpa__log.html#ga663d6e629850d5957be6634468f04755", null ],
     [ "LwpaLogParams", "group__lwpa__log.html#ga4e65f5bb723d9280bfece5770a224f2c", null ],
+    [ "LwpaLogStrings", "group__lwpa__log.html#ga25c13b78ecd42cad3de3341f66199974", null ],
     [ "LwpaLogTimeParams", "group__lwpa__log.html#gad274aa6b5c42d1ff594200232ccbc0ab", null ],
     [ "LwpaSyslogParams", "group__lwpa__log.html#ga718e6c57e891ccc8b7e46f15cc164a57", null ],
     [ "lwpa_log_action_t", "group__lwpa__log.html#ga87102d7ecdab1a3ba919bd750fae0507", [

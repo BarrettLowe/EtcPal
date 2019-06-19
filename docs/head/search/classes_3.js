@@ -6,6 +6,7 @@ var searchData=
   ['lwpaipv6addr',['LwpaIpv6Addr',['../struct_lwpa_ip_addr_1_1_addr_union_1_1_lwpa_ipv6_addr.html',1,'LwpaIpAddr::AddrUnion']]],
   ['lwpalinger',['LwpaLinger',['../struct_lwpa_linger.html',1,'']]],
   ['lwpalogparams',['LwpaLogParams',['../struct_lwpa_log_params.html',1,'']]],
+  ['lwpalogstrings',['LwpaLogStrings',['../struct_lwpa_log_strings.html',1,'']]],
   ['lwpalogtimeparams',['LwpaLogTimeParams',['../struct_lwpa_log_time_params.html',1,'']]],
   ['lwpamempool',['LwpaMempool',['../struct_lwpa_mempool.html',1,'']]],
   ['lwpamempooldesc',['LwpaMempoolDesc',['../struct_lwpa_mempool_desc.html',1,'']]],
