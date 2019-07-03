@@ -163,9 +163,9 @@ $(document).ready(function(){initNavTree('struct_lwpa_netint_info.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a01e636f8746c84f1cf3d45c4afbfde35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#a01e636f8746c84f1cf3d45c4afbfde35">ifindex</a></td></tr>
-<tr class="memdesc:a01e636f8746c84f1cf3d45c4afbfde35"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OS-specific network interface number.  <a href="#a01e636f8746c84f1cf3d45c4afbfde35">More...</a><br /></td></tr>
-<tr class="separator:a01e636f8746c84f1cf3d45c4afbfde35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a589d64202487f78e3cc30dd2e04c5201"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#a589d64202487f78e3cc30dd2e04c5201">index</a></td></tr>
+<tr class="memdesc:a589d64202487f78e3cc30dd2e04c5201"><td class="mdescLeft">&#160;</td><td class="mdescRight">The OS-specific network interface number.  <a href="#a589d64202487f78e3cc30dd2e04c5201">More...</a><br /></td></tr>
+<tr class="separator:a589d64202487f78e3cc30dd2e04c5201"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070c3843626368d0129cf7295c10296e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#a070c3843626368d0129cf7295c10296e">addr</a></td></tr>
 <tr class="memdesc:a070c3843626368d0129cf7295c10296e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The interface ip address.  <a href="#a070c3843626368d0129cf7295c10296e">More...</a><br /></td></tr>
 <tr class="separator:a070c3843626368d0129cf7295c10296e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -199,18 +199,18 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a01e636f8746c84f1cf3d45c4afbfde35"></a>
+<a class="anchor" id="a589d64202487f78e3cc30dd2e04c5201"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int ifindex</td>
+          <td class="memname">unsigned int index</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The OS-specific network interface number. </p>
-<p>Not used on all OSes. May need to be casted away from int (e.g. unsigned int) on your OS. </p>
+<p>Used for IPv6 and IP-version-neutral APIs, as specified in Section 4 of RFC 3493. </p>
 
 </div>
 </div>
