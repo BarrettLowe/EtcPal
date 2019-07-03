@@ -162,9 +162,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga3e8baf49586da56197583bce01aaaf95"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga3e8baf49586da56197583bce01aaaf95">lwpa_netint_get_interfaces</a> (<a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint_arr, size_t netint_arr_size)</td></tr>
 <tr class="memdesc:ga3e8baf49586da56197583bce01aaaf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the network interfaces on the system.  <a href="#ga3e8baf49586da56197583bce01aaaf95">More...</a><br /></td></tr>
 <tr class="separator:ga3e8baf49586da56197583bce01aaaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaac2f1ad8d823a6a70f2446579cab37d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gaac2f1ad8d823a6a70f2446579cab37d9">lwpa_netint_get_default_interface</a> (<a class="el" href="group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048">lwpa_iptype_t</a> type, <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint)</td></tr>
-<tr class="memdesc:gaac2f1ad8d823a6a70f2446579cab37d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the default network interface.  <a href="#gaac2f1ad8d823a6a70f2446579cab37d9">More...</a><br /></td></tr>
-<tr class="separator:gaac2f1ad8d823a6a70f2446579cab37d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga1ef8afff7ab8a6c8f36c4201139afa75">lwpa_netint_get_default_interface</a> (<a class="el" href="group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048">lwpa_iptype_t</a> type, <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint)</td></tr>
+<tr class="memdesc:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the default network interface.  <a href="#ga1ef8afff7ab8a6c8f36c4201139afa75">More...</a><br /></td></tr>
+<tr class="separator:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga00eec072ad464f8c19835154ee683cf6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga00eec072ad464f8c19835154ee683cf6">lwpa_netint_get_interface_for_dest</a> (const <a class="el" href="struct_lwpa_ip_addr.html">LwpaIpAddr</a> *dest, <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint)</td></tr>
 <tr class="memdesc:ga00eec072ad464f8c19835154ee683cf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the network interface that the system will choose when routing an IP packet to the specified destination.  <a href="#ga00eec072ad464f8c19835154ee683cf6">More...</a><br /></td></tr>
 <tr class="separator:ga00eec072ad464f8c19835154ee683cf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -173,12 +173,12 @@ Functions</h2></td></tr>
 <p>A platform-neutral method for enumerating network interfaces. </p>
 <p>#include "lwpa/netint.h" </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaac2f1ad8d823a6a70f2446579cab37d9"></a>
+<a class="anchor" id="ga1ef8afff7ab8a6c8f36c4201139afa75"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_netint_get_default_interface </td>
+          <td class="memname"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_netint_get_default_interface </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048">lwpa_iptype_t</a>&#160;</td>
           <td class="paramname"><em>type</em>, </td>
@@ -205,7 +205,11 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true (netint was filled in) or false (error occurred). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: netint was filled in. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument provided. </dd>
+<dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa41ff891710b19b8613b5db809a124cf4" title="An identifier or handle passed to a function was not valid or not previously initialized. ">kLwpaErrNotFound</a>: No default interface found for this type. </dd></dl>
 
 </div>
 </div>
