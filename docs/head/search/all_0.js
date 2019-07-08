@@ -5,6 +5,7 @@ var searchData=
   ['acn_5ftcp_5fpreamble_5fsize',['ACN_TCP_PREAMBLE_SIZE',['../group__lwpa__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7',1,'root_layer_pdu.h']]],
   ['acn_5fudp_5fpreamble_5fsize',['ACN_UDP_PREAMBLE_SIZE',['../group__lwpa__rootlayerpdu.html#ga86207e41512354a1a6e321d95afe8ab0',1,'root_layer_pdu.h']]],
   ['action',['action',['../struct_lwpa_log_params.html#a599599d80aee1a85e37ad61810456cc5',1,'LwpaLogParams']]],
+  ['additional_20documentation',['Additional Documentation',['../additional_docs.html',1,'']]],
   ['addr',['addr',['../struct_lwpa_netint_info.html#a070c3843626368d0129cf7295c10296e',1,'LwpaNetintInfo']]],
   ['addrunion',['AddrUnion',['../union_lwpa_ip_addr_1_1_addr_union.html',1,'LwpaIpAddr']]],
   ['ai_5faddr',['ai_addr',['../struct_lwpa_addrinfo.html#a200d2e1203375035ef7d5c5c99e4a425',1,'LwpaAddrinfo']]],

@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
         <span class="left">
@@ -201,6 +202,7 @@ Functions</h2></td></tr>
 <p>For our purposes, the 'default' network interface is defined as the interface that is chosen for the default IP route. Note: If the network interfaces have already been enumerated with <a class="el" href="group__lwpa__netint.html#ga3e8baf49586da56197583bce01aaaf95" title="Enumerate the network interfaces on the system. ">lwpa_netint_get_interfaces()</a>, it is more efficient to inspect the is_default flag of each interface in that existing array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The IP protocol for which to get the default network interface, either <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a73563b977f0118c6094e193f57cfc2cd" title="This LwpaIpAddr contains an IPv4 address. ">kLwpaIpTypeV4</a> or <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da" title="This LwpaIpAddr contains an IPv6 address. ">kLwpaIpTypeV6</a>. A separate default interface is maintained for each. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">netint</td><td>Pointer to network interface description struct to fill with the information about the default interface. </td></tr>
   </table>
   </dd>
@@ -282,6 +284,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Enumerate the network interfaces on the system. </p>
+<p>For NICs with multiple IP addresses assigned, this module separates each address into its own entry in the netint array. Because of this, multiple array entries could have the same value for the index, mac and name parameters.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">netint_arr</td><td>Array of network interface description structs to fill in with interface info. </td></tr>

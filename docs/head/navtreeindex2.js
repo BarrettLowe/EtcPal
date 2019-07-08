@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"struct_lwpa_root_layer_pdu.html#a513d751c7097b43b3968ac81f3a5715b":[1,0,10,0,2,3],
+"struct_lwpa_root_layer_pdu.html#addaf02226137035b7f46186c67b87fe5":[1,0,10,0,2,2],
 "struct_lwpa_sockaddr.html":[1,0,4,1],
 "struct_lwpa_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236":[1,0,4,1,1],
 "struct_lwpa_sockaddr.html#aaafd70d57737ab374198d3d754411129":[1,0,4,1,0],

@@ -1,6 +1,7 @@
 var NAVTREEINDEX0 =
 {
 "acn__prot_8h_source.html":[4,0,0,0,0],
+"additional_docs.html":[5],
 "annotated.html":[3,0],
 "bool_8h_source.html":[4,0,0,0,1],
 "classes.html":[3,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "group__lwpa__rootlayerpdu.html#ga803a00da49042e85f9b6948ce2cee909":[1,0,10,0,15],
 "group__lwpa__rootlayerpdu.html#ga86207e41512354a1a6e321d95afe8ab0":[1,0,10,0,6],
 "group__lwpa__rootlayerpdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66":[1,0,10,0,3],
-"group__lwpa__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7":[1,0,10,0,5],
-"group__lwpa__rootlayerpdu.html#gacaae6efceceeb2a2d5850b60b1dd06f8":[1,0,10,0,13]
+"group__lwpa__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7":[1,0,10,0,5]
 };
