@@ -4,8 +4,8 @@ var group__lwpa__uuid =
       [ "data", "struct_lwpa_uuid.html#a7e277b3ca437d32f17651a5c915b6548", null ]
     ] ],
     [ "LWPA_UUID_BYTES", "group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae", null ],
-    [ "lwpa_uuid_cmp", "group__lwpa__uuid.html#ga0a76d940787138f930fc119abbee791d", null ],
-    [ "lwpa_uuid_is_null", "group__lwpa__uuid.html#ga11fe0eb25265c769b4a0abb729b41523", null ],
+    [ "LWPA_UUID_CMP", "group__lwpa__uuid.html#gadbd03524f4b166304d72ac364a077b48", null ],
+    [ "LWPA_UUID_IS_NULL", "group__lwpa__uuid.html#ga926444a0da65c38433818ef30bf3d1ab", null ],
     [ "LWPA_UUID_STRING_BYTES", "group__lwpa__uuid.html#ga1eaab61ad5262363f3ff5739c27f8be5", null ],
     [ "LwpaUuid", "group__lwpa__uuid.html#ga176bfe391ccacc68bd4c7c4e01b93384", null ],
     [ "lwpa_generate_v1_uuid", "group__lwpa__uuid.html#ga98aaae9b8d23b7a57fac6f1974ed8bd0", null ],

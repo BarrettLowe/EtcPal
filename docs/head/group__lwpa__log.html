@@ -189,7 +189,7 @@ Macros</h2></td></tr>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_LOG_PRIMASK</b>&#160;&#160;&#160;0x07 /* mask to extract priority part (internal) */</td></tr>
 <tr class="separator:ga6ea5eb6f13638339145836beb5ff7aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaaac3641e58595835dedb9b49b8de78fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaaac3641e58595835dedb9b49b8de78fd"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_LOG_PRI</b>(p)&#160;&#160;&#160;((p)&amp;LWPA_LOG_PRIMASK) /* extract priority */</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_LOG_PRI</b>(p)&#160;&#160;&#160;((p) &amp; LWPA_LOG_PRIMASK) /* extract priority */</td></tr>
 <tr class="separator:gaaac3641e58595835dedb9b49b8de78fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3be96f69cff9df4f31512eb1efb0b59b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3be96f69cff9df4f31512eb1efb0b59b"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_LOG_MAKEPRI</b>(fac,  pri)&#160;&#160;&#160;(((fac) &lt;&lt; 3) | (pri))</td></tr>

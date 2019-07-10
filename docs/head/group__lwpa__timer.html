@@ -147,7 +147,6 @@ $(document).ready(function(){initNavTree('group__lwpa__timer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -164,21 +163,6 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A millisecond-resolution timer.  <a href="struct_lwpa_timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ga9e74e82337cba365573f1dfc98cbb0b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga9e74e82337cba365573f1dfc98cbb0b1">lwpa_timer_start</a>(lwpatimerptr,  intval)</td></tr>
-<tr class="memdesc:ga9e74e82337cba365573f1dfc98cbb0b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer.  <a href="#ga9e74e82337cba365573f1dfc98cbb0b1">More...</a><br /></td></tr>
-<tr class="separator:ga9e74e82337cba365573f1dfc98cbb0b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae39b1a3c9ca6d1efc5b7feef9505f571"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#gae39b1a3c9ca6d1efc5b7feef9505f571">lwpa_timer_reset</a>(lwpatimerptr)&#160;&#160;&#160;(((lwpatimerptr)-&gt;reset_time) = <a class="el" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a>())</td></tr>
-<tr class="memdesc:gae39b1a3c9ca6d1efc5b7feef9505f571"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a timer while keeping the same interval.  <a href="#gae39b1a3c9ca6d1efc5b7feef9505f571">More...</a><br /></td></tr>
-<tr class="separator:gae39b1a3c9ca6d1efc5b7feef9505f571"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29e6dbbde02e98837f215dd3ee54b551"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga29e6dbbde02e98837f215dd3ee54b551">lwpa_timer_elapsed</a>(lwpatimerptr)&#160;&#160;&#160;(<a class="el" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a>() - (lwpatimerptr)-&gt;reset_time)</td></tr>
-<tr class="memdesc:ga29e6dbbde02e98837f215dd3ee54b551"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time since a timer was reset.  <a href="#ga29e6dbbde02e98837f215dd3ee54b551">More...</a><br /></td></tr>
-<tr class="separator:ga29e6dbbde02e98837f215dd3ee54b551"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaee6a48b36dbac8a15ee44195aca894d0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#gaee6a48b36dbac8a15ee44195aca894d0">lwpa_timer_isexpired</a>(lwpatimerptr)&#160;&#160;&#160;(((lwpatimerptr)-&gt;interval == 0) || (<a class="el" href="group__lwpa__timer.html#ga29e6dbbde02e98837f215dd3ee54b551">lwpa_timer_elapsed</a>(lwpatimerptr) &gt; (lwpatimerptr)-&gt;interval))</td></tr>
-<tr class="memdesc:gaee6a48b36dbac8a15ee44195aca894d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if a timer is expired.  <a href="#gaee6a48b36dbac8a15ee44195aca894d0">More...</a><br /></td></tr>
-<tr class="separator:gaee6a48b36dbac8a15ee44195aca894d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga609d679562ce78f14e508a6914abbf3a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga609d679562ce78f14e508a6914abbf3a">LwpaTimer</a></td></tr>
@@ -190,6 +174,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga94380c14c93286f6a7f1580fd4907d53"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a> ()</td></tr>
 <tr class="memdesc:ga94380c14c93286f6a7f1580fd4907d53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a monotonically-increasing millisecond value.  <a href="#ga94380c14c93286f6a7f1580fd4907d53">More...</a><br /></td></tr>
 <tr class="separator:ga94380c14c93286f6a7f1580fd4907d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5932eae27aa74c7a02a9283b70cd474"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#gaf5932eae27aa74c7a02a9283b70cd474">lwpa_timer_start</a> (<a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *timer, uint32_t interval)</td></tr>
+<tr class="memdesc:gaf5932eae27aa74c7a02a9283b70cd474"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a timer.  <a href="#gaf5932eae27aa74c7a02a9283b70cd474">More...</a><br /></td></tr>
+<tr class="separator:gaf5932eae27aa74c7a02a9283b70cd474"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1bee6af2a63b88289eb663c11edc2c51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga1bee6af2a63b88289eb663c11edc2c51">lwpa_timer_reset</a> (<a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *timer)</td></tr>
+<tr class="memdesc:ga1bee6af2a63b88289eb663c11edc2c51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset a timer while keeping the same interval.  <a href="#ga1bee6af2a63b88289eb663c11edc2c51">More...</a><br /></td></tr>
+<tr class="separator:ga1bee6af2a63b88289eb663c11edc2c51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac153f66cddddae4ea31fa508997116a5"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#gac153f66cddddae4ea31fa508997116a5">lwpa_timer_elapsed</a> (const <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *timer)</td></tr>
+<tr class="memdesc:gac153f66cddddae4ea31fa508997116a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time since a timer was reset.  <a href="#gac153f66cddddae4ea31fa508997116a5">More...</a><br /></td></tr>
+<tr class="separator:gac153f66cddddae4ea31fa508997116a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad7ae13db9c553cd554310be1b0e790c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#gad7ae13db9c553cd554310be1b0e790c9">lwpa_timer_is_expired</a> (const <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *timer)</td></tr>
+<tr class="memdesc:gad7ae13db9c553cd554310be1b0e790c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check to see if a timer is expired.  <a href="#gad7ae13db9c553cd554310be1b0e790c9">More...</a><br /></td></tr>
+<tr class="separator:gad7ae13db9c553cd554310be1b0e790c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga15345971dcc9b6b5e705abe2ac2f24b0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__timer.html#ga15345971dcc9b6b5e705abe2ac2f24b0">lwpa_timer_remaining</a> (const <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *timer)</td></tr>
 <tr class="memdesc:ga15345971dcc9b6b5e705abe2ac2f24b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of time remaining in a timer.  <a href="#ga15345971dcc9b6b5e705abe2ac2f24b0">More...</a><br /></td></tr>
 <tr class="separator:ga15345971dcc9b6b5e705abe2ac2f24b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,117 +193,6 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Platform-neutral system timers. </p>
 <p>#include "lwpa/timer.h" </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="ga29e6dbbde02e98837f215dd3ee54b551"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define lwpa_timer_elapsed</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">lwpatimerptr</td><td>)</td>
-          <td>&#160;&#160;&#160;(<a class="el" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a>() - (lwpatimerptr)-&gt;reset_time)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the time since a timer was reset. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lwpatimerptr</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> of which to get the elapsed time. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of milliseconds since the timer was reset. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gaee6a48b36dbac8a15ee44195aca894d0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define lwpa_timer_isexpired</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">lwpatimerptr</td><td>)</td>
-          <td>&#160;&#160;&#160;(((lwpatimerptr)-&gt;interval == 0) || (<a class="el" href="group__lwpa__timer.html#ga29e6dbbde02e98837f215dd3ee54b551">lwpa_timer_elapsed</a>(lwpatimerptr) &gt; (lwpatimerptr)-&gt;interval))</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check to see if a timer is expired. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lwpatimerptr</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> of which to check the expiration. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true (more than <a class="el" href="struct_lwpa_timer.html#acd9ed1ccc44de55e1d3eff5569663695">interval </a> milliseconds have passed since the timer was started/reset) or false (less than or equal to <a class="el" href="struct_lwpa_timer.html#acd9ed1ccc44de55e1d3eff5569663695">interval </a> milliseconds have passed since the timer was started/reset) </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gae39b1a3c9ca6d1efc5b7feef9505f571"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define lwpa_timer_reset</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">lwpatimerptr</td><td>)</td>
-          <td>&#160;&#160;&#160;(((lwpatimerptr)-&gt;reset_time) = <a class="el" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a>())</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Reset a timer while keeping the same interval. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lwpatimerptr</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> to reset. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ga9e74e82337cba365573f1dfc98cbb0b1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define lwpa_timer_start</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">lwpatimerptr, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">intval&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                           \</div><div class="line">  {                                            \</div><div class="line">    (lwpatimerptr)-&gt;reset_time = <a class="code" href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a>(); \</div><div class="line">    (lwpatimerptr)-&gt;interval = intval;         \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__lwpa__timer_html_ga94380c14c93286f6a7f1580fd4907d53"><div class="ttname"><a href="group__lwpa__timer.html#ga94380c14c93286f6a7f1580fd4907d53">lwpa_getms</a></div><div class="ttdeci">uint32_t lwpa_getms()</div><div class="ttdoc">Get a monotonically-increasing millisecond value. </div></div>
-</div><!-- fragment -->
-<p>Start a timer. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lwpatimerptr</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> to start. </td></tr>
-    <tr><td class="paramname">intval</td><td>Timer interval in milliseconds. An interval of 0 will result in a timer that is always expired. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ga609d679562ce78f14e508a6914abbf3a"></a>
 <div class="memitem">
@@ -343,6 +228,58 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="gac153f66cddddae4ea31fa508997116a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t lwpa_timer_elapsed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the time since a timer was reset. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> of which to get the elapsed time. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of milliseconds since the timer was reset. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gad7ae13db9c553cd554310be1b0e790c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_timer_is_expired </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check to see if a timer is expired. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> of which to check the expiration. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: More than <a class="el" href="struct_lwpa_timer.html#acd9ed1ccc44de55e1d3eff5569663695">interval </a> milliseconds have passed since the timer was started/reset. </dd>
+<dd>
+false: Less than or equal to <a class="el" href="struct_lwpa_timer.html#acd9ed1ccc44de55e1d3eff5569663695">interval </a> milliseconds have passed since the timer was started/reset) </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga15345971dcc9b6b5e705abe2ac2f24b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -365,6 +302,65 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Remaining time in milliseconds or 0 (timer is expired). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga1bee6af2a63b88289eb663c11edc2c51"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lwpa_timer_reset </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reset a timer while keeping the same interval. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> to reset. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gaf5932eae27aa74c7a02a9283b70cd474"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void lwpa_timer_start </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lwpa_timer.html">LwpaTimer</a> *&#160;</td>
+          <td class="paramname"><em>timer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>interval</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a timer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timer</td><td>Pointer to the <a class="el" href="struct_lwpa_timer.html" title="A millisecond-resolution timer. ">LwpaTimer</a> to start. </td></tr>
+    <tr><td class="paramname">interval</td><td>Timer interval in milliseconds. An interval of 0 will result in a timer that is always expired. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

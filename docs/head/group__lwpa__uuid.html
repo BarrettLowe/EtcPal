@@ -170,12 +170,12 @@ Macros</h2></td></tr>
 <tr class="memitem:ga8c2c0266da7a921d450de0c97ba380ae"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae">LWPA_UUID_BYTES</a>&#160;&#160;&#160;16u</td></tr>
 <tr class="memdesc:ga8c2c0266da7a921d450de0c97ba380ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes that make up a UUID.  <a href="#ga8c2c0266da7a921d450de0c97ba380ae">More...</a><br /></td></tr>
 <tr class="separator:ga8c2c0266da7a921d450de0c97ba380ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0a76d940787138f930fc119abbee791d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga0a76d940787138f930fc119abbee791d">lwpa_uuid_cmp</a>(uuid1ptr,  uuid2ptr)&#160;&#160;&#160;memcmp((uuid1ptr)-&gt;data, (uuid2ptr)-&gt;data, <a class="el" href="group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae">LWPA_UUID_BYTES</a>)</td></tr>
-<tr class="memdesc:ga0a76d940787138f930fc119abbee791d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two UUIDs.  <a href="#ga0a76d940787138f930fc119abbee791d">More...</a><br /></td></tr>
-<tr class="separator:ga0a76d940787138f930fc119abbee791d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11fe0eb25265c769b4a0abb729b41523"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga11fe0eb25265c769b4a0abb729b41523">lwpa_uuid_is_null</a>(uuidptr)&#160;&#160;&#160;(memcmp((uuidptr)-&gt;data, kLwpaNullUuid.data, <a class="el" href="group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae">LWPA_UUID_BYTES</a>) == 0)</td></tr>
-<tr class="memdesc:ga11fe0eb25265c769b4a0abb729b41523"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a UUID is null.  <a href="#ga11fe0eb25265c769b4a0abb729b41523">More...</a><br /></td></tr>
-<tr class="separator:ga11fe0eb25265c769b4a0abb729b41523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadbd03524f4b166304d72ac364a077b48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#gadbd03524f4b166304d72ac364a077b48">LWPA_UUID_CMP</a>(uuid1ptr,  uuid2ptr)&#160;&#160;&#160;memcmp((uuid1ptr)-&gt;data, (uuid2ptr)-&gt;data, <a class="el" href="group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae">LWPA_UUID_BYTES</a>)</td></tr>
+<tr class="memdesc:gadbd03524f4b166304d72ac364a077b48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two UUIDs.  <a href="#gadbd03524f4b166304d72ac364a077b48">More...</a><br /></td></tr>
+<tr class="separator:gadbd03524f4b166304d72ac364a077b48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga926444a0da65c38433818ef30bf3d1ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga926444a0da65c38433818ef30bf3d1ab">LWPA_UUID_IS_NULL</a>(uuidptr)&#160;&#160;&#160;(memcmp((uuidptr)-&gt;data, kLwpaNullUuid.data, <a class="el" href="group__lwpa__uuid.html#ga8c2c0266da7a921d450de0c97ba380ae">LWPA_UUID_BYTES</a>) == 0)</td></tr>
+<tr class="memdesc:ga926444a0da65c38433818ef30bf3d1ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine if a UUID is null.  <a href="#ga926444a0da65c38433818ef30bf3d1ab">More...</a><br /></td></tr>
+<tr class="separator:ga926444a0da65c38433818ef30bf3d1ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1eaab61ad5262363f3ff5739c27f8be5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__uuid.html#ga1eaab61ad5262363f3ff5739c27f8be5">LWPA_UUID_STRING_BYTES</a>&#160;&#160;&#160;37</td></tr>
 <tr class="memdesc:ga1eaab61ad5262363f3ff5739c27f8be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of bytes required to hold an ASCII string representation of a UUID.  <a href="#ga1eaab61ad5262363f3ff5739c27f8be5">More...</a><br /></td></tr>
 <tr class="separator:ga1eaab61ad5262363f3ff5739c27f8be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,12 +232,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0a76d940787138f930fc119abbee791d"></a>
+<a class="anchor" id="gadbd03524f4b166304d72ac364a077b48"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_uuid_cmp</td>
+          <td class="memname">#define LWPA_UUID_CMP</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">uuid1ptr, </td>
@@ -270,12 +270,12 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga11fe0eb25265c769b4a0abb729b41523"></a>
+<a class="anchor" id="ga926444a0da65c38433818ef30bf3d1ab"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_uuid_is_null</td>
+          <td class="memname">#define LWPA_UUID_IS_NULL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">uuidptr</td><td>)</td>

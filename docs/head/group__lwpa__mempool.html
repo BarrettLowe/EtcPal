@@ -420,7 +420,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_mempool_used_p
 </div><div class="memdoc">
 
 <p>Initialize a memory pool. </p>
-<p>This macro must be called on a pool before using <a class="el" href="group__lwpa__mempool.html#ga974021021787bdc6dd16e5017869a556" title="Allocate a new element from a memory pool. ">lwpa_mempool_alloc()</a> or <a class="el" href="group__lwpa__mempool.html#ga1962ba16f32cecfafc8ba4b60765c0de" title="Free an element back to a memory pool. ">lwpa_mempool_free()</a> on it. There is no deinitialization function because there is no cleanup necessary; to reset a pool, simply call this function again.</p>
+<p>Must be called on a pool before using <a class="el" href="group__lwpa__mempool.html#ga974021021787bdc6dd16e5017869a556" title="Allocate a new element from a memory pool. ">lwpa_mempool_alloc()</a> or <a class="el" href="group__lwpa__mempool.html#ga1962ba16f32cecfafc8ba4b60765c0de" title="Free an element back to a memory pool. ">lwpa_mempool_free()</a> on it. There is no deinitialization function because there is no cleanup necessary; to reset a pool, simply call this function again.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">name</td><td>The name of the memory pool to initialize. </td></tr>

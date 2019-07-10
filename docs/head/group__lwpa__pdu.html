@@ -176,21 +176,21 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gadaf3eef17f0630b17283c1e7d5dd6104"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gadaf3eef17f0630b17283c1e7d5dd6104">lwpa_pdu_length</a>(pdu_buf)</td></tr>
-<tr class="memdesc:gadaf3eef17f0630b17283c1e7d5dd6104"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length from the Length field of a PDU.  <a href="#gadaf3eef17f0630b17283c1e7d5dd6104">More...</a><br /></td></tr>
-<tr class="separator:gadaf3eef17f0630b17283c1e7d5dd6104"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga93536e776d086b3382f063c6ecd2c39c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga93536e776d086b3382f063c6ecd2c39c">lwpa_pdu_pack_normal_len</a>(pdu_buf,  length)</td></tr>
-<tr class="memdesc:ga93536e776d086b3382f063c6ecd2c39c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the Length field of a PDU which has a length less than 4096.  <a href="#ga93536e776d086b3382f063c6ecd2c39c">More...</a><br /></td></tr>
-<tr class="separator:ga93536e776d086b3382f063c6ecd2c39c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38732658618dbe739d909c9cdc71d010"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga38732658618dbe739d909c9cdc71d010">lwpa_pdu_pack_ext_len</a>(pdu_buf,  length)</td></tr>
-<tr class="memdesc:ga38732658618dbe739d909c9cdc71d010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the Length field of a PDU which has a length 4096 or greater.  <a href="#ga38732658618dbe739d909c9cdc71d010">More...</a><br /></td></tr>
-<tr class="separator:ga38732658618dbe739d909c9cdc71d010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1c7176c53e7efa8aa2a2ee07b4510c5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga1c7176c53e7efa8aa2a2ee07b4510c5b">LWPA_PDU_LENGTH</a>(pdu_buf)</td></tr>
+<tr class="memdesc:ga1c7176c53e7efa8aa2a2ee07b4510c5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length from the Length field of a PDU.  <a href="#ga1c7176c53e7efa8aa2a2ee07b4510c5b">More...</a><br /></td></tr>
+<tr class="separator:ga1c7176c53e7efa8aa2a2ee07b4510c5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacbfa034d2ad3d6dd4545c1f3b2e6ba53"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gacbfa034d2ad3d6dd4545c1f3b2e6ba53">LWPA_PDU_PACK_NORMAL_LEN</a>(pdu_buf,  length)</td></tr>
+<tr class="memdesc:gacbfa034d2ad3d6dd4545c1f3b2e6ba53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the Length field of a PDU which has a length less than 4096.  <a href="#gacbfa034d2ad3d6dd4545c1f3b2e6ba53">More...</a><br /></td></tr>
+<tr class="separator:gacbfa034d2ad3d6dd4545c1f3b2e6ba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac94bb43fbdadc80e9b82ed3cb62019fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gac94bb43fbdadc80e9b82ed3cb62019fb">LWPA_PDU_PACK_EXT_LEN</a>(pdu_buf,  length)</td></tr>
+<tr class="memdesc:gac94bb43fbdadc80e9b82ed3cb62019fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill in the Length field of a PDU which has a length 4096 or greater.  <a href="#gac94bb43fbdadc80e9b82ed3cb62019fb">More...</a><br /></td></tr>
+<tr class="separator:gac94bb43fbdadc80e9b82ed3cb62019fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1b9332f5d2c84f7679f6d37d7abc9abc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga1b9332f5d2c84f7679f6d37d7abc9abc">LWPA_PDU_INIT</a></td></tr>
 <tr class="memdesc:ga1b9332f5d2c84f7679f6d37d7abc9abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">LwpaPdu</a> initializer values; must be used to intialize an <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">LwpaPdu</a> when parsing the first PDU in a block.  <a href="#ga1b9332f5d2c84f7679f6d37d7abc9abc">More...</a><br /></td></tr>
 <tr class="separator:ga1b9332f5d2c84f7679f6d37d7abc9abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb885bd8514cdb920910fdc815514e2a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gabb885bd8514cdb920910fdc815514e2a">lwpa_init_pdu</a>(pduptr)</td></tr>
-<tr class="memdesc:gabb885bd8514cdb920910fdc815514e2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternative to <a class="el" href="group__lwpa__pdu.html#ga1b9332f5d2c84f7679f6d37d7abc9abc" title="Default LwpaPdu initializer values; must be used to intialize an LwpaPdu when parsing the first PDU i...">LWPA_PDU_INIT</a> which can be used on an existing <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">LwpaPdu</a> to re-initialize its values.  <a href="#gabb885bd8514cdb920910fdc815514e2a">More...</a><br /></td></tr>
-<tr class="separator:gabb885bd8514cdb920910fdc815514e2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga93ec791e0be274ed20fadeb333b640b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga93ec791e0be274ed20fadeb333b640b4">LWPA_INIT_PDU</a>(pduptr)</td></tr>
+<tr class="memdesc:ga93ec791e0be274ed20fadeb333b640b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An alternative to <a class="el" href="group__lwpa__pdu.html#ga1b9332f5d2c84f7679f6d37d7abc9abc" title="Default LwpaPdu initializer values; must be used to intialize an LwpaPdu when parsing the first PDU i...">LWPA_PDU_INIT</a> which can be used on an existing <a class="el" href="struct_lwpa_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">LwpaPdu</a> to re-initialize its values.  <a href="#ga93ec791e0be274ed20fadeb333b640b4">More...</a><br /></td></tr>
+<tr class="separator:ga93ec791e0be274ed20fadeb333b640b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -212,47 +212,47 @@ Get the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpfe64ed379ab206fc6b2f196334e422f4"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
 <p>For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
 </td></tr>
-<tr class="memitem:gae5b364603403da45cb766ce7b6511deb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gae5b364603403da45cb766ce7b6511deb">lwpa_pdu_l_flag_set</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x80u))</td></tr>
-<tr class="memdesc:gae5b364603403da45cb766ce7b6511deb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the L flag is set in a PDU flags field.  <a href="#gae5b364603403da45cb766ce7b6511deb">More...</a><br /></td></tr>
-<tr class="separator:gae5b364603403da45cb766ce7b6511deb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9b9015abbec81a0ce77a9458f81a36ad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga9b9015abbec81a0ce77a9458f81a36ad">lwpa_pdu_v_flag_set</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x40u))</td></tr>
-<tr class="memdesc:ga9b9015abbec81a0ce77a9458f81a36ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the V flag is set in a PDU flags field.  <a href="#ga9b9015abbec81a0ce77a9458f81a36ad">More...</a><br /></td></tr>
-<tr class="separator:ga9b9015abbec81a0ce77a9458f81a36ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga33fb4996b8195d16ef3d067a0325728d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga33fb4996b8195d16ef3d067a0325728d">lwpa_pdu_h_flag_set</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x20u))</td></tr>
-<tr class="memdesc:ga33fb4996b8195d16ef3d067a0325728d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the H flag is set in a PDU flags field.  <a href="#ga33fb4996b8195d16ef3d067a0325728d">More...</a><br /></td></tr>
-<tr class="separator:ga33fb4996b8195d16ef3d067a0325728d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga27a123d2b8de5379a9fb58bfa530cfd6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga27a123d2b8de5379a9fb58bfa530cfd6">lwpa_pdu_d_flag_set</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x10u))</td></tr>
-<tr class="memdesc:ga27a123d2b8de5379a9fb58bfa530cfd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the D flag is set in a PDU flags field.  <a href="#ga27a123d2b8de5379a9fb58bfa530cfd6">More...</a><br /></td></tr>
-<tr class="separator:ga27a123d2b8de5379a9fb58bfa530cfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae9e2636cdf1ad505cdfff32dbacb3cc1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gae9e2636cdf1ad505cdfff32dbacb3cc1">LWPA_PDU_L_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x80u))</td></tr>
+<tr class="memdesc:gae9e2636cdf1ad505cdfff32dbacb3cc1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the L flag is set in a PDU flags field.  <a href="#gae9e2636cdf1ad505cdfff32dbacb3cc1">More...</a><br /></td></tr>
+<tr class="separator:gae9e2636cdf1ad505cdfff32dbacb3cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga940995606a7158b0cb5e8736e91c28f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga940995606a7158b0cb5e8736e91c28f7">LWPA_PDU_V_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x40u))</td></tr>
+<tr class="memdesc:ga940995606a7158b0cb5e8736e91c28f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the V flag is set in a PDU flags field.  <a href="#ga940995606a7158b0cb5e8736e91c28f7">More...</a><br /></td></tr>
+<tr class="separator:ga940995606a7158b0cb5e8736e91c28f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga74cbe5c84d1e8b5f796e11f5f0b447d6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga74cbe5c84d1e8b5f796e11f5f0b447d6">LWPA_PDU_H_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x20u))</td></tr>
+<tr class="memdesc:ga74cbe5c84d1e8b5f796e11f5f0b447d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the H flag is set in a PDU flags field.  <a href="#ga74cbe5c84d1e8b5f796e11f5f0b447d6">More...</a><br /></td></tr>
+<tr class="separator:ga74cbe5c84d1e8b5f796e11f5f0b447d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2d076e1667d931732ad1d650a600b8a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gac2d076e1667d931732ad1d650a600b8a">LWPA_PDU_D_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x10u))</td></tr>
+<tr class="memdesc:gac2d076e1667d931732ad1d650a600b8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the D flag is set in a PDU flags field.  <a href="#gac2d076e1667d931732ad1d650a600b8a">More...</a><br /></td></tr>
+<tr class="separator:gac2d076e1667d931732ad1d650a600b8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></td></tr>
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp4accfa41e968240c2274beaf5c6b2d1a"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
 <p>For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
 </td></tr>
-<tr class="memitem:gadb9eaf73cb157935232cf5b918bc7de9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gadb9eaf73cb157935232cf5b918bc7de9">lwpa_pdu_set_l_flag</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x80u)</td></tr>
-<tr class="memdesc:gadb9eaf73cb157935232cf5b918bc7de9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the L flag in a PDU flags field.  <a href="#gadb9eaf73cb157935232cf5b918bc7de9">More...</a><br /></td></tr>
-<tr class="separator:gadb9eaf73cb157935232cf5b918bc7de9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5c1d329d7d9784de1ac81950d1aece5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gaf5c1d329d7d9784de1ac81950d1aece5">lwpa_pdu_set_v_flag</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x40u)</td></tr>
-<tr class="memdesc:gaf5c1d329d7d9784de1ac81950d1aece5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the V flag in a PDU flags field.  <a href="#gaf5c1d329d7d9784de1ac81950d1aece5">More...</a><br /></td></tr>
-<tr class="separator:gaf5c1d329d7d9784de1ac81950d1aece5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab1ac6bc0f38adfb6bd122df4ad896de5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gab1ac6bc0f38adfb6bd122df4ad896de5">lwpa_pdu_set_h_flag</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x20u)</td></tr>
-<tr class="memdesc:gab1ac6bc0f38adfb6bd122df4ad896de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the H flag in a PDU flags field.  <a href="#gab1ac6bc0f38adfb6bd122df4ad896de5">More...</a><br /></td></tr>
-<tr class="separator:gab1ac6bc0f38adfb6bd122df4ad896de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga996c5a9416c5c3a17ded724e9e69ad18"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga996c5a9416c5c3a17ded724e9e69ad18">lwpa_pdu_set_d_flag</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x10u)</td></tr>
-<tr class="memdesc:ga996c5a9416c5c3a17ded724e9e69ad18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the D flag in a PDU flags field.  <a href="#ga996c5a9416c5c3a17ded724e9e69ad18">More...</a><br /></td></tr>
-<tr class="separator:ga996c5a9416c5c3a17ded724e9e69ad18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3735c5e90ecddd2f669c566a39705f04"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga3735c5e90ecddd2f669c566a39705f04">LWPA_PDU_SET_L_FLAG</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x80u)</td></tr>
+<tr class="memdesc:ga3735c5e90ecddd2f669c566a39705f04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the L flag in a PDU flags field.  <a href="#ga3735c5e90ecddd2f669c566a39705f04">More...</a><br /></td></tr>
+<tr class="separator:ga3735c5e90ecddd2f669c566a39705f04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga03f635cc9059327f3f13fe950550c290"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#ga03f635cc9059327f3f13fe950550c290">LWPA_PDU_SET_V_FLAG</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x40u)</td></tr>
+<tr class="memdesc:ga03f635cc9059327f3f13fe950550c290"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the V flag in a PDU flags field.  <a href="#ga03f635cc9059327f3f13fe950550c290">More...</a><br /></td></tr>
+<tr class="separator:ga03f635cc9059327f3f13fe950550c290"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae437f2d6908a61b1964964449d68592e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gae437f2d6908a61b1964964449d68592e">LWPA_PDU_SET_H_FLAG</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x20u)</td></tr>
+<tr class="memdesc:gae437f2d6908a61b1964964449d68592e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the H flag in a PDU flags field.  <a href="#gae437f2d6908a61b1964964449d68592e">More...</a><br /></td></tr>
+<tr class="separator:gae437f2d6908a61b1964964449d68592e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad9d748fd781edf00ac6e05a9eba6ec57"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pdu.html#gad9d748fd781edf00ac6e05a9eba6ec57">LWPA_PDU_SET_D_FLAG</a>(flags_byte)&#160;&#160;&#160;(flags_byte |= 0x10u)</td></tr>
+<tr class="memdesc:gad9d748fd781edf00ac6e05a9eba6ec57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the D flag in a PDU flags field.  <a href="#gad9d748fd781edf00ac6e05a9eba6ec57">More...</a><br /></td></tr>
+<tr class="separator:gad9d748fd781edf00ac6e05a9eba6ec57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). </p>
 <p>#include "lwpa/pdu.h" </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="gabb885bd8514cdb920910fdc815514e2a"></a>
+<a class="anchor" id="ga93ec791e0be274ed20fadeb333b640b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_init_pdu</td>
+          <td class="memname">#define LWPA_INIT_PDU</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pduptr</td><td>)</td>
@@ -271,12 +271,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga27a123d2b8de5379a9fb58bfa530cfd6"></a>
+<a class="anchor" id="gac2d076e1667d931732ad1d650a600b8a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_d_flag_set</td>
+          <td class="memname">#define LWPA_PDU_D_FLAG_SET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -296,12 +296,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga33fb4996b8195d16ef3d067a0325728d"></a>
+<a class="anchor" id="ga74cbe5c84d1e8b5f796e11f5f0b447d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_h_flag_set</td>
+          <td class="memname">#define LWPA_PDU_H_FLAG_SET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -335,12 +335,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="gae5b364603403da45cb766ce7b6511deb"></a>
+<a class="anchor" id="gae9e2636cdf1ad505cdfff32dbacb3cc1"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_l_flag_set</td>
+          <td class="memname">#define LWPA_PDU_L_FLAG_SET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -360,12 +360,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="gadaf3eef17f0630b17283c1e7d5dd6104"></a>
+<a class="anchor" id="ga1c7176c53e7efa8aa2a2ee07b4510c5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_length</td>
+          <td class="memname">#define LWPA_PDU_LENGTH</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pdu_buf</td><td>)</td>
@@ -373,7 +373,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__lwpa__pdu.html#gae5b364603403da45cb766ce7b6511deb">lwpa_pdu_l_flag_set</a>(pdu_buf[0])                                                                     \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__lwpa__pdu_html_gae5b364603403da45cb766ce7b6511deb"><div class="ttname"><a href="group__lwpa__pdu.html#gae5b364603403da45cb766ce7b6511deb">lwpa_pdu_l_flag_set</a></div><div class="ttdeci">#define lwpa_pdu_l_flag_set(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:45</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__lwpa__pdu.html#gae9e2636cdf1ad505cdfff32dbacb3cc1">LWPA_PDU_L_FLAG_SET</a>(pdu_buf[0])                                                                     \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__lwpa__pdu_html_gae9e2636cdf1ad505cdfff32dbacb3cc1"><div class="ttname"><a href="group__lwpa__pdu.html#gae9e2636cdf1ad505cdfff32dbacb3cc1">LWPA_PDU_L_FLAG_SET</a></div><div class="ttdeci">#define LWPA_PDU_L_FLAG_SET(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:45</div></div>
 </div><!-- fragment -->
 <p>Get the length from the Length field of a PDU. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -386,12 +386,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga38732658618dbe739d909c9cdc71d010"></a>
+<a class="anchor" id="gac94bb43fbdadc80e9b82ed3cb62019fb"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_pack_ext_len</td>
+          <td class="memname">#define LWPA_PDU_PACK_EXT_LEN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pdu_buf, </td>
@@ -421,12 +421,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga93536e776d086b3382f063c6ecd2c39c"></a>
+<a class="anchor" id="gacbfa034d2ad3d6dd4545c1f3b2e6ba53"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_pack_normal_len</td>
+          <td class="memname">#define LWPA_PDU_PACK_NORMAL_LEN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">pdu_buf, </td>
@@ -456,12 +456,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga996c5a9416c5c3a17ded724e9e69ad18"></a>
+<a class="anchor" id="gad9d748fd781edf00ac6e05a9eba6ec57"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_set_d_flag</td>
+          <td class="memname">#define LWPA_PDU_SET_D_FLAG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -480,12 +480,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="gab1ac6bc0f38adfb6bd122df4ad896de5"></a>
+<a class="anchor" id="gae437f2d6908a61b1964964449d68592e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_set_h_flag</td>
+          <td class="memname">#define LWPA_PDU_SET_H_FLAG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -504,12 +504,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="gadb9eaf73cb157935232cf5b918bc7de9"></a>
+<a class="anchor" id="ga3735c5e90ecddd2f669c566a39705f04"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_set_l_flag</td>
+          <td class="memname">#define LWPA_PDU_SET_L_FLAG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -528,12 +528,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="gaf5c1d329d7d9784de1ac81950d1aece5"></a>
+<a class="anchor" id="ga03f635cc9059327f3f13fe950550c290"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_set_v_flag</td>
+          <td class="memname">#define LWPA_PDU_SET_V_FLAG</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
@@ -552,12 +552,12 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 
 </div>
 </div>
-<a class="anchor" id="ga9b9015abbec81a0ce77a9458f81a36ad"></a>
+<a class="anchor" id="ga940995606a7158b0cb5e8736e91c28f7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define lwpa_pdu_v_flag_set</td>
+          <td class="memname">#define LWPA_PDU_V_FLAG_SET</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
