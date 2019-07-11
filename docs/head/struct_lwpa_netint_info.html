@@ -177,8 +177,11 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:af218cb57bca9340eb78204cb81754bc9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter MAC address.  <a href="#af218cb57bca9340eb78204cb81754bc9">More...</a><br /></td></tr>
 <tr class="separator:af218cb57bca9340eb78204cb81754bc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbe9b559861b88e242f78e5eb27b0fd5"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#abbe9b559861b88e242f78e5eb27b0fd5">name</a> [LWPA_NETINTINFO_NAME_LEN]</td></tr>
-<tr class="memdesc:abbe9b559861b88e242f78e5eb27b0fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter name as a string.  <a href="#abbe9b559861b88e242f78e5eb27b0fd5">More...</a><br /></td></tr>
+<tr class="memdesc:abbe9b559861b88e242f78e5eb27b0fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system name for the interface.  <a href="#abbe9b559861b88e242f78e5eb27b0fd5">More...</a><br /></td></tr>
 <tr class="separator:abbe9b559861b88e242f78e5eb27b0fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47fa194279862c2aa8af0134bc341f12"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#a47fa194279862c2aa8af0134bc341f12">friendly_name</a> [LWPA_NETINTINFO_FRIENDLY_NAME_LEN]</td></tr>
+<tr class="memdesc:a47fa194279862c2aa8af0134bc341f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-friendly name for the interface.  <a href="#a47fa194279862c2aa8af0134bc341f12">More...</a><br /></td></tr>
+<tr class="separator:a47fa194279862c2aa8af0134bc341f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_lwpa_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a">is_default</a></td></tr>
 <tr class="memdesc:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this is the default network interface.  <a href="#a0c9f19a7b68ad0dad836ee153d3a230a">More...</a><br /></td></tr>
 <tr class="separator:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,6 +200,21 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The interface ip address. </p>
+
+</div>
+</div>
+<a class="anchor" id="a47fa194279862c2aa8af0134bc341f12"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char friendly_name[LWPA_NETINTINFO_FRIENDLY_NAME_LEN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A user-friendly name for the interface. </p>
+<p>On some systems, this is the same as the name field. Others allow users to create and change a friendly name for network interfaces that's different than the system name. This field should be used when printing the adapter list in a UI. </p>
 
 </div>
 </div>
@@ -268,7 +286,8 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The adapter name as a string. </p>
+<p>The system name for the interface. </p>
+<p>This name will not change unless the adapter is removed or reconfigured. </p>
 
 </div>
 </div>
