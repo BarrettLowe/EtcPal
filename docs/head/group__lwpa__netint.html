@@ -160,9 +160,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf5826dbe7cab3ace937a77ca32ecb362"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gaf5826dbe7cab3ace937a77ca32ecb362">lwpa_netint_get_num_interfaces</a> ()</td></tr>
 <tr class="memdesc:gaf5826dbe7cab3ace937a77ca32ecb362"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of network interfaces present on the system.  <a href="#gaf5826dbe7cab3ace937a77ca32ecb362">More...</a><br /></td></tr>
 <tr class="separator:gaf5826dbe7cab3ace937a77ca32ecb362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga3e8baf49586da56197583bce01aaaf95"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga3e8baf49586da56197583bce01aaaf95">lwpa_netint_get_interfaces</a> (<a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint_arr, size_t netint_arr_size)</td></tr>
-<tr class="memdesc:ga3e8baf49586da56197583bce01aaaf95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enumerate the network interfaces on the system.  <a href="#ga3e8baf49586da56197583bce01aaaf95">More...</a><br /></td></tr>
-<tr class="separator:ga3e8baf49586da56197583bce01aaaf95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4d76bc34330a4c05a2d4fa1be07436c"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gaf4d76bc34330a4c05a2d4fa1be07436c">lwpa_netint_get_interfaces</a> ()</td></tr>
+<tr class="memdesc:gaf4d76bc34330a4c05a2d4fa1be07436c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a list of network interfaces on the system.  <a href="#gaf4d76bc34330a4c05a2d4fa1be07436c">More...</a><br /></td></tr>
+<tr class="separator:gaf4d76bc34330a4c05a2d4fa1be07436c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad5caa64a4087d90205a8b2e4343c4e1d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#gad5caa64a4087d90205a8b2e4343c4e1d">lwpa_netint_copy_interfaces</a> (<a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint_arr, size_t netint_arr_size)</td></tr>
+<tr class="memdesc:gad5caa64a4087d90205a8b2e4343c4e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy the list of network interfaces on the system into an array.  <a href="#gad5caa64a4087d90205a8b2e4343c4e1d">More...</a><br /></td></tr>
+<tr class="separator:gad5caa64a4087d90205a8b2e4343c4e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__netint.html#ga1ef8afff7ab8a6c8f36c4201139afa75">lwpa_netint_get_default_interface</a> (<a class="el" href="group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048">lwpa_iptype_t</a> type, <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *netint)</td></tr>
 <tr class="memdesc:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get information about the default network interface.  <a href="#ga1ef8afff7ab8a6c8f36c4201139afa75">More...</a><br /></td></tr>
 <tr class="separator:ga1ef8afff7ab8a6c8f36c4201139afa75"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,6 +177,43 @@ Functions</h2></td></tr>
 <p>A platform-neutral method for enumerating network interfaces. </p>
 <p>#include "lwpa/netint.h" </p>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="gad5caa64a4087d90205a8b2e4343c4e1d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t lwpa_netint_copy_interfaces </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *&#160;</td>
+          <td class="paramname"><em>netint_arr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>netint_arr_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Copy the list of network interfaces on the system into an array. </p>
+<p>For NICs with multiple IP addresses assigned, this module separates each address into its own entry in the netint array. Because of this, multiple array entries could have the same value for the index, mac and name parameters.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">netint_arr</td><td>Array of network interface description structs to fill in with interface info. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">netint_arr_size</td><td>Size of the netint array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of network interfaces that were copied, up to a maximum of netint_arr_size, or 0 if there are no interfaces present or the module is not initialized. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga1ef8afff7ab8a6c8f36c4201139afa75"></a>
 <div class="memitem">
 <div class="memproto">
@@ -199,7 +239,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get information about the default network interface. </p>
-<p>For our purposes, the 'default' network interface is defined as the interface that is chosen for the default IP route. Note: If the network interfaces have already been enumerated with <a class="el" href="group__lwpa__netint.html#ga3e8baf49586da56197583bce01aaaf95" title="Enumerate the network interfaces on the system. ">lwpa_netint_get_interfaces()</a>, it is more efficient to inspect the is_default flag of each interface in that existing array.</p>
+<p>For our purposes, the 'default' network interface is defined as the interface that is chosen for the default IP route. Note: If the network interfaces have already been enumerated with <a class="el" href="group__lwpa__netint.html#gaf4d76bc34330a4c05a2d4fa1be07436c" title="Get a list of network interfaces on the system. ">lwpa_netint_get_interfaces()</a>, it is more efficient to inspect the is_default flag of each interface in that existing array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>The IP protocol for which to get the default network interface, either <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a73563b977f0118c6094e193f57cfc2cd" title="This LwpaIpAddr contains an IPv4 address. ">kLwpaIpTypeV4</a> or <a class="el" href="group__lwpa__inet.html#gga75918e41a21a5b4511b2b3c797e6f048a60f28e3cdc84c51debfd05e05b4578da" title="This LwpaIpAddr contains an IPv6 address. ">kLwpaIpTypeV6</a>. A separate default interface is maintained for each. </td></tr>
@@ -259,40 +299,22 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga3e8baf49586da56197583bce01aaaf95"></a>
+<a class="anchor" id="gaf4d76bc34330a4c05a2d4fa1be07436c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t lwpa_netint_get_interfaces </td>
+          <td class="memname">const <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a>* lwpa_netint_get_interfaces </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> *&#160;</td>
-          <td class="paramname"><em>netint_arr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>netint_arr_size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Enumerate the network interfaces on the system. </p>
+<p>Get a list of network interfaces on the system. </p>
 <p>For NICs with multiple IP addresses assigned, this module separates each address into its own entry in the netint array. Because of this, multiple array entries could have the same value for the index, mac and name parameters.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">netint_arr</td><td>Array of network interface description structs to fill in with interface info. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">netint_arr_size</td><td>Size of the netint array. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of network interfaces that were enumerated, up to a maximum of netint_arr_size, or 0 if there are no interfaces present or an error occurred. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to an array of network interfaces of length <a class="el" href="group__lwpa__netint.html#gaf5826dbe7cab3ace937a77ca32ecb362" title="Get the number of network interfaces present on the system. ">lwpa_netint_get_num_interfaces()</a>, or NULL if there are no interfaces present or the module is not initialized. </dd></dl>
 
 </div>
 </div>
