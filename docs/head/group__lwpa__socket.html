@@ -1432,6 +1432,8 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a>: Socket added successfully. </dd>
 <dd>
+<a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa1af6ff7dc223fe0e0bd551fdabd73b7a" title="The item being created already exists. ">kLwpaErrExists</a>: The socket has already been added to this context. </dd>
+<dd>
 <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa219aa02b173fd0673404cc488c159e82" title="An invalid argument was provided to an API function. ">kLwpaErrInvalid</a>: Invalid argument. </dd>
 <dd>
 <a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa8f782e7c6ea448431c50f088147c5c43" title="A dynamic memory allocation failed, or there is no space left in a statically allocated array...">kLwpaErrNoMem</a>: <a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is exceeded in this context. </dd>
