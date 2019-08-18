@@ -2,6 +2,7 @@ var searchData=
 [
   ['lwpa_5faccept',['lwpa_accept',['../group__lwpa__socket.html#gac258071ec7b4f5203764ffba0c0d92a7',1,'socket.dox']]],
   ['lwpa_5fbind',['lwpa_bind',['../group__lwpa__socket.html#ga826977bc6733ed0c4f34a5746fa05543',1,'socket.dox']]],
+  ['lwpa_5fcan_5flog',['lwpa_can_log',['../group__lwpa__log.html#ga977798dd7d1f57b7dc383fce3137026a',1,'lwpa_can_log(const LwpaLogParams *params, int pri):&#160;log.c'],['../group__lwpa__log.html#ga977798dd7d1f57b7dc383fce3137026a',1,'lwpa_can_log(const LwpaLogParams *params, int pri):&#160;log.c']]],
   ['lwpa_5fclose',['lwpa_close',['../group__lwpa__socket.html#gab2a3f2980a490bb439f200921074d01f',1,'socket.dox']]],
   ['lwpa_5fconnect',['lwpa_connect',['../group__lwpa__socket.html#ga7ce51adfd80ae9625f3c6c32a6dc66f4',1,'socket.dox']]],
   ['lwpa_5fcreate_5fhuman_5flog_5fstr',['lwpa_create_human_log_str',['../group__lwpa__log.html#ga92091520538853c272084261bbb8bf21',1,'lwpa_create_human_log_str(char *buf, size_t buflen, const LwpaLogTimeParams *time, const char *format,...):&#160;log.c'],['../group__lwpa__log.html#ga92091520538853c272084261bbb8bf21',1,'lwpa_create_human_log_str(char *buf, size_t buflen, const LwpaLogTimeParams *time, const char *format,...):&#160;log.c']]],

@@ -230,12 +230,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ga0495001df9d738759753ecb7c9f4772a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga0495001df9d738759753ecb7c9f4772a">LWPA_HUMAN_LOG_STR_MAX_LEN</a>&#160;&#160;&#160;((<a class="el" href="group__lwpa__log.html#gae9a41c527892d020281abfb31f4f01e0">LWPA_LOG_TIMESTAMP_LEN</a> - 1u) + 1u /*SP*/ + LWPA_LOG_MSG_MAX_LEN)</td></tr>
 <tr class="memdesc:ga0495001df9d738759753ecb7c9f4772a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a human-readable string that will be passed to an lwpa_log_callback function.  <a href="#ga0495001df9d738759753ecb7c9f4772a">More...</a><br /></td></tr>
 <tr class="separator:ga0495001df9d738759753ecb7c9f4772a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaafd65b24ebbb219b07c710db72a34aab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaafd65b24ebbb219b07c710db72a34aab"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_SET_LOG_MASK</b>(logparamsptr,  newlogmask)&#160;&#160;&#160;((logparamsptr)-&gt;log_mask = newlogmask)</td></tr>
-<tr class="separator:gaafd65b24ebbb219b07c710db72a34aab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabe42faf633d7341b166e6ac315233cfb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabe42faf633d7341b166e6ac315233cfb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_CAN_LOG</b>(logparamsptr,  pri)&#160;&#160;&#160;((logparamsptr) ? ((LWPA_LOG_MASK(pri) &amp; (logparamsptr)-&gt;log_mask) != 0) : <a class="el" href="group__lwpa__bool.html#ga65e9886d74aaee76545e83dd09011727">false</a>)</td></tr>
-<tr class="separator:gabe42faf633d7341b166e6ac315233cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -281,6 +275,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga745327935a6efcc73f2f5048757c6de1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga745327935a6efcc73f2f5048757c6de1">lwpa_validate_log_params</a> (<a class="el" href="struct_lwpa_log_params.html">LwpaLogParams</a> *params)</td></tr>
 <tr class="memdesc:ga745327935a6efcc73f2f5048757c6de1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given lwpa_log_params are valid.  <a href="#ga745327935a6efcc73f2f5048757c6de1">More...</a><br /></td></tr>
 <tr class="separator:ga745327935a6efcc73f2f5048757c6de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga977798dd7d1f57b7dc383fce3137026a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga977798dd7d1f57b7dc383fce3137026a">lwpa_can_log</a> (const <a class="el" href="struct_lwpa_log_params.html">LwpaLogParams</a> *params, int pri)</td></tr>
+<tr class="memdesc:ga977798dd7d1f57b7dc383fce3137026a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a priority level can be logged given the mask present in the log params.  <a href="#ga977798dd7d1f57b7dc383fce3137026a">More...</a><br /></td></tr>
+<tr class="separator:ga977798dd7d1f57b7dc383fce3137026a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6584e9d020e7cf99caaca6bf9acf81ef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef">lwpa_log</a> (const <a class="el" href="struct_lwpa_log_params.html">LwpaLogParams</a> *params, int pri, const char *format,...)</td></tr>
 <tr class="memdesc:ga6584e9d020e7cf99caaca6bf9acf81ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a message from a library module.  <a href="#ga6584e9d020e7cf99caaca6bf9acf81ef">More...</a><br /></td></tr>
 <tr class="separator:ga6584e9d020e7cf99caaca6bf9acf81ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1064,6 +1061,43 @@ Log Priority</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ga977798dd7d1f57b7dc383fce3137026a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> lwpa_can_log </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_lwpa_log_params.html">LwpaLogParams</a> *&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pri</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether a priority level can be logged given the mask present in the log params. </p>
+<p>This is useful to use as a guard around doing any conversions that are only for logging, e.g. converting addresses to strings &ndash; if the priority of the message can't be logged, then those conversions are just wasted work.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">params</td><td>The log parameters to be checked. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether this priority will be logged with the current mask setting. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga92091520538853c272084261bbb8bf21"></a>
 <div class="memitem">
 <div class="memproto">

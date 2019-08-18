@@ -79,6 +79,7 @@ var group__lwpa__log =
       [ "kLwpaLogCreateHumanReadableLog", "group__lwpa__log.html#gga87102d7ecdab1a3ba919bd750fae0507a21fba732cbc622fce83415718e1fb8f9", null ],
       [ "kLwpaLogCreateBoth", "group__lwpa__log.html#gga87102d7ecdab1a3ba919bd750fae0507a1c00ba8139d620d17be3b61a498232c5", null ]
     ] ],
+    [ "lwpa_can_log", "group__lwpa__log.html#ga977798dd7d1f57b7dc383fce3137026a", null ],
     [ "lwpa_create_human_log_str", "group__lwpa__log.html#ga92091520538853c272084261bbb8bf21", null ],
     [ "lwpa_create_syslog_str", "group__lwpa__log.html#ga2efb597d28fdda5796e410b43f5a631d", null ],
     [ "lwpa_log", "group__lwpa__log.html#ga6584e9d020e7cf99caaca6bf9acf81ef", null ],
