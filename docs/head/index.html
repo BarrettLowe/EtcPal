@@ -151,17 +151,27 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><h2>Introduction</h2>
 <p>lwpa is a C-language library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
-<p>lwpa modules are typically optimized for embedded platforms and thus designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
+<p>lwpa modules are designed to run with low overhead on embedded platforms, and thus are designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
 <p>To jump right into the documentation, check out the <a class="el" href="group__lwpa.html">Modules Overview</a>.</p>
 <h2>Source Location</h2>
-<p>the sources for lwpa are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS name]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa sources]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS name]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa headers]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa headers]</div></div><!-- fragment --><p> Some lwpa headers are platform-specific and duplicated for each OS. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
+<p>the sources for lwpa are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa sources]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa headers]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa headers]</div></div><!-- fragment --><p> Some lwpa headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
 <h2>Supported Platforms</h2>
-<p>lwpa is currently ported for the following operating systems:</p>
+<p>lwpa distinguishes between two major constructs which provide services to applications. 'OS' targets provide threading, synchronization and other utilities not provided by the C standard library. 'Network' targets provide a network stack.</p>
+<p>lwpa is currently ported for the following OS targets:</p>
+<ul>
+<li>FreeRTOS</li>
+<li>macOS</li>
+<li>Microsoft Windows</li>
+<li>Linux</li>
+<li>MQX</li>
+</ul>
+<p>And the following network targets:</p>
 <ul>
 <li>macOS</li>
 <li>Microsoft Windows</li>
 <li>Linux</li>
-<li>MQX RTOS</li>
+<li>lwIP</li>
+<li>MQX (RTCS)</li>
 </ul>
 <h3>Building lwpa for Your Platform</h3>
 <p>lwpa is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include lwpa as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
@@ -169,15 +179,28 @@ $(document).ready(function(){initNavTree('index.html','');});
 <ol type="1">
 <li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
 <li>Create a directory in your location of choice to hold your build projects or Makefiles: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ mkdir build</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cd build</div></div><!-- fragment --> This directory can be inside or outside the lwpa repository.</li>
-<li>Run CMake to configure the lwpa project: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake path/to/lwpa/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
+<li>Optionally, provide a CMake toolchain file for cross-compilation. Those building native code can skip this step. There are some examples in <code>tools/cmake/cross-toolchains</code>.</li>
+</ol>
+<ol type="1">
+<li>Run CMake to configure the lwpa project: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake [-DCMAKE_TOOLCHAIN_FILE=path/to/toolchain/file] path/to/lwpa/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
 <li>Use CMake to invoke the generated build system to build the lwpa library and unit tests: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
-<li>To run the unit tests after building: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# On Windows</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt; .\test\[Build_Configuration]\test_lwpa.exe</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Elsewhere</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$ ./test/test_lwpa</div></div><!-- fragment --> Or, if you are generating IDE project files, simply run the test_lwpa project from your IDE.</li>
+<li><p class="startli">To run the unit tests after building: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ ctest [-C Configuration]</div></div><!-- fragment --><p> Or, if you are generating IDE project files, simply run the projects in the 'tests' folder in your IDE.</p>
+<p class="startli">Alternatively, you can define <code>LWPA_TEST_BUILD_AS_LIBRARIES=ON</code> to compile the unit and integration tests into static libraries, which is often useful for running tests on embedded targets.</p>
+</li>
 </ol>
 <p>Alternatively, if you don't want to use CMake, your project can simply build in the lwpa sources directly using the appropriate directories for your target platform.</p>
 <h3>Platform Dependencies</h3>
 <p>The platform ports of lwpa have the following dependencies:</p><ul>
+<li>FreeRTOS<ul>
+<li>Tested back to FreeRTOS 9.0.0. Not guaranteed to work with older versions.</li>
+<li>Optional Features:<ul>
+<li>lwpa_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by FreeRTOS).</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>macOS<ul>
-<li>The macOS port has been tested back to macOS 10.11. It is not guaranteed to work on older versions.</li>
+<li>Tested back to macOS 10.11. Not guaranteed to work with older versions.</li>
 <li>If compiling with macOS 10.7 or earlier, you might need to install a UUID package like <code>ossp-uuid</code>.</li>
 </ul>
 </li>
@@ -192,17 +215,25 @@ $(document).ready(function(){initNavTree('index.html','');});
 </li>
 </ul>
 </li>
-<li>MQX RTOS<ul>
+<li>MQX<ul>
 <li>MQX 4.2.0</li>
+<li>Optional Features:<ul>
+<li>lwpa_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by MQX)</li>
+</ul>
+</li>
 </ul>
 </li>
 <li>Linux<ul>
 <li>Optional Features:<ul>
 <li>lwpa_netint (network interfaces): Linux 2.2, glibc 2.3.3</li>
 <li>lwpa_socket (socket interface): Linux 2.6</li>
-<li>lwpa_uuid (UUID creation): libuuid (if compiling lwpa, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution) </li>
+<li>lwpa_uuid (UUID creation): libuuid (if compiling lwpa, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
 </ul>
 </li>
+</ul>
+</li>
+<li>lwIP<ul>
+<li>lwIP 2.1.0 or later </li>
 </ul>
 </li>
 </ul>

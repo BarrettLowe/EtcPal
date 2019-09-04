@@ -181,10 +181,22 @@ Functions</h2></td></tr>
 <tr class="memitem:gac70e6dd81f74128d1b65ed51f37b9195"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__pack.html#gac70e6dd81f74128d1b65ed51f37b9195">lwpa_pack_32l</a> (uint8_t *buf, uint32_t val)</td></tr>
 <tr class="memdesc:gac70e6dd81f74128d1b65ed51f37b9195"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a uint32_t to a known little-endian buffer.  <a href="#gac70e6dd81f74128d1b65ed51f37b9195">More...</a><br /></td></tr>
 <tr class="separator:gac70e6dd81f74128d1b65ed51f37b9195"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a47ca0420b644e0ca56a7f45d1f14fd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga3a47ca0420b644e0ca56a7f45d1f14fd"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_upack_64b</b> (const uint8_t *buf)</td></tr>
+<tr class="separator:ga3a47ca0420b644e0ca56a7f45d1f14fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga36dfd35dc1d5873a445544a34655b63d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga36dfd35dc1d5873a445544a34655b63d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_pack_64b</b> (uint8_t *buf, uint64_t val)</td></tr>
+<tr class="separator:ga36dfd35dc1d5873a445544a34655b63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab01c427c704b076e035064ebf0822803"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab01c427c704b076e035064ebf0822803"></a>
+uint64_t&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_upack_64l</b> (const uint8_t *buf)</td></tr>
+<tr class="separator:gab01c427c704b076e035064ebf0822803"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4914dfb05cc8bc141489fc47cebe0a92"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga4914dfb05cc8bc141489fc47cebe0a92"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>lwpa_pack_64l</b> (uint8_t *buf, uint64_t val)</td></tr>
+<tr class="separator:ga4914dfb05cc8bc141489fc47cebe0a92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Platform- and endianness-independent buffer packing and unpacking. </p>
-<p>#include "lwpa/pack.h"</p>
+<p>For 16- and 32-bit integer packing and unpacking: #include "lwpa/pack.h" For 64-bit integer packing and unpacking: #include "lwpa/pack64.h"</p>
 <p>This module defines macros for packing and unpacking integer types to/from a byte buffer. They are architected in such a way that the endianness of the integer in the buffer is always known, regardless of the endianness of your platform. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="gac525d104770e0340c5216e14883dba5f"></a>

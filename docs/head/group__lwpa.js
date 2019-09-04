@@ -1,6 +1,7 @@
 var group__lwpa =
 [
     [ "lwpa_lock", "group__lwpa__lock.html", "group__lwpa__lock" ],
+    [ "lwpa config options", "group__lwpa__opts.html", "group__lwpa__opts" ],
     [ "lwpa_thread", "group__lwpa__thread.html", "group__lwpa__thread" ],
     [ "lwpa_bool", "group__lwpa__bool.html", "group__lwpa__bool" ],
     [ "lwpa_error", "group__lwpa__error.html", "group__lwpa__error" ],

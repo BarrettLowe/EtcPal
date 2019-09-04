@@ -159,7 +159,7 @@ $(document).ready(function(){initNavTree('struct_lwpa_netint_info.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>A description of a network interface.  
+<p>A description of a single address assigned to a network interface.  
  <a href="struct_lwpa_netint_info.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -187,7 +187,7 @@ Data Fields</h2></td></tr>
 <tr class="separator:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A description of a network interface. </p>
+<div class="textblock"><p>A description of a single address assigned to a network interface. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a070c3843626368d0129cf7295c10296e"></a>
 <div class="memitem">
@@ -229,7 +229,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The OS-specific network interface number. </p>
-<p>Used for IPv6, multicast and IP-version-neutral APIs. See <a class="el" href="interface_indexes.html">Network Interface Indexes</a> for more information. </p>
+<p>Since interfaces can have multiple IPv4 and IPv6 addresses assigned simultaneously, there can be a one-to-many relationship between physical network interfaces and <a class="el" href="struct_lwpa_netint_info.html" title="A description of a single address assigned to a network interface. ">LwpaNetintInfo</a> descriptions on the same system, all of which will have the same value for this field. It is also used for IPv6, multicast and IP-version-neutral APIs. See <a class="el" href="interface_indexes.html">Network Interface Indexes</a> for more information. </p>
 
 </div>
 </div>

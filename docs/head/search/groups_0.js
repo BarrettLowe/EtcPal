@@ -10,6 +10,7 @@ var searchData=
   ['lwpa_5fmempool',['lwpa_mempool',['../group__lwpa__mempool.html',1,'']]],
   ['lwpa_5fmutex',['lwpa_mutex',['../group__lwpa__mutex.html',1,'']]],
   ['lwpa_5fnetint',['lwpa_netint',['../group__lwpa__netint.html',1,'']]],
+  ['lwpa_20config_20options',['lwpa config options',['../group__lwpa__opts.html',1,'']]],
   ['lwpa_5fpack',['lwpa_pack',['../group__lwpa__pack.html',1,'']]],
   ['lwpa_5fpdu',['lwpa_pdu',['../group__lwpa__pdu.html',1,'']]],
   ['lwpa_5frbtree',['lwpa_rbtree',['../group__lwpa__rbtree.html',1,'']]],

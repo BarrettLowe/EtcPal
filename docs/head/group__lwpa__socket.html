@@ -262,6 +262,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga846cd48d4882273a10d6f781128f03ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga846cd48d4882273a10d6f781128f03ea">lwpa_setblocking</a> (<a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> id, <a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> blocking)</td></tr>
 <tr class="memdesc:ga846cd48d4882273a10d6f781128f03ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the blocking behavior of a socket.  <a href="#ga846cd48d4882273a10d6f781128f03ea">More...</a><br /></td></tr>
 <tr class="separator:ga846cd48d4882273a10d6f781128f03ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga04eca357db24ba602f71339bed44e71f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga04eca357db24ba602f71339bed44e71f">lwpa_getblocking</a> (<a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a> id, <a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> *blocking)</td></tr>
+<tr class="memdesc:ga04eca357db24ba602f71339bed44e71f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current blocking behavior of a socket.  <a href="#ga04eca357db24ba602f71339bed44e71f">More...</a><br /></td></tr>
+<tr class="separator:ga04eca357db24ba602f71339bed44e71f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7c1c76581b63ab7c5b383e25dc200990"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990">lwpa_getaddrinfo</a> (const char *hostname, const char *service, const <a class="el" href="struct_lwpa_addrinfo.html">LwpaAddrinfo</a> *hints, <a class="el" href="struct_lwpa_addrinfo.html">LwpaAddrinfo</a> *result)</td></tr>
 <tr class="memdesc:ga7c1c76581b63ab7c5b383e25dc200990"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get address information for a named internet host and/or service.  <a href="#ga7c1c76581b63ab7c5b383e25dc200990">More...</a><br /></td></tr>
 <tr class="separator:ga7c1c76581b63ab7c5b383e25dc200990"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1086,6 +1089,43 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga04eca357db24ba602f71339bed44e71f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf">lwpa_error_t</a> lwpa_getblocking </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__lwpa__socket.html#ga0fea2946114e0a2617a086c2139fb9f6">lwpa_socket_t</a>&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> *&#160;</td>
+          <td class="paramname"><em>blocking</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the current blocking behavior of a socket. </p>
+<p>This is similar to checking the state of the O_NONBLOCK flag through the fcntl() function on a BSD socket.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Socket for which to read the blocking behavior. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">blocking</td><td>Filled in with whether the socket is currently blocking or not. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__lwpa__error.html#gga4de447127cf0baaa9afb0188e1e6afbfa332c55060c2e36ba406b247364342199" title="The call was successful, no error occurred. ">kLwpaErrOk</a> (success) or <a class="el" href="group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf" title="A set of error codes that can be returned by library functions. ">lwpa_error_t</a> code from system (error occurred). </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga601cc36855c662b79f662ae5c42595f1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1631,11 +1671,13 @@ Flag values to use with lwpa_poll_events_t.</h2></td></tr>
 <tr>
 <td>Linux </td><td>epoll() </td><td></td></tr>
 <tr>
+<td>lwIP </td><td>select() </td><td><a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is controlled by FD_SETSIZE which is in turn controlled by MEMP_NUM_NETCONN in lwipopts.h. </td></tr>
+<tr>
 <td>macOS </td><td>kqueue() </td><td></td></tr>
 <tr>
-<td>MQX </td><td>select() </td><td><a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is controlled by the RTCS config constant RTCSCFG_FD_SETSIZE. </td></tr>
+<td>MQX (RTCS) </td><td>select() </td><td><a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> is controlled by the RTCS config constant RTCSCFG_FD_SETSIZE. </td></tr>
 <tr>
-<td>Windows </td><td>select() </td><td><a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> defaults to 64, but can be increased by setting FD_SETSIZE=[new_value] as a compile-time definition. </td></tr>
+<td>Microsoft Windows </td><td>select() </td><td><a class="el" href="group__lwpa__socket.html#gab36e47297a2a48f28c080608c5643c25" title="The maximum number of sockets that can be simultaneously monitored by lwpa_poll_wait(). ">LWPA_SOCKET_MAX_POLL_SIZE</a> defaults to 64, but can be increased by setting FD_SETSIZE=[new_value] as a compile-time definition. </td></tr>
 </table>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

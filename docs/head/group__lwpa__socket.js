@@ -74,6 +74,7 @@ var group__lwpa__socket =
     [ "lwpa_connect", "group__lwpa__socket.html#ga7ce51adfd80ae9625f3c6c32a6dc66f4", null ],
     [ "lwpa_freeaddrinfo", "group__lwpa__socket.html#ga85eeba64809a88e6a246e9471d5e2cd6", null ],
     [ "lwpa_getaddrinfo", "group__lwpa__socket.html#ga7c1c76581b63ab7c5b383e25dc200990", null ],
+    [ "lwpa_getblocking", "group__lwpa__socket.html#ga04eca357db24ba602f71339bed44e71f", null ],
     [ "lwpa_getpeername", "group__lwpa__socket.html#ga601cc36855c662b79f662ae5c42595f1", null ],
     [ "lwpa_getsockname", "group__lwpa__socket.html#ga1268a36d23336543beba21b086af9f4e", null ],
     [ "lwpa_getsockopt", "group__lwpa__socket.html#ga76b8fb450bb999d48e6a21f132d75e03", null ],

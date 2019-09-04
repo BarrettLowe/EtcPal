@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: DefaultNetint Struct Reference</title>
+  <title>lwpa: lwpa config options</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -92,9 +92,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
+      <li class="current"><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
-      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li>
@@ -115,13 +115,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
-  <div id="navrow2" class="tabs2">
-    <ul class="tablist">
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
-    </ul>
-  </div>
 </div><!-- top -->
 <div id="side-nav" class="ui-resizable side-nav-resizable">
   <div id="nav-tree">
@@ -134,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('struct_default_netint.html','');});
+$(document).ready(function(){initNavTree('group__lwpa__opts.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -153,36 +146,86 @@ $(document).ready(function(){initNavTree('struct_default_netint.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">DefaultNetint Struct Reference</div>  </div>
+<div class="title">lwpa config options<div class="ingroups"><a class="el" href="group__lwpa.html">lwpa</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Compile-time configuration options for lwpa.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:ab1856a148007111014db17bd994ab1b4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1856a148007111014db17bd994ab1b4"></a>
-<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>v4_valid</b></td></tr>
-<tr class="separator:ab1856a148007111014db17bd994ab1b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b358864a0c0586c0687caf70fcd84b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b358864a0c0586c0687caf70fcd84b8"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>v4_index</b></td></tr>
-<tr class="separator:a0b358864a0c0586c0687caf70fcd84b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4dc3e1c382bb5df15d3759e4064007f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dc3e1c382bb5df15d3759e4064007f2"></a>
-<a class="el" href="group__lwpa__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>v6_valid</b></td></tr>
-<tr class="separator:a4dc3e1c382bb5df15d3759e4064007f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67b9079389d7e45a261e6591eb6b7b23"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67b9079389d7e45a261e6591eb6b7b23"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>v6_index</b></td></tr>
-<tr class="separator:a67b9079389d7e45a261e6591eb6b7b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga35ff5bc6b6d716a0bf215502fbd4b924"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__opts.html#ga35ff5bc6b6d716a0bf215502fbd4b924">LWPA_INCLUDE_PACK_64</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:ga35ff5bc6b6d716a0bf215502fbd4b924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether to build the <a class="el" href="pack64_8h_source.html">lwpa/pack64.h</a> functions.  <a href="#ga35ff5bc6b6d716a0bf215502fbd4b924">More...</a><br /></td></tr>
+<tr class="separator:ga35ff5bc6b6d716a0bf215502fbd4b924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8812aa02e26bc24b5352b6109e2a5739"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__opts.html#ga8812aa02e26bc24b5352b6109e2a5739">LWPA_EMBOS_USE_MALLOC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="memdesc:ga8812aa02e26bc24b5352b6109e2a5739"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a malloc() implementation is available.  <a href="#ga8812aa02e26bc24b5352b6109e2a5739">More...</a><br /></td></tr>
+<tr class="separator:ga8812aa02e26bc24b5352b6109e2a5739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga617ee5b2f94a0e91de9012d97e1fbc0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__lwpa__opts.html#ga617ee5b2f94a0e91de9012d97e1fbc0b">LWPA_EMBOS_MAX_NETINTS</a>&#160;&#160;&#160;5</td></tr>
+<tr class="memdesc:ga617ee5b2f94a0e91de9012d97e1fbc0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces that can be tracked by the <a class="el" href="group__lwpa__netint.html">lwpa_netint</a> module.  <a href="#ga617ee5b2f94a0e91de9012d97e1fbc0b">More...</a><br /></td></tr>
+<tr class="separator:ga617ee5b2f94a0e91de9012d97e1fbc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/lwpa/private/<a class="el" href="src_2lwpa_2private_2netint_8h_source.html">netint.h</a></li>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Compile-time configuration options for lwpa. </p>
+<p>Options starting with "LWPA_EMBOS_" (currently all of them) are ignored on Windows, macOS and Linux.</p>
+<p>To override any of these options, provide a file called lwpa_config.h and:</p><ul>
+<li>If not building lwpa with CMake: add LWPA_HAVE_CONFIG_H to your preprocessor definitions, and add the path to lwpa_config.h as an include path</li>
+<li>If building with CMake: use the CMake option LWPA_CONFIG_FILE_LOC</li>
 </ul>
+<p>In the lwpa_config.h file, simply #define any overridden options to the desired value. </p>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="ga617ee5b2f94a0e91de9012d97e1fbc0b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_EMBOS_MAX_NETINTS&#160;&#160;&#160;5</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The maximum number of network interfaces that can be tracked by the <a class="el" href="group__lwpa__netint.html">lwpa_netint</a> module. </p>
+<p>Currently this limit is not necessary and therefore ignored on all targets except lwIP. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga8812aa02e26bc24b5352b6109e2a5739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_EMBOS_USE_MALLOC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether a malloc() implementation is available. </p>
+<p>Currently this only affects network interface enumeration using lwIP. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga35ff5bc6b6d716a0bf215502fbd4b924"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LWPA_INCLUDE_PACK_64&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Whether to build the <a class="el" href="pack64_8h_source.html">lwpa/pack64.h</a> functions. </p>
+<p>This can be defined to 0 if you are on a platform that does not provide a int64_t/uint64_t type. </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="struct_default_netint.html">DefaultNetint</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

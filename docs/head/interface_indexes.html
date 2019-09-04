@@ -164,6 +164,8 @@ $(document).ready(function(){initNavTree('interface_indexes.html','');});
 <tr>
 <td>Linux </td><td>Standard / RFC 3493, visible via <code>ip link</code> on newer/systemd systems, or can be inferred from data in <code>ifconfig</code> </td></tr>
 <tr>
+<td>lwIP </td><td>Standard / RFC 3493 as of lwIP 2.1.0. Also available using the lwIP API function netif_get_index(). </td></tr>
+<tr>
 <td>MQX RTOS </td><td>The index is derived from the RTCS <em>device identifier</em> (an index starting from 0 into a linked list of network interfaces) plus 1. This is translated internally for relevant socket calls. </td></tr>
 </table>
 </div></div><!-- contents -->
