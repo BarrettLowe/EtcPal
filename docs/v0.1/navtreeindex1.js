@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c":[1,0,0,1,3],
 "group__lwpa__socket.html":[1,0,13],
 "group__lwpa__socket.html#ga03acc4ad773d79b5c22644c28d27396f":[1,0,13,25],
 "group__lwpa__socket.html#ga068077e81f7e9a8613d856b6ca6d9166":[1,0,13,22],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "structlwpa__rwlock__t.html#a475272f136d5e1f37dc37f722edc2279":[2,0,1,3],
 "structlwpa__rwlock__t.html#a4da26a75a24512d08cf0db3d9089d7f1":[2,0,1,2],
 "structlwpa__rwlock__t.html#a618ae1b51ee3f3f8e85cb7835d0ac485":[2,0,1,4],
-"structlwpa__rwlock__t.html#a61ab1bffdc20a3dde3d0c3098bca74f8":[2,0,1,0]
+"structlwpa__rwlock__t.html#a61ab1bffdc20a3dde3d0c3098bca74f8":[2,0,1,0],
+"structlwpa__rwlock__t.html#a78a962f46c1a1bf2855b5cc0dec3c28c":[2,0,1,1]
 };

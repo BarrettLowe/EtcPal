@@ -12,8 +12,7 @@ var NAVTREEINDEX0 =
 "estardmnet_8h_source.html":[3,0,0,5],
 "files.html":[3,0],
 "freertos__lwip_2lwpa__lock_8h_source.html":[3,0,0,0,0],
-"freertos__lwip_2lwpa__socket__plat_8h_source.html":[3,0,0,0,1],
-"freertos__lwip_2lwpa__thread_8h_source.html":[3,0,0,0,2],
+"freertos__lwip_2lwpa__thread_8h_source.html":[3,0,0,0,1],
 "functions.html":[2,2,0],
 "functions_vars.html":[2,2,1],
 "group__lwpa.html":[1,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "group__lwpa__signal.html#ga1e76d7a093cd92f01b15f8a185726399":[1,0,0,1,2],
 "group__lwpa__signal.html#ga64d1e2d7b517cdb5f2c3d33081ff6d7c":[1,0,0,1,4],
 "group__lwpa__signal.html#ga7e2c2e183c84b10d80c57fccdd49c9f7":[1,0,0,1,1],
-"group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef":[1,0,0,1,0]
+"group__lwpa__signal.html#gaad04ad0c8d71e1b5b6a4e363965e43ef":[1,0,0,1,0],
+"group__lwpa__signal.html#gab967464bd5c6bd05d8d110155777159c":[1,0,0,1,3]
 };

@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"structlwpa__rwlock__t.html#a78a962f46c1a1bf2855b5cc0dec3c28c":[2,0,1,1],
 "structlwpa__thread__t.html":[2,0,2],
 "structlwpa__thread__t.html#a146a5a0939a3a1d905bb62ffd8d9d8e7":[2,0,2,7],
 "structlwpa__thread__t.html#a2d3790037694b205e252acc5ab432933":[2,0,2,3],
