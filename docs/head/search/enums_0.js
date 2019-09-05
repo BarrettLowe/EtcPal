@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['lwpa_5ferror_5ft',['lwpa_error_t',['../group__lwpa__error.html#ga4de447127cf0baaa9afb0188e1e6afbf',1,'error.h']]],
-  ['lwpa_5fiptype_5ft',['lwpa_iptype_t',['../group__lwpa__inet.html#ga75918e41a21a5b4511b2b3c797e6f048',1,'inet.h']]],
-  ['lwpa_5flog_5faction_5ft',['lwpa_log_action_t',['../group__lwpa__log.html#ga87102d7ecdab1a3ba919bd750fae0507',1,'log.h']]]
+  ['etcpal_5ferror_5ft',['etcpal_error_t',['../group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af',1,'error.h']]],
+  ['etcpal_5fiptype_5ft',['etcpal_iptype_t',['../group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee',1,'inet.h']]],
+  ['etcpal_5flog_5faction_5ft',['etcpal_log_action_t',['../group__etcpal__log.html#ga10855f3c1f3816d0bd5e4687108ea1c5',1,'log.h']]]
 ];

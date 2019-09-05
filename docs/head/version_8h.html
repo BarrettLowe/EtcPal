@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: include/lwpa/version.h File Reference</title>
+  <title>EtcPal: include/etcpal/version.h File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
-      $.get('/lwpa/versions.txt', function(data) {
+      $.get('/EtcPal/versions.txt', function(data) {
         if (data) {
           var lines = data.split('\n');
           if (lines.length > 0) {
@@ -43,7 +43,7 @@
               if (line.length > 1) {
                 option_name += ' (' + line[1] + ')';
               }
-              var option_val = '/lwpa/docs/' + line[0];
+              var option_val = '/EtcPal/docs/' + line[0];
               var option = $('<option></option>').attr("value", option_val)
                 .text(option_name);
               if (window.location.pathname.match('docs/' + line[0])) {
@@ -66,10 +66,10 @@
         <tbody>
           <tr style="height: 56px;">
             <td id="projectalign" style="padding-left: 0.5em;">
-              <div id="projectname">lwpa
+              <div id="projectname">EtcPal
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">LightWeight Platform Abstraction (lwpa)</div>
+              <div id="projectbrief">ETC Platform Abstraction Layer (EtcPal)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -155,49 +155,49 @@ $(document).ready(function(){initNavTree('version_8h.html','');});
 </div><!--header-->
 <div class="contents">
 
-<p>Provides the current version of the lwpa library.  
+<p>Provides the current version of the EtcPal library.  
 <a href="#details">More...</a></p>
 
 <p><a href="version_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr><td colspan="2"><div class="groupHeader">lwpa version numbers</div></td></tr>
-<tr class="memitem:a9937b7621e51ecb04e7c7f02d69bada9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9937b7621e51ecb04e7c7f02d69bada9"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_MAJOR</b>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a9937b7621e51ecb04e7c7f02d69bada9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf4b683c5241877fd1e0d62b29b61694"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaf4b683c5241877fd1e0d62b29b61694"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_MINOR</b>&#160;&#160;&#160;3</td></tr>
-<tr class="separator:aaf4b683c5241877fd1e0d62b29b61694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cc6dccbad1e01b6617c3389ef5a290d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cc6dccbad1e01b6617c3389ef5a290d"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_PATCH</b>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a8cc6dccbad1e01b6617c3389ef5a290d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16ac2016dfd704e3b8eeb31d1a09e6da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16ac2016dfd704e3b8eeb31d1a09e6da"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_BUILD</b>&#160;&#160;&#160;2</td></tr>
-<tr class="separator:a16ac2016dfd704e3b8eeb31d1a09e6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr><td colspan="2"><div class="groupHeader">lwpa version strings</div></td></tr>
-<tr class="memitem:ab601123c6d44cb0d8bc89c98c245715a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab601123c6d44cb0d8bc89c98c245715a"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_STRING</b>&#160;&#160;&#160;&quot;0.3.0.2&quot;</td></tr>
-<tr class="separator:ab601123c6d44cb0d8bc89c98c245715a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0db91714276d373122aa439da6f93956"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0db91714276d373122aa439da6f93956"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;04.Sep.2019&quot;</td></tr>
-<tr class="separator:a0db91714276d373122aa439da6f93956"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac13daad468e5dde10a51dbaea1d6a624"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac13daad468e5dde10a51dbaea1d6a624"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_COPYRIGHT</b>&#160;&#160;&#160;&quot;Copyright 2019 ETC Inc.&quot;</td></tr>
-<tr class="separator:ac13daad468e5dde10a51dbaea1d6a624"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ab29319c80fa0fee3e9b7b8d6d576da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ab29319c80fa0fee3e9b7b8d6d576da"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>LWPA_VERSION_PRODUCTNAME</b>&#160;&#160;&#160;&quot;lwpa&quot;</td></tr>
-<tr class="separator:a7ab29319c80fa0fee3e9b7b8d6d576da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">EtcPal version numbers</div></td></tr>
+<tr class="memitem:a618eb6d3de60f0993f1950bbe4cc69ff"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a618eb6d3de60f0993f1950bbe4cc69ff"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_MAJOR</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a618eb6d3de60f0993f1950bbe4cc69ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84fb4c7e51722f9142f1e4f9b280205a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84fb4c7e51722f9142f1e4f9b280205a"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_MINOR</b>&#160;&#160;&#160;3</td></tr>
+<tr class="separator:a84fb4c7e51722f9142f1e4f9b280205a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78e3fffcc3ba37c3080a4df782d7a371"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78e3fffcc3ba37c3080a4df782d7a371"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_PATCH</b>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a78e3fffcc3ba37c3080a4df782d7a371"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6b0f9dd6a270e78919e00960ee13d10"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6b0f9dd6a270e78919e00960ee13d10"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_BUILD</b>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:aa6b0f9dd6a270e78919e00960ee13d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr><td colspan="2"><div class="groupHeader">EtcPal version strings</div></td></tr>
+<tr class="memitem:a19fd05455777129c5893db7521587ecc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a19fd05455777129c5893db7521587ecc"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_STRING</b>&#160;&#160;&#160;&quot;0.3.0.2&quot;</td></tr>
+<tr class="separator:a19fd05455777129c5893db7521587ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cc15a6bf906cf55e694163eeddbd194"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cc15a6bf906cf55e694163eeddbd194"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_DATESTR</b>&#160;&#160;&#160;&quot;04.Sep.2019&quot;</td></tr>
+<tr class="separator:a7cc15a6bf906cf55e694163eeddbd194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71d3f0edb45966581728010bf9367bfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a71d3f0edb45966581728010bf9367bfd"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_COPYRIGHT</b>&#160;&#160;&#160;&quot;Copyright 2019 ETC Inc.&quot;</td></tr>
+<tr class="separator:a71d3f0edb45966581728010bf9367bfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa307a7f69296ca000ed52ae06bd2087c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa307a7f69296ca000ed52ae06bd2087c"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_VERSION_PRODUCTNAME</b>&#160;&#160;&#160;&quot;EtcPal&quot;</td></tr>
+<tr class="separator:aa307a7f69296ca000ed52ae06bd2087c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Provides the current version of the lwpa library. </p>
+<div class="textblock"><p>Provides the current version of the EtcPal library. </p>
 <dl class="section author"><dt>Author</dt><dd>Sam Kearney </dd></dl>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_ecfa76c5569ddc5008dc28ca5daa4ace.html">lwpa</a></li><li class="navelem"><a class="el" href="version_8h.html">version.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_81a3fb26cc06c42d281987e41831a70b.html">etcpal</a></li><li class="navelem"><a class="el" href="version_8h.html">version.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

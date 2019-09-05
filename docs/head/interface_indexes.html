@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: Network Interface Indexes</title>
+  <title>EtcPal: Network Interface Indexes</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
-      $.get('/lwpa/versions.txt', function(data) {
+      $.get('/EtcPal/versions.txt', function(data) {
         if (data) {
           var lines = data.split('\n');
           if (lines.length > 0) {
@@ -43,7 +43,7 @@
               if (line.length > 1) {
                 option_name += ' (' + line[1] + ')';
               }
-              var option_val = '/lwpa/docs/' + line[0];
+              var option_val = '/EtcPal/docs/' + line[0];
               var option = $('<option></option>').attr("value", option_val)
                 .text(option_name);
               if (window.location.pathname.match('docs/' + line[0])) {
@@ -66,10 +66,10 @@
         <tbody>
           <tr style="height: 56px;">
             <td id="projectalign" style="padding-left: 0.5em;">
-              <div id="projectname">lwpa
+              <div id="projectname">EtcPal
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">LightWeight Platform Abstraction (lwpa)</div>
+              <div id="projectbrief">ETC Platform Abstraction Layer (EtcPal)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -149,10 +149,10 @@ $(document).ready(function(){initNavTree('interface_indexes.html','');});
 <div class="title">Network Interface Indexes </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Some lwpa APIs make use of an index value to identify network interfaces. Almost all underlying network stacks have the notion of a network interface index, which is standardized for IPv6 by <a href="https://tools.ietf.org/html/rfc3493">RFC 3493</a>.</p>
+<div class="textblock"><p>Some EtcPal APIs make use of an index value to identify network interfaces. Almost all underlying network stacks have the notion of a network interface index, which is standardized for IPv6 by <a href="https://tools.ietf.org/html/rfc3493">RFC 3493</a>.</p>
 <p>Interface indexes <em>may</em> also be used for specifying the <em>zone index</em> or <em>scope ID</em> of an IPv6 address (see <a href="https://tools.ietf.org/html/rfc4007">RFC 4007</a>). However, depending on the address scope, this doesn't always apply. It also seems to currently be a lightly-specified area of the IPv6 protocol, so it should not be treated as a guarantee.</p>
-<p>In our protocols, we use the interface index mostly for multicasting purposes. When used this way, it is used to specify an interface on which to send or receive multicast traffic for a given socket. The <a class="el" href="group__lwpa__socket.html">lwpa_socket</a> API uses them to specify network interfaces for the <a class="el" href="group__lwpa__socket.html#gab43a3e2b335d9bd16dd775829d259283">LWPA_MCAST_JOIN_GROUP</a>, <a class="el" href="group__lwpa__socket.html#ga30d044b29e2f4a000f282ab64a0d74fb">LWPA_MCAST_LEAVE_GROUP</a>, and <a class="el" href="group__lwpa__socket.html#ga33867e9f8eeb3cbdd8513483026935f8">LWPA_IP_MULTICAST_IF</a> socket options.</p>
-<p>The interface index is of type <code>unsigned int</code>; 0 is an invalid value for specifying a specific interface, but can be used as a wildcard (signaling the kernel to pick the "best" or most appropriate interface). Interface indexes for each connected interface can be obtained from the <a class="el" href="group__lwpa__netint.html">lwpa_netint</a> API (in the <a class="el" href="struct_lwpa_netint_info.html">LwpaNetintInfo</a> structure returned from lwpa_netint calls), or from the relevant OS APIs on OSes that support them (many conform to the standard interface specified by RFC 3493).</p>
+<p>In our protocols, we use the interface index mostly for multicasting purposes. When used this way, it is used to specify an interface on which to send or receive multicast traffic for a given socket. The <a class="el" href="group__etcpal__socket.html">etcpal_socket</a> API uses them to specify network interfaces for the <a class="el" href="group__etcpal__socket.html#gacde51cd51d94c43625b96196d7b80f50">ETCPAL_MCAST_JOIN_GROUP</a>, <a class="el" href="group__etcpal__socket.html#ga747194309fa23fa0e092e8bd010f1a2c">ETCPAL_MCAST_LEAVE_GROUP</a>, and <a class="el" href="group__etcpal__socket.html#ga972636e83a7c9cbc9bb0e5a950c9c241">ETCPAL_IP_MULTICAST_IF</a> socket options.</p>
+<p>The interface index is of type <code>unsigned int</code>; 0 is an invalid value for specifying a specific interface, but can be used as a wildcard (signaling the kernel to pick the "best" or most appropriate interface). Interface indexes for each connected interface can be obtained from the <a class="el" href="group__etcpal__netint.html">etcpal_netint</a> API (in the <a class="el" href="struct_etc_pal_netint_info.html">EtcPalNetintInfo</a> structure returned from etcpal_netint calls), or from the relevant OS APIs on OSes that support them (many conform to the standard interface specified by RFC 3493).</p>
 <p>Some embedded stacks have limited or nonstandard ways to obtain a network interface index. For clarity, the exact way that interface indexes are obtained or derived in each stack is listed below.</p>
 <table class="doxtable">
 <tr>

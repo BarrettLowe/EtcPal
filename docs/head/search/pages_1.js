@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lightweight_20platform_20abstraction',['LightWeight Platform Abstraction',['../index.html',1,'']]]
+  ['etc_20platform_20abstraction_20layer',['ETC Platform Abstraction Layer',['../index.html',1,'']]]
 ];

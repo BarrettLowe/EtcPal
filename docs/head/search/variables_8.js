@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['klwpanulluuid',['kLwpaNullUuid',['../group__lwpa__uuid.html#gab75cca7a42a1cdc1bb901ed24fc095ee',1,'kLwpaNullUuid():&#160;uuid.c'],['../group__lwpa__uuid.html#gab75cca7a42a1cdc1bb901ed24fc095ee',1,'kLwpaNullUuid():&#160;uuid.c']]]
+  ['ketcpalnulluuid',['kEtcPalNullUuid',['../group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e',1,'kEtcPalNullUuid():&#160;uuid.c'],['../group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e',1,'kEtcPalNullUuid():&#160;uuid.c']]]
 ];

@@ -1,7 +1,7 @@
 var NAVTREE =
 [
-  [ "lwpa", "index.html", [
-    [ "LightWeight Platform Abstraction", "index.html", null ],
+  [ "EtcPal", "index.html", [
+    [ "ETC Platform Abstraction Layer", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", null, [
       [ "Namespace List", "namespaces.html", "namespaces" ]
@@ -24,8 +24,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "acn__prot_8h_source.html",
-"group__lwpa__rootlayerpdu.html#ga5721d124b0a48d536543434c40e6fe60",
-"struct_lwpa_rb_node.html#a791da83334fff8f52b7f4f4fbe0f4020"
+"group__etcpal__rootlayerpdu.html#ga8d5021cdeed9c03dcc28d7f29fbac7d9",
+"struct_etc_pal_rb_node.html#a6761340706096510fd89edca40a63b9b"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

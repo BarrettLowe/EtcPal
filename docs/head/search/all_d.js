@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['onoff',['onoff',['../struct_lwpa_linger.html#a7730494d5c90b034d5937c758f354997',1,'LwpaLinger']]]
+  ['onoff',['onoff',['../struct_etc_pal_linger.html#a7730494d5c90b034d5937c758f354997',1,'EtcPalLinger']]]
 ];

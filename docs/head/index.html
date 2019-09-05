@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: LightWeight Platform Abstraction</title>
+  <title>EtcPal: ETC Platform Abstraction Layer</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
-      $.get('/lwpa/versions.txt', function(data) {
+      $.get('/EtcPal/versions.txt', function(data) {
         if (data) {
           var lines = data.split('\n');
           if (lines.length > 0) {
@@ -43,7 +43,7 @@
               if (line.length > 1) {
                 option_name += ' (' + line[1] + ')';
               }
-              var option_val = '/lwpa/docs/' + line[0];
+              var option_val = '/EtcPal/docs/' + line[0];
               var option = $('<option></option>').attr("value", option_val)
                 .text(option_name);
               if (window.location.pathname.match('docs/' + line[0])) {
@@ -66,10 +66,10 @@
         <tbody>
           <tr style="height: 56px;">
             <td id="projectalign" style="padding-left: 0.5em;">
-              <div id="projectname">lwpa
+              <div id="projectname">EtcPal
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">LightWeight Platform Abstraction (lwpa)</div>
+              <div id="projectbrief">ETC Platform Abstraction Layer (EtcPal)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -146,18 +146,18 @@ $(document).ready(function(){initNavTree('index.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">LightWeight Platform Abstraction </div>  </div>
+<div class="title">ETC Platform Abstraction Layer </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Introduction</h2>
-<p>lwpa is a C-language library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
-<p>lwpa modules are designed to run with low overhead on embedded platforms, and thus are designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
-<p>To jump right into the documentation, check out the <a class="el" href="group__lwpa.html">Modules Overview</a>.</p>
+<p>EtcPal is a C-language library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
+<p>EtcPal modules are designed to run with low overhead on embedded platforms, and thus are designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
+<p>To jump right into the documentation, check out the <a class="el" href="group__etcpal.html">Modules Overview</a>.</p>
 <h2>Source Location</h2>
-<p>the sources for lwpa are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa sources]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  os/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;      [platform-specific lwpa headers]</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;  [platform-neutral lwpa headers]</div></div><!-- fragment --><p> Some lwpa headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
+<p>The sources for EtcPal are located in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;src/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  etcpal/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [platform-neutral EtcPal sources]</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  os/</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      [platform-specific EtcPal sources]</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  [platform-neutral EtcPal sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;include/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;  etcpal/</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    [platform-neutral EtcPal headers]</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;  os/</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    [OS or network stack provider]/</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;      [platform-specific EtcPal headers]</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;  [platform-neutral EtcPal headers]</div></div><!-- fragment --><p>Include the <code>etcpal/</code> prefix when including an EtcPal header: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Some EtcPal headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
 <h2>Supported Platforms</h2>
-<p>lwpa distinguishes between two major constructs which provide services to applications. 'OS' targets provide threading, synchronization and other utilities not provided by the C standard library. 'Network' targets provide a network stack.</p>
-<p>lwpa is currently ported for the following OS targets:</p>
+<p>EtcPal distinguishes between two major constructs which provide services to applications. 'OS' targets provide threading, synchronization and other utilities not provided by the C standard library. 'Network' targets provide a network stack.</p>
+<p>EtcPal is currently ported for the following OS targets:</p>
 <ul>
 <li>FreeRTOS</li>
 <li>macOS</li>
@@ -173,28 +173,28 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>lwIP</li>
 <li>MQX (RTCS)</li>
 </ul>
-<h3>Building lwpa for Your Platform</h3>
-<p>lwpa is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include lwpa as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
-<p>To configure and build lwpa on its own using CMake, follow these steps:</p>
+<h3>Building EtcPal for Your Platform</h3>
+<p>EtcPal is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include EtcPal as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
+<p>To configure and build EtcPal on its own using CMake, follow these steps:</p>
 <ol type="1">
 <li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
-<li>Create a directory in your location of choice to hold your build projects or Makefiles: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ mkdir build</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cd build</div></div><!-- fragment --> This directory can be inside or outside the lwpa repository.</li>
+<li>Create a directory in your location of choice to hold your build projects or Makefiles: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ mkdir build</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ cd build</div></div><!-- fragment --> This directory can be inside or outside the EtcPal repository.</li>
 <li>Optionally, provide a CMake toolchain file for cross-compilation. Those building native code can skip this step. There are some examples in <code>tools/cmake/cross-toolchains</code>.</li>
 </ol>
 <ol type="1">
-<li>Run CMake to configure the lwpa project: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake [-DCMAKE_TOOLCHAIN_FILE=path/to/toolchain/file] path/to/lwpa/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
-<li>Use CMake to invoke the generated build system to build the lwpa library and unit tests: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
+<li>Run CMake to configure the EtcPal project: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake [-DCMAKE_TOOLCHAIN_FILE=path/to/toolchain/file] path/to/etcpal/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
+<li>Use CMake to invoke the generated build system to build the EtcPal library and unit tests: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ cmake --open .</div></div><!-- fragment --></li>
 <li><p class="startli">To run the unit tests after building: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ ctest [-C Configuration]</div></div><!-- fragment --><p> Or, if you are generating IDE project files, simply run the projects in the 'tests' folder in your IDE.</p>
-<p class="startli">Alternatively, you can define <code>LWPA_TEST_BUILD_AS_LIBRARIES=ON</code> to compile the unit and integration tests into static libraries, which is often useful for running tests on embedded targets.</p>
+<p class="startli">Alternatively, you can define <code>ETCPAL_TEST_BUILD_AS_LIBRARIES=ON</code> to compile the unit and integration tests into static libraries, which is often useful for running tests on embedded targets.</p>
 </li>
 </ol>
-<p>Alternatively, if you don't want to use CMake, your project can simply build in the lwpa sources directly using the appropriate directories for your target platform.</p>
+<p>Alternatively, if you don't want to use CMake, your project can simply build in the EtcPal sources directly using the appropriate directories for your target platform.</p>
 <h3>Platform Dependencies</h3>
-<p>The platform ports of lwpa have the following dependencies:</p><ul>
+<p>The platform ports of EtcPal have the following dependencies:</p><ul>
 <li>FreeRTOS<ul>
 <li>Tested back to FreeRTOS 9.0.0. Not guaranteed to work with older versions.</li>
 <li>Optional Features:<ul>
-<li>lwpa_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by FreeRTOS).</li>
+<li>etcpal_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by FreeRTOS).</li>
 </ul>
 </li>
 </ul>
@@ -207,10 +207,10 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Microsoft Windows<ul>
 <li>Windows XP SP1 or later</li>
 <li>Windows SDK library dependencies for optional features (if building using CMake, these dependencies are handled automatically):<ul>
-<li>lwpa_netint (network interfaces): Iphlpapi.lib</li>
-<li>lwpa_socket (socket interface): Iphlpapi.lib, Ws2_32.lib</li>
-<li>lwpa_uuid (UUID creation): Rpcrt4.lib</li>
-<li>lwpa_timer (system timers): Winmm.lib</li>
+<li>etcpal_netint (network interfaces): Iphlpapi.lib</li>
+<li>etcpal_socket (socket interface): Iphlpapi.lib, Ws2_32.lib</li>
+<li>etcpal_uuid (UUID creation): Rpcrt4.lib</li>
+<li>etcpal_timer (system timers): Winmm.lib</li>
 </ul>
 </li>
 </ul>
@@ -218,16 +218,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>MQX<ul>
 <li>MQX 4.2.0</li>
 <li>Optional Features:<ul>
-<li>lwpa_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by MQX)</li>
+<li>etcpal_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by MQX)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Linux<ul>
 <li>Optional Features:<ul>
-<li>lwpa_netint (network interfaces): Linux 2.2, glibc 2.3.3</li>
-<li>lwpa_socket (socket interface): Linux 2.6</li>
-<li>lwpa_uuid (UUID creation): libuuid (if compiling lwpa, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
+<li>etcpal_netint (network interfaces): Linux 2.2, glibc 2.3.3</li>
+<li>etcpal_socket (socket interface): Linux 2.6</li>
+<li>etcpal_uuid (UUID creation): libuuid (if compiling EtcPal, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
 </ul>
 </li>
 </ul>

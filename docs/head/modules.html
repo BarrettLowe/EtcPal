@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: Modules</title>
+  <title>EtcPal: Modules</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
-      $.get('/lwpa/versions.txt', function(data) {
+      $.get('/EtcPal/versions.txt', function(data) {
         if (data) {
           var lines = data.split('\n');
           if (lines.length > 0) {
@@ -43,7 +43,7 @@
               if (line.length > 1) {
                 option_name += ' (' + line[1] + ')';
               }
-              var option_val = '/lwpa/docs/' + line[0];
+              var option_val = '/EtcPal/docs/' + line[0];
               var option = $('<option></option>').attr("value", option_val)
                 .text(option_name);
               if (window.location.pathname.match('docs/' + line[0])) {
@@ -66,10 +66,10 @@
         <tbody>
           <tr style="height: 56px;">
             <td id="projectalign" style="padding-left: 0.5em;">
-              <div id="projectname">lwpa
+              <div id="projectname">EtcPal
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">LightWeight Platform Abstraction (lwpa)</div>
+              <div id="projectbrief">ETC Platform Abstraction Layer (EtcPal)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">
@@ -151,27 +151,27 @@ $(document).ready(function(){initNavTree('modules.html','');});
 <div class="contents">
 <div class="textblock">Here is a list of all modules:</div><div class="directory">
 <div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__lwpa.html" target="_self">lwpa</a></td><td class="desc">Lightweight Platform Abstraction (lwpa): A set of platform abstraction and utility modules </td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><a class="el" href="group__lwpa__lock.html" target="_self">lwpa_lock</a></td><td class="desc">Platform-neutral locks, mutexes and signals </td></tr>
-<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__mutex.html" target="_self">lwpa_mutex</a></td><td class="desc">A mutual-exclusion (mutex) object </td></tr>
-<tr id="row_0_0_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__signal.html" target="_self">lwpa_signal</a></td><td class="desc">A signal object </td></tr>
-<tr id="row_0_0_2_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__rwlock.html" target="_self">lwpa_rwlock</a></td><td class="desc">A reader-writer lock object </td></tr>
-<tr id="row_0_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__opts.html" target="_self">lwpa config options</a></td><td class="desc">Compile-time configuration options for lwpa </td></tr>
-<tr id="row_0_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__thread.html" target="_self">lwpa_thread</a></td><td class="desc">Platform-neutral threads </td></tr>
-<tr id="row_0_3_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__bool.html" target="_self">lwpa_bool</a></td><td class="desc">A C boolean type </td></tr>
-<tr id="row_0_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__error.html" target="_self">lwpa_error</a></td><td class="desc">Platform-neutral error codes </td></tr>
-<tr id="row_0_5_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__inet.html" target="_self">lwpa_inet</a></td><td class="desc">POSIX-like identifiers for IP addresses and network interfaces </td></tr>
-<tr id="row_0_6_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__int.html" target="_self">lwpa_int</a></td><td class="desc">Fixed-width integer types </td></tr>
-<tr id="row_0_7_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__log.html" target="_self">lwpa_log</a></td><td class="desc">A platform-neutral module enabling applications and libraries to log messages in either or both of syslog-compliant and human-readable format </td></tr>
-<tr id="row_0_8_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__mempool.html" target="_self">lwpa_mempool</a></td><td class="desc">Memory pools with fixed-size elements </td></tr>
-<tr id="row_0_9_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__netint.html" target="_self">lwpa_netint</a></td><td class="desc">A platform-neutral method for enumerating network interfaces </td></tr>
-<tr id="row_0_10_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__pack.html" target="_self">lwpa_pack</a></td><td class="desc">Platform- and endianness-independent buffer packing and unpacking </td></tr>
-<tr id="row_0_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_11_" class="arrow" onclick="toggleFolder('0_11_')">&#9660;</span><a class="el" href="group__lwpa__pdu.html" target="_self">lwpa_pdu</a></td><td class="desc">Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN) </td></tr>
-<tr id="row_0_11_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__rootlayerpdu.html" target="_self">lwpa_rootlayerpdu</a></td><td class="desc">Parse or pack a Root Layer PDU block </td></tr>
-<tr id="row_0_12_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__rbtree.html" target="_self">lwpa_rbtree</a></td><td class="desc">A red-black tree implementation </td></tr>
-<tr id="row_0_13_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__socket.html" target="_self">lwpa_socket</a></td><td class="desc">Platform-neutral BSD-modeled network socket implementation </td></tr>
-<tr id="row_0_14_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__timer.html" target="_self">lwpa_timer</a></td><td class="desc">Platform-neutral system timers </td></tr>
-<tr id="row_0_15_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__lwpa__uuid.html" target="_self">lwpa_uuid</a></td><td class="desc">Type and helper functions for a Universally Unique Identifier (UUID) </td></tr>
+<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="group__etcpal.html" target="_self">EtcPal</a></td><td class="desc">ETC Platform Abstraction Layer (EtcPal): A set of platform abstraction and utility modules used by ETC software libraries </td></tr>
+<tr id="row_0_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_0_" class="arrow" onclick="toggleFolder('0_0_')">&#9660;</span><a class="el" href="group__etcpal__lock.html" target="_self">etcpal_lock</a></td><td class="desc">Platform-neutral locks, mutexes and signals </td></tr>
+<tr id="row_0_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__mutex.html" target="_self">etcpal_mutex</a></td><td class="desc">A mutual-exclusion (mutex) object </td></tr>
+<tr id="row_0_0_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__signal.html" target="_self">etcpal_signal</a></td><td class="desc">A signal object </td></tr>
+<tr id="row_0_0_2_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__rwlock.html" target="_self">etcpal_rwlock</a></td><td class="desc">A reader-writer lock object </td></tr>
+<tr id="row_0_1_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__opts.html" target="_self">EtcPal config options</a></td><td class="desc">Compile-time configuration options for EtcPal </td></tr>
+<tr id="row_0_2_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__thread.html" target="_self">etcpal_thread</a></td><td class="desc">Platform-neutral threads </td></tr>
+<tr id="row_0_3_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__bool.html" target="_self">etcpal_bool</a></td><td class="desc">A C boolean type </td></tr>
+<tr id="row_0_4_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__error.html" target="_self">etcpal_error</a></td><td class="desc">Platform-neutral error codes </td></tr>
+<tr id="row_0_5_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__inet.html" target="_self">etcpal_inet</a></td><td class="desc">POSIX-like identifiers for IP addresses and network interfaces </td></tr>
+<tr id="row_0_6_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__int.html" target="_self">etcpal_int</a></td><td class="desc">Fixed-width integer types </td></tr>
+<tr id="row_0_7_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__log.html" target="_self">etcpal_log</a></td><td class="desc">A platform-neutral module enabling applications and libraries to log messages in either or both of syslog-compliant and human-readable format </td></tr>
+<tr id="row_0_8_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__mempool.html" target="_self">etcpal_mempool</a></td><td class="desc">Memory pools with fixed-size elements </td></tr>
+<tr id="row_0_9_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__netint.html" target="_self">etcpal_netint</a></td><td class="desc">A platform-neutral method for enumerating network interfaces </td></tr>
+<tr id="row_0_10_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__pack.html" target="_self">etcpal_pack</a></td><td class="desc">Platform- and endianness-independent buffer packing and unpacking </td></tr>
+<tr id="row_0_11_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_0_11_" class="arrow" onclick="toggleFolder('0_11_')">&#9660;</span><a class="el" href="group__etcpal__pdu.html" target="_self">etcpal_pdu</a></td><td class="desc">Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN) </td></tr>
+<tr id="row_0_11_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__rootlayerpdu.html" target="_self">etcpal_rootlayerpdu</a></td><td class="desc">Parse or pack a Root Layer PDU block </td></tr>
+<tr id="row_0_12_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__rbtree.html" target="_self">etcpal_rbtree</a></td><td class="desc">A red-black tree implementation </td></tr>
+<tr id="row_0_13_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__socket.html" target="_self">etcpal_socket</a></td><td class="desc">Platform-neutral BSD-modeled network socket implementation </td></tr>
+<tr id="row_0_14_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__timer.html" target="_self">etcpal_timer</a></td><td class="desc">Platform-neutral system timers </td></tr>
+<tr id="row_0_15_" class="even"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="group__etcpal__uuid.html" target="_self">etcpal_uuid</a></td><td class="desc">Type and helper functions for a Universally Unique Identifier (UUID) </td></tr>
 </table>
 </div><!-- directory -->
 </div><!-- contents -->

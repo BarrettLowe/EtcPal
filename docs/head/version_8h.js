@@ -1,11 +1,11 @@
 var version_8h =
 [
-    [ "LWPA_VERSION_BUILD", "version_8h.html#a16ac2016dfd704e3b8eeb31d1a09e6da", null ],
-    [ "LWPA_VERSION_COPYRIGHT", "version_8h.html#ac13daad468e5dde10a51dbaea1d6a624", null ],
-    [ "LWPA_VERSION_DATESTR", "version_8h.html#a0db91714276d373122aa439da6f93956", null ],
-    [ "LWPA_VERSION_MAJOR", "version_8h.html#a9937b7621e51ecb04e7c7f02d69bada9", null ],
-    [ "LWPA_VERSION_MINOR", "version_8h.html#aaf4b683c5241877fd1e0d62b29b61694", null ],
-    [ "LWPA_VERSION_PATCH", "version_8h.html#a8cc6dccbad1e01b6617c3389ef5a290d", null ],
-    [ "LWPA_VERSION_PRODUCTNAME", "version_8h.html#a7ab29319c80fa0fee3e9b7b8d6d576da", null ],
-    [ "LWPA_VERSION_STRING", "version_8h.html#ab601123c6d44cb0d8bc89c98c245715a", null ]
+    [ "ETCPAL_VERSION_BUILD", "version_8h.html#aa6b0f9dd6a270e78919e00960ee13d10", null ],
+    [ "ETCPAL_VERSION_COPYRIGHT", "version_8h.html#a71d3f0edb45966581728010bf9367bfd", null ],
+    [ "ETCPAL_VERSION_DATESTR", "version_8h.html#a7cc15a6bf906cf55e694163eeddbd194", null ],
+    [ "ETCPAL_VERSION_MAJOR", "version_8h.html#a618eb6d3de60f0993f1950bbe4cc69ff", null ],
+    [ "ETCPAL_VERSION_MINOR", "version_8h.html#a84fb4c7e51722f9142f1e4f9b280205a", null ],
+    [ "ETCPAL_VERSION_PATCH", "version_8h.html#a78e3fffcc3ba37c3080a4df782d7a371", null ],
+    [ "ETCPAL_VERSION_PRODUCTNAME", "version_8h.html#aa307a7f69296ca000ed52ae06bd2087c", null ],
+    [ "ETCPAL_VERSION_STRING", "version_8h.html#a19fd05455777129c5893db7521587ecc", null ]
 ];

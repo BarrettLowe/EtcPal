@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['mac',['mac',['../struct_lwpa_netint_info.html#af218cb57bca9340eb78204cb81754bc9',1,'LwpaNetintInfo']]],
-  ['mask',['mask',['../struct_lwpa_netint_info.html#abff5b2b0f50f02db2d130bb3c59cd5b0',1,'LwpaNetintInfo']]],
-  ['minute',['minute',['../struct_lwpa_log_time_params.html#a5edffad982a0566ad01d95005474eae3',1,'LwpaLogTimeParams']]],
-  ['month',['month',['../struct_lwpa_log_time_params.html#aedb06abe5aff12fa3e7e0e71a374edfb',1,'LwpaLogTimeParams']]],
-  ['msec',['msec',['../struct_lwpa_log_time_params.html#ad957f34cd6e8272740bc231865080b22',1,'LwpaLogTimeParams']]]
+  ['mac',['mac',['../struct_etc_pal_netint_info.html#aca9240e27db0f39672b30d0aac336e80',1,'EtcPalNetintInfo']]],
+  ['mask',['mask',['../struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3',1,'EtcPalNetintInfo']]],
+  ['minute',['minute',['../struct_etc_pal_log_time_params.html#a5edffad982a0566ad01d95005474eae3',1,'EtcPalLogTimeParams']]],
+  ['month',['month',['../struct_etc_pal_log_time_params.html#aedb06abe5aff12fa3e7e0e71a374edfb',1,'EtcPalLogTimeParams']]],
+  ['msec',['msec',['../struct_etc_pal_log_time_params.html#ad957f34cd6e8272740bc231865080b22',1,'EtcPalLogTimeParams']]]
 ];

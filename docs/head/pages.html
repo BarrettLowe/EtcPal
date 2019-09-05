@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lwpa: Related Pages</title>
+  <title>EtcPal: Related Pages</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -28,7 +28,7 @@
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
-      $.get('/lwpa/versions.txt', function(data) {
+      $.get('/EtcPal/versions.txt', function(data) {
         if (data) {
           var lines = data.split('\n');
           if (lines.length > 0) {
@@ -43,7 +43,7 @@
               if (line.length > 1) {
                 option_name += ' (' + line[1] + ')';
               }
-              var option_val = '/lwpa/docs/' + line[0];
+              var option_val = '/EtcPal/docs/' + line[0];
               var option = $('<option></option>').attr("value", option_val)
                 .text(option_name);
               if (window.location.pathname.match('docs/' + line[0])) {
@@ -66,10 +66,10 @@
         <tbody>
           <tr style="height: 56px;">
             <td id="projectalign" style="padding-left: 0.5em;">
-              <div id="projectname">lwpa
+              <div id="projectname">EtcPal
                 &#160;<span id="projectnumber">HEAD (unstable)</span>
               </div>
-              <div id="projectbrief">LightWeight Platform Abstraction (lwpa)</div>
+              <div id="projectbrief">ETC Platform Abstraction Layer (EtcPal)</div>
             </td>
             <!--BEGIN CUSTOM INSERTED SECTION-->
             <td style="text-align: right; padding-right: 0.5em">

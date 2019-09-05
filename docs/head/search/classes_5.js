@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readguard',['ReadGuard',['../classlwpa_1_1_read_guard.html',1,'lwpa']]]
+  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html',1,'etcpal']]]
 ];

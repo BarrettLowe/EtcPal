@@ -1,4 +1,4 @@
 var namespaces =
 [
-    [ "lwpa", "namespacelwpa.html", null ]
+    [ "etcpal", "namespaceetcpal.html", null ]
 ];

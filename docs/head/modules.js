@@ -1,4 +1,4 @@
 var modules =
 [
-    [ "lwpa", "group__lwpa.html", "group__lwpa" ]
+    [ "EtcPal", "group__etcpal.html", "group__etcpal" ]
 ];
