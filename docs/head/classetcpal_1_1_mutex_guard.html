@@ -93,7 +93,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
@@ -155,30 +154,120 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_mutex_guard.html','');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MutexGuard Class Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">etcpal_lock</a></div></div>  </div>
+<div class="title">MutexGuard Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">etcpal_cpp_lock</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Lock guard around an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a>. Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:  
+<p>Lock guard around a mutex.  
  <a href="classetcpal_1_1_mutex_guard.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a057d36a0206d67c6b8b9c5d8186c2e9e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a057d36a0206d67c6b8b9c5d8186c2e9e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>MutexGuard</b> (<a class="el" href="group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a> &amp;mutex)</td></tr>
+<tr class="memitem:a9ba4c9dc64b894cd9210f2cfa3b25952"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba4c9dc64b894cd9210f2cfa3b25952"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MutexGuard</b> (const <a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;other)=delete</td></tr>
+<tr class="separator:a9ba4c9dc64b894cd9210f2cfa3b25952"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87a153ed19cff0ab7efbfbb83bbed15e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87a153ed19cff0ab7efbfbb83bbed15e"></a>
+<a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;other)=delete</td></tr>
+<tr class="separator:a87a153ed19cff0ab7efbfbb83bbed15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1a711b925493a7dde821bbab3a1b9c3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1a711b925493a7dde821bbab3a1b9c3"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>MutexGuard</b> (<a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;&amp;other)=delete</td></tr>
+<tr class="separator:ac1a711b925493a7dde821bbab3a1b9c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af79f386d90c1f751af5c51bd183a65a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af79f386d90c1f751af5c51bd183a65a1"></a>
+<a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> &amp;&amp;other)=delete</td></tr>
+<tr class="separator:af79f386d90c1f751af5c51bd183a65a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+Lock guard classes</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp392fc5a84af36daac3ad0f3e13336cab"></a>RAII-style wrapper classes for <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a> and <a class="el" href="group__etcpal__rwlock.html">etcpal_rwlock</a>. </p>
+</td></tr>
+<tr class="memitem:a72577d0ea01f7607a671de23cc54eb06"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06">MutexGuard</a> (<a class="el" href="classetcpal_1_1_mutex.html">Mutex</a> &amp;mutex)</td></tr>
+<tr class="memdesc:a72577d0ea01f7607a671de23cc54eb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>.  <a href="#a72577d0ea01f7607a671de23cc54eb06">More...</a><br /></td></tr>
+<tr class="separator:a72577d0ea01f7607a671de23cc54eb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a057d36a0206d67c6b8b9c5d8186c2e9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e">MutexGuard</a> (<a class="el" href="group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a> &amp;mutex)</td></tr>
+<tr class="memdesc:a057d36a0206d67c6b8b9c5d8186c2e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock an <a class="el" href="group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a>.  <a href="#a057d36a0206d67c6b8b9c5d8186c2e9e">More...</a><br /></td></tr>
 <tr class="separator:a057d36a0206d67c6b8b9c5d8186c2e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310e9063e3e9794762a2cf28c6148334"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a310e9063e3e9794762a2cf28c6148334"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex_guard.html#a310e9063e3e9794762a2cf28c6148334">~MutexGuard</a> ()</td></tr>
+<tr class="memdesc:a310e9063e3e9794762a2cf28c6148334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the lock upon going out-of-scope. <br /></td></tr>
+<tr class="separator:a310e9063e3e9794762a2cf28c6148334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Lock guard around an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a>. Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage: </p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_mutex_guard.html">etcpal::MutexGuard</a> lock(mutex_);</div><div class="line">  <span class="comment">// Do critical section operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><hr/>The documentation for this class was generated from the following file:<ul>
-<li>include/etcpal/<a class="el" href="lock_8h_source.html">lock.h</a></li>
+<div class="textblock"><p>Lock guard around a mutex. </p>
+<p>Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_mutex_guard.html">etcpal::MutexGuard</a> lock(mutex_);</div><div class="line">  <span class="comment">// Do critical section operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a72577d0ea01f7607a671de23cc54eb06"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classetcpal_1_1_mutex.html">Mutex</a> &amp;&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lock an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if locking the mutex failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a057d36a0206d67c6b8b9c5d8186c2e9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>mutex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Lock an <a class="el" href="group__etcpal__mutex.html#ga1e6a1360f61ff249137e3f6757322698">etcpal_mutex_t</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::runtime_error</td><td>if locking the mutex failed. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>include/etcpal/cpp/<a class="el" href="cpp_2lock_8h_source.html">lock.h</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceetcpal.html">etcpal</a></li><li class="navelem"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a></li>
+    <li class="navelem"><b>etcpal</b></li><li class="navelem"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

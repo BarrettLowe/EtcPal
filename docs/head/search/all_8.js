@@ -5,5 +5,7 @@ var searchData=
   ['info',['info',['../struct_etc_pal_rb_tree.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbTree::info()'],['../struct_etc_pal_rb_iter.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbIter::info()']]],
   ['interval',['interval',['../struct_etc_pal_timer.html#acd9ed1ccc44de55e1d3eff5569663695',1,'EtcPalTimer']]],
   ['ip',['ip',['../struct_etc_pal_sockaddr.html#a19cc8016f534a565f984438cfe911a9e',1,'EtcPalSockaddr']]],
-  ['is_5fdefault',['is_default',['../struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'EtcPalNetintInfo']]]
+  ['is_5fdefault',['is_default',['../struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'EtcPalNetintInfo']]],
+  ['isnull',['IsNull',['../classetcpal_1_1_uuid.html#a055d87b78f69c9d039b7e12ead7aa6b6',1,'etcpal::Uuid']]],
+  ['isok',['IsOk',['../classetcpal_1_1_result.html#ac750afc1fee2a7baa8809c8f4ac49dd4',1,'etcpal::Result']]]
 ];

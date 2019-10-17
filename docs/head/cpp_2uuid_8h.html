@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.11" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal Namespace Reference</title>
+  <title>EtcPal: include/etcpal/cpp/uuid.h File Reference</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -93,9 +93,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
-      <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
-      <li><a href="files.html"><span>Files</span></a></li>
+      <li class="current"><a href="files.html"><span>Files</span></a></li>
       <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -117,7 +116,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
-      <li><a href="namespaces.html"><span>Namespace&#160;List</span></a></li>
+      <li><a href="files.html"><span>File&#160;List</span></a></li>
     </ul>
   </div>
 </div><!-- top -->
@@ -132,7 +131,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('namespaceetcpal.html','');});
+$(document).ready(function(){initNavTree('cpp_2uuid_8h.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -151,35 +150,65 @@ $(document).ready(function(){initNavTree('namespaceetcpal.html','');});
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a>  </div>
+<a href="#nested-classes">Data Structures</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal Namespace Reference</div>  </div>
+<div class="title">uuid.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>The C++ namespace for etcpal.  
+<p>C++ wrapper and utilities for <a class="el" href="uuid_8h_source.html">etcpal/uuid.h</a>.  
 <a href="#details">More...</a></p>
+
+<p><a href="cpp_2uuid_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock guard around an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a>. Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:  <a href="classetcpal_1_1_mutex_guard.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper class for the EtcPal UUID type.  <a href="classetcpal_1_1_uuid.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_read_guard.html">ReadGuard</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read lock guard around an <a class="el" href="group__etcpal__rwlock.html">etcpal_rwlock</a>. Read lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:  <a href="classetcpal_1_1_read_guard.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_write_guard.html">WriteGuard</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write lock guard around an <a class="el" href="group__etcpal__rwlock.html">etcpal_rwlock</a>. Write lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:  <a href="classetcpal_1_1_write_guard.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga3341f07d3b0b2b7192351ed66d15f6e5"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const Uuid &amp;uuid) noexcept</td></tr>
+<tr class="separator:ga3341f07d3b0b2b7192351ed66d15f6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d4fba09a04cb2c313d44e12d7be13f2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const Uuid &amp;uuid) noexcept</td></tr>
+<tr class="separator:ga4d4fba09a04cb2c313d44e12d7be13f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6147e7a048b632e6550697b5e429f985"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const Uuid &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
+<tr class="separator:ga6147e7a048b632e6550697b5e429f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab10b79553c913d2f360e1908c6937ba2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const Uuid &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
+<tr class="separator:gab10b79553c913d2f360e1908c6937ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0d3840385aaf17b085d556915e1ccb1f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:ga0d3840385aaf17b085d556915e1ccb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gada353910f7488990257b651043133a03"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:gada353910f7488990257b651043133a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafc4229bc6212b6a7ac8fb93be3654b29"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:gafc4229bc6212b6a7ac8fb93be3654b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76afde3920ede58773bb71740a0c819f"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:ga76afde3920ede58773bb71740a0c819f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab16e7bcb1db9fc3e6abac154832ff0f2"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:gab16e7bcb1db9fc3e6abac154832ff0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae21fa3c075265cfe3476812ed15d4d17"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const Uuid &amp;a, const Uuid &amp;b) noexcept</td></tr>
+<tr class="separator:gae21fa3c075265cfe3476812ed15d4d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The C++ namespace for etcpal. </p>
+<div class="textblock"><p>C++ wrapper and utilities for <a class="el" href="uuid_8h_source.html">etcpal/uuid.h</a>. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="namespaceetcpal.html">etcpal</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_81a3fb26cc06c42d281987e41831a70b.html">etcpal</a></li><li class="navelem"><a class="el" href="dir_fa86f7c0f1af55176d8f05dc5aff685f.html">cpp</a></li><li class="navelem"><a class="el" href="cpp_2uuid_8h.html">uuid.h</a></li>
     <li class="footer">Generated by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.11 </li>

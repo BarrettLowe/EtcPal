@@ -3,14 +3,12 @@ var NAVTREE =
   [ "EtcPal", "index.html", [
     [ "ETC Platform Abstraction Layer", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Namespaces", null, [
-      [ "Namespace List", "namespaces.html", "namespaces" ]
-    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
       [ "Data Fields", "functions.html", [
         [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
         [ "Variables", "functions_vars.html", null ]
       ] ]
     ] ],
@@ -23,9 +21,9 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"acn__prot_8h_source.html",
-"group__etcpal__rootlayerpdu.html#ga8d5021cdeed9c03dcc28d7f29fbac7d9",
-"struct_etc_pal_rb_node.html#a6761340706096510fd89edca40a63b9b"
+".html",
+"group__etcpal__log.html#gad7d901793d960e58420eb4025cfa51d1",
+"struct_cached_netint_info.html#a8d32c5a8ae5c4d790258848c58325d56"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

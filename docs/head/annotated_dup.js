@@ -1,6 +1,15 @@
 var annotated_dup =
 [
-    [ "etcpal", "namespaceetcpal.html", "namespaceetcpal" ],
+    [ "etcpal", null, [
+      [ "Mutex", "classetcpal_1_1_mutex.html", "classetcpal_1_1_mutex" ],
+      [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", "classetcpal_1_1_mutex_guard" ],
+      [ "ReadGuard", "classetcpal_1_1_read_guard.html", "classetcpal_1_1_read_guard" ],
+      [ "Result", "classetcpal_1_1_result.html", "classetcpal_1_1_result" ],
+      [ "RwLock", "classetcpal_1_1_rw_lock.html", "classetcpal_1_1_rw_lock" ],
+      [ "Signal", "classetcpal_1_1_signal.html", "classetcpal_1_1_signal" ],
+      [ "Uuid", "classetcpal_1_1_uuid.html", "classetcpal_1_1_uuid" ],
+      [ "WriteGuard", "classetcpal_1_1_write_guard.html", "classetcpal_1_1_write_guard" ]
+    ] ],
     [ "CachedNetintInfo", "struct_cached_netint_info.html", "struct_cached_netint_info" ],
     [ "DefaultNetint", "struct_default_netint.html", "struct_default_netint" ],
     [ "EtcPalAddrinfo", "struct_etc_pal_addrinfo.html", "struct_etc_pal_addrinfo" ],
