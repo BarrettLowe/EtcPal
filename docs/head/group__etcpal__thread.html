@@ -180,20 +180,19 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gabb277d1d3fc2b021ca7513d8af038ed4"></a>
-typedef struct <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#gabb277d1d3fc2b021ca7513d8af038ed4">EtcPalThreadParams</a></td></tr>
-<tr class="memdesc:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters for an etcpal_thread. <br /></td></tr>
+<tr class="memitem:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#gabb277d1d3fc2b021ca7513d8af038ed4">EtcPalThreadParams</a></td></tr>
+<tr class="memdesc:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters for an etcpal_thread.  <a href="#gabb277d1d3fc2b021ca7513d8af038ed4">More...</a><br /></td></tr>
 <tr class="separator:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf5e68040f0d382ecebc46735a8f53c93"><td class="memItemLeft" align="right" valign="top">typedef UNDEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a></td></tr>
-<tr class="memdesc:gaf5e68040f0d382ecebc46735a8f53c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread identifier.  <a href="#gaf5e68040f0d382ecebc46735a8f53c93">More...</a><br /></td></tr>
-<tr class="separator:gaf5e68040f0d382ecebc46735a8f53c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a></td></tr>
+<tr class="memdesc:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread identifier.  <a href="#ga6ea2bb55f405380e3ea296e3b6164ae8">More...</a><br /></td></tr>
+<tr class="separator:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga6622ac7af8e6cc018c28ba15cc824de5">etcpal_thread_create</a> (<a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a> *id, const <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> *params, void(*thread_fn)(void *), void *thread_arg)</td></tr>
+<tr class="memitem:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga6622ac7af8e6cc018c28ba15cc824de5">etcpal_thread_create</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id, const <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> *params, void(*thread_fn)(void *), void *thread_arg)</td></tr>
 <tr class="memdesc:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="#ga6622ac7af8e6cc018c28ba15cc824de5">More...</a><br /></td></tr>
 <tr class="separator:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8841872731c92356965eac616aedc2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff">etcpal_thread_join</a> (<a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a> *id)</td></tr>
+<tr class="memitem:ga8841872731c92356965eac616aedc2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff">etcpal_thread_join</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id)</td></tr>
 <tr class="memdesc:ga8841872731c92356965eac616aedc2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a thread to finish execution.  <a href="#ga8841872731c92356965eac616aedc2ff">More...</a><br /></td></tr>
 <tr class="separator:ga8841872731c92356965eac616aedc2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c76ca9a8ebd49dcb4b376f351fb4517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga8c76ca9a8ebd49dcb4b376f351fb4517">etcpal_thread_sleep</a> (int sleep_ms)</td></tr>
@@ -263,18 +262,32 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="gaf5e68040f0d382ecebc46735a8f53c93"></a>
+<a class="anchor" id="ga6ea2bb55f405380e3ea296e3b6164ae8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef UNDEFINED <a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a></td>
+          <td class="memname">typedef PLATFORM_DEFINED <a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>The thread identifier. </p>
 <p>Depending on the platform, this could be a scalar type or a struct. </p>
+
+</div>
+</div>
+<a class="anchor" id="gabb277d1d3fc2b021ca7513d8af038ed4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a>  <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A set of parameters for an etcpal_thread. </p>
 
 </div>
 </div>
@@ -286,7 +299,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_thread_create </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *&#160;</td>
           <td class="paramname"><em>id</em>, </td>
         </tr>
         <tr>
@@ -316,7 +329,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new thread. </p>
-<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to etcpal_thread_stop() on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless etcpal_thread_stop() is called.</p>
+<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to <a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless <a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Identifier for the thread that was created. </td></tr>
@@ -339,7 +352,7 @@ false: The thread was not created. </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_thread_join </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__etcpal__thread.html#gaf5e68040f0d382ecebc46735a8f53c93">etcpal_thread_t</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
           <td></td>
         </tr>

@@ -6,9 +6,9 @@ var group__etcpal__rbtree =
       [ "value", "struct_etc_pal_rb_node.html#a0f61d63b009d0880a89c843bd50d8d76", null ]
     ] ],
     [ "EtcPalRbTree", "struct_etc_pal_rb_tree.html", [
-      [ "alloc_f", "struct_etc_pal_rb_tree.html#af09735d8bf310cef3d8a0005138de5e3", null ],
-      [ "cmp", "struct_etc_pal_rb_tree.html#a10ccc54f5d61567cc7831f8f415687d8", null ],
-      [ "dealloc_f", "struct_etc_pal_rb_tree.html#a163e7baba46efbe3c7fdd65c1c4051f2", null ],
+      [ "alloc_f", "struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b", null ],
+      [ "cmp", "struct_etc_pal_rb_tree.html#a7b29df8f3907a7cb322be7a1cb130670", null ],
+      [ "dealloc_f", "struct_etc_pal_rb_tree.html#a29c69388460d3c40b35a388dcbea6b58", null ],
       [ "info", "struct_etc_pal_rb_tree.html#acb1df3a0f703b05bc4971f79cabe2597", null ],
       [ "root", "struct_etc_pal_rb_tree.html#ae96f5aa846cba3ae538255b01f066bea", null ],
       [ "size", "struct_etc_pal_rb_tree.html#a854352f53b148adc24983a58a1866d66", null ]
@@ -21,11 +21,11 @@ var group__etcpal__rbtree =
       [ "tree", "struct_etc_pal_rb_iter.html#a3dc7beb088200d742f70c0c895b376c4", null ]
     ] ],
     [ "ETCPAL_RB_ITER_MAX_HEIGHT", "group__etcpal__rbtree.html#ga347976360fdafc669aab59abc1ff7d73", null ],
-    [ "etcpal_rbnode_alloc_f", "group__etcpal__rbtree.html#gadb6dac2a828f26ba2ae35656a738d685", null ],
-    [ "etcpal_rbnode_dealloc_f", "group__etcpal__rbtree.html#ga94fa4793990e233cddc87d1606b38f79", null ],
-    [ "etcpal_rbtree_node_cmp_f", "group__etcpal__rbtree.html#gaa8464a406583530043f66b63955ebb1c", null ],
-    [ "etcpal_rbtree_node_f", "group__etcpal__rbtree.html#gac3929405ade6133edb8cf06d7fa6271b", null ],
     [ "EtcPalRbIter", "group__etcpal__rbtree.html#gaca406625e86f809e1d5b8e52ca3d3e40", null ],
+    [ "EtcPalRbNodeAllocFunc", "group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990", null ],
+    [ "EtcPalRbNodeDeallocFunc", "group__etcpal__rbtree.html#gab04d15dd62a53956d6ea4b1e5dcbe930", null ],
+    [ "EtcPalRbTreeNodeCmpFunc", "group__etcpal__rbtree.html#gaa92041a856567f1d411d6e2b74233ddc", null ],
+    [ "EtcPalRbTreeNodeFunc", "group__etcpal__rbtree.html#ga6687d480b9c3f3583303d537190a47de", null ],
     [ "etcpal_rbiter_first", "group__etcpal__rbtree.html#ga1cd77fc10e7c983be2c12c5f14bc3721", null ],
     [ "etcpal_rbiter_init", "group__etcpal__rbtree.html#gae7d2f565a40d1ab86873e7bc9c5c5c02", null ],
     [ "etcpal_rbiter_last", "group__etcpal__rbtree.html#ga6f1279b41c60d92a808cc9b364f9eac9", null ],
@@ -33,15 +33,15 @@ var group__etcpal__rbtree =
     [ "etcpal_rbiter_prev", "group__etcpal__rbtree.html#gad093318703094fd4bdb9ecb09443241d", null ],
     [ "etcpal_rbnode_init", "group__etcpal__rbtree.html#gaf901899ba23ab79070d5ed1440440eb2", null ],
     [ "etcpal_rbtree_clear", "group__etcpal__rbtree.html#ga1347a53b2f8505e22707702f490949e8", null ],
-    [ "etcpal_rbtree_clear_with_cb", "group__etcpal__rbtree.html#ga8b115911ba175651df1c73bdb1c0a773", null ],
+    [ "etcpal_rbtree_clear_with_cb", "group__etcpal__rbtree.html#ga2dfae49efd1e9a9dbd02635bdea8e73d", null ],
     [ "etcpal_rbtree_find", "group__etcpal__rbtree.html#ga4e42141273a433aad5e854780e321004", null ],
-    [ "etcpal_rbtree_init", "group__etcpal__rbtree.html#gaf7b76e69622bca24f161d0998d6625b0", null ],
+    [ "etcpal_rbtree_init", "group__etcpal__rbtree.html#ga82765df01bbb32545a67ec148536602a", null ],
     [ "etcpal_rbtree_insert", "group__etcpal__rbtree.html#gae87df653a152c3942b54a8f8e7c235c6", null ],
     [ "etcpal_rbtree_insert_node", "group__etcpal__rbtree.html#ga036f8c0aea4ac2050bd2deb904affed6", null ],
     [ "etcpal_rbtree_node_cmp_ptr_cb", "group__etcpal__rbtree.html#ga2c7b10e007e2221402426393cbbc3461", null ],
     [ "etcpal_rbtree_node_dealloc_cb", "group__etcpal__rbtree.html#ga2041c16a4a4e745ccadd180cbb8bc93f", null ],
     [ "etcpal_rbtree_remove", "group__etcpal__rbtree.html#ga948b09a65cbe24eefcfb5823641f39f1", null ],
-    [ "etcpal_rbtree_remove_with_cb", "group__etcpal__rbtree.html#ga71a4587a7746d0e43beb9687de446723", null ],
+    [ "etcpal_rbtree_remove_with_cb", "group__etcpal__rbtree.html#gaa2d2391c36849d9a9cd32a0a131f6341", null ],
     [ "etcpal_rbtree_size", "group__etcpal__rbtree.html#gae0aa64287211d3858cef5d0a7cffb033", null ],
     [ "etcpal_rbtree_test", "group__etcpal__rbtree.html#ga3b194e280069ff3fbd105d9799dbea05", null ]
 ];

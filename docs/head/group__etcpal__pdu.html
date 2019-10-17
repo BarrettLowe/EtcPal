@@ -372,7 +372,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(pdu_buf[0])                                                                   \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__etcpal__pdu_html_gaadfa588e12322808723c598fef9b2509"><div class="ttname"><a href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a></div><div class="ttdeci">#define ETCPAL_PDU_L_FLAG_SET(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:45</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(pdu_buf[0])                                                                   \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__etcpal__pdu_html_gaadfa588e12322808723c598fef9b2509"><div class="ttname"><a href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a></div><div class="ttdeci">#define ETCPAL_PDU_L_FLAG_SET(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:51</div></div>
 </div><!-- fragment -->
 <p>Get the length from the Length field of a PDU. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -410,7 +410,8 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                              \</div><div class="line">  {                                                                               \</div><div class="line">    (pdu_buf)[0] = (uint8_t)(((pdu_buf)[0] &amp; 0xf0) | (((length) &gt;&gt; 16) &amp; 0x0fu)); \</div><div class="line">    (pdu_buf)[1] = (uint8_t)(((length) &gt;&gt; 8) &amp; 0xffu);                            \</div><div class="line">    (pdu_buf)[2] = (uint8_t)(length)&amp;0xffu;                                       \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Fill in the Length field of a PDU which has a length 4096 or greater. </p>
-<p>The L flag of this PDU must be set to 1. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The L flag of this PDU must be set to 1.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdu_buf</td><td>Pointer to the start of the PDU buffer. </td></tr>
     <tr><td class="paramname">length</td><td>Length of this PDU. </td></tr>
@@ -445,7 +446,8 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                             \</div><div class="line">  {                                                                              \</div><div class="line">    (pdu_buf)[0] = (uint8_t)(((pdu_buf)[0] &amp; 0xf0) | (((length) &gt;&gt; 8) &amp; 0x0fu)); \</div><div class="line">    (pdu_buf)[1] = (uint8_t)(length)&amp;0xffu;                                      \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div></div><!-- fragment -->
 <p>Fill in the Length field of a PDU which has a length less than 4096. </p>
-<p>The L flag of this PDU must be set to 0. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The L flag of this PDU must be set to 0.</p>
+<dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">pdu_buf</td><td>Pointer to the start of the PDU buffer. </td></tr>
     <tr><td class="paramname">length</td><td>Length of this PDU. </td></tr>
