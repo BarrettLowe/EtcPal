@@ -4,7 +4,7 @@ var struct_etc_pal_netint_info =
     [ "friendly_name", "struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd", null ],
     [ "index", "struct_etc_pal_netint_info.html#a589d64202487f78e3cc30dd2e04c5201", null ],
     [ "is_default", "struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a", null ],
-    [ "mac", "struct_etc_pal_netint_info.html#aca9240e27db0f39672b30d0aac336e80", null ],
+    [ "mac", "struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef", null ],
     [ "mask", "struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3", null ],
     [ "name", "struct_etc_pal_netint_info.html#a6eaa1f18016764aa8812196745e36463", null ]
 ];

@@ -6,6 +6,6 @@ var searchData=
   ['platform_5fdata',['platform_data',['../struct_etc_pal_thread_params.html#abea5d4a9dc1ef714b423a1ae6afaf4ae',1,'EtcPalThreadParams']]],
   ['pool',['pool',['../struct_etc_pal_mempool_desc.html#aece14e36f8731b6f1c9602fee75c1544',1,'EtcPalMempoolDesc']]],
   ['pool_5fsize',['pool_size',['../struct_etc_pal_mempool_desc.html#aaeb9b2d37542fba1b318e4fcde49d9b4',1,'EtcPalMempoolDesc']]],
-  ['port',['port',['../struct_etc_pal_sockaddr.html#a8e0798404bf2cf5dabb84c5ba9a4f236',1,'EtcPalSockaddr']]],
+  ['port',['port',['../struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236',1,'EtcPalSockAddr']]],
   ['procid',['procid',['../struct_etc_pal_syslog_params.html#aa3d06040894562832d2218511875b444',1,'EtcPalSyslogParams']]]
 ];

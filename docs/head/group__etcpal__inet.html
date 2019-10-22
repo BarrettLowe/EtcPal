@@ -163,8 +163,11 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address.  <a href="struct_etc_pal_ip_addr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address with associated interface and port.  <a href="struct_etc_pal_sockaddr.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address with associated interface and port.  <a href="struct_etc_pal_sock_addr.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A MAC address.  <a href="struct_etc_pal_mac_addr.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html">EtcPalNetintInfo</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of a single address assigned to a network interface.  <a href="struct_etc_pal_netint_info.html#details">More...</a><br /></td></tr>
@@ -175,9 +178,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gad5f18940857b50304b956505fb77df20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:gad5f18940857b50304b956505fb77df20"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of bytes in an IPv6 address.  <a href="#gad5f18940857b50304b956505fb77df20">More...</a><br /></td></tr>
 <tr class="separator:gad5f18940857b50304b956505fb77df20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f2c2a58bb8bab392f1a23b9b3e70dcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga5f2c2a58bb8bab392f1a23b9b3e70dcf"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_NETINTINFO_MAC_LEN</b>&#160;&#160;&#160;6</td></tr>
-<tr class="separator:ga5f2c2a58bb8bab392f1a23b9b3e70dcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2222b6d9e40f95ec1d74e1865537863f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2222b6d9e40f95ec1d74e1865537863f"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_MAC_BYTES</b>&#160;&#160;&#160;6</td></tr>
+<tr class="separator:ga2222b6d9e40f95ec1d74e1865537863f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga492fc3dd7fabb325e80e375d6be69d89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga492fc3dd7fabb325e80e375d6be69d89"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_NETINTINFO_NAME_LEN</b>&#160;&#160;&#160;64</td></tr>
 <tr class="separator:ga492fc3dd7fabb325e80e375d6be69d89"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,15 +193,21 @@ Macros</h2></td></tr>
 <tr class="memitem:ga71fa8216f8c0c7472c8786e793a7b280"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga71fa8216f8c0c7472c8786e793a7b280">ETCPAL_INET6_ADDRSTRLEN</a>&#160;&#160;&#160;46</td></tr>
 <tr class="memdesc:ga71fa8216f8c0c7472c8786e793a7b280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IPv6 address.  <a href="#ga71fa8216f8c0c7472c8786e793a7b280">More...</a><br /></td></tr>
 <tr class="separator:ga71fa8216f8c0c7472c8786e793a7b280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga73f73b31cc309024d3284ebcf4b66b45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45">ETCPAL_MAC_STRING_BYTES</a>&#160;&#160;&#160;18</td></tr>
+<tr class="memdesc:ga73f73b31cc309024d3284ebcf4b66b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of a MAC address.  <a href="#ga73f73b31cc309024d3284ebcf4b66b45">More...</a><br /></td></tr>
+<tr class="separator:ga73f73b31cc309024d3284ebcf4b66b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga0f4fa2c5534edc2061c48b7d0a60941f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga0f4fa2c5534edc2061c48b7d0a60941f">EtcPalIpAddr</a></td></tr>
 <tr class="memdesc:ga0f4fa2c5534edc2061c48b7d0a60941f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address.  <a href="#ga0f4fa2c5534edc2061c48b7d0a60941f">More...</a><br /></td></tr>
 <tr class="separator:ga0f4fa2c5534edc2061c48b7d0a60941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacd6641e07d027a38b3b275fd97dc948d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gacd6641e07d027a38b3b275fd97dc948d">EtcPalSockaddr</a></td></tr>
-<tr class="memdesc:gacd6641e07d027a38b3b275fd97dc948d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address with associated interface and port.  <a href="#gacd6641e07d027a38b3b275fd97dc948d">More...</a><br /></td></tr>
-<tr class="separator:gacd6641e07d027a38b3b275fd97dc948d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0178b5f6d720a2293ef10bb61dcecf7a"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga0178b5f6d720a2293ef10bb61dcecf7a">EtcPalSockAddr</a></td></tr>
+<tr class="memdesc:ga0178b5f6d720a2293ef10bb61dcecf7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An IP address with associated interface and port.  <a href="#ga0178b5f6d720a2293ef10bb61dcecf7a">More...</a><br /></td></tr>
+<tr class="separator:ga0178b5f6d720a2293ef10bb61dcecf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac0911b094d33366046d9b947b24cc63f"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gac0911b094d33366046d9b947b24cc63f">EtcPalMacAddr</a></td></tr>
+<tr class="memdesc:gac0911b094d33366046d9b947b24cc63f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A MAC address.  <a href="#gac0911b094d33366046d9b947b24cc63f">More...</a><br /></td></tr>
+<tr class="separator:gac0911b094d33366046d9b947b24cc63f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaed988a9502c1d15538ef945b3b5b234b"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_netint_info.html">EtcPalNetintInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaed988a9502c1d15538ef945b3b5b234b">EtcPalNetintInfo</a></td></tr>
 <tr class="memdesc:gaed988a9502c1d15538ef945b3b5b234b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A description of a single address assigned to a network interface.  <a href="#gaed988a9502c1d15538ef945b3b5b234b">More...</a><br /></td></tr>
 <tr class="separator:gaed988a9502c1d15538ef945b3b5b234b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,15 +238,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga5d91044202026978c99000b6da2d226e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga5d91044202026978c99000b6da2d226e">etcpal_ip_set_wildcard</a> (<a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> type, <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip)</td></tr>
 <tr class="memdesc:ga5d91044202026978c99000b6da2d226e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> with a wildcard address.  <a href="#ga5d91044202026978c99000b6da2d226e">More...</a><br /></td></tr>
 <tr class="separator:ga5d91044202026978c99000b6da2d226e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa5de56fa77b6190297ce164910c2eca0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaa5de56fa77b6190297ce164910c2eca0">etcpal_ip_equal</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip1, const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip2)</td></tr>
-<tr class="memdesc:gaa5de56fa77b6190297ce164910c2eca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether two instances of <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contain identical addresses.  <a href="#gaa5de56fa77b6190297ce164910c2eca0">More...</a><br /></td></tr>
-<tr class="separator:gaa5de56fa77b6190297ce164910c2eca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf766d207bd3e85c6b3d75768f28a00c6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaf766d207bd3e85c6b3d75768f28a00c6">etcpal_ip_cmp</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip1, const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip2)</td></tr>
 <tr class="memdesc:gaf766d207bd3e85c6b3d75768f28a00c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two EtcPalIpAddrs.  <a href="#gaf766d207bd3e85c6b3d75768f28a00c6">More...</a><br /></td></tr>
 <tr class="separator:gaf766d207bd3e85c6b3d75768f28a00c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac3f119aa04305d7cf485d1a86baf74cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gac3f119aa04305d7cf485d1a86baf74cb">etcpal_ip_and_port_equal</a> (const <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *sock1, const <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *sock2)</td></tr>
-<tr class="memdesc:gac3f119aa04305d7cf485d1a86baf74cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether two instances of <a class="el" href="struct_etc_pal_sockaddr.html" title="An IP address with associated interface and port. ">EtcPalSockaddr</a> contain identical IP addresses and ports.  <a href="#gac3f119aa04305d7cf485d1a86baf74cb">More...</a><br /></td></tr>
-<tr class="separator:gac3f119aa04305d7cf485d1a86baf74cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf897a891bcf59ccb447845628c2a04c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaf897a891bcf59ccb447845628c2a04c2">etcpal_ip_and_port_equal</a> (const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *sock1, const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *sock2)</td></tr>
+<tr class="memdesc:gaf897a891bcf59ccb447845628c2a04c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether two instances of <a class="el" href="struct_etc_pal_sock_addr.html" title="An IP address with associated interface and port. ">EtcPalSockAddr</a> contain identical IP addresses and ports.  <a href="#gaf897a891bcf59ccb447845628c2a04c2">More...</a><br /></td></tr>
+<tr class="separator:gaf897a891bcf59ccb447845628c2a04c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad72a9be897d58bda4bc0ac7ccda660cc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gad72a9be897d58bda4bc0ac7ccda660cc">etcpal_mac_cmp</a> (const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *mac1, const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *mac2)</td></tr>
+<tr class="memdesc:gad72a9be897d58bda4bc0ac7ccda660cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare two EtcPalMacAddrs numerically.  <a href="#gad72a9be897d58bda4bc0ac7ccda660cc">More...</a><br /></td></tr>
+<tr class="separator:gad72a9be897d58bda4bc0ac7ccda660cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9a86a44681bc856e5919578bbf652e38"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga9a86a44681bc856e5919578bbf652e38">etcpal_ip_mask_length</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *netmask)</td></tr>
 <tr class="memdesc:ga9a86a44681bc856e5919578bbf652e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the length in bits of a netmask.  <a href="#ga9a86a44681bc856e5919578bbf652e38">More...</a><br /></td></tr>
 <tr class="separator:ga9a86a44681bc856e5919578bbf652e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,18 +262,24 @@ Functions</h2></td></tr>
 <tr class="memitem:gafe364c911711c469e0574821e30600e3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gafe364c911711c469e0574821e30600e3"></a>
 size_t&#160;</td><td class="memItemRight" valign="bottom"><b>ip_etcpal_to_os</b> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *ip, etcpal_os_ipaddr_t *os_ip)</td></tr>
 <tr class="separator:gafe364c911711c469e0574821e30600e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab44629e7ccc891148d793abc17b177e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gab44629e7ccc891148d793abc17b177e4"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sockaddr_os_to_etcpal</b> (const etcpal_os_sockaddr_t *os_sa, <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *sa)</td></tr>
-<tr class="separator:gab44629e7ccc891148d793abc17b177e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga2fafefb7322b14498d4e30191e0faa5e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga2fafefb7322b14498d4e30191e0faa5e"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>sockaddr_etcpal_to_os</b> (const <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *sa, etcpal_os_sockaddr_t *os_sa)</td></tr>
-<tr class="separator:ga2fafefb7322b14498d4e30191e0faa5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga087efaef8630f32173eb397b4cb1ae7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga087efaef8630f32173eb397b4cb1ae7f"></a>
+<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>sockaddr_os_to_etcpal</b> (const etcpal_os_sockaddr_t *os_sa, <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *sa)</td></tr>
+<tr class="separator:ga087efaef8630f32173eb397b4cb1ae7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa8d939a802f0ab99ae1a6e8f9253a83d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gaa8d939a802f0ab99ae1a6e8f9253a83d"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>sockaddr_etcpal_to_os</b> (const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *sa, etcpal_os_sockaddr_t *os_sa)</td></tr>
+<tr class="separator:gaa8d939a802f0ab99ae1a6e8f9253a83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ga8f8b3a64cec296d5d896e10bf7a60ac3"></a>
 <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_inet_ntop</b> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *src, char *dest, size_t size)</td></tr>
 <tr class="separator:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="gacc09a02c09d9798f46d1fb6e9e84b900"></a>
 <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_inet_pton</b> (<a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> type, const char *src, <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *dest)</td></tr>
 <tr class="separator:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4d0f54c9182caac7f69ec49116d42448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga4d0f54c9182caac7f69ec49116d42448">etcpal_mac_to_string</a> (const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *src, char *dest, size_t size)</td></tr>
+<tr class="memdesc:ga4d0f54c9182caac7f69ec49116d42448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of a MAC address.  <a href="#ga4d0f54c9182caac7f69ec49116d42448">More...</a><br /></td></tr>
+<tr class="separator:ga4d0f54c9182caac7f69ec49116d42448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac2175076e5d4834fccf76e17a29bbbfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe">etcpal_string_to_mac</a> (const char *src, <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *dest)</td></tr>
+<tr class="memdesc:gac2175076e5d4834fccf76e17a29bbbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a MAC address from a string representation.  <a href="#gac2175076e5d4834fccf76e17a29bbbfe">More...</a><br /></td></tr>
+<tr class="separator:gac2175076e5d4834fccf76e17a29bbbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 EtcPalIpAddr macros</h2></td></tr>
@@ -614,6 +629,20 @@ EtcPalIpAddr macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga73f73b31cc309024d3284ebcf4b66b45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_MAC_STRING_BYTES&#160;&#160;&#160;18</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of the string representation of a MAC address. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a class="anchor" id="ga0f4fa2c5534edc2061c48b7d0a60941f"></a>
 <div class="memitem">
@@ -627,6 +656,20 @@ EtcPalIpAddr macros</h2></td></tr>
 
 <p>An IP address. </p>
 <p>Can hold either an IPv4 or IPv6 address. IPv4 addresses are in host byte order. IPv6 addresses also contain a scope ID, which is also sometimes referred to as a zone index (RFC 4007), to help disambiguate link-local addresses, among other uses. In most cases, this field can be left at its default value, which is set by the <a class="el" href="group__etcpal__inet.html#gae0d14b2f44b81a6687390839e0aea869" title="Set the IPv6 address in a EtcPalIpAddr. ">ETCPAL_IP_SET_V6_ADDRESS()</a> macro. </p>
+
+</div>
+</div>
+<a class="anchor" id="gac0911b094d33366046d9b947b24cc63f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a>  <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A MAC address. </p>
 
 </div>
 </div>
@@ -644,12 +687,12 @@ EtcPalIpAddr macros</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gacd6641e07d027a38b3b275fd97dc948d"></a>
+<a class="anchor" id="ga0178b5f6d720a2293ef10bb61dcecf7a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a>  <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a>  <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -686,20 +729,20 @@ EtcPalIpAddr macros</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gac3f119aa04305d7cf485d1a86baf74cb"></a>
+<a class="anchor" id="gaf897a891bcf59ccb447845628c2a04c2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_ip_and_port_equal </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *&#160;</td>
           <td class="paramname"><em>sock1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_sockaddr.html">EtcPalSockaddr</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *&#160;</td>
           <td class="paramname"><em>sock2</em>&#160;</td>
         </tr>
         <tr>
@@ -710,11 +753,11 @@ EtcPalIpAddr macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Determine whether two instances of <a class="el" href="struct_etc_pal_sockaddr.html" title="An IP address with associated interface and port. ">EtcPalSockaddr</a> contain identical IP addresses and ports. </p>
+<p>Determine whether two instances of <a class="el" href="struct_etc_pal_sock_addr.html" title="An IP address with associated interface and port. ">EtcPalSockAddr</a> contain identical IP addresses and ports. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">sock1</td><td>First <a class="el" href="struct_etc_pal_sockaddr.html" title="An IP address with associated interface and port. ">EtcPalSockaddr</a> to compare. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">sock2</td><td>Second <a class="el" href="struct_etc_pal_sockaddr.html" title="An IP address with associated interface and port. ">EtcPalSockaddr</a> to compare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sock1</td><td>First <a class="el" href="struct_etc_pal_sock_addr.html" title="An IP address with associated interface and port. ">EtcPalSockAddr</a> to compare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sock2</td><td>Second <a class="el" href="struct_etc_pal_sock_addr.html" title="An IP address with associated interface and port. ">EtcPalSockAddr</a> to compare. </td></tr>
   </table>
   </dd>
 </dl>
@@ -766,45 +809,6 @@ false: the IP address and port are not identical. </dd></dl>
 0: ip1 == ip2 </dd>
 <dd>
 &gt; 0: ip1 &gt; ip2 </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gaa5de56fa77b6190297ce164910c2eca0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_ip_equal </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>ip1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>ip2</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Determine whether two instances of <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contain identical addresses. </p>
-<p>The type (IPv4 or IPv6) must be the same, as well as the value of the relevant address.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip1</td><td>First <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> to compare. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ip2</td><td>Second <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> to compare. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true: IPs are identical. </dd>
-<dd>
-false: IPs are not identical. </dd></dl>
 
 </div>
 </div>
@@ -907,7 +911,7 @@ false: ip does not contain a multicast address. </dd></dl>
 </div><div class="memdoc">
 
 <p>Determine whether a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contains a wildcard address. </p>
-<p>Works for both IPv4 and IPv6 addresses. The wildcard address is used as an argument to <a class="el" href="group__etcpal__socket.html#ga408d5b56a68e54697dfa3c5febd82c99" title="Bind a name to a socket. ">etcpal_bind()</a> to indicate that a socket should be bound to all available network interfaces. It should not be used as a placeholder or invalid address - use <a class="el" href="group__etcpal__inet.html#gab7df63744affbe2833fcb455e69b6ff5" title="Set the type field in a EtcPalIpAddr to indicate that it does not contain a valid address...">ETCPAL_IP_SET_INVALID()</a> and <a class="el" href="group__etcpal__inet.html#ga56a6933874bc52770eac5865f237e225" title="Determine whether a EtcPalIpAddr contains an invalid address. ">ETCPAL_IP_IS_INVALID()</a> for that.</p>
+<p>Works for both IPv4 and IPv6 addresses. The wildcard address is used as an argument to <a class="el" href="group__etcpal__socket.html#ga86f8e53de9955be4f0ea33f632cc4b2a" title="Bind a name to a socket. ">etcpal_bind()</a> to indicate that a socket should be bound to all available network interfaces. It should not be used as a placeholder or invalid address - use <a class="el" href="group__etcpal__inet.html#gab7df63744affbe2833fcb455e69b6ff5" title="Set the type field in a EtcPalIpAddr to indicate that it does not contain a valid address...">ETCPAL_IP_SET_INVALID()</a> and <a class="el" href="group__etcpal__inet.html#ga56a6933874bc52770eac5865f237e225" title="Determine whether a EtcPalIpAddr contains an invalid address. ">ETCPAL_IP_IS_INVALID()</a> for that.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ip</td><td>Address to check. </td></tr>
@@ -1057,7 +1061,7 @@ false: The network portions are not equal. </dd></dl>
 </div><div class="memdoc">
 
 <p>Initialize a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> with a wildcard address. </p>
-<p>Works for both IPv4 and IPv6 addresses. The wildcard address is used as an argument to <a class="el" href="group__etcpal__socket.html#ga408d5b56a68e54697dfa3c5febd82c99" title="Bind a name to a socket. ">etcpal_bind()</a> to indicate that a socket should be bound to all available network interfaces. It should not be used as a placeholder or invalid address - use <a class="el" href="group__etcpal__inet.html#gab7df63744affbe2833fcb455e69b6ff5" title="Set the type field in a EtcPalIpAddr to indicate that it does not contain a valid address...">ETCPAL_IP_SET_INVALID()</a> and <a class="el" href="group__etcpal__inet.html#ga56a6933874bc52770eac5865f237e225" title="Determine whether a EtcPalIpAddr contains an invalid address. ">ETCPAL_IP_IS_INVALID()</a> for that.</p>
+<p>Works for both IPv4 and IPv6 addresses. The wildcard address is used as an argument to <a class="el" href="group__etcpal__socket.html#ga86f8e53de9955be4f0ea33f632cc4b2a" title="Bind a name to a socket. ">etcpal_bind()</a> to indicate that a socket should be bound to all available network interfaces. It should not be used as a placeholder or invalid address - use <a class="el" href="group__etcpal__inet.html#gab7df63744affbe2833fcb455e69b6ff5" title="Set the type field in a EtcPalIpAddr to indicate that it does not contain a valid address...">ETCPAL_IP_SET_INVALID()</a> and <a class="el" href="group__etcpal__inet.html#ga56a6933874bc52770eac5865f237e225" title="Determine whether a EtcPalIpAddr contains an invalid address. ">ETCPAL_IP_IS_INVALID()</a> for that.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Type of wildcard to create, either IPv4 or IPv6. </td></tr>
@@ -1065,6 +1069,131 @@ false: The network portions are not equal. </dd></dl>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a class="anchor" id="gad72a9be897d58bda4bc0ac7ccda660cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int etcpal_mac_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *&#160;</td>
+          <td class="paramname"><em>mac1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *&#160;</td>
+          <td class="paramname"><em>mac2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Compare two EtcPalMacAddrs numerically. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac1</td><td>First <a class="el" href="struct_etc_pal_mac_addr.html" title="A MAC address. ">EtcPalMacAddr</a> to compare. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac2</td><td>Second <a class="el" href="struct_etc_pal_mac_addr.html" title="A MAC address. ">EtcPalMacAddr</a> to compare. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>&lt; 0: mac1 &lt; mac2 </dd>
+<dd>
+0: mac1 == mac2 </dd>
+<dd>
+&gt; 0: mac1 &gt; mac2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga4d0f54c9182caac7f69ec49116d42448"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_mac_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a string representation of a MAC address. </p>
+<p>The resulting string will be of the form xx:xx:xx:xx:xx:xx (lowercase is used for hexadecimal letters per common convention).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>MAC address to convert to a string. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Character buffer to which to write the resulting string. Must be at least of size <a class="el" href="group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45" title="Maximum length of the string representation of a MAC address. ">ETCPAL_MAC_STRING_BYTES</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of destination buffer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Conversion successful. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="gac2175076e5d4834fccf76e17a29bbbfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_string_to_mac </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a MAC address from a string representation. </p>
+<p>Parses a string-represented MAC address and fills in an <a class="el" href="struct_etc_pal_mac_addr.html" title="A MAC address. ">EtcPalMacAddr</a> structure with the result. The input should be of the form: xx:xx:xx:xx:xx:xx, or xxxxxxxxxxxx (hexadecimal letters can be in upper- or lowercase).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>The null-terminated string to convert. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>MAC address structure to fill in with the parse result. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Parse successful. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Parse failed or invalid argument. </dd></dl>
 
 </div>
 </div>
