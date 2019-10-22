@@ -78,8 +78,6 @@ var group__etcpal__socket =
     [ "etcpal_getpeername", "group__etcpal__socket.html#gaedab208ccf3be6da95380c5bf01fdf30", null ],
     [ "etcpal_getsockname", "group__etcpal__socket.html#ga3563bac602f434da73673accc8da01aa", null ],
     [ "etcpal_getsockopt", "group__etcpal__socket.html#ga653ed9405ec4cb21d958faab8b1c783e", null ],
-    [ "etcpal_inet_ntop", "group__etcpal__socket.html#ga8f8b3a64cec296d5d896e10bf7a60ac3", null ],
-    [ "etcpal_inet_pton", "group__etcpal__socket.html#gacc09a02c09d9798f46d1fb6e9e84b900", null ],
     [ "etcpal_listen", "group__etcpal__socket.html#ga39e660822d93588ea8723414567a2415", null ],
     [ "etcpal_nextaddr", "group__etcpal__socket.html#ga669185d01901034d700f167fa23f3eb1", null ],
     [ "etcpal_poll_add_socket", "group__etcpal__socket.html#gab901f9cf32e98e0d99369366f2e1ffa4", null ],

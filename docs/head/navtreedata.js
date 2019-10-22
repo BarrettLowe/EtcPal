@@ -22,7 +22,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"group__etcpal__log.html#gac2b8a36af28b78d0060a1d89b9b18211",
+"group__etcpal__log.html#gabc74c1a4cef75ebe20e917b68fa23d52",
 "src_2etcpal_2private_2socket_8h_source.html"
 ];
 

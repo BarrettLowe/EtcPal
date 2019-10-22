@@ -50,6 +50,8 @@ var group__etcpal__inet =
       [ "kEtcPalIpTypeV4", "group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635", null ],
       [ "kEtcPalIpTypeV6", "group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae", null ]
     ] ],
+    [ "etcpal_inet_ntop", "group__etcpal__inet.html#ga8f8b3a64cec296d5d896e10bf7a60ac3", null ],
+    [ "etcpal_inet_pton", "group__etcpal__inet.html#gacc09a02c09d9798f46d1fb6e9e84b900", null ],
     [ "etcpal_ip_and_port_equal", "group__etcpal__inet.html#gaf897a891bcf59ccb447845628c2a04c2", null ],
     [ "etcpal_ip_cmp", "group__etcpal__inet.html#gaf766d207bd3e85c6b3d75768f28a00c6", null ],
     [ "etcpal_ip_is_link_local", "group__etcpal__inet.html#gaa4b21b32f8776276e582d473e17bf768", null ],

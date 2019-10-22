@@ -273,12 +273,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga8cc1d9b7b5e8e2b88a337fc727b44535">etcpal_freeaddrinfo</a> (<a class="el" href="struct_etc_pal_addrinfo.html">EtcPalAddrinfo</a> *ai)</td></tr>
 <tr class="memdesc:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an addrinfo list returned by <a class="el" href="group__etcpal__socket.html#ga5e63f5fa7b1b4310a4bb317aa4873997" title="Get address information for a named internet host and/or service. ">etcpal_getaddrinfo()</a>.  <a href="#ga8cc1d9b7b5e8e2b88a337fc727b44535">More...</a><br /></td></tr>
 <tr class="separator:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga8f8b3a64cec296d5d896e10bf7a60ac3">etcpal_inet_ntop</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *src, char *dest, size_t size)</td></tr>
-<tr class="memdesc:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from binary to text form.  <a href="#ga8f8b3a64cec296d5d896e10bf7a60ac3">More...</a><br /></td></tr>
-<tr class="separator:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gacc09a02c09d9798f46d1fb6e9e84b900">etcpal_inet_pton</a> (<a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> type, const char *src, <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *dest)</td></tr>
-<tr class="memdesc:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from text to binary form.  <a href="#gacc09a02c09d9798f46d1fb6e9e84b900">More...</a><br /></td></tr>
-<tr class="separator:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 etcpal_poll API</h2></td></tr>
@@ -1257,104 +1251,6 @@ Flag values to use with etcpal_poll_events_t.</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a> (success) or <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af" title="A set of error codes that can be returned by library functions. ">etcpal_error_t</a> code from system (error occurred). </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ga8f8b3a64cec296d5d896e10bf7a60ac3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_inet_ntop </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert IPv4 and IPv6 addresses from binary to text form. </p>
-<p>Refer to your favorite inet_ntop() man page for more information.</p>
-<p>Differences from POSIX: af parameter is omitted because that information is contained in the <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Address to convert to string form. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the string-represented address. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size in bytes of dest buf. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="gacc09a02c09d9798f46d1fb6e9e84b900"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_inet_pton </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>dest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert IPv4 and IPv6 addresses from text to binary form. </p>
-<p>Refer to your favorite inet_pton() man page for more information.</p>
-<p>Differences from POSIX: etcpal_iptype_t used instead of AF_* value, since this function is only used for IP addresses.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Type of string-represented IP address pointed to by src. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Character string containing a string-represented IP address. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the address. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>
