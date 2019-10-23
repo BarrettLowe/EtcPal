@@ -40,6 +40,8 @@ var group__etcpal__inet =
     [ "ETCPAL_IP_V4_ADDRESS", "group__etcpal__inet.html#ga35262011f1ae20211d8aad5c79ab1b50", null ],
     [ "ETCPAL_IP_V6_ADDRESS", "group__etcpal__inet.html#gaaee800da95371923f9375dec1a6c0a5c", null ],
     [ "ETCPAL_IPV6_BYTES", "group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20", null ],
+    [ "ETCPAL_MAC_CMP", "group__etcpal__inet.html#ga4aadcedf06a097132f1eef8176b83419", null ],
+    [ "ETCPAL_MAC_IS_NULL", "group__etcpal__inet.html#ga84ac8ff7c11b7b3d05e66192205ae0cb", null ],
     [ "ETCPAL_MAC_STRING_BYTES", "group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45", null ],
     [ "EtcPalIpAddr", "group__etcpal__inet.html#ga0f4fa2c5534edc2061c48b7d0a60941f", null ],
     [ "EtcPalMacAddr", "group__etcpal__inet.html#gac0911b094d33366046d9b947b24cc63f", null ],
@@ -62,7 +64,7 @@ var group__etcpal__inet =
     [ "etcpal_ip_mask_length", "group__etcpal__inet.html#ga9a86a44681bc856e5919578bbf652e38", null ],
     [ "etcpal_ip_network_portions_equal", "group__etcpal__inet.html#ga2112e37aae54451f5b7b03168183cace", null ],
     [ "etcpal_ip_set_wildcard", "group__etcpal__inet.html#ga5d91044202026978c99000b6da2d226e", null ],
-    [ "etcpal_mac_cmp", "group__etcpal__inet.html#gad72a9be897d58bda4bc0ac7ccda660cc", null ],
     [ "etcpal_mac_to_string", "group__etcpal__inet.html#ga4d0f54c9182caac7f69ec49116d42448", null ],
-    [ "etcpal_string_to_mac", "group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe", null ]
+    [ "etcpal_string_to_mac", "group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe", null ],
+    [ "kEtcPalNullMacAddr", "group__etcpal__inet.html#gae648df0d068e3335073224fb0fb45512", null ]
 ];

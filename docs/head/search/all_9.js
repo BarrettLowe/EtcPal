@@ -36,5 +36,6 @@ var searchData=
   ['ketcpallogcreateboth',['kEtcPalLogCreateBoth',['../group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a8d083dc7d2d4359fd9ce6330b9d4c2bb',1,'log.h']]],
   ['ketcpallogcreatehumanreadablelog',['kEtcPalLogCreateHumanReadableLog',['../group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5ae82eb0e5fc80d2657c033413df36224e',1,'log.h']]],
   ['ketcpallogcreatesyslog',['kEtcPalLogCreateSyslog',['../group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a1631725f7a5f65a9fb15767cecec5290',1,'log.h']]],
+  ['ketcpalnullmacaddr',['kEtcPalNullMacAddr',['../group__etcpal__inet.html#gae648df0d068e3335073224fb0fb45512',1,'kEtcPalNullMacAddr():&#160;inet.c'],['../group__etcpal__inet.html#gae648df0d068e3335073224fb0fb45512',1,'kEtcPalNullMacAddr():&#160;inet.c']]],
   ['ketcpalnulluuid',['kEtcPalNullUuid',['../group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e',1,'kEtcPalNullUuid():&#160;uuid.c'],['../group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e',1,'kEtcPalNullUuid():&#160;uuid.c']]]
 ];

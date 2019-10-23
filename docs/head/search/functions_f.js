@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['wait',['Wait',['../classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d',1,'etcpal::Signal']]],
-  ['writeguard',['WriteGuard',['../classetcpal_1_1_write_guard.html#a0c3e55817a2955c086af3a033db5105a',1,'etcpal::WriteGuard::WriteGuard(RwLock &amp;rwlock)'],['../classetcpal_1_1_write_guard.html#a94731b7b53c630d8781f78807ca35dd2',1,'etcpal::WriteGuard::WriteGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['writelock',['WriteLock',['../classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c',1,'etcpal::RwLock']]],
-  ['writeunlock',['WriteUnlock',['../classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4',1,'etcpal::RwLock']]]
+  ['v1',['V1',['../classetcpal_1_1_uuid.html#a81948e83f4876fd61bb771433ec0cfc3',1,'etcpal::Uuid']]],
+  ['v3',['V3',['../classetcpal_1_1_uuid.html#a71d95c31678e670a44669651a2527695',1,'etcpal::Uuid']]],
+  ['v4',['V4',['../classetcpal_1_1_uuid.html#a6c0e58d9c0173c62f95571e65b2ec484',1,'etcpal::Uuid']]],
+  ['v4_5fdata',['v4_data',['../classetcpal_1_1_ip_addr.html#ac916b557b42f871359ce597c4c17556b',1,'etcpal::IpAddr']]],
+  ['v6_5fdata',['v6_data',['../classetcpal_1_1_ip_addr.html#a092dcb96eb18fa8c6526322cd6d62245',1,'etcpal::IpAddr']]]
 ];

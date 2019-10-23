@@ -22,8 +22,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"group__etcpal__log.html#gabc74c1a4cef75ebe20e917b68fa23d52",
-"src_2etcpal_2private_2socket_8h_source.html"
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afac1a55c311993d815ab367c339f550956",
+"group__etcpal__socket.html#ga669185d01901034d700f167fa23f3eb1",
+"version_8h_source.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['tocstring',['ToCString',['../classetcpal_1_1_result.html#a14910518d0cd1ce25c783b9400d07d48',1,'etcpal::Result']]],
-  ['tostring',['ToString',['../classetcpal_1_1_result.html#a946e9412867b046958667b21a1236eca',1,'etcpal::Result::ToString()'],['../classetcpal_1_1_uuid.html#a946e9412867b046958667b21a1236eca',1,'etcpal::Uuid::ToString()']]],
-  ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6',1,'etcpal::Mutex']]],
-  ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764',1,'etcpal::RwLock']]],
-  ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873',1,'etcpal::RwLock']]]
+  ['scope_5fid',['scope_id',['../classetcpal_1_1_ip_addr.html#a3ddc22a71f0df9873b7bbf20b7b4a54e',1,'etcpal::IpAddr']]],
+  ['setaddress',['SetAddress',['../classetcpal_1_1_ip_addr.html#a289b584a63be9da802a0692f16a9a7fc',1,'etcpal::IpAddr::SetAddress(uint32_t v4_data) noexcept'],['../classetcpal_1_1_ip_addr.html#a5b87e44914b8e5d6acc662c0e7ada452',1,'etcpal::IpAddr::SetAddress(const uint8_t *v6_data) noexcept'],['../classetcpal_1_1_ip_addr.html#a5e188695085f61a2fd9c0ba28a6e0893',1,'etcpal::IpAddr::SetAddress(const uint8_t *v6_data, unsigned long scope_id) noexcept']]],
+  ['signal',['Signal',['../classetcpal_1_1_signal.html#a44146dfdbec17a8ab7207e52ffae152c',1,'etcpal::Signal']]],
+  ['sockaddr',['SockAddr',['../classetcpal_1_1_sock_addr.html#ab509e15c062994750a41ff72761acab2',1,'etcpal::SockAddr::SockAddr() noexcept'],['../classetcpal_1_1_sock_addr.html#a953bdc1c8acc45e6339bfc809478c395',1,'etcpal::SockAddr::SockAddr(const EtcPalSockAddr &amp;c_sa) noexcept'],['../classetcpal_1_1_sock_addr.html#a18104a287d9daf45ef6058197c80d6b9',1,'etcpal::SockAddr::SockAddr(uint32_t v4_data, uint16_t port) noexcept'],['../classetcpal_1_1_sock_addr.html#a47df50740970dda850f7f8d748381dd4',1,'etcpal::SockAddr::SockAddr(const uint8_t *v6_data, uint16_t port) noexcept'],['../classetcpal_1_1_sock_addr.html#a9b2e0399b2484eaea02c6858f98331fc',1,'etcpal::SockAddr::SockAddr(IpAddr ip, uint16_t port) noexcept']]]
 ];
