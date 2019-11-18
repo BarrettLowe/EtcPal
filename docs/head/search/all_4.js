@@ -258,7 +258,7 @@ var searchData=
   ['etcpal_5fsocket_5fmax_5fpoll_5fsize',['ETCPAL_SOCKET_MAX_POLL_SIZE',['../group__etcpal__socket.html#ga06b68eaa9d0e50e624659ed1b9c7f05a',1,'socket.dox']]],
   ['etcpal_5fsocket_5ft',['etcpal_socket_t',['../group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66',1,'socket.dox']]],
   ['etcpal_5fsol_5fsocket',['ETCPAL_SOL_SOCKET',['../group__etcpal__socket.html#ga30a8a29b624b2bef32f68b1fe2aa9e83',1,'socket.h']]],
-  ['etcpal_5fstrerror',['etcpal_strerror',['../group__etcpal__error.html#ga6c57f2a17ae4e5fcdf299b4210331f25',1,'error.h']]],
+  ['etcpal_5fstrerror',['etcpal_strerror',['../group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0',1,'etcpal_strerror(etcpal_error_t code):&#160;error.c'],['../group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0',1,'etcpal_strerror(etcpal_error_t code):&#160;error.c']]],
   ['etcpal_5fstring_5fto_5fmac',['etcpal_string_to_mac',['../group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe',1,'etcpal_string_to_mac(const char *src, EtcPalMacAddr *dest):&#160;inet.c'],['../group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe',1,'etcpal_string_to_mac(const char *src, EtcPalMacAddr *dest):&#160;inet.c']]],
   ['etcpal_5fstring_5fto_5fuuid',['etcpal_string_to_uuid',['../group__etcpal__uuid.html#ga20f693409bf6b604b0695f811f897cbf',1,'etcpal_string_to_uuid(const char *str, EtcPalUuid *uuid):&#160;uuid.c'],['../group__etcpal__uuid.html#ga20f693409bf6b604b0695f811f897cbf',1,'etcpal_string_to_uuid(const char *buf, EtcPalUuid *uuid):&#160;uuid.c']]],
   ['etcpal_5fsyslog_5fheader_5fmax_5flen',['ETCPAL_SYSLOG_HEADER_MAX_LEN',['../group__etcpal__log.html#ga6463250841fd9f0b87d84574d5ed561f',1,'log.h']]],

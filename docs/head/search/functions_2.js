@@ -107,6 +107,7 @@ var searchData=
   ['etcpal_5fsignal_5fpost',['etcpal_signal_post',['../group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b',1,'lock.dox']]],
   ['etcpal_5fsignal_5fwait',['etcpal_signal_wait',['../group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7',1,'lock.dox']]],
   ['etcpal_5fsocket',['etcpal_socket',['../group__etcpal__socket.html#gae0c8d9e036be592eba7db8736c7e1e0f',1,'socket.dox']]],
+  ['etcpal_5fstrerror',['etcpal_strerror',['../group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0',1,'etcpal_strerror(etcpal_error_t code):&#160;error.c'],['../group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0',1,'etcpal_strerror(etcpal_error_t code):&#160;error.c']]],
   ['etcpal_5fstring_5fto_5fmac',['etcpal_string_to_mac',['../group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe',1,'etcpal_string_to_mac(const char *src, EtcPalMacAddr *dest):&#160;inet.c'],['../group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe',1,'etcpal_string_to_mac(const char *src, EtcPalMacAddr *dest):&#160;inet.c']]],
   ['etcpal_5fstring_5fto_5fuuid',['etcpal_string_to_uuid',['../group__etcpal__uuid.html#ga20f693409bf6b604b0695f811f897cbf',1,'etcpal_string_to_uuid(const char *str, EtcPalUuid *uuid):&#160;uuid.c'],['../group__etcpal__uuid.html#ga20f693409bf6b604b0695f811f897cbf',1,'etcpal_string_to_uuid(const char *buf, EtcPalUuid *uuid):&#160;uuid.c']]],
   ['etcpal_5fthread_5fcreate',['etcpal_thread_create',['../group__etcpal__thread.html#ga6622ac7af8e6cc018c28ba15cc824de5',1,'thread.dox']]],

@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('group__etcpal__error.html','');});
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">etcpal_error<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
@@ -139,11 +139,8 @@ $(document).ready(function(){initNavTree('group__etcpal__error.html','');});
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:gae0de193fbaf16861756958bd3f21e07f"><td class="memItemLeft" align="right" valign="top"><a id="gae0de193fbaf16861756958bd3f21e07f"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_NUM_ERROR_CODES</b>&#160;&#160;&#160;30</td></tr>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_NUM_ERROR_CODES</b>&#160;&#160;&#160;31</td></tr>
 <tr class="separator:gae0de193fbaf16861756958bd3f21e07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6c57f2a17ae4e5fcdf299b4210331f25"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__error.html#ga6c57f2a17ae4e5fcdf299b4210331f25">etcpal_strerror</a>(errcode)&#160;&#160;&#160;(((int)errcode &lt;= 0 &amp;&amp; (int)errcode &gt; -ETCPAL_NUM_ERROR_CODES) ? etcpal_error_strings[-((int)errcode)] : NULL)</td></tr>
-<tr class="memdesc:ga6c57f2a17ae4e5fcdf299b4210331f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of an error code.  <a href="#ga6c57f2a17ae4e5fcdf299b4210331f25">More...</a><br /></td></tr>
-<tr class="separator:ga6c57f2a17ae4e5fcdf299b4210331f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -171,62 +168,35 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa2eb8abeafb170747d185803ad0a2d527">kEtcPalErrNotConn</a> = -16, 
 <a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa28e1dbbb288f3248d64378d83920259a">kEtcPalErrShutdown</a> = -17, 
 <a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afac1a55c311993d815ab367c339f550956">kEtcPalErrTimedOut</a> = -18, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa39f50bbaad22488dba1944f129d1ecde">kEtcPalErrConnAborted</a> = -19, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9c5af0e9de48f403358d6b9e2ef819b7">kEtcPalErrHostUnreach</a> = -19, 
 <br />
-&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232">kEtcPalErrConnRefused</a> = -20, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0">kEtcPalErrAlready</a> = -21, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa99aabe562db1ed9acab67c6a2bc777a1">kEtcPalErrInProgress</a> = -22, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaefe61c95876a3a7faba0f5da4ec03f37">kEtcPalErrBufSize</a> = -23, 
+&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa39f50bbaad22488dba1944f129d1ecde">kEtcPalErrConnAborted</a> = -20, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232">kEtcPalErrConnRefused</a> = -21, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0">kEtcPalErrAlready</a> = -22, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa99aabe562db1ed9acab67c6a2bc777a1">kEtcPalErrInProgress</a> = -23, 
 <br />
-&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a> = -24, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> = -25, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa45464bce734de8eca7f5a768386423b">kEtcPalErrNoSockets</a> = -26, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a> = -27, 
+&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaefe61c95876a3a7faba0f5da4ec03f37">kEtcPalErrBufSize</a> = -24, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7">kEtcPalErrNotInit</a> = -25, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b">kEtcPalErrNoNetints</a> = -26, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa45464bce734de8eca7f5a768386423b">kEtcPalErrNoSockets</a> = -27, 
 <br />
-&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9fb1e2b91f204d8a01377796bddd867d">kEtcPalErrPerm</a> = -28, 
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a> = -29
+&#160;&#160;<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52">kEtcPalErrNotImpl</a> = -28, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9fb1e2b91f204d8a01377796bddd867d">kEtcPalErrPerm</a> = -29, 
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8">kEtcPalErrSys</a> = -30
 <br />
  }<tr class="memdesc:ga743b0648f0ca798ef29c9f69c6e255af"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of error codes that can be returned by library functions.  <a href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:ga743b0648f0ca798ef29c9f69c6e255af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ga309a75a16ccaf3975c66f486089d8e62"><td class="memItemLeft" align="right" valign="top"><a id="ga309a75a16ccaf3975c66f486089d8e62"></a>
-const char *&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_error_strings</b> [ETCPAL_NUM_ERROR_CODES]</td></tr>
-<tr class="separator:ga309a75a16ccaf3975c66f486089d8e62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ga4902a840d9801e02baebd4c70924c4b0"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0">etcpal_strerror</a> (<a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> code)</td></tr>
+<tr class="memdesc:ga4902a840d9801e02baebd4c70924c4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of an error code.  <a href="#ga4902a840d9801e02baebd4c70924c4b0">More...</a><br /></td></tr>
+<tr class="separator:ga4902a840d9801e02baebd4c70924c4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Platform-neutral error codes. </p>
 <p>#include "etcpal/error.h" </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga6c57f2a17ae4e5fcdf299b4210331f25"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6c57f2a17ae4e5fcdf299b4210331f25">&#9670;&nbsp;</a></span>etcpal_strerror</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define etcpal_strerror</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">errcode</td><td>)</td>
-          <td>&#160;&#160;&#160;(((int)errcode &lt;= 0 &amp;&amp; (int)errcode &gt; -ETCPAL_NUM_ERROR_CODES) ? etcpal_error_strings[-((int)errcode)] : NULL)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get a string representation of an error code. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">errcode</td><td>EtcPal error code. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Error string (char *) (valid error code) or NULL (invalid error code). </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="ga743b0648f0ca798ef29c9f69c6e255af"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga743b0648f0ca798ef29c9f69c6e255af">&#9670;&nbsp;</a></span>etcpal_error_t</h2>
@@ -281,6 +251,8 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_error_
 </td></tr>
 <tr><td class="fieldname"><a id="gga743b0648f0ca798ef29c9f69c6e255afac1a55c311993d815ab367c339f550956"></a>kEtcPalErrTimedOut&#160;</td><td class="fielddoc"><p>A connection timed out. </p>
 </td></tr>
+<tr><td class="fieldname"><a id="gga743b0648f0ca798ef29c9f69c6e255afa9c5af0e9de48f403358d6b9e2ef819b7"></a>kEtcPalErrHostUnreach&#160;</td><td class="fielddoc"><p>Host is unreachable. </p>
+</td></tr>
 <tr><td class="fieldname"><a id="gga743b0648f0ca798ef29c9f69c6e255afa39f50bbaad22488dba1944f129d1ecde"></a>kEtcPalErrConnAborted&#160;</td><td class="fielddoc"><p>A connection has been aborted. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232"></a>kEtcPalErrConnRefused&#160;</td><td class="fielddoc"><p>A connection was refused. </p>
@@ -304,6 +276,34 @@ const char *&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_error_
 <tr><td class="fieldname"><a id="gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8"></a>kEtcPalErrSys&#160;</td><td class="fielddoc"><p>A system call or C library call failed in a way not covered by other errors. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ga4902a840d9801e02baebd4c70924c4b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4902a840d9801e02baebd4c70924c4b0">&#9670;&nbsp;</a></span>etcpal_strerror()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* etcpal_strerror </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td>
+          <td class="paramname"><em>code</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get a string representation of an error code. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">errcode</td><td>EtcPal error code. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Error string (char *) (valid error code) or NULL (invalid error code). </dd></dl>
 
 </div>
 </div>

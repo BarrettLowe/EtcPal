@@ -10,6 +10,7 @@ var searchData=
   ['ketcpalerrconnrefused',['kEtcPalErrConnRefused',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232',1,'error.h']]],
   ['ketcpalerrconnreset',['kEtcPalErrConnReset',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa15cf4f4905d98d94910c6cc76ae1218f',1,'error.h']]],
   ['ketcpalerrexists',['kEtcPalErrExists',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaeab0ae4d277d52dc56a1d78f81868c2d',1,'error.h']]],
+  ['ketcpalerrhostunreach',['kEtcPalErrHostUnreach',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9c5af0e9de48f403358d6b9e2ef819b7',1,'error.h']]],
   ['ketcpalerrinprogress',['kEtcPalErrInProgress',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa99aabe562db1ed9acab67c6a2bc777a1',1,'error.h']]],
   ['ketcpalerrinvalid',['kEtcPalErrInvalid',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2',1,'error.h']]],
   ['ketcpalerrisconn',['kEtcPalErrIsConn',['../group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9603628c356775915b437e3c15bdef53',1,'error.h']]],

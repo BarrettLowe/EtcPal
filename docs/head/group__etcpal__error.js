@@ -1,6 +1,5 @@
 var group__etcpal__error =
 [
-    [ "etcpal_strerror", "group__etcpal__error.html#ga6c57f2a17ae4e5fcdf299b4210331f25", null ],
     [ "etcpal_error_t", "group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af", [
       [ "kEtcPalErrOk", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d", null ],
       [ "kEtcPalErrNotFound", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f", null ],
@@ -21,6 +20,7 @@ var group__etcpal__error =
       [ "kEtcPalErrNotConn", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa2eb8abeafb170747d185803ad0a2d527", null ],
       [ "kEtcPalErrShutdown", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa28e1dbbb288f3248d64378d83920259a", null ],
       [ "kEtcPalErrTimedOut", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afac1a55c311993d815ab367c339f550956", null ],
+      [ "kEtcPalErrHostUnreach", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9c5af0e9de48f403358d6b9e2ef819b7", null ],
       [ "kEtcPalErrConnAborted", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa39f50bbaad22488dba1944f129d1ecde", null ],
       [ "kEtcPalErrConnRefused", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232", null ],
       [ "kEtcPalErrAlready", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afaa9c6c39f7303953a99c50a981f36dff0", null ],
@@ -32,5 +32,6 @@ var group__etcpal__error =
       [ "kEtcPalErrNotImpl", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52", null ],
       [ "kEtcPalErrPerm", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa9fb1e2b91f204d8a01377796bddd867d", null ],
       [ "kEtcPalErrSys", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8", null ]
-    ] ]
+    ] ],
+    [ "etcpal_strerror", "group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0", null ]
 ];
