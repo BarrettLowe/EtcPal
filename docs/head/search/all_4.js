@@ -76,6 +76,7 @@ var searchData=
   ['etcpal_5fip_5fttl',['ETCPAL_IP_TTL',['../group__etcpal__socket.html#gaa8067f3bea534148c077f2dd720a6d51',1,'socket.h']]],
   ['etcpal_5fip_5fv4_5faddress',['ETCPAL_IP_V4_ADDRESS',['../group__etcpal__inet.html#ga35262011f1ae20211d8aad5c79ab1b50',1,'inet.h']]],
   ['etcpal_5fip_5fv6_5faddress',['ETCPAL_IP_V6_ADDRESS',['../group__etcpal__inet.html#gaaee800da95371923f9375dec1a6c0a5c',1,'inet.h']]],
+  ['etcpal_5fip_5fv6_5fscope_5fid',['ETCPAL_IP_V6_SCOPE_ID',['../group__etcpal__inet.html#ga88982a2d40356f278c53563ddf96d8b2',1,'inet.h']]],
   ['etcpal_5fipproto_5ficmpv6',['ETCPAL_IPPROTO_ICMPV6',['../group__etcpal__socket.html#ga66aa3d038609a999ad33370a6c0c3284',1,'socket.h']]],
   ['etcpal_5fipproto_5fip',['ETCPAL_IPPROTO_IP',['../group__etcpal__socket.html#gaba74f8fca47e034d676049bd8eb61488',1,'socket.h']]],
   ['etcpal_5fipproto_5fipv6',['ETCPAL_IPPROTO_IPV6',['../group__etcpal__socket.html#ga7db66bcfc3f239baf6a5fef9058192de',1,'socket.h']]],

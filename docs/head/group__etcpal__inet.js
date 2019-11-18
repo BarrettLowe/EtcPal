@@ -39,6 +39,7 @@ var group__etcpal__inet =
     [ "ETCPAL_IP_SET_V6_ADDRESS_WITH_SCOPE_ID", "group__etcpal__inet.html#gaeb96cdc37b6f57f448b0ac15971380d8", null ],
     [ "ETCPAL_IP_V4_ADDRESS", "group__etcpal__inet.html#ga35262011f1ae20211d8aad5c79ab1b50", null ],
     [ "ETCPAL_IP_V6_ADDRESS", "group__etcpal__inet.html#gaaee800da95371923f9375dec1a6c0a5c", null ],
+    [ "ETCPAL_IP_V6_SCOPE_ID", "group__etcpal__inet.html#ga88982a2d40356f278c53563ddf96d8b2", null ],
     [ "ETCPAL_IPV6_BYTES", "group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20", null ],
     [ "ETCPAL_MAC_CMP", "group__etcpal__inet.html#ga4aadcedf06a097132f1eef8176b83419", null ],
     [ "ETCPAL_MAC_IS_NULL", "group__etcpal__inet.html#ga84ac8ff7c11b7b3d05e66192205ae0cb", null ],

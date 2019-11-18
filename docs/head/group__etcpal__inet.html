@@ -291,6 +291,9 @@ EtcPalIpAddr macros</h2></td></tr>
 <tr class="memitem:gaaee800da95371923f9375dec1a6c0a5c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaaee800da95371923f9375dec1a6c0a5c">ETCPAL_IP_V6_ADDRESS</a>(etcpal_ip_ptr)&#160;&#160;&#160;((etcpal_ip_ptr)-&gt;addr.v6.addr_buf)</td></tr>
 <tr class="memdesc:gaaee800da95371923f9375dec1a6c0a5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IPv6 address from a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>.  <a href="#gaaee800da95371923f9375dec1a6c0a5c">More...</a><br /></td></tr>
 <tr class="separator:gaaee800da95371923f9375dec1a6c0a5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga88982a2d40356f278c53563ddf96d8b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga88982a2d40356f278c53563ddf96d8b2">ETCPAL_IP_V6_SCOPE_ID</a>(etcpal_ip_ptr)&#160;&#160;&#160;((etcpal_ip_ptr)-&gt;addr.v6.scope_id)</td></tr>
+<tr class="memdesc:ga88982a2d40356f278c53563ddf96d8b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the IPv6 scope ID from an <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>.  <a href="#ga88982a2d40356f278c53563ddf96d8b2">More...</a><br /></td></tr>
+<tr class="separator:ga88982a2d40356f278c53563ddf96d8b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5e36f7ec503aef51829aed6fbd88c889"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga5e36f7ec503aef51829aed6fbd88c889">ETCPAL_IP_SET_V4_ADDRESS</a>(etcpal_ip_ptr,  val)</td></tr>
 <tr class="memdesc:ga5e36f7ec503aef51829aed6fbd88c889"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the IPv4 address in a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>.  <a href="#ga5e36f7ec503aef51829aed6fbd88c889">More...</a><br /></td></tr>
 <tr class="separator:ga5e36f7ec503aef51829aed6fbd88c889"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -624,6 +627,34 @@ EtcPalIpAddr macros</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The IPv6 address (uint8_t[]). </dd></dl>
+
+</div>
+</div>
+<a id="ga88982a2d40356f278c53563ddf96d8b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga88982a2d40356f278c53563ddf96d8b2">&#9670;&nbsp;</a></span>ETCPAL_IP_V6_SCOPE_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_IP_V6_SCOPE_ID</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">etcpal_ip_ptr</td><td>)</td>
+          <td>&#160;&#160;&#160;((etcpal_ip_ptr)-&gt;addr.v6.scope_id)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the IPv6 scope ID from an <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>. </p>
+<p>See <a class="el" href="interface_indexes.html">Network Interface Indexes</a> for more information. It is recommended to first use <a class="el" href="group__etcpal__inet.html#ga85d241eed93be1b271e5dc68a56e9473" title="Determine whether a EtcPalIpAddr contains an IPv6 address. ">ETCPAL_IP_IS_V6()</a> to make sure this <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contains a valid IPv6 address.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">etcpal_ip_ptr</td><td>Pointer to a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The IPv6 scope ID (unsigned int). </dd></dl>
 
 </div>
 </div>
