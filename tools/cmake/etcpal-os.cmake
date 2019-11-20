@@ -6,6 +6,8 @@ set(VALID_ETCPAL_OS_TARGETS
   macos
   mqx
   windows
+  vxworks
+  template
 )
 set(VALID_ETCPAL_NET_TARGETS
   linux
@@ -13,6 +15,8 @@ set(VALID_ETCPAL_NET_TARGETS
   macos
   mqx
   windows
+  vxworks
+  template
 )
 
 set(ETCPAL_OS_TARGET "" CACHE STRING "OS provider for EtcPal. See tools/cmake/etcpal-os.cmake for valid values.")
