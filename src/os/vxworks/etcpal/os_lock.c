@@ -33,47 +33,96 @@ static void reader_atomic_decrement(etcpal_rwlock_t* id);
 
 bool etcpal_signal_create(etcpal_signal_t* id)
 {
-  return false;
+  bool startFull == false;
+  if (startFull)
+  {
+    *id = semBCreate(SEM_Q_FIFO, SEM_FULL);
+  }
+  else
+  {
+    *id = semBCreate(SEM_Q_FIFO, SEM_EMPTY);
+  }
+  if (*id == ERROR)
+    return false;
+  else
+    return true;
 }
 
 bool etcpal_signal_wait(etcpal_signal_t* id)
 {
+  if (id && *id)
+  {
+    semTake(*id, WAIT_FOREVER);
+    return true;
+  }
   return false;
 }
 
 bool etcpal_signal_poll(etcpal_signal_t* id)
 {
+  if (id && *id)
+  {
+    semTake(priv_id, 0);
+    return true;
+  }
   return false;
 }
 
 void etcpal_signal_post(etcpal_signal_t* id)
 {
-
+  if (id && *id)
+  {
+    semGive(*id);
+  }
 }
 
 void etcpal_signal_destroy(etcpal_signal_t* id)
 {
-
+  if (id && *id)
+  {
+    semDelete(priv_id);
+    *id = NULL;
+  }
 }
 
 bool etcpal_rwlock_create(etcpal_rwlock_t* id)
 {
-  return false;
+  id->sem = semRWCreate(SEM_Q_FIFO, 0);
+  if (id->sem == ERROR)
+  {
+    return false;
+  }
+  id->valid = true;
+  return true;
 }
 
 bool etcpal_rwlock_readlock(etcpal_rwlock_t* id)
 {
-  return false;
+  if (!id || !id->valid)
+    return false;
+
+  if (!created)
+  {
+    return false;
+  }
+  return true;
 }
 
 bool etcpal_rwlock_try_readlock(etcpal_rwlock_t* id)
 {
-  bool res = false;
-  return res;
+  if (!id || !id->valid)
+    return false;
+
+  if (!created)
+  {
+    return false;
+  }
+  return true;
 }
 
 void etcpal_rwlock_readunlock(etcpal_rwlock_t* id)
 {
+  if (id && id->valid)
 }
 
 bool etcpal_rwlock_writelock(etcpal_rwlock_t* id)
