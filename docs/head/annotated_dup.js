@@ -13,8 +13,6 @@ var annotated_dup =
       [ "Uuid", "classetcpal_1_1_uuid.html", "classetcpal_1_1_uuid" ],
       [ "WriteGuard", "classetcpal_1_1_write_guard.html", "classetcpal_1_1_write_guard" ]
     ] ],
-    [ "CachedNetintInfo", "struct_cached_netint_info.html", "struct_cached_netint_info" ],
-    [ "DefaultNetint", "struct_default_netint.html", "struct_default_netint" ],
     [ "EtcPalAddrinfo", "struct_etc_pal_addrinfo.html", "struct_etc_pal_addrinfo" ],
     [ "EtcPalGroupReq", "struct_etc_pal_group_req.html", "struct_etc_pal_group_req" ],
     [ "EtcPalIpAddr", "struct_etc_pal_ip_addr.html", "struct_etc_pal_ip_addr" ],
@@ -25,7 +23,6 @@ var annotated_dup =
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", "struct_etc_pal_mac_addr" ],
     [ "EtcPalMempool", "struct_etc_pal_mempool.html", "struct_etc_pal_mempool" ],
     [ "EtcPalMempoolDesc", "struct_etc_pal_mempool_desc.html", "struct_etc_pal_mempool_desc" ],
-    [ "EtcPalModuleInit", "struct_etc_pal_module_init.html", "struct_etc_pal_module_init" ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", "struct_etc_pal_mreq" ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", "struct_etc_pal_netint_info" ],
     [ "EtcPalPdu", "struct_etc_pal_pdu.html", "struct_etc_pal_pdu" ],
@@ -41,6 +38,5 @@ var annotated_dup =
     [ "EtcPalThreadParams", "struct_etc_pal_thread_params.html", "struct_etc_pal_thread_params" ],
     [ "EtcPalTimer", "struct_etc_pal_timer.html", "struct_etc_pal_timer" ],
     [ "EtcPalUdpPreamble", "struct_etc_pal_udp_preamble.html", "struct_etc_pal_udp_preamble" ],
-    [ "EtcPalUuid", "struct_etc_pal_uuid.html", "struct_etc_pal_uuid" ],
-    [ "MD5_CTX", "struct_m_d5___c_t_x.html", "struct_m_d5___c_t_x" ]
+    [ "EtcPalUuid", "struct_etc_pal_uuid.html", "struct_etc_pal_uuid" ]
 ];

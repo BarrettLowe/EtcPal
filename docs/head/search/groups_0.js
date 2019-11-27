@@ -15,7 +15,6 @@ var searchData=
   ['etcpal_5fmempool',['etcpal_mempool',['../group__etcpal__mempool.html',1,'']]],
   ['etcpal_5fmutex',['etcpal_mutex',['../group__etcpal__mutex.html',1,'']]],
   ['etcpal_5fnetint',['etcpal_netint',['../group__etcpal__netint.html',1,'']]],
-  ['etcpal_20config_20options',['EtcPal config options',['../group__etcpal__opts.html',1,'']]],
   ['etcpal_5fpack',['etcpal_pack',['../group__etcpal__pack.html',1,'']]],
   ['etcpal_5fpdu',['etcpal_pdu',['../group__etcpal__pdu.html',1,'']]],
   ['etcpal_5frbtree',['etcpal_rbtree',['../group__etcpal__rbtree.html',1,'']]],

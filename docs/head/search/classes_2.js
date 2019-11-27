@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defaultnetint',['DefaultNetint',['../struct_default_netint.html',1,'']]]
+  ['ipaddr',['IpAddr',['../classetcpal_1_1_ip_addr.html',1,'etcpal']]]
 ];

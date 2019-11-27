@@ -1,7 +1,6 @@
 var group__etcpal =
 [
     [ "etcpal_lock", "group__etcpal__lock.html", "group__etcpal__lock" ],
-    [ "EtcPal config options", "group__etcpal__opts.html", "group__etcpal__opts" ],
     [ "etcpal_thread", "group__etcpal__thread.html", "group__etcpal__thread" ],
     [ "etcpal_bool", "group__etcpal__bool.html", "group__etcpal__bool" ],
     [ "etcpal_error", "group__etcpal__error.html", "group__etcpal__error" ],
