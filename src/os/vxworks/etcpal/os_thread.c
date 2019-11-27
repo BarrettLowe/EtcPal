@@ -23,15 +23,13 @@
 bool etcpal_thread_create(etcpal_thread_t* id, const EtcPalThreadParams* params, void (*thread_fn)(void*),
                           void* thread_arg)
 {
-  /*int taskSpawn(char* name,      // name of new task (stored at pStackBase) //
-                int priority,    // priority of new task //
-                int options,     // task option word //
-                int stackSize,   // size (bytes) of stack needed plus name //
-                FUNCPTR entryPt, // entry point of new task //
-                int arg1,        // 1st of 10 req'd args to pass to entryPt //
-                int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10)   */
-  id = taskSpawn(params->thread_name, params->thread_priority, 0, params->stack_size, thread_fn, thread_arg);
-  return false;
+  id = taskSpawn(params->thread_name, params->thread_priority, 0, params->stack_size, thread_fn, (int)thread_arg, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
+  if (id == ERROR)
+  {
+    return false;
+  }
+  return true;
 }
 
 bool etcpal_thread_join(etcpal_thread_t* id)

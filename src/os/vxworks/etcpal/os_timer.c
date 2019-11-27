@@ -20,10 +20,13 @@
 #include "etcpal/timer.h"
 #include "etcpal/private/timer.h"
 
+#include <process.h>
+
 etcpal_error_t etcpal_timer_init()
 {
   // No initialization necessary on this platform
-  return kEtcPalErrNotImpl;
+  millisecondsPerTick = 1000 / sysClkRateGet();
+  return 0;
 }
 
 void etcpal_timer_deinit()
@@ -33,5 +36,6 @@ void etcpal_timer_deinit()
 
 uint32_t etcpal_getms()
 {
-  return 0;
+  millisecondClock = tickGet() * millisecondsPerTick;
+  return millisecondClock;
 }
