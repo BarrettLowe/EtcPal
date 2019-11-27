@@ -98,49 +98,63 @@ bool etcpal_rwlock_create(etcpal_rwlock_t* id)
 
 bool etcpal_rwlock_readlock(etcpal_rwlock_t* id)
 {
-  if (!id || !id->valid)
-    return false;
-
-  if (!created)
+  if (id && id->valid)
   {
-    return false;
+    semRTake(id->sem, WAIT_FOREVER);
+    return true;
   }
-  return true;
+  return false;
 }
 
 bool etcpal_rwlock_try_readlock(etcpal_rwlock_t* id)
 {
-  if (!id || !id->valid)
-    return false;
-
-  if (!created)
+  if (id && id->valid)
   {
-    return false;
+    semRTake(id->sem, 0);
+    return true;
   }
-  return true;
+  return false;
 }
 
 void etcpal_rwlock_readunlock(etcpal_rwlock_t* id)
 {
   if (id && id->valid)
+  {
+    semGive(id->sem);
+  }
 }
 
 bool etcpal_rwlock_writelock(etcpal_rwlock_t* id)
 {
+  if (id && id->valid)
+  {
+    semWTake(id->sem, WAIT_FOREVER);
+    return true;
+  }
   return false;
 }
 
 bool etcpal_rwlock_try_writelock(etcpal_rwlock_t* id)
 {
+  if (id && id->valid)
+  {
+    semWTake(id->sem, 0);
+    return true;
+  }
   return false;
 }
 
 void etcpal_rwlock_writeunlock(etcpal_rwlock_t* id)
 {
+  if (id && id->valid)
+  {
+    semGive(id->sem);
+  }
 }
 
 void etcpal_rwlock_destroy(etcpal_rwlock_t* id)
 {
+  semDelete(id->sem);
 }
 
 void reader_atomic_increment(etcpal_rwlock_t* id)
