@@ -24,10 +24,6 @@
 
 #define MAX_READERS 20000
 
-/*********************** Private function prototypes *************************/
-
-static void reader_atomic_increment(etcpal_rwlock_t* id);
-static void reader_atomic_decrement(etcpal_rwlock_t* id);
 
 /*************************** Function definitions ****************************/
 
@@ -155,12 +151,4 @@ void etcpal_rwlock_writeunlock(etcpal_rwlock_t* id)
 void etcpal_rwlock_destroy(etcpal_rwlock_t* id)
 {
   semDelete(id->sem);
-}
-
-void reader_atomic_increment(etcpal_rwlock_t* id)
-{
-}
-
-void reader_atomic_decrement(etcpal_rwlock_t* id)
-{
 }
