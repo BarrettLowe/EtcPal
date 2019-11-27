@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal_mempool</title>
+  <title>EtcPal: Memory Pools (mempool)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -127,10 +127,9 @@ $(document).ready(function(){initNavTree('group__etcpal__mempool.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
 <a href="#define-members">Macros</a> &#124;
-<a href="#typedef-members">Typedefs</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#typedef-members">Typedefs</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal_mempool<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">Memory Pools (mempool)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -139,8 +138,6 @@ $(document).ready(function(){initNavTree('group__etcpal__mempool.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_mempool.html">EtcPalMempool</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Not for direct usage) A memory pool description structure.  <a href="struct_etc_pal_mempool_desc.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -174,32 +171,13 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gacafad538d67632fc0278a608e1c019c7"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_mempool.html">EtcPalMempool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mempool.html#gacafad538d67632fc0278a608e1c019c7">EtcPalMempool</a></td></tr>
-<tr class="memdesc:gacafad538d67632fc0278a608e1c019c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Not for direct usage) A tiny structure simply used to maintain the freelist for each pool.  <a href="#gacafad538d67632fc0278a608e1c019c7">More...</a><br /></td></tr>
-<tr class="separator:gacafad538d67632fc0278a608e1c019c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b65b2221f81b94eba323dc3bd827cd4"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mempool.html#ga4b65b2221f81b94eba323dc3bd827cd4">EtcPalMempoolDesc</a></td></tr>
 <tr class="memdesc:ga4b65b2221f81b94eba323dc3bd827cd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">(Not for direct usage) A memory pool description structure.  <a href="#ga4b65b2221f81b94eba323dc3bd827cd4">More...</a><br /></td></tr>
 <tr class="separator:ga4b65b2221f81b94eba323dc3bd827cd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:gaf72159be0cef61fa6de2c31811186d81"><td class="memItemLeft" align="right" valign="top"><a id="gaf72159be0cef61fa6de2c31811186d81"></a>
-<a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_init_priv</b> (<a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> *desc)</td></tr>
-<tr class="separator:gaf72159be0cef61fa6de2c31811186d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf00d06492c13ad5d0dbc5506771d1404"><td class="memItemLeft" align="right" valign="top"><a id="gaf00d06492c13ad5d0dbc5506771d1404"></a>
-void *&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_alloc_priv</b> (<a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> *desc)</td></tr>
-<tr class="separator:gaf00d06492c13ad5d0dbc5506771d1404"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05e7deb235ec6791e76c560d787de583"><td class="memItemLeft" align="right" valign="top"><a id="ga05e7deb235ec6791e76c560d787de583"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_free_priv</b> (<a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> *desc, void *elem)</td></tr>
-<tr class="separator:ga05e7deb235ec6791e76c560d787de583"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5a31c44e8a90bd9c5e53707efdd83729"><td class="memItemLeft" align="right" valign="top"><a id="ga5a31c44e8a90bd9c5e53707efdd83729"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_used_priv</b> (<a class="el" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> *desc)</td></tr>
-<tr class="separator:ga5a31c44e8a90bd9c5e53707efdd83729"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Memory pools with fixed-size elements. </p>
-<p>#include "etcpal/mempool.h"</p>
-<p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a single object (e.g. int) or a fixed-size array of objects (e.g. int[60]). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a> internally. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/mempool.h&quot;</span></div></div><!-- fragment --><p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a single object (e.g. int) or a fixed-size array of objects (e.g. int[60]). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a> internally. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga3cda8bdb4dc13e12ba5e75ccadb23274"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3cda8bdb4dc13e12ba5e75ccadb23274">&#9670;&nbsp;</a></span>etcpal_mempool_alloc</h2>
@@ -286,8 +264,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_used
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">type name##_pool[size];                                                           \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool.html">EtcPalMempool</a> name##_pool_list[size];                                      \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> name##_pool_desc = {<span class="keyword">sizeof</span>(type),     <span class="comment">/* elem_size */</span>    \</div><div class="line">                                               size,             <span class="comment">/* pool_size */</span>    \</div><div class="line">                                               NULL,             <span class="comment">/* freelist */</span>     \</div><div class="line">                                               name##_pool_list, <span class="comment">/* list */</span>         \</div><div class="line">                                               0,                <span class="comment">/* current_used */</span> \</div><div class="line">                                               name##_pool <span class="comment">/* pool */</span>}</div><div class="ttc" id="struct_etc_pal_mempool_desc_html"><div class="ttname"><a href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a></div><div class="ttdoc">(Not for direct usage) A memory pool description structure. </div><div class="ttdef"><b>Definition:</b> mempool.h:62</div></div>
-<div class="ttc" id="struct_etc_pal_mempool_html"><div class="ttname"><a href="struct_etc_pal_mempool.html">EtcPalMempool</a></div><div class="ttdef"><b>Definition:</b> mempool.h:50</div></div>
+<b>Value:</b><div class="fragment"><div class="line">type name##_pool[size];                                                           \</div><div class="line">  struct EtcPalMempool name##_pool_list[size];                                      \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> name##_pool_desc = {<span class="keyword">sizeof</span>(type),     <span class="comment">/* elem_size */</span>    \</div><div class="line">                                               size,             <span class="comment">/* pool_size */</span>    \</div><div class="line">                                               NULL,             <span class="comment">/* freelist */</span>     \</div><div class="line">                                               name##_pool_list, <span class="comment">/* list */</span>         \</div><div class="line">                                               0,                <span class="comment">/* current_used */</span> \</div><div class="line">                                               name##_pool <span class="comment">/* pool */</span>}</div><div class="ttc" id="struct_etc_pal_mempool_desc_html"><div class="ttname"><a href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a></div><div class="ttdoc">(Not for direct usage) A memory pool description structure. </div><div class="ttdef"><b>Definition:</b> mempool.h:71</div></div>
 </div><!-- fragment -->
 <p>Define a new memory pool. </p>
 <p>Expands to a number of variable definitions. Should not be used in a header file; if you want your memory pool to be accessible from multiple source files, use <a class="el" href="group__etcpal__mempool.html#ga1da98d192da467dfb2ec751bad279178" title="Declare a pool as an external variable. ">ETCPAL_MEMPOOL_DECLARE()</a> in the header file in addition to this macro.</p>
@@ -339,8 +316,7 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_used
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">type name##_pool[array_size][pool_size];                                                  \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool.html">EtcPalMempool</a> name##_pool_list[pool_size];                                         \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> name##_pool_desc = {<span class="keyword">sizeof</span>(type[array_size]), <span class="comment">/* elem_size */</span>    \</div><div class="line">                                               pool_size,                <span class="comment">/* pool_size */</span>    \</div><div class="line">                                               NULL,                     <span class="comment">/* freelist */</span>     \</div><div class="line">                                               name##_pool_list,         <span class="comment">/* list */</span>         \</div><div class="line">                                               0,                        <span class="comment">/* current_used */</span> \</div><div class="line">                                               name##_pool <span class="comment">/* pool */</span>}</div><div class="ttc" id="struct_etc_pal_mempool_desc_html"><div class="ttname"><a href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a></div><div class="ttdoc">(Not for direct usage) A memory pool description structure. </div><div class="ttdef"><b>Definition:</b> mempool.h:62</div></div>
-<div class="ttc" id="struct_etc_pal_mempool_html"><div class="ttname"><a href="struct_etc_pal_mempool.html">EtcPalMempool</a></div><div class="ttdef"><b>Definition:</b> mempool.h:50</div></div>
+<b>Value:</b><div class="fragment"><div class="line">type name##_pool[array_size][pool_size];                                                  \</div><div class="line">  struct EtcPalMempool name##_pool_list[pool_size];                                         \</div><div class="line">  struct <a class="code" href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a> name##_pool_desc = {<span class="keyword">sizeof</span>(type[array_size]), <span class="comment">/* elem_size */</span>    \</div><div class="line">                                               pool_size,                <span class="comment">/* pool_size */</span>    \</div><div class="line">                                               NULL,                     <span class="comment">/* freelist */</span>     \</div><div class="line">                                               name##_pool_list,         <span class="comment">/* list */</span>         \</div><div class="line">                                               0,                        <span class="comment">/* current_used */</span> \</div><div class="line">                                               name##_pool <span class="comment">/* pool */</span>}</div><div class="ttc" id="struct_etc_pal_mempool_desc_html"><div class="ttname"><a href="struct_etc_pal_mempool_desc.html">EtcPalMempoolDesc</a></div><div class="ttdoc">(Not for direct usage) A memory pool description structure. </div><div class="ttdef"><b>Definition:</b> mempool.h:71</div></div>
 </div><!-- fragment -->
 <p>Define a new memory pool composed of arrays of elements. </p>
 <p>This is an alternative to <a class="el" href="group__etcpal__mempool.html#ga0d56307540e32e74ce5a87a52ce447b8" title="Define a new memory pool. ">ETCPAL_MEMPOOL_DEFINE()</a> for creating memory pools containing fixed-size arrays of elements.</p>
@@ -480,22 +456,6 @@ size_t&#160;</td><td class="memItemRight" valign="bottom"><b>etcpal_mempool_used
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gacafad538d67632fc0278a608e1c019c7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacafad538d67632fc0278a608e1c019c7">&#9670;&nbsp;</a></span>EtcPalMempool</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_mempool.html">EtcPalMempool</a> <a class="el" href="struct_etc_pal_mempool.html">EtcPalMempool</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>(Not for direct usage) A tiny structure simply used to maintain the freelist for each pool. </p>
-
-</div>
-</div>
 <a id="ga4b65b2221f81b94eba323dc3bd827cd4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga4b65b2221f81b94eba323dc3bd827cd4">&#9670;&nbsp;</a></span>EtcPalMempoolDesc</h2>
 

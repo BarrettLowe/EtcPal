@@ -1,11 +1,14 @@
 var searchData=
 [
+  ['internet_20addressing_20_28inet_29',['Internet Addressing (inet)',['../group__etcpal__inet.html',1,'']]],
   ['ifindex',['ifindex',['../struct_etc_pal_group_req.html#a452f46bf9904a02408a12d9e406b4de7',1,'EtcPalGroupReq']]],
   ['index',['index',['../struct_etc_pal_netint_info.html#a589d64202487f78e3cc30dd2e04c5201',1,'EtcPalNetintInfo']]],
   ['inet_2eh',['inet.h',['../cpp_2inet_8h.html',1,'']]],
   ['info',['info',['../struct_etc_pal_rb_tree.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbTree::info()'],['../struct_etc_pal_rb_iter.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbIter::info()']]],
   ['interval',['interval',['../struct_etc_pal_timer.html#acd9ed1ccc44de55e1d3eff5569663695',1,'EtcPalTimer']]],
   ['ip',['ip',['../struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e',1,'EtcPalSockAddr::ip()'],['../classetcpal_1_1_sock_addr.html#acbb9df748594ef90cf431ae61c84f547',1,'etcpal::SockAddr::ip()']]],
+  ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['../group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,'inet.h']]],
+  ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['../group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,'inet.h']]],
   ['ipaddr',['IpAddr',['../classetcpal_1_1_ip_addr.html',1,'IpAddr'],['../classetcpal_1_1_ip_addr.html#a4a003a4fea5fb690128013fc94677ff5',1,'etcpal::IpAddr::IpAddr() noexcept'],['../classetcpal_1_1_ip_addr.html#aa0ecd73e87259b2e2d5435673c8e5149',1,'etcpal::IpAddr::IpAddr(const EtcPalIpAddr &amp;c_ip) noexcept'],['../classetcpal_1_1_ip_addr.html#a47a9c1b3e45125fac51fa2d28b19beeb',1,'etcpal::IpAddr::IpAddr(uint32_t v4_data) noexcept'],['../classetcpal_1_1_ip_addr.html#a10a0e9f0e89374ef5543a40bb6e9aafb',1,'etcpal::IpAddr::IpAddr(const uint8_t *v6_data) noexcept'],['../classetcpal_1_1_ip_addr.html#abd1c05fc9b5b627f239972390c0bfeab',1,'etcpal::IpAddr::IpAddr(const uint8_t *v6_data, unsigned long scope_id) noexcept']]],
   ['ipaddrtype',['IpAddrType',['../group__etcpal__cpp__inet.html#gaf149bcc08653396944a3699b8c5a57c5',1,'etcpal']]],
   ['is_5fdefault',['is_default',['../struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'EtcPalNetintInfo']]],

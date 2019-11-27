@@ -1,5 +1,6 @@
 var group__etcpal__error =
 [
+    [ "ETCPAL_NUM_ERROR_CODES", "group__etcpal__error.html#gae0de193fbaf16861756958bd3f21e07f", null ],
     [ "etcpal_error_t", "group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af", [
       [ "kEtcPalErrOk", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d", null ],
       [ "kEtcPalErrNotFound", "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f", null ],

@@ -21,7 +21,6 @@ var annotated_dup =
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", "struct_etc_pal_log_strings" ],
     [ "EtcPalLogTimeParams", "struct_etc_pal_log_time_params.html", "struct_etc_pal_log_time_params" ],
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", "struct_etc_pal_mac_addr" ],
-    [ "EtcPalMempool", "struct_etc_pal_mempool.html", "struct_etc_pal_mempool" ],
     [ "EtcPalMempoolDesc", "struct_etc_pal_mempool_desc.html", "struct_etc_pal_mempool_desc" ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", "struct_etc_pal_mreq" ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", "struct_etc_pal_netint_info" ],

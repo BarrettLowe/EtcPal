@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal_rbtree</title>
+  <title>EtcPal: Red-Black Trees (rbtree)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('group__etcpal__rbtree.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal_rbtree<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">Red-Black Trees (rbtree)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -241,8 +241,7 @@ Callback Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>A red-black tree implementation. </p>
-<p>#include "etcpal/rbtree.h"</p>
-<p>A red-black tree is a popular design for a self-balancing binary search tree. Based on a public-domain red-black tree implementation; see the header file for details. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/rbtree.h&quot;</span></div></div><!-- fragment --><p>A red-black tree is a popular design for a self-balancing binary search tree. Based on a public-domain red-black tree implementation; see the header file for details. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga347976360fdafc669aab59abc1ff7d73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga347976360fdafc669aab59abc1ff7d73">&#9670;&nbsp;</a></span>ETCPAL_RB_ITER_MAX_HEIGHT</h2>
@@ -362,7 +361,7 @@ Callback Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A function type to be called for each node in a tree. </p>
-<p>Usually provided on a tree-wide clear or destroy operation; in this case, it should provide any deallocation necessary for the node structure and its value. A default, <a class="el" href="group__etcpal__rbtree.html#ga2041c16a4a4e745ccadd180cbb8bc93f" title="The default node deallocation callback. ">etcpal_rbtree_node_dealloc_cb()</a>, is provided which simply calls the tree's #etcpal_rbnode_dealloc_f on the node.</p>
+<p>Usually provided on a tree-wide clear or destroy operation; in this case, it should provide any deallocation necessary for the node structure and its value. A default, <a class="el" href="group__etcpal__rbtree.html#ga2041c16a4a4e745ccadd180cbb8bc93f" title="The default node deallocation callback. ">etcpal_rbtree_node_dealloc_cb()</a>, is provided which simply calls the tree's <a class="el" href="group__etcpal__rbtree.html#gab04d15dd62a53956d6ea4b1e5dcbe930" title="A function type to deallocate a node. ">EtcPalRbNodeDeallocFunc</a> on the node.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">self</td><td>The tree in which the node resides. </td></tr>

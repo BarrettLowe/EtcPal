@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html',1,'etcpal']]],
-  ['result',['Result',['../classetcpal_1_1_result.html',1,'etcpal']]],
-  ['rwlock',['RwLock',['../classetcpal_1_1_rw_lock.html',1,'etcpal']]]
+  ['signal',['Signal',['../classetcpal_1_1_signal.html',1,'etcpal']]],
+  ['sockaddr',['SockAddr',['../classetcpal_1_1_sock_addr.html',1,'etcpal']]]
 ];

@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['locks_20and_20synchronization_20_28lock_29',['Locks and Synchronization (lock)',['../group__etcpal__lock.html',1,'']]],
+  ['logging_20_28log_29',['Logging (log)',['../group__etcpal__log.html',1,'']]],
   ['linger',['linger',['../struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
   ['link',['link',['../struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
   ['list',['list',['../struct_etc_pal_mempool_desc.html#a9bbae4d416583392b93135d8cc44d80e',1,'EtcPalMempoolDesc']]],

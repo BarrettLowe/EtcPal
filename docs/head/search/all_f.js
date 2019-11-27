@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['red_2dblack_20trees_20_28rbtree_29',['Red-Black Trees (rbtree)',['../group__etcpal__rbtree.html',1,'']]],
   ['raw',['raw',['../struct_etc_pal_log_strings.html#a8129637af8920bc9328bbce2a00bfeb4',1,'EtcPalLogStrings']]],
   ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html',1,'ReadGuard'],['../classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['../classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
   ['readlock',['ReadLock',['../classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284',1,'etcpal::RwLock']]],

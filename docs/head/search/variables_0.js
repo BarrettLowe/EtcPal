@@ -1,7 +1,8 @@
 var searchData=
 [
   ['action',['action',['../struct_etc_pal_log_params.html#a97b4c2de584d731ffb8d8ce759930691',1,'EtcPalLogParams']]],
-  ['addr',['addr',['../struct_etc_pal_netint_info.html#ac10a4235b585003054f76871bad3fd85',1,'EtcPalNetintInfo']]],
+  ['addr',['addr',['../struct_etc_pal_ip_addr.html#a3423eb761e78396c67ba1345c0438871',1,'EtcPalIpAddr::addr()'],['../struct_etc_pal_netint_info.html#ac10a4235b585003054f76871bad3fd85',1,'EtcPalNetintInfo::addr()']]],
+  ['addr_5fbuf',['addr_buf',['../struct_etc_pal_ip_addr.html#a53d9f270f12d57a90a97d60b5e612237',1,'EtcPalIpAddr']]],
   ['ai_5faddr',['ai_addr',['../struct_etc_pal_addrinfo.html#a2000f4ebfae33b230309b0344354031d',1,'EtcPalAddrinfo']]],
   ['ai_5fcanonname',['ai_canonname',['../struct_etc_pal_addrinfo.html#a9fcbdd64fcb9adcf195a78b10f1fe8f6',1,'EtcPalAddrinfo']]],
   ['ai_5ffamily',['ai_family',['../struct_etc_pal_addrinfo.html#a4dc44d22f13bc5c59bff73e549e96a5c',1,'EtcPalAddrinfo']]],

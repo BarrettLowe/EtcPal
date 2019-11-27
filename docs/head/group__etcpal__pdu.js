@@ -1,6 +1,6 @@
 var group__etcpal__pdu =
 [
-    [ "etcpal_rootlayerpdu", "group__etcpal__rootlayerpdu.html", "group__etcpal__rootlayerpdu" ],
+    [ "ACN Root Layer PDUs (rootlayerpdu)", "group__etcpal__rootlayerpdu.html", "group__etcpal__rootlayerpdu" ],
     [ "EtcPalPdu", "struct_etc_pal_pdu.html", [
       [ "datalen", "struct_etc_pal_pdu.html#a3d12e161726566d24a1d0cf6c6b416bb", null ],
       [ "pdata", "struct_etc_pal_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07", null ],

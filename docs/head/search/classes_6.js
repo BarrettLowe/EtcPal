@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['uuid',['Uuid',['../classetcpal_1_1_uuid.html',1,'etcpal']]]
+  ['writeguard',['WriteGuard',['../classetcpal_1_1_write_guard.html',1,'etcpal']]]
 ];

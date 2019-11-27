@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal_socket</title>
+  <title>EtcPal: Network Socket Interface (socket)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('group__etcpal__socket.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal_socket<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">Network Socket Interface (socket)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -157,21 +157,18 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:ga05f5bfa7ea20aa326aa97b2424481d99"><td class="memItemLeft" align="right" valign="top"><a id="ga05f5bfa7ea20aa326aa97b2424481d99"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_POLL_VALID_INPUT_EVENT_MASK</b>&#160;&#160;&#160;0x0fu</td></tr>
+<tr class="separator:ga05f5bfa7ea20aa326aa97b2424481d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga304e26b30c36b6c33319b9602c9fe276"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga304e26b30c36b6c33319b9602c9fe276">ETCPAL_SOCKET_INVALID</a>&#160;&#160;&#160;[PLATFORM_DEFINED]</td></tr>
 <tr class="memdesc:ga304e26b30c36b6c33319b9602c9fe276"><td class="mdescLeft">&#160;</td><td class="mdescRight">An identifier for an invalid socket handle.  <a href="#ga304e26b30c36b6c33319b9602c9fe276">More...</a><br /></td></tr>
 <tr class="separator:ga304e26b30c36b6c33319b9602c9fe276"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga06b68eaa9d0e50e624659ed1b9c7f05a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga06b68eaa9d0e50e624659ed1b9c7f05a">ETCPAL_SOCKET_MAX_POLL_SIZE</a>&#160;&#160;&#160;[PLATFORM_DEFINED]</td></tr>
 <tr class="memdesc:ga06b68eaa9d0e50e624659ed1b9c7f05a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of sockets that can be simultaneously monitored by <a class="el" href="group__etcpal__socket.html#gae5017e2346be12e91c6450fe9860614b" title="Wait for an event on a set of sockets defined by an EtcPalPollContext. ">etcpal_poll_wait()</a>.  <a href="#ga06b68eaa9d0e50e624659ed1b9c7f05a">More...</a><br /></td></tr>
 <tr class="separator:ga06b68eaa9d0e50e624659ed1b9c7f05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga05f5bfa7ea20aa326aa97b2424481d99"><td class="memItemLeft" align="right" valign="top"><a id="ga05f5bfa7ea20aa326aa97b2424481d99"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_POLL_VALID_INPUT_EVENT_MASK</b>&#160;&#160;&#160;0x0fu</td></tr>
-<tr class="separator:ga05f5bfa7ea20aa326aa97b2424481d99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gaf08a63353f05072ee3b28fd754985b66"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a></td></tr>
-<tr class="memdesc:gaf08a63353f05072ee3b28fd754985b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">A socket handle.  <a href="#gaf08a63353f05072ee3b28fd754985b66">More...</a><br /></td></tr>
-<tr class="separator:gaf08a63353f05072ee3b28fd754985b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga625b9f37c09cda6d3f13330094fa97d9"><td class="memItemLeft" align="right" valign="top">typedef uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9">etcpal_poll_events_t</a></td></tr>
 <tr class="memdesc:ga625b9f37c09cda6d3f13330094fa97d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Event flags for the etcpal_poll_*() API functions.  <a href="#ga625b9f37c09cda6d3f13330094fa97d9">More...</a><br /></td></tr>
 <tr class="separator:ga625b9f37c09cda6d3f13330094fa97d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,6 +187,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga83e2e233e87a88a7edf037928d203550"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_addrinfo.html">EtcPalAddrinfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga83e2e233e87a88a7edf037928d203550">EtcPalAddrinfo</a></td></tr>
 <tr class="memdesc:ga83e2e233e87a88a7edf037928d203550"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure containing name and address information about an internet host.  <a href="#ga83e2e233e87a88a7edf037928d203550">More...</a><br /></td></tr>
 <tr class="separator:ga83e2e233e87a88a7edf037928d203550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf08a63353f05072ee3b28fd754985b66"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a></td></tr>
+<tr class="memdesc:gaf08a63353f05072ee3b28fd754985b66"><td class="mdescLeft">&#160;</td><td class="mdescRight">A socket handle.  <a href="#gaf08a63353f05072ee3b28fd754985b66">More...</a><br /></td></tr>
+<tr class="separator:gaf08a63353f05072ee3b28fd754985b66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -253,32 +253,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga8cc1d9b7b5e8e2b88a337fc727b44535">etcpal_freeaddrinfo</a> (<a class="el" href="struct_etc_pal_addrinfo.html">EtcPalAddrinfo</a> *ai)</td></tr>
 <tr class="memdesc:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free an addrinfo list returned by <a class="el" href="group__etcpal__socket.html#ga5e63f5fa7b1b4310a4bb317aa4873997" title="Get address information for a named internet host and/or service. ">etcpal_getaddrinfo()</a>.  <a href="#ga8cc1d9b7b5e8e2b88a337fc727b44535">More...</a><br /></td></tr>
 <tr class="separator:ga8cc1d9b7b5e8e2b88a337fc727b44535"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
-etcpal_poll API</h2></td></tr>
-<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp633f15f56e06ac8b569decfe1d732c15"></a>The etcpal_poll functions enable monitoring several sockets at once. </p>
-</td></tr>
-<tr class="memitem:ga906fd2bcb17663f4de3fefd0b335656e"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a></td></tr>
-<tr class="memdesc:ga906fd2bcb17663f4de3fefd0b335656e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that holds context information for poll operations on multiple sockets.  <a href="#ga906fd2bcb17663f4de3fefd0b335656e">More...</a><br /></td></tr>
-<tr class="separator:ga906fd2bcb17663f4de3fefd0b335656e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf566500c673f2e7941f9a399c61c1b68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gaf566500c673f2e7941f9a399c61c1b68">etcpal_poll_context_init</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context)</td></tr>
-<tr class="memdesc:gaf566500c673f2e7941f9a399c61c1b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new context for waiting on events on multiple sockets.  <a href="#gaf566500c673f2e7941f9a399c61c1b68">More...</a><br /></td></tr>
-<tr class="separator:gaf566500c673f2e7941f9a399c61c1b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga08a886e98949a8c0ba7f162e54cd1a72">etcpal_poll_context_deinit</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context)</td></tr>
-<tr class="memdesc:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate a previously-initialized EtcPalPollContext structure.  <a href="#ga08a886e98949a8c0ba7f162e54cd1a72">More...</a><br /></td></tr>
-<tr class="separator:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gab901f9cf32e98e0d99369366f2e1ffa4">etcpal_poll_add_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket, <a class="el" href="group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9">etcpal_poll_events_t</a> events, void *user_data)</td></tr>
-<tr class="memdesc:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new socket to an EtcPalPollContext.  <a href="#gab901f9cf32e98e0d99369366f2e1ffa4">More...</a><br /></td></tr>
-<tr class="separator:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga396b218eda2c3e52b4b917b73e18dab7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga396b218eda2c3e52b4b917b73e18dab7">etcpal_poll_modify_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket, <a class="el" href="group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9">etcpal_poll_events_t</a> new_events, void *new_user_data)</td></tr>
-<tr class="memdesc:ga396b218eda2c3e52b4b917b73e18dab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the set of events or user data associated with a monitored socket.  <a href="#ga396b218eda2c3e52b4b917b73e18dab7">More...</a><br /></td></tr>
-<tr class="separator:ga396b218eda2c3e52b4b917b73e18dab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8233886a08aff8ba010dfa7384c76408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga8233886a08aff8ba010dfa7384c76408">etcpal_poll_remove_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket)</td></tr>
-<tr class="memdesc:ga8233886a08aff8ba010dfa7384c76408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a monitored socket from an EtcPalPollContext.  <a href="#ga8233886a08aff8ba010dfa7384c76408">More...</a><br /></td></tr>
-<tr class="separator:ga8233886a08aff8ba010dfa7384c76408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae5017e2346be12e91c6450fe9860614b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gae5017e2346be12e91c6450fe9860614b">etcpal_poll_wait</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="struct_etc_pal_poll_event.html">EtcPalPollEvent</a> *event, int timeout_ms)</td></tr>
-<tr class="memdesc:gae5017e2346be12e91c6450fe9860614b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event on a set of sockets defined by an EtcPalPollContext.  <a href="#gae5017e2346be12e91c6450fe9860614b">More...</a><br /></td></tr>
-<tr class="separator:gae5017e2346be12e91c6450fe9860614b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Flags for etcpal_recvfrom()</h2></td></tr>
@@ -460,11 +434,36 @@ Flag values to use with etcpal_poll_events_t.</h2></td></tr>
 <tr class="memitem:gaebc86dae796550d111061ba3de030942"><td class="memItemLeft" align="right" valign="top"><a id="gaebc86dae796550d111061ba3de030942"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_AI_NUMERICHOST</b>&#160;&#160;&#160;0x04</td></tr>
 <tr class="separator:gaebc86dae796550d111061ba3de030942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
+etcpal_poll API</h2></td></tr>
+<tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrp633f15f56e06ac8b569decfe1d732c15"></a>The etcpal_poll functions enable monitoring several sockets at once. </p>
+</td></tr>
+<tr class="memitem:ga906fd2bcb17663f4de3fefd0b335656e"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a></td></tr>
+<tr class="memdesc:ga906fd2bcb17663f4de3fefd0b335656e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A structure that holds context information for poll operations on multiple sockets.  <a href="#ga906fd2bcb17663f4de3fefd0b335656e">More...</a><br /></td></tr>
+<tr class="separator:ga906fd2bcb17663f4de3fefd0b335656e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf566500c673f2e7941f9a399c61c1b68"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gaf566500c673f2e7941f9a399c61c1b68">etcpal_poll_context_init</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context)</td></tr>
+<tr class="memdesc:gaf566500c673f2e7941f9a399c61c1b68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new context for waiting on events on multiple sockets.  <a href="#gaf566500c673f2e7941f9a399c61c1b68">More...</a><br /></td></tr>
+<tr class="separator:gaf566500c673f2e7941f9a399c61c1b68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga08a886e98949a8c0ba7f162e54cd1a72">etcpal_poll_context_deinit</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context)</td></tr>
+<tr class="memdesc:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidate a previously-initialized EtcPalPollContext structure.  <a href="#ga08a886e98949a8c0ba7f162e54cd1a72">More...</a><br /></td></tr>
+<tr class="separator:ga08a886e98949a8c0ba7f162e54cd1a72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gab901f9cf32e98e0d99369366f2e1ffa4">etcpal_poll_add_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket, <a class="el" href="group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9">etcpal_poll_events_t</a> events, void *user_data)</td></tr>
+<tr class="memdesc:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new socket to an EtcPalPollContext.  <a href="#gab901f9cf32e98e0d99369366f2e1ffa4">More...</a><br /></td></tr>
+<tr class="separator:gab901f9cf32e98e0d99369366f2e1ffa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga396b218eda2c3e52b4b917b73e18dab7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga396b218eda2c3e52b4b917b73e18dab7">etcpal_poll_modify_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket, <a class="el" href="group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9">etcpal_poll_events_t</a> new_events, void *new_user_data)</td></tr>
+<tr class="memdesc:ga396b218eda2c3e52b4b917b73e18dab7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Change the set of events or user data associated with a monitored socket.  <a href="#ga396b218eda2c3e52b4b917b73e18dab7">More...</a><br /></td></tr>
+<tr class="separator:ga396b218eda2c3e52b4b917b73e18dab7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8233886a08aff8ba010dfa7384c76408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#ga8233886a08aff8ba010dfa7384c76408">etcpal_poll_remove_socket</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket)</td></tr>
+<tr class="memdesc:ga8233886a08aff8ba010dfa7384c76408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove a monitored socket from an EtcPalPollContext.  <a href="#ga8233886a08aff8ba010dfa7384c76408">More...</a><br /></td></tr>
+<tr class="separator:ga8233886a08aff8ba010dfa7384c76408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5017e2346be12e91c6450fe9860614b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html#gae5017e2346be12e91c6450fe9860614b">etcpal_poll_wait</a> (<a class="el" href="group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e">EtcPalPollContext</a> *context, <a class="el" href="struct_etc_pal_poll_event.html">EtcPalPollEvent</a> *event, int timeout_ms)</td></tr>
+<tr class="memdesc:gae5017e2346be12e91c6450fe9860614b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event on a set of sockets defined by an EtcPalPollContext.  <a href="#gae5017e2346be12e91c6450fe9860614b">More...</a><br /></td></tr>
+<tr class="separator:gae5017e2346be12e91c6450fe9860614b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Platform-neutral BSD-modeled network socket implementation. </p>
-<p>#include "etcpal/socket.h"</p>
-<p>This module attempts to abstract the network socket interface from various platforms into one platform-neutral interface. The functions and flags are modeled after the BSD sockets interface. <em>UNIX Network Programming: The Sockets Networking API</em> by Stevens, Fenner, and Rudoff is highly recommended reading for those unfamiliar with this interface. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/socket.h&quot;</span></div></div><!-- fragment --><p>This module attempts to abstract the network socket interface from various platforms into one platform-neutral interface. The functions and flags are modeled after the BSD sockets interface. <em>UNIX Network Programming: The Sockets Networking API</em> by Stevens, Fenner, and Rudoff is highly recommended reading for those unfamiliar with this interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga19b3047fe621a06b5cedc8043bb823cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga19b3047fe621a06b5cedc8043bb823cf">&#9670;&nbsp;</a></span>ETCPAL_IP_ADD_MEMBERSHIP</h2>
