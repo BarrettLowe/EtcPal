@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal_signal</title>
+  <title>EtcPal: Signals</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -128,11 +128,11 @@ $(document).ready(function(){initNavTree('group__etcpal__signal.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal_signal<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
+<div class="title">Signals<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A signal object.  
+<p>Signal objects.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga4ecc28a0f67939859d91c8e9e75701e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>A signal object. </p>
+<p>Signal objects. </p>
 <p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> blocks until <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> is called.</p>
 <p>etcpal_signal implementations use the following constructs under the hood on various platforms:</p>
 <table class="doxtable">

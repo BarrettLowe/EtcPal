@@ -8,7 +8,7 @@ var indexSectionsWithContent =
   5: "e",
   6: "ei",
   7: "k",
-  8: "abcefilmnrtu",
+  8: "abcefilmnrstu",
   9: "aen"
 };
 

@@ -21,7 +21,7 @@ var group__etcpal__cpp__inet =
       [ "SetAddress", "classetcpal_1_1_ip_addr.html#a5b87e44914b8e5d6acc662c0e7ada452", null ],
       [ "SetAddress", "classetcpal_1_1_ip_addr.html#a5e188695085f61a2fd9c0ba28a6e0893", null ],
       [ "ToString", "classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0", null ],
-      [ "ToV6Array", "classetcpal_1_1_ip_addr.html#aec9ecc86d7776b3aec76d6ec9a84b941", null ],
+      [ "ToV6Array", "classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59", null ],
       [ "type", "classetcpal_1_1_ip_addr.html#a72e87c00e9e7eb9c88fcbd0f030cc59c", null ],
       [ "v4_data", "classetcpal_1_1_ip_addr.html#ac916b557b42f871359ce597c4c17556b", null ],
       [ "v6_data", "classetcpal_1_1_ip_addr.html#a092dcb96eb18fa8c6526322cd6d62245", null ]
@@ -54,7 +54,7 @@ var group__etcpal__cpp__inet =
       [ "get", "classetcpal_1_1_mac_addr.html#abd82397c8172b871348b31a16473f61e", null ],
       [ "IsNull", "classetcpal_1_1_mac_addr.html#a27909eb1d61b8b261d259be7c70c58dd", null ],
       [ "operator=", "classetcpal_1_1_mac_addr.html#abf74026b5f8428336b974584cbd534df", null ],
-      [ "ToArray", "classetcpal_1_1_mac_addr.html#a9d9b81022aaa0b436868031939bcc7a1", null ],
+      [ "ToArray", "classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce", null ],
       [ "ToString", "classetcpal_1_1_mac_addr.html#a19c380b03cea21d7ac7325136a131ff0", null ]
     ] ],
     [ "IpAddrType", "group__etcpal__cpp__inet.html#gaf149bcc08653396944a3699b8c5a57c5", null ]

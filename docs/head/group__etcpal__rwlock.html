@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: etcpal_rwlock</title>
+  <title>EtcPal: Read-Write Locks</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -128,11 +128,11 @@ $(document).ready(function(){initNavTree('group__etcpal__rwlock.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">etcpal_rwlock<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
+<div class="title">Read-Write Locks<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>A reader-writer lock object.  
+<p>Reader-writer lock objects.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -169,7 +169,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga2d4feb63613ff8dfb1f106f5ed63dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>A reader-writer lock object. </p>
+<p>Reader-writer lock objects. </p>
 <p>Sometimes also referred to as a shared-exclusive lock or multi-reader lock. When implemented to protect a resource, allows multiple "readers" to access the resource at the same time for read-only purposes.</p>
 <p>These are implemented as "write-preferring" reader-writer locks; this means that new readers are blocked from acquiring a read lock if any context is currently waiting for a write lock.</p>
 <p>EtcPal read-write locks are typically implemented using multiple OS synchronization constructs under the hood. </p>

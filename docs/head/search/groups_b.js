@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uuids_20_28uuid_29',['UUIDs (uuid)',['../group__etcpal__uuid.html',1,'']]]
+  ['threading_20_28thread_29',['Threading (thread)',['../group__etcpal__thread.html',1,'']]],
+  ['timers_20_28timer_29',['Timers (timer)',['../group__etcpal__timer.html',1,'']]]
 ];

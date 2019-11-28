@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_ip_addr.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IpAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">etcpal_cpp_inet</a></div></div>  </div>
+<div class="title">IpAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">Internet Addressing (inet)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -175,9 +175,9 @@ const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> &amp;&#1
 <tr class="memitem:a092dcb96eb18fa8c6526322cd6d62245"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a092dcb96eb18fa8c6526322cd6d62245">v6_data</a> () const noexcept</td></tr>
 <tr class="memdesc:a092dcb96eb18fa8c6526322cd6d62245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw 16-byte array representation of an IPv6 address.  <a href="#a092dcb96eb18fa8c6526322cd6d62245">More...</a><br /></td></tr>
 <tr class="separator:a092dcb96eb18fa8c6526322cd6d62245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec9ecc86d7776b3aec76d6ec9a84b941"><td class="memItemLeft" align="right" valign="top"><a id="aec9ecc86d7776b3aec76d6ec9a84b941"></a>
-std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToV6Array</b> () const</td></tr>
-<tr class="separator:aec9ecc86d7776b3aec76d6ec9a84b941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d6d96f2d5b5fb9fd6a16bcceb8dea59"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59">ToV6Array</a> () const</td></tr>
+<tr class="memdesc:a9d6d96f2d5b5fb9fd6a16bcceb8dea59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 16-byte std::array representation of an IPv6 address.  <a href="#a9d6d96f2d5b5fb9fd6a16bcceb8dea59">More...</a><br /></td></tr>
+<tr class="separator:a9d6d96f2d5b5fb9fd6a16bcceb8dea59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ddc22a71f0df9873b7bbf20b7b4a54e"><td class="memItemLeft" align="right" valign="top">unsigned long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a3ddc22a71f0df9873b7bbf20b7b4a54e">scope_id</a> () const noexcept</td></tr>
 <tr class="memdesc:a3ddc22a71f0df9873b7bbf20b7b4a54e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scope ID of an IPv6 address.  <a href="#a3ddc22a71f0df9873b7bbf20b7b4a54e">More...</a><br /></td></tr>
 <tr class="separator:a3ddc22a71f0df9873b7bbf20b7b4a54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -587,6 +587,34 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a9d6d96f2d5b5fb9fd6a16bcceb8dea59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6d96f2d5b5fb9fd6a16bcceb8dea59">&#9670;&nbsp;</a></span>ToV6Array()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a> &gt; ToV6Array </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 16-byte std::array representation of an IPv6 address. </p>
+<p>Copies the data into a new array. This function will return undefined data if the <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a>'s type is V4 or Invalid. </p>
+
+</div>
+</div>
 <a id="ac916b557b42f871359ce597c4c17556b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac916b557b42f871359ce597c4c17556b">&#9670;&nbsp;</a></span>v4_data()</h2>
 
@@ -640,8 +668,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the raw 16-byte array representation of an IPv6 address. </p>
-<p>This function will return undefined data if the <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a>'s type is V4 or Invalid.</p>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to an array of length <a class="el" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20" title="The number of bytes in an IPv6 address. ">ETCPAL_IPV6_BYTES</a> containing the address data. </dd></dl>
+<p>The returned pointer has the same lifetime as this <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> instance. This function will return undefined data if the <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a>'s type is V4 or Invalid. </p>
 
 </div>
 </div>

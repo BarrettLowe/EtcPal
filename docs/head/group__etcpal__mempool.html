@@ -177,7 +177,7 @@ Typedefs</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Memory pools with fixed-size elements. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/mempool.h&quot;</span></div></div><!-- fragment --><p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a single object (e.g. int) or a fixed-size array of objects (e.g. int[60]). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html">etcpal_mutex</a> internally. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/mempool.h&quot;</span></div></div><!-- fragment --><p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a single object (e.g. int) or a fixed-size array of objects (e.g. int[60]). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html">Mutexes</a> internally. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga3cda8bdb4dc13e12ba5e75ccadb23274"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3cda8bdb4dc13e12ba5e75ccadb23274">&#9670;&nbsp;</a></span>etcpal_mempool_alloc</h2>

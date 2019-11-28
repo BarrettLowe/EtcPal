@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_mac_addr.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MacAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">etcpal_cpp_inet</a></div></div>  </div>
+<div class="title">MacAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">Internet Addressing (inet)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -166,9 +166,9 @@ const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> &amp;&
 <tr class="memitem:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mac_addr.html#a21b8e060baa6eeed3e5e45e6d760b54c">data</a> () const noexcept</td></tr>
 <tr class="memdesc:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw 6-byte array representation of a MAC address.  <a href="#a21b8e060baa6eeed3e5e45e6d760b54c">More...</a><br /></td></tr>
 <tr class="separator:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d9b81022aaa0b436868031939bcc7a1"><td class="memItemLeft" align="right" valign="top"><a id="a9d9b81022aaa0b436868031939bcc7a1"></a>
-std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#ga2222b6d9e40f95ec1d74e1865537863f">ETCPAL_MAC_BYTES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ToArray</b> () const noexcept</td></tr>
-<tr class="separator:a9d9b81022aaa0b436868031939bcc7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ef1e40476be6ec748b2cb8d1e7235ce"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#ga2222b6d9e40f95ec1d74e1865537863f">ETCPAL_MAC_BYTES</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce">ToArray</a> () const noexcept</td></tr>
+<tr class="memdesc:a9ef1e40476be6ec748b2cb8d1e7235ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a 6-byte std::array representation of a MAC address.  <a href="#a9ef1e40476be6ec748b2cb8d1e7235ce">More...</a><br /></td></tr>
+<tr class="separator:a9ef1e40476be6ec748b2cb8d1e7235ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27909eb1d61b8b261d259be7c70c58dd"><td class="memItemLeft" align="right" valign="top"><a id="a27909eb1d61b8b261d259be7c70c58dd"></a>
 <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mac_addr.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a> () const noexcept</td></tr>
 <tr class="memdesc:a27909eb1d61b8b261d259be7c70c58dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this <a class="el" href="classetcpal_1_1_mac_addr.html" title="A wrapper for the EtcPal MAC address type. ">MacAddr</a> represents a null (all 0's) MAC address. <br /></td></tr>
@@ -273,6 +273,34 @@ Static Public Member Functions</h2></td></tr>
 
 <p>Construct a <a class="el" href="classetcpal_1_1_mac_addr.html" title="A wrapper for the EtcPal MAC address type. ">MacAddr</a> from a string representation. </p>
 <p>See <a class="el" href="group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe" title="Create a MAC address from a string representation. ">etcpal_string_to_mac()</a> for more information. </p>
+
+</div>
+</div>
+<a id="a9ef1e40476be6ec748b2cb8d1e7235ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ef1e40476be6ec748b2cb8d1e7235ce">&#9670;&nbsp;</a></span>ToArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; uint8_t, <a class="el" href="group__etcpal__inet.html#ga2222b6d9e40f95ec1d74e1865537863f">ETCPAL_MAC_BYTES</a> &gt; ToArray </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a 6-byte std::array representation of a MAC address. </p>
+<p>Copies the data into a new array. </p>
 
 </div>
 </div>
