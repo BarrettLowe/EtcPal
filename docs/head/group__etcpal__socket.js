@@ -46,6 +46,7 @@ var group__etcpal__socket =
     [ "ETCPAL_POLL_IN", "group__etcpal__socket.html#ga4e4bec5c7c2860538445ebdba2dd4283", null ],
     [ "ETCPAL_POLL_OOB", "group__etcpal__socket.html#ga1da970a4c0bd353ec963e4bb70c0f8b8", null ],
     [ "ETCPAL_POLL_OUT", "group__etcpal__socket.html#ga04ebfb989375a6cf612d69f229a74954", null ],
+    [ "ETCPAL_POLL_VALID_INPUT_EVENT_MASK", "group__etcpal__socket.html#ga05f5bfa7ea20aa326aa97b2424481d99", null ],
     [ "ETCPAL_SO_BROADCAST", "group__etcpal__socket.html#gab90f6d9eeabe39a57db6b808d24d9bd2", null ],
     [ "ETCPAL_SO_ERROR", "group__etcpal__socket.html#ga20fe86808f28b9a96ee808626e4e3293", null ],
     [ "ETCPAL_SO_KEEPALIVE", "group__etcpal__socket.html#ga085124fd101ed8c2feb6c224d54d0b39", null ],

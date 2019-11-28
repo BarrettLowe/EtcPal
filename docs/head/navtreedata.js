@@ -23,7 +23,7 @@ var NAVTREEINDEX =
 [
 ".html",
 "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadfb4ade13d03ed30f6309d2f130f05f7",
-"group__etcpal__socket.html#ga3ca1dc73415b552ebca00df10e53a5e1"
+"group__etcpal__socket.html#ga305e1fb78f8ad29e562fff5762d9c3c0"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

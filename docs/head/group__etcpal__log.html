@@ -158,26 +158,20 @@ Macros</h2></td></tr>
 <tr class="memitem:ga9c650b00d427b03b6169b18514627eb7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga9c650b00d427b03b6169b18514627eb7">ETCPAL_LOG_NFACILITIES</a>&#160;&#160;&#160;24</td></tr>
 <tr class="memdesc:ga9c650b00d427b03b6169b18514627eb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Current number of facilities.  <a href="#ga9c650b00d427b03b6169b18514627eb7">More...</a><br /></td></tr>
 <tr class="separator:ga9c650b00d427b03b6169b18514627eb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5f4ef29df5ee5bbeb6a34380f37643eb"><td class="memItemLeft" align="right" valign="top"><a id="ga5f4ef29df5ee5bbeb6a34380f37643eb"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_FACMASK</b>&#160;&#160;&#160;0x03f8 /* Mask to extract facility part of a prival. */</td></tr>
-<tr class="separator:ga5f4ef29df5ee5bbeb6a34380f37643eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab60e596c37c275724a2d27c0ef608197"><td class="memItemLeft" align="right" valign="top"><a id="gab60e596c37c275724a2d27c0ef608197"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_FAC</b>(p)&#160;&#160;&#160;(((p)&amp;ETCPAL_LOG_FACMASK) &gt;&gt; 3)</td></tr>
+<tr class="memitem:gab60e596c37c275724a2d27c0ef608197"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gab60e596c37c275724a2d27c0ef608197">ETCPAL_LOG_FAC</a>(p)&#160;&#160;&#160;(((p) &amp; ETCPAL_LOG_FACMASK) &gt;&gt; 3)</td></tr>
+<tr class="memdesc:gab60e596c37c275724a2d27c0ef608197"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the facility part of a prival.  <a href="#gab60e596c37c275724a2d27c0ef608197">More...</a><br /></td></tr>
 <tr class="separator:gab60e596c37c275724a2d27c0ef608197"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab4d549b6160867b8e1bd529e0a8e0289"><td class="memItemLeft" align="right" valign="top"><a id="gab4d549b6160867b8e1bd529e0a8e0289"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_PRIMASK</b>&#160;&#160;&#160;0x07 /* mask to extract priority part (internal) */</td></tr>
-<tr class="separator:gab4d549b6160867b8e1bd529e0a8e0289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga62757cfe0dd5a61600cbeed6777480d1"><td class="memItemLeft" align="right" valign="top"><a id="ga62757cfe0dd5a61600cbeed6777480d1"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_PRI</b>(p)&#160;&#160;&#160;((p) &amp; ETCPAL_LOG_PRIMASK) /* extract priority */</td></tr>
+<tr class="memitem:ga62757cfe0dd5a61600cbeed6777480d1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga62757cfe0dd5a61600cbeed6777480d1">ETCPAL_LOG_PRI</a>(p)&#160;&#160;&#160;((p) &amp; ETCPAL_LOG_PRIMASK)</td></tr>
+<tr class="memdesc:ga62757cfe0dd5a61600cbeed6777480d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract the priority part of a prival.  <a href="#ga62757cfe0dd5a61600cbeed6777480d1">More...</a><br /></td></tr>
 <tr class="separator:ga62757cfe0dd5a61600cbeed6777480d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga443fcc43be128430ebb6d1c82fe6b894"><td class="memItemLeft" align="right" valign="top"><a id="ga443fcc43be128430ebb6d1c82fe6b894"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_MAKEPRI</b>(fac,  pri)&#160;&#160;&#160;(((fac) &lt;&lt; 3) | (pri))</td></tr>
+<tr class="memitem:ga443fcc43be128430ebb6d1c82fe6b894"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga443fcc43be128430ebb6d1c82fe6b894">ETCPAL_LOG_MAKEPRI</a>(fac,  pri)&#160;&#160;&#160;(((fac) &lt;&lt; 3) | (pri))</td></tr>
+<tr class="memdesc:ga443fcc43be128430ebb6d1c82fe6b894"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make a prival from a facility and priority value.  <a href="#ga443fcc43be128430ebb6d1c82fe6b894">More...</a><br /></td></tr>
 <tr class="separator:ga443fcc43be128430ebb6d1c82fe6b894"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga153d45bd7f441311296802b70f704700"><td class="memItemLeft" align="right" valign="top"><a id="ga153d45bd7f441311296802b70f704700"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_MASK</b>(pri)&#160;&#160;&#160;(1 &lt;&lt; (pri)) /* mask for one priority */</td></tr>
+<tr class="memitem:ga153d45bd7f441311296802b70f704700"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga153d45bd7f441311296802b70f704700">ETCPAL_LOG_MASK</a>(pri)&#160;&#160;&#160;(1 &lt;&lt; (pri))</td></tr>
+<tr class="memdesc:ga153d45bd7f441311296802b70f704700"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a priority mask for one priority.  <a href="#ga153d45bd7f441311296802b70f704700">More...</a><br /></td></tr>
 <tr class="separator:ga153d45bd7f441311296802b70f704700"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaecd624f2fc15671bb3e4c01ede198a08"><td class="memItemLeft" align="right" valign="top"><a id="gaecd624f2fc15671bb3e4c01ede198a08"></a>
-#define&#160;</td><td class="memItemRight" valign="bottom"><b>ETCPAL_LOG_UPTO</b>(pri)&#160;&#160;&#160;((1 &lt;&lt; ((pri) + 1)) - 1) /* all priorities through pri */</td></tr>
+<tr class="memitem:gaecd624f2fc15671bb3e4c01ede198a08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gaecd624f2fc15671bb3e4c01ede198a08">ETCPAL_LOG_UPTO</a>(pri)&#160;&#160;&#160;((1 &lt;&lt; ((pri) + 1)) - 1)</td></tr>
+<tr class="memdesc:gaecd624f2fc15671bb3e4c01ede198a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a priority mask for all priorities through pri.  <a href="#gaecd624f2fc15671bb3e4c01ede198a08">More...</a><br /></td></tr>
 <tr class="separator:gaecd624f2fc15671bb3e4c01ede198a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc4fcfbaaffb603d10e2b27f54e122d2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gafc4fcfbaaffb603d10e2b27f54e122d2">ETCPAL_LOG_HOSTNAME_MAX_LEN</a>&#160;&#160;&#160;256u</td></tr>
 <tr class="memdesc:gafc4fcfbaaffb603d10e2b27f54e122d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Max length of the hostname param.  <a href="#gafc4fcfbaaffb603d10e2b27f54e122d2">More...</a><br /></td></tr>
@@ -551,6 +545,26 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
+<a id="gab60e596c37c275724a2d27c0ef608197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab60e596c37c275724a2d27c0ef608197">&#9670;&nbsp;</a></span>ETCPAL_LOG_FAC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_LOG_FAC</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;(((p) &amp; ETCPAL_LOG_FACMASK) &gt;&gt; 3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the facility part of a prival. </p>
+
+</div>
+</div>
 <a id="gaa3ad1dbc725353f2cd49cc55b32f3153"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa3ad1dbc725353f2cd49cc55b32f3153">&#9670;&nbsp;</a></span>ETCPAL_LOG_FTP</h2>
 
@@ -775,6 +789,56 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
+<a id="ga443fcc43be128430ebb6d1c82fe6b894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga443fcc43be128430ebb6d1c82fe6b894">&#9670;&nbsp;</a></span>ETCPAL_LOG_MAKEPRI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_LOG_MAKEPRI</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fac, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pri&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((fac) &lt;&lt; 3) | (pri))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Make a prival from a facility and priority value. </p>
+
+</div>
+</div>
+<a id="ga153d45bd7f441311296802b70f704700"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga153d45bd7f441311296802b70f704700">&#9670;&nbsp;</a></span>ETCPAL_LOG_MASK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_LOG_MASK</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pri</td><td>)</td>
+          <td>&#160;&#160;&#160;(1 &lt;&lt; (pri))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a priority mask for one priority. </p>
+
+</div>
+</div>
 <a id="ga2ee8e585233bc73a2a299fc94230fed4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2ee8e585233bc73a2a299fc94230fed4">&#9670;&nbsp;</a></span>ETCPAL_LOG_MSG_MAX_LEN</h2>
 
@@ -839,6 +903,26 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
+<a id="ga62757cfe0dd5a61600cbeed6777480d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga62757cfe0dd5a61600cbeed6777480d1">&#9670;&nbsp;</a></span>ETCPAL_LOG_PRI</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_LOG_PRI</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">p</td><td>)</td>
+          <td>&#160;&#160;&#160;((p) &amp; ETCPAL_LOG_PRIMASK)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Extract the priority part of a prival. </p>
+
+</div>
+</div>
 <a id="ga1786d1616917fb0bf1315504e14060c4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga1786d1616917fb0bf1315504e14060c4">&#9670;&nbsp;</a></span>ETCPAL_LOG_PROCID_MAX_LEN</h2>
 
@@ -884,6 +968,26 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The maximum length of the timestamp used in syslog and human-readable logging. </p>
+
+</div>
+</div>
+<a id="gaecd624f2fc15671bb3e4c01ede198a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaecd624f2fc15671bb3e4c01ede198a08">&#9670;&nbsp;</a></span>ETCPAL_LOG_UPTO</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_LOG_UPTO</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">pri</td><td>)</td>
+          <td>&#160;&#160;&#160;((1 &lt;&lt; ((pri) + 1)) - 1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a priority mask for all priorities through pri. </p>
 
 </div>
 </div>
@@ -946,10 +1050,10 @@ Log Priority</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(5u <span class="comment">/*PRIVAL*/</span> + 3u <span class="comment">/*Version*/</span> + 1u <span class="comment">/*SP*/</span> + (<a class="code" href="group__etcpal__log.html#ga589d05713f16b04a0337399d5064e7c3">ETCPAL_LOG_TIMESTAMP_LEN</a> - 1u) <span class="comment">/*Timestamp*/</span> + 1u <span class="comment">/*SP*/</span> + \</div><div class="line">   (<a class="code" href="group__etcpal__log.html#gafc4fcfbaaffb603d10e2b27f54e122d2">ETCPAL_LOG_HOSTNAME_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> + (<a class="code" href="group__etcpal__log.html#ga2b336b7e2828f1f9c576fb4a6e357b1a">ETCPAL_LOG_APP_NAME_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> +        \</div><div class="line">   (<a class="code" href="group__etcpal__log.html#ga1786d1616917fb0bf1315504e14060c4">ETCPAL_LOG_PROCID_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> + 1u <span class="comment">/*MSGID*/</span> + 1u <span class="comment">/*SP*/</span> + 1u <span class="comment">/*STRUCTURED-DATA*/</span> + 1u <span class="comment">/*SP*/</span>)</div><div class="ttc" id="group__etcpal__log_html_gafc4fcfbaaffb603d10e2b27f54e122d2"><div class="ttname"><a href="group__etcpal__log.html#gafc4fcfbaaffb603d10e2b27f54e122d2">ETCPAL_LOG_HOSTNAME_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_HOSTNAME_MAX_LEN</div><div class="ttdoc">Max length of the hostname param. </div><div class="ttdef"><b>Definition:</b> log.h:111</div></div>
-<div class="ttc" id="group__etcpal__log_html_ga589d05713f16b04a0337399d5064e7c3"><div class="ttname"><a href="group__etcpal__log.html#ga589d05713f16b04a0337399d5064e7c3">ETCPAL_LOG_TIMESTAMP_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_TIMESTAMP_LEN</div><div class="ttdoc">The maximum length of the timestamp used in syslog and human-readable logging. </div><div class="ttdef"><b>Definition:</b> log.h:121</div></div>
-<div class="ttc" id="group__etcpal__log_html_ga1786d1616917fb0bf1315504e14060c4"><div class="ttname"><a href="group__etcpal__log.html#ga1786d1616917fb0bf1315504e14060c4">ETCPAL_LOG_PROCID_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_PROCID_MAX_LEN</div><div class="ttdoc">Max length of the procid param. </div><div class="ttdef"><b>Definition:</b> log.h:113</div></div>
-<div class="ttc" id="group__etcpal__log_html_ga2b336b7e2828f1f9c576fb4a6e357b1a"><div class="ttname"><a href="group__etcpal__log.html#ga2b336b7e2828f1f9c576fb4a6e357b1a">ETCPAL_LOG_APP_NAME_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_APP_NAME_MAX_LEN</div><div class="ttdoc">Max length of the app_name param. </div><div class="ttdef"><b>Definition:</b> log.h:112</div></div>
+<b>Value:</b><div class="fragment"><div class="line">(5u <span class="comment">/*PRIVAL*/</span> + 3u <span class="comment">/*Version*/</span> + 1u <span class="comment">/*SP*/</span> + (<a class="code" href="group__etcpal__log.html#ga589d05713f16b04a0337399d5064e7c3">ETCPAL_LOG_TIMESTAMP_LEN</a> - 1u) <span class="comment">/*Timestamp*/</span> + 1u <span class="comment">/*SP*/</span> + \</div><div class="line">   (<a class="code" href="group__etcpal__log.html#gafc4fcfbaaffb603d10e2b27f54e122d2">ETCPAL_LOG_HOSTNAME_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> + (<a class="code" href="group__etcpal__log.html#ga2b336b7e2828f1f9c576fb4a6e357b1a">ETCPAL_LOG_APP_NAME_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> +        \</div><div class="line">   (<a class="code" href="group__etcpal__log.html#ga1786d1616917fb0bf1315504e14060c4">ETCPAL_LOG_PROCID_MAX_LEN</a> - 1u) + 1u <span class="comment">/*SP*/</span> + 1u <span class="comment">/*MSGID*/</span> + 1u <span class="comment">/*SP*/</span> + 1u <span class="comment">/*STRUCTURED-DATA*/</span> + 1u <span class="comment">/*SP*/</span>)</div><div class="ttc" id="group__etcpal__log_html_gafc4fcfbaaffb603d10e2b27f54e122d2"><div class="ttname"><a href="group__etcpal__log.html#gafc4fcfbaaffb603d10e2b27f54e122d2">ETCPAL_LOG_HOSTNAME_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_HOSTNAME_MAX_LEN</div><div class="ttdoc">Max length of the hostname param. </div><div class="ttdef"><b>Definition:</b> log.h:115</div></div>
+<div class="ttc" id="group__etcpal__log_html_ga589d05713f16b04a0337399d5064e7c3"><div class="ttname"><a href="group__etcpal__log.html#ga589d05713f16b04a0337399d5064e7c3">ETCPAL_LOG_TIMESTAMP_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_TIMESTAMP_LEN</div><div class="ttdoc">The maximum length of the timestamp used in syslog and human-readable logging. </div><div class="ttdef"><b>Definition:</b> log.h:125</div></div>
+<div class="ttc" id="group__etcpal__log_html_ga1786d1616917fb0bf1315504e14060c4"><div class="ttname"><a href="group__etcpal__log.html#ga1786d1616917fb0bf1315504e14060c4">ETCPAL_LOG_PROCID_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_PROCID_MAX_LEN</div><div class="ttdoc">Max length of the procid param. </div><div class="ttdef"><b>Definition:</b> log.h:117</div></div>
+<div class="ttc" id="group__etcpal__log_html_ga2b336b7e2828f1f9c576fb4a6e357b1a"><div class="ttname"><a href="group__etcpal__log.html#ga2b336b7e2828f1f9c576fb4a6e357b1a">ETCPAL_LOG_APP_NAME_MAX_LEN</a></div><div class="ttdeci">#define ETCPAL_LOG_APP_NAME_MAX_LEN</div><div class="ttdoc">Max length of the app_name param. </div><div class="ttdef"><b>Definition:</b> log.h:116</div></div>
 </div><!-- fragment -->
 <p>The maximum length of the syslog header. </p>
 

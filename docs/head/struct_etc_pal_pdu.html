@@ -136,25 +136,106 @@ $(document).ready(function(){initNavTree('struct_etc_pal_pdu.html','');});
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a106ad8e138ad9d47e5ed03680c6ac6ff"><td class="memItemLeft" align="right" valign="top"><a id="a106ad8e138ad9d47e5ed03680c6ac6ff"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>pvector</b></td></tr>
+<tr class="memitem:a106ad8e138ad9d47e5ed03680c6ac6ff"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_pdu.html#a106ad8e138ad9d47e5ed03680c6ac6ff">pvector</a></td></tr>
+<tr class="memdesc:a106ad8e138ad9d47e5ed03680c6ac6ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the most recent PDU's vector.  <a href="#a106ad8e138ad9d47e5ed03680c6ac6ff">More...</a><br /></td></tr>
 <tr class="separator:a106ad8e138ad9d47e5ed03680c6ac6ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89e577801ef19d4cdca129391395ad8d"><td class="memItemLeft" align="right" valign="top"><a id="a89e577801ef19d4cdca129391395ad8d"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>pheader</b></td></tr>
+<tr class="memitem:a89e577801ef19d4cdca129391395ad8d"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_pdu.html#a89e577801ef19d4cdca129391395ad8d">pheader</a></td></tr>
+<tr class="memdesc:a89e577801ef19d4cdca129391395ad8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the most recent PDU's header.  <a href="#a89e577801ef19d4cdca129391395ad8d">More...</a><br /></td></tr>
 <tr class="separator:a89e577801ef19d4cdca129391395ad8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f9eb29aa10e0d64f27f69db1e90bd07"><td class="memItemLeft" align="right" valign="top"><a id="a2f9eb29aa10e0d64f27f69db1e90bd07"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>pdata</b></td></tr>
+<tr class="memitem:a2f9eb29aa10e0d64f27f69db1e90bd07"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_pdu.html#a2f9eb29aa10e0d64f27f69db1e90bd07">pdata</a></td></tr>
+<tr class="memdesc:a2f9eb29aa10e0d64f27f69db1e90bd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the most recent PDU's data.  <a href="#a2f9eb29aa10e0d64f27f69db1e90bd07">More...</a><br /></td></tr>
 <tr class="separator:a2f9eb29aa10e0d64f27f69db1e90bd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d12e161726566d24a1d0cf6c6b416bb"><td class="memItemLeft" align="right" valign="top"><a id="a3d12e161726566d24a1d0cf6c6b416bb"></a>
-size_t&#160;</td><td class="memItemRight" valign="bottom"><b>datalen</b></td></tr>
+<tr class="memitem:a3d12e161726566d24a1d0cf6c6b416bb"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_pdu.html#a3d12e161726566d24a1d0cf6c6b416bb">datalen</a></td></tr>
+<tr class="memdesc:a3d12e161726566d24a1d0cf6c6b416bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the PDU's data section.  <a href="#a3d12e161726566d24a1d0cf6c6b416bb">More...</a><br /></td></tr>
 <tr class="separator:a3d12e161726566d24a1d0cf6c6b416bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5af45b626c13232f152d7548f29f9f58"><td class="memItemLeft" align="right" valign="top"><a id="a5af45b626c13232f152d7548f29f9f58"></a>
-const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><b>pnextpdu</b></td></tr>
+<tr class="memitem:a5af45b626c13232f152d7548f29f9f58"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_pdu.html#a5af45b626c13232f152d7548f29f9f58">pnextpdu</a></td></tr>
+<tr class="memdesc:a5af45b626c13232f152d7548f29f9f58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the beginning of the next PDU.  <a href="#a5af45b626c13232f152d7548f29f9f58">More...</a><br /></td></tr>
 <tr class="separator:a5af45b626c13232f152d7548f29f9f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Holds state data used when parsing multiple PDUs in a PDU block. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
+</div><h2 class="groupheader">Field Documentation</h2>
+<a id="a3d12e161726566d24a1d0cf6c6b416bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d12e161726566d24a1d0cf6c6b416bb">&#9670;&nbsp;</a></span>datalen</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t datalen</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Length of the PDU's data section. </p>
+
+</div>
+</div>
+<a id="a2f9eb29aa10e0d64f27f69db1e90bd07"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f9eb29aa10e0d64f27f69db1e90bd07">&#9670;&nbsp;</a></span>pdata</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pdata</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the most recent PDU's data. </p>
+
+</div>
+</div>
+<a id="a89e577801ef19d4cdca129391395ad8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89e577801ef19d4cdca129391395ad8d">&#9670;&nbsp;</a></span>pheader</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pheader</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the most recent PDU's header. </p>
+
+</div>
+</div>
+<a id="a5af45b626c13232f152d7548f29f9f58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5af45b626c13232f152d7548f29f9f58">&#9670;&nbsp;</a></span>pnextpdu</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pnextpdu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the beginning of the next PDU. </p>
+
+</div>
+</div>
+<a id="a106ad8e138ad9d47e5ed03680c6ac6ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a106ad8e138ad9d47e5ed03680c6ac6ff">&#9670;&nbsp;</a></span>pvector</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t* pvector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to the most recent PDU's vector. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/etcpal/<a class="el" href="pdu_8h_source.html">pdu.h</a></li>
 </ul>
 </div><!-- contents -->

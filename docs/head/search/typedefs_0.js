@@ -33,7 +33,7 @@ var searchData=
   ['etcpalsockaddr',['EtcPalSockAddr',['../group__etcpal__inet.html#ga0178b5f6d720a2293ef10bb61dcecf7a',1,'inet.h']]],
   ['etcpalsyslogparams',['EtcPalSyslogParams',['../group__etcpal__log.html#ga3961fedc222b8d388ebcb2bbe6e00263',1,'log.h']]],
   ['etcpaltcppreamble',['EtcPalTcpPreamble',['../group__etcpal__rootlayerpdu.html#ga479d29909ff291c75531e5e45de4af11',1,'root_layer_pdu.h']]],
-  ['etcpalthreadparams',['EtcPalThreadParams',['../group__etcpal__thread.html#gabb277d1d3fc2b021ca7513d8af038ed4',1,'thread.dox']]],
+  ['etcpalthreadparams',['EtcPalThreadParams',['../group__etcpal__thread.html#gabb277d1d3fc2b021ca7513d8af038ed4',1,'thread.h']]],
   ['etcpaltimer',['EtcPalTimer',['../group__etcpal__timer.html#gaa8f82d792cb262d907daa7b9586220ad',1,'timer.h']]],
   ['etcpaludppreamble',['EtcPalUdpPreamble',['../group__etcpal__rootlayerpdu.html#gabceea25a6773878d73d5c73cff3413db',1,'root_layer_pdu.h']]],
   ['etcpaluuid',['EtcPalUuid',['../group__etcpal__uuid.html#ga472e79f55f51afda28c54c6967018922',1,'uuid.h']]]
