@@ -145,44 +145,44 @@ using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cla
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a05eee239980486bf36c4f8950d967b3d"><td class="memTemplParams" colspan="2">template&lt;bool B = std::is_default_constructible&lt;T&gt;::value, typename std::enable_if&lt; B, int &gt;::type  = 0&gt; </td></tr>
-<tr class="memitem:a05eee239980486bf36c4f8950d967b3d"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a05eee239980486bf36c4f8950d967b3d">Expected</a> ()</td></tr>
-<tr class="memdesc:a05eee239980486bf36c4f8950d967b3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - enabled if T is default-constructible.  <a href="#a05eee239980486bf36c4f8950d967b3d">More...</a><br /></td></tr>
-<tr class="separator:a05eee239980486bf36c4f8950d967b3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afbcd61d5831db1cae7c98f61c6b487f7"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#afbcd61d5831db1cae7c98f61c6b487f7">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a> &amp;other)=default</td></tr>
-<tr class="memdesc:afbcd61d5831db1cae7c98f61c6b487f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor - enabled if T is copy-constructible.  <a href="#afbcd61d5831db1cae7c98f61c6b487f7">More...</a><br /></td></tr>
-<tr class="separator:afbcd61d5831db1cae7c98f61c6b487f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1e0dc7fef59a1d8b87d22cd586cfcf7"><td class="memItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ad1e0dc7fef59a1d8b87d22cd586cfcf7">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a> &amp;&amp;other)=default</td></tr>
-<tr class="memdesc:ad1e0dc7fef59a1d8b87d22cd586cfcf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor - enabled if T is move-constructible.  <a href="#ad1e0dc7fef59a1d8b87d22cd586cfcf7">More...</a><br /></td></tr>
-<tr class="separator:ad1e0dc7fef59a1d8b87d22cd586cfcf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9218bac8e2e2f3ad495bf4c9f0a6973f"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a9218bac8e2e2f3ad495bf4c9f0a6973f"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a9218bac8e2e2f3ad495bf4c9f0a6973f">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, const U &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; const U &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
-<tr class="memdesc:a9218bac8e2e2f3ad495bf4c9f0a6973f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit conversion copy constructor - enabled for U that can be explicitly converted to T.  <a href="#a9218bac8e2e2f3ad495bf4c9f0a6973f">More...</a><br /></td></tr>
-<tr class="separator:a9218bac8e2e2f3ad495bf4c9f0a6973f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a22a38e2d07ffb1e9295aa2237ada9fc6"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:a22a38e2d07ffb1e9295aa2237ada9fc6"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a22a38e2d07ffb1e9295aa2237ada9fc6">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, const U &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; const U &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
-<tr class="memdesc:a22a38e2d07ffb1e9295aa2237ada9fc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion copy constructor - enabled for U that can be implicitly converted to T.  <a href="#a22a38e2d07ffb1e9295aa2237ada9fc6">More...</a><br /></td></tr>
-<tr class="separator:a22a38e2d07ffb1e9295aa2237ada9fc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3dc47e18317ee5dfe579355d6a43dfe"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:aa3dc47e18317ee5dfe579355d6a43dfe"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#aa3dc47e18317ee5dfe579355d6a43dfe">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; U, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
-<tr class="memdesc:aa3dc47e18317ee5dfe579355d6a43dfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit conversion move constructor - enabled for U that can be explicitly converted to T.  <a href="#aa3dc47e18317ee5dfe579355d6a43dfe">More...</a><br /></td></tr>
-<tr class="separator:aa3dc47e18317ee5dfe579355d6a43dfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab140b28680238373a39161bed5cd002a"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
-<tr class="memitem:ab140b28680238373a39161bed5cd002a"><td class="memTemplItemLeft" align="right" valign="top">constexpr&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ab140b28680238373a39161bed5cd002a">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; U, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
-<tr class="memdesc:ab140b28680238373a39161bed5cd002a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion move constructor - enabled for U that can be implicitly converted to T.  <a href="#ab140b28680238373a39161bed5cd002a">More...</a><br /></td></tr>
-<tr class="separator:ab140b28680238373a39161bed5cd002a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59c942fe4fb741cdd75818afe46aa58e"><td class="memTemplParams" colspan="2">template&lt;typename U  = T&gt; </td></tr>
-<tr class="memitem:a59c942fe4fb741cdd75818afe46aa58e"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a59c942fe4fb741cdd75818afe46aa58e">Expected</a> (U &amp;&amp;<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; U &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)) noexcept(std::is_nothrow_move_constructible&lt; U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)</td></tr>
-<tr class="memdesc:a59c942fe4fb741cdd75818afe46aa58e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from value, explicit.  <a href="#a59c942fe4fb741cdd75818afe46aa58e">More...</a><br /></td></tr>
-<tr class="separator:a59c942fe4fb741cdd75818afe46aa58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30568dad48509352dedb7ba6a16899b4"><td class="memTemplParams" colspan="2">template&lt;typename U  = T&gt; </td></tr>
-<tr class="memitem:a30568dad48509352dedb7ba6a16899b4"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a30568dad48509352dedb7ba6a16899b4">Expected</a> (U &amp;&amp;<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; U &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)) noexcept(std::is_nothrow_move_constructible&lt; U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)</td></tr>
-<tr class="memdesc:a30568dad48509352dedb7ba6a16899b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from value, implicit.  <a href="#a30568dad48509352dedb7ba6a16899b4">More...</a><br /></td></tr>
-<tr class="separator:a30568dad48509352dedb7ba6a16899b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a372215ac699d087a7413d2bba7b47c1c"><td class="memItemLeft" align="right" valign="top"><a id="a372215ac699d087a7413d2bba7b47c1c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a372215ac699d087a7413d2bba7b47c1c">Expected</a> (<a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="el" href="classetcpal_1_1_expected.html#a50623f3a6e41cdc3b27d8658808797c8">error</a>)</td></tr>
-<tr class="memdesc:a372215ac699d087a7413d2bba7b47c1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance containing an error code. <br /></td></tr>
-<tr class="separator:a372215ac699d087a7413d2bba7b47c1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e2d2226ed3d9558528f40d1e8cdb90a"><td class="memTemplParams" colspan="2">template&lt;bool B = std::is_default_constructible&lt;T&gt;::value, typename std::enable_if&lt; B, int &gt;::type  = 0&gt; </td></tr>
+<tr class="memitem:a9e2d2226ed3d9558528f40d1e8cdb90a"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a9e2d2226ed3d9558528f40d1e8cdb90a">Expected</a> ()</td></tr>
+<tr class="memdesc:a9e2d2226ed3d9558528f40d1e8cdb90a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor - enabled if T is default-constructible.  <a href="#a9e2d2226ed3d9558528f40d1e8cdb90a">More...</a><br /></td></tr>
+<tr class="separator:a9e2d2226ed3d9558528f40d1e8cdb90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af47fca6f0a4334c9331b742efa869cb5"><td class="memItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#af47fca6f0a4334c9331b742efa869cb5">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a> &amp;other)=default</td></tr>
+<tr class="memdesc:af47fca6f0a4334c9331b742efa869cb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor - enabled if T is copy-constructible.  <a href="#af47fca6f0a4334c9331b742efa869cb5">More...</a><br /></td></tr>
+<tr class="separator:af47fca6f0a4334c9331b742efa869cb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf3e9a1d1447150ab2f8d6dcdd3e8781"><td class="memItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#abf3e9a1d1447150ab2f8d6dcdd3e8781">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a> &amp;&amp;other)=default</td></tr>
+<tr class="memdesc:abf3e9a1d1447150ab2f8d6dcdd3e8781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor - enabled if T is move-constructible.  <a href="#abf3e9a1d1447150ab2f8d6dcdd3e8781">More...</a><br /></td></tr>
+<tr class="separator:abf3e9a1d1447150ab2f8d6dcdd3e8781"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e78926d166ad8e9d61586963fc078f"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:a76e78926d166ad8e9d61586963fc078f"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a76e78926d166ad8e9d61586963fc078f">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, const U &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; const U &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
+<tr class="memdesc:a76e78926d166ad8e9d61586963fc078f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit conversion copy constructor - enabled for U that can be explicitly converted to T.  <a href="#a76e78926d166ad8e9d61586963fc078f">More...</a><br /></td></tr>
+<tr class="separator:a76e78926d166ad8e9d61586963fc078f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4842b36d4f8813847dfc700633b08f0"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ae4842b36d4f8813847dfc700633b08f0"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ae4842b36d4f8813847dfc700633b08f0">Expected</a> (const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, const U &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; const U &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
+<tr class="memdesc:ae4842b36d4f8813847dfc700633b08f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion copy constructor - enabled for U that can be implicitly converted to T.  <a href="#ae4842b36d4f8813847dfc700633b08f0">More...</a><br /></td></tr>
+<tr class="separator:ae4842b36d4f8813847dfc700633b08f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac20996a0e3daf91215530876a7300f19"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ac20996a0e3daf91215530876a7300f19"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ac20996a0e3daf91215530876a7300f19">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; U, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
+<tr class="memdesc:ac20996a0e3daf91215530876a7300f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Explicit conversion move constructor - enabled for U that can be explicitly converted to T.  <a href="#ac20996a0e3daf91215530876a7300f19">More...</a><br /></td></tr>
+<tr class="separator:ac20996a0e3daf91215530876a7300f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6d89b907f9b5b8773739bb7a1eab687"><td class="memTemplParams" colspan="2">template&lt;typename U &gt; </td></tr>
+<tr class="memitem:ab6d89b907f9b5b8773739bb7a1eab687"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ab6d89b907f9b5b8773739bb7a1eab687">Expected</a> (<a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;other, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_constructible&lt; T, <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; const &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; U, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>))</td></tr>
+<tr class="memdesc:ab6d89b907f9b5b8773739bb7a1eab687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implicit conversion move constructor - enabled for U that can be implicitly converted to T.  <a href="#ab6d89b907f9b5b8773739bb7a1eab687">More...</a><br /></td></tr>
+<tr class="separator:ab6d89b907f9b5b8773739bb7a1eab687"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545cdd9fdc844d352d39aeb345774069"><td class="memTemplParams" colspan="2">template&lt;typename U  = T&gt; </td></tr>
+<tr class="memitem:a545cdd9fdc844d352d39aeb345774069"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a545cdd9fdc844d352d39aeb345774069">Expected</a> (U &amp;&amp;<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;!std::is_convertible&lt; U &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)) noexcept(std::is_nothrow_move_constructible&lt; U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)</td></tr>
+<tr class="memdesc:a545cdd9fdc844d352d39aeb345774069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from value, explicit.  <a href="#a545cdd9fdc844d352d39aeb345774069">More...</a><br /></td></tr>
+<tr class="separator:a545cdd9fdc844d352d39aeb345774069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a8678f6251b90111837a493eef9abe"><td class="memTemplParams" colspan="2">template&lt;typename U  = T&gt; </td></tr>
+<tr class="memitem:ac7a8678f6251b90111837a493eef9abe"><td class="memTemplItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ac7a8678f6251b90111837a493eef9abe">Expected</a> (U &amp;&amp;<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>, ETCPAL_ENABLE_IF_ARG(std::is_constructible&lt; T, U &amp;&amp;&gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> &amp;&amp;std::is_convertible&lt; U &amp;&amp;, T &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)) noexcept(std::is_nothrow_move_constructible&lt; U &gt;::<a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a>)</td></tr>
+<tr class="memdesc:ac7a8678f6251b90111837a493eef9abe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from value, implicit.  <a href="#ac7a8678f6251b90111837a493eef9abe">More...</a><br /></td></tr>
+<tr class="separator:ac7a8678f6251b90111837a493eef9abe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab223fb4af6a34c52a294fb48e37c92c6"><td class="memItemLeft" align="right" valign="top"><a id="ab223fb4af6a34c52a294fb48e37c92c6"></a>
+ETCPAL_CONSTEXPR_14&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ab223fb4af6a34c52a294fb48e37c92c6">Expected</a> (<a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> <a class="el" href="classetcpal_1_1_expected.html#a50623f3a6e41cdc3b27d8658808797c8">error</a>)</td></tr>
+<tr class="memdesc:ab223fb4af6a34c52a294fb48e37c92c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance containing an error code. <br /></td></tr>
+<tr class="separator:ab223fb4af6a34c52a294fb48e37c92c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8da4910031b4040699233168372b0102"><td class="memItemLeft" align="right" valign="top"><a id="a8da4910031b4040699233168372b0102"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a8da4910031b4040699233168372b0102">~Expected</a> ()</td></tr>
 <tr class="memdesc:a8da4910031b4040699233168372b0102"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls the contained value's destructor if and only if <a class="el" href="classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e" title="Whether this Expected instance contains a valid value. If not, contains an error code. ">has_value()</a> is true. <br /></td></tr>
@@ -202,9 +202,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fde1d75aef70226df99291f44c4c7d5"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a9fde1d75aef70226df99291f44c4c7d5">operator*</a> () const &amp;&amp;</td></tr>
 <tr class="memdesc:a9fde1d75aef70226df99291f44c4c7d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#a9fde1d75aef70226df99291f44c4c7d5">More...</a><br /></td></tr>
 <tr class="separator:a9fde1d75aef70226df99291f44c4c7d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b1b0ac2a151c256b031fef21f6651cc"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a4b1b0ac2a151c256b031fef21f6651cc">operator*</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:a4b1b0ac2a151c256b031fef21f6651cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#a4b1b0ac2a151c256b031fef21f6651cc">More...</a><br /></td></tr>
-<tr class="separator:a4b1b0ac2a151c256b031fef21f6651cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec2b0f86ca602b33ae1bbe4e72cd571e"><td class="memItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14 T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#aec2b0f86ca602b33ae1bbe4e72cd571e">operator*</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:aec2b0f86ca602b33ae1bbe4e72cd571e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#aec2b0f86ca602b33ae1bbe4e72cd571e">More...</a><br /></td></tr>
+<tr class="separator:aec2b0f86ca602b33ae1bbe4e72cd571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7990d8e87d9eab2383f94c88c23a6488"><td class="memItemLeft" align="right" valign="top"><a id="a7990d8e87d9eab2383f94c88c23a6488"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a7990d8e87d9eab2383f94c88c23a6488">operator bool</a> () const noexcept</td></tr>
 <tr class="memdesc:a7990d8e87d9eab2383f94c88c23a6488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance inline - evaluates to <a class="el" href="classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e" title="Whether this Expected instance contains a valid value. If not, contains an error code. ">has_value()</a>. <br /></td></tr>
@@ -216,15 +216,15 @@ constexpr <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5
 <tr class="memitem:aa3795c04ad2644e8294f7f028bde5393"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393">value</a> () const &amp;</td></tr>
 <tr class="memdesc:aa3795c04ad2644e8294f7f028bde5393"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#aa3795c04ad2644e8294f7f028bde5393">More...</a><br /></td></tr>
 <tr class="separator:aa3795c04ad2644e8294f7f028bde5393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1db9740321489652d5420f80c57b5643"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a1db9740321489652d5420f80c57b5643">value</a> () &amp;</td></tr>
-<tr class="memdesc:a1db9740321489652d5420f80c57b5643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#a1db9740321489652d5420f80c57b5643">More...</a><br /></td></tr>
-<tr class="separator:a1db9740321489652d5420f80c57b5643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316aefaaaa5e04f8843b07749e04d759"><td class="memItemLeft" align="right" valign="top">T &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a316aefaaaa5e04f8843b07749e04d759">value</a> () &amp;</td></tr>
+<tr class="memdesc:a316aefaaaa5e04f8843b07749e04d759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#a316aefaaaa5e04f8843b07749e04d759">More...</a><br /></td></tr>
+<tr class="separator:a316aefaaaa5e04f8843b07749e04d759"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0677a7aa98cba5e3a267da236f28175"><td class="memItemLeft" align="right" valign="top">constexpr const T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#af0677a7aa98cba5e3a267da236f28175">value</a> () const &amp;&amp;</td></tr>
 <tr class="memdesc:af0677a7aa98cba5e3a267da236f28175"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#af0677a7aa98cba5e3a267da236f28175">More...</a><br /></td></tr>
 <tr class="separator:af0677a7aa98cba5e3a267da236f28175"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab71ecf7b054666c750a48f0249ea7ff1"><td class="memItemLeft" align="right" valign="top">constexpr T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#ab71ecf7b054666c750a48f0249ea7ff1">value</a> () &amp;&amp;</td></tr>
-<tr class="memdesc:ab71ecf7b054666c750a48f0249ea7ff1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#ab71ecf7b054666c750a48f0249ea7ff1">More...</a><br /></td></tr>
-<tr class="separator:ab71ecf7b054666c750a48f0249ea7ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdfb1ce4b51972bd578d02bd8d1daa0c"><td class="memItemLeft" align="right" valign="top">ETCPAL_CONSTEXPR_14 T &amp;&amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#abdfb1ce4b51972bd578d02bd8d1daa0c">value</a> () &amp;&amp;</td></tr>
+<tr class="memdesc:abdfb1ce4b51972bd578d02bd8d1daa0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the underlying value.  <a href="#abdfb1ce4b51972bd578d02bd8d1daa0c">More...</a><br /></td></tr>
+<tr class="separator:abdfb1ce4b51972bd578d02bd8d1daa0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50623f3a6e41cdc3b27d8658808797c8"><td class="memItemLeft" align="right" valign="top">constexpr <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_expected.html#a50623f3a6e41cdc3b27d8658808797c8">error</a> () const noexcept</td></tr>
 <tr class="memdesc:a50623f3a6e41cdc3b27d8658808797c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code.  <a href="#a50623f3a6e41cdc3b27d8658808797c8">More...</a><br /></td></tr>
 <tr class="separator:a50623f3a6e41cdc3b27d8658808797c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -257,12 +257,12 @@ class etcpal::Expected&lt; T &gt;</h3>
 <p><b>Usage</b></p>
 <p><a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> is almost always used as the return type of an API function. Consider a function that either creates a network socket or returns an error.</p>
 <div class="fragment"><div class="line"><a class="code" href="classetcpal_1_1_expected.html">etcpal::Expected&lt;etcpal_socket_t&gt;</a> CreateSocket(<span class="keywordtype">int</span> family, <span class="keywordtype">int</span> type);</div></div><!-- fragment --><p>When using this function, check whether the result contains an error: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> socket_res = CreateSocket(AF_INET, SOCK_STREAM);</div><div class="line"><span class="keywordflow">if</span> (socket_res) <span class="comment">// or socket_res.has_value()</span></div><div class="line">{</div><div class="line">  <a class="code" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket = *socket_res; <span class="comment">// or socket_res.value()</span></div><div class="line">  <span class="comment">// Now use the socket...</span></div><div class="line">}</div><div class="line"><span class="keywordflow">else</span></div><div class="line">{</div><div class="line">  printf(<span class="stringliteral">&quot;CreateSocket failed with result code %d, description &#39;%s&#39;\n&quot;</span>, socket_res.error(),</div><div class="line">         socket_res.result().ToCString());</div><div class="line">}</div></div><!-- fragment --><p><a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">value()</a> throws <a class="el" href="classetcpal_1_1_bad_expected_access.html" title="Exception representing bad access to an Expected instance. ">BadExpectedAccess</a> if the instance does not have a valid value. So you can also use an exception-handling approach:</p>
-<div class="fragment"><div class="line"><span class="keywordflow">try</span></div><div class="line">{</div><div class="line">  <a class="code" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket = CreateSocket(AF_INET, SOCK_STREAM).value();</div><div class="line">}</div><div class="line"><span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="classetcpal_1_1_bad_expected_access.html">etcpal::BadExpectedAccess</a>&amp; e)</div><div class="line">{</div><div class="line">  printf(<span class="stringliteral">&quot;CreateSocket failed with result code %d, description &#39;%s&#39;\n&quot;</span>, e.<a class="code" href="classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269">result</a>().<a class="code" href="classetcpal_1_1_result.html#a3379f90d50bc0858a3c2fb44eb4f5edd">code</a>(),</div><div class="line">         e.<a class="code" href="classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269">result</a>().<a class="code" href="classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e">ToCString</a>());</div><div class="line">}</div></div><!-- fragment --><p>Note that this only works for the <a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">value()</a> function, not any of the other accessors (they assert on the correct state instead).</p>
-<p>Inside functions that return <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a>, you can use implicit conversions from the value type or etcpal_error_t to return success or failure:</p>
+<div class="fragment"><div class="line"><span class="keywordflow">try</span></div><div class="line">{</div><div class="line">  <a class="code" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket = CreateSocket(AF_INET, SOCK_STREAM).value();</div><div class="line">}</div><div class="line"><span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code" href="classetcpal_1_1_bad_expected_access.html">etcpal::BadExpectedAccess</a>&amp; e)</div><div class="line">{</div><div class="line">  printf(<span class="stringliteral">&quot;CreateSocket failed with result code %d, description &#39;%s&#39;\n&quot;</span>, e.<a class="code" href="classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269">result</a>().<a class="code" href="classetcpal_1_1_result.html#a65e890bf700cdd8262c552690a03baad">code</a>(),</div><div class="line">         e.<a class="code" href="classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269">result</a>().<a class="code" href="classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e">ToCString</a>());</div><div class="line">}</div></div><!-- fragment --><p>Note that this only works for the <a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">value()</a> function, not any of the other accessors (they assert on the correct state instead).</p>
+<p>Inside functions that return <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a>, you can use implicit conversions from the value type or <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af" title="A set of error codes that can be returned by library functions. ">etcpal_error_t</a> to return success or failure:</p>
 <div class="fragment"><div class="line"><span class="comment">// Possible implementation of CreateSocket()...</span></div><div class="line"><a class="code" href="classetcpal_1_1_expected.html">etcpal::Expected&lt;etcpal_socket_t&gt;</a> CreateSocket(<span class="keywordtype">int</span> family, <span class="keywordtype">int</span> type)</div><div class="line">{</div><div class="line">   <a class="code" href="group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66">etcpal_socket_t</a> socket;</div><div class="line">   <a class="code" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> res = <a class="code" href="group__etcpal__socket.html#gae0c8d9e036be592eba7db8736c7e1e0f">etcpal_socket</a>(family, type, &amp;socket);</div><div class="line">   <span class="keywordflow">if</span> (res == <a class="code" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div><div class="line">     <span class="keywordflow">return</span> socket; <span class="comment">// Implicitly converted to Expected, has_value() is true</span></div><div class="line">   <span class="keywordflow">else</span></div><div class="line">     <span class="keywordflow">return</span> res; <span class="comment">// Implicitly converted to Expected, has_value() is false</span></div><div class="line">}</div></div><!-- fragment --><p>The <a class="el" href="classetcpal_1_1_expected.html#a6d0e422ee375e26a6b855848674309d5" title="Get the value, or a default value if this Expected contains an error. ">value_or()</a> function can be useful when you want to use a default value in case of an error condition:</p>
 <div class="fragment"><div class="line"><a class="code" href="classetcpal_1_1_expected.html">etcpal::Expected&lt;std::string&gt;</a> ConvertIntToString(<span class="keywordtype">int</span> val);</div><div class="line"><span class="comment">// ...</span></div><div class="line">std::string conversion = ConvertIntToString(arg).value_or(<span class="stringliteral">&quot;0&quot;</span>);</div><div class="line"><span class="comment">// Conversion contains the successful conversion result, or &quot;0&quot; if the conversion failed.</span></div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a05eee239980486bf36c4f8950d967b3d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05eee239980486bf36c4f8950d967b3d">&#9670;&nbsp;</a></span>Expected() <span class="overload">[1/9]</span></h2>
+<a id="a9e2d2226ed3d9558528f40d1e8cdb90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e2d2226ed3d9558528f40d1e8cdb90a">&#9670;&nbsp;</a></span>Expected() <span class="overload">[1/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +271,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -289,8 +289,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="afbcd61d5831db1cae7c98f61c6b487f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afbcd61d5831db1cae7c98f61c6b487f7">&#9670;&nbsp;</a></span>Expected() <span class="overload">[2/9]</span></h2>
+<a id="af47fca6f0a4334c9331b742efa869cb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af47fca6f0a4334c9331b742efa869cb5">&#9670;&nbsp;</a></span>Expected() <span class="overload">[2/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -299,7 +299,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; T &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -318,8 +318,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="ad1e0dc7fef59a1d8b87d22cd586cfcf7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1e0dc7fef59a1d8b87d22cd586cfcf7">&#9670;&nbsp;</a></span>Expected() <span class="overload">[3/9]</span></h2>
+<a id="abf3e9a1d1447150ab2f8d6dcdd3e8781"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf3e9a1d1447150ab2f8d6dcdd3e8781">&#9670;&nbsp;</a></span>Expected() <span class="overload">[3/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -328,7 +328,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; T &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
@@ -347,8 +347,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a9218bac8e2e2f3ad495bf4c9f0a6973f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9218bac8e2e2f3ad495bf4c9f0a6973f">&#9670;&nbsp;</a></span>Expected() <span class="overload">[4/9]</span></h2>
+<a id="a76e78926d166ad8e9d61586963fc078f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76e78926d166ad8e9d61586963fc078f">&#9670;&nbsp;</a></span>Expected() <span class="overload">[4/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -357,7 +357,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em>, </td>
@@ -386,8 +386,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a22a38e2d07ffb1e9295aa2237ada9fc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22a38e2d07ffb1e9295aa2237ada9fc6">&#9670;&nbsp;</a></span>Expected() <span class="overload">[5/9]</span></h2>
+<a id="ae4842b36d4f8813847dfc700633b08f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4842b36d4f8813847dfc700633b08f0">&#9670;&nbsp;</a></span>Expected() <span class="overload">[5/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -396,7 +396,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em>, </td>
@@ -425,8 +425,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="aa3dc47e18317ee5dfe579355d6a43dfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3dc47e18317ee5dfe579355d6a43dfe">&#9670;&nbsp;</a></span>Expected() <span class="overload">[6/9]</span></h2>
+<a id="ac20996a0e3daf91215530876a7300f19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac20996a0e3daf91215530876a7300f19">&#9670;&nbsp;</a></span>Expected() <span class="overload">[6/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -435,7 +435,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em>, </td>
@@ -464,8 +464,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="ab140b28680238373a39161bed5cd002a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab140b28680238373a39161bed5cd002a">&#9670;&nbsp;</a></span>Expected() <span class="overload">[7/9]</span></h2>
+<a id="ab6d89b907f9b5b8773739bb7a1eab687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d89b907f9b5b8773739bb7a1eab687">&#9670;&nbsp;</a></span>Expected() <span class="overload">[7/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,7 +474,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classetcpal_1_1_expected.html">Expected</a>&lt; U &gt; &amp;&amp;&#160;</td>
           <td class="paramname"><em>other</em>, </td>
@@ -503,8 +503,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a59c942fe4fb741cdd75818afe46aa58e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59c942fe4fb741cdd75818afe46aa58e">&#9670;&nbsp;</a></span>Expected() <span class="overload">[8/9]</span></h2>
+<a id="a545cdd9fdc844d352d39aeb345774069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a545cdd9fdc844d352d39aeb345774069">&#9670;&nbsp;</a></span>Expected() <span class="overload">[8/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +513,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype">U &amp;&amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -548,8 +548,8 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a30568dad48509352dedb7ba6a16899b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30568dad48509352dedb7ba6a16899b4">&#9670;&nbsp;</a></span>Expected() <span class="overload">[9/9]</span></h2>
+<a id="ac7a8678f6251b90111837a493eef9abe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a8678f6251b90111837a493eef9abe">&#9670;&nbsp;</a></span>Expected() <span class="overload">[9/9]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -558,7 +558,7 @@ class etcpal::Expected&lt; T &gt;</h3>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 <a class="el" href="classetcpal_1_1_expected.html">Expected</a> </td>
           <td>(</td>
           <td class="paramtype">U &amp;&amp;&#160;</td>
           <td class="paramname"><em>value</em>, </td>
@@ -682,14 +682,14 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a4b1b0ac2a151c256b031fef21f6651cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b1b0ac2a151c256b031fef21f6651cc">&#9670;&nbsp;</a></span>operator*() <span class="overload">[4/4]</span></h2>
+<a id="aec2b0f86ca602b33ae1bbe4e72cd571e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec2b0f86ca602b33ae1bbe4e72cd571e">&#9670;&nbsp;</a></span>operator*() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T &amp;&amp; operator* </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 T &amp;&amp; operator* </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;&amp;</td>
@@ -795,14 +795,14 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="a1db9740321489652d5420f80c57b5643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1db9740321489652d5420f80c57b5643">&#9670;&nbsp;</a></span>value() <span class="overload">[2/4]</span></h2>
+<a id="a316aefaaaa5e04f8843b07749e04d759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316aefaaaa5e04f8843b07749e04d759">&#9670;&nbsp;</a></span>value() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T &amp; value </td>
+          <td class="memname">T &amp; value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;</td>
@@ -845,14 +845,14 @@ class etcpal::Expected&lt; T &gt;</h3>
 
 </div>
 </div>
-<a id="ab71ecf7b054666c750a48f0249ea7ff1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab71ecf7b054666c750a48f0249ea7ff1">&#9670;&nbsp;</a></span>value() <span class="overload">[4/4]</span></h2>
+<a id="abdfb1ce4b51972bd578d02bd8d1daa0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdfb1ce4b51972bd578d02bd8d1daa0c">&#9670;&nbsp;</a></span>value() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr T &amp;&amp; value </td>
+          <td class="memname">ETCPAL_CONSTEXPR_14 T &amp;&amp; value </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> &amp;&amp;</td>
