@@ -25,11 +25,11 @@ var hierarchy =
     [ "EtcPalTimer", "struct_etc_pal_timer.html", null ],
     [ "EtcPalUdpPreamble", "struct_etc_pal_udp_preamble.html", null ],
     [ "EtcPalUuid", "struct_etc_pal_uuid.html", null ],
-    [ "exception", null, [
-      [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", null ]
-    ] ],
     [ "Expected< T >", "classetcpal_1_1_expected.html", null ],
     [ "IpAddr", "classetcpal_1_1_ip_addr.html", null ],
+    [ "logic_error", null, [
+      [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", null ]
+    ] ],
     [ "MacAddr", "classetcpal_1_1_mac_addr.html", null ],
     [ "Mutex", "classetcpal_1_1_mutex.html", null ],
     [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", null ],

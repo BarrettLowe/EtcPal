@@ -8,8 +8,7 @@ var NAVTREEINDEX0 =
 "classes.html":[2,1],
 "classetcpal_1_1_bad_expected_access.html":[1,1,0,1],
 "classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269":[1,1,0,1,1],
-"classetcpal_1_1_bad_expected_access.html#abf843cbb29dec939d0731e491bab6f70":[1,1,0,1,2],
-"classetcpal_1_1_bad_expected_access.html#aeaa52e8c1a8d52deb6030d756f8e8933":[1,1,0,1,0],
+"classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d":[1,1,0,1,0],
 "classetcpal_1_1_expected.html":[1,1,0,2],
 "classetcpal_1_1_expected.html#a05eee239980486bf36c4f8950d967b3d":[1,1,0,2,1],
 "classetcpal_1_1_expected.html#a1db9740321489652d5420f80c57b5643":[1,1,0,2,23],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "files.html":[3,0],
 "functions.html":[2,3,0],
 "functions.html":[2,3,0,0],
-"functions_0x7e.html":[2,3,0,21]
+"functions_0x7e.html":[2,3,0,21],
+"functions_b.html":[2,3,0,1]
 };

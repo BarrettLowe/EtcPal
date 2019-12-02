@@ -144,14 +144,9 @@ Inheritance diagram for BadExpectedAccess:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aeaa52e8c1a8d52deb6030d756f8e8933"><td class="memItemLeft" align="right" valign="top"><a id="aeaa52e8c1a8d52deb6030d756f8e8933"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_bad_expected_access.html#aeaa52e8c1a8d52deb6030d756f8e8933">BadExpectedAccess</a> (<a class="el" href="classetcpal_1_1_result.html">Result</a> res) noexcept</td></tr>
-<tr class="memdesc:aeaa52e8c1a8d52deb6030d756f8e8933"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">Result</a>. <br /></td></tr>
-<tr class="separator:aeaa52e8c1a8d52deb6030d756f8e8933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf843cbb29dec939d0731e491bab6f70"><td class="memItemLeft" align="right" valign="top"><a id="abf843cbb29dec939d0731e491bab6f70"></a>
-virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_bad_expected_access.html#abf843cbb29dec939d0731e491bab6f70">what</a> () const noexcept override</td></tr>
-<tr class="memdesc:abf843cbb29dec939d0731e491bab6f70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Description of this exception type. <br /></td></tr>
-<tr class="separator:abf843cbb29dec939d0731e491bab6f70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae32d1ca3903371ac073eacb510ce597d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d">BadExpectedAccess</a> (<a class="el" href="classetcpal_1_1_result.html">Result</a> res)</td></tr>
+<tr class="memdesc:ae32d1ca3903371ac073eacb510ce597d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct from a <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">Result</a>.  <a href="#ae32d1ca3903371ac073eacb510ce597d">More...</a><br /></td></tr>
+<tr class="separator:ae32d1ca3903371ac073eacb510ce597d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a099c8aae8a56b9f1278b39c45ddb2269"><td class="memItemLeft" align="right" valign="top"><a id="a099c8aae8a56b9f1278b39c45ddb2269"></a>
 <a class="el" href="classetcpal_1_1_result.html">Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269">result</a> () const noexcept</td></tr>
 <tr class="memdesc:a099c8aae8a56b9f1278b39c45ddb2269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code which was contained in the associated <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> when the exception occurred. <br /></td></tr>
@@ -160,7 +155,42 @@ virtual const char *&#160;</td><td class="memItemRight" valign="bottom"><a class
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exception representing bad access to an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance. </p>
 <p>Thrown when attempting to access <a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">Expected&lt;T&gt;::value()</a> when <a class="el" href="classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e" title="Whether this Expected instance contains a valid value. If not, contains an error code. ">Expected&lt;T&gt;::has_value()</a> is false. Holds an <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">etcpal::Result</a>; this allows nicer access to error information than just having the <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af" title="A set of error codes that can be returned by library functions. ">etcpal_error_t</a> code. </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ae32d1ca3903371ac073eacb510ce597d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae32d1ca3903371ac073eacb510ce597d">&#9670;&nbsp;</a></span>BadExpectedAccess()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_bad_expected_access.html">BadExpectedAccess</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classetcpal_1_1_result.html">Result</a>&#160;</td>
+          <td class="paramname"><em>res</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct from a <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">Result</a>. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">May</td><td>throw std::bad_alloc. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/etcpal/cpp/<a class="el" href="cpp_2error_8h_source.html">error.h</a></li>
 </ul>
 </div><!-- contents -->

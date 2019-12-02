@@ -1,6 +1,5 @@
 var NAVTREEINDEX2 =
 {
-"group__etcpal__rbtree.html#ga036f8c0aea4ac2050bd2deb904affed6":[1,0,9,20],
 "group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990":[1,0,9,5],
 "group__etcpal__rbtree.html#ga1347a53b2f8505e22707702f490949e8":[1,0,9,15],
 "group__etcpal__rbtree.html#ga1cd77fc10e7c983be2c12c5f14bc3721":[1,0,9,9],
@@ -249,5 +248,6 @@ var NAVTREEINDEX2 =
 "struct_etc_pal_pdu_constraints.html#a28e18243c88fd99888246e855cc116fd":[1,0,8,2,1],
 "struct_etc_pal_pdu_constraints.html#a64f1d0c53909f30b0aac882348cd32f2":[1,0,8,2,0],
 "struct_etc_pal_poll_event.html":[1,0,10,3],
-"struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[1,0,10,3,3]
+"struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[1,0,10,3,3],
+"struct_etc_pal_poll_event.html#a13b5fda068afcd9c79a54263a9fe7b07":[1,0,10,3,0]
 };

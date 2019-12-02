@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"struct_etc_pal_poll_event.html#a13b5fda068afcd9c79a54263a9fe7b07":[1,0,10,3,0],
 "struct_etc_pal_poll_event.html#a8c1a86a9a616989de3fcced4b0c0e1f7":[1,0,10,3,1],
 "struct_etc_pal_poll_event.html#ad32899ff82c07979513229c6f83c5f05":[1,0,10,3,2],
 "struct_etc_pal_rb_iter.html":[1,0,9,2],

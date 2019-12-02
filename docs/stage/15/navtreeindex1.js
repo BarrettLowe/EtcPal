@@ -1,6 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
 "functions_e.html":[2,3,0,4],
@@ -249,5 +248,6 @@ var NAVTREEINDEX1 =
 "group__etcpal__pdu.html#gafd2b4bca589bf922a6458962a1fa1b49":[1,0,8,16],
 "group__etcpal__pdu.html#gafd5bbef88b8bf08ead91ccf04f44123a":[1,0,8,14],
 "group__etcpal__pdu.html#gaffe297ca0b89d8b738dad159ccae904c":[1,0,8,17],
-"group__etcpal__rbtree.html":[1,0,9]
+"group__etcpal__rbtree.html":[1,0,9],
+"group__etcpal__rbtree.html#ga036f8c0aea4ac2050bd2deb904affed6":[1,0,9,20]
 };
