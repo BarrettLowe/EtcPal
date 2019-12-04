@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['ok',['Ok',['../classetcpal_1_1_result.html#a86e2ff3aef5c292f81528060905b8967',1,'etcpal::Result']]],
-  ['operator_20bool',['operator bool',['../classetcpal_1_1_result.html#a67b76affb3b5d35fa419ac234144038b',1,'etcpal::Result']]],
-  ['operator_3d',['operator=',['../classetcpal_1_1_result.html#ac73855e615ce6a49c8b3042ca7868d72',1,'etcpal::Result::operator=()'],['../classetcpal_1_1_ip_addr.html#af68058aa8f42f5ce7aa01eb92b583bd1',1,'etcpal::IpAddr::operator=()'],['../classetcpal_1_1_sock_addr.html#aa75677e1db37e94003d6f82a25934b0f',1,'etcpal::SockAddr::operator=()'],['../classetcpal_1_1_mac_addr.html#abf74026b5f8428336b974584cbd534df',1,'etcpal::MacAddr::operator=()'],['../classetcpal_1_1_uuid.html#a7e35f2362ce4dd50ce9ce390dc28b48e',1,'etcpal::Uuid::operator=()']]],
-  ['ospreferred',['OsPreferred',['../classetcpal_1_1_uuid.html#a99ed3b8b32434cff4b17cb1acb03c9ce',1,'etcpal::Uuid']]]
+  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html#ae745add18e97ed3960a513f993c4fd39',1,'etcpal::MacAddr::MacAddr()=default'],['../classetcpal_1_1_mac_addr.html#ae3a2a6ea57714e57bf4c829449e2f04e',1,'etcpal::MacAddr::MacAddr(const EtcPalMacAddr &amp;c_mac) noexcept'],['../classetcpal_1_1_mac_addr.html#aff3e9838bb257f6f5c09396be07fa4f3',1,'etcpal::MacAddr::MacAddr(const uint8_t *mac_data) noexcept']]],
+  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
+  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['../classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
 ];

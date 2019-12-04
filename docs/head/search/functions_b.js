@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['../classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['readlock',['ReadLock',['../classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284',1,'etcpal::RwLock']]],
-  ['readunlock',['ReadUnlock',['../classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e',1,'etcpal::RwLock']]],
-  ['result',['Result',['../classetcpal_1_1_result.html#a586e35c43a3c745bd69d9b8546acd2e9',1,'etcpal::Result']]],
-  ['rwlock',['RwLock',['../classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21',1,'etcpal::RwLock']]]
+  ['ok',['Ok',['../classetcpal_1_1_result.html#a466e2e4a2b6c74e6f7c7140579d10a09',1,'etcpal::Result']]],
+  ['operator_20bool',['operator bool',['../classetcpal_1_1_result.html#a7990d8e87d9eab2383f94c88c23a6488',1,'etcpal::Result::operator bool()'],['../classetcpal_1_1_expected.html#a7990d8e87d9eab2383f94c88c23a6488',1,'etcpal::Expected::operator bool()']]],
+  ['operator_2a',['operator*',['../classetcpal_1_1_expected.html#a6573281a3d9396dfc8c2c5f1cca82247',1,'etcpal::Expected::operator*() const &amp;'],['../classetcpal_1_1_expected.html#aef577cb229ef2a9d16ea231ab32bb90d',1,'etcpal::Expected::operator*() &amp;'],['../classetcpal_1_1_expected.html#a9fde1d75aef70226df99291f44c4c7d5',1,'etcpal::Expected::operator*() const &amp;&amp;'],['../classetcpal_1_1_expected.html#aec2b0f86ca602b33ae1bbe4e72cd571e',1,'etcpal::Expected::operator*() &amp;&amp;']]],
+  ['operator_2d_3e',['operator-&gt;',['../classetcpal_1_1_expected.html#a59a8d66ef67871af2a14f8cc08dc1d2e',1,'etcpal::Expected::operator-&gt;() const'],['../classetcpal_1_1_expected.html#a4442b1b9eab40e7939e1e01cdedcb7ae',1,'etcpal::Expected::operator-&gt;()']]],
+  ['operator_3d',['operator=',['../classetcpal_1_1_result.html#aa17ae9a95db6d0224d2280bbb1f8667d',1,'etcpal::Result::operator=()'],['../classetcpal_1_1_ip_addr.html#af68058aa8f42f5ce7aa01eb92b583bd1',1,'etcpal::IpAddr::operator=()'],['../classetcpal_1_1_sock_addr.html#aa75677e1db37e94003d6f82a25934b0f',1,'etcpal::SockAddr::operator=()'],['../classetcpal_1_1_mac_addr.html#abf74026b5f8428336b974584cbd534df',1,'etcpal::MacAddr::operator=()'],['../classetcpal_1_1_uuid.html#a7e35f2362ce4dd50ce9ce390dc28b48e',1,'etcpal::Uuid::operator=()']]],
+  ['ospreferred',['OsPreferred',['../classetcpal_1_1_uuid.html#a99ed3b8b32434cff4b17cb1acb03c9ce',1,'etcpal::Uuid']]]
 ];

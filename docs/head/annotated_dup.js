@@ -1,6 +1,8 @@
 var annotated_dup =
 [
     [ "etcpal", null, [
+      [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", "classetcpal_1_1_bad_expected_access" ],
+      [ "Expected", "classetcpal_1_1_expected.html", "classetcpal_1_1_expected" ],
       [ "IpAddr", "classetcpal_1_1_ip_addr.html", "classetcpal_1_1_ip_addr" ],
       [ "MacAddr", "classetcpal_1_1_mac_addr.html", "classetcpal_1_1_mac_addr" ],
       [ "Mutex", "classetcpal_1_1_mutex.html", "classetcpal_1_1_mutex" ],

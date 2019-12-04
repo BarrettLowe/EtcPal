@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['data',['data',['../classetcpal_1_1_mac_addr.html#a21b8e060baa6eeed3e5e45e6d760b54c',1,'etcpal::MacAddr']]]
+  ['code',['code',['../classetcpal_1_1_result.html#a65e890bf700cdd8262c552690a03baad',1,'etcpal::Result']]]
 ];

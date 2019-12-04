@@ -1,6 +1,16 @@
 var searchData=
 [
-  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html#ae745add18e97ed3960a513f993c4fd39',1,'etcpal::MacAddr::MacAddr()=default'],['../classetcpal_1_1_mac_addr.html#ae3a2a6ea57714e57bf4c829449e2f04e',1,'etcpal::MacAddr::MacAddr(const EtcPalMacAddr &amp;c_mac) noexcept'],['../classetcpal_1_1_mac_addr.html#aff3e9838bb257f6f5c09396be07fa4f3',1,'etcpal::MacAddr::MacAddr(const uint8_t *mac_data) noexcept']]],
-  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
-  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['../classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
+  ['ip',['ip',['../classetcpal_1_1_sock_addr.html#acbb9df748594ef90cf431ae61c84f547',1,'etcpal::SockAddr']]],
+  ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['../group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,'inet.h']]],
+  ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['../group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,'inet.h']]],
+  ['ipaddr',['IpAddr',['../classetcpal_1_1_ip_addr.html#a4a003a4fea5fb690128013fc94677ff5',1,'etcpal::IpAddr::IpAddr() noexcept'],['../classetcpal_1_1_ip_addr.html#aa0ecd73e87259b2e2d5435673c8e5149',1,'etcpal::IpAddr::IpAddr(const EtcPalIpAddr &amp;c_ip) noexcept'],['../classetcpal_1_1_ip_addr.html#a47a9c1b3e45125fac51fa2d28b19beeb',1,'etcpal::IpAddr::IpAddr(uint32_t v4_data) noexcept'],['../classetcpal_1_1_ip_addr.html#a10a0e9f0e89374ef5543a40bb6e9aafb',1,'etcpal::IpAddr::IpAddr(const uint8_t *v6_data) noexcept'],['../classetcpal_1_1_ip_addr.html#abd1c05fc9b5b627f239972390c0bfeab',1,'etcpal::IpAddr::IpAddr(const uint8_t *v6_data, unsigned long scope_id) noexcept']]],
+  ['islinklocal',['IsLinkLocal',['../classetcpal_1_1_ip_addr.html#a211a72caa8aba79efd967fa3114e8c95',1,'etcpal::IpAddr']]],
+  ['isloopback',['IsLoopback',['../classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b',1,'etcpal::IpAddr']]],
+  ['ismulticast',['IsMulticast',['../classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a',1,'etcpal::IpAddr']]],
+  ['isnull',['IsNull',['../classetcpal_1_1_mac_addr.html#a27909eb1d61b8b261d259be7c70c58dd',1,'etcpal::MacAddr::IsNull()'],['../classetcpal_1_1_uuid.html#ac4d637a0dec45d546495c1660c9f6047',1,'etcpal::Uuid::IsNull()']]],
+  ['isok',['IsOk',['../classetcpal_1_1_result.html#a030d244ccd9a40a9f9ac813ea912a639',1,'etcpal::Result']]],
+  ['isv4',['IsV4',['../classetcpal_1_1_ip_addr.html#a77c4dddfd37b29508860336f844cd745',1,'etcpal::IpAddr']]],
+  ['isv6',['IsV6',['../classetcpal_1_1_ip_addr.html#aca9ab0a7348c500efcfa08168dd70f85',1,'etcpal::IpAddr']]],
+  ['isvalid',['IsValid',['../classetcpal_1_1_ip_addr.html#a472f705194218179e9cf26ffb288da6c',1,'etcpal::IpAddr']]],
+  ['iswildcard',['IsWildcard',['../classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr']]]
 ];

@@ -1,9 +1,10 @@
 var searchData=
 [
-  ['_7emutex',['~Mutex',['../classetcpal_1_1_mutex.html#a205e2c334b25cb96e4f1303a4fde6b0c',1,'etcpal::Mutex']]],
-  ['_7emutexguard',['~MutexGuard',['../classetcpal_1_1_mutex_guard.html#a310e9063e3e9794762a2cf28c6148334',1,'etcpal::MutexGuard']]],
-  ['_7ereadguard',['~ReadGuard',['../classetcpal_1_1_read_guard.html#af40fbc4ea83eb91ffa11e2e0a17e5e22',1,'etcpal::ReadGuard']]],
-  ['_7erwlock',['~RwLock',['../classetcpal_1_1_rw_lock.html#a31fcfa6d9b8bcf5a64823de7c0b1313a',1,'etcpal::RwLock']]],
-  ['_7esignal',['~Signal',['../classetcpal_1_1_signal.html#a20038cb30942f02ef70185cdaed0227a',1,'etcpal::Signal']]],
-  ['_7ewriteguard',['~WriteGuard',['../classetcpal_1_1_write_guard.html#afa219384bacf93a154fdb6bf71941d57',1,'etcpal::WriteGuard']]]
+  ['v1',['V1',['../classetcpal_1_1_uuid.html#a81948e83f4876fd61bb771433ec0cfc3',1,'etcpal::Uuid']]],
+  ['v3',['V3',['../classetcpal_1_1_uuid.html#a71d95c31678e670a44669651a2527695',1,'etcpal::Uuid']]],
+  ['v4',['V4',['../classetcpal_1_1_uuid.html#a6c0e58d9c0173c62f95571e65b2ec484',1,'etcpal::Uuid']]],
+  ['v4_5fdata',['v4_data',['../classetcpal_1_1_ip_addr.html#ac916b557b42f871359ce597c4c17556b',1,'etcpal::IpAddr']]],
+  ['v6_5fdata',['v6_data',['../classetcpal_1_1_ip_addr.html#a092dcb96eb18fa8c6526322cd6d62245',1,'etcpal::IpAddr']]],
+  ['value',['value',['../classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393',1,'etcpal::Expected::value() const &amp;'],['../classetcpal_1_1_expected.html#a316aefaaaa5e04f8843b07749e04d759',1,'etcpal::Expected::value() &amp;'],['../classetcpal_1_1_expected.html#af0677a7aa98cba5e3a267da236f28175',1,'etcpal::Expected::value() const &amp;&amp;'],['../classetcpal_1_1_expected.html#abdfb1ce4b51972bd578d02bd8d1daa0c',1,'etcpal::Expected::value() &amp;&amp;']]],
+  ['value_5for',['value_or',['../classetcpal_1_1_expected.html#a6d0e422ee375e26a6b855848674309d5',1,'etcpal::Expected::value_or(U &amp;&amp;def_val) const &amp;'],['../classetcpal_1_1_expected.html#aa673d764741af614d297d71e984e592f',1,'etcpal::Expected::value_or(U &amp;&amp;def_val) &amp;&amp;']]]
 ];
