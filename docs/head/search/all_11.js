@@ -15,5 +15,5 @@ var searchData=
   ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6',1,'etcpal::Mutex']]],
   ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764',1,'etcpal::RwLock']]],
   ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873',1,'etcpal::RwLock']]],
-  ['type',['type',['../struct_etc_pal_ip_addr.html#a89368dca599010efedd3d8ca663d5953',1,'EtcPalIpAddr::type()'],['../classetcpal_1_1_ip_addr.html#a72e87c00e9e7eb9c88fcbd0f030cc59c',1,'etcpal::IpAddr::type()']]]
+  ['type',['type',['../struct_etc_pal_ip_addr.html#a89368dca599010efedd3d8ca663d5953',1,'EtcPalIpAddr::type()'],['../classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::IpAddr::type()']]]
 ];

@@ -1,5 +1,14 @@
 var NAVTREEINDEX3 =
 {
+"struct_etc_pal_pdu.html#a3d12e161726566d24a1d0cf6c6b416bb":[1,0,8,1,0],
+"struct_etc_pal_pdu.html#a5af45b626c13232f152d7548f29f9f58":[1,0,8,1,3],
+"struct_etc_pal_pdu.html#a89e577801ef19d4cdca129391395ad8d":[1,0,8,1,2],
+"struct_etc_pal_pdu_constraints.html":[1,0,8,2],
+"struct_etc_pal_pdu_constraints.html#a28e18243c88fd99888246e855cc116fd":[1,0,8,2,1],
+"struct_etc_pal_pdu_constraints.html#a64f1d0c53909f30b0aac882348cd32f2":[1,0,8,2,0],
+"struct_etc_pal_poll_event.html":[1,0,10,3],
+"struct_etc_pal_poll_event.html#a0f53d287ac7c064d1a49d4bd93ca1cb9":[1,0,10,3,3],
+"struct_etc_pal_poll_event.html#a13b5fda068afcd9c79a54263a9fe7b07":[1,0,10,3,0],
 "struct_etc_pal_poll_event.html#a8c1a86a9a616989de3fcced4b0c0e1f7":[1,0,10,3,1],
 "struct_etc_pal_poll_event.html#ad32899ff82c07979513229c6f83c5f05":[1,0,10,3,2],
 "struct_etc_pal_rb_iter.html":[1,0,9,2],

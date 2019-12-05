@@ -1,5 +1,8 @@
 var NAVTREEINDEX1 =
 {
+"functions.html":[2,3,0,0],
+"functions_0x7e.html":[2,3,0,21],
+"functions_b.html":[2,3,0,1],
 "functions_c.html":[2,3,0,2],
 "functions_d.html":[2,3,0,3],
 "functions_e.html":[2,3,0,4],
@@ -22,6 +25,8 @@ var NAVTREEINDEX1 =
 "functions_vars.html":[2,3,2],
 "functions_w.html":[2,3,0,19],
 "functions_y.html":[2,3,0,20],
+"globals.html":[3,1,0],
+"globals_defs.html":[3,1,1],
 "group__etcpal.html":[1,0],
 "group__etcpal.html#ga0792bdcd2f824009584744db01d7a352":[1,0,24],
 "group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6":[1,0,18],
@@ -38,6 +43,10 @@ var NAVTREEINDEX1 =
 "group__etcpal__bool.html#ga65e9886d74aaee76545e83dd09011727":[1,0,0,1],
 "group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b":[1,0,0,0],
 "group__etcpal__cpp.html":[1,1],
+"group__etcpal__cpp.html#ga27619ac477b23790da36baecb4389ee1":[1,1,4],
+"group__etcpal__cpp.html#ga27619ac477b23790da36baecb4389ee1":[3,0,0,0,0,0,0],
+"group__etcpal__cpp.html#ga598701b6928c77a8c086183a0a1cb9cc":[1,1,5],
+"group__etcpal__cpp.html#ga598701b6928c77a8c086183a0a1cb9cc":[3,0,0,0,0,0,1],
 "group__etcpal__cpp__error.html":[1,1,0],
 "group__etcpal__cpp__inet.html":[1,1,1],
 "group__etcpal__cpp__inet.html#gaf149bcc08653396944a3699b8c5a57c5":[1,1,1,3],
@@ -240,14 +249,5 @@ var NAVTREEINDEX1 =
 "group__etcpal__pdu.html#ga895f3f23d5fc24feeaf6b9222960a7c0":[1,0,8,12],
 "group__etcpal__pdu.html#ga9a351fdaedcae30ce8999e4d9fbaf15e":[1,0,8,18],
 "group__etcpal__pdu.html#gaa6aa65e575ec892582f10af1a312064e":[1,0,8,8],
-"group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509":[1,0,8,7],
-"group__etcpal__pdu.html#gabb06693a6eb3ed13c253c8324f3efbb5":[1,0,8,9],
-"group__etcpal__pdu.html#gac6bd98193bb97a1745a87ef1eddec36e":[1,0,8,5],
-"group__etcpal__pdu.html#gac7b3e21b8c080aea188a2d577fd31d31":[1,0,8,11],
-"group__etcpal__pdu.html#gafb7d5c94b80a01d37fa4ec4edcc833c7":[1,0,8,6],
-"group__etcpal__pdu.html#gafd2b4bca589bf922a6458962a1fa1b49":[1,0,8,16],
-"group__etcpal__pdu.html#gafd5bbef88b8bf08ead91ccf04f44123a":[1,0,8,14],
-"group__etcpal__pdu.html#gaffe297ca0b89d8b738dad159ccae904c":[1,0,8,17],
-"group__etcpal__rbtree.html":[1,0,9],
-"group__etcpal__rbtree.html#ga036f8c0aea4ac2050bd2deb904affed6":[1,0,9,20]
+"group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509":[1,0,8,7]
 };

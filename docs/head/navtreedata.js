@@ -15,7 +15,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", null, [
-      [ "File List", "files.html", "files" ]
+      [ "File List", "files.html", "files" ],
+      [ "Globals", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
     ] ],
     [ "Additional Documentation", "additional_docs.html", "additional_docs" ]
   ] ]
@@ -24,9 +28,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"functions_c.html",
-"group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990",
-"struct_etc_pal_poll_event.html#a8c1a86a9a616989de3fcced4b0c0e1f7"
+"functions.html",
+"group__etcpal__pdu.html#gabb06693a6eb3ed13c253c8324f3efbb5",
+"struct_etc_pal_pdu.html#a3d12e161726566d24a1d0cf6c6b416bb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

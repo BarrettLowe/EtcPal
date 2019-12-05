@@ -10,6 +10,8 @@ var searchData=
   ['etcpal_5fcan_5flog',['etcpal_can_log',['../group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad',1,'etcpal_can_log(const EtcPalLogParams *params, int pri):&#160;log.c'],['../group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad',1,'etcpal_can_log(const EtcPalLogParams *params, int pri):&#160;log.c']]],
   ['etcpal_5fclose',['etcpal_close',['../group__etcpal__socket.html#gaccdfd06b91ca1632a59c68e819270825',1,'socket.h']]],
   ['etcpal_5fconnect',['etcpal_connect',['../group__etcpal__socket.html#gac5de9387d7aab2a7aa0e6c4e1d4fee3b',1,'socket.h']]],
+  ['etcpal_5fconstexpr_5f14',['ETCPAL_CONSTEXPR_14',['../group__etcpal__cpp.html#ga27619ac477b23790da36baecb4389ee1',1,'common.h']]],
+  ['etcpal_5fconstexpr_5f14_5for_5finline',['ETCPAL_CONSTEXPR_14_OR_INLINE',['../group__etcpal__cpp.html#ga598701b6928c77a8c086183a0a1cb9cc',1,'common.h']]],
   ['etcpal_20c_2b_2b_20wrappers',['EtcPal C++ Wrappers',['../group__etcpal__cpp.html',1,'']]],
   ['error_20handling_20_28error_29',['Error Handling (error)',['../group__etcpal__cpp__error.html',1,'']]],
   ['etcpal_5fcreate_5fhuman_5flog_5fstr',['etcpal_create_human_log_str',['../group__etcpal__log.html#gaeb1f0786f9b553d05991a97db73e3dad',1,'etcpal_create_human_log_str(char *buf, size_t buflen, const EtcPalLogTimeParams *time, const char *format,...):&#160;log.c'],['../group__etcpal__log.html#gaeb1f0786f9b553d05991a97db73e3dad',1,'etcpal_create_human_log_str(char *buf, size_t buflen, const EtcPalLogTimeParams *time, const char *format,...):&#160;log.c']]],
