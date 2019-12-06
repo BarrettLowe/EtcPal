@@ -8,7 +8,7 @@
 # - Strawberry Perl (use 'Unix Makefiles' generator)
 # - NMake (comes with VS, but must be in a developer command prompt)
 #
-# Usage: cmake -G "Unix Makefiles" -DCMAKE_TOOLCHAIN_FILE=path/to/this/file ..
+# Usage: cmake -G "NMake Makefiles" -DCMAKE_TOOLCHAIN_FILE=path/to/this/file ..
 
 # Setting these names causes CMake to look in the Platform subdirectory for files called:
 # Platform/VxWorks.cmake

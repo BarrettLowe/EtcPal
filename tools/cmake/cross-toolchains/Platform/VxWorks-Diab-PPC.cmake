@@ -3,7 +3,7 @@
 # everything compiled for this target with this SDK and toolchain.
 
 # the vxworks directory usually exists in C:\WindRiver
-set(VXWORKS_DIR C:\WindRiver)
+set(VXWORKS_DIR C:/WindRiver)
 
 add_compile_options(
 
