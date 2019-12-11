@@ -24,10 +24,10 @@ var group__etcpal__log =
     [ "EtcPalLogParams", "struct_etc_pal_log_params.html", [
       [ "action", "struct_etc_pal_log_params.html#a97b4c2de584d731ffb8d8ce759930691", null ],
       [ "context", "struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0", null ],
-      [ "log_fn", "struct_etc_pal_log_params.html#a878e8584783aed32b30a35697ffa27b5", null ],
+      [ "log_fn", "struct_etc_pal_log_params.html#a9a6659e83ffc5e4e7ab3c5ba5009f4e7", null ],
       [ "log_mask", "struct_etc_pal_log_params.html#ac695d621aaa836a9d13d65a912be9518", null ],
       [ "syslog_params", "struct_etc_pal_log_params.html#a6b5edefad9cb5463180d2f3cc9537c44", null ],
-      [ "time_fn", "struct_etc_pal_log_params.html#aaeb7319ba51e6b5fe1f4df5dea2eabce", null ]
+      [ "time_fn", "struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8", null ]
     ] ],
     [ "ETCPAL_HUMAN_LOG_STR_MAX_LEN", "group__etcpal__log.html#ga0fafd8567d72170461c34b0f4b4cde74", null ],
     [ "ETCPAL_HUMAN_LOG_STR_MIN_LEN", "group__etcpal__log.html#gac2b8a36af28b78d0060a1d89b9b18211", null ],
@@ -73,10 +73,10 @@ var group__etcpal__log =
     [ "ETCPAL_SYSLOG_HEADER_MAX_LEN", "group__etcpal__log.html#ga6463250841fd9f0b87d84574d5ed561f", null ],
     [ "ETCPAL_SYSLOG_STR_MAX_LEN", "group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac", null ],
     [ "ETCPAL_SYSLOG_STR_MIN_LEN", "group__etcpal__log.html#ga2b86d5334ad5c012a7b81ce1e9c90e33", null ],
-    [ "etcpal_log_callback", "group__etcpal__log.html#ga2149ec5b6a6311efd2c235358f3c49c7", null ],
-    [ "etcpal_log_time_fn", "group__etcpal__log.html#ga738d510e7988bf2364ed059fb193a5ae", null ],
+    [ "EtcPalLogCallback", "group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82", null ],
     [ "EtcPalLogParams", "group__etcpal__log.html#gac6a69c52ee1d8dea2aa9d6a90d217050", null ],
     [ "EtcPalLogStrings", "group__etcpal__log.html#gaf51673a8ceea21c025198456ac795a12", null ],
+    [ "EtcPalLogTimeFn", "group__etcpal__log.html#ga3e3f125146999063f5d25dc98686744d", null ],
     [ "EtcPalLogTimeParams", "group__etcpal__log.html#ga3cfc242617ad25826b445fce64b800a0", null ],
     [ "EtcPalSyslogParams", "group__etcpal__log.html#ga3961fedc222b8d388ebcb2bbe6e00263", null ],
     [ "etcpal_log_action_t", "group__etcpal__log.html#ga10855f3c1f3816d0bd5e4687108ea1c5", [
@@ -85,7 +85,7 @@ var group__etcpal__log =
       [ "kEtcPalLogCreateBoth", "group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a8d083dc7d2d4359fd9ce6330b9d4c2bb", null ]
     ] ],
     [ "etcpal_can_log", "group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad", null ],
-    [ "etcpal_create_human_log_str", "group__etcpal__log.html#gaeb1f0786f9b553d05991a97db73e3dad", null ],
+    [ "etcpal_create_human_log_str", "group__etcpal__log.html#gaa2bb79ac403c09c2c05ce3fab966b053", null ],
     [ "etcpal_create_syslog_str", "group__etcpal__log.html#ga066f11ddd10e75d38a379a648d2dcba4", null ],
     [ "etcpal_log", "group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e", null ],
     [ "etcpal_sanitize_syslog_params", "group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318", null ],

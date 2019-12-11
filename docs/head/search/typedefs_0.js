@@ -1,8 +1,6 @@
 var searchData=
 [
   ['etcpal_5ffeatures_5ft',['etcpal_features_t',['../group__etcpal.html#gae77772998c26f45618c26de1e1fc8305',1,'common.h']]],
-  ['etcpal_5flog_5fcallback',['etcpal_log_callback',['../group__etcpal__log.html#ga2149ec5b6a6311efd2c235358f3c49c7',1,'log.h']]],
-  ['etcpal_5flog_5ftime_5ffn',['etcpal_log_time_fn',['../group__etcpal__log.html#ga738d510e7988bf2364ed059fb193a5ae',1,'log.h']]],
   ['etcpal_5fmutex_5ft',['etcpal_mutex_t',['../group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9',1,'lock.dox']]],
   ['etcpal_5fpoll_5fevents_5ft',['etcpal_poll_events_t',['../group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9',1,'socket.h']]],
   ['etcpal_5frwlock_5ft',['etcpal_rwlock_t',['../group__etcpal__rwlock.html#ga5949678b1acff7d9829e257a9bee8d8e',1,'lock.dox']]],
@@ -13,8 +11,10 @@ var searchData=
   ['etcpalgroupreq',['EtcPalGroupReq',['../group__etcpal__socket.html#ga21df9f214a53c2f6b06b15496edfeca8',1,'socket.h']]],
   ['etcpalipaddr',['EtcPalIpAddr',['../group__etcpal__inet.html#ga0f4fa2c5534edc2061c48b7d0a60941f',1,'inet.h']]],
   ['etcpallinger',['EtcPalLinger',['../group__etcpal__socket.html#gaf5335aecd65e931fa0c9dc0ead350978',1,'socket.h']]],
+  ['etcpallogcallback',['EtcPalLogCallback',['../group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82',1,'log.h']]],
   ['etcpallogparams',['EtcPalLogParams',['../group__etcpal__log.html#gac6a69c52ee1d8dea2aa9d6a90d217050',1,'log.h']]],
   ['etcpallogstrings',['EtcPalLogStrings',['../group__etcpal__log.html#gaf51673a8ceea21c025198456ac795a12',1,'log.h']]],
+  ['etcpallogtimefn',['EtcPalLogTimeFn',['../group__etcpal__log.html#ga3e3f125146999063f5d25dc98686744d',1,'log.h']]],
   ['etcpallogtimeparams',['EtcPalLogTimeParams',['../group__etcpal__log.html#ga3cfc242617ad25826b445fce64b800a0',1,'log.h']]],
   ['etcpalmacaddr',['EtcPalMacAddr',['../group__etcpal__inet.html#gac0911b094d33366046d9b947b24cc63f',1,'inet.h']]],
   ['etcpalmempooldesc',['EtcPalMempoolDesc',['../group__etcpal__mempool.html#ga4b65b2221f81b94eba323dc3bd827cd4',1,'mempool.h']]],

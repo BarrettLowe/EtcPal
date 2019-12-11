@@ -4,7 +4,7 @@ var searchData=
   ['timers_20_28timer_29',['Timers (timer)',['../group__etcpal__timer.html',1,'']]],
   ['thread_5fname',['thread_name',['../struct_etc_pal_thread_params.html#af081a07b0c5074db7c1896da8fb72e81',1,'EtcPalThreadParams']]],
   ['thread_5fpriority',['thread_priority',['../struct_etc_pal_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f',1,'EtcPalThreadParams']]],
-  ['time_5ffn',['time_fn',['../struct_etc_pal_log_params.html#aaeb7319ba51e6b5fe1f4df5dea2eabce',1,'EtcPalLogParams']]],
+  ['time_5ffn',['time_fn',['../struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8',1,'EtcPalLogParams']]],
   ['toarray',['ToArray',['../classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce',1,'etcpal::MacAddr']]],
   ['tocstring',['ToCString',['../classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e',1,'etcpal::Result']]],
   ['top',['top',['../struct_etc_pal_rb_iter.html#ab9332a87d0af5aa12cac847eff68b7af',1,'EtcPalRbIter']]],
