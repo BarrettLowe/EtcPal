@@ -134,9 +134,9 @@ $(document).ready(function(){initNavTree('group__etcpal__pdu.html','');});
 <div class="title">pdu (ACN Protocol Family PDUs)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN).  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pdu.h&quot;</span></div></div><!-- fragment --><p>This module handles building and parsing the ACN PDU format as defined in ANSI E1.17, ACN Architecture document, &sect; 2. EtcPal supports a few different ACN protocol family libraries, including sACN and RDMnet, so it's convenient to have this logic here. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
@@ -222,9 +222,6 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <tr class="memdesc:gac7b3e21b8c080aea188a2d577fd31d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the D flag in a PDU flags field.  <a href="#gac7b3e21b8c080aea188a2d577fd31d31">More...</a><br /></td></tr>
 <tr class="separator:gac7b3e21b8c080aea188a2d577fd31d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pdu.h&quot;</span></div></div><!-- fragment --><p>This module handles building and parsing the ACN PDU format as defined in ANSI E1.17, ACN Architecture document, &sect; 2. EtcPal supports a few different ACN protocol family libraries, so it's convenient to have this logic here. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga0c0d07635b8236c97bb21bbd1eb61c8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0c0d07635b8236c97bb21bbd1eb61c8f">&#9670;&nbsp;</a></span>ETCPAL_INIT_PDU</h2>

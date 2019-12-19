@@ -131,9 +131,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="textblock"><h2>Introduction</h2>
 <p>EtcPal is a C-language library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
 <p>EtcPal modules are designed to run with low overhead on embedded platforms, and thus are designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
-<p>To jump right into the documentation, check out the <a class="el" href="group__etcpal.html">Modules Overview</a>.</p>
+<p> 
+To jump right into the documentation, check out the <a href="modules.html">Modules Overview</a>.
+</p>
 <h2>Source Location</h2>
-<p>The sources for EtcPal are located in the heirarchy: </p><div class="fragment"><div class="line">src/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal sources]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal sources]</div><div class="line">  [platform-neutral EtcPal sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line">include/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal headers]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal headers]</div><div class="line">  [platform-neutral EtcPal headers]</div></div><!-- fragment --><p>Include the <code>etcpal/</code> prefix when including an EtcPal header: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Some EtcPal headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
+<p>The sources for EtcPal are located in the heirarchy: </p><div class="fragment"><div class="line">src/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal sources]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line">include/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal headers]</div><div class="line">    cpp/</div><div class="line">      [EtcPal C++ wrappers]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal headers]</div></div><!-- fragment --><p>Include the <code>etcpal/</code> prefix when including an EtcPal header: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Some EtcPal headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
 <h2>Supported Platforms</h2>
 <p>EtcPal distinguishes between two major constructs which provide services to applications. 'OS' targets provide threading, synchronization and other utilities not provided by the C standard library. 'Network' targets provide a network stack.</p>
 <p>EtcPal is currently ported for the following OS targets:</p>
@@ -173,7 +175,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>FreeRTOS<ul>
 <li>Tested back to FreeRTOS 9.0.0. Not guaranteed to work with older versions.</li>
 <li>Optional Features:<ul>
-<li>etcpal_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by FreeRTOS).</li>
+<li>etcpal/uuid: Creation of V1 and V4 UUIDs not implemented (not provided by FreeRTOS).</li>
 </ul>
 </li>
 </ul>
@@ -184,12 +186,12 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ul>
 </li>
 <li>Microsoft Windows<ul>
-<li>Windows XP SP1 or later</li>
+<li>Windows Vista or later</li>
 <li>Windows SDK library dependencies for optional features (if building using CMake, these dependencies are handled automatically):<ul>
-<li>etcpal_netint (network interfaces): Iphlpapi.lib</li>
-<li>etcpal_socket (socket interface): Iphlpapi.lib, Ws2_32.lib</li>
-<li>etcpal_uuid (UUID creation): Rpcrt4.lib</li>
-<li>etcpal_timer (system timers): Winmm.lib</li>
+<li>etcpal/netint (network interfaces): Iphlpapi.lib</li>
+<li>etcpal/socket (socket interface): Iphlpapi.lib, Ws2_32.lib</li>
+<li>etcpal/uuid (UUID creation): Rpcrt4.lib</li>
+<li>etcpal/timer (system timers): Winmm.lib</li>
 </ul>
 </li>
 </ul>
@@ -197,16 +199,16 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>MQX<ul>
 <li>MQX 4.2.0</li>
 <li>Optional Features:<ul>
-<li>etcpal_uuid: Creation of V1 and V4 UUIDs not implemented (not provided by MQX)</li>
+<li>etcpal/uuid: Creation of V1 and V4 UUIDs not implemented (not provided by MQX)</li>
 </ul>
 </li>
 </ul>
 </li>
 <li>Linux<ul>
 <li>Optional Features:<ul>
-<li>etcpal_netint (network interfaces): Linux 2.2, glibc 2.3.3</li>
-<li>etcpal_socket (socket interface): Linux 2.6</li>
-<li>etcpal_uuid (UUID creation): libuuid (if compiling EtcPal, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
+<li>etcpal/netint (network interfaces): Linux 2.2, glibc 2.3.3</li>
+<li>etcpal/socket (socket interface): Linux 2.6</li>
+<li>etcpal/uuid (UUID creation): libuuid (if compiling EtcPal, use <code>sudo apt-get install uuid-dev</code> or the equivalent method for your distribution)</li>
 </ul>
 </li>
 </ul>

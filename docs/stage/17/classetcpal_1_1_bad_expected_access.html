@@ -130,10 +130,10 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_bad_expected_access.ht
 <div class="title">BadExpectedAccess Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__error.html">error (Error Handling)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Exception representing bad access to an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance.  
- <a href="classetcpal_1_1_bad_expected_access.html#details">More...</a></p>
-<div class="dynheader">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>Exception representing bad access to an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance. </p>
+<p>Thrown when attempting to access <a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">Expected&lt;T&gt;::value()</a> when <a class="el" href="classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e" title="Whether this Expected instance contains a valid value. If not, contains an error code. ">Expected&lt;T&gt;::has_value()</a> is false. Holds an <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">etcpal::Result</a>; this allows nicer access to error information than just having the <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af" title="A set of error codes that can be returned by library functions. ">etcpal_error_t</a> code. </p>
+</div><div class="dynheader">
 Inheritance diagram for BadExpectedAccess:</div>
 <div class="dyncontent">
  <div class="center">
@@ -152,10 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a099c8aae8a56b9f1278b39c45ddb2269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the error code which was contained in the associated <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> when the exception occurred. <br /></td></tr>
 <tr class="separator:a099c8aae8a56b9f1278b39c45ddb2269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Exception representing bad access to an <a class="el" href="classetcpal_1_1_expected.html" title="A type representing either a value or an etcpal_error_t code. ">Expected</a> instance. </p>
-<p>Thrown when attempting to access <a class="el" href="classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393" title="Get the underlying value. ">Expected&lt;T&gt;::value()</a> when <a class="el" href="classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e" title="Whether this Expected instance contains a valid value. If not, contains an error code. ">Expected&lt;T&gt;::has_value()</a> is false. Holds an <a class="el" href="classetcpal_1_1_result.html" title="A wrapper class for the EtcPal error type. ">etcpal::Result</a>; this allows nicer access to error information than just having the <a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af" title="A set of error codes that can be returned by library functions. ">etcpal_error_t</a> code. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae32d1ca3903371ac073eacb510ce597d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae32d1ca3903371ac073eacb510ce597d">&#9670;&nbsp;</a></span>BadExpectedAccess()</h2>
 

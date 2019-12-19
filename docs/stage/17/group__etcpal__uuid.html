@@ -134,10 +134,26 @@ $(document).ready(function(){initNavTree('group__etcpal__uuid.html','');});
 <div class="title">uuid (UUIDs)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Type and helper functions for a Universally Unique Identifier (UUID).  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Type and helper functions for a Universally Unique Identifier (UUID). </p>
+<p>UUIDs (per RFC 4122) are used in several libraries supported by EtcPal. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/uuid.h&quot;</span></div></div><!-- fragment --><p>The basic UUID type is quite simple - an array of 16 data bytes. Functions are provided to generate every current UUID type except Version 2, which is very rarely used. Additionally, <a class="el" href="group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10" title="Generate the preferred UUID version of the underlying OS. ">etcpal_generate_os_preferred_uuid()</a> generates the UUID type preferred by the underlying OS, and <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> generates a special type of V5 UUID which can be used to identify embedded devices.</p>
+<p>The basic form of UUID generation is: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_uuid.html">EtcPalUuid</a> uuid;</div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="group__etcpal__uuid.html#ga7a2029b259cc4270fb721b976f21972a">etcpal_generate_v1_uuid</a>(&amp;uuid) == <a class="code" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div><div class="line">{</div><div class="line">  <span class="comment">// uuid now contains a valid Version 1 UUID.</span></div><div class="line">}</div></div><!-- fragment --><p><b>Note:</b> Not all UUID types are available on all systems. V3, V5 and Device UUIDs are guaranteed to be available in all ports of EtcPal, but V1, V4 and os_preferred UUIDs are generally not available on embedded systems:</p>
+<table class="doxtable">
+<tr>
+<th>EtcPal Platform </th><th>V1 </th><th>V3 </th><th>V4 </th><th>V5 </th><th>os_preferred </th><th>device  </th></tr>
+<tr>
+<td>FreeRTOS </td><td>No </td><td>Yes </td><td>No </td><td>Yes </td><td>No </td><td>Yes </td></tr>
+<tr>
+<td>Linux </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td></tr>
+<tr>
+<td>macOS </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td></tr>
+<tr>
+<td>MQX </td><td>No </td><td>Yes </td><td>No </td><td>Yes </td><td>No </td><td>Yes </td></tr>
+<tr>
+<td>Windows </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes </td></tr>
+</table>
+<p>You can also convert UUIDs to and from strings: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_uuid.html">EtcPalUuid</a> uuid;</div><div class="line"><a class="code" href="group__etcpal__uuid.html#ga8da6cbed139b61853a98f41120e73b29">etcpal_string_to_uuid</a>(<span class="stringliteral">&quot;39713ce1-2320-46aa-b602-4977be36e155&quot;</span>, &amp;uuid);</div><div class="line"></div><div class="line"><span class="keywordtype">char</span> str_buf[<a class="code" href="group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div><div class="line"><a class="code" href="group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(&amp;uuid, str_buf);</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a></td></tr>
@@ -201,11 +217,7 @@ Variables</h2></td></tr>
 <tr class="memdesc:gae518c32bbc7d2266568ee9a703bb4f5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A null (all 0's) UUID, used by <a class="el" href="group__etcpal__uuid.html#ga3f7c7f1f596e00536adbefb78899ebd1" title="Determine if a UUID is null. ">ETCPAL_UUID_IS_NULL()</a> for comparison.  <a href="#gae518c32bbc7d2266568ee9a703bb4f5e">More...</a><br /></td></tr>
 <tr class="separator:gae518c32bbc7d2266568ee9a703bb4f5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Type and helper functions for a Universally Unique Identifier (UUID). </p>
-<p>UUIDs (per RFC 4122) are used in several libraries supported by EtcPal. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/uuid.h&quot;</span></div></div><!-- fragment --><p>The basic UUID type is quite simple - an array of 16 data bytes. Functions are provided to generate every current UUID type except Version 2, which is very rarely used.</p>
-<p>The basic form of UUID generation is: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_uuid.html">EtcPalUuid</a> uuid;</div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="group__etcpal__uuid.html#ga7a2029b259cc4270fb721b976f21972a">etcpal_generate_v1_uuid</a>(&amp;uuid) == <a class="code" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div><div class="line">{</div><div class="line">  <span class="comment">// uuid now contains a valid Version 1 UUID.</span></div><div class="line">}</div></div><!-- fragment --><p>You can also convert UUIDs to and from strings: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_uuid.html">EtcPalUuid</a> uuid;</div><div class="line"><a class="code" href="group__etcpal__uuid.html#ga8da6cbed139b61853a98f41120e73b29">etcpal_string_to_uuid</a>(<span class="stringliteral">&quot;39713ce1-2320-46aa-b602-4977be36e155&quot;</span>, &amp;uuid);</div><div class="line"></div><div class="line"><span class="keywordtype">char</span> str_buf[<a class="code" href="group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092">ETCPAL_UUID_STRING_BYTES</a>];</div><div class="line"><a class="code" href="group__etcpal__uuid.html#ga479b00b02ab33cf757e9476ad3286336">etcpal_uuid_to_string</a>(&amp;uuid, str_buf);</div></div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gadfd6e6a51b681c03b6422d1454ddc954"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gadfd6e6a51b681c03b6422d1454ddc954">&#9670;&nbsp;</a></span>ETCPAL_UUID_BYTES</h2>
 

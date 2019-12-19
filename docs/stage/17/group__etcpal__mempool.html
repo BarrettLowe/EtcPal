@@ -130,9 +130,9 @@ $(document).ready(function(){initNavTree('group__etcpal__mempool.html','');});
 <div class="title">mempool (Memory Pools)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Memory pools with fixed-size elements.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Memory pools with fixed-size elements. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/mempool.h&quot;</span></div></div><!-- fragment --><p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a singular type (e.g. <code>MyStruct</code>) or a fixed-size array (e.g. <code>uint8_t[100]</code>). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9" title="The mutex identifier. ">etcpal_mutex_t</a> internally. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -161,9 +161,6 @@ Macros</h2></td></tr>
 <tr class="memdesc:gaa1a695b25f4ea895750e753303eb4f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements currently allocated from a memory pool.  <a href="#gaa1a695b25f4ea895750e753303eb4f85">More...</a><br /></td></tr>
 <tr class="separator:gaa1a695b25f4ea895750e753303eb4f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Memory pools with fixed-size elements. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/mempool.h&quot;</span></div></div><!-- fragment --><p>This module can be used to declare memory pools containing some number of elements of an arbitrary type. Only elements of that type can be allocated from the pool or freed back into it. A pool element can be a singular type (e.g. <code>MyStruct</code>) or a fixed-size array (e.g. <code>uint8_t[100]</code>). Allocations and deallocations are ensured to be thread_safe by an <a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9" title="The mutex identifier. ">etcpal_mutex_t</a> internally. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga3cda8bdb4dc13e12ba5e75ccadb23274"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3cda8bdb4dc13e12ba5e75ccadb23274">&#9670;&nbsp;</a></span>etcpal_mempool_alloc</h2>

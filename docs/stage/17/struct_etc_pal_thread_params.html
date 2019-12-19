@@ -130,10 +130,24 @@ $(document).ready(function(){initNavTree('struct_etc_pal_thread_params.html','')
 <div class="title">EtcPalThreadParams Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__thread.html">thread (Threading)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A set of parameters for an etcpal_thread.  
- <a href="struct_etc_pal_thread_params.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A set of parameters for an etcpal_thread. </p>
+<p>The members of this structure are not all honored on all platforms. Here is a breakdown:</p>
+<table class="doxtable">
+<tr>
+<th>Platform </th><th>Priority Honored </th><th>Stack Size Honored </th><th>Thread Name Honored </th><th>Platform Data Available  </th></tr>
+<tr>
+<td>FreeRTOS </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+<tr>
+<td>Linux </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>macOS </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>MQX </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes, EtcPalThreadParamsMqx </td></tr>
+<tr>
+<td>Windows </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+</table>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a1e440af9e86f7a3c2784c3e2bd687d25"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_thread_params.html#a1e440af9e86f7a3c2784c3e2bd687d25">priority</a></td></tr>
@@ -149,9 +163,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ac7426f48be885f66ad98c90f342f653b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a platform-specific parameter structure.  <a href="#ac7426f48be885f66ad98c90f342f653b">More...</a><br /></td></tr>
 <tr class="separator:ac7426f48be885f66ad98c90f342f653b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of parameters for an etcpal_thread. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="ac7426f48be885f66ad98c90f342f653b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7426f48be885f66ad98c90f342f653b">&#9670;&nbsp;</a></span>platform_data</h2>
 

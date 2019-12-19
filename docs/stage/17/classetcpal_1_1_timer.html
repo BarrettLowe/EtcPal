@@ -130,10 +130,11 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_timer.html','');});
 <div class="title">Timer Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__timer.html">timer (Timers)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A wrapper class for the EtcPal timer type.  
- <a href="classetcpal_1_1_timer.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A wrapper class for the EtcPal timer type. </p>
+<p>See the description for <a class="el" href="group__etcpal__timer.html">timer (Timers)</a> for details about the time points and intervals used by this class.</p>
+<p>Use this class to time an interval.</p>
+<div class="fragment"><div class="line"><a class="code" href="classetcpal_1_1_timer.html">etcpal::Timer</a> timer(100); <span class="comment">// Start a 100-millisecond timer.</span></div><div class="line"></div><div class="line"><span class="comment">// Some time later...</span></div><div class="line">uint32_t elapsed = timer.GetElapsed(); <span class="comment">// How many milliseconds since the timer was started</span></div><div class="line">uint32_t remaining = timer.GetRemaining(); <span class="comment">// How much time is remaining in the interval.</span></div><div class="line"><span class="keywordtype">bool</span> is_expired = timer.IsExpired(); <span class="comment">// Whether the interval has expired</span></div><div class="line"></div><div class="line">timer.Reset(); <span class="comment">// Reset the timer for another 100-millisecond interval</span></div><div class="line"><span class="comment">// Or</span></div><div class="line">timer.Start(1000); <span class="comment">// Reuse the timer for a different interval, in this case 1 second.</span></div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a17896e888578cea83217f4bbef07559a"><td class="memItemLeft" align="right" valign="top"><a id="a17896e888578cea83217f4bbef07559a"></a>
@@ -188,11 +189,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:a77ebf418c2f554f19db18aa5adcd0366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the timer while keeping the same interval. <br /></td></tr>
 <tr class="separator:a77ebf418c2f554f19db18aa5adcd0366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for the EtcPal timer type. </p>
-<p>See the description for <a class="el" href="group__etcpal__timer.html">timer (Timers)</a> for details about the time points and intervals used by this class.</p>
-<p>Use this class to time an interval.</p>
-<div class="fragment"><div class="line"><a class="code" href="classetcpal_1_1_timer.html">etcpal::Timer</a> timer(100); <span class="comment">// Start a 100-millisecond timer.</span></div><div class="line"></div><div class="line"><span class="comment">// Some time later...</span></div><div class="line">uint32_t elapsed = timer.GetElapsed(); <span class="comment">// How many milliseconds since the timer was started</span></div><div class="line">uint32_t remaining = timer.GetRemaining(); <span class="comment">// How much time is remaining in the interval.</span></div><div class="line"><span class="keywordtype">bool</span> is_expired = timer.IsExpired(); <span class="comment">// Whether the interval has expired</span></div><div class="line"></div><div class="line">timer.Reset(); <span class="comment">// Reset the timer for another 100-millisecond interval</span></div><div class="line"><span class="comment">// Or</span></div><div class="line">timer.Start(1000); <span class="comment">// Reuse the timer for a different interval, in this case 1 second.</span></div></div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3e8095b413fff42c74287c5b8fcf17d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac3e8095b413fff42c74287c5b8fcf17d">&#9670;&nbsp;</a></span>Start()</h2>
 

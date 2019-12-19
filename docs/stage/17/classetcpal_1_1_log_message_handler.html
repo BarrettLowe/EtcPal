@@ -130,10 +130,10 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_log_message_handler.ht
 <div class="title">LogMessageHandler Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__log.html">log (Logging)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>An interface which handles log messages.  
- <a href="classetcpal_1_1_log_message_handler.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>An interface which handles log messages. </p>
+<p>Users of the <a class="el" href="classetcpal_1_1_logger.html" title="A class for dispatching log messages. ">Logger</a> class must provide a class that derives from <a class="el" href="classetcpal_1_1_log_message_handler.html" title="An interface which handles log messages. ">LogMessageHandler</a> to handle the <a class="el" href="classetcpal_1_1_logger.html" title="A class for dispatching log messages. ">Logger</a>'s output. <a class="el" href="classetcpal_1_1_log_message_handler.html" title="An interface which handles log messages. ">LogMessageHandler</a> has two jobs: getting a current timestamp to apply to log messages, and handling the final dispatched log message. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7decf0de3a269411596b20905a8c8664"><td class="memItemLeft" align="right" valign="top"><a id="a7decf0de3a269411596b20905a8c8664"></a>
@@ -144,10 +144,7 @@ virtual <a class="el" href="struct_etc_pal_log_time_params.html">EtcPalLogTimePa
 <tr class="memdesc:a9d89d39c4e9149f340fe950da112ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define this function to handle log messages and determine what to do with them.  <a href="#a9d89d39c4e9149f340fe950da112ec6c">More...</a><br /></td></tr>
 <tr class="separator:a9d89d39c4e9149f340fe950da112ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>An interface which handles log messages. </p>
-<p>Users of the <a class="el" href="classetcpal_1_1_logger.html" title="A class for dispatching log messages. ">Logger</a> class must provide a class that derives from <a class="el" href="classetcpal_1_1_log_message_handler.html" title="An interface which handles log messages. ">LogMessageHandler</a> to handle the <a class="el" href="classetcpal_1_1_logger.html" title="A class for dispatching log messages. ">Logger</a>'s output. <a class="el" href="classetcpal_1_1_log_message_handler.html" title="An interface which handles log messages. ">LogMessageHandler</a> has two jobs: getting a current timestamp to apply to log messages, and handling the final dispatched log message. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a9d89d39c4e9149f340fe950da112ec6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d89d39c4e9149f340fe950da112ec6c">&#9670;&nbsp;</a></span>HandleLogMessage()</h2>
 

@@ -130,10 +130,11 @@ $(document).ready(function(){initNavTree('group__etcpal__pack.html','');});
 <div class="title">pack (Buffer Packing and Unpacking)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Platform- and endianness-independent buffer packing and unpacking.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Platform- and endianness-independent buffer packing and unpacking. </p>
+<p>For 16- and 32-bit integer packing and unpacking: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pack.h&quot;</span></div></div><!-- fragment --><p> For 64-bit integer packing and unpacking: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pack64.h&quot;</span></div></div><!-- fragment --><p>This module defines macros for packing and unpacking integer types to/from a byte buffer. They are architected in such a way that the endianness of the integer in the buffer is always known, regardless of the endianness of your platform.</p>
+<p>For example:</p>
+<div class="fragment"><div class="line">uint8_t buf[4];</div><div class="line"><a class="code" href="group__etcpal__pack.html#gab516d6a148228ae6d76de7beb12e60ec">etcpal_pack_32b</a>(buf, 0x11223344); <span class="comment">// Pack 32-bit value, big-endian</span></div><div class="line"></div><div class="line"><span class="comment">// buf now contains { 0x11, 0x22, 0x33, 0x44 }</span></div><div class="line"></div><div class="line">uint32_t val = <a class="code" href="group__etcpal__pack.html#gaac2718bc037c1fb14fc08aa8976b3e0f">etcpal_upack_32b</a>(&amp;buf); <span class="comment">// Unpack 32-bit value, big-endian</span></div><div class="line"><a class="code" href="group__etcpal__pack.html#gacc712186e152a6d7c03cc5f8af5a1cf2">etcpal_pack_32l</a>(&amp;buf, val); <span class="comment">// Pack 32-bit value, little-endian</span></div><div class="line"></div><div class="line"><span class="comment">// buf now contains { 0x44, 0x33, 0x22, 0x11 }</span></div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:ga0880292ba3f725fb8085543b2d423be4"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pack.html#ga0880292ba3f725fb8085543b2d423be4">etcpal_upack_16b</a> (const uint8_t *buf)</td></tr>
@@ -173,11 +174,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gaf60d2ae433f57f6cf14f6e54c3aa3a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a uint64_t to a known little-endian buffer.  <a href="#gaf60d2ae433f57f6cf14f6e54c3aa3a63">More...</a><br /></td></tr>
 <tr class="separator:gaf60d2ae433f57f6cf14f6e54c3aa3a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Platform- and endianness-independent buffer packing and unpacking. </p>
-<p>For 16- and 32-bit integer packing and unpacking: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pack.h&quot;</span></div></div><!-- fragment --><p> For 64-bit integer packing and unpacking: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pack64.h&quot;</span></div></div><!-- fragment --><p>This module defines macros for packing and unpacking integer types to/from a byte buffer. They are architected in such a way that the endianness of the integer in the buffer is always known, regardless of the endianness of your platform.</p>
-<p>For example:</p>
-<div class="fragment"><div class="line">uint8_t buf[4];</div><div class="line"><a class="code" href="group__etcpal__pack.html#gab516d6a148228ae6d76de7beb12e60ec">etcpal_pack_32b</a>(buf, 0x11223344); <span class="comment">// Pack 32-bit value, big-endian</span></div><div class="line"></div><div class="line"><span class="comment">// buf now contains { 0x11, 0x22, 0x33, 0x44 }</span></div><div class="line"></div><div class="line">uint32_t val = <a class="code" href="group__etcpal__pack.html#gaac2718bc037c1fb14fc08aa8976b3e0f">etcpal_upack_32b</a>(&amp;buf); <span class="comment">// Unpack 32-bit value, big-endian</span></div><div class="line"><a class="code" href="group__etcpal__pack.html#gacc712186e152a6d7c03cc5f8af5a1cf2">etcpal_pack_32l</a>(&amp;buf, val); <span class="comment">// Pack 32-bit value, little-endian</span></div><div class="line"></div><div class="line"><span class="comment">// buf now contains { 0x44, 0x33, 0x22, 0x11 }</span></div></div><!-- fragment --> <h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="ga2902019cf1a188b98606319d43ed08a5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga2902019cf1a188b98606319d43ed08a5">&#9670;&nbsp;</a></span>etcpal_pack_16b()</h2>
 

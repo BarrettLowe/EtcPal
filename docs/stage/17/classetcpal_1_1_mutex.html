@@ -130,10 +130,11 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_mutex.html','');});
 <div class="title">Mutex Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A wrapper class for the EtcPal mutex type.  
- <a href="classetcpal_1_1_mutex.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A wrapper class for the EtcPal mutex type. </p>
+<p>Note: The <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a> functions are not normally used directly - prefer usage of the RAII type <a class="el" href="classetcpal_1_1_mutex_guard.html" title="Lock guard around a mutex. ">etcpal::MutexGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>.</p>
+<p>See <a class="el" href="group__etcpal__mutex.html">Mutexes</a> for more information. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b5dfbd24f5bc4c03b24b2da362f66d5"><td class="memItemLeft" align="right" valign="top"><a id="a4b5dfbd24f5bc4c03b24b2da362f66d5"></a>
@@ -170,11 +171,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a969165b5fad27bd7ae7a693703124645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the underlying etcpal_mutex_t type. <br /></td></tr>
 <tr class="separator:a969165b5fad27bd7ae7a693703124645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for the EtcPal mutex type. </p>
-<p>Note: The <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a> functions are not normally used directly - prefer usage of the RAII type <a class="el" href="classetcpal_1_1_mutex_guard.html" title="Lock guard around a mutex. ">etcpal::MutexGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>.</p>
-<p>See <a class="el" href="group__etcpal__mutex.html">Mutexes</a> for more information. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a747fd95916e116a6ed37cc641e394c69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a747fd95916e116a6ed37cc641e394c69">&#9670;&nbsp;</a></span>Lock()</h2>
 

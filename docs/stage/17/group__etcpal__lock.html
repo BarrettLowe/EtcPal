@@ -130,9 +130,13 @@ $(document).ready(function(){initNavTree('group__etcpal__lock.html','');});
 <div class="title">lock (Locks and Synchronization)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Platform-neutral locks, mutexes and signals.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Platform-neutral locks, mutexes and signals. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Currently provides definitions for the following synchronization primitives:</p><ul>
+<li>Mutexes: A mutual-exclusion lock that can only be held by a single thread at a time.</li>
+<li>Signals: A method of synchronizing two or more threads around an event.</li>
+<li>Read-Write Locks: A lock which can be held either for shared or exclusive access. </li>
+</ul>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
@@ -146,13 +150,6 @@ Modules</h2></td></tr>
 <tr class="memdesc:group__etcpal__rwlock"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reader-writer lock objects. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Platform-neutral locks, mutexes and signals. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Currently provides definitions for the following synchronization primitives:</p><ul>
-<li>Mutexes: A mutual-exclusion lock that can only be held by a single thread at a time.</li>
-<li>Signals: A method of synchronizing two or more threads around an event.</li>
-<li>Read-Write Locks: A lock which can be held either for shared or exclusive access. </li>
-</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

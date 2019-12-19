@@ -1,4 +1,4 @@
-var annotated_dup =
+var annotated =
 [
     [ "etcpal", null, [
       [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", "classetcpal_1_1_bad_expected_access" ],

@@ -3,16 +3,14 @@ var NAVTREE =
   [ "EtcPal", "index.html", [
     [ "ETC Platform Abstraction Layer", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
-      ] ]
+    [ "Data Structures", "annotated.html", "annotated" ],
+    [ "Data Structure Index", "classes.html", null ],
+    [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+    [ "Data Fields", "functions.html", [
+      [ "All", "functions.html", "functions_dup" ],
+      [ "Functions", "functions_func.html", "functions_func" ],
+      [ "Variables", "functions_vars.html", null ],
+      [ "Typedefs", "functions_type.html", null ]
     ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],

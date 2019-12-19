@@ -131,9 +131,24 @@ $(document).ready(function(){initNavTree('group__etcpal__signal.html','');});
 <div class="title">Signals<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Signal objects.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Signal objects. </p>
+<p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> blocks until <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> is called.</p>
+<p>etcpal_signal implementations use the following constructs under the hood on various platforms:</p>
+<table class="doxtable">
+<tr>
+<th>On: </th><th>etcpal_mutex uses:  </th></tr>
+<tr>
+<td>FreeRTOS </td><td><a href="https://www.freertos.org/Embedded-RTOS-Binary-Semaphores.html">Binary Semaphores</a> </td></tr>
+<tr>
+<td>Linux </td><td><a href="https://linux.die.net/man/3/pthread_cond_init">pthread_cond</a> </td></tr>
+<tr>
+<td>macOS </td><td><a href="https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/pthread_cond_init.3.html">pthread_cond</a> </td></tr>
+<tr>
+<td>MQX </td><td>Lightweight Events </td></tr>
+<tr>
+<td>Windows </td><td><a href="https://docs.microsoft.com/en-us/windows/desktop/sync/using-event-objects">Event objects</a> </td></tr>
+</table>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -158,24 +173,6 @@ Functions</h2></td></tr>
 <tr class="memitem:ga4ecc28a0f67939859d91c8e9e75701e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#ga4ecc28a0f67939859d91c8e9e75701e4">etcpal_signal_destroy</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id)</td></tr>
 <tr class="memdesc:ga4ecc28a0f67939859d91c8e9e75701e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a signal object.  <a href="#ga4ecc28a0f67939859d91c8e9e75701e4">More...</a><br /></td></tr>
 <tr class="separator:ga4ecc28a0f67939859d91c8e9e75701e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Signal objects. </p>
-<p>Sometimes also referred to as a binary semaphore or event. Used for thread synchronization; a call to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> blocks until <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> is called.</p>
-<p>etcpal_signal implementations use the following constructs under the hood on various platforms:</p>
-<table class="doxtable">
-<tr>
-<th>On: </th><th>etcpal_mutex uses:  </th></tr>
-<tr>
-<td>FreeRTOS </td><td><a href="https://www.freertos.org/Embedded-RTOS-Binary-Semaphores.html">Binary Semaphores</a> </td></tr>
-<tr>
-<td>Linux </td><td><a href="https://linux.die.net/man/3/pthread_cond_init">pthread_cond</a> </td></tr>
-<tr>
-<td>macOS </td><td><a href="https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/pthread_cond_init.3.html">pthread_cond</a> </td></tr>
-<tr>
-<td>MQX </td><td>Lightweight Events </td></tr>
-<tr>
-<td>Windows </td><td><a href="https://docs.microsoft.com/en-us/windows/desktop/sync/using-event-objects">Event objects</a> </td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gab450fff060bfcede49357b2e00357669"></a>

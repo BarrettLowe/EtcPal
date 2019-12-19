@@ -130,10 +130,10 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_write_guard.html','');
 <div class="title">WriteGuard Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Write lock guard around a read-write lock.  
- <a href="classetcpal_1_1_write_guard.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>Write lock guard around a read-write lock. </p>
+<p>Write lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_write_guard.html">etcpal::WriteGuard</a> write_lock(rwlock_);</div><div class="line">  <span class="comment">// Do critical write operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5d3c3b364610fe2ff624abb97ea0ebc"><td class="memItemLeft" align="right" valign="top"><a id="ae5d3c3b364610fe2ff624abb97ea0ebc"></a>
@@ -164,10 +164,7 @@ Lock guard classes</h2></td></tr>
 <tr class="memdesc:afa219384bacf93a154fdb6bf71941d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the write lock upon going out-of-scope. <br /></td></tr>
 <tr class="separator:afa219384bacf93a154fdb6bf71941d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Write lock guard around a read-write lock. </p>
-<p>Write lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_write_guard.html">etcpal::WriteGuard</a> write_lock(rwlock_);</div><div class="line">  <span class="comment">// Do critical write operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0c3e55817a2955c086af3a033db5105a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c3e55817a2955c086af3a033db5105a">&#9670;&nbsp;</a></span>WriteGuard() <span class="overload">[1/2]</span></h2>
 

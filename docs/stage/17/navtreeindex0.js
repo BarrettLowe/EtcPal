@@ -1,11 +1,11 @@
 var NAVTREEINDEX0 =
 {
-".html":[2,0,0],
-"acn__prot_8h_source.html":[3,0,0,0,1],
-"additional_docs.html":[4],
-"annotated.html":[2,0],
-"bool_8h_source.html":[3,0,0,0,2],
-"classes.html":[2,1],
+".html":[2,0],
+"acn__prot_8h_source.html":[6,0,0,0,1],
+"additional_docs.html":[7],
+"annotated.html":[2],
+"bool_8h_source.html":[6,0,0,0,2],
+"classes.html":[3],
 "classetcpal_1_1_bad_expected_access.html":[1,1,0,1],
 "classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269":[1,1,0,1,1],
 "classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d":[1,1,0,1,0],
@@ -246,8 +246,8 @@ var NAVTREEINDEX0 =
 "classetcpal_1_1_write_guard.html#ae5d3c3b364610fe2ff624abb97ea0ebc":[1,1,2,5,3],
 "classetcpal_1_1_write_guard.html#ae9a26abf82fe4ac1482c7ef05fd256f9":[1,1,2,5,6],
 "classetcpal_1_1_write_guard.html#afa219384bacf93a154fdb6bf71941d57":[1,1,2,5,2],
-"common_8h_source.html":[3,0,0,0,3],
-"cpp_2common_8h.html":[3,0,0,0,0,0],
-"cpp_2common_8h_source.html":[3,0,0,0,0,0],
-"cpp_2error_8h.html":[3,0,0,0,0,1]
+"common_8h_source.html":[6,0,0,0,3],
+"cpp_2common_8h.html":[6,0,0,0,0,0],
+"cpp_2common_8h_source.html":[6,0,0,0,0,0],
+"cpp_2error_8h.html":[6,0,0,0,0,1]
 };
