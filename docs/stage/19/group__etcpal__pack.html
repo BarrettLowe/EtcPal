@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 <p>Pack a uint16_t to a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint16_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint16_t; must be at least 2 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint16_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -241,7 +241,7 @@ Functions</h2></td></tr>
 <p>Pack a uint16_t to a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint16_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint16_t; must be at least 2 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint16_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -278,7 +278,7 @@ Functions</h2></td></tr>
 <p>Pack a uint32_t to a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint32_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint32_t; must be at least 4 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint32_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -315,7 +315,7 @@ Functions</h2></td></tr>
 <p>Pack a uint32_t to a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint32_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint32_t; must be at least 4 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint32_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -352,7 +352,7 @@ Functions</h2></td></tr>
 <p>Pack a uint64_t to a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint64_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint64_t; must be at least 8 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint64_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -389,7 +389,7 @@ Functions</h2></td></tr>
 <p>Pack a uint64_t to a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint64_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer into which to pack a uint64_t; must be at least 8 bytes in size. </td></tr>
     <tr><td class="paramname">val</td><td>uint64_t value to pack into the buffer. </td></tr>
   </table>
   </dd>
@@ -416,7 +416,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint16_t from a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint16_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint16_t; must be at least 2 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -443,7 +443,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint16_t from a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint16_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint16_t; must be at least 2 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -470,7 +470,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint32_t from a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint32_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint32_t; must be at least 4 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -497,7 +497,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint32_t from a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint32_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint32_t; must be at least 4 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -524,7 +524,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint64_t from a known big-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint64_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint64_t; must be at least 8 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
@@ -551,7 +551,7 @@ Functions</h2></td></tr>
 <p>Unpack a uint64_t from a known little-endian buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint64_t. </td></tr>
+    <tr><td class="paramname">buf</td><td>Pointer to the buffer from which to unpack a uint64_t; must be at least 8 bytes in size. </td></tr>
   </table>
   </dd>
 </dl>
