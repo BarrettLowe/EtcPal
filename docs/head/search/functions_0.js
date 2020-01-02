@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['badexpectedaccess',['BadExpectedAccess',['../classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d',1,'etcpal::BadExpectedAccess']]]
+  ['alert',['Alert',['../classetcpal_1_1_logger.html#a830c42c8d3d96a385510ae78142831e8',1,'etcpal::Logger']]]
 ];

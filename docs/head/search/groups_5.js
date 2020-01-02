@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['internet_20addressing_20_28inet_29',['Internet Addressing (inet)',['../group__etcpal__cpp__inet.html',1,'']]],
-  ['internet_20addressing_20_28inet_29',['Internet Addressing (inet)',['../group__etcpal__inet.html',1,'']]]
+  ['netint_20_28network_20interfaces_29',['netint (Network Interfaces)',['../group__etcpal__netint.html',1,'']]]
 ];

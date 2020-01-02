@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: EtcPal C++ Wrappers</title>
+  <title>EtcPal: etcpal/cpp (C++ Wrappers)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -128,26 +128,36 @@ $(document).ready(function(){initNavTree('group__etcpal__cpp.html','');});
 <a href="#groups">Modules</a> &#124;
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPal C++ Wrappers</div>  </div>
+<div class="title">etcpal/cpp (C++ Wrappers)</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>C++ Wrappers for EtcPal modules.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>C++ Wrappers for EtcPal modules. </p>
+<p>EtcPal is primarily a C-language library, but C++ language wrappers for certain modules are provided for convenience when writing C++ code that uses EtcPal. To include a C++ wrapper for a given module, where you would normally include <code>"etcpal/[module].h"</code>, instead include <code>"etcpal/cpp/[module].h"</code>.</p>
+<p>Some C++ wrapper modules contain types that directly wrap a type defined in a core EtcPal module. These types follow a C++ namespace convention which matches the C-style namespacing of the items they are wrapping. For example, the struct <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> has a C++ wrapper class called <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">etcpal::IpAddr</a>. It takes up the same space in memory as an <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> and can be compared to and converted implicitly from <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>. Explicit conversions can be made in the opposite direction using <a class="el" href="classetcpal_1_1_ip_addr.html#a75b91a1739e1ee6a888b8f518288e51d" title="Get a mutable reference to the underlying C type. ">etcpal::IpAddr::get()</a>. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__etcpal__cpp__error"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__error.html">Error Handling (error)</a></td></tr>
-<tr class="memdesc:group__etcpal__cpp__error"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__error.html">Error Handling (error)</a> module. <br /></td></tr>
+<tr class="memitem:group__etcpal__cpp__error"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__error.html">error (Error Handling)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__error"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__error.html">error (Error Handling)</a> module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__cpp__inet"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__inet.html">Internet Addressing (inet)</a></td></tr>
-<tr class="memdesc:group__etcpal__cpp__inet"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__inet.html">Internet Addressing (inet)</a> module. <br /></td></tr>
+<tr class="memitem:group__etcpal__cpp__inet"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__inet.html">inet (Internet Addressing)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__inet"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__inet.html">inet (Internet Addressing)</a> module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__cpp__lock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__lock.html">Locks and Synchronization (lock)</a></td></tr>
-<tr class="memdesc:group__etcpal__cpp__lock"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a> module. <br /></td></tr>
+<tr class="memitem:group__etcpal__cpp__lock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__lock"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__lock.html">lock (Locks and Synchronization)</a> module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__cpp__uuid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__uuid.html">UUIDs (uuid)</a></td></tr>
-<tr class="memdesc:group__etcpal__cpp__uuid"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__uuid.html">UUIDs (uuid)</a> module. <br /></td></tr>
+<tr class="memitem:group__etcpal__cpp__log"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__log.html">log (Logging)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__log"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__log.html">log (Logging)</a> module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__etcpal__cpp__thread"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__thread.html">thread (Threading)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__thread.html">thread (Threading)</a> module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__etcpal__cpp__timer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__timer.html">timer (Timers)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__timer"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__timer.html">timer (Timers)</a> module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__etcpal__cpp__uuid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__cpp__uuid.html">uuid (UUIDs)</a></td></tr>
+<tr class="memdesc:group__etcpal__cpp__uuid"><td class="mdescLeft">&#160;</td><td class="mdescRight">C++ utilities for the <a class="el" href="group__etcpal__uuid.html">uuid (UUIDs)</a> module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -161,9 +171,6 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga598701b6928c77a8c086183a0a1cb9cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defined to "constexpr" in C++14 or later, "inline" earlier. <br /></td></tr>
 <tr class="separator:ga598701b6928c77a8c086183a0a1cb9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>C++ Wrappers for EtcPal modules. </p>
-<p>EtcPal is primarly a C-language library, but C++ language wrappers for certain modules are provided for convenience when writing C++ code that uses EtcPal. To include a C++ wrapper for a given module, where you would normally include "etcpal/[module].h", instead include "etcpal/cpp/[module].h". </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

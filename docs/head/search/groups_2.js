@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['c_20boolean_20type_20_28bool_29',['C Boolean Type (bool)',['../group__etcpal__bool.html',1,'']]]
+  ['inet_20_28internet_20addressing_29',['inet (Internet Addressing)',['../group__etcpal__cpp__inet.html',1,'']]],
+  ['inet_20_28internet_20addressing_29',['inet (Internet Addressing)',['../group__etcpal__inet.html',1,'']]]
 ];

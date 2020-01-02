@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['ok',['Ok',['../classetcpal_1_1_result.html#a466e2e4a2b6c74e6f7c7140579d10a09',1,'etcpal::Result']]],
-  ['operator_20bool',['operator bool',['../classetcpal_1_1_result.html#a7990d8e87d9eab2383f94c88c23a6488',1,'etcpal::Result::operator bool()'],['../classetcpal_1_1_expected.html#a7990d8e87d9eab2383f94c88c23a6488',1,'etcpal::Expected::operator bool()']]],
-  ['operator_2a',['operator*',['../classetcpal_1_1_expected.html#a6573281a3d9396dfc8c2c5f1cca82247',1,'etcpal::Expected::operator*() const &amp;'],['../classetcpal_1_1_expected.html#aef577cb229ef2a9d16ea231ab32bb90d',1,'etcpal::Expected::operator*() &amp;'],['../classetcpal_1_1_expected.html#a9fde1d75aef70226df99291f44c4c7d5',1,'etcpal::Expected::operator*() const &amp;&amp;'],['../classetcpal_1_1_expected.html#aec2b0f86ca602b33ae1bbe4e72cd571e',1,'etcpal::Expected::operator*() &amp;&amp;']]],
-  ['operator_2d_3e',['operator-&gt;',['../classetcpal_1_1_expected.html#a59a8d66ef67871af2a14f8cc08dc1d2e',1,'etcpal::Expected::operator-&gt;() const'],['../classetcpal_1_1_expected.html#a4442b1b9eab40e7939e1e01cdedcb7ae',1,'etcpal::Expected::operator-&gt;()']]],
-  ['operator_3d',['operator=',['../classetcpal_1_1_result.html#aa17ae9a95db6d0224d2280bbb1f8667d',1,'etcpal::Result::operator=()'],['../classetcpal_1_1_ip_addr.html#af68058aa8f42f5ce7aa01eb92b583bd1',1,'etcpal::IpAddr::operator=()'],['../classetcpal_1_1_sock_addr.html#aa75677e1db37e94003d6f82a25934b0f',1,'etcpal::SockAddr::operator=()'],['../classetcpal_1_1_mac_addr.html#abf74026b5f8428336b974584cbd534df',1,'etcpal::MacAddr::operator=()'],['../classetcpal_1_1_uuid.html#a7e35f2362ce4dd50ce9ce390dc28b48e',1,'etcpal::Uuid::operator=()']]],
-  ['ospreferred',['OsPreferred',['../classetcpal_1_1_uuid.html#a99ed3b8b32434cff4b17cb1acb03c9ce',1,'etcpal::Uuid']]]
+  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html#ae745add18e97ed3960a513f993c4fd39',1,'etcpal::MacAddr::MacAddr()=default'],['../classetcpal_1_1_mac_addr.html#a786b90567f5a0f50072a11180bed1e63',1,'etcpal::MacAddr::MacAddr(const EtcPalMacAddr &amp;c_mac) noexcept'],['../classetcpal_1_1_mac_addr.html#aff3e9838bb257f6f5c09396be07fa4f3',1,'etcpal::MacAddr::MacAddr(const uint8_t *mac_data) noexcept']]],
+  ['masklength',['MaskLength',['../classetcpal_1_1_ip_addr.html#a0613200b3e9958598089ca48824732be',1,'etcpal::IpAddr']]],
+  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex']]],
+  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['../classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
 ];

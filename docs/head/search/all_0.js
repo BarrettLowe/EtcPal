@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['acn_5frlp_5fheader_5fsize_5fext_5flen',['ACN_RLP_HEADER_SIZE_EXT_LEN',['../group__etcpal__rootlayerpdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66',1,'root_layer_pdu.h']]],
-  ['acn_5frlp_5fheader_5fsize_5fnormal_5flen',['ACN_RLP_HEADER_SIZE_NORMAL_LEN',['../group__etcpal__rootlayerpdu.html#ga29ae7e116cd77cc00366461415bf54a7',1,'root_layer_pdu.h']]],
-  ['acn_5ftcp_5fpreamble_5fsize',['ACN_TCP_PREAMBLE_SIZE',['../group__etcpal__rootlayerpdu.html#gab879b13847509e3bbd4b12a5e2cda0e7',1,'root_layer_pdu.h']]],
-  ['acn_5fudp_5fpreamble_5fsize',['ACN_UDP_PREAMBLE_SIZE',['../group__etcpal__rootlayerpdu.html#ga86207e41512354a1a6e321d95afe8ab0',1,'root_layer_pdu.h']]],
+  ['acn_5frlp_5fheader_5fsize_5fext_5flen',['ACN_RLP_HEADER_SIZE_EXT_LEN',['../group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66',1,'root_layer_pdu.h']]],
+  ['acn_5frlp_5fheader_5fsize_5fnormal_5flen',['ACN_RLP_HEADER_SIZE_NORMAL_LEN',['../group__etcpal__root__layer__pdu.html#ga29ae7e116cd77cc00366461415bf54a7',1,'root_layer_pdu.h']]],
+  ['acn_5ftcp_5fpreamble_5fsize',['ACN_TCP_PREAMBLE_SIZE',['../group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7',1,'root_layer_pdu.h']]],
+  ['acn_5fudp_5fpreamble_5fsize',['ACN_UDP_PREAMBLE_SIZE',['../group__etcpal__root__layer__pdu.html#ga86207e41512354a1a6e321d95afe8ab0',1,'root_layer_pdu.h']]],
   ['action',['action',['../struct_etc_pal_log_params.html#a97b4c2de584d731ffb8d8ce759930691',1,'EtcPalLogParams']]],
   ['additional_20documentation',['Additional Documentation',['../additional_docs.html',1,'']]],
   ['addr',['addr',['../struct_etc_pal_ip_addr.html#a3423eb761e78396c67ba1345c0438871',1,'EtcPalIpAddr::addr()'],['../struct_etc_pal_netint_info.html#ac10a4235b585003054f76871bad3fd85',1,'EtcPalNetintInfo::addr()']]],
@@ -14,8 +14,7 @@ var searchData=
   ['ai_5fflags',['ai_flags',['../struct_etc_pal_addrinfo.html#a92528a848ebf34ab99687dd06a09cc93',1,'EtcPalAddrinfo']]],
   ['ai_5fprotocol',['ai_protocol',['../struct_etc_pal_addrinfo.html#a6ade486587feaa03d492eb84cfc83451',1,'EtcPalAddrinfo']]],
   ['ai_5fsocktype',['ai_socktype',['../struct_etc_pal_addrinfo.html#a2109130e73586150c41fed16311e1af6',1,'EtcPalAddrinfo']]],
+  ['alert',['Alert',['../classetcpal_1_1_logger.html#a830c42c8d3d96a385510ae78142831e8',1,'etcpal::Logger']]],
   ['alloc_5ff',['alloc_f',['../struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b',1,'EtcPalRbTree']]],
-  ['app_5fname',['app_name',['../struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]],
-  ['acn_20protocol_20family_20pdus_20_28pdu_29',['ACN Protocol Family PDUs (pdu)',['../group__etcpal__pdu.html',1,'']]],
-  ['acn_20root_20layer_20pdus_20_28rootlayerpdu_29',['ACN Root Layer PDUs (rootlayerpdu)',['../group__etcpal__rootlayerpdu.html',1,'']]]
+  ['app_5fname',['app_name',['../struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0',1,'EtcPalSyslogParams']]]
 ];

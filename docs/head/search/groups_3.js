@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['etcpal',['EtcPal',['../group__etcpal.html',1,'']]],
-  ['etcpal_20c_2b_2b_20wrappers',['EtcPal C++ Wrappers',['../group__etcpal__cpp.html',1,'']]],
-  ['error_20handling_20_28error_29',['Error Handling (error)',['../group__etcpal__cpp__error.html',1,'']]],
-  ['error_20handling_20_28error_29',['Error Handling (error)',['../group__etcpal__error.html',1,'']]],
-  ['etcpal_20config_20options',['EtcPal config options',['../group__etcpal__opts.html',1,'']]]
+  ['lock_20_28locks_20and_20synchronization_29',['lock (Locks and Synchronization)',['../group__etcpal__cpp__lock.html',1,'']]],
+  ['log_20_28logging_29',['log (Logging)',['../group__etcpal__cpp__log.html',1,'']]],
+  ['lock_20_28locks_20and_20synchronization_29',['lock (Locks and Synchronization)',['../group__etcpal__lock.html',1,'']]],
+  ['log_20_28logging_29',['log (Logging)',['../group__etcpal__log.html',1,'']]]
 ];

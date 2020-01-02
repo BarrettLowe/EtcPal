@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Internet Addressing (inet)</title>
+  <title>EtcPal: inet (Internet Addressing)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -132,12 +132,12 @@ $(document).ready(function(){initNavTree('group__etcpal__inet.html','');});
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">Internet Addressing (inet)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">inet (Internet Addressing)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Identifiers for IP addresses and network interfaces.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Identifiers for IP addresses and network interfaces. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/inet.h&quot;</span></div></div><!-- fragment --><p>Provides types representing internet addressing constructs. Many of these functions and types mimic those found in POSIX's <code>arpa/inet.h</code>, with some quality-of-life improvements. Several functions and macros are provided to inspect, compare and manipulate these types. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -307,9 +307,7 @@ EtcPalIpAddr macros</h2></td></tr>
 <tr class="memdesc:gab7df63744affbe2833fcb455e69b6ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the type field in a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> to indicate that it does not contain a valid address.  <a href="#gab7df63744affbe2833fcb455e69b6ff5">More...</a><br /></td></tr>
 <tr class="separator:gab7df63744affbe2833fcb455e69b6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Identifiers for IP addresses and network interfaces. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/inet.h&quot;</span></div></div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga71fa8216f8c0c7472c8786e793a7b280"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga71fa8216f8c0c7472c8786e793a7b280">&#9670;&nbsp;</a></span>ETCPAL_INET6_ADDRSTRLEN</h2>
 
@@ -474,7 +472,7 @@ EtcPalIpAddr macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                 \</div><div class="line">  {                                                  \</div><div class="line">    (etcpal_ip_ptr)-&gt;type = <a class="code" href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>;         \</div><div class="line">    (etcpal_ip_ptr)-&gt;addr.v4 = val;                  \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635"><div class="ttname"><a href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></div><div class="ttdoc">This EtcPalIpAddr contains an IPv4 address. </div><div class="ttdef"><b>Definition:</b> inet.h:53</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                 \</div><div class="line">  {                                                  \</div><div class="line">    (etcpal_ip_ptr)-&gt;type = <a class="code" href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a>;         \</div><div class="line">    (etcpal_ip_ptr)-&gt;addr.v4 = val;                  \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635"><div class="ttname"><a href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eea73ea615eceba61f26d92a63f3738f635">kEtcPalIpTypeV4</a></div><div class="ttdoc">This EtcPalIpAddr contains an IPv4 address. </div><div class="ttdef"><b>Definition:</b> inet.h:57</div></div>
 </div><!-- fragment -->
 <p>Set the IPv4 address in a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>. </p>
 <p>Also sets the type field to indicate that this <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contains an IPv4 address.</p>
@@ -557,8 +555,8 @@ EtcPalIpAddr macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                  \</div><div class="line">  {                                                                                   \</div><div class="line">    (etcpal_ip_ptr)-&gt;type = <a class="code" href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae">kEtcPalIpTypeV6</a>;                                          \</div><div class="line">    memcpy((etcpal_ip_ptr)-&gt;addr.v6.addr_buf, (addr_val), <a class="code" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a>);         \</div><div class="line">    (etcpal_ip_ptr)-&gt;addr.v6.scope_id = (scope_id_val);                               \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae"><div class="ttname"><a href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae">kEtcPalIpTypeV6</a></div><div class="ttdoc">This EtcPalIpAddr contains an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:55</div></div>
-<div class="ttc" id="group__etcpal__inet_html_gad5f18940857b50304b956505fb77df20"><div class="ttname"><a href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a></div><div class="ttdeci">#define ETCPAL_IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:59</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                                  \</div><div class="line">  {                                                                                   \</div><div class="line">    (etcpal_ip_ptr)-&gt;type = <a class="code" href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae">kEtcPalIpTypeV6</a>;                                          \</div><div class="line">    memcpy((etcpal_ip_ptr)-&gt;addr.v6.addr_buf, (addr_val), <a class="code" href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a>);         \</div><div class="line">    (etcpal_ip_ptr)-&gt;addr.v6.scope_id = (scope_id_val);                               \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__inet_html_gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae"><div class="ttname"><a href="group__etcpal__inet.html#gga847282e3fd17bf75ec83292326c455eead480ed8d686b23bdb2e5bfc06b93d7ae">kEtcPalIpTypeV6</a></div><div class="ttdoc">This EtcPalIpAddr contains an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:59</div></div>
+<div class="ttc" id="group__etcpal__inet_html_gad5f18940857b50304b956505fb77df20"><div class="ttname"><a href="group__etcpal__inet.html#gad5f18940857b50304b956505fb77df20">ETCPAL_IPV6_BYTES</a></div><div class="ttdeci">#define ETCPAL_IPV6_BYTES</div><div class="ttdoc">The number of bytes in an IPv6 address. </div><div class="ttdef"><b>Definition:</b> inet.h:63</div></div>
 </div><!-- fragment -->
 <p>Set an IPv6 address with an explicit scope ID in a <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>. </p>
 <p>Also sets the type field to indicate that this <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> contains an IPv6 address.</p>

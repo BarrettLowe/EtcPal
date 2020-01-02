@@ -6,9 +6,8 @@ var searchData=
   ['pheader',['pheader',['../struct_etc_pal_pdu.html#a89e577801ef19d4cdca129391395ad8d',1,'EtcPalPdu']]],
   ['platform_5fdata',['platform_data',['../struct_etc_pal_thread_params.html#ac7426f48be885f66ad98c90f342f653b',1,'EtcPalThreadParams']]],
   ['pnextpdu',['pnextpdu',['../struct_etc_pal_pdu.html#a5af45b626c13232f152d7548f29f9f58',1,'EtcPalPdu']]],
-  ['pool',['pool',['../struct_etc_pal_mempool_desc.html#aece14e36f8731b6f1c9602fee75c1544',1,'EtcPalMempoolDesc']]],
-  ['pool_5fsize',['pool_size',['../struct_etc_pal_mempool_desc.html#aaeb9b2d37542fba1b318e4fcde49d9b4',1,'EtcPalMempoolDesc']]],
   ['port',['port',['../struct_etc_pal_sock_addr.html#a8e0798404bf2cf5dabb84c5ba9a4f236',1,'EtcPalSockAddr']]],
+  ['priority',['priority',['../struct_etc_pal_thread_params.html#a1e440af9e86f7a3c2784c3e2bd687d25',1,'EtcPalThreadParams']]],
   ['procid',['procid',['../struct_etc_pal_syslog_params.html#aa3d06040894562832d2218511875b444',1,'EtcPalSyslogParams']]],
   ['pvector',['pvector',['../struct_etc_pal_pdu.html#a106ad8e138ad9d47e5ed03680c6ac6ff',1,'EtcPalPdu']]]
 ];

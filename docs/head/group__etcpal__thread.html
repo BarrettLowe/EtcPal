@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Threading (thread)</title>
+  <title>EtcPal: thread (Threading)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -130,13 +130,13 @@ $(document).ready(function(){initNavTree('group__etcpal__thread.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Threading (thread)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">thread (Threading)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Platform-neutral threads.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Platform-neutral threads. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/thread.h&quot;</span></div></div><!-- fragment --><p>Provides a platform-neutral threading API with an interface similar to pthread.</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> thread_function(<span class="keywordtype">void</span>* arg)</div><div class="line">{</div><div class="line">  <span class="keywordtype">int</span> val = *(<span class="keywordtype">int</span>*)arg;</div><div class="line">  printf(<span class="stringliteral">&quot;Hello from a thread! The value is %d.\n&quot;</span>, val);</div><div class="line">  <a class="code" href="group__etcpal__thread.html#gaf5d7c5aec312d172e617fd653ade3b08">etcpal_thread_sleep</a>(10); <span class="comment">// Sleep for 10 milliseconds</span></div><div class="line">}</div><div class="line"></div><div class="line"><a class="code" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> params = { <a class="code" href="group__etcpal__thread.html#ga2a086e640c72d82dacd9c8f466479eff">ETCPAL_THREAD_DEFAULT_PARAMS_INIT</a> };</div><div class="line"><span class="keywordtype">int</span> arg = 42;</div><div class="line"><a class="code" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> handle;</div><div class="line"><a class="code" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__etcpal__thread.html#ga16f3116e3a533530d44c0d47b263f8e9">etcpal_thread_create</a>(&amp;handle, &amp;params, thread_function, &amp;arg);</div><div class="line"><span class="keywordflow">if</span> (result == <a class="code" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div><div class="line">{</div><div class="line">  <span class="comment">// The thread is running and prints &quot;Hello from a thread! The value is 42.&quot;</span></div><div class="line">  <a class="code" href="group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792">etcpal_thread_join</a>(&amp;handle);</div><div class="line">  <span class="comment">// The thread is no longer running.</span></div><div class="line">}</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a></td></tr>
@@ -148,6 +148,9 @@ Macros</h2></td></tr>
 <tr class="memitem:gacb54f3a06ea1b8ae0f45b8daaae37efe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#gacb54f3a06ea1b8ae0f45b8daaae37efe">ETCPAL_THREAD_SET_DEFAULT_PARAMS</a>(threadparamsptr)</td></tr>
 <tr class="memdesc:gacb54f3a06ea1b8ae0f45b8daaae37efe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the platform-default values for the <a class="el" href="struct_etc_pal_thread_params.html" title="A set of parameters for an etcpal_thread. ">EtcPalThreadParams</a> struct.  <a href="#gacb54f3a06ea1b8ae0f45b8daaae37efe">More...</a><br /></td></tr>
 <tr class="separator:gacb54f3a06ea1b8ae0f45b8daaae37efe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2a086e640c72d82dacd9c8f466479eff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga2a086e640c72d82dacd9c8f466479eff">ETCPAL_THREAD_DEFAULT_PARAMS_INIT</a>&#160;&#160;&#160;<a class="el" href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a>, <a class="el" href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a>, <a class="el" href="group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300">ETCPAL_THREAD_DEFAULT_NAME</a>, NULL</td></tr>
+<tr class="memdesc:ga2a086e640c72d82dacd9c8f466479eff"><td class="mdescLeft">&#160;</td><td class="mdescRight">A default initializer value for an <a class="el" href="struct_etc_pal_thread_params.html" title="A set of parameters for an etcpal_thread. ">EtcPalThreadParams</a> structure.  <a href="#ga2a086e640c72d82dacd9c8f466479eff">More...</a><br /></td></tr>
+<tr class="separator:ga2a086e640c72d82dacd9c8f466479eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3539233977b6e793b9b5a4c071fd6e78"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></td></tr>
 <tr class="memdesc:ga3539233977b6e793b9b5a4c071fd6e78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The platform-specific default priority for an etcpal_thread.  <a href="#ga3539233977b6e793b9b5a4c071fd6e78">More...</a><br /></td></tr>
 <tr class="separator:ga3539233977b6e793b9b5a4c071fd6e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,24 +170,22 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A set of parameters for an etcpal_thread.  <a href="#gabb277d1d3fc2b021ca7513d8af038ed4">More...</a><br /></td></tr>
 <tr class="separator:gabb277d1d3fc2b021ca7513d8af038ed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="memItemLeft" align="right" valign="top">typedef PLATFORM_DEFINED&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a></td></tr>
-<tr class="memdesc:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread identifier.  <a href="#ga6ea2bb55f405380e3ea296e3b6164ae8">More...</a><br /></td></tr>
+<tr class="memdesc:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread handle.  <a href="#ga6ea2bb55f405380e3ea296e3b6164ae8">More...</a><br /></td></tr>
 <tr class="separator:ga6ea2bb55f405380e3ea296e3b6164ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga6622ac7af8e6cc018c28ba15cc824de5">etcpal_thread_create</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id, const <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> *params, void(*thread_fn)(void *), void *thread_arg)</td></tr>
-<tr class="memdesc:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="#ga6622ac7af8e6cc018c28ba15cc824de5">More...</a><br /></td></tr>
-<tr class="separator:ga6622ac7af8e6cc018c28ba15cc824de5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8841872731c92356965eac616aedc2ff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff">etcpal_thread_join</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id)</td></tr>
-<tr class="memdesc:ga8841872731c92356965eac616aedc2ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a thread to finish execution.  <a href="#ga8841872731c92356965eac616aedc2ff">More...</a><br /></td></tr>
-<tr class="separator:ga8841872731c92356965eac616aedc2ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8c76ca9a8ebd49dcb4b376f351fb4517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga8c76ca9a8ebd49dcb4b376f351fb4517">etcpal_thread_sleep</a> (int sleep_ms)</td></tr>
-<tr class="memdesc:ga8c76ca9a8ebd49dcb4b376f351fb4517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a platform-neutral sleep.  <a href="#ga8c76ca9a8ebd49dcb4b376f351fb4517">More...</a><br /></td></tr>
-<tr class="separator:ga8c76ca9a8ebd49dcb4b376f351fb4517"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga16f3116e3a533530d44c0d47b263f8e9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga16f3116e3a533530d44c0d47b263f8e9">etcpal_thread_create</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id, const <a class="el" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> *params, void(*thread_fn)(void *), void *thread_arg)</td></tr>
+<tr class="memdesc:ga16f3116e3a533530d44c0d47b263f8e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a new thread.  <a href="#ga16f3116e3a533530d44c0d47b263f8e9">More...</a><br /></td></tr>
+<tr class="separator:ga16f3116e3a533530d44c0d47b263f8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga711be33696701513f19239cf22dc3792"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792">etcpal_thread_join</a> (<a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *id)</td></tr>
+<tr class="memdesc:ga711be33696701513f19239cf22dc3792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a thread to finish execution.  <a href="#ga711be33696701513f19239cf22dc3792">More...</a><br /></td></tr>
+<tr class="separator:ga711be33696701513f19239cf22dc3792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf5d7c5aec312d172e617fd653ade3b08"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html#gaf5d7c5aec312d172e617fd653ade3b08">etcpal_thread_sleep</a> (unsigned int sleep_ms)</td></tr>
+<tr class="memdesc:gaf5d7c5aec312d172e617fd653ade3b08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a platform-neutral sleep.  <a href="#gaf5d7c5aec312d172e617fd653ade3b08">More...</a><br /></td></tr>
+<tr class="separator:gaf5d7c5aec312d172e617fd653ade3b08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Platform-neutral threads. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/thread.h&quot;</span></div></div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
+<h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga41f1567e754166e758fc1fdda38fc300"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga41f1567e754166e758fc1fdda38fc300">&#9670;&nbsp;</a></span>ETCPAL_THREAD_DEFAULT_NAME</h2>
 
@@ -199,6 +200,22 @@ Functions</h2></td></tr>
 
 <p>The default name for an etcpal_thread. </p>
 
+</div>
+</div>
+<a id="ga2a086e640c72d82dacd9c8f466479eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2a086e640c72d82dacd9c8f466479eff">&#9670;&nbsp;</a></span>ETCPAL_THREAD_DEFAULT_PARAMS_INIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_THREAD_DEFAULT_PARAMS_INIT&#160;&#160;&#160;<a class="el" href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a>, <a class="el" href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a>, <a class="el" href="group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300">ETCPAL_THREAD_DEFAULT_NAME</a>, NULL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A default initializer value for an <a class="el" href="struct_etc_pal_thread_params.html" title="A set of parameters for an etcpal_thread. ">EtcPalThreadParams</a> structure. </p>
+<p>Usage: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> params = { <a class="code" href="group__etcpal__thread.html#ga2a086e640c72d82dacd9c8f466479eff">ETCPAL_THREAD_DEFAULT_PARAMS_INIT</a> };</div></div><!-- fragment --> 
 </div>
 </div>
 <a id="ga3539233977b6e793b9b5a4c071fd6e78"></a>
@@ -266,7 +283,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                                     \</div><div class="line">  {                                                                      \</div><div class="line">    (threadparamsptr)-&gt;thread_priority = <a class="code" href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a>; \</div><div class="line">    (threadparamsptr)-&gt;stack_size = <a class="code" href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a>;         \</div><div class="line">    (threadparamsptr)-&gt;thread_name = <a class="code" href="group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300">ETCPAL_THREAD_DEFAULT_NAME</a>;         \</div><div class="line">    (threadparamsptr)-&gt;platform_data = NULL;                             \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__thread_html_gac4147a48a462f0c5b9758334b41243a9"><div class="ttname"><a href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></div><div class="ttdeci">#define ETCPAL_THREAD_DEFAULT_STACK</div><div class="ttdoc">The plaform-specific default stack size for an etcpal_thread. </div><div class="ttdef"><b>Definition:</b> thread.dox:22</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span>                                                              \</div><div class="line">  {                                                               \</div><div class="line">    (threadparamsptr)-&gt;priority = <a class="code" href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a>; \</div><div class="line">    (threadparamsptr)-&gt;stack_size = <a class="code" href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a>;  \</div><div class="line">    (threadparamsptr)-&gt;thread_name = <a class="code" href="group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300">ETCPAL_THREAD_DEFAULT_NAME</a>;  \</div><div class="line">    (threadparamsptr)-&gt;platform_data = NULL;                      \</div><div class="line">  } <span class="keywordflow">while</span> (0)</div><div class="ttc" id="group__etcpal__thread_html_gac4147a48a462f0c5b9758334b41243a9"><div class="ttname"><a href="group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9">ETCPAL_THREAD_DEFAULT_STACK</a></div><div class="ttdeci">#define ETCPAL_THREAD_DEFAULT_STACK</div><div class="ttdoc">The plaform-specific default stack size for an etcpal_thread. </div><div class="ttdef"><b>Definition:</b> thread.dox:22</div></div>
 <div class="ttc" id="group__etcpal__thread_html_ga3539233977b6e793b9b5a4c071fd6e78"><div class="ttname"><a href="group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78">ETCPAL_THREAD_DEFAULT_PRIORITY</a></div><div class="ttdeci">#define ETCPAL_THREAD_DEFAULT_PRIORITY</div><div class="ttdoc">The platform-specific default priority for an etcpal_thread. </div><div class="ttdef"><b>Definition:</b> thread.dox:15</div></div>
 <div class="ttc" id="group__etcpal__thread_html_ga41f1567e754166e758fc1fdda38fc300"><div class="ttname"><a href="group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300">ETCPAL_THREAD_DEFAULT_NAME</a></div><div class="ttdeci">#define ETCPAL_THREAD_DEFAULT_NAME</div><div class="ttdoc">The default name for an etcpal_thread. </div><div class="ttdef"><b>Definition:</b> thread.dox:25</div></div>
 </div><!-- fragment -->
@@ -287,7 +304,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The thread identifier. </p>
+<p>The thread handle. </p>
 <p>Depending on the platform, this could be a scalar type or a struct. </p>
 
 </div>
@@ -305,18 +322,33 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A set of parameters for an etcpal_thread. </p>
+<p>The members of this structure are not all honored on all platforms. Here is a breakdown:</p>
+<table class="doxtable">
+<tr>
+<th>Platform </th><th>Priority Honored </th><th>Stack Size Honored </th><th>Thread Name Honored </th><th>Platform Data Available  </th></tr>
+<tr>
+<td>FreeRTOS </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+<tr>
+<td>Linux </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>macOS </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>MQX </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes, EtcPalThreadParamsMqx </td></tr>
+<tr>
+<td>Windows </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga6622ac7af8e6cc018c28ba15cc824de5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6622ac7af8e6cc018c28ba15cc824de5">&#9670;&nbsp;</a></span>etcpal_thread_create()</h2>
+<a id="ga16f3116e3a533530d44c0d47b263f8e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga16f3116e3a533530d44c0d47b263f8e9">&#9670;&nbsp;</a></span>etcpal_thread_create()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_thread_create </td>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_thread_create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *&#160;</td>
           <td class="paramname"><em>id</em>, </td>
@@ -348,7 +380,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new thread. </p>
-<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to <a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless <a class="el" href="group__etcpal__thread.html#ga8841872731c92356965eac616aedc2ff" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> is called.</p>
+<p>If your application has exit/shutdown behavior (i.e. it is a non-embedded application), it's good practice to always pair this with a call to <a class="el" href="group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> on exit. On some platforms, extra signaling resources are allocated when the thread is created that are not deallocated unless <a class="el" href="group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792" title="Wait for a thread to finish execution. ">etcpal_thread_join()</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Identifier for the thread that was created. </td></tr>
@@ -358,20 +390,22 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true: The thread was created. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: The thread was created. </dd>
 <dd>
-false: The thread was not created. </dd></dl>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid argument. </dd>
+<dd>
+Other codes translated from system error codes are possible. </dd></dl>
 
 </div>
 </div>
-<a id="ga8841872731c92356965eac616aedc2ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8841872731c92356965eac616aedc2ff">&#9670;&nbsp;</a></span>etcpal_thread_join()</h2>
+<a id="ga711be33696701513f19239cf22dc3792"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga711be33696701513f19239cf22dc3792">&#9670;&nbsp;</a></span>etcpal_thread_join()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_thread_join </td>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_thread_join </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> *&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -388,14 +422,16 @@ false: The thread was not created. </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true: The thread was stopped. </dd>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: The thread was stopped. </dd>
 <dd>
-false: An error occurred. </dd></dl>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: id does not represent a joinable thread. </dd>
+<dd>
+Other codes translated from system error codes are possible. </dd></dl>
 
 </div>
 </div>
-<a id="ga8c76ca9a8ebd49dcb4b376f351fb4517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8c76ca9a8ebd49dcb4b376f351fb4517">&#9670;&nbsp;</a></span>etcpal_thread_sleep()</h2>
+<a id="gaf5d7c5aec312d172e617fd653ade3b08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf5d7c5aec312d172e617fd653ade3b08">&#9670;&nbsp;</a></span>etcpal_thread_sleep()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -403,7 +439,7 @@ false: An error occurred. </dd></dl>
         <tr>
           <td class="memname">void etcpal_thread_sleep </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">unsigned int&#160;</td>
           <td class="paramname"><em>sleep_ms</em></td><td>)</td>
           <td></td>
         </tr>

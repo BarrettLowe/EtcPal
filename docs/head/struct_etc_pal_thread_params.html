@@ -127,18 +127,32 @@ $(document).ready(function(){initNavTree('struct_etc_pal_thread_params.html','')
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPalThreadParams Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__thread.html">Threading (thread)</a></div></div>  </div>
+<div class="title">EtcPalThreadParams Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__thread.html">thread (Threading)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A set of parameters for an etcpal_thread.  
- <a href="struct_etc_pal_thread_params.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A set of parameters for an etcpal_thread. </p>
+<p>The members of this structure are not all honored on all platforms. Here is a breakdown:</p>
+<table class="doxtable">
+<tr>
+<th>Platform </th><th>Priority Honored </th><th>Stack Size Honored </th><th>Thread Name Honored </th><th>Platform Data Available  </th></tr>
+<tr>
+<td>FreeRTOS </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+<tr>
+<td>Linux </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>macOS </td><td>No </td><td>Yes </td><td>No </td><td>No </td></tr>
+<tr>
+<td>MQX </td><td>Yes </td><td>Yes </td><td>Yes </td><td>Yes, EtcPalThreadParamsMqx </td></tr>
+<tr>
+<td>Windows </td><td>Yes </td><td>Yes </td><td>Yes </td><td>No </td></tr>
+</table>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a9cc3e9ae3970c47e150dc77065abd75f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f">thread_priority</a></td></tr>
-<tr class="memdesc:a9cc3e9ae3970c47e150dc77065abd75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the thread.  <a href="#a9cc3e9ae3970c47e150dc77065abd75f">More...</a><br /></td></tr>
-<tr class="separator:a9cc3e9ae3970c47e150dc77065abd75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e440af9e86f7a3c2784c3e2bd687d25"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_thread_params.html#a1e440af9e86f7a3c2784c3e2bd687d25">priority</a></td></tr>
+<tr class="memdesc:a1e440af9e86f7a3c2784c3e2bd687d25"><td class="mdescLeft">&#160;</td><td class="mdescRight">The priority of the thread.  <a href="#a1e440af9e86f7a3c2784c3e2bd687d25">More...</a><br /></td></tr>
+<tr class="separator:a1e440af9e86f7a3c2784c3e2bd687d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde5266300e9cdd7ca1134daba9adf24"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_thread_params.html#adde5266300e9cdd7ca1134daba9adf24">stack_size</a></td></tr>
 <tr class="memdesc:adde5266300e9cdd7ca1134daba9adf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">The stack size of the thread.  <a href="#adde5266300e9cdd7ca1134daba9adf24">More...</a><br /></td></tr>
 <tr class="separator:adde5266300e9cdd7ca1134daba9adf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -149,9 +163,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:ac7426f48be885f66ad98c90f342f653b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to a platform-specific parameter structure.  <a href="#ac7426f48be885f66ad98c90f342f653b">More...</a><br /></td></tr>
 <tr class="separator:ac7426f48be885f66ad98c90f342f653b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of parameters for an etcpal_thread. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="ac7426f48be885f66ad98c90f342f653b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac7426f48be885f66ad98c90f342f653b">&#9670;&nbsp;</a></span>platform_data</h2>
 
@@ -165,6 +177,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to a platform-specific parameter structure. </p>
+<p>This is used to set thread attributes that are not shared between platforms. Currently the only platform that has a valid value for this member is MQX, which has the following structure:</p>
+<div class="fragment"><div class="line"><span class="keyword">typedef</span> <span class="keyword">struct </span>EtcPalThreadParamsMqx</div><div class="line">{</div><div class="line">  _mqx_uint task_attributes; <span class="comment">// Corresponds to the TASK_ATTRIBUTES member of TASK_TEMPLATE_STRUCT</span></div><div class="line">  _mqx_uint time_slice; <span class="comment">// Corresponds to the DEFAULT_TIME_SLICE member of TASK_TEMPLATE_STRUCT</span></div><div class="line">} EtcPalThreadParamsMqx;</div></div><!-- fragment --> 
+</div>
+</div>
+<a id="a1e440af9e86f7a3c2784c3e2bd687d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1e440af9e86f7a3c2784c3e2bd687d25">&#9670;&nbsp;</a></span>priority</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int priority</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The priority of the thread. </p>
+<p>Note that thread priority is not valid on all platforms. </p>
 
 </div>
 </div>
@@ -198,23 +228,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A name for the thread, maximum length <a class="el" href="group__etcpal__thread.html#ga5a0a37d186ac57231b94c287a58b54a0" title="The maximum length of an etcpal_thread name C-string. ">ETCPAL_THREAD_NAME_MAX_LENGTH</a>. </p>
-
-</div>
-</div>
-<a id="a9cc3e9ae3970c47e150dc77065abd75f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9cc3e9ae3970c47e150dc77065abd75f">&#9670;&nbsp;</a></span>thread_priority</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int thread_priority</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The priority of the thread. </p>
-<p>Note that thread priority is not valid on all platforms. </p>
 
 </div>
 </div>

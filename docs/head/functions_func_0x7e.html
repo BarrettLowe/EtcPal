@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Fixed-Width Integer Types (int)</title>
+  <title>EtcPal: Data Fields - Functions</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -106,7 +106,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__etcpal__int.html','');});
+$(document).ready(function(){initNavTree('functions_func_0x7e.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -123,45 +123,35 @@ $(document).ready(function(){initNavTree('group__etcpal__int.html','');});
 </iframe>
 </div>
 
-<div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
-  <div class="headertitle">
-<div class="title">Fixed-Width Integer Types (int)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
-</div><!--header-->
 <div class="contents">
+&#160;
 
-<p>Compatibility layer for fixed-width integer types.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:gab6cd6d1c63c1e26ea2d4537b77148354"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__int.html#gab6cd6d1c63c1e26ea2d4537b77148354">HAVE_STDINT_H</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:gab6cd6d1c63c1e26ea2d4537b77148354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define this value in your compiler settings if your toolchain provides a &lt;stdint.h&gt;.  <a href="#gab6cd6d1c63c1e26ea2d4537b77148354">More...</a><br /></td></tr>
-<tr class="separator:gab6cd6d1c63c1e26ea2d4537b77148354"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Compatibility layer for fixed-width integer types. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/int.h&quot;</span></div></div><!-- fragment --><p>In the before-times, C had no fixed-width integer types. Then, C99 gave us stdint.h. But there still exist environments where a C99 compiler is not available or practical, and one allegedly modern toolchain (it rhymes with "Nicrosoft Fishual D++") picks and chooses the modern C features it supports seemingly at random.</p>
-<p>This header attempts to detect if it is being compiled with C99 or later (or C++). If so, it simply includes stdint.h (or cstdint). If not, it attempts to include a user-created file "stdint_usr.h" which the user provides. </p>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="gab6cd6d1c63c1e26ea2d4537b77148354"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab6cd6d1c63c1e26ea2d4537b77148354">&#9670;&nbsp;</a></span>HAVE_STDINT_H</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HAVE_STDINT_H&#160;&#160;&#160;1</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Define this value in your compiler settings if your toolchain provides a &lt;stdint.h&gt;. </p>
-<p>Some compilers are non-C99 (or non-C++11) and nevertheless provide fixed-width types in &lt;stdint.h&gt;. In that situation, the user can define HAVE_STDINT_H to force etcpal_int to include &lt;stdint.h&gt;. </p>
-
-</div>
-</div>
+<h3><a id="index_0x7e"></a>- ~ -</h3><ul>
+<li>~Expected()
+: <a class="el" href="classetcpal_1_1_expected.html#a8da4910031b4040699233168372b0102">Expected&lt; T &gt;</a>
+</li>
+<li>~Mutex()
+: <a class="el" href="classetcpal_1_1_mutex.html#a205e2c334b25cb96e4f1303a4fde6b0c">Mutex</a>
+</li>
+<li>~MutexGuard()
+: <a class="el" href="classetcpal_1_1_mutex_guard.html#a310e9063e3e9794762a2cf28c6148334">MutexGuard</a>
+</li>
+<li>~ReadGuard()
+: <a class="el" href="classetcpal_1_1_read_guard.html#af40fbc4ea83eb91ffa11e2e0a17e5e22">ReadGuard</a>
+</li>
+<li>~RwLock()
+: <a class="el" href="classetcpal_1_1_rw_lock.html#a31fcfa6d9b8bcf5a64823de7c0b1313a">RwLock</a>
+</li>
+<li>~Signal()
+: <a class="el" href="classetcpal_1_1_signal.html#a20038cb30942f02ef70185cdaed0227a">Signal</a>
+</li>
+<li>~Thread()
+: <a class="el" href="classetcpal_1_1_thread.html#a87a9c69a69ee4b13cb1ec5772f6d32ad">Thread</a>
+</li>
+<li>~WriteGuard()
+: <a class="el" href="classetcpal_1_1_write_guard.html#afa219384bacf93a154fdb6bf71941d57">WriteGuard</a>
+</li>
+</ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Network Socket Interface (socket)</title>
+  <title>EtcPal: socket (Network Socket Interface)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -130,12 +130,12 @@ $(document).ready(function(){initNavTree('group__etcpal__socket.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Network Socket Interface (socket)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">socket (Network Socket Interface)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Platform-neutral BSD-modeled network socket implementation.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Platform-neutral BSD-modeled network socket implementation. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/socket.h&quot;</span></div></div><!-- fragment --><p><b>WARNING:</b> This module must be explicitly initialized before use. Initialize the module by calling <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> with the relevant feature mask: </p><div class="fragment"><div class="line"><a class="code" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843">etcpal_init</a>(<a class="code" href="group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6">ETCPAL_FEATURE_SOCKETS</a>);</div></div><!-- fragment --><p>This module attempts to abstract the network socket interface from various platforms into one platform-neutral interface. The functions and flags are modeled after the BSD sockets interface. This API is too large and complex to provide a concise how-to here; users of this module are assumed to already be familiar with some version of the BSD interface. If not, <em>UNIX Network Programming: The Sockets Networking API</em> by Stevens, Fenner, and Rudoff is highly recommended reading. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -461,9 +461,6 @@ etcpal_poll API</h2></td></tr>
 <tr class="memdesc:gae5017e2346be12e91c6450fe9860614b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for an event on a set of sockets defined by an EtcPalPollContext.  <a href="#gae5017e2346be12e91c6450fe9860614b">More...</a><br /></td></tr>
 <tr class="separator:gae5017e2346be12e91c6450fe9860614b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Platform-neutral BSD-modeled network socket implementation. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/socket.h&quot;</span></div></div><!-- fragment --><p>This module attempts to abstract the network socket interface from various platforms into one platform-neutral interface. The functions and flags are modeled after the BSD sockets interface. <em>UNIX Network Programming: The Sockets Networking API</em> by Stevens, Fenner, and Rudoff is highly recommended reading for those unfamiliar with this interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga19b3047fe621a06b5cedc8043bb823cf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga19b3047fe621a06b5cedc8043bb823cf">&#9670;&nbsp;</a></span>ETCPAL_IP_ADD_MEMBERSHIP</h2>
