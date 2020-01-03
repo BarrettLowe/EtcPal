@@ -127,17 +127,12 @@ $(document).ready(function(){initNavTree('group__etcpal__opts.html','');});
   <div class="summary">
 <a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPal config options<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
+<div class="title">EtcPal config options<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<p>Compile-time configuration options for EtcPal. </p>
-<p>Options starting with "ETCPAL_EMBOS_" are ignored on Windows, macOS and Linux.</p>
-<p>To override any of these options, either define them on your compiler command line, or provide a file called etcpal_config.h and:</p><ul>
-<li>If not building EtcPal with CMake: add ETCPAL_HAVE_CONFIG_H to your preprocessor definitions, and add the path to etcpal_config.h as an include path</li>
-<li>If building with CMake: use the CMake option ETCPAL_CONFIG_FILE_LOC</li>
-</ul>
-<p>In the etcpal_config.h file, simply #define any overridden options to the desired value. </p>
+
+<p>Compile-time configuration options for EtcPal.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -148,9 +143,17 @@ Macros</h2></td></tr>
 <tr class="memdesc:gaab67221f3adba4ea2b638e55341f8074"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether a malloc() implementation is available.  <a href="#gaab67221f3adba4ea2b638e55341f8074">More...</a><br /></td></tr>
 <tr class="separator:gaab67221f3adba4ea2b638e55341f8074"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5e80b2cbceca9bbe4e918610021a5ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__opts.html#gaf5e80b2cbceca9bbe4e918610021a5ba">ETCPAL_EMBOS_MAX_NETINTS</a>&#160;&#160;&#160;5</td></tr>
-<tr class="memdesc:gaf5e80b2cbceca9bbe4e918610021a5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces that can be tracked by the <a class="el" href="group__etcpal__netint.html">netint (Network Interfaces)</a> module.  <a href="#gaf5e80b2cbceca9bbe4e918610021a5ba">More...</a><br /></td></tr>
+<tr class="memdesc:gaf5e80b2cbceca9bbe4e918610021a5ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of network interfaces that can be tracked by the <a class="el" href="group__etcpal__netint.html">Network Interfaces (netint)</a> module.  <a href="#gaf5e80b2cbceca9bbe4e918610021a5ba">More...</a><br /></td></tr>
 <tr class="separator:gaf5e80b2cbceca9bbe4e918610021a5ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Compile-time configuration options for EtcPal. </p>
+<p>Options starting with "ETCPAL_EMBOS_" (currently all of them) are ignored on Windows, macOS and Linux.</p>
+<p>To override any of these options, provide a file called etcpal_config.h and:</p><ul>
+<li>If not building EtcPal with CMake: add ETCPAL_HAVE_CONFIG_H to your preprocessor definitions, and add the path to etcpal_config.h as an include path</li>
+<li>If building with CMake: use the CMake option ETCPAL_CONFIG_FILE_LOC</li>
+</ul>
+<p>In the etcpal_config.h file, simply #define any overridden options to the desired value. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gaf5e80b2cbceca9bbe4e918610021a5ba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf5e80b2cbceca9bbe4e918610021a5ba">&#9670;&nbsp;</a></span>ETCPAL_EMBOS_MAX_NETINTS</h2>
@@ -164,7 +167,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The maximum number of network interfaces that can be tracked by the <a class="el" href="group__etcpal__netint.html">netint (Network Interfaces)</a> module. </p>
+<p>The maximum number of network interfaces that can be tracked by the <a class="el" href="group__etcpal__netint.html">Network Interfaces (netint)</a> module. </p>
 <p>Currently this limit is not necessary and therefore ignored on all targets except lwIP. </p>
 
 </div>

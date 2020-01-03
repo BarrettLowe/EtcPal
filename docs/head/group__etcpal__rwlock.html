@@ -128,14 +128,12 @@ $(document).ready(function(){initNavTree('group__etcpal__rwlock.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Read-Write Locks<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
+<div class="title">Read-Write Locks<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<p>Reader-writer lock objects. </p>
-<p>Sometimes also referred to as a shared-exclusive lock or multi-reader lock. When implemented to protect a resource, allows multiple "readers" to access the resource at the same time for read-only purposes.</p>
-<p>These are implemented as "write-preferring" reader-writer locks; this means that new readers are blocked from acquiring a read lock if any context is currently waiting for a write lock.</p>
-<p>EtcPal read-write locks are typically implemented using multiple OS synchronization constructs under the hood. </p>
+
+<p>Reader-writer lock objects.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -170,6 +168,11 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga2d4feb63613ff8dfb1f106f5ed63dee5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a read-write lock object.  <a href="#ga2d4feb63613ff8dfb1f106f5ed63dee5">More...</a><br /></td></tr>
 <tr class="separator:ga2d4feb63613ff8dfb1f106f5ed63dee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Reader-writer lock objects. </p>
+<p>Sometimes also referred to as a shared-exclusive lock or multi-reader lock. When implemented to protect a resource, allows multiple "readers" to access the resource at the same time for read-only purposes.</p>
+<p>These are implemented as "write-preferring" reader-writer locks; this means that new readers are blocked from acquiring a read lock if any context is currently waiting for a write lock.</p>
+<p>EtcPal read-write locks are typically implemented using multiple OS synchronization constructs under the hood. </p>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="ga5949678b1acff7d9829e257a9bee8d8e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga5949678b1acff7d9829e257a9bee8d8e">&#9670;&nbsp;</a></span>etcpal_rwlock_t</h2>

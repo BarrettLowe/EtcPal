@@ -1,11 +1,9 @@
-var annotated =
+var annotated_dup =
 [
     [ "etcpal", null, [
       [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", "classetcpal_1_1_bad_expected_access" ],
       [ "Expected", "classetcpal_1_1_expected.html", "classetcpal_1_1_expected" ],
       [ "IpAddr", "classetcpal_1_1_ip_addr.html", "classetcpal_1_1_ip_addr" ],
-      [ "Logger", "classetcpal_1_1_logger.html", "classetcpal_1_1_logger" ],
-      [ "LogMessageHandler", "classetcpal_1_1_log_message_handler.html", "classetcpal_1_1_log_message_handler" ],
       [ "MacAddr", "classetcpal_1_1_mac_addr.html", "classetcpal_1_1_mac_addr" ],
       [ "Mutex", "classetcpal_1_1_mutex.html", "classetcpal_1_1_mutex" ],
       [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", "classetcpal_1_1_mutex_guard" ],
@@ -14,9 +12,6 @@ var annotated =
       [ "RwLock", "classetcpal_1_1_rw_lock.html", "classetcpal_1_1_rw_lock" ],
       [ "Signal", "classetcpal_1_1_signal.html", "classetcpal_1_1_signal" ],
       [ "SockAddr", "classetcpal_1_1_sock_addr.html", "classetcpal_1_1_sock_addr" ],
-      [ "Thread", "classetcpal_1_1_thread.html", "classetcpal_1_1_thread" ],
-      [ "TimePoint", "classetcpal_1_1_time_point.html", "classetcpal_1_1_time_point" ],
-      [ "Timer", "classetcpal_1_1_timer.html", "classetcpal_1_1_timer" ],
       [ "Uuid", "classetcpal_1_1_uuid.html", "classetcpal_1_1_uuid" ],
       [ "WriteGuard", "classetcpal_1_1_write_guard.html", "classetcpal_1_1_write_guard" ]
     ] ],
@@ -28,6 +23,7 @@ var annotated =
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", "struct_etc_pal_log_strings" ],
     [ "EtcPalLogTimeParams", "struct_etc_pal_log_time_params.html", "struct_etc_pal_log_time_params" ],
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", "struct_etc_pal_mac_addr" ],
+    [ "EtcPalMempoolDesc", "struct_etc_pal_mempool_desc.html", "struct_etc_pal_mempool_desc" ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", "struct_etc_pal_mreq" ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", "struct_etc_pal_netint_info" ],
     [ "EtcPalPdu", "struct_etc_pal_pdu.html", "struct_etc_pal_pdu" ],

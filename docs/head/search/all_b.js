@@ -1,20 +1,14 @@
 var searchData=
 [
-  ['lock_20_28locks_20and_20synchronization_29',['lock (Locks and Synchronization)',['../group__etcpal__cpp__lock.html',1,'']]],
-  ['log_20_28logging_29',['log (Logging)',['../group__etcpal__cpp__log.html',1,'']]],
-  ['lock_20_28locks_20and_20synchronization_29',['lock (Locks and Synchronization)',['../group__etcpal__lock.html',1,'']]],
-  ['log_20_28logging_29',['log (Logging)',['../group__etcpal__log.html',1,'']]],
-  ['linger',['linger',['../struct_etc_pal_linger.html#a21667e862207c7c116b20764fcb8f931',1,'EtcPalLinger']]],
-  ['link',['link',['../struct_etc_pal_rb_node.html#a629e7a1728cfe5d93fe2381d793ef93f',1,'EtcPalRbNode']]],
-  ['lock',['Lock',['../classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::Mutex']]],
-  ['lock_2eh',['lock.h',['../cpp_2lock_8h.html',1,'']]],
-  ['log',['Log',['../classetcpal_1_1_logger.html#aa613ebedf6ebc98cccf35990217e2eab',1,'etcpal::Logger']]],
-  ['log_2eh',['log.h',['../cpp_2log_8h.html',1,'']]],
-  ['log_5faction',['log_action',['../classetcpal_1_1_logger.html#a5ec18014ab4cbe6b2cf3ce90e8d6737c',1,'etcpal::Logger']]],
-  ['log_5ffn',['log_fn',['../struct_etc_pal_log_params.html#a9a6659e83ffc5e4e7ab3c5ba5009f4e7',1,'EtcPalLogParams']]],
-  ['log_5fmask',['log_mask',['../struct_etc_pal_log_params.html#ac695d621aaa836a9d13d65a912be9518',1,'EtcPalLogParams::log_mask()'],['../classetcpal_1_1_logger.html#ad0d3bf4ed833ebbaa8529a171d788f20',1,'etcpal::Logger::log_mask()']]],
-  ['log_5fparams',['log_params',['../classetcpal_1_1_logger.html#a986c589bfc9aa466a31a84a9b8575546',1,'etcpal::Logger']]],
-  ['logdispatchpolicy',['LogDispatchPolicy',['../group__etcpal__cpp__log.html#ga886bd6be55942894f6ddb878d1cfc662',1,'etcpal']]],
-  ['logger',['Logger',['../classetcpal_1_1_logger.html',1,'etcpal']]],
-  ['logmessagehandler',['LogMessageHandler',['../classetcpal_1_1_log_message_handler.html',1,'etcpal']]]
+  ['memory_20pools_20_28mempool_29',['Memory Pools (mempool)',['../group__etcpal__mempool.html',1,'']]],
+  ['mutexes',['Mutexes',['../group__etcpal__mutex.html',1,'']]],
+  ['mac',['mac',['../struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef',1,'EtcPalNetintInfo']]],
+  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html',1,'MacAddr'],['../classetcpal_1_1_mac_addr.html#ae745add18e97ed3960a513f993c4fd39',1,'etcpal::MacAddr::MacAddr()=default'],['../classetcpal_1_1_mac_addr.html#a786b90567f5a0f50072a11180bed1e63',1,'etcpal::MacAddr::MacAddr(const EtcPalMacAddr &amp;c_mac) noexcept'],['../classetcpal_1_1_mac_addr.html#aff3e9838bb257f6f5c09396be07fa4f3',1,'etcpal::MacAddr::MacAddr(const uint8_t *mac_data) noexcept']]],
+  ['mask',['mask',['../struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3',1,'EtcPalNetintInfo']]],
+  ['masklength',['MaskLength',['../classetcpal_1_1_ip_addr.html#a0613200b3e9958598089ca48824732be',1,'etcpal::IpAddr']]],
+  ['minute',['minute',['../struct_etc_pal_log_time_params.html#a5edffad982a0566ad01d95005474eae3',1,'EtcPalLogTimeParams']]],
+  ['month',['month',['../struct_etc_pal_log_time_params.html#aedb06abe5aff12fa3e7e0e71a374edfb',1,'EtcPalLogTimeParams']]],
+  ['msec',['msec',['../struct_etc_pal_log_time_params.html#ad957f34cd6e8272740bc231865080b22',1,'EtcPalLogTimeParams']]],
+  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html',1,'Mutex'],['../classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex::Mutex()']]],
+  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html',1,'MutexGuard'],['../classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['../classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
 ];

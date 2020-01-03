@@ -1,9 +1,11 @@
 var searchData=
 [
-  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html#a4bbe0587143829b91a5169449360eaa4',1,'etcpal::ReadGuard::ReadGuard(RwLock &amp;rwlock)'],['../classetcpal_1_1_read_guard.html#a972ca1d800d0b9f661de63a8764b74ae',1,'etcpal::ReadGuard::ReadGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['readlock',['ReadLock',['../classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284',1,'etcpal::RwLock']]],
-  ['readunlock',['ReadUnlock',['../classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e',1,'etcpal::RwLock']]],
-  ['reset',['Reset',['../classetcpal_1_1_timer.html#a77ebf418c2f554f19db18aa5adcd0366',1,'etcpal::Timer']]],
-  ['result',['Result',['../classetcpal_1_1_result.html#af1913dbf20908a83085407f633807fe3',1,'etcpal::Result::Result()'],['../classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269',1,'etcpal::BadExpectedAccess::result()'],['../classetcpal_1_1_expected.html#a28c72c40e1a8ff5c26c86ffd8b3220df',1,'etcpal::Expected::result()']]],
-  ['rwlock',['RwLock',['../classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21',1,'etcpal::RwLock']]]
+  ['toarray',['ToArray',['../classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce',1,'etcpal::MacAddr']]],
+  ['tocstring',['ToCString',['../classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e',1,'etcpal::Result']]],
+  ['tostring',['ToString',['../classetcpal_1_1_result.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Result::ToString()'],['../classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::IpAddr::ToString()'],['../classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::SockAddr::ToString()'],['../classetcpal_1_1_mac_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::MacAddr::ToString()'],['../classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Uuid::ToString()']]],
+  ['tov6array',['ToV6Array',['../classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59',1,'etcpal::IpAddr']]],
+  ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6',1,'etcpal::Mutex']]],
+  ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764',1,'etcpal::RwLock']]],
+  ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873',1,'etcpal::RwLock']]],
+  ['type',['type',['../classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::IpAddr']]]
 ];

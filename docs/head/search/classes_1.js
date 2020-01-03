@@ -8,6 +8,7 @@ var searchData=
   ['etcpallogstrings',['EtcPalLogStrings',['../struct_etc_pal_log_strings.html',1,'']]],
   ['etcpallogtimeparams',['EtcPalLogTimeParams',['../struct_etc_pal_log_time_params.html',1,'']]],
   ['etcpalmacaddr',['EtcPalMacAddr',['../struct_etc_pal_mac_addr.html',1,'']]],
+  ['etcpalmempooldesc',['EtcPalMempoolDesc',['../struct_etc_pal_mempool_desc.html',1,'']]],
   ['etcpalmreq',['EtcPalMreq',['../struct_etc_pal_mreq.html',1,'']]],
   ['etcpalnetintinfo',['EtcPalNetintInfo',['../struct_etc_pal_netint_info.html',1,'']]],
   ['etcpalpdu',['EtcPalPdu',['../struct_etc_pal_pdu.html',1,'']]],

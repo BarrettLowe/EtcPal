@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mempool_20_28memory_20pools_29',['mempool (Memory Pools)',['../group__etcpal__mempool.html',1,'']]],
-  ['mutexes',['Mutexes',['../group__etcpal__mutex.html',1,'']]]
+  ['fixed_2dwidth_20integer_20types_20_28int_29',['Fixed-Width Integer Types (int)',['../group__etcpal__int.html',1,'']]]
 ];

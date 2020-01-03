@@ -1,5 +1,5 @@
 var modules =
 [
-    [ "etcpal (Core Modules)", "group__etcpal.html", "group__etcpal" ],
-    [ "etcpal/cpp (C++ Wrappers)", "group__etcpal__cpp.html", "group__etcpal__cpp" ]
+    [ "EtcPal", "group__etcpal.html", "group__etcpal" ],
+    [ "EtcPal C++ Wrappers", "group__etcpal__cpp.html", "group__etcpal__cpp" ]
 ];

@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['wait',['Wait',['../classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d',1,'etcpal::Signal']]],
-  ['warning',['Warning',['../classetcpal_1_1_logger.html#a97d41b6faaf421937e6b82bd1c3067db',1,'etcpal::Logger']]],
-  ['wildcard',['Wildcard',['../classetcpal_1_1_ip_addr.html#a6dd5f9ef79404118ec2427c68eedad86',1,'etcpal::IpAddr']]],
-  ['wildcardv4',['WildcardV4',['../classetcpal_1_1_ip_addr.html#a8ddb6547f191f5d3f3b24f3f02727095',1,'etcpal::IpAddr']]],
-  ['wildcardv6',['WildcardV6',['../classetcpal_1_1_ip_addr.html#a24fd3077450fceffa3e02fb4c76be7df',1,'etcpal::IpAddr']]],
-  ['writeguard',['WriteGuard',['../classetcpal_1_1_write_guard.html',1,'WriteGuard'],['../classetcpal_1_1_write_guard.html#a0c3e55817a2955c086af3a033db5105a',1,'etcpal::WriteGuard::WriteGuard(RwLock &amp;rwlock)'],['../classetcpal_1_1_write_guard.html#a94731b7b53c630d8781f78807ca35dd2',1,'etcpal::WriteGuard::WriteGuard(etcpal_rwlock_t &amp;rwlock)']]],
-  ['writelock',['WriteLock',['../classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c',1,'etcpal::RwLock']]],
-  ['writeunlock',['WriteUnlock',['../classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4',1,'etcpal::RwLock']]]
+  ['_7eexpected',['~Expected',['../classetcpal_1_1_expected.html#a8da4910031b4040699233168372b0102',1,'etcpal::Expected']]],
+  ['_7emutex',['~Mutex',['../classetcpal_1_1_mutex.html#a205e2c334b25cb96e4f1303a4fde6b0c',1,'etcpal::Mutex']]],
+  ['_7emutexguard',['~MutexGuard',['../classetcpal_1_1_mutex_guard.html#a310e9063e3e9794762a2cf28c6148334',1,'etcpal::MutexGuard']]],
+  ['_7ereadguard',['~ReadGuard',['../classetcpal_1_1_read_guard.html#af40fbc4ea83eb91ffa11e2e0a17e5e22',1,'etcpal::ReadGuard']]],
+  ['_7erwlock',['~RwLock',['../classetcpal_1_1_rw_lock.html#a31fcfa6d9b8bcf5a64823de7c0b1313a',1,'etcpal::RwLock']]],
+  ['_7esignal',['~Signal',['../classetcpal_1_1_signal.html#a20038cb30942f02ef70185cdaed0227a',1,'etcpal::Signal']]],
+  ['_7ewriteguard',['~WriteGuard',['../classetcpal_1_1_write_guard.html#afa219384bacf93a154fdb6bf71941d57',1,'etcpal::WriteGuard']]]
 ];

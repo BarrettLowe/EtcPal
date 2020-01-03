@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['signals',['Signals',['../group__etcpal__signal.html',1,'']]],
-  ['socket_20_28network_20socket_20interface_29',['socket (Network Socket Interface)',['../group__etcpal__socket.html',1,'']]]
+  ['network_20interfaces_20_28netint_29',['Network Interfaces (netint)',['../group__etcpal__netint.html',1,'']]],
+  ['network_20socket_20interface_20_28socket_29',['Network Socket Interface (socket)',['../group__etcpal__socket.html',1,'']]]
 ];

@@ -127,13 +127,13 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_mutex_guard.html','');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">MutexGuard Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
+<div class="title">MutexGuard Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<div class="textblock"><p>Lock guard around a mutex. </p>
-<p>Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_mutex_guard.html">etcpal::MutexGuard</a> lock(mutex_);</div><div class="line">  <span class="comment">// Do critical section operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><table class="memberdecls">
+
+<p>Lock guard around a mutex.  
+ <a href="classetcpal_1_1_mutex_guard.html#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9ba4c9dc64b894cd9210f2cfa3b25952"><td class="memItemLeft" align="right" valign="top"><a id="a9ba4c9dc64b894cd9210f2cfa3b25952"></a>
@@ -164,7 +164,10 @@ Lock guard classes</h2></td></tr>
 <tr class="memdesc:a310e9063e3e9794762a2cf28c6148334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the lock upon going out-of-scope. <br /></td></tr>
 <tr class="separator:a310e9063e3e9794762a2cf28c6148334"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Lock guard around a mutex. </p>
+<p>Lock is taken when this class is instantiated, and released when it goes out of scope. Example usage:</p>
+<div class="fragment"><div class="line"><span class="keywordtype">void</span> Class::CriticalFunction()</div><div class="line">{</div><div class="line">  <a class="code" href="classetcpal_1_1_mutex_guard.html">etcpal::MutexGuard</a> lock(mutex_);</div><div class="line">  <span class="comment">// Do critical section operations here</span></div><div class="line"></div><div class="line">  <span class="comment">// Lock is released when it goes out of scope</span></div><div class="line">}</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a72577d0ea01f7607a671de23cc54eb06"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a72577d0ea01f7607a671de23cc54eb06">&#9670;&nbsp;</a></span>MutexGuard() <span class="overload">[1/2]</span></h2>
 

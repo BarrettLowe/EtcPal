@@ -127,13 +127,13 @@ $(document).ready(function(){initNavTree('struct_etc_pal_ip_addr.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPalIpAddr Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__inet.html">inet (Internet Addressing)</a></div></div>  </div>
+<div class="title">EtcPalIpAddr Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__inet.html">Internet Addressing (inet)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<div class="textblock"><p>An IP address. </p>
-<p>Can hold either an IPv4 or IPv6 address. Do not manipulate the members directly; use the macros defined in this module to access them. IPv4 addresses are in host byte order. IPv6 addresses also contain a scope ID, which is also sometimes referred to as a zone index (RFC 4007), to help disambiguate link-local addresses, among other uses. In most cases, this field can be left at its default value, which is set by the <a class="el" href="group__etcpal__inet.html#gae0d14b2f44b81a6687390839e0aea869" title="Set the IPv6 address in a EtcPalIpAddr. ">ETCPAL_IP_SET_V6_ADDRESS()</a> macro. </p>
-</div><table class="memberdecls">
+
+<p>An IP address.  
+ <a href="struct_etc_pal_ip_addr.html#details">More...</a></p>
+<table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a89368dca599010efedd3d8ca663d5953"><td class="memItemLeft" align="right" valign="top"><a id="a89368dca599010efedd3d8ca663d5953"></a>
@@ -158,7 +158,10 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a3423eb761e78396c67ba1345c0438871"><td class="mdescLeft">&#160;</td><td class="mdescRight">A union containing either the IPv4 or IPv6 address.  <a href="#a3423eb761e78396c67ba1345c0438871">More...</a><br /></td></tr>
 <tr class="separator:a3423eb761e78396c67ba1345c0438871"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>An IP address. </p>
+<p>Can hold either an IPv4 or IPv6 address. Do not manipulate the members directly; use the macros defined in this module to access them. IPv4 addresses are in host byte order. IPv6 addresses also contain a scope ID, which is also sometimes referred to as a zone index (RFC 4007), to help disambiguate link-local addresses, among other uses. In most cases, this field can be left at its default value, which is set by the <a class="el" href="group__etcpal__inet.html#gae0d14b2f44b81a6687390839e0aea869" title="Set the IPv6 address in a EtcPalIpAddr. ">ETCPAL_IP_SET_V6_ADDRESS()</a> macro. </p>
+</div><h2 class="groupheader">Field Documentation</h2>
 <a id="a3423eb761e78396c67ba1345c0438871"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3423eb761e78396c67ba1345c0438871">&#9670;&nbsp;</a></span>addr</h2>
 

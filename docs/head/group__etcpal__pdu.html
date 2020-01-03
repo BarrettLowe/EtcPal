@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: pdu (ACN Protocol Family PDUs)</title>
+  <title>EtcPal: ACN Protocol Family PDUs (pdu)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -131,17 +131,17 @@ $(document).ready(function(){initNavTree('group__etcpal__pdu.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">pdu (ACN Protocol Family PDUs)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
+<div class="title">ACN Protocol Family PDUs (pdu)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pdu.h&quot;</span></div></div><!-- fragment --><p>This module handles building and parsing the ACN PDU format as defined in ANSI E1.17, ACN Architecture document, &sect; 2. EtcPal supports a few different ACN protocol family libraries, including sACN and RDMnet, so it's convenient to have this logic here. </p>
+
+<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN).  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__etcpal__root__layer__pdu"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html">root_layer_pdu (ACN Root Layer PDUs)</a></td></tr>
-<tr class="memdesc:group__etcpal__root__layer__pdu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse or pack a Root Layer PDU block. <br /></td></tr>
+<tr class="memitem:group__etcpal__rootlayerpdu"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__rootlayerpdu.html">ACN Root Layer PDUs (rootlayerpdu)</a></td></tr>
+<tr class="memdesc:group__etcpal__rootlayerpdu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse or pack a Root Layer PDU block. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -222,7 +222,9 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <tr class="memdesc:gac7b3e21b8c080aea188a2d577fd31d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the D flag in a PDU flags field.  <a href="#gac7b3e21b8c080aea188a2d577fd31d31">More...</a><br /></td></tr>
 <tr class="separator:gac7b3e21b8c080aea188a2d577fd31d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/pdu.h&quot;</span></div></div><!-- fragment --> <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga0c0d07635b8236c97bb21bbd1eb61c8f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga0c0d07635b8236c97bb21bbd1eb61c8f">&#9670;&nbsp;</a></span>ETCPAL_INIT_PDU</h2>
 
@@ -361,7 +363,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(pdu_buf[0])                                                                   \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__etcpal__pdu_html_gaadfa588e12322808723c598fef9b2509"><div class="ttname"><a href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a></div><div class="ttdeci">#define ETCPAL_PDU_L_FLAG_SET(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:57</div></div>
+<b>Value:</b><div class="fragment"><div class="line">((uint32_t)(<a class="code" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(pdu_buf[0])                                                                   \</div><div class="line">                  ? ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 16) | (uint32_t)(pdu_buf[1] &lt;&lt; 8) | (uint32_t)pdu_buf[2]) \</div><div class="line">                  : ((uint32_t)((pdu_buf[0] &amp; 0x0fu) &lt;&lt; 8) | (uint32_t)pdu_buf[1])))</div><div class="ttc" id="group__etcpal__pdu_html_gaadfa588e12322808723c598fef9b2509"><div class="ttname"><a href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a></div><div class="ttdeci">#define ETCPAL_PDU_L_FLAG_SET(flags_byte)</div><div class="ttdoc">Determine whether the L flag is set in a PDU flags field. </div><div class="ttdef"><b>Definition:</b> pdu.h:53</div></div>
 </div><!-- fragment -->
 <p>Get the length from the Length field of a PDU. </p>
 <dl class="params"><dt>Parameters</dt><dd>

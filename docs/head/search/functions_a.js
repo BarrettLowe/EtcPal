@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['lock',['Lock',['../classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69',1,'etcpal::Mutex']]],
-  ['log',['Log',['../classetcpal_1_1_logger.html#aa613ebedf6ebc98cccf35990217e2eab',1,'etcpal::Logger']]],
-  ['log_5faction',['log_action',['../classetcpal_1_1_logger.html#a5ec18014ab4cbe6b2cf3ce90e8d6737c',1,'etcpal::Logger']]],
-  ['log_5fmask',['log_mask',['../classetcpal_1_1_logger.html#ad0d3bf4ed833ebbaa8529a171d788f20',1,'etcpal::Logger']]],
-  ['log_5fparams',['log_params',['../classetcpal_1_1_logger.html#a986c589bfc9aa466a31a84a9b8575546',1,'etcpal::Logger']]]
+  ['netmask',['Netmask',['../classetcpal_1_1_ip_addr.html#a517378a65c041aa6ee09fc02765a5a97',1,'etcpal::IpAddr']]],
+  ['netmaskv4',['NetmaskV4',['../classetcpal_1_1_ip_addr.html#a0dc66641cafbf7a9f76d26c494bfe189',1,'etcpal::IpAddr']]],
+  ['netmaskv6',['NetmaskV6',['../classetcpal_1_1_ip_addr.html#a69e83da0c99b42fe1be96dede839304d',1,'etcpal::IpAddr']]],
+  ['notify',['Notify',['../classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b',1,'etcpal::Signal']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['thread_20_28threading_29',['thread (Threading)',['../group__etcpal__cpp__thread.html',1,'']]],
-  ['timer_20_28timers_29',['timer (Timers)',['../group__etcpal__cpp__timer.html',1,'']]],
-  ['thread_20_28threading_29',['thread (Threading)',['../group__etcpal__thread.html',1,'']]],
-  ['timer_20_28timers_29',['timer (Timers)',['../group__etcpal__timer.html',1,'']]]
+  ['red_2dblack_20trees_20_28rbtree_29',['Red-Black Trees (rbtree)',['../group__etcpal__rbtree.html',1,'']]],
+  ['read_2dwrite_20locks',['Read-Write Locks',['../group__etcpal__rwlock.html',1,'']]]
 ];
