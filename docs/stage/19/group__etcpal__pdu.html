@@ -182,7 +182,7 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9a351fdaedcae30ce8999e4d9fbaf15e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga9a351fdaedcae30ce8999e4d9fbaf15e">etcpal_parse_pdu</a> (const uint8_t *buf, size_t buflen, const <a class="el" href="struct_etc_pal_pdu_constraints.html">EtcPalPduConstraints</a> *constraints, <a class="el" href="struct_etc_pal_pdu.html">EtcPalPdu</a> *pdu)</td></tr>
+<tr class="memitem:ga9a351fdaedcae30ce8999e4d9fbaf15e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga9a351fdaedcae30ce8999e4d9fbaf15e">etcpal_parse_pdu</a> (const uint8_t *buf, size_t buflen, const <a class="el" href="struct_etc_pal_pdu_constraints.html">EtcPalPduConstraints</a> *constraints, <a class="el" href="struct_etc_pal_pdu.html">EtcPalPdu</a> *pdu)</td></tr>
 <tr class="memdesc:ga9a351fdaedcae30ce8999e4d9fbaf15e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse a generic ACN PDU.  <a href="#ga9a351fdaedcae30ce8999e4d9fbaf15e">More...</a><br /></td></tr>
 <tr class="separator:ga9a351fdaedcae30ce8999e4d9fbaf15e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -191,16 +191,16 @@ Get the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <tr><td class="ititle" colspan="2"><p><a class="anchor" id="amgrpfe64ed379ab206fc6b2f196334e422f4"></a>The first byte of each PDU contains a flags field which indicates the inheritance properties of that PDU.</p>
 <p>For more information, see ANSI E1.17, ACN Architecture, &sect; 2.4. </p>
 </td></tr>
-<tr class="memitem:gaadfa588e12322808723c598fef9b2509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x80u))</td></tr>
+<tr class="memitem:gaadfa588e12322808723c598fef9b2509"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#gaadfa588e12322808723c598fef9b2509">ETCPAL_PDU_L_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((bool)(flags_byte &amp; 0x80u))</td></tr>
 <tr class="memdesc:gaadfa588e12322808723c598fef9b2509"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the L flag is set in a PDU flags field.  <a href="#gaadfa588e12322808723c598fef9b2509">More...</a><br /></td></tr>
 <tr class="separator:gaadfa588e12322808723c598fef9b2509"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga183303aee9717e2c0e662bbfb98dcc1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga183303aee9717e2c0e662bbfb98dcc1f">ETCPAL_PDU_V_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x40u))</td></tr>
+<tr class="memitem:ga183303aee9717e2c0e662bbfb98dcc1f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga183303aee9717e2c0e662bbfb98dcc1f">ETCPAL_PDU_V_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((bool)(flags_byte &amp; 0x40u))</td></tr>
 <tr class="memdesc:ga183303aee9717e2c0e662bbfb98dcc1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the V flag is set in a PDU flags field.  <a href="#ga183303aee9717e2c0e662bbfb98dcc1f">More...</a><br /></td></tr>
 <tr class="separator:ga183303aee9717e2c0e662bbfb98dcc1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6bd98193bb97a1745a87ef1eddec36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#gac6bd98193bb97a1745a87ef1eddec36e">ETCPAL_PDU_H_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x20u))</td></tr>
+<tr class="memitem:gac6bd98193bb97a1745a87ef1eddec36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#gac6bd98193bb97a1745a87ef1eddec36e">ETCPAL_PDU_H_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((bool)(flags_byte &amp; 0x20u))</td></tr>
 <tr class="memdesc:gac6bd98193bb97a1745a87ef1eddec36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the H flag is set in a PDU flags field.  <a href="#gac6bd98193bb97a1745a87ef1eddec36e">More...</a><br /></td></tr>
 <tr class="separator:gac6bd98193bb97a1745a87ef1eddec36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8395f03212e738c67fee8f6e458617a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga8395f03212e738c67fee8f6e458617a2">ETCPAL_PDU_D_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x10u))</td></tr>
+<tr class="memitem:ga8395f03212e738c67fee8f6e458617a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html#ga8395f03212e738c67fee8f6e458617a2">ETCPAL_PDU_D_FLAG_SET</a>(flags_byte)&#160;&#160;&#160;((bool)(flags_byte &amp; 0x10u))</td></tr>
 <tr class="memdesc:ga8395f03212e738c67fee8f6e458617a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the D flag is set in a PDU flags field.  <a href="#ga8395f03212e738c67fee8f6e458617a2">More...</a><br /></td></tr>
 <tr class="separator:ga8395f03212e738c67fee8f6e458617a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -260,7 +260,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x10u))</td>
+          <td>&#160;&#160;&#160;((bool)(flags_byte &amp; 0x10u))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -287,7 +287,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x20u))</td>
+          <td>&#160;&#160;&#160;((bool)(flags_byte &amp; 0x20u))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -330,7 +330,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x80u))</td>
+          <td>&#160;&#160;&#160;((bool)(flags_byte &amp; 0x80u))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -565,7 +565,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">flags_byte</td><td>)</td>
-          <td>&#160;&#160;&#160;((<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>)(flags_byte &amp; 0x40u))</td>
+          <td>&#160;&#160;&#160;((bool)(flags_byte &amp; 0x40u))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -622,7 +622,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> etcpal_parse_pdu </td>
+          <td class="memname">bool etcpal_parse_pdu </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>

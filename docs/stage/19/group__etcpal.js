@@ -1,6 +1,5 @@
 var group__etcpal =
 [
-    [ "bool (C Boolean Type)", "group__etcpal__bool.html", "group__etcpal__bool" ],
     [ "error (Error Handling)", "group__etcpal__error.html", "group__etcpal__error" ],
     [ "inet (Internet Addressing)", "group__etcpal__inet.html", "group__etcpal__inet" ],
     [ "log (Logging)", "group__etcpal__log.html", "group__etcpal__log" ],

@@ -158,7 +158,7 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 <tr class="memdesc:a19c380b03cea21d7ac7325136a131ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the UUID to a string representation formatted per RFC 4122. <br /></td></tr>
 <tr class="separator:a19c380b03cea21d7ac7325136a131ff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27909eb1d61b8b261d259be7c70c58dd"><td class="memItemLeft" align="right" valign="top"><a id="a27909eb1d61b8b261d259be7c70c58dd"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a> () const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a> () const noexcept</td></tr>
 <tr class="memdesc:a27909eb1d61b8b261d259be7c70c58dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a UUID is null (all 0's). <br /></td></tr>
 <tr class="separator:a27909eb1d61b8b261d259be7c70c58dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -176,12 +176,24 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:acf48b871ad6aa14afc1a80cf688ae6f8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#acf48b871ad6aa14afc1a80cf688ae6f8">V3</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const void *name, size_t name_len) noexcept</td></tr>
 <tr class="memdesc:acf48b871ad6aa14afc1a80cf688ae6f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 3 UUID.  <a href="#acf48b871ad6aa14afc1a80cf688ae6f8">More...</a><br /></td></tr>
 <tr class="separator:acf48b871ad6aa14afc1a80cf688ae6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a654bace3b7b14715143dd4a955f477c5"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a654bace3b7b14715143dd4a955f477c5">V3</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const char *name) noexcept</td></tr>
+<tr class="memdesc:a654bace3b7b14715143dd4a955f477c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 3 UUID.  <a href="#a654bace3b7b14715143dd4a955f477c5">More...</a><br /></td></tr>
+<tr class="separator:a654bace3b7b14715143dd4a955f477c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a637aba4ac439b6c6845f6ff8e3411186"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a637aba4ac439b6c6845f6ff8e3411186">V3</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const std::string &amp;name) noexcept</td></tr>
+<tr class="memdesc:a637aba4ac439b6c6845f6ff8e3411186"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 3 UUID.  <a href="#a637aba4ac439b6c6845f6ff8e3411186">More...</a><br /></td></tr>
+<tr class="separator:a637aba4ac439b6c6845f6ff8e3411186"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bcee74617519b972666b57ff986bf43"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a3bcee74617519b972666b57ff986bf43">V4</a> () noexcept</td></tr>
 <tr class="memdesc:a3bcee74617519b972666b57ff986bf43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 4 UUID.  <a href="#a3bcee74617519b972666b57ff986bf43">More...</a><br /></td></tr>
 <tr class="separator:a3bcee74617519b972666b57ff986bf43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae4e59b0f73518f92ed7c3c6d1b65bd3c"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#ae4e59b0f73518f92ed7c3c6d1b65bd3c">V5</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const void *name, size_t name_len) noexcept</td></tr>
 <tr class="memdesc:ae4e59b0f73518f92ed7c3c6d1b65bd3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 5 UUID.  <a href="#ae4e59b0f73518f92ed7c3c6d1b65bd3c">More...</a><br /></td></tr>
 <tr class="separator:ae4e59b0f73518f92ed7c3c6d1b65bd3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a729621c06a6d1bd895a9c82b30141c9a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a729621c06a6d1bd895a9c82b30141c9a">V5</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const char *name) noexcept</td></tr>
+<tr class="memdesc:a729621c06a6d1bd895a9c82b30141c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 5 UUID.  <a href="#a729621c06a6d1bd895a9c82b30141c9a">More...</a><br /></td></tr>
+<tr class="separator:a729621c06a6d1bd895a9c82b30141c9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaa3b4ab280e85d5c18c2749018c6153"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#acaa3b4ab280e85d5c18c2749018c6153">V5</a> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;ns, const std::string &amp;name) noexcept</td></tr>
+<tr class="memdesc:acaa3b4ab280e85d5c18c2749018c6153"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Version 5 UUID.  <a href="#acaa3b4ab280e85d5c18c2749018c6153">More...</a><br /></td></tr>
+<tr class="separator:acaa3b4ab280e85d5c18c2749018c6153"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1ccf480526751a937afb32a2db7346a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">OsPreferred</a> () noexcept</td></tr>
 <tr class="memdesc:ae1ccf480526751a937afb32a2db7346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a UUID of the version preferred by the underlying OS.  <a href="#ae1ccf480526751a937afb32a2db7346a">More...</a><br /></td></tr>
 <tr class="separator:ae1ccf480526751a937afb32a2db7346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -350,7 +362,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="acf48b871ad6aa14afc1a80cf688ae6f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf48b871ad6aa14afc1a80cf688ae6f8">&#9670;&nbsp;</a></span>V3()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acf48b871ad6aa14afc1a80cf688ae6f8">&#9670;&nbsp;</a></span>V3() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -394,6 +406,98 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a654bace3b7b14715143dd4a955f477c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a654bace3b7b14715143dd4a955f477c5">&#9670;&nbsp;</a></span>V3() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> V3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate and return a Version 3 UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>UUID to use as a namespace. </td></tr>
+    <tr><td class="paramname">name</td><td>A null-terminated C string representing the name to convert into a UUID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083" title="Generate a Version 3 UUID. ">etcpal_generate_v3_uuid()</a> for more information. </p>
+
+</div>
+</div>
+<a id="a637aba4ac439b6c6845f6ff8e3411186"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a637aba4ac439b6c6845f6ff8e3411186">&#9670;&nbsp;</a></span>V3() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> V3 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate and return a Version 3 UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>UUID to use as a namespace. </td></tr>
+    <tr><td class="paramname">name</td><td>A string representing the name to convert into a UUID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083" title="Generate a Version 3 UUID. ">etcpal_generate_v3_uuid()</a> for more information. </p>
+
+</div>
+</div>
 <a id="a3bcee74617519b972666b57ff986bf43"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3bcee74617519b972666b57ff986bf43">&#9670;&nbsp;</a></span>V4()</h2>
 
@@ -423,7 +527,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae4e59b0f73518f92ed7c3c6d1b65bd3c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4e59b0f73518f92ed7c3c6d1b65bd3c">&#9670;&nbsp;</a></span>V5()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4e59b0f73518f92ed7c3c6d1b65bd3c">&#9670;&nbsp;</a></span>V5() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -463,6 +567,98 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate and return a Version 5 UUID. </p>
+<p>See <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> for more information. </p>
+
+</div>
+</div>
+<a id="a729621c06a6d1bd895a9c82b30141c9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a729621c06a6d1bd895a9c82b30141c9a">&#9670;&nbsp;</a></span>V5() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> V5 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate and return a Version 5 UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>UUID to use as a namespace. </td></tr>
+    <tr><td class="paramname">name</td><td>A null-terminated C string representing the name to convert into a UUID.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>See <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> for more information. </p>
+
+</div>
+</div>
+<a id="acaa3b4ab280e85d5c18c2749018c6153"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaa3b4ab280e85d5c18c2749018c6153">&#9670;&nbsp;</a></span>V5() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> V5 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;&#160;</td>
+          <td class="paramname"><em>ns</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate and return a Version 5 UUID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ns</td><td>UUID to use as a namespace. </td></tr>
+    <tr><td class="paramname">name</td><td>A string representing the name to convert into a UUID.</td></tr>
+  </table>
+  </dd>
+</dl>
 <p>See <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> for more information. </p>
 
 </div>

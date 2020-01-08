@@ -17,7 +17,6 @@ var searchData=
   ['tostring',['ToString',['../classetcpal_1_1_result.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Result::ToString()'],['../classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::IpAddr::ToString()'],['../classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::SockAddr::ToString()'],['../classetcpal_1_1_mac_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::MacAddr::ToString()'],['../classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Uuid::ToString()']]],
   ['tov6array',['ToV6Array',['../classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59',1,'etcpal::IpAddr']]],
   ['tree',['tree',['../struct_etc_pal_rb_iter.html#a3dc7beb088200d742f70c0c895b376c4',1,'EtcPalRbIter']]],
-  ['true',['true',['../group__etcpal__bool.html#ga41f9c5fb8b08eb5dc3edce4dcb37fee7',1,'bool.h']]],
   ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6',1,'etcpal::Mutex']]],
   ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764',1,'etcpal::RwLock']]],
   ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873',1,'etcpal::RwLock']]],

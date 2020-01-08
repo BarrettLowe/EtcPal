@@ -129,8 +129,9 @@ $(document).ready(function(){initNavTree('index.html','');});
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h2>Introduction</h2>
-<p>EtcPal is a C-language library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
+<p>EtcPal is a C99 library for platform abstraction. It supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (i.e. data structures, logging) thrown in here and there for convenience.</p>
 <p>EtcPal modules are designed to run with low overhead on embedded platforms, and thus are designed to be as thin a wrapper over the underlying OS functionality as possible.</p>
+<p>EtcPal also contains some header-only C++11 wrapper modules which wrap the functionality of a corresponding C module in a nicer API for C++ users.</p>
 <p> 
 To jump right into the documentation, check out the <a href="modules.html">Modules Overview</a>.
 </p>
@@ -186,7 +187,7 @@ To jump right into the documentation, check out the <a href="modules.html">Modul
 </ul>
 </li>
 <li>Microsoft Windows<ul>
-<li>Windows Vista or later</li>
+<li>Windows 7 or later</li>
 <li>Windows SDK library dependencies for optional features (if building using CMake, these dependencies are handled automatically):<ul>
 <li>etcpal/netint (network interfaces): Iphlpapi.lib</li>
 <li>etcpal/socket (socket interface): Iphlpapi.lib, Ws2_32.lib</li>
