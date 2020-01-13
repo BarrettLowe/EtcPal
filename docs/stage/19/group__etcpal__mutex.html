@@ -134,20 +134,21 @@ $(document).ready(function(){initNavTree('group__etcpal__mutex.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <p>Mutual-exclusion (mutex) objects. </p>
 <p>Sometimes also referred to as a critical section. Only one thread can take the mutex at a time using <a class="el" href="group__etcpal__mutex.html#gac56c0f48e3bfc5e8e0d321a711816f67" title="Acquire a mutex. ">etcpal_mutex_take()</a>. Where possible on real-time platforms, the mutex provides priority inheritance.</p>
-<p>etcpal_mutex implementations use the following constructs under the hood on various platforms:</p>
+<p>Mutexes are used to synchronize access to data from different threads. For example:</p>
+<div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> shared_counter;</div><div class="line"><a class="code" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> mutex;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> counter_thread(<span class="keywordtype">void</span>* arg)</div><div class="line">{</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10000; ++i)</div><div class="line">  {</div><div class="line">    <span class="comment">// Ensure that we are the only context conducting read-modify-write operations on</span></div><div class="line">    <span class="comment">// shared_counter. No other thread can be in this block of code at the same time.</span></div><div class="line">    <a class="code" href="group__etcpal__mutex.html#gac56c0f48e3bfc5e8e0d321a711816f67">etcpal_mutex_take</a>(&amp;mutex);</div><div class="line">    ++shared_counter;</div><div class="line">    <a class="code" href="group__etcpal__mutex.html#ga5a1ceebcbb5856a98dab50a13f894bcf">etcpal_mutex_give</a>(&amp;mutex);</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div><div class="line">{</div><div class="line">  <a class="code" href="group__etcpal__mutex.html#ga848f261552bf8c981590eb784ee5b3b8">etcpal_mutex_create</a>(&amp;mutex);</div><div class="line"></div><div class="line">  <a class="code" href="struct_etc_pal_thread_params.html">EtcPalThreadParams</a> thread_params = { <a class="code" href="group__etcpal__thread.html#ga2a086e640c72d82dacd9c8f466479eff">ETCPAL_THREAD_DEFAULT_PARAMS_INIT</a> };</div><div class="line">  <a class="code" href="group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8">etcpal_thread_t</a> thread_handles[5];</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; ++i)</div><div class="line">  {</div><div class="line">    <a class="code" href="group__etcpal__thread.html#ga16f3116e3a533530d44c0d47b263f8e9">etcpal_thread_create</a>(&amp;thread_handles[i], &amp;params, counter_thread, NULL);</div><div class="line">  }</div><div class="line"> </div><div class="line">  <span class="comment">// Wait for the threads to finish</span></div><div class="line">  <a class="code" href="group__etcpal__thread.html#gaf5d7c5aec312d172e617fd653ade3b08">etcpal_thread_sleep</a>(1000);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; ++i)</div><div class="line">  {</div><div class="line">    <a class="code" href="group__etcpal__thread.html#ga711be33696701513f19239cf22dc3792">etcpal_thread_join</a>(&amp;thread_handles[i]);</div><div class="line">  }</div><div class="line"></div><div class="line">  printf(<span class="stringliteral">&quot;The counter is: %d\n&quot;</span>, shared_counter); <span class="comment">// Prints &quot;The counter is: 50000&quot;</span></div><div class="line"></div><div class="line">  <a class="code" href="group__etcpal__mutex.html#ga4b71ed71a637a07c0fe5cd55222a209c">etcpal_mutex_destroy</a>(&amp;mutex);</div><div class="line">}</div></div><!-- fragment --><p>etcpal_mutex implementations use different constructs under the hood on various platforms. Also, different platforms affect the behavior of certain functions.</p>
 <table class="doxtable">
 <tr>
-<th>On: </th><th>etcpal_mutex uses:  </th></tr>
+<th>Platform </th><th>timed_take honored </th><th>give_from_isr meaningful </th><th>Underlying Type  </th></tr>
 <tr>
-<td>FreeRTOS </td><td><a href="https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html">Mutexes</a> </td></tr>
+<td>FreeRTOS </td><td>Yes </td><td>Yes </td><td><a href="https://www.freertos.org/Real-time-embedded-RTOS-mutexes.html">Mutexes</a> </td></tr>
 <tr>
-<td>Linux </td><td><a href="https://linux.die.net/man/3/pthread_mutex_init">pthread_mutex</a> </td></tr>
+<td>Linux </td><td>No </td><td>No </td><td><a href="https://linux.die.net/man/3/pthread_mutex_init">pthread_mutex</a> </td></tr>
 <tr>
-<td>macOS </td><td><a href="https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/pthread_mutex_init.3.html">pthread_mutex</a> </td></tr>
+<td>macOS </td><td>No </td><td>No </td><td><a href="https://developer.apple.com/library/archive/documentation/System/Conceptual/ManPages_iPhoneOS/man3/pthread_mutex_init.3.html">pthread_mutex</a> </td></tr>
 <tr>
-<td>MQX </td><td>Lightweight Semaphores </td></tr>
+<td>MQX </td><td>Yes </td><td>No </td><td>Lightweight Semaphores </td></tr>
 <tr>
-<td>Windows </td><td><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> </td></tr>
+<td>Windows </td><td>No </td><td>No </td><td><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms682530(v=vs.85).aspx">Critical Section objects</a> </td></tr>
 </table>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -167,9 +168,15 @@ Functions</h2></td></tr>
 <tr class="memitem:ga26e7c3d33f3ab2dd5a82de3cbc36d39e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mutex.html#ga26e7c3d33f3ab2dd5a82de3cbc36d39e">etcpal_mutex_try_take</a> (<a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *id)</td></tr>
 <tr class="memdesc:ga26e7c3d33f3ab2dd5a82de3cbc36d39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to acquire a mutex.  <a href="#ga26e7c3d33f3ab2dd5a82de3cbc36d39e">More...</a><br /></td></tr>
 <tr class="separator:ga26e7c3d33f3ab2dd5a82de3cbc36d39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7395e6caae116fafaf61f44a7383aae5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mutex.html#ga7395e6caae116fafaf61f44a7383aae5">etcpal_mutex_timed_take</a> (<a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *id, int timeout_ms)</td></tr>
+<tr class="memdesc:ga7395e6caae116fafaf61f44a7383aae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to acquire a mutex, giving up after a timeout.  <a href="#ga7395e6caae116fafaf61f44a7383aae5">More...</a><br /></td></tr>
+<tr class="separator:ga7395e6caae116fafaf61f44a7383aae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5a1ceebcbb5856a98dab50a13f894bcf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mutex.html#ga5a1ceebcbb5856a98dab50a13f894bcf">etcpal_mutex_give</a> (<a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *id)</td></tr>
 <tr class="memdesc:ga5a1ceebcbb5856a98dab50a13f894bcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a mutex.  <a href="#ga5a1ceebcbb5856a98dab50a13f894bcf">More...</a><br /></td></tr>
 <tr class="separator:ga5a1ceebcbb5856a98dab50a13f894bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade6bb83c220224890734bbe9ac9f16e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mutex.html#gade6bb83c220224890734bbe9ac9f16e4">etcpal_mutex_give_from_isr</a> (<a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *id)</td></tr>
+<tr class="memdesc:gade6bb83c220224890734bbe9ac9f16e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a mutex from an interrupt context.  <a href="#gade6bb83c220224890734bbe9ac9f16e4">More...</a><br /></td></tr>
+<tr class="separator:gade6bb83c220224890734bbe9ac9f16e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4b71ed71a637a07c0fe5cd55222a209c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mutex.html#ga4b71ed71a637a07c0fe5cd55222a209c">etcpal_mutex_destroy</a> (<a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *id)</td></tr>
 <tr class="memdesc:ga4b71ed71a637a07c0fe5cd55222a209c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a mutex object.  <a href="#ga4b71ed71a637a07c0fe5cd55222a209c">More...</a><br /></td></tr>
 <tr class="separator:ga4b71ed71a637a07c0fe5cd55222a209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -274,6 +281,33 @@ false: The mutex was not created. </dd></dl>
 
 </div>
 </div>
+<a id="gade6bb83c220224890734bbe9ac9f16e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade6bb83c220224890734bbe9ac9f16e4">&#9670;&nbsp;</a></span>etcpal_mutex_give_from_isr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void etcpal_mutex_give_from_isr </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Release a mutex from an interrupt context. </p>
+<p>This function is only meaningful on some platforms; namely, those which have a different method for releasing a mutex from an interrupt context. See the table in the overview above for more information. On platforms on which it is not meaningful, this function simply executes the equivalent of <a class="el" href="group__etcpal__mutex.html#ga5a1ceebcbb5856a98dab50a13f894bcf" title="Release a mutex. ">etcpal_mutex_give()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the mutex to release. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="gac56c0f48e3bfc5e8e0d321a711816f67"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gac56c0f48e3bfc5e8e0d321a711816f67">&#9670;&nbsp;</a></span>etcpal_mutex_take()</h2>
 
@@ -301,6 +335,47 @@ false: The mutex was not created. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>true: The mutex was acquired. </dd>
 <dd>
 false: The mutex is invalid or an error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="ga7395e6caae116fafaf61f44a7383aae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7395e6caae116fafaf61f44a7383aae5">&#9670;&nbsp;</a></span>etcpal_mutex_timed_take()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool etcpal_mutex_timed_take </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9">etcpal_mutex_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to acquire a mutex, giving up after a timeout. </p>
+<p>This function is not honored on all platforms. See the table in the overview above for more information. On platforms on which it is not honored, this function executes the equivalent of <a class="el" href="group__etcpal__mutex.html#ga26e7c3d33f3ab2dd5a82de3cbc36d39e" title="Try to acquire a mutex. ">etcpal_mutex_try_take()</a> if timeout_ms is 0, or <a class="el" href="group__etcpal__mutex.html#gac56c0f48e3bfc5e8e0d321a711816f67" title="Acquire a mutex. ">etcpal_mutex_take()</a> otherwise.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the mutex to try to acquire. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>Maximum amount of time to wait for the mutex to become available, in milliseconds. If <a class="el" href="group__etcpal.html#ga1cfb33811295439bc08ce2e8b74c1d13" title="For etcpal_ functions that take a millisecond timeout, this means to wait indefinitely. ">ETCPAL_WAIT_FOREVER</a> is given, the result is the same as if <a class="el" href="group__etcpal__mutex.html#gac56c0f48e3bfc5e8e0d321a711816f67" title="Acquire a mutex. ">etcpal_mutex_take()</a> was called. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The mutex was acquired. </dd>
+<dd>
+false: The timeout expired, the mutex was invalid or an error occurred. </dd></dl>
 
 </div>
 </div>

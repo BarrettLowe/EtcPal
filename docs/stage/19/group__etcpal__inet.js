@@ -18,11 +18,11 @@ var group__etcpal__inet =
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", [
       [ "addr", "struct_etc_pal_netint_info.html#ac10a4235b585003054f76871bad3fd85", null ],
       [ "friendly_name", "struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd", null ],
+      [ "id", "struct_etc_pal_netint_info.html#a3548252138686cd633b4730070e2311f", null ],
       [ "index", "struct_etc_pal_netint_info.html#a589d64202487f78e3cc30dd2e04c5201", null ],
       [ "is_default", "struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a", null ],
       [ "mac", "struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef", null ],
-      [ "mask", "struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3", null ],
-      [ "name", "struct_etc_pal_netint_info.html#a6eaa1f18016764aa8812196745e36463", null ]
+      [ "mask", "struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3", null ]
     ] ],
     [ "ETCPAL_INET6_ADDRSTRLEN", "group__etcpal__inet.html#ga71fa8216f8c0c7472c8786e793a7b280", null ],
     [ "ETCPAL_INET_ADDRSTRLEN", "group__etcpal__inet.html#gab44293e291772ce05ffa42c1ad51e4e0", null ],
@@ -42,7 +42,7 @@ var group__etcpal__inet =
     [ "ETCPAL_MAC_IS_NULL", "group__etcpal__inet.html#ga84ac8ff7c11b7b3d05e66192205ae0cb", null ],
     [ "ETCPAL_MAC_STRING_BYTES", "group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45", null ],
     [ "ETCPAL_NETINTINFO_FRIENDLY_NAME_LEN", "group__etcpal__inet.html#ga7f8d8782f4dea64648bb74e20db6d3c3", null ],
-    [ "ETCPAL_NETINTINFO_NAME_LEN", "group__etcpal__inet.html#ga492fc3dd7fabb325e80e375d6be69d89", null ],
+    [ "ETCPAL_NETINTINFO_ID_LEN", "group__etcpal__inet.html#ga7d30e1fd482aa981c7ee4a5082d6bc2d", null ],
     [ "EtcPalIpAddr", "group__etcpal__inet.html#ga0f4fa2c5534edc2061c48b7d0a60941f", null ],
     [ "EtcPalMacAddr", "group__etcpal__inet.html#gac0911b094d33366046d9b947b24cc63f", null ],
     [ "EtcPalNetintInfo", "group__etcpal__inet.html#gaed988a9502c1d15538ef945b3b5b234b", null ],
