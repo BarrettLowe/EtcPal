@@ -170,12 +170,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gad2f3af8fc26a2d028edd4c1341304061"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#gad2f3af8fc26a2d028edd4c1341304061">etcpal_sem_timed_wait</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id, int timeout_ms)</td></tr>
 <tr class="memdesc:gad2f3af8fc26a2d028edd4c1341304061"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a semaphore, giving up after a timeout.  <a href="#gad2f3af8fc26a2d028edd4c1341304061">More...</a><br /></td></tr>
 <tr class="separator:gad2f3af8fc26a2d028edd4c1341304061"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0ce5c783d7d7fdf566c20a6855132cf8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#ga0ce5c783d7d7fdf566c20a6855132cf8">etcpal_sem_post</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id)</td></tr>
-<tr class="memdesc:ga0ce5c783d7d7fdf566c20a6855132cf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a semaphore.  <a href="#ga0ce5c783d7d7fdf566c20a6855132cf8">More...</a><br /></td></tr>
-<tr class="separator:ga0ce5c783d7d7fdf566c20a6855132cf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1b8736a58e66ee3d243d7e7185996dad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#ga1b8736a58e66ee3d243d7e7185996dad">etcpal_sem_post_from_isr</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id)</td></tr>
-<tr class="memdesc:ga1b8736a58e66ee3d243d7e7185996dad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a semaphore from an interrupt context.  <a href="#ga1b8736a58e66ee3d243d7e7185996dad">More...</a><br /></td></tr>
-<tr class="separator:ga1b8736a58e66ee3d243d7e7185996dad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9e39fbcf982a2d058c7b3f1c598d6aac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#ga9e39fbcf982a2d058c7b3f1c598d6aac">etcpal_sem_post</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id)</td></tr>
+<tr class="memdesc:ga9e39fbcf982a2d058c7b3f1c598d6aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a semaphore.  <a href="#ga9e39fbcf982a2d058c7b3f1c598d6aac">More...</a><br /></td></tr>
+<tr class="separator:ga9e39fbcf982a2d058c7b3f1c598d6aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd9bdeefdee24e47f40090840665c4fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#gacd9bdeefdee24e47f40090840665c4fb">etcpal_sem_post_from_isr</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id)</td></tr>
+<tr class="memdesc:gacd9bdeefdee24e47f40090840665c4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a semaphore from an interrupt context.  <a href="#gacd9bdeefdee24e47f40090840665c4fb">More...</a><br /></td></tr>
+<tr class="separator:gacd9bdeefdee24e47f40090840665c4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa4d8fce64dfa93c4c2f7bd08100ef8b0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__sem.html#gaa4d8fce64dfa93c4c2f7bd08100ef8b0">etcpal_sem_destroy</a> (<a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *id)</td></tr>
 <tr class="memdesc:gaa4d8fce64dfa93c4c2f7bd08100ef8b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy a semaphore object.  <a href="#gaa4d8fce64dfa93c4c2f7bd08100ef8b0">More...</a><br /></td></tr>
 <tr class="separator:gaa4d8fce64dfa93c4c2f7bd08100ef8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,7 +232,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Create a new counting semaphore. </p>
-<p>If initial_count is 0, calls to <a class="el" href="group__etcpal__sem.html#gadf3cdb9d9d92dfde1b9933d6076e63aa" title="Wait for a semaphore. ">etcpal_sem_wait()</a> will block until the first call is made to <a class="el" href="group__etcpal__sem.html#ga0ce5c783d7d7fdf566c20a6855132cf8" title="Post a semaphore. ">etcpal_sem_post()</a>.</p>
+<p>If initial_count is 0, calls to <a class="el" href="group__etcpal__sem.html#gadf3cdb9d9d92dfde1b9933d6076e63aa" title="Wait for a semaphore. ">etcpal_sem_wait()</a> will block until the first call is made to <a class="el" href="group__etcpal__sem.html#ga9e39fbcf982a2d058c7b3f1c598d6aac" title="Post a semaphore. ">etcpal_sem_post()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Semaphore identifier on which to create a semaphore. If this function returns true, *id becomes valid for calls to other etcpal_sem API functions. </td></tr>
@@ -273,14 +273,14 @@ false: The semaphore was not created. </dd></dl>
 
 </div>
 </div>
-<a id="ga0ce5c783d7d7fdf566c20a6855132cf8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0ce5c783d7d7fdf566c20a6855132cf8">&#9670;&nbsp;</a></span>etcpal_sem_post()</h2>
+<a id="ga9e39fbcf982a2d058c7b3f1c598d6aac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9e39fbcf982a2d058c7b3f1c598d6aac">&#9670;&nbsp;</a></span>etcpal_sem_post()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void etcpal_sem_post </td>
+          <td class="memname">bool etcpal_sem_post </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -297,17 +297,20 @@ false: The semaphore was not created. </dd></dl>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The semaphore was posted. </dd>
+<dd>
+false: The semaphore has hit its maximum count, the semaphore was invalid or an error occurred. </dd></dl>
 
 </div>
 </div>
-<a id="ga1b8736a58e66ee3d243d7e7185996dad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga1b8736a58e66ee3d243d7e7185996dad">&#9670;&nbsp;</a></span>etcpal_sem_post_from_isr()</h2>
+<a id="gacd9bdeefdee24e47f40090840665c4fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd9bdeefdee24e47f40090840665c4fb">&#9670;&nbsp;</a></span>etcpal_sem_post_from_isr()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void etcpal_sem_post_from_isr </td>
+          <td class="memname">bool etcpal_sem_post_from_isr </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef">etcpal_sem_t</a> *&#160;</td>
           <td class="paramname"><em>id</em></td><td>)</td>
@@ -317,13 +320,16 @@ false: The semaphore was not created. </dd></dl>
 </div><div class="memdoc">
 
 <p>Post a semaphore from an interrupt context. </p>
-<p>This function is only meaningful on some platforms; namely, those which have a different method for posting a semaphore from an interrupt context. See the table in the overview above for more information. On platforms on which it is not meaningful, this function simply executes the equivalent of <a class="el" href="group__etcpal__sem.html#ga0ce5c783d7d7fdf566c20a6855132cf8" title="Post a semaphore. ">etcpal_sem_post()</a>.</p>
+<p>This function is only meaningful on some platforms; namely, those which have a different method for posting a semaphore from an interrupt context. See the table in the overview above for more information. On platforms on which it is not meaningful, this function simply executes the equivalent of <a class="el" href="group__etcpal__sem.html#ga9e39fbcf982a2d058c7b3f1c598d6aac" title="Post a semaphore. ">etcpal_sem_post()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the semaphore to post. </td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The semaphore was posted. </dd>
+<dd>
+false: The semaphore has hit its maximum count, the semaphore was invalid or an error occurred. </dd></dl>
 
 </div>
 </div>
@@ -416,7 +422,7 @@ false: The semaphore's count was zero, the semaphore is invalid or an error occu
 </div><div class="memdoc">
 
 <p>Wait for a semaphore. </p>
-<p>If the semaphore's count is nonzero, decrements the count and returns true. Otherwise, blocks until a call to <a class="el" href="group__etcpal__sem.html#ga0ce5c783d7d7fdf566c20a6855132cf8" title="Post a semaphore. ">etcpal_sem_post()</a> on the semaphore.</p>
+<p>If the semaphore's count is nonzero, decrements the count and returns true. Otherwise, blocks until a call to <a class="el" href="group__etcpal__sem.html#ga9e39fbcf982a2d058c7b3f1c598d6aac" title="Post a semaphore. ">etcpal_sem_post()</a> on the semaphore.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the semaphore for which to wait. </td></tr>
