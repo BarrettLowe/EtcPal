@@ -22,6 +22,7 @@ var searchData=
   ['tree',['tree',['../struct_etc_pal_rb_iter.html#a3dc7beb088200d742f70c0c895b376c4',1,'EtcPalRbIter']]],
   ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef',1,'etcpal::Mutex']]],
   ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535',1,'etcpal::RwLock']]],
+  ['trywait',['TryWait',['../classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7',1,'etcpal::Signal']]],
   ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f',1,'etcpal::RwLock']]],
   ['type',['type',['../struct_etc_pal_ip_addr.html#a89368dca599010efedd3d8ca663d5953',1,'EtcPalIpAddr::type()'],['../classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::IpAddr::type()']]]
 ];

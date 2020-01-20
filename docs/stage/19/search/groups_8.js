@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['signals',['Signals',['../group__etcpal__signal.html',1,'']]],
-  ['socket_20_28network_20socket_20interface_29',['socket (Network Socket Interface)',['../group__etcpal__socket.html',1,'']]]
+  ['rbtree_20_28red_2dblack_20trees_29',['rbtree (Red-Black Trees)',['../group__etcpal__rbtree.html',1,'']]],
+  ['read_2dwrite_20locks',['Read-Write Locks',['../group__etcpal__rwlock.html',1,'']]]
 ];

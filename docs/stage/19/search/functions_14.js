@@ -1,7 +1,6 @@
 var searchData=
 [
   ['wait',['Wait',['../classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d',1,'etcpal::Signal']]],
-  ['waitfor',['WaitFor',['../classetcpal_1_1_signal.html#a068797d0788994c507c4a9b55e0b1840',1,'etcpal::Signal']]],
   ['warning',['Warning',['../classetcpal_1_1_logger.html#a97d41b6faaf421937e6b82bd1c3067db',1,'etcpal::Logger']]],
   ['wildcard',['Wildcard',['../classetcpal_1_1_ip_addr.html#a6dd5f9ef79404118ec2427c68eedad86',1,'etcpal::IpAddr']]],
   ['wildcardv4',['WildcardV4',['../classetcpal_1_1_ip_addr.html#a8ddb6547f191f5d3f3b24f3f02727095',1,'etcpal::IpAddr']]],

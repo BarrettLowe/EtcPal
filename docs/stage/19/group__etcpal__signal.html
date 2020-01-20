@@ -164,12 +164,12 @@ Functions</h2></td></tr>
 <tr class="memitem:ga10e2d2cc15e6a30f38ba65f02c0905d7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7">etcpal_signal_wait</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id)</td></tr>
 <tr class="memdesc:ga10e2d2cc15e6a30f38ba65f02c0905d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal.  <a href="#ga10e2d2cc15e6a30f38ba65f02c0905d7">More...</a><br /></td></tr>
 <tr class="separator:ga10e2d2cc15e6a30f38ba65f02c0905d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae6c46b47ab125aeac18bf0a27bc6f9d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#gaae6c46b47ab125aeac18bf0a27bc6f9d">etcpal_signal_try_wait</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id)</td></tr>
+<tr class="memdesc:gaae6c46b47ab125aeac18bf0a27bc6f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to wait for a signal.  <a href="#gaae6c46b47ab125aeac18bf0a27bc6f9d">More...</a><br /></td></tr>
+<tr class="separator:gaae6c46b47ab125aeac18bf0a27bc6f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga770f7b128af027172c866a765f50f4fb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#ga770f7b128af027172c866a765f50f4fb">etcpal_signal_timed_wait</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id, int timeout_ms)</td></tr>
 <tr class="memdesc:ga770f7b128af027172c866a765f50f4fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for a signal, giving up after a timeout.  <a href="#ga770f7b128af027172c866a765f50f4fb">More...</a><br /></td></tr>
 <tr class="separator:ga770f7b128af027172c866a765f50f4fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad04fbc96ac93defb7ea545c81a880f12"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#gad04fbc96ac93defb7ea545c81a880f12">etcpal_signal_poll</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id)</td></tr>
-<tr class="memdesc:gad04fbc96ac93defb7ea545c81a880f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the state of a signal.  <a href="#gad04fbc96ac93defb7ea545c81a880f12">More...</a><br /></td></tr>
-<tr class="separator:gad04fbc96ac93defb7ea545c81a880f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafa2af190375bdb673563e2a029f0a89b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b">etcpal_signal_post</a> (<a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *id)</td></tr>
 <tr class="memdesc:gafa2af190375bdb673563e2a029f0a89b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post a signal.  <a href="#gafa2af190375bdb673563e2a029f0a89b">More...</a><br /></td></tr>
 <tr class="separator:gafa2af190375bdb673563e2a029f0a89b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,7 +219,7 @@ Functions</h2></td></tr>
 <p>Signals are created in the "unsignaled" state; that is, the first call to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> will block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Signal identifier on which to create a signal. If this function returns true, id becomes valid for calls to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> and <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Signal identifier on which to create a signal. If this function returns true, id becomes valid for calls to other etcpal_signal API functions. </td></tr>
   </table>
   </dd>
 </dl>
@@ -252,36 +252,6 @@ false: The signal was not created. </dd></dl>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="gad04fbc96ac93defb7ea545c81a880f12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad04fbc96ac93defb7ea545c81a880f12">&#9670;&nbsp;</a></span>etcpal_signal_poll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool etcpal_signal_poll </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *&#160;</td>
-          <td class="paramname"><em>id</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Poll the state of a signal. </p>
-<p>Returns immediately whether the object is in a "signaled" state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal to poll. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true: The signal is in a signaled state. </dd>
-<dd>
-false: The signal is not in a signaled state (or the signal is invalid). </dd></dl>
 
 </div>
 </div>
@@ -366,7 +336,7 @@ false: The signal is not in a signaled state (or the signal is invalid). </dd></
 </div><div class="memdoc">
 
 <p>Wait for a signal, giving up after a timeout. </p>
-<p>This function is not honored on all platforms. See the table in the overview above for more information. On platforms on which it is not honored, this function executes the equivalent of <a class="el" href="group__etcpal__signal.html#gad04fbc96ac93defb7ea545c81a880f12" title="Poll the state of a signal. ">etcpal_signal_poll()</a> if timeout_ms is 0, or <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> otherwise.</p>
+<p>This function is not honored on all platforms. See the table in the overview above for more information. On platforms on which it is not honored, this function executes the equivalent of <a class="el" href="group__etcpal__signal.html#gaae6c46b47ab125aeac18bf0a27bc6f9d" title="Try to wait for a signal. ">etcpal_signal_try_wait()</a> if timeout_ms is 0, or <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> otherwise.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal for which to wait. </td></tr>
@@ -377,6 +347,36 @@ false: The signal is not in a signaled state (or the signal is invalid). </dd></
 <dl class="section return"><dt>Returns</dt><dd>true: The signal was received. </dd>
 <dd>
 false: The timeout expired, the signal was invalid or an error occurred. </dd></dl>
+
+</div>
+</div>
+<a id="gaae6c46b47ab125aeac18bf0a27bc6f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae6c46b47ab125aeac18bf0a27bc6f9d">&#9670;&nbsp;</a></span>etcpal_signal_try_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool etcpal_signal_try_wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669">etcpal_signal_t</a> *&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Try to wait for a signal. </p>
+<p>If the signal is in the signaled state (<a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> has previously been called), puts the signal in the non-signaled state and returns true. Otherwise, returns false.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal to poll. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true: The signal was received. </dd>
+<dd>
+false: The signal is not in a signaled state (or the signal is invalid). </dd></dl>
 
 </div>
 </div>
@@ -397,7 +397,7 @@ false: The timeout expired, the signal was invalid or an error occurred. </dd></
 </div><div class="memdoc">
 
 <p>Wait for a signal. </p>
-<p>If this is the first call to <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> after the signal object has been posted via <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a>, returns immediately. Otherwise, blocks until a call to <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> on the signal object.</p>
+<p>If the signal is in the signaled state (<a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> has previously been called), puts the signal in the non-signaled state and returns true. Otherwise, blocks until a call to <a class="el" href="group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b" title="Post a signal. ">etcpal_signal_post()</a> is made on the signal object and returns true.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">id</td><td>Identifier for the signal for which to wait. </td></tr>

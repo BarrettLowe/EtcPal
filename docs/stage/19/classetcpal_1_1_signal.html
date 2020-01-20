@@ -159,12 +159,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae5ccc0d2886026ce37e12604173a131d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d">Wait</a> ()</td></tr>
 <tr class="memdesc:ae5ccc0d2886026ce37e12604173a131d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the signal.  <a href="#ae5ccc0d2886026ce37e12604173a131d">More...</a><br /></td></tr>
 <tr class="separator:ae5ccc0d2886026ce37e12604173a131d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a068797d0788994c507c4a9b55e0b1840"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_signal.html#a068797d0788994c507c4a9b55e0b1840">WaitFor</a> (int timeout_ms)</td></tr>
-<tr class="memdesc:a068797d0788994c507c4a9b55e0b1840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the signal until either it is received or a timeout expires.  <a href="#a068797d0788994c507c4a9b55e0b1840">More...</a><br /></td></tr>
-<tr class="separator:a068797d0788994c507c4a9b55e0b1840"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86acd23bf483d12b47cedfe52333e643"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_signal.html#a86acd23bf483d12b47cedfe52333e643">Poll</a> ()</td></tr>
-<tr class="memdesc:a86acd23bf483d12b47cedfe52333e643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Poll the state of the signal.  <a href="#a86acd23bf483d12b47cedfe52333e643">More...</a><br /></td></tr>
-<tr class="separator:a86acd23bf483d12b47cedfe52333e643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5139da6cf3fc487370524d466cdadd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7">TryWait</a> (int timeout_ms=0)</td></tr>
+<tr class="memdesc:aa5139da6cf3fc487370524d466cdadd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait for the signal until either it is received or a timeout expires.  <a href="#aa5139da6cf3fc487370524d466cdadd7">More...</a><br /></td></tr>
+<tr class="separator:aa5139da6cf3fc487370524d466cdadd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b945888ffd146338605d77f0366141b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b">Notify</a> ()</td></tr>
 <tr class="memdesc:a6b945888ffd146338605d77f0366141b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notify those waiting on the signal.  <a href="#a6b945888ffd146338605d77f0366141b">More...</a><br /></td></tr>
 <tr class="separator:a6b945888ffd146338605d77f0366141b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -233,8 +230,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a86acd23bf483d12b47cedfe52333e643"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86acd23bf483d12b47cedfe52333e643">&#9670;&nbsp;</a></span>Poll()</h2>
+<a id="aa5139da6cf3fc487370524d466cdadd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5139da6cf3fc487370524d466cdadd7">&#9670;&nbsp;</a></span>TryWait()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -243,9 +240,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Poll </td>
+          <td class="memname">bool TryWait </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -256,8 +254,15 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Poll the state of the signal. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__signal.html#gad04fbc96ac93defb7ea545c81a880f12" title="Poll the state of a signal. ">etcpal_signal_poll()</a> on the underlying signal. </dd></dl>
+<p>Wait for the signal until either it is received or a timeout expires. </p>
+<p><b>NOTE</b>: Timeouts other than 0 or ETCPAL_WAIT_FOREVER are typically only honored on real-time platforms. See the table in <a class="el" href="group__etcpal__signal.html">Signals</a> for more information. On platforms where timeouts are not honored, passing 0 for timeout_ms executes the equivalent of Poll(), while any other value executes the equivalent of <a class="el" href="classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d" title="Wait for the signal. ">Wait()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>How long to wait for the signal, in milliseconds. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__signal.html#ga770f7b128af027172c866a765f50f4fb" title="Wait for a signal, giving up after a timeout. ">etcpal_signal_timed_wait()</a> on the underlying signal. </dd></dl>
 
 </div>
 </div>
@@ -286,42 +291,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Wait for the signal. </p>
 <dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__signal.html#ga10e2d2cc15e6a30f38ba65f02c0905d7" title="Wait for a signal. ">etcpal_signal_wait()</a> on the underlying signal. </dd></dl>
-
-</div>
-</div>
-<a id="a068797d0788994c507c4a9b55e0b1840"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a068797d0788994c507c4a9b55e0b1840">&#9670;&nbsp;</a></span>WaitFor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool WaitFor </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>timeout_ms</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait for the signal until either it is received or a timeout expires. </p>
-<p><b>NOTE</b>: Timeouts other than 0 or ETCPAL_WAIT_FOREVER are typically only honored on real-time platforms. See the table in <a class="el" href="group__etcpal__signal.html">Signals</a> for more information. On platforms where timeouts are not honored, passing 0 for timeout_ms executes the equivalent of <a class="el" href="classetcpal_1_1_signal.html#a86acd23bf483d12b47cedfe52333e643" title="Poll the state of the signal. ">Poll()</a>, while any other value executes the equivalent of <a class="el" href="classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d" title="Wait for the signal. ">Wait()</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">timeout_ms</td><td>How long to wait for the signal, in milliseconds. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__signal.html#ga770f7b128af027172c866a765f50f4fb" title="Wait for a signal, giving up after a timeout. ">etcpal_signal_timed_wait()</a> on the underlying signal. </dd></dl>
 
 </div>
 </div>

@@ -23,9 +23,8 @@ var group__etcpal__cpp__lock =
       [ "NotifyFromIsr", "classetcpal_1_1_signal.html#ad8b69b07e8a31350db1cd221db678cb3", null ],
       [ "operator=", "classetcpal_1_1_signal.html#af7c411b2d23f2d74cd1d2ad4b4065dba", null ],
       [ "operator=", "classetcpal_1_1_signal.html#adbe979b3eaf9f10723b0a702c5d4fea0", null ],
-      [ "Poll", "classetcpal_1_1_signal.html#a86acd23bf483d12b47cedfe52333e643", null ],
-      [ "Wait", "classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d", null ],
-      [ "WaitFor", "classetcpal_1_1_signal.html#a068797d0788994c507c4a9b55e0b1840", null ]
+      [ "TryWait", "classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7", null ],
+      [ "Wait", "classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d", null ]
     ] ],
     [ "RwLock", "classetcpal_1_1_rw_lock.html", [
       [ "RwLock", "classetcpal_1_1_rw_lock.html#ad5ce7091375083d76ae798cabac53a21", null ],

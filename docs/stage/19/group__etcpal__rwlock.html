@@ -231,7 +231,7 @@ Functions</h2></td></tr>
 <p>Create a new read-write lock. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in,out]</td><td class="paramname">id</td><td>Read-write lock identifier on which to create a read-write lock. If this function returns true, id becomes valid for calls to <a class="el" href="group__etcpal__rwlock.html#ga846b8783133884b5fbce918811568825" title="Access a read-write lock for reading. ">etcpal_rwlock_readlock()</a>, <a class="el" href="group__etcpal__rwlock.html#gac6989af16cb55025d06ee35373739380" title="Access a read-write lock for writing. ">etcpal_rwlock_writelock()</a>, etc. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">id</td><td>Read-write lock identifier on which to create a read-write lock. If this function returns true, id becomes valid for calls to other etcpal_rwlock API functions. </td></tr>
   </table>
   </dd>
 </dl>

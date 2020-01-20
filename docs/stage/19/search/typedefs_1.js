@@ -4,6 +4,7 @@ var searchData=
   ['etcpal_5fmutex_5ft',['etcpal_mutex_t',['../group__etcpal__mutex.html#ga7360372b14b0feb1ad9f22d2a42734a9',1,'lock.dox']]],
   ['etcpal_5fpoll_5fevents_5ft',['etcpal_poll_events_t',['../group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9',1,'socket.h']]],
   ['etcpal_5frwlock_5ft',['etcpal_rwlock_t',['../group__etcpal__rwlock.html#ga5949678b1acff7d9829e257a9bee8d8e',1,'lock.dox']]],
+  ['etcpal_5fsem_5ft',['etcpal_sem_t',['../group__etcpal__sem.html#ga90664f75ae59f03b85b45cc19d3a55ef',1,'lock.dox']]],
   ['etcpal_5fsignal_5ft',['etcpal_signal_t',['../group__etcpal__signal.html#gab450fff060bfcede49357b2e00357669',1,'lock.dox']]],
   ['etcpal_5fsocket_5ft',['etcpal_socket_t',['../group__etcpal__socket.html#gaf08a63353f05072ee3b28fd754985b66',1,'socket.dox']]],
   ['etcpal_5fthread_5ft',['etcpal_thread_t',['../group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8',1,'thread.dox']]],
