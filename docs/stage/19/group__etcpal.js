@@ -1,6 +1,7 @@
 var group__etcpal =
 [
     [ "acn_pdu (ACN Protocol Family PDUs)", "group__etcpal__acn__pdu.html", "group__etcpal__acn__pdu" ],
+    [ "acn_rlp (ACN Root Layer Protocol)", "group__etcpal__acn__rlp.html", "group__etcpal__acn__rlp" ],
     [ "error (Error Handling)", "group__etcpal__error.html", "group__etcpal__error" ],
     [ "inet (Internet Addressing)", "group__etcpal__inet.html", "group__etcpal__inet" ],
     [ "log (Logging)", "group__etcpal__log.html", "group__etcpal__log" ],
