@@ -1,18 +1,18 @@
 var group__etcpal__cpp__error =
 [
-    [ "Result", "classetcpal_1_1_result.html", [
-      [ "Result", "classetcpal_1_1_result.html#a38553eea0a4190791783d61d0bd167f1", null ],
-      [ "Result", "classetcpal_1_1_result.html#af1913dbf20908a83085407f633807fe3", null ],
-      [ "code", "classetcpal_1_1_result.html#a65e890bf700cdd8262c552690a03baad", null ],
-      [ "IsOk", "classetcpal_1_1_result.html#a030d244ccd9a40a9f9ac813ea912a639", null ],
-      [ "operator bool", "classetcpal_1_1_result.html#a7990d8e87d9eab2383f94c88c23a6488", null ],
-      [ "operator=", "classetcpal_1_1_result.html#aa17ae9a95db6d0224d2280bbb1f8667d", null ],
-      [ "ToCString", "classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e", null ],
-      [ "ToString", "classetcpal_1_1_result.html#a19c380b03cea21d7ac7325136a131ff0", null ]
+    [ "Error", "classetcpal_1_1_error.html", [
+      [ "Error", "classetcpal_1_1_error.html#a3caa9d5aa4abda020878c2618ea8843c", null ],
+      [ "Error", "classetcpal_1_1_error.html#acde5c53cc825c9794ffa980ea163a39a", null ],
+      [ "code", "classetcpal_1_1_error.html#a65e890bf700cdd8262c552690a03baad", null ],
+      [ "IsOk", "classetcpal_1_1_error.html#a030d244ccd9a40a9f9ac813ea912a639", null ],
+      [ "operator bool", "classetcpal_1_1_error.html#a7990d8e87d9eab2383f94c88c23a6488", null ],
+      [ "operator=", "classetcpal_1_1_error.html#a3c9c46279e5c973e70c51c57cfcaede9", null ],
+      [ "ToCString", "classetcpal_1_1_error.html#aa4d860f883bc4c6bc997eb61f218a27e", null ],
+      [ "ToString", "classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0", null ]
     ] ],
     [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", [
-      [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html#ae32d1ca3903371ac073eacb510ce597d", null ],
-      [ "result", "classetcpal_1_1_bad_expected_access.html#a099c8aae8a56b9f1278b39c45ddb2269", null ]
+      [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html#a408f3d0470d7f1a3330830eb96db77d9", null ],
+      [ "result", "classetcpal_1_1_bad_expected_access.html#a4c03ebceb6c40fe7f2ee3c215daa8c8d", null ]
     ] ],
     [ "Expected", "classetcpal_1_1_expected.html", [
       [ "ValueType", "classetcpal_1_1_expected.html#aecaeabaa9da616ae42bb20787878260d", null ],
@@ -27,7 +27,8 @@ var group__etcpal__cpp__error =
       [ "Expected", "classetcpal_1_1_expected.html#ac7a8678f6251b90111837a493eef9abe", null ],
       [ "Expected", "classetcpal_1_1_expected.html#ab223fb4af6a34c52a294fb48e37c92c6", null ],
       [ "~Expected", "classetcpal_1_1_expected.html#a8da4910031b4040699233168372b0102", null ],
-      [ "error", "classetcpal_1_1_expected.html#a50623f3a6e41cdc3b27d8658808797c8", null ],
+      [ "error", "classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6", null ],
+      [ "error_code", "classetcpal_1_1_expected.html#ad74bb8607bbb3705c22342bd852e16b8", null ],
       [ "has_value", "classetcpal_1_1_expected.html#a6988ba57722f67cbb444b0931468282e", null ],
       [ "operator bool", "classetcpal_1_1_expected.html#a7990d8e87d9eab2383f94c88c23a6488", null ],
       [ "operator*", "classetcpal_1_1_expected.html#a6573281a3d9396dfc8c2c5f1cca82247", null ],
@@ -36,7 +37,6 @@ var group__etcpal__cpp__error =
       [ "operator*", "classetcpal_1_1_expected.html#aec2b0f86ca602b33ae1bbe4e72cd571e", null ],
       [ "operator->", "classetcpal_1_1_expected.html#a59a8d66ef67871af2a14f8cc08dc1d2e", null ],
       [ "operator->", "classetcpal_1_1_expected.html#a4442b1b9eab40e7939e1e01cdedcb7ae", null ],
-      [ "result", "classetcpal_1_1_expected.html#a28c72c40e1a8ff5c26c86ffd8b3220df", null ],
       [ "value", "classetcpal_1_1_expected.html#aa3795c04ad2644e8294f7f028bde5393", null ],
       [ "value", "classetcpal_1_1_expected.html#a316aefaaaa5e04f8843b07749e04d759", null ],
       [ "value", "classetcpal_1_1_expected.html#af0677a7aa98cba5e3a267da236f28175", null ],

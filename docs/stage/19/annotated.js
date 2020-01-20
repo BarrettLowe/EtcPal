@@ -2,6 +2,7 @@ var annotated =
 [
     [ "etcpal", null, [
       [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", "classetcpal_1_1_bad_expected_access" ],
+      [ "Error", "classetcpal_1_1_error.html", "classetcpal_1_1_error" ],
       [ "Expected", "classetcpal_1_1_expected.html", "classetcpal_1_1_expected" ],
       [ "IpAddr", "classetcpal_1_1_ip_addr.html", "classetcpal_1_1_ip_addr" ],
       [ "Logger", "classetcpal_1_1_logger.html", "classetcpal_1_1_logger" ],
@@ -10,7 +11,6 @@ var annotated =
       [ "Mutex", "classetcpal_1_1_mutex.html", "classetcpal_1_1_mutex" ],
       [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", "classetcpal_1_1_mutex_guard" ],
       [ "ReadGuard", "classetcpal_1_1_read_guard.html", "classetcpal_1_1_read_guard" ],
-      [ "Result", "classetcpal_1_1_result.html", "classetcpal_1_1_result" ],
       [ "RwLock", "classetcpal_1_1_rw_lock.html", "classetcpal_1_1_rw_lock" ],
       [ "Signal", "classetcpal_1_1_signal.html", "classetcpal_1_1_signal" ],
       [ "SockAddr", "classetcpal_1_1_sock_addr.html", "classetcpal_1_1_sock_addr" ],
@@ -20,6 +20,11 @@ var annotated =
       [ "Uuid", "classetcpal_1_1_uuid.html", "classetcpal_1_1_uuid" ],
       [ "WriteGuard", "classetcpal_1_1_write_guard.html", "classetcpal_1_1_write_guard" ]
     ] ],
+    [ "AcnPdu", "struct_acn_pdu.html", "struct_acn_pdu" ],
+    [ "AcnPduConstraints", "struct_acn_pdu_constraints.html", "struct_acn_pdu_constraints" ],
+    [ "AcnRootLayerPdu", "struct_acn_root_layer_pdu.html", "struct_acn_root_layer_pdu" ],
+    [ "AcnTcpPreamble", "struct_acn_tcp_preamble.html", "struct_acn_tcp_preamble" ],
+    [ "AcnUdpPreamble", "struct_acn_udp_preamble.html", "struct_acn_udp_preamble" ],
     [ "EtcPalAddrinfo", "struct_etc_pal_addrinfo.html", "struct_etc_pal_addrinfo" ],
     [ "EtcPalGroupReq", "struct_etc_pal_group_req.html", "struct_etc_pal_group_req" ],
     [ "EtcPalIpAddr", "struct_etc_pal_ip_addr.html", "struct_etc_pal_ip_addr" ],
@@ -30,18 +35,13 @@ var annotated =
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", "struct_etc_pal_mac_addr" ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", "struct_etc_pal_mreq" ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", "struct_etc_pal_netint_info" ],
-    [ "EtcPalPdu", "struct_etc_pal_pdu.html", "struct_etc_pal_pdu" ],
-    [ "EtcPalPduConstraints", "struct_etc_pal_pdu_constraints.html", "struct_etc_pal_pdu_constraints" ],
     [ "EtcPalPollEvent", "struct_etc_pal_poll_event.html", "struct_etc_pal_poll_event" ],
     [ "EtcPalRbIter", "struct_etc_pal_rb_iter.html", "struct_etc_pal_rb_iter" ],
     [ "EtcPalRbNode", "struct_etc_pal_rb_node.html", "struct_etc_pal_rb_node" ],
     [ "EtcPalRbTree", "struct_etc_pal_rb_tree.html", "struct_etc_pal_rb_tree" ],
-    [ "EtcPalRootLayerPdu", "struct_etc_pal_root_layer_pdu.html", "struct_etc_pal_root_layer_pdu" ],
     [ "EtcPalSockAddr", "struct_etc_pal_sock_addr.html", "struct_etc_pal_sock_addr" ],
     [ "EtcPalSyslogParams", "struct_etc_pal_syslog_params.html", "struct_etc_pal_syslog_params" ],
-    [ "EtcPalTcpPreamble", "struct_etc_pal_tcp_preamble.html", "struct_etc_pal_tcp_preamble" ],
     [ "EtcPalThreadParams", "struct_etc_pal_thread_params.html", "struct_etc_pal_thread_params" ],
     [ "EtcPalTimer", "struct_etc_pal_timer.html", "struct_etc_pal_timer" ],
-    [ "EtcPalUdpPreamble", "struct_etc_pal_udp_preamble.html", "struct_etc_pal_udp_preamble" ],
     [ "EtcPalUuid", "struct_etc_pal_uuid.html", "struct_etc_pal_uuid" ]
 ];

@@ -1,12 +1,12 @@
 var group__etcpal =
 [
+    [ "acn_pdu (ACN Protocol Family PDUs)", "group__etcpal__acn__pdu.html", "group__etcpal__acn__pdu" ],
     [ "error (Error Handling)", "group__etcpal__error.html", "group__etcpal__error" ],
     [ "inet (Internet Addressing)", "group__etcpal__inet.html", "group__etcpal__inet" ],
     [ "log (Logging)", "group__etcpal__log.html", "group__etcpal__log" ],
     [ "mempool (Memory Pools)", "group__etcpal__mempool.html", "group__etcpal__mempool" ],
     [ "netint (Network Interfaces)", "group__etcpal__netint.html", "group__etcpal__netint" ],
     [ "pack (Buffer Packing and Unpacking)", "group__etcpal__pack.html", "group__etcpal__pack" ],
-    [ "pdu (ACN Protocol Family PDUs)", "group__etcpal__pdu.html", "group__etcpal__pdu" ],
     [ "rbtree (Red-Black Trees)", "group__etcpal__rbtree.html", "group__etcpal__rbtree" ],
     [ "socket (Network Socket Interface)", "group__etcpal__socket.html", "group__etcpal__socket" ],
     [ "thread (Threading)", "group__etcpal__thread.html", "group__etcpal__thread" ],

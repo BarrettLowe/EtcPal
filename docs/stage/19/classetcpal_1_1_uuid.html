@@ -141,6 +141,12 @@ Public Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#abc4f198636744d10b7c5e28a1ddde4b8">Uuid</a> ()=default</td></tr>
 <tr class="memdesc:abc4f198636744d10b7c5e28a1ddde4b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a null UUID by default. <br /></td></tr>
 <tr class="separator:abc4f198636744d10b7c5e28a1ddde4b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f1033714bf728e62eafbc880d502b6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#aa2f1033714bf728e62eafbc880d502b6">Uuid</a> (const uint8_t *<a class="el" href="classetcpal_1_1_uuid.html#a21b8e060baa6eeed3e5e45e6d760b54c">data</a>) noexcept</td></tr>
+<tr class="memdesc:aa2f1033714bf728e62eafbc880d502b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a UUID from raw data.  <a href="#aa2f1033714bf728e62eafbc880d502b6">More...</a><br /></td></tr>
+<tr class="separator:aa2f1033714bf728e62eafbc880d502b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65228b364866048f39a365f5aaabcccb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a65228b364866048f39a365f5aaabcccb">Uuid</a> (uint32_t <a class="el" href="classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb">time_low</a>, uint16_t <a class="el" href="classetcpal_1_1_uuid.html#a5a3534e539c75eb5add173f7f660d45a">time_mid</a>, uint16_t <a class="el" href="classetcpal_1_1_uuid.html#a0fd84d72db93c35ce9d86a1fff1b1067">time_hi_and_version</a>, const uint8_t <a class="el" href="classetcpal_1_1_uuid.html#ad1c7dfeea57e4e696bca56b1cb172292">clock_seq_and_node</a>[8])</td></tr>
+<tr class="memdesc:a65228b364866048f39a365f5aaabcccb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a UUID from its RFC-specified layout fields.  <a href="#a65228b364866048f39a365f5aaabcccb">More...</a><br /></td></tr>
+<tr class="separator:a65228b364866048f39a365f5aaabcccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5827f94a1dd0941f5b5842de4034d02b"><td class="memItemLeft" align="right" valign="top"><a id="a5827f94a1dd0941f5b5842de4034d02b"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a5827f94a1dd0941f5b5842de4034d02b">Uuid</a> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
 <tr class="memdesc:a5827f94a1dd0941f5b5842de4034d02b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a UUID copied from an instance of the C <a class="el" href="struct_etc_pal_uuid.html" title="The UUID type. ">EtcPalUuid</a> type. <br /></td></tr>
@@ -153,6 +159,9 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 constexpr const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a9df1babf3f2f1a535c4de0c397f92636">get</a> () const noexcept</td></tr>
 <tr class="memdesc:a9df1babf3f2f1a535c4de0c397f92636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the underlying C type. <br /></td></tr>
 <tr class="separator:a9df1babf3f2f1a535c4de0c397f92636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memItemLeft" align="right" valign="top">const uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a21b8e060baa6eeed3e5e45e6d760b54c">data</a> () const noexcept</td></tr>
+<tr class="memdesc:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the raw data of a UUID.  <a href="#a21b8e060baa6eeed3e5e45e6d760b54c">More...</a><br /></td></tr>
+<tr class="separator:a21b8e060baa6eeed3e5e45e6d760b54c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19c380b03cea21d7ac7325136a131ff0"><td class="memItemLeft" align="right" valign="top"><a id="a19c380b03cea21d7ac7325136a131ff0"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a> () const</td></tr>
 <tr class="memdesc:a19c380b03cea21d7ac7325136a131ff0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert the UUID to a string representation formatted per RFC 4122. <br /></td></tr>
@@ -161,6 +170,25 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a> () const noexcept</td></tr>
 <tr class="memdesc:a27909eb1d61b8b261d259be7c70c58dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a UUID is null (all 0's). <br /></td></tr>
 <tr class="separator:a27909eb1d61b8b261d259be7c70c58dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad844a4829fe094c9603211c8d13c37bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="cpp_2uuid_8h.html#ac6e0bea8f4b482fd8ab17250626a3cf4">UuidVersion</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#ad844a4829fe094c9603211c8d13c37bb">version</a> () const noexcept</td></tr>
+<tr class="memdesc:ad844a4829fe094c9603211c8d13c37bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the version type of a UUID.  <a href="#ad844a4829fe094c9603211c8d13c37bb">More...</a><br /></td></tr>
+<tr class="separator:ad844a4829fe094c9603211c8d13c37bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a197e772363eb4fb42ca981f6690cc6eb"><td class="memItemLeft" align="right" valign="top"><a id="a197e772363eb4fb42ca981f6690cc6eb"></a>
+uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb">time_low</a> () const noexcept</td></tr>
+<tr class="memdesc:a197e772363eb4fb42ca981f6690cc6eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time_low portion of a UUID. <br /></td></tr>
+<tr class="separator:a197e772363eb4fb42ca981f6690cc6eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a3534e539c75eb5add173f7f660d45a"><td class="memItemLeft" align="right" valign="top"><a id="a5a3534e539c75eb5add173f7f660d45a"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a5a3534e539c75eb5add173f7f660d45a">time_mid</a> () const noexcept</td></tr>
+<tr class="memdesc:a5a3534e539c75eb5add173f7f660d45a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time_mid portion of a UUID. <br /></td></tr>
+<tr class="separator:a5a3534e539c75eb5add173f7f660d45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fd84d72db93c35ce9d86a1fff1b1067"><td class="memItemLeft" align="right" valign="top"><a id="a0fd84d72db93c35ce9d86a1fff1b1067"></a>
+uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a0fd84d72db93c35ce9d86a1fff1b1067">time_hi_and_version</a> () const noexcept</td></tr>
+<tr class="memdesc:a0fd84d72db93c35ce9d86a1fff1b1067"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the time_hi_and_version portion of a UUID. <br /></td></tr>
+<tr class="separator:a0fd84d72db93c35ce9d86a1fff1b1067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c7dfeea57e4e696bca56b1cb172292"><td class="memItemLeft" align="right" valign="top"><a id="ad1c7dfeea57e4e696bca56b1cb172292"></a>
+std::array&lt; uint8_t, 8 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#ad1c7dfeea57e4e696bca56b1cb172292">clock_seq_and_node</a> () const noexcept</td></tr>
+<tr class="memdesc:ad1c7dfeea57e4e696bca56b1cb172292"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the remaining portion of a UUID, including clock_seq_hi_and_res, clock_seq_low, and node. <br /></td></tr>
+<tr class="separator:ad1c7dfeea57e4e696bca56b1cb172292"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -201,7 +229,121 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1044c778e7f7ece83888dcf35c7613c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Device UUID.  <a href="#a1044c778e7f7ece83888dcf35c7613c3">More...</a><br /></td></tr>
 <tr class="separator:a1044c778e7f7ece83888dcf35c7613c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa2f1033714bf728e62eafbc880d502b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2f1033714bf728e62eafbc880d502b6">&#9670;&nbsp;</a></span>Uuid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a UUID from raw data. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>The raw data array, must be at least <a class="el" href="group__etcpal__uuid.html#gadfd6e6a51b681c03b6422d1454ddc954" title="The number of bytes that make up a UUID. ">ETCPAL_UUID_BYTES</a> in length. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a65228b364866048f39a365f5aaabcccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65228b364866048f39a365f5aaabcccb">&#9670;&nbsp;</a></span>Uuid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>time_low</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>time_mid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>time_hi_and_version</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>clock_seq_and_node</em>[8]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Construct a UUID from its RFC-specified layout fields. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time_low</td><td>The time_low portion of the UUID. </td></tr>
+    <tr><td class="paramname">time_mid</td><td>The time_mid portion of the UUID. </td></tr>
+    <tr><td class="paramname">time_hi_and_version</td><td>The time_hi_and_version portion of the UUID. </td></tr>
+    <tr><td class="paramname">clock_seq_and_node</td><td>The clock_seq and node portions of the UUID. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a21b8e060baa6eeed3e5e45e6d760b54c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b8e060baa6eeed3e5e45e6d760b54c">&#9670;&nbsp;</a></span>data()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t * data </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the raw data of a UUID. </p>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to an array of length <a class="el" href="group__etcpal__uuid.html#gadfd6e6a51b681c03b6422d1454ddc954" title="The number of bytes that make up a UUID. ">ETCPAL_UUID_BYTES</a> containing the UUID's data. </dd></dl>
+
+</div>
+</div>
 <a id="a1044c778e7f7ece83888dcf35c7613c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1044c778e7f7ece83888dcf35c7613c3">&#9670;&nbsp;</a></span>Device()</h2>
 
@@ -660,6 +802,34 @@ Static Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <p>See <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> for more information. </p>
+
+</div>
+</div>
+<a id="ad844a4829fe094c9603211c8d13c37bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad844a4829fe094c9603211c8d13c37bb">&#9670;&nbsp;</a></span>version()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cpp_2uuid_8h.html#ac6e0bea8f4b482fd8ab17250626a3cf4">UuidVersion</a> version </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the version type of a UUID. </p>
+<dl class="section return"><dt>Returns</dt><dd>The UUID's version, or UuidVersion::Unknown if the version field is invalid. </dd></dl>
 
 </div>
 </div>

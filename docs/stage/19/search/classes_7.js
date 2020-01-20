@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['thread',['Thread',['../classetcpal_1_1_thread.html',1,'etcpal']]],
-  ['timepoint',['TimePoint',['../classetcpal_1_1_time_point.html',1,'etcpal']]],
-  ['timer',['Timer',['../classetcpal_1_1_timer.html',1,'etcpal']]]
+  ['signal',['Signal',['../classetcpal_1_1_signal.html',1,'etcpal']]],
+  ['sockaddr',['SockAddr',['../classetcpal_1_1_sock_addr.html',1,'etcpal']]]
 ];

@@ -6,7 +6,7 @@ var group__etcpal__cpp__thread =
       [ "~Thread", "classetcpal_1_1_thread.html#a87a9c69a69ee4b13cb1ec5772f6d32ad", null ],
       [ "Thread", "classetcpal_1_1_thread.html#a6fb67adc8253034f42e5a43df0df0662", null ],
       [ "Thread", "classetcpal_1_1_thread.html#a856d2ee521709c03d8499d926783117b", null ],
-      [ "Join", "classetcpal_1_1_thread.html#ae781d3e549a84cebb2c463ba12df8cbf", null ],
+      [ "Join", "classetcpal_1_1_thread.html#a0fe525fdb9bcaccc319c79e1c74ee62e", null ],
       [ "joinable", "classetcpal_1_1_thread.html#a2761ee590c5de6d2d9d0045c5d6d9cb7", null ],
       [ "name", "classetcpal_1_1_thread.html#a33256784969e3347f423f72af1727cbd", null ],
       [ "operator=", "classetcpal_1_1_thread.html#a74ee56b6a23061aaff2a2e34b6035f32", null ],
@@ -20,6 +20,6 @@ var group__etcpal__cpp__thread =
       [ "SetPriority", "classetcpal_1_1_thread.html#ac83a10f16662668e1d8a494ddb6e1234", null ],
       [ "SetStackSize", "classetcpal_1_1_thread.html#a3cb4d6197b72897c0ceba341f7beff4b", null ],
       [ "stack_size", "classetcpal_1_1_thread.html#a1e4efbd2bc46e7d5a1b2077ff2038ad8", null ],
-      [ "Start", "classetcpal_1_1_thread.html#a1a4d94c5a8d7aa7536c61e4ca4854907", null ]
+      [ "Start", "classetcpal_1_1_thread.html#a63e85f031a9b180d9e932df21f7a2e64", null ]
     ] ]
 ];

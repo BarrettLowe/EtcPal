@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: root_layer_pdu (ACN Root Layer PDUs)</title>
+  <title>EtcPal: acn_rlp (ACN Root Layer Protocol)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -106,7 +106,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('group__etcpal__root__layer__pdu.html','');});
+$(document).ready(function(){initNavTree('group__etcpal__acn__rlp.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -130,81 +130,81 @@ $(document).ready(function(){initNavTree('group__etcpal__root__layer__pdu.html',
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">root_layer_pdu (ACN Root Layer PDUs)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__pdu.html">pdu (ACN Protocol Family PDUs)</a></div></div>  </div>
+<div class="title">acn_rlp (ACN Root Layer Protocol)</div>  </div>
 </div><!--header-->
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
-<p>Parse or pack a Root Layer PDU block. </p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/root_layer_pdu.h&quot;</span></div></div><!-- fragment --><p>This module handles building and parsing the ACN Root Layer Protocol, as defined in ANSI E1.17, ACN Architecture document, &sect; 2.6. This protocol is also used by sACN (ANSI E1.31) and RDMnet (ANSI E1.33). </p>
+<p>Parse or pack an ACN Root Layer PDU block. </p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/acn_rlp.h&quot;</span></div></div><!-- fragment --><p>This module handles building and parsing the ACN Root Layer Protocol, as defined in ANSI E1.17, ACN Architecture document, &sect; 2.6. This protocol is also used by sACN (ANSI E1.31) and RDMnet (ANSI E1.33). </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN TCP Preamble.  <a href="struct_etc_pal_tcp_preamble.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN TCP Preamble.  <a href="struct_acn_tcp_preamble.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN UDP Preamble.  <a href="struct_etc_pal_udp_preamble.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN UDP Preamble.  <a href="struct_acn_udp_preamble.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN Root Layer PDU.  <a href="struct_etc_pal_root_layer_pdu.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN Root Layer PDU.  <a href="struct_acn_root_layer_pdu.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:gab879b13847509e3bbd4b12a5e2cda0e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:gab879b13847509e3bbd4b12a5e2cda0e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gab879b13847509e3bbd4b12a5e2cda0e7">ACN_TCP_PREAMBLE_SIZE</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:gab879b13847509e3bbd4b12a5e2cda0e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an ACN family TCP preamble.  <a href="#gab879b13847509e3bbd4b12a5e2cda0e7">More...</a><br /></td></tr>
 <tr class="separator:gab879b13847509e3bbd4b12a5e2cda0e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga86207e41512354a1a6e321d95afe8ab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga86207e41512354a1a6e321d95afe8ab0">ACN_UDP_PREAMBLE_SIZE</a>&#160;&#160;&#160;16</td></tr>
+<tr class="memitem:ga86207e41512354a1a6e321d95afe8ab0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga86207e41512354a1a6e321d95afe8ab0">ACN_UDP_PREAMBLE_SIZE</a>&#160;&#160;&#160;16</td></tr>
 <tr class="memdesc:ga86207e41512354a1a6e321d95afe8ab0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of an ACN family UDP preamble.  <a href="#ga86207e41512354a1a6e321d95afe8ab0">More...</a><br /></td></tr>
 <tr class="separator:ga86207e41512354a1a6e321d95afe8ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga29ae7e116cd77cc00366461415bf54a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga29ae7e116cd77cc00366461415bf54a7">ACN_RLP_HEADER_SIZE_NORMAL_LEN</a>&#160;&#160;&#160;22</td></tr>
+<tr class="memitem:ga29ae7e116cd77cc00366461415bf54a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga29ae7e116cd77cc00366461415bf54a7">ACN_RLP_HEADER_SIZE_NORMAL_LEN</a>&#160;&#160;&#160;22</td></tr>
 <tr class="memdesc:ga29ae7e116cd77cc00366461415bf54a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of a Root Layer PDU header when the length is less than 4096.  <a href="#ga29ae7e116cd77cc00366461415bf54a7">More...</a><br /></td></tr>
 <tr class="separator:ga29ae7e116cd77cc00366461415bf54a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9d9a7bd4498a28d5b0de8ed598141c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a>&#160;&#160;&#160;23</td></tr>
+<tr class="memitem:ga9d9a7bd4498a28d5b0de8ed598141c66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga9d9a7bd4498a28d5b0de8ed598141c66">ACN_RLP_HEADER_SIZE_EXT_LEN</a>&#160;&#160;&#160;23</td></tr>
 <tr class="memdesc:ga9d9a7bd4498a28d5b0de8ed598141c66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Size of the Root Layer PDU header when the length is 4096 or greater.  <a href="#ga9d9a7bd4498a28d5b0de8ed598141c66">More...</a><br /></td></tr>
 <tr class="separator:ga9d9a7bd4498a28d5b0de8ed598141c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga479d29909ff291c75531e5e45de4af11"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga479d29909ff291c75531e5e45de4af11">EtcPalTcpPreamble</a></td></tr>
-<tr class="memdesc:ga479d29909ff291c75531e5e45de4af11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN TCP Preamble.  <a href="#ga479d29909ff291c75531e5e45de4af11">More...</a><br /></td></tr>
-<tr class="separator:ga479d29909ff291c75531e5e45de4af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabceea25a6773878d73d5c73cff3413db"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gabceea25a6773878d73d5c73cff3413db">EtcPalUdpPreamble</a></td></tr>
-<tr class="memdesc:gabceea25a6773878d73d5c73cff3413db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN UDP Preamble.  <a href="#gabceea25a6773878d73d5c73cff3413db">More...</a><br /></td></tr>
-<tr class="separator:gabceea25a6773878d73d5c73cff3413db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gafcee66c76b1dec0bbaf93f9589c0a8dd"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gafcee66c76b1dec0bbaf93f9589c0a8dd">EtcPalRootLayerPdu</a></td></tr>
-<tr class="memdesc:gafcee66c76b1dec0bbaf93f9589c0a8dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN Root Layer PDU.  <a href="#gafcee66c76b1dec0bbaf93f9589c0a8dd">More...</a><br /></td></tr>
-<tr class="separator:gafcee66c76b1dec0bbaf93f9589c0a8dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga548213c8a55f62ef6d1aaebebf5d9d92"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga548213c8a55f62ef6d1aaebebf5d9d92">AcnTcpPreamble</a></td></tr>
+<tr class="memdesc:ga548213c8a55f62ef6d1aaebebf5d9d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN TCP Preamble.  <a href="#ga548213c8a55f62ef6d1aaebebf5d9d92">More...</a><br /></td></tr>
+<tr class="separator:ga548213c8a55f62ef6d1aaebebf5d9d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac581ac5bbc25e6c544f10a718bb6a6d2"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gac581ac5bbc25e6c544f10a718bb6a6d2">AcnUdpPreamble</a></td></tr>
+<tr class="memdesc:gac581ac5bbc25e6c544f10a718bb6a6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN UDP Preamble.  <a href="#gac581ac5bbc25e6c544f10a718bb6a6d2">More...</a><br /></td></tr>
+<tr class="separator:gac581ac5bbc25e6c544f10a718bb6a6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1f5c4d94231529fba7aa1c852cde9665"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga1f5c4d94231529fba7aa1c852cde9665">AcnRootLayerPdu</a></td></tr>
+<tr class="memdesc:ga1f5c4d94231529fba7aa1c852cde9665"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the information contained in an ACN Root Layer PDU.  <a href="#ga1f5c4d94231529fba7aa1c852cde9665">More...</a><br /></td></tr>
+<tr class="separator:ga1f5c4d94231529fba7aa1c852cde9665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga9d42879935ab912ec15d30e9415f5c4b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga9d42879935ab912ec15d30e9415f5c4b">etcpal_parse_tcp_preamble</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a> *preamble)</td></tr>
-<tr class="memdesc:ga9d42879935ab912ec15d30e9415f5c4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN TCP Preamble.  <a href="#ga9d42879935ab912ec15d30e9415f5c4b">More...</a><br /></td></tr>
-<tr class="separator:ga9d42879935ab912ec15d30e9415f5c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9c5fe31670c57a02311d3d23f6b96904"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga9c5fe31670c57a02311d3d23f6b96904">etcpal_parse_udp_preamble</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a> *preamble)</td></tr>
-<tr class="memdesc:ga9c5fe31670c57a02311d3d23f6b96904"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN UDP Preamble.  <a href="#ga9c5fe31670c57a02311d3d23f6b96904">More...</a><br /></td></tr>
-<tr class="separator:ga9c5fe31670c57a02311d3d23f6b96904"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa454f9d1af3e45a1eefb61c3d4fd9496"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gaa454f9d1af3e45a1eefb61c3d4fd9496">etcpal_parse_root_layer_header</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *pdu, <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *last_pdu)</td></tr>
-<tr class="memdesc:gaa454f9d1af3e45a1eefb61c3d4fd9496"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse only the header of an ACN Root Layer PDU.  <a href="#gaa454f9d1af3e45a1eefb61c3d4fd9496">More...</a><br /></td></tr>
-<tr class="separator:gaa454f9d1af3e45a1eefb61c3d4fd9496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac604ba1761a3126ddf9095338ec2d4a4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gac604ba1761a3126ddf9095338ec2d4a4">etcpal_parse_root_layer_pdu</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *pdu, <a class="el" href="struct_etc_pal_pdu.html">EtcPalPdu</a> *last_pdu)</td></tr>
-<tr class="memdesc:gac604ba1761a3126ddf9095338ec2d4a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN Root Layer PDU.  <a href="#gac604ba1761a3126ddf9095338ec2d4a4">More...</a><br /></td></tr>
-<tr class="separator:gac604ba1761a3126ddf9095338ec2d4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga83602488410ff9d31fb781afd5898463"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga83602488410ff9d31fb781afd5898463">etcpal_pack_tcp_preamble</a> (uint8_t *buf, size_t buflen, size_t rlp_block_len)</td></tr>
-<tr class="memdesc:ga83602488410ff9d31fb781afd5898463"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an ACN TCP Preamble into a buffer.  <a href="#ga83602488410ff9d31fb781afd5898463">More...</a><br /></td></tr>
-<tr class="separator:ga83602488410ff9d31fb781afd5898463"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga205a77f2284495f4b9a16f07dcd43f83"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga205a77f2284495f4b9a16f07dcd43f83">etcpal_pack_udp_preamble</a> (uint8_t *buf, size_t buflen)</td></tr>
-<tr class="memdesc:ga205a77f2284495f4b9a16f07dcd43f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an ACN UDP Preamble into a buffer.  <a href="#ga205a77f2284495f4b9a16f07dcd43f83">More...</a><br /></td></tr>
-<tr class="separator:ga205a77f2284495f4b9a16f07dcd43f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0d9d71dfeb84b94149e146292144615b"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga0d9d71dfeb84b94149e146292144615b">etcpal_root_layer_buf_size</a> (const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *pdu_block, size_t num_pdus)</td></tr>
-<tr class="memdesc:ga0d9d71dfeb84b94149e146292144615b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the buffer size to allocate for a Root Layer PDU block.  <a href="#ga0d9d71dfeb84b94149e146292144615b">More...</a><br /></td></tr>
-<tr class="separator:ga0d9d71dfeb84b94149e146292144615b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8d5021cdeed9c03dcc28d7f29fbac7d9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#ga8d5021cdeed9c03dcc28d7f29fbac7d9">etcpal_pack_root_layer_header</a> (uint8_t *buf, size_t buflen, const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *pdu)</td></tr>
-<tr class="memdesc:ga8d5021cdeed9c03dcc28d7f29fbac7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack only the header of a Root Layer PDU block into a buffer.  <a href="#ga8d5021cdeed9c03dcc28d7f29fbac7d9">More...</a><br /></td></tr>
-<tr class="separator:ga8d5021cdeed9c03dcc28d7f29fbac7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabdadb9de2e41045c2010e6085f6ff456"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__root__layer__pdu.html#gabdadb9de2e41045c2010e6085f6ff456">etcpal_pack_root_layer_block</a> (uint8_t *buf, size_t buflen, const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *pdu_block, size_t num_pdus)</td></tr>
-<tr class="memdesc:gabdadb9de2e41045c2010e6085f6ff456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Root Layer PDU block into a buffer.  <a href="#gabdadb9de2e41045c2010e6085f6ff456">More...</a><br /></td></tr>
-<tr class="separator:gabdadb9de2e41045c2010e6085f6ff456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab2edaace9af15cb4dd54bfb8ad36fe88"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gab2edaace9af15cb4dd54bfb8ad36fe88">acn_parse_tcp_preamble</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a> *preamble)</td></tr>
+<tr class="memdesc:gab2edaace9af15cb4dd54bfb8ad36fe88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN TCP Preamble.  <a href="#gab2edaace9af15cb4dd54bfb8ad36fe88">More...</a><br /></td></tr>
+<tr class="separator:gab2edaace9af15cb4dd54bfb8ad36fe88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga14db47bbc1098cb4dfa4826f7a121d92"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga14db47bbc1098cb4dfa4826f7a121d92">acn_parse_udp_preamble</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a> *preamble)</td></tr>
+<tr class="memdesc:ga14db47bbc1098cb4dfa4826f7a121d92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN UDP Preamble.  <a href="#ga14db47bbc1098cb4dfa4826f7a121d92">More...</a><br /></td></tr>
+<tr class="separator:ga14db47bbc1098cb4dfa4826f7a121d92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0174e7b359b079e56c0ac114f43d4161"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga0174e7b359b079e56c0ac114f43d4161">acn_parse_root_layer_header</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *pdu, <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *last_pdu)</td></tr>
+<tr class="memdesc:ga0174e7b359b079e56c0ac114f43d4161"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse only the header of an ACN Root Layer PDU.  <a href="#ga0174e7b359b079e56c0ac114f43d4161">More...</a><br /></td></tr>
+<tr class="separator:ga0174e7b359b079e56c0ac114f43d4161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabf21b75d1b5bfe26178b328c3cd2fa8d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gabf21b75d1b5bfe26178b328c3cd2fa8d">acn_parse_root_layer_pdu</a> (const uint8_t *buf, size_t buflen, <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *pdu, <a class="el" href="struct_acn_pdu.html">AcnPdu</a> *last_pdu)</td></tr>
+<tr class="memdesc:gabf21b75d1b5bfe26178b328c3cd2fa8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse an ACN Root Layer PDU.  <a href="#gabf21b75d1b5bfe26178b328c3cd2fa8d">More...</a><br /></td></tr>
+<tr class="separator:gabf21b75d1b5bfe26178b328c3cd2fa8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga615060ff8e3ed0811418b60498872177"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga615060ff8e3ed0811418b60498872177">acn_pack_tcp_preamble</a> (uint8_t *buf, size_t buflen, size_t rlp_block_len)</td></tr>
+<tr class="memdesc:ga615060ff8e3ed0811418b60498872177"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an ACN TCP Preamble into a buffer.  <a href="#ga615060ff8e3ed0811418b60498872177">More...</a><br /></td></tr>
+<tr class="separator:ga615060ff8e3ed0811418b60498872177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad1ebc44ac8675cea86bd5fa4a2f5a530"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gad1ebc44ac8675cea86bd5fa4a2f5a530">acn_pack_udp_preamble</a> (uint8_t *buf, size_t buflen)</td></tr>
+<tr class="memdesc:gad1ebc44ac8675cea86bd5fa4a2f5a530"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack an ACN UDP Preamble into a buffer.  <a href="#gad1ebc44ac8675cea86bd5fa4a2f5a530">More...</a><br /></td></tr>
+<tr class="separator:gad1ebc44ac8675cea86bd5fa4a2f5a530"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga76d83773df9894ecbaf8b505647c32e5"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga76d83773df9894ecbaf8b505647c32e5">acn_root_layer_buf_size</a> (const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *pdu_block, size_t num_pdus)</td></tr>
+<tr class="memdesc:ga76d83773df9894ecbaf8b505647c32e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the buffer size to allocate for a Root Layer PDU block.  <a href="#ga76d83773df9894ecbaf8b505647c32e5">More...</a><br /></td></tr>
+<tr class="separator:ga76d83773df9894ecbaf8b505647c32e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf4281e58f075ee0e14f2e6fa50f059b9"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#gaf4281e58f075ee0e14f2e6fa50f059b9">acn_pack_root_layer_header</a> (uint8_t *buf, size_t buflen, const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *pdu)</td></tr>
+<tr class="memdesc:gaf4281e58f075ee0e14f2e6fa50f059b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack only the header of a Root Layer PDU block into a buffer.  <a href="#gaf4281e58f075ee0e14f2e6fa50f059b9">More...</a><br /></td></tr>
+<tr class="separator:gaf4281e58f075ee0e14f2e6fa50f059b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3b7afd5a73e12e1acd650455c7e22997"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html#ga3b7afd5a73e12e1acd650455c7e22997">acn_pack_root_layer_block</a> (uint8_t *buf, size_t buflen, const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *pdu_block, size_t num_pdus)</td></tr>
+<tr class="memdesc:ga3b7afd5a73e12e1acd650455c7e22997"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pack a Root Layer PDU block into a buffer.  <a href="#ga3b7afd5a73e12e1acd650455c7e22997">More...</a><br /></td></tr>
+<tr class="separator:ga3b7afd5a73e12e1acd650455c7e22997"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 Protocol Vectors</h2></td></tr>
@@ -302,14 +302,14 @@ Protocol Vectors</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Typedef Documentation</h2>
-<a id="gafcee66c76b1dec0bbaf93f9589c0a8dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gafcee66c76b1dec0bbaf93f9589c0a8dd">&#9670;&nbsp;</a></span>EtcPalRootLayerPdu</h2>
+<a id="ga1f5c4d94231529fba7aa1c852cde9665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1f5c4d94231529fba7aa1c852cde9665">&#9670;&nbsp;</a></span>AcnRootLayerPdu</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a>  <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a>  <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -318,14 +318,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga479d29909ff291c75531e5e45de4af11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga479d29909ff291c75531e5e45de4af11">&#9670;&nbsp;</a></span>EtcPalTcpPreamble</h2>
+<a id="ga548213c8a55f62ef6d1aaebebf5d9d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga548213c8a55f62ef6d1aaebebf5d9d92">&#9670;&nbsp;</a></span>AcnTcpPreamble</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a>  <a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a>  <a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -334,14 +334,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="gabceea25a6773878d73d5c73cff3413db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabceea25a6773878d73d5c73cff3413db">&#9670;&nbsp;</a></span>EtcPalUdpPreamble</h2>
+<a id="gac581ac5bbc25e6c544f10a718bb6a6d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac581ac5bbc25e6c544f10a718bb6a6d2">&#9670;&nbsp;</a></span>AcnUdpPreamble</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a>  <a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a></td>
+          <td class="memname">typedef struct <a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a>  <a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -351,14 +351,14 @@ Protocol Vectors</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gabdadb9de2e41045c2010e6085f6ff456"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabdadb9de2e41045c2010e6085f6ff456">&#9670;&nbsp;</a></span>etcpal_pack_root_layer_block()</h2>
+<a id="ga3b7afd5a73e12e1acd650455c7e22997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3b7afd5a73e12e1acd650455c7e22997">&#9670;&nbsp;</a></span>acn_pack_root_layer_block()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t etcpal_pack_root_layer_block </td>
+          <td class="memname">size_t acn_pack_root_layer_block </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -372,7 +372,7 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>pdu_block</em>, </td>
         </tr>
         <tr>
@@ -390,28 +390,28 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pack a Root Layer PDU block into a buffer. </p>
-<p>The required buffer size can be calculated in advance using <a class="el" href="group__etcpal__root__layer__pdu.html#ga0d9d71dfeb84b94149e146292144615b" title="Get the buffer size to allocate for a Root Layer PDU block. ">etcpal_root_layer_buf_size()</a>.</p>
+<p>The required buffer size can be calculated in advance using <a class="el" href="group__etcpal__acn__rlp.html#ga76d83773df9894ecbaf8b505647c32e5" title="Get the buffer size to allocate for a Root Layer PDU block. ">acn_root_layer_buf_size()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Root Layer PDU block. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">pdu_block</td><td>Array of <a class="el" href="struct_etc_pal_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">EtcPalRootLayerPdu</a> representing the PDU block to pack. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">num_pdus</td><td>Number of <a class="el" href="struct_etc_pal_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">EtcPalRootLayerPdu</a> that make up the pdu_block array. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pdu_block</td><td>Array of <a class="el" href="struct_acn_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">AcnRootLayerPdu</a> representing the PDU block to pack. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">num_pdus</td><td>Number of <a class="el" href="struct_acn_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">AcnRootLayerPdu</a> that make up the pdu_block array. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Number of bytes packed (success) or 0 (failure). Note that this might be less than the value returned by <a class="el" href="group__etcpal__root__layer__pdu.html#ga0d9d71dfeb84b94149e146292144615b" title="Get the buffer size to allocate for a Root Layer PDU block. ">etcpal_root_layer_buf_size()</a>; this is because this function performs more optimizations related to PDU inheritance. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Number of bytes packed (success) or 0 (failure). Note that this might be less than the value returned by <a class="el" href="group__etcpal__acn__rlp.html#ga76d83773df9894ecbaf8b505647c32e5" title="Get the buffer size to allocate for a Root Layer PDU block. ">acn_root_layer_buf_size()</a>; this is because this function performs more optimizations related to PDU inheritance. </dd></dl>
 
 </div>
 </div>
-<a id="ga8d5021cdeed9c03dcc28d7f29fbac7d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8d5021cdeed9c03dcc28d7f29fbac7d9">&#9670;&nbsp;</a></span>etcpal_pack_root_layer_header()</h2>
+<a id="gaf4281e58f075ee0e14f2e6fa50f059b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf4281e58f075ee0e14f2e6fa50f059b9">&#9670;&nbsp;</a></span>acn_pack_root_layer_header()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t etcpal_pack_root_layer_header </td>
+          <td class="memname">size_t acn_pack_root_layer_header </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -425,7 +425,7 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>pdu</em>&#160;</td>
         </tr>
         <tr>
@@ -441,7 +441,7 @@ Protocol Vectors</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the Root Layer PDU header. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of size <a class="el" href="group__etcpal__root__layer__pdu.html#ga9d9a7bd4498a28d5b0de8ed598141c66" title="Size of the Root Layer PDU header when the length is 4096 or greater. ">ACN_RLP_HEADER_SIZE_EXT_LEN</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of size <a class="el" href="group__etcpal__acn__rlp.html#ga9d9a7bd4498a28d5b0de8ed598141c66" title="Size of the Root Layer PDU header when the length is 4096 or greater. ">ACN_RLP_HEADER_SIZE_EXT_LEN</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pdu</td><td>PDU for which to pack the header into a buffer. </td></tr>
   </table>
   </dd>
@@ -450,14 +450,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga83602488410ff9d31fb781afd5898463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga83602488410ff9d31fb781afd5898463">&#9670;&nbsp;</a></span>etcpal_pack_tcp_preamble()</h2>
+<a id="ga615060ff8e3ed0811418b60498872177"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga615060ff8e3ed0811418b60498872177">&#9670;&nbsp;</a></span>acn_pack_tcp_preamble()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t etcpal_pack_tcp_preamble </td>
+          <td class="memname">size_t acn_pack_tcp_preamble </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -487,7 +487,7 @@ Protocol Vectors</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the preamble. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of length <a class="el" href="group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble. ">ACN_TCP_PREAMBLE_SIZE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of length <a class="el" href="group__etcpal__acn__rlp.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble. ">ACN_TCP_PREAMBLE_SIZE</a>. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">rlp_block_len</td><td>Full length in bytes of the Root Layer PDU block that will come after this TCP preamble. </td></tr>
   </table>
   </dd>
@@ -496,14 +496,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga205a77f2284495f4b9a16f07dcd43f83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga205a77f2284495f4b9a16f07dcd43f83">&#9670;&nbsp;</a></span>etcpal_pack_udp_preamble()</h2>
+<a id="gad1ebc44ac8675cea86bd5fa4a2f5a530"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad1ebc44ac8675cea86bd5fa4a2f5a530">&#9670;&nbsp;</a></span>acn_pack_udp_preamble()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t etcpal_pack_udp_preamble </td>
+          <td class="memname">size_t acn_pack_udp_preamble </td>
           <td>(</td>
           <td class="paramtype">uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -527,7 +527,7 @@ Protocol Vectors</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer into which to pack the preamble. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of length <a class="el" href="group__etcpal__root__layer__pdu.html#ga86207e41512354a1a6e321d95afe8ab0" title="Size of an ACN family UDP preamble. ">ACN_UDP_PREAMBLE_SIZE</a>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. Buffer should be at least of length <a class="el" href="group__etcpal__acn__rlp.html#ga86207e41512354a1a6e321d95afe8ab0" title="Size of an ACN family UDP preamble. ">ACN_UDP_PREAMBLE_SIZE</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -535,14 +535,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa454f9d1af3e45a1eefb61c3d4fd9496"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa454f9d1af3e45a1eefb61c3d4fd9496">&#9670;&nbsp;</a></span>etcpal_parse_root_layer_header()</h2>
+<a id="ga0174e7b359b079e56c0ac114f43d4161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0174e7b359b079e56c0ac114f43d4161">&#9670;&nbsp;</a></span>acn_parse_root_layer_header()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool etcpal_parse_root_layer_header </td>
+          <td class="memname">bool acn_parse_root_layer_header </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -556,13 +556,13 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>pdu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>last_pdu</em>&#160;</td>
         </tr>
         <tr>
@@ -588,14 +588,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="gac604ba1761a3126ddf9095338ec2d4a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac604ba1761a3126ddf9095338ec2d4a4">&#9670;&nbsp;</a></span>etcpal_parse_root_layer_pdu()</h2>
+<a id="gabf21b75d1b5bfe26178b328c3cd2fa8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gabf21b75d1b5bfe26178b328c3cd2fa8d">&#9670;&nbsp;</a></span>acn_parse_root_layer_pdu()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool etcpal_parse_root_layer_pdu </td>
+          <td class="memname">bool acn_parse_root_layer_pdu </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -609,13 +609,13 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>pdu</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_pdu.html">EtcPalPdu</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_pdu.html">AcnPdu</a> *&#160;</td>
           <td class="paramname"><em>last_pdu</em>&#160;</td>
         </tr>
         <tr>
@@ -627,10 +627,10 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse an ACN Root Layer PDU. </p>
-<p>Parse a Root Layer PDU from a Root Layer PDU block. Fills in the <a class="el" href="struct_etc_pal_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">EtcPalRootLayerPdu</a> structure with the parsed PDU information, and stores state data in a <a class="el" href="struct_etc_pal_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">EtcPalPdu</a> structure for parsing the next PDU in the block, if there is one.</p>
+<p>Parse a Root Layer PDU from a Root Layer PDU block. Fills in the <a class="el" href="struct_acn_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">AcnRootLayerPdu</a> structure with the parsed PDU information, and stores state data in a <a class="el" href="struct_acn_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">AcnPdu</a> structure for parsing the next PDU in the block, if there is one.</p>
 <p>Example usage:</p>
-<p>After parsing an ACN protocol family preamble (perhaps by using <a class="el" href="group__etcpal__root__layer__pdu.html#ga9c5fe31670c57a02311d3d23f6b96904" title="Parse an ACN UDP Preamble. ">etcpal_parse_udp_preamble()</a> or <a class="el" href="group__etcpal__root__layer__pdu.html#ga9d42879935ab912ec15d30e9415f5c4b" title="Parse an ACN TCP Preamble. ">etcpal_parse_tcp_preamble()</a>), buf points to the data starting after the preamble and buflen is the length parsed from the preamble...</p>
-<div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_pdu.html">EtcPalPdu</a> pdu = <a class="code" href="group__etcpal__pdu.html#gafb7d5c94b80a01d37fa4ec4edcc833c7">ETCPAL_PDU_INIT</a>; <span class="comment">// Must initialize this!!</span></div><div class="line"><span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div><div class="line"><span class="keywordflow">do</span></div><div class="line">{</div><div class="line">  <a class="code" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> cur;</div><div class="line">  res = <a class="code" href="group__etcpal__root__layer__pdu.html#gac604ba1761a3126ddf9095338ec2d4a4">etcpal_parse_root_layer_pdu</a>(buf, buflen, &amp;cur, &amp;pdu);</div><div class="line">  <span class="keywordflow">if</span> (res)</div><div class="line">  {</div><div class="line">    <span class="comment">// Example application handler function that forwards the pdu appropriately based on</span></div><div class="line">    <span class="comment">// vector</span></div><div class="line">    handle_root_layer_pdu(&amp;cur);</div><div class="line">  }</div><div class="line">} <span class="keywordflow">while</span> (res);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
+<p>After parsing an ACN protocol family preamble (perhaps by using <a class="el" href="group__etcpal__acn__rlp.html#ga14db47bbc1098cb4dfa4826f7a121d92" title="Parse an ACN UDP Preamble. ">acn_parse_udp_preamble()</a> or <a class="el" href="group__etcpal__acn__rlp.html#gab2edaace9af15cb4dd54bfb8ad36fe88" title="Parse an ACN TCP Preamble. ">acn_parse_tcp_preamble()</a>), buf points to the data starting after the preamble and buflen is the length parsed from the preamble...</p>
+<div class="fragment"><div class="line"><a class="code" href="struct_acn_pdu.html">AcnPdu</a> pdu = <a class="code" href="group__etcpal__acn__pdu.html#ga408e2eafbb588ee9138013a62c412e4c">ACN_PDU_INIT</a>; <span class="comment">// Must initialize this!!</span></div><div class="line"><span class="keywordtype">bool</span> res = <span class="keyword">false</span>;</div><div class="line"><span class="keywordflow">do</span></div><div class="line">{</div><div class="line">  <a class="code" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> cur;</div><div class="line">  res = <a class="code" href="group__etcpal__acn__rlp.html#gabf21b75d1b5bfe26178b328c3cd2fa8d">acn_parse_root_layer_pdu</a>(buf, buflen, &amp;cur, &amp;pdu);</div><div class="line">  <span class="keywordflow">if</span> (res)</div><div class="line">  {</div><div class="line">    <span class="comment">// Example application handler function that forwards the pdu appropriately based on</span></div><div class="line">    <span class="comment">// vector</span></div><div class="line">    handle_root_layer_pdu(&amp;cur);</div><div class="line">  }</div><div class="line">} <span class="keywordflow">while</span> (res);</div></div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Root Layer Protocol buffer. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Size in bytes of buf. </td></tr>
@@ -643,14 +643,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9d42879935ab912ec15d30e9415f5c4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9d42879935ab912ec15d30e9415f5c4b">&#9670;&nbsp;</a></span>etcpal_parse_tcp_preamble()</h2>
+<a id="gab2edaace9af15cb4dd54bfb8ad36fe88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab2edaace9af15cb4dd54bfb8ad36fe88">&#9670;&nbsp;</a></span>acn_parse_tcp_preamble()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool etcpal_parse_tcp_preamble </td>
+          <td class="memname">bool acn_parse_tcp_preamble </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -664,7 +664,7 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_tcp_preamble.html">EtcPalTcpPreamble</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_tcp_preamble.html">AcnTcpPreamble</a> *&#160;</td>
           <td class="paramname"><em>preamble</em>&#160;</td>
         </tr>
         <tr>
@@ -676,7 +676,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Parse an ACN TCP Preamble. </p>
-<p>Determine whether this byte buffer, received over TCP, starts with an ACN TCP Preamble and thus contains an ACN protocol family packet. For best results, wait until you receive at least <a class="el" href="group__etcpal__root__layer__pdu.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble. ">ACN_TCP_PREAMBLE_SIZE</a> bytes before calling this function.</p>
+<p>Determine whether this byte buffer, received over TCP, starts with an ACN TCP Preamble and thus contains an ACN protocol family packet. For best results, wait until you receive at least <a class="el" href="group__etcpal__acn__rlp.html#gab879b13847509e3bbd4b12a5e2cda0e7" title="Size of an ACN family TCP preamble. ">ACN_TCP_PREAMBLE_SIZE</a> bytes before calling this function.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Received TCP buffer. </td></tr>
@@ -689,14 +689,14 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga9c5fe31670c57a02311d3d23f6b96904"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga9c5fe31670c57a02311d3d23f6b96904">&#9670;&nbsp;</a></span>etcpal_parse_udp_preamble()</h2>
+<a id="ga14db47bbc1098cb4dfa4826f7a121d92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14db47bbc1098cb4dfa4826f7a121d92">&#9670;&nbsp;</a></span>acn_parse_udp_preamble()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool etcpal_parse_udp_preamble </td>
+          <td class="memname">bool acn_parse_udp_preamble </td>
           <td>(</td>
           <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -710,7 +710,7 @@ Protocol Vectors</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_udp_preamble.html">EtcPalUdpPreamble</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="struct_acn_udp_preamble.html">AcnUdpPreamble</a> *&#160;</td>
           <td class="paramname"><em>preamble</em>&#160;</td>
         </tr>
         <tr>
@@ -735,16 +735,16 @@ Protocol Vectors</h2></td></tr>
 
 </div>
 </div>
-<a id="ga0d9d71dfeb84b94149e146292144615b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0d9d71dfeb84b94149e146292144615b">&#9670;&nbsp;</a></span>etcpal_root_layer_buf_size()</h2>
+<a id="ga76d83773df9894ecbaf8b505647c32e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga76d83773df9894ecbaf8b505647c32e5">&#9670;&nbsp;</a></span>acn_root_layer_buf_size()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">size_t etcpal_root_layer_buf_size </td>
+          <td class="memname">size_t acn_root_layer_buf_size </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_root_layer_pdu.html">EtcPalRootLayerPdu</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="struct_acn_root_layer_pdu.html">AcnRootLayerPdu</a> *&#160;</td>
           <td class="paramname"><em>pdu_block</em>, </td>
         </tr>
         <tr>
@@ -762,7 +762,7 @@ Protocol Vectors</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get the buffer size to allocate for a Root Layer PDU block. </p>
-<p>Calculate the buffer size to allocate for a future call to <a class="el" href="group__etcpal__root__layer__pdu.html#gabdadb9de2e41045c2010e6085f6ff456" title="Pack a Root Layer PDU block into a buffer. ">etcpal_pack_root_layer_block()</a>, given an array of <a class="el" href="struct_etc_pal_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">EtcPalRootLayerPdu</a>.</p>
+<p>Calculate the buffer size to allocate for a future call to <a class="el" href="group__etcpal__acn__rlp.html#ga3b7afd5a73e12e1acd650455c7e22997" title="Pack a Root Layer PDU block into a buffer. ">acn_pack_root_layer_block()</a>, given an array of <a class="el" href="struct_acn_root_layer_pdu.html" title="Holds the information contained in an ACN Root Layer PDU. ">AcnRootLayerPdu</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">pdu_block</td><td>Array of structs representing a Root Layer PDU block. </td></tr>
