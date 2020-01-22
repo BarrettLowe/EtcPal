@@ -32,7 +32,7 @@ var annotated =
     [ "EtcPalLinger", "struct_etc_pal_linger.html", "struct_etc_pal_linger" ],
     [ "EtcPalLogParams", "struct_etc_pal_log_params.html", "struct_etc_pal_log_params" ],
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", "struct_etc_pal_log_strings" ],
-    [ "EtcPalLogTimeParams", "struct_etc_pal_log_time_params.html", "struct_etc_pal_log_time_params" ],
+    [ "EtcPalLogTimestamp", "struct_etc_pal_log_timestamp.html", "struct_etc_pal_log_timestamp" ],
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", "struct_etc_pal_mac_addr" ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", "struct_etc_pal_mreq" ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", "struct_etc_pal_netint_info" ],

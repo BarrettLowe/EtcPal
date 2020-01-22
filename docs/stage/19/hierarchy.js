@@ -12,7 +12,7 @@ var hierarchy =
     [ "EtcPalLinger", "struct_etc_pal_linger.html", null ],
     [ "EtcPalLogParams", "struct_etc_pal_log_params.html", null ],
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", null ],
-    [ "EtcPalLogTimeParams", "struct_etc_pal_log_time_params.html", null ],
+    [ "EtcPalLogTimestamp", "struct_etc_pal_log_timestamp.html", null ],
     [ "EtcPalMacAddr", "struct_etc_pal_mac_addr.html", null ],
     [ "EtcPalMreq", "struct_etc_pal_mreq.html", null ],
     [ "EtcPalNetintInfo", "struct_etc_pal_netint_info.html", null ],

@@ -1,17 +1,18 @@
 var group__etcpal__log =
 [
-    [ "EtcPalLogTimeParams", "struct_etc_pal_log_time_params.html", [
-      [ "day", "struct_etc_pal_log_time_params.html#a4c11afc03fc3ee49bab660def6558f2a", null ],
-      [ "hour", "struct_etc_pal_log_time_params.html#a15df9ba285cfd842f284025f904edc9c", null ],
-      [ "minute", "struct_etc_pal_log_time_params.html#a5edffad982a0566ad01d95005474eae3", null ],
-      [ "month", "struct_etc_pal_log_time_params.html#aedb06abe5aff12fa3e7e0e71a374edfb", null ],
-      [ "msec", "struct_etc_pal_log_time_params.html#ad957f34cd6e8272740bc231865080b22", null ],
-      [ "second", "struct_etc_pal_log_time_params.html#a6cf35be1947a62f134392fcb1b3c54d2", null ],
-      [ "utc_offset", "struct_etc_pal_log_time_params.html#a0d5ceb6295477b5931bf54c002e36fe9", null ],
-      [ "year", "struct_etc_pal_log_time_params.html#abeac221e38b7b9ce7df8722c842bf671", null ]
+    [ "EtcPalLogTimestamp", "struct_etc_pal_log_timestamp.html", [
+      [ "day", "struct_etc_pal_log_timestamp.html#a4c11afc03fc3ee49bab660def6558f2a", null ],
+      [ "hour", "struct_etc_pal_log_timestamp.html#a15df9ba285cfd842f284025f904edc9c", null ],
+      [ "minute", "struct_etc_pal_log_timestamp.html#a5edffad982a0566ad01d95005474eae3", null ],
+      [ "month", "struct_etc_pal_log_timestamp.html#aedb06abe5aff12fa3e7e0e71a374edfb", null ],
+      [ "msec", "struct_etc_pal_log_timestamp.html#ad957f34cd6e8272740bc231865080b22", null ],
+      [ "second", "struct_etc_pal_log_timestamp.html#a6cf35be1947a62f134392fcb1b3c54d2", null ],
+      [ "utc_offset", "struct_etc_pal_log_timestamp.html#a0d5ceb6295477b5931bf54c002e36fe9", null ],
+      [ "year", "struct_etc_pal_log_timestamp.html#abeac221e38b7b9ce7df8722c842bf671", null ]
     ] ],
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", [
       [ "human_readable", "struct_etc_pal_log_strings.html#a4ac8b9667178849660fd3b1f99e93366", null ],
+      [ "priority", "struct_etc_pal_log_strings.html#acec9ce2df15222151ad66fcb1d74eb9f", null ],
       [ "raw", "struct_etc_pal_log_strings.html#a8129637af8920bc9328bbce2a00bfeb4", null ],
       [ "syslog", "struct_etc_pal_log_strings.html#a5911dbe6a47cb2b9cfbab87a8881b5b6", null ]
     ] ],
@@ -76,8 +77,8 @@ var group__etcpal__log =
     [ "EtcPalLogCallback", "group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82", null ],
     [ "EtcPalLogParams", "group__etcpal__log.html#gac6a69c52ee1d8dea2aa9d6a90d217050", null ],
     [ "EtcPalLogStrings", "group__etcpal__log.html#gaf51673a8ceea21c025198456ac795a12", null ],
-    [ "EtcPalLogTimeFn", "group__etcpal__log.html#ga3e3f125146999063f5d25dc98686744d", null ],
-    [ "EtcPalLogTimeParams", "group__etcpal__log.html#ga3cfc242617ad25826b445fce64b800a0", null ],
+    [ "EtcPalLogTimeFn", "group__etcpal__log.html#gae62cd1cd05e3e42c5df41cab8df8e9e3", null ],
+    [ "EtcPalLogTimestamp", "group__etcpal__log.html#ga6ce3e6fd83a776f1696163386ed4fde0", null ],
     [ "EtcPalSyslogParams", "group__etcpal__log.html#ga3961fedc222b8d388ebcb2bbe6e00263", null ],
     [ "etcpal_log_action_t", "group__etcpal__log.html#ga10855f3c1f3816d0bd5e4687108ea1c5", [
       [ "kEtcPalLogCreateSyslog", "group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a1631725f7a5f65a9fb15767cecec5290", null ],
@@ -85,8 +86,8 @@ var group__etcpal__log =
       [ "kEtcPalLogCreateBoth", "group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a8d083dc7d2d4359fd9ce6330b9d4c2bb", null ]
     ] ],
     [ "etcpal_can_log", "group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad", null ],
-    [ "etcpal_create_log_str", "group__etcpal__log.html#ga9e67b13d5afeb1049caecdbf9fbf5171", null ],
-    [ "etcpal_create_syslog_str", "group__etcpal__log.html#ga066f11ddd10e75d38a379a648d2dcba4", null ],
+    [ "etcpal_create_log_str", "group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56", null ],
+    [ "etcpal_create_syslog_str", "group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879", null ],
     [ "etcpal_log", "group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e", null ],
     [ "etcpal_sanitize_syslog_params", "group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318", null ],
     [ "etcpal_validate_log_params", "group__etcpal__log.html#ga949455773a4ecdd6a499940a19ec6080", null ],
