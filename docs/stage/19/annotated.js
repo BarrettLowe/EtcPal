@@ -12,6 +12,7 @@ var annotated =
       [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", "classetcpal_1_1_mutex_guard" ],
       [ "ReadGuard", "classetcpal_1_1_read_guard.html", "classetcpal_1_1_read_guard" ],
       [ "RwLock", "classetcpal_1_1_rw_lock.html", "classetcpal_1_1_rw_lock" ],
+      [ "Semaphore", "classetcpal_1_1_semaphore.html", "classetcpal_1_1_semaphore" ],
       [ "Signal", "classetcpal_1_1_signal.html", "classetcpal_1_1_signal" ],
       [ "SockAddr", "classetcpal_1_1_sock_addr.html", "classetcpal_1_1_sock_addr" ],
       [ "Thread", "classetcpal_1_1_thread.html", "classetcpal_1_1_thread" ],

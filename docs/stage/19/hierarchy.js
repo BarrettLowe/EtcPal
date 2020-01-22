@@ -37,6 +37,7 @@ var hierarchy =
     [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", null ],
     [ "ReadGuard", "classetcpal_1_1_read_guard.html", null ],
     [ "RwLock", "classetcpal_1_1_rw_lock.html", null ],
+    [ "Semaphore", "classetcpal_1_1_semaphore.html", null ],
     [ "Signal", "classetcpal_1_1_signal.html", null ],
     [ "SockAddr", "classetcpal_1_1_sock_addr.html", null ],
     [ "Thread", "classetcpal_1_1_thread.html", null ],

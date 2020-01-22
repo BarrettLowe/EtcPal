@@ -133,7 +133,7 @@ $(document).ready(function(){initNavTree('group__etcpal__cpp__lock.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <p>C++ utilities for the <a class="el" href="group__etcpal__lock.html">lock (Locks and Synchronization)</a> module. </p>
 <p>Provides C++ wrappers for mutexes (<a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">Mutex</a>), signals (<a class="el" href="classetcpal_1_1_signal.html" title="A wrapper class for the EtcPal signal type. ">Signal</a>) and read-write locks (<a class="el" href="classetcpal_1_1_rw_lock.html" title="A wrapper class for the EtcPal read-write lock type. ">RwLock</a>). Also provides RAII guard classes for these types (<a class="el" href="classetcpal_1_1_mutex_guard.html" title="Lock guard around a mutex. ">MutexGuard</a>, <a class="el" href="classetcpal_1_1_read_guard.html" title="Read lock guard around a read-write lock. ">ReadGuard</a>, <a class="el" href="classetcpal_1_1_write_guard.html" title="Write lock guard around a read-write lock. ">WriteGuard</a>), which should be the primary constructs used to interact with the mutual-exclusion classes.</p>
-<p>These classes are similar to td::mutex, std::condition_variable, and std::shared_mutex, with the key advantage that they will work on any threaded platform that EtcPal is ported for, including the embedded RTOS platforms. If your application or library does not need to run on these platforms, consider using the STL versions instead. </p>
+<p>These classes are similar to std::mutex, std::condition_variable, and std::shared_mutex, with the key advantage that they will work on any threaded platform that EtcPal is ported for, including the embedded RTOS platforms. If your application or library does not need to run on these platforms, consider using the STL versions instead. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -145,6 +145,9 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html">RwLock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper class for the EtcPal read-write lock type.  <a href="classetcpal_1_1_rw_lock.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_semaphore.html">Semaphore</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A wrapper class for the EtcPal counting semaphore type.  <a href="classetcpal_1_1_semaphore.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex_guard.html">MutexGuard</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock guard around a mutex.  <a href="classetcpal_1_1_mutex_guard.html#details">More...</a><br /></td></tr>
