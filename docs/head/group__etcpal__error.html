@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Error Handling (error)</title>
+  <title>EtcPal: error (Error Handling)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -129,12 +130,12 @@ $(document).ready(function(){initNavTree('group__etcpal__error.html','');});
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Error Handling (error)<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a></div></div>  </div>
+<div class="title">error (Error Handling)<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>Platform-neutral error codes.  
-<a href="#details">More...</a></p>
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>Platform-neutral error codes. </p>
+<div class="fragment"><div class="line">include <span class="stringliteral">&quot;etcpal/error.h&quot;</span></div></div><!-- fragment --><p>Provides a set of error codes that can be returned by library functions. For platform abstraction modules, error codes are translated from their platform-specific counterparts. Use <a class="el" href="group__etcpal__error.html#ga4902a840d9801e02baebd4c70924c4b0" title="Get a string representation of an error code. ">etcpal_strerror()</a> to get a string representation of any error code. </p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
@@ -194,9 +195,6 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga4902a840d9801e02baebd4c70924c4b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a string representation of an error code.  <a href="#ga4902a840d9801e02baebd4c70924c4b0">More...</a><br /></td></tr>
 <tr class="separator:ga4902a840d9801e02baebd4c70924c4b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Platform-neutral error codes. </p>
-<p><code>include "etcpal/error.h"</code> </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="gae0de193fbaf16861756958bd3f21e07f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gae0de193fbaf16861756958bd3f21e07f">&#9670;&nbsp;</a></span>ETCPAL_NUM_ERROR_CODES</h2>

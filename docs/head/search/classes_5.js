@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['signal',['Signal',['../classetcpal_1_1_signal.html',1,'etcpal']]],
-  ['sockaddr',['SockAddr',['../classetcpal_1_1_sock_addr.html',1,'etcpal']]]
+  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html',1,'etcpal']]],
+  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html',1,'etcpal']]],
+  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html',1,'etcpal']]]
 ];

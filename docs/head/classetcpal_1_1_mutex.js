@@ -8,6 +8,6 @@ var classetcpal_1_1_mutex =
     [ "Lock", "classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69", null ],
     [ "operator=", "classetcpal_1_1_mutex.html#ae7a118dbd18f988b830f2ffe18ff229c", null ],
     [ "operator=", "classetcpal_1_1_mutex.html#a8cd26ea836a03dbd39db75a2a4e9f1be", null ],
-    [ "TryLock", "classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6", null ],
+    [ "TryLock", "classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef", null ],
     [ "Unlock", "classetcpal_1_1_mutex.html#a91b88a5d5517cb042431c4ea24d8ecb7", null ]
 ];

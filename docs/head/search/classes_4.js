@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html',1,'etcpal']]],
-  ['result',['Result',['../classetcpal_1_1_result.html',1,'etcpal']]],
-  ['rwlock',['RwLock',['../classetcpal_1_1_rw_lock.html',1,'etcpal']]]
+  ['logger',['Logger',['../classetcpal_1_1_logger.html',1,'etcpal']]],
+  ['logmessagehandler',['LogMessageHandler',['../classetcpal_1_1_log_message_handler.html',1,'etcpal']]]
 ];

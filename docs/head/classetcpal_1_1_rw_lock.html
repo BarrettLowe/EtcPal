@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,13 +128,14 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_rw_lock.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">RwLock Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
+<div class="title">RwLock Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A wrapper class for the EtcPal read-write lock type.  
- <a href="classetcpal_1_1_rw_lock.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A wrapper class for the EtcPal read-write lock type. </p>
+<p>Note: The <a class="el" href="classetcpal_1_1_rw_lock.html" title="A wrapper class for the EtcPal read-write lock type. ">etcpal::RwLock</a> functions are not normally used directly - prefer usage of the RAII types <a class="el" href="classetcpal_1_1_read_guard.html" title="Read lock guard around a read-write lock. ">etcpal::ReadGuard</a> and <a class="el" href="classetcpal_1_1_write_guard.html" title="Write lock guard around a read-write lock. ">etcpal::WriteGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_rw_lock.html" title="A wrapper class for the EtcPal read-write lock type. ">etcpal::RwLock</a>.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">class </span>ThreadSafeCounter</div><div class="line">{</div><div class="line"><span class="keyword">public</span>:</div><div class="line">  ThreadSafeCounter() = <span class="keywordflow">default</span>;</div><div class="line"></div><div class="line">  <span class="comment">// Multiple threads/readers can read the counter&#39;s value at the same time.</span></div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keyword">get</span>() <span class="keyword">const</span></div><div class="line">  {</div><div class="line">    <a class="code" href="classetcpal_1_1_read_guard.html">etcpal::ReadGuard</a> read_lock(lock_);</div><div class="line">    <span class="keywordflow">return</span> value_;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Only one thread/writer can increment/write the counter&#39;s value.</span></div><div class="line">  <span class="keywordtype">void</span> increment()</div><div class="line">  {</div><div class="line">    <a class="code" href="classetcpal_1_1_write_guard.html">etcpal::WriteGuard</a> write_lock(lock_);</div><div class="line">    ++value_;</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Only one thread/writer can reset/write the counter&#39;s value.</span></div><div class="line">  <span class="keywordtype">void</span> reset()</div><div class="line">  {</div><div class="line">    <a class="code" href="classetcpal_1_1_write_guard.html">etcpal::WriteGuard</a> write_lock(lock_);</div><div class="line">    value_ = 0;</div><div class="line">  }</div><div class="line"></div><div class="line"> <span class="keyword">private</span>:</div><div class="line">  <span class="keyword">mutable</span> <a class="code" href="classetcpal_1_1_rw_lock.html">etcpal::RwLock</a> lock_;</div><div class="line">  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> value_ = 0;</div><div class="line">};</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  ThreadSafeCounter counter;</div><div class="line"></div><div class="line">  <span class="keyword">auto</span> increment_and_print = [&amp;counter]()</div><div class="line">  {</div><div class="line">    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 3; i++)</div><div class="line">    {</div><div class="line">      counter.increment();</div><div class="line">      std::cout &lt;&lt; counter.get() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div><div class="line">    }</div><div class="line">  };</div><div class="line"></div><div class="line">  <a class="code" href="classetcpal_1_1_thread.html">etcpal::Thread</a> thread1(increment_and_print);</div><div class="line">  <a class="code" href="classetcpal_1_1_thread.html">etcpal::Thread</a> thread2(increment_and_print);</div><div class="line"></div><div class="line">  thread1.Join();</div><div class="line">  thread2.Join();</div><div class="line"></div><div class="line">  std::cout &lt;&lt; counter.get() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>; <span class="comment">// Outputs &#39;6&#39;</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>See <a class="el" href="group__etcpal__rwlock.html">Read-Write Locks</a> for more information. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5ce7091375083d76ae798cabac53a21"><td class="memItemLeft" align="right" valign="top"><a id="ad5ce7091375083d76ae798cabac53a21"></a>
@@ -156,21 +158,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4faecf150601dc5e57a3ddac2d83cb67"><td class="memItemLeft" align="right" valign="top"><a id="a4faecf150601dc5e57a3ddac2d83cb67"></a>
 <a class="el" href="classetcpal_1_1_rw_lock.html">RwLock</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classetcpal_1_1_rw_lock.html">RwLock</a> &amp;&amp;other)=delete</td></tr>
 <tr class="separator:a4faecf150601dc5e57a3ddac2d83cb67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af760aebc292f4430c5d554b1fb239284"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284">ReadLock</a> ()</td></tr>
+<tr class="memitem:af760aebc292f4430c5d554b1fb239284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284">ReadLock</a> ()</td></tr>
 <tr class="memdesc:af760aebc292f4430c5d554b1fb239284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the read-write lock for reading.  <a href="#af760aebc292f4430c5d554b1fb239284">More...</a><br /></td></tr>
 <tr class="separator:af760aebc292f4430c5d554b1fb239284"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a409d488d3b55cffa68f081ee05611764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764">TryReadLock</a> ()</td></tr>
-<tr class="memdesc:a409d488d3b55cffa68f081ee05611764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to access the read-write lock for reading.  <a href="#a409d488d3b55cffa68f081ee05611764">More...</a><br /></td></tr>
-<tr class="separator:a409d488d3b55cffa68f081ee05611764"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac46abb95ae4ab3f37da632ea31f01535"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535">TryReadLock</a> (int timeout_ms=0)</td></tr>
+<tr class="memdesc:ac46abb95ae4ab3f37da632ea31f01535"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to access the read-write lock for reading.  <a href="#ac46abb95ae4ab3f37da632ea31f01535">More...</a><br /></td></tr>
+<tr class="separator:ac46abb95ae4ab3f37da632ea31f01535"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1860d89c46fea6b62da4c7c39756fc4e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e">ReadUnlock</a> ()</td></tr>
 <tr class="memdesc:a1860d89c46fea6b62da4c7c39756fc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a read lock on the read-write lock.  <a href="#a1860d89c46fea6b62da4c7c39756fc4e">More...</a><br /></td></tr>
 <tr class="separator:a1860d89c46fea6b62da4c7c39756fc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a062052c7ab44662cc7d5a2bf81f4a87c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c">WriteLock</a> ()</td></tr>
+<tr class="memitem:a062052c7ab44662cc7d5a2bf81f4a87c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c">WriteLock</a> ()</td></tr>
 <tr class="memdesc:a062052c7ab44662cc7d5a2bf81f4a87c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the read-write lock for writing.  <a href="#a062052c7ab44662cc7d5a2bf81f4a87c">More...</a><br /></td></tr>
 <tr class="separator:a062052c7ab44662cc7d5a2bf81f4a87c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c1151df4aab7df16590bee65e504873"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873">TryWriteLock</a> ()</td></tr>
-<tr class="memdesc:a6c1151df4aab7df16590bee65e504873"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to access the read-write lock for writing.  <a href="#a6c1151df4aab7df16590bee65e504873">More...</a><br /></td></tr>
-<tr class="separator:a6c1151df4aab7df16590bee65e504873"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd977b8c35b753a7341a6e64864fa6f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f">TryWriteLock</a> (int timeout_ms=0)</td></tr>
+<tr class="memdesc:adfd977b8c35b753a7341a6e64864fa6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Try to access the read-write lock for writing.  <a href="#adfd977b8c35b753a7341a6e64864fa6f">More...</a><br /></td></tr>
+<tr class="separator:adfd977b8c35b753a7341a6e64864fa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abfc3bd44b6252464c577c5ed8389dbd4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4">WriteUnlock</a> ()</td></tr>
 <tr class="memdesc:abfc3bd44b6252464c577c5ed8389dbd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release a write lock on the read-write lock.  <a href="#abfc3bd44b6252464c577c5ed8389dbd4">More...</a><br /></td></tr>
 <tr class="separator:abfc3bd44b6252464c577c5ed8389dbd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,11 +181,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a16634332a0b44a7bedfcc491383c4fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the underlying etcpal_rwlock_t type. <br /></td></tr>
 <tr class="separator:a16634332a0b44a7bedfcc491383c4fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for the EtcPal read-write lock type. </p>
-<p>Note: The <a class="el" href="classetcpal_1_1_rw_lock.html" title="A wrapper class for the EtcPal read-write lock type. ">etcpal::RwLock</a> functions are not normally used directly - prefer usage of the RAII types <a class="el" href="classetcpal_1_1_read_guard.html" title="Read lock guard around a read-write lock. ">etcpal::ReadGuard</a> and <a class="el" href="classetcpal_1_1_write_guard.html" title="Write lock guard around a read-write lock. ">etcpal::WriteGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_rw_lock.html" title="A wrapper class for the EtcPal read-write lock type. ">etcpal::RwLock</a>.</p>
-<p>See <a class="el" href="group__etcpal__rwlock.html">Read-Write Locks</a> for more information. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="af760aebc292f4430c5d554b1fb239284"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af760aebc292f4430c5d554b1fb239284">&#9670;&nbsp;</a></span>ReadLock()</h2>
 
@@ -194,7 +192,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> ReadLock </td>
+          <td class="memname">bool ReadLock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -240,8 +238,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a409d488d3b55cffa68f081ee05611764"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a409d488d3b55cffa68f081ee05611764">&#9670;&nbsp;</a></span>TryReadLock()</h2>
+<a id="ac46abb95ae4ab3f37da632ea31f01535"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac46abb95ae4ab3f37da632ea31f01535">&#9670;&nbsp;</a></span>TryReadLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -250,9 +248,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> TryReadLock </td>
+          <td class="memname">bool TryReadLock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -264,12 +263,19 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Try to access the read-write lock for reading. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__rwlock.html#ga473b7cb0a2bae2deb5477bb699e6cf9b" title="Try to access a read-write lock for reading. ">etcpal_rwlock_try_readlock()</a> on the underlying read-write lock. </dd></dl>
+<p>Returns when either the read lock is acquired or the timeout expires. <b>NOTE</b>: Timeout values other than 0 or ETCPAL_WAIT_FOREVER are typically only honored on real-time platforms. See the table in <a class="el" href="group__etcpal__rwlock.html">Read-Write Locks</a> for more information. On platforms where timeouts are not honored, passing 0 for timeout_ms executes a poll for the lock returning immediately, while any other value executes the equivalent of <a class="el" href="classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284" title="Access the read-write lock for reading. ">ReadLock()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>How long to wait to acquire the read lock, in milliseconds. Default is to poll and return immediately. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__rwlock.html#gafa8f15715dac3b6f54bd7dcafe62da10" title="Try to access a read-write lock for reading, giving up after a timeout. ">etcpal_rwlock_timed_readlock()</a> on the underlying read-write lock. </dd></dl>
 
 </div>
 </div>
-<a id="a6c1151df4aab7df16590bee65e504873"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c1151df4aab7df16590bee65e504873">&#9670;&nbsp;</a></span>TryWriteLock()</h2>
+<a id="adfd977b8c35b753a7341a6e64864fa6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd977b8c35b753a7341a6e64864fa6f">&#9670;&nbsp;</a></span>TryWriteLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,9 +284,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> TryWriteLock </td>
+          <td class="memname">bool TryWriteLock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -292,7 +299,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Try to access the read-write lock for writing. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__rwlock.html#ga05a985e996a37e5a4c8aa7f9c3b1d654" title="Try to access a read-write lock for writing. ">etcpal_rwlock_try_writelock()</a> on the underlying read-write lock. </dd></dl>
+<p>Returns when either the read lock is acquired or the timeout expires. <b>NOTE</b>: Timeout values other than 0 or ETCPAL_WAIT_FOREVER are typically only honored on real-time platforms. See the table in <a class="el" href="group__etcpal__rwlock.html">Read-Write Locks</a> for more information. On platforms where timeouts are not honored, passing 0 for timeout_ms executes a poll for the lock returning immediately, while any other value executes the equivalent of <a class="el" href="classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c" title="Access the read-write lock for writing. ">WriteLock()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>How long to wait to acquire the write lock, in milliseconds. Default is to poll and return immediately. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__rwlock.html#ga0f848288a067dbfd5348c089c1dbb76b" title="Try to access a read-write lock for writing, giving up after a timeout. ">etcpal_rwlock_timed_writelock()</a> on the underlying read-write lock. </dd></dl>
 
 </div>
 </div>
@@ -306,7 +320,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> WriteLock </td>
+          <td class="memname">bool WriteLock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>

@@ -1,13 +1,14 @@
 var searchData=
 [
-  ['network_20interfaces_20_28netint_29',['Network Interfaces (netint)',['../group__etcpal__netint.html',1,'']]],
-  ['network_20socket_20interface_20_28socket_29',['Network Socket Interface (socket)',['../group__etcpal__socket.html',1,'']]],
-  ['network_20interface_20indexes',['Network Interface Indexes',['../interface_indexes.html',1,'additional_docs']]],
-  ['name',['name',['../struct_etc_pal_netint_info.html#a6eaa1f18016764aa8812196745e36463',1,'EtcPalNetintInfo']]],
-  ['netint',['netint',['../struct_etc_pal_mreq.html#af4d9906a2a7fca6dfe6daf61b1ac55d2',1,'EtcPalMreq']]],
-  ['netmask',['Netmask',['../classetcpal_1_1_ip_addr.html#a517378a65c041aa6ee09fc02765a5a97',1,'etcpal::IpAddr']]],
-  ['netmaskv4',['NetmaskV4',['../classetcpal_1_1_ip_addr.html#a0dc66641cafbf7a9f76d26c494bfe189',1,'etcpal::IpAddr']]],
-  ['netmaskv6',['NetmaskV6',['../classetcpal_1_1_ip_addr.html#a69e83da0c99b42fe1be96dede839304d',1,'etcpal::IpAddr']]],
-  ['node',['node',['../struct_etc_pal_rb_iter.html#a46745baa1082347489f1dd6dd68c7afa',1,'EtcPalRbIter']]],
-  ['notify',['Notify',['../classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b',1,'etcpal::Signal']]]
+  ['mempool_20_28memory_20pools_29',['mempool (Memory Pools)',['../group__etcpal__mempool.html',1,'']]],
+  ['mutexes',['Mutexes',['../group__etcpal__mutex.html',1,'']]],
+  ['mac',['mac',['../struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef',1,'EtcPalNetintInfo']]],
+  ['macaddr',['MacAddr',['../classetcpal_1_1_mac_addr.html',1,'MacAddr'],['../classetcpal_1_1_mac_addr.html#ae745add18e97ed3960a513f993c4fd39',1,'etcpal::MacAddr::MacAddr()=default'],['../classetcpal_1_1_mac_addr.html#a786b90567f5a0f50072a11180bed1e63',1,'etcpal::MacAddr::MacAddr(const EtcPalMacAddr &amp;c_mac) noexcept'],['../classetcpal_1_1_mac_addr.html#aff3e9838bb257f6f5c09396be07fa4f3',1,'etcpal::MacAddr::MacAddr(const uint8_t *mac_data) noexcept']]],
+  ['mask',['mask',['../struct_etc_pal_netint_info.html#a155577b467420f0877aa19b7265565f3',1,'EtcPalNetintInfo']]],
+  ['masklength',['MaskLength',['../classetcpal_1_1_ip_addr.html#a0613200b3e9958598089ca48824732be',1,'etcpal::IpAddr']]],
+  ['minute',['minute',['../struct_etc_pal_log_timestamp.html#a5edffad982a0566ad01d95005474eae3',1,'EtcPalLogTimestamp']]],
+  ['month',['month',['../struct_etc_pal_log_timestamp.html#aedb06abe5aff12fa3e7e0e71a374edfb',1,'EtcPalLogTimestamp']]],
+  ['msec',['msec',['../struct_etc_pal_log_timestamp.html#ad957f34cd6e8272740bc231865080b22',1,'EtcPalLogTimestamp']]],
+  ['mutex',['Mutex',['../classetcpal_1_1_mutex.html',1,'Mutex'],['../classetcpal_1_1_mutex.html#a4b5dfbd24f5bc4c03b24b2da362f66d5',1,'etcpal::Mutex::Mutex()']]],
+  ['mutexguard',['MutexGuard',['../classetcpal_1_1_mutex_guard.html',1,'MutexGuard'],['../classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06',1,'etcpal::MutexGuard::MutexGuard(Mutex &amp;mutex)'],['../classetcpal_1_1_mutex_guard.html#a057d36a0206d67c6b8b9c5d8186c2e9e',1,'etcpal::MutexGuard::MutexGuard(etcpal_mutex_t &amp;mutex)']]]
 ];

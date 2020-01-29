@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: UUIDs (uuid)</title>
+  <title>EtcPal: uuid (UUIDs)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,13 +128,14 @@ $(document).ready(function(){initNavTree('group__etcpal__cpp__uuid.html','');});
   <div class="summary">
 <a href="#nested-classes">Data Structures</a>  </div>
   <div class="headertitle">
-<div class="title">UUIDs (uuid)<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a></div></div>  </div>
+<div class="title">uuid (UUIDs)<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>C++ utilities for the <a class="el" href="group__etcpal__uuid.html">UUIDs (uuid)</a> module.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>C++ utilities for the <a class="el" href="group__etcpal__uuid.html">uuid (UUIDs)</a> module. </p>
+<p>Provides a class <a class="el" href="classetcpal_1_1_uuid.html" title="A wrapper class for the EtcPal UUID type. ">Uuid</a> for generating and inspecting Universal Unique Identifiers (UUIDs).</p>
+<p>Default-constructed <a class="el" href="classetcpal_1_1_uuid.html" title="A wrapper class for the EtcPal UUID type. ">Uuid</a> instances will be all-zeros ("null"): </p><div class="fragment"><div class="line"><a class="code" href="classetcpal_1_1_uuid.html">etcpal::Uuid</a> uuid;</div><div class="line">EXPECT_TRUE(uuid.<a class="code" href="classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd">IsNull</a>());</div></div><!-- fragment --><p>To generate a specific type of UUID, use the static generator functions: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> uuid1 = <a class="code" href="classetcpal_1_1_uuid.html#a05ce6a071ffc17d19fbc7818614af8d0">etcpal::Uuid::V1</a>(); <span class="comment">// Generate a V1 (MAC + time based) UUID.</span></div><div class="line"><span class="keyword">auto</span> uuid3 = <a class="code" href="classetcpal_1_1_uuid.html#acf48b871ad6aa14afc1a80cf688ae6f8">etcpal::Uuid::V3</a>(namespace_uuid, name_data, name_size); <span class="comment">// Generate a V3 (name-based, MD5) UUID.</span></div><div class="line"><span class="keyword">auto</span> uuid4 = <a class="code" href="classetcpal_1_1_uuid.html#a3bcee74617519b972666b57ff986bf43">etcpal::Uuid::V4</a>(); <span class="comment">// Generate a V4 (random) UUID.k</span></div><div class="line"><span class="keyword">auto</span> uuid5 = <a class="code" href="classetcpal_1_1_uuid.html#ae4e59b0f73518f92ed7c3c6d1b65bd3c">etcpal::Uuid::V5</a>(namespace_uuid, name_data, name_size); <span class="comment">// Generate a V5 (name-based, SHA-1)</span></div><div class="line"><span class="keyword">auto</span> uuid_os = <a class="code" href="classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">etcpal::Uuid::OsPreferred</a>(); <span class="comment">// Generate the UUID type preferred by the underlying OS</span></div><div class="line"><span class="keyword">auto</span> uuid_dev = <a class="code" href="classetcpal_1_1_uuid.html#a1044c778e7f7ece83888dcf35c7613c3">etcpal::Uuid::Device</a>(<span class="stringliteral">&quot;My Device Type&quot;</span>, dev_mac_address, 0); <span class="comment">// Generate a UUID representing an embedded device</span></div></div><!-- fragment --><p><b>Note:</b> <a class="el" href="classetcpal_1_1_uuid.html#acf48b871ad6aa14afc1a80cf688ae6f8" title="Generate and return a Version 3 UUID. ">Uuid::V3()</a>, <a class="el" href="classetcpal_1_1_uuid.html#ae4e59b0f73518f92ed7c3c6d1b65bd3c" title="Generate and return a Version 5 UUID. ">Uuid::V5()</a> and <a class="el" href="classetcpal_1_1_uuid.html#a1044c778e7f7ece83888dcf35c7613c3" title="Generate and return a Device UUID. ">Uuid::Device()</a> are guaranteed to be implemented on all systems. <a class="el" href="classetcpal_1_1_uuid.html#a05ce6a071ffc17d19fbc7818614af8d0" title="Generate and return a Version 1 UUID. ">Uuid::V1()</a>, <a class="el" href="classetcpal_1_1_uuid.html#a3bcee74617519b972666b57ff986bf43" title="Generate and return a Version 4 UUID. ">Uuid::V4()</a> and <a class="el" href="classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a" title="Generate and return a UUID of the version preferred by the underlying OS. ">Uuid::OsPreferred()</a> may not be available on embedded devices. If not implemented, these functions will return a null <a class="el" href="classetcpal_1_1_uuid.html" title="A wrapper class for the EtcPal UUID type. ">Uuid</a>. For more information, see the <a class="el" href="group__etcpal__uuid.html">uuid (UUIDs)</a> module.</p>
+<p>You can also convert UUIDs to and from strings: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> uuid = <a class="code" href="classetcpal_1_1_uuid.html#ab017791f5f66829527591d8bd6bd840f">etcpal::Uuid::FromString</a>(<span class="stringliteral">&quot;1b0c096d-9baa-476d-866d-4e0cad18f5a4&quot;</span>);</div><div class="line">std::string uuid_str = uuid.<a class="code" href="classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">ToString</a>();</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a></td></tr>
@@ -143,38 +145,36 @@ Data Structures</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="member-group"></a>
 UUID Relational Operators</h2></td></tr>
 <tr class="memitem:ga3341f07d3b0b2b7192351ed66d15f6e5"><td class="memItemLeft" align="right" valign="top"><a id="ga3341f07d3b0b2b7192351ed66d15f6e5"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid) noexcept</td></tr>
 <tr class="separator:ga3341f07d3b0b2b7192351ed66d15f6e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4d4fba09a04cb2c313d44e12d7be13f2"><td class="memItemLeft" align="right" valign="top"><a id="ga4d4fba09a04cb2c313d44e12d7be13f2"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid) noexcept</td></tr>
 <tr class="separator:ga4d4fba09a04cb2c313d44e12d7be13f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6147e7a048b632e6550697b5e429f985"><td class="memItemLeft" align="right" valign="top"><a id="ga6147e7a048b632e6550697b5e429f985"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
 <tr class="separator:ga6147e7a048b632e6550697b5e429f985"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab10b79553c913d2f360e1908c6937ba2"><td class="memItemLeft" align="right" valign="top"><a id="gab10b79553c913d2f360e1908c6937ba2"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;uuid, const <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> &amp;c_uuid) noexcept</td></tr>
 <tr class="separator:gab10b79553c913d2f360e1908c6937ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0d3840385aaf17b085d556915e1ccb1f"><td class="memItemLeft" align="right" valign="top"><a id="ga0d3840385aaf17b085d556915e1ccb1f"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator==</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:ga0d3840385aaf17b085d556915e1ccb1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gada353910f7488990257b651043133a03"><td class="memItemLeft" align="right" valign="top"><a id="gada353910f7488990257b651043133a03"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator!=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:gada353910f7488990257b651043133a03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gafc4229bc6212b6a7ac8fb93be3654b29"><td class="memItemLeft" align="right" valign="top"><a id="gafc4229bc6212b6a7ac8fb93be3654b29"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:gafc4229bc6212b6a7ac8fb93be3654b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga76afde3920ede58773bb71740a0c819f"><td class="memItemLeft" align="right" valign="top"><a id="ga76afde3920ede58773bb71740a0c819f"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:ga76afde3920ede58773bb71740a0c819f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab16e7bcb1db9fc3e6abac154832ff0f2"><td class="memItemLeft" align="right" valign="top"><a id="gab16e7bcb1db9fc3e6abac154832ff0f2"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&lt;=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:gab16e7bcb1db9fc3e6abac154832ff0f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae21fa3c075265cfe3476812ed15d4d17"><td class="memItemLeft" align="right" valign="top"><a id="gae21fa3c075265cfe3476812ed15d4d17"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>operator&gt;=</b> (const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;a, const <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> &amp;b) noexcept</td></tr>
 <tr class="separator:gae21fa3c075265cfe3476812ed15d4d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>C++ utilities for the <a class="el" href="group__etcpal__uuid.html">UUIDs (uuid)</a> module. </p>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

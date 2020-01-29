@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,13 +128,12 @@ $(document).ready(function(){initNavTree('struct_etc_pal_netint_info.html','');}
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPalNetintInfo Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__inet.html">Internet Addressing (inet)</a></div></div>  </div>
+<div class="title">EtcPalNetintInfo Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__inet.html">inet (Internet Addressing)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A description of a single address assigned to a network interface.  
- <a href="struct_etc_pal_netint_info.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A description of a single address assigned to a network interface. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a589d64202487f78e3cc30dd2e04c5201"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a589d64202487f78e3cc30dd2e04c5201">index</a></td></tr>
@@ -148,19 +148,17 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a166afed9bf79aa905a870e4a130923ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a166afed9bf79aa905a870e4a130923ef">mac</a></td></tr>
 <tr class="memdesc:a166afed9bf79aa905a870e4a130923ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">The adapter MAC address.  <a href="#a166afed9bf79aa905a870e4a130923ef">More...</a><br /></td></tr>
 <tr class="separator:a166afed9bf79aa905a870e4a130923ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eaa1f18016764aa8812196745e36463"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a6eaa1f18016764aa8812196745e36463">name</a> [<a class="el" href="group__etcpal__inet.html#ga492fc3dd7fabb325e80e375d6be69d89">ETCPAL_NETINTINFO_NAME_LEN</a>]</td></tr>
-<tr class="memdesc:a6eaa1f18016764aa8812196745e36463"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system name for the interface.  <a href="#a6eaa1f18016764aa8812196745e36463">More...</a><br /></td></tr>
-<tr class="separator:a6eaa1f18016764aa8812196745e36463"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3548252138686cd633b4730070e2311f"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a3548252138686cd633b4730070e2311f">id</a> [<a class="el" href="group__etcpal__inet.html#ga7d30e1fd482aa981c7ee4a5082d6bc2d">ETCPAL_NETINTINFO_ID_LEN</a>]</td></tr>
+<tr class="memdesc:a3548252138686cd633b4730070e2311f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The system name for the interface.  <a href="#a3548252138686cd633b4730070e2311f">More...</a><br /></td></tr>
+<tr class="separator:a3548252138686cd633b4730070e2311f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fa69022d71df27910811117d3e232fd"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a3fa69022d71df27910811117d3e232fd">friendly_name</a> [<a class="el" href="group__etcpal__inet.html#ga7f8d8782f4dea64648bb74e20db6d3c3">ETCPAL_NETINTINFO_FRIENDLY_NAME_LEN</a>]</td></tr>
 <tr class="memdesc:a3fa69022d71df27910811117d3e232fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A user-friendly name for the interface.  <a href="#a3fa69022d71df27910811117d3e232fd">More...</a><br /></td></tr>
 <tr class="separator:a3fa69022d71df27910811117d3e232fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a">is_default</a></td></tr>
+<tr class="memitem:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a">is_default</a></td></tr>
 <tr class="memdesc:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether this is the default network interface.  <a href="#a0c9f19a7b68ad0dad836ee153d3a230a">More...</a><br /></td></tr>
 <tr class="separator:a0c9f19a7b68ad0dad836ee153d3a230a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A description of a single address assigned to a network interface. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="ac10a4235b585003054f76871bad3fd85"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac10a4235b585003054f76871bad3fd85">&#9670;&nbsp;</a></span>addr</h2>
 
@@ -190,7 +188,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A user-friendly name for the interface. </p>
-<p>On some systems, this is the same as the name field. Others allow users to create and change a friendly name for network interfaces that's different than the system name. This field should be used when printing the adapter list in a UI. </p>
+<p>On some systems, this is the same as the id field. Others allow users to create and change a friendly name for network interfaces that's different than the system name. This field should be used when printing the adapter list in a UI. </p>
+
+</div>
+</div>
+<a id="a3548252138686cd633b4730070e2311f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3548252138686cd633b4730070e2311f">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char id[<a class="el" href="group__etcpal__inet.html#ga7d30e1fd482aa981c7ee4a5082d6bc2d">ETCPAL_NETINTINFO_ID_LEN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The system name for the interface. </p>
+<p>This name can be used as a primary key to identify a single network adapter. It will not change unless the adapter is removed or reconfigured. Since interfaces can have multiple IPv4 and IPv6 addresses assigned simultaneously, there can be a one-to-many relationship between physical network interfaces and <a class="el" href="struct_etc_pal_netint_info.html" title="A description of a single address assigned to a network interface. ">EtcPalNetintInfo</a> structures on the same system, all of which have the same value for this field. </p>
 
 </div>
 </div>
@@ -218,7 +233,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> is_default</td>
+          <td class="memname">bool is_default</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -257,23 +272,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The subnet mask for this interface. </p>
-
-</div>
-</div>
-<a id="a6eaa1f18016764aa8812196745e36463"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6eaa1f18016764aa8812196745e36463">&#9670;&nbsp;</a></span>name</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">char name[<a class="el" href="group__etcpal__inet.html#ga492fc3dd7fabb325e80e375d6be69d89">ETCPAL_NETINTINFO_NAME_LEN</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The system name for the interface. </p>
-<p>This name will not change unless the adapter is removed or reconfigured. </p>
 
 </div>
 </div>

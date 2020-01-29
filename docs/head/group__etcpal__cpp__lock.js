@@ -9,7 +9,7 @@ var group__etcpal__cpp__lock =
       [ "Lock", "classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69", null ],
       [ "operator=", "classetcpal_1_1_mutex.html#ae7a118dbd18f988b830f2ffe18ff229c", null ],
       [ "operator=", "classetcpal_1_1_mutex.html#a8cd26ea836a03dbd39db75a2a4e9f1be", null ],
-      [ "TryLock", "classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6", null ],
+      [ "TryLock", "classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef", null ],
       [ "Unlock", "classetcpal_1_1_mutex.html#a91b88a5d5517cb042431c4ea24d8ecb7", null ]
     ] ],
     [ "Signal", "classetcpal_1_1_signal.html", [
@@ -19,9 +19,10 @@ var group__etcpal__cpp__lock =
       [ "Signal", "classetcpal_1_1_signal.html#ace004769946562747ebbdffabf4658a5", null ],
       [ "get", "classetcpal_1_1_signal.html#a57e433d2fa16d80ff2f02992c74d480c", null ],
       [ "Notify", "classetcpal_1_1_signal.html#a6b945888ffd146338605d77f0366141b", null ],
+      [ "NotifyFromIsr", "classetcpal_1_1_signal.html#ad8b69b07e8a31350db1cd221db678cb3", null ],
       [ "operator=", "classetcpal_1_1_signal.html#af7c411b2d23f2d74cd1d2ad4b4065dba", null ],
       [ "operator=", "classetcpal_1_1_signal.html#adbe979b3eaf9f10723b0a702c5d4fea0", null ],
-      [ "Poll", "classetcpal_1_1_signal.html#a86acd23bf483d12b47cedfe52333e643", null ],
+      [ "TryWait", "classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7", null ],
       [ "Wait", "classetcpal_1_1_signal.html#ae5ccc0d2886026ce37e12604173a131d", null ]
     ] ],
     [ "RwLock", "classetcpal_1_1_rw_lock.html", [
@@ -34,10 +35,23 @@ var group__etcpal__cpp__lock =
       [ "operator=", "classetcpal_1_1_rw_lock.html#a4faecf150601dc5e57a3ddac2d83cb67", null ],
       [ "ReadLock", "classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284", null ],
       [ "ReadUnlock", "classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e", null ],
-      [ "TryReadLock", "classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764", null ],
-      [ "TryWriteLock", "classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873", null ],
+      [ "TryReadLock", "classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535", null ],
+      [ "TryWriteLock", "classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f", null ],
       [ "WriteLock", "classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c", null ],
       [ "WriteUnlock", "classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4", null ]
+    ] ],
+    [ "Semaphore", "classetcpal_1_1_semaphore.html", [
+      [ "Semaphore", "classetcpal_1_1_semaphore.html#a7afb6e444c74ed583a47dc7bc8bd45e3", null ],
+      [ "~Semaphore", "classetcpal_1_1_semaphore.html#a5e0394d4ca6109ccb52b3c1e5cf6c9b5", null ],
+      [ "Semaphore", "classetcpal_1_1_semaphore.html#a9f3f0eb9d0d883569ed92b4c6c741fe2", null ],
+      [ "Semaphore", "classetcpal_1_1_semaphore.html#a499b7f9f188973e6f4512a957b7f7092", null ],
+      [ "get", "classetcpal_1_1_semaphore.html#a35238d018ce1903b9713675b075f2e38", null ],
+      [ "operator=", "classetcpal_1_1_semaphore.html#ae8eb9255ebee517187eaa5d88b3edf45", null ],
+      [ "operator=", "classetcpal_1_1_semaphore.html#ac165be29346806be394fbd94067f7ade", null ],
+      [ "Post", "classetcpal_1_1_semaphore.html#a75b89ae344bccade98754cd1fedb13ac", null ],
+      [ "PostFromIsr", "classetcpal_1_1_semaphore.html#a4e8596ce5216d9d86625212982825670", null ],
+      [ "TryWait", "classetcpal_1_1_semaphore.html#aa5139da6cf3fc487370524d466cdadd7", null ],
+      [ "Wait", "classetcpal_1_1_semaphore.html#ae5ccc0d2886026ce37e12604173a131d", null ]
     ] ],
     [ "MutexGuard", "classetcpal_1_1_mutex_guard.html", [
       [ "MutexGuard", "classetcpal_1_1_mutex_guard.html#a72577d0ea01f7607a671de23cc54eb06", null ],

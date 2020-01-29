@@ -9,8 +9,8 @@ var classetcpal_1_1_rw_lock =
     [ "operator=", "classetcpal_1_1_rw_lock.html#a4faecf150601dc5e57a3ddac2d83cb67", null ],
     [ "ReadLock", "classetcpal_1_1_rw_lock.html#af760aebc292f4430c5d554b1fb239284", null ],
     [ "ReadUnlock", "classetcpal_1_1_rw_lock.html#a1860d89c46fea6b62da4c7c39756fc4e", null ],
-    [ "TryReadLock", "classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764", null ],
-    [ "TryWriteLock", "classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873", null ],
+    [ "TryReadLock", "classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535", null ],
+    [ "TryWriteLock", "classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f", null ],
     [ "WriteLock", "classetcpal_1_1_rw_lock.html#a062052c7ab44662cc7d5a2bf81f4a87c", null ],
     [ "WriteUnlock", "classetcpal_1_1_rw_lock.html#abfc3bd44b6252464c577c5ed8389dbd4", null ]
 ];

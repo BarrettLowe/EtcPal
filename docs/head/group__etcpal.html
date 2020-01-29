@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: EtcPal</title>
+  <title>EtcPal: etcpal (Core Modules)</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -130,58 +131,57 @@ $(document).ready(function(){initNavTree('group__etcpal.html','');});
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPal</div>  </div>
+<div class="title">etcpal (Core Modules)</div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>ETC Platform Abstraction Layer (EtcPal): A set of platform abstraction and utility modules used by ETC software libraries.  
-<a href="#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<p>ETC Platform Abstraction Layer (EtcPal): A set of platform abstraction and utility modules used by ETC software libraries. </p>
+<p>EtcPal supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (e.g. data structures, logging) thrown in here and there for convenience. EtcPal headers can be either platform-neutral (contained in include/) or platform-specific (contained in include/os/[platform]). All platform-specific headers of the same EtcPal module will conform to an identical interface.</p>
+<p>Some EtcPal modules must be initialized before use. These modules have a prominent notice in the "detailed description" portion of their documentation. To initialize the EtcPal library, call <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> with a mask of your desired features. The feature masks can be combined with a bitwise OR.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/common.h&quot;</span></div><div class="line"></div><div class="line"><a class="code" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> result = <a class="code" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843">etcpal_init</a>(<a class="code" href="group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6">ETCPAL_FEATURE_SOCKETS</a> | <a class="code" href="group__etcpal.html#ga8c7c1f9430362540e56af3a2742a25d4">ETCPAL_FEATURE_LOGGING</a>);</div></div><!-- fragment --><p><a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> can be called multiple times for the same or different sets of features, with no adverse effects. At deinitialization time, there should be a paired call to <a class="el" href="group__etcpal.html#ga0792bdcd2f824009584744db01d7a352" title="Deinitialize the EtcPal library. ">etcpal_deinit()</a> with the same mask that was passed to the corresponding call to <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a>.</p>
+<div class="fragment"><div class="line"><a class="code" href="group__etcpal.html#ga0792bdcd2f824009584744db01d7a352">etcpal_deinit</a>(<a class="code" href="group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6">ETCPAL_FEATURE_SOCKETS</a> | <a class="code" href="group__etcpal.html#ga8c7c1f9430362540e56af3a2742a25d4">ETCPAL_FEATURE_LOGGING</a>);</div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
 Modules</h2></td></tr>
-<tr class="memitem:group__etcpal__bool"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__bool.html">C Boolean Type (bool)</a></td></tr>
-<tr class="memdesc:group__etcpal__bool"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for the C boolean type. <br /></td></tr>
+<tr class="memitem:group__etcpal__acn__pdu"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__pdu.html">acn_pdu (ACN Protocol Family PDUs)</a></td></tr>
+<tr class="memdesc:group__etcpal__acn__pdu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__error"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__error.html">Error Handling (error)</a></td></tr>
+<tr class="memitem:group__etcpal__acn__rlp"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__rlp.html">acn_rlp (ACN Root Layer Protocol)</a></td></tr>
+<tr class="memdesc:group__etcpal__acn__rlp"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse or pack an ACN Root Layer PDU block. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:group__etcpal__error"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__error.html">error (Error Handling)</a></td></tr>
 <tr class="memdesc:group__etcpal__error"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-neutral error codes. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__inet"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html">Internet Addressing (inet)</a></td></tr>
+<tr class="memitem:group__etcpal__inet"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html">inet (Internet Addressing)</a></td></tr>
 <tr class="memdesc:group__etcpal__inet"><td class="mdescLeft">&#160;</td><td class="mdescRight">Identifiers for IP addresses and network interfaces. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__int"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__int.html">Fixed-Width Integer Types (int)</a></td></tr>
-<tr class="memdesc:group__etcpal__int"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compatibility layer for fixed-width integer types. <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__log"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html">Logging (log)</a></td></tr>
+<tr class="memitem:group__etcpal__log"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html">log (Logging)</a></td></tr>
 <tr class="memdesc:group__etcpal__log"><td class="mdescLeft">&#160;</td><td class="mdescRight">A platform-neutral module enabling applications and libraries to log messages in either or both of syslog-compliant and human-readable format. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__mempool"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mempool.html">Memory Pools (mempool)</a></td></tr>
+<tr class="memitem:group__etcpal__mempool"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__mempool.html">mempool (Memory Pools)</a></td></tr>
 <tr class="memdesc:group__etcpal__mempool"><td class="mdescLeft">&#160;</td><td class="mdescRight">Memory pools with fixed-size elements. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__netint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__netint.html">Network Interfaces (netint)</a></td></tr>
+<tr class="memitem:group__etcpal__netint"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__netint.html">netint (Network Interfaces)</a></td></tr>
 <tr class="memdesc:group__etcpal__netint"><td class="mdescLeft">&#160;</td><td class="mdescRight">A platform-neutral method for enumerating network interfaces. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__pack"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pack.html">Buffer Packing and Unpacking (pack)</a></td></tr>
+<tr class="memitem:group__etcpal__pack"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pack.html">pack (Buffer Packing and Unpacking)</a></td></tr>
 <tr class="memdesc:group__etcpal__pack"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform- and endianness-independent buffer packing and unpacking. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__pdu"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__pdu.html">ACN Protocol Family PDUs (pdu)</a></td></tr>
-<tr class="memdesc:group__etcpal__pdu"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse or pack a PDU or PDU block as defined in ANSI E1.17 (ACN). <br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__rbtree"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__rbtree.html">Red-Black Trees (rbtree)</a></td></tr>
+<tr class="memitem:group__etcpal__rbtree"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__rbtree.html">rbtree (Red-Black Trees)</a></td></tr>
 <tr class="memdesc:group__etcpal__rbtree"><td class="mdescLeft">&#160;</td><td class="mdescRight">A red-black tree implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html">Network Socket Interface (socket)</a></td></tr>
+<tr class="memitem:group__etcpal__socket"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__socket.html">socket (Network Socket Interface)</a></td></tr>
 <tr class="memdesc:group__etcpal__socket"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-neutral BSD-modeled network socket implementation. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__thread"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html">Threading (thread)</a></td></tr>
+<tr class="memitem:group__etcpal__thread"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__thread.html">thread (Threading)</a></td></tr>
 <tr class="memdesc:group__etcpal__thread"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-neutral threads. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__timer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__timer.html">Timers (timer)</a></td></tr>
+<tr class="memitem:group__etcpal__timer"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__timer.html">timer (Timers)</a></td></tr>
 <tr class="memdesc:group__etcpal__timer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-neutral system timers. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__uuid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html">UUIDs (uuid)</a></td></tr>
+<tr class="memitem:group__etcpal__uuid"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html">uuid (UUIDs)</a></td></tr>
 <tr class="memdesc:group__etcpal__uuid"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type and helper functions for a Universally Unique Identifier (UUID). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__etcpal__lock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__lock.html">Locks and Synchronization (lock)</a></td></tr>
+<tr class="memitem:group__etcpal__lock"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__lock.html">lock (Locks and Synchronization)</a></td></tr>
 <tr class="memdesc:group__etcpal__lock"><td class="mdescLeft">&#160;</td><td class="mdescRight">Platform-neutral locks, mutexes and signals. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__etcpal__opts"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__opts.html">EtcPal config options</a></td></tr>
@@ -216,16 +216,16 @@ EtcPal feature masks</h2></td></tr>
 <p>EtcPal modules not represented here require no initialization and are enabled by default. </p>
 </td></tr>
 <tr class="memitem:ga09f99422deaa7bb5d2625c317d1a66a6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6">ETCPAL_FEATURE_SOCKETS</a>&#160;&#160;&#160;((<a class="el" href="group__etcpal.html#gae77772998c26f45618c26de1e1fc8305">etcpal_features_t</a>)(1u &lt;&lt; ETCPAL_FEATURE_SOCKETS_OFFSET))</td></tr>
-<tr class="memdesc:ga09f99422deaa7bb5d2625c317d1a66a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal_socket module.  <a href="#ga09f99422deaa7bb5d2625c317d1a66a6">More...</a><br /></td></tr>
+<tr class="memdesc:ga09f99422deaa7bb5d2625c317d1a66a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal/socket module.  <a href="#ga09f99422deaa7bb5d2625c317d1a66a6">More...</a><br /></td></tr>
 <tr class="separator:ga09f99422deaa7bb5d2625c317d1a66a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf5b3a81b975bbae1f6f54f43bfc0c6a7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal.html#gaf5b3a81b975bbae1f6f54f43bfc0c6a7">ETCPAL_FEATURE_NETINTS</a>&#160;&#160;&#160;((<a class="el" href="group__etcpal.html#gae77772998c26f45618c26de1e1fc8305">etcpal_features_t</a>)(1u &lt;&lt; ETCPAL_FEATURE_NETINTS_OFFSET))</td></tr>
-<tr class="memdesc:gaf5b3a81b975bbae1f6f54f43bfc0c6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal_netint module.  <a href="#gaf5b3a81b975bbae1f6f54f43bfc0c6a7">More...</a><br /></td></tr>
+<tr class="memdesc:gaf5b3a81b975bbae1f6f54f43bfc0c6a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal/netint module.  <a href="#gaf5b3a81b975bbae1f6f54f43bfc0c6a7">More...</a><br /></td></tr>
 <tr class="separator:gaf5b3a81b975bbae1f6f54f43bfc0c6a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaffb285a8108a672c01c33d921ee8be83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal.html#gaffb285a8108a672c01c33d921ee8be83">ETCPAL_FEATURE_TIMERS</a>&#160;&#160;&#160;((<a class="el" href="group__etcpal.html#gae77772998c26f45618c26de1e1fc8305">etcpal_features_t</a>)(1u &lt;&lt; ETCPAL_FEATURE_TIMERS_OFFSET))</td></tr>
-<tr class="memdesc:gaffb285a8108a672c01c33d921ee8be83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal_timer module.  <a href="#gaffb285a8108a672c01c33d921ee8be83">More...</a><br /></td></tr>
+<tr class="memdesc:gaffb285a8108a672c01c33d921ee8be83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal/timer module.  <a href="#gaffb285a8108a672c01c33d921ee8be83">More...</a><br /></td></tr>
 <tr class="separator:gaffb285a8108a672c01c33d921ee8be83"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c7c1f9430362540e56af3a2742a25d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal.html#ga8c7c1f9430362540e56af3a2742a25d4">ETCPAL_FEATURE_LOGGING</a>&#160;&#160;&#160;((<a class="el" href="group__etcpal.html#gae77772998c26f45618c26de1e1fc8305">etcpal_features_t</a>)(1u &lt;&lt; ETCPAL_FEATURE_LOGGING_OFFSET))</td></tr>
-<tr class="memdesc:ga8c7c1f9430362540e56af3a2742a25d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal_log module.  <a href="#ga8c7c1f9430362540e56af3a2742a25d4">More...</a><br /></td></tr>
+<tr class="memdesc:ga8c7c1f9430362540e56af3a2742a25d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use the etcpal/log module.  <a href="#ga8c7c1f9430362540e56af3a2742a25d4">More...</a><br /></td></tr>
 <tr class="separator:ga8c7c1f9430362540e56af3a2742a25d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga740dd7c89f16ff20992cf21970d1c521"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal.html#ga740dd7c89f16ff20992cf21970d1c521">ETCPAL_FEATURES_ALL</a>&#160;&#160;&#160;0xffffffffu</td></tr>
 <tr class="memdesc:ga740dd7c89f16ff20992cf21970d1c521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module.  <a href="#ga740dd7c89f16ff20992cf21970d1c521">More...</a><br /></td></tr>
@@ -234,9 +234,6 @@ EtcPal feature masks</h2></td></tr>
 <tr class="memdesc:ga15560671c4e732ed46dc03a0e522d160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use every available module except the ones passed in mask.  <a href="#ga15560671c4e732ed46dc03a0e522d160">More...</a><br /></td></tr>
 <tr class="separator:ga15560671c4e732ed46dc03a0e522d160"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>ETC Platform Abstraction Layer (EtcPal): A set of platform abstraction and utility modules used by ETC software libraries. </p>
-<p>EtcPal supports the writing of platform-neutral C and C++ libraries by providing a set of modules to abstract common system calls. There are also a few platform-neutral utilities (e.g. data structures, logging) thrown in here and there for convenience. EtcPal headers can be either platform-neutral (contained in include/) or platform-specific (contained in include/os/[platform]). All platform-specific headers of the same EtcPal module will conform to an identical interface. </p>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="ga8c7c1f9430362540e56af3a2742a25d4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga8c7c1f9430362540e56af3a2742a25d4">&#9670;&nbsp;</a></span>ETCPAL_FEATURE_LOGGING</h2>
@@ -250,7 +247,7 @@ EtcPal feature masks</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use the etcpal_log module. </p>
+<p>Use the etcpal/log module. </p>
 
 </div>
 </div>
@@ -266,7 +263,7 @@ EtcPal feature masks</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use the etcpal_netint module. </p>
+<p>Use the etcpal/netint module. </p>
 
 </div>
 </div>
@@ -282,7 +279,7 @@ EtcPal feature masks</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use the etcpal_socket module. </p>
+<p>Use the etcpal/socket module. </p>
 
 </div>
 </div>
@@ -298,7 +295,7 @@ EtcPal feature masks</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Use the etcpal_timer module. </p>
+<p>Use the etcpal/timer module. </p>
 
 </div>
 </div>
@@ -424,7 +421,8 @@ EtcPal feature masks</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the EtcPal library. </p>
-<p>This function can be called multiple times from the same application. Each call to <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> must be paired with a call to <a class="el" href="group__etcpal.html#ga0792bdcd2f824009584744db01d7a352" title="Deinitialize the EtcPal library. ">etcpal_deinit()</a> with the same argument for features.</p>
+<p>Use a bitwise OR to select from the set of modules which require initialization; for example:</p>
+<div class="fragment"><div class="line"><a class="code" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843">etcpal_init</a>(<a class="code" href="group__etcpal.html#ga09f99422deaa7bb5d2625c317d1a66a6">ETCPAL_FEATURE_SOCKETS</a> | <a class="code" href="group__etcpal.html#gaf5b3a81b975bbae1f6f54f43bfc0c6a7">ETCPAL_FEATURE_NETINTS</a>);</div></div><!-- fragment --><p>This function can be called multiple times from the same application. Each call to <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> must be paired with a call to <a class="el" href="group__etcpal.html#ga0792bdcd2f824009584744db01d7a352" title="Deinitialize the EtcPal library. ">etcpal_deinit()</a> with the same argument for features.</p>
 <p>If you are using a library that depends on EtcPal, and not using EtcPal directly, that library will call this function for you with the features it needs; you do not need to call it explicitly.</p>
 <p><a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> and <a class="el" href="group__etcpal.html#ga0792bdcd2f824009584744db01d7a352" title="Deinitialize the EtcPal library. ">etcpal_deinit()</a> are not thread-safe; you should make sure your init-time and deinit-time code is serialized.</p>
 <dl class="params"><dt>Parameters</dt><dd>

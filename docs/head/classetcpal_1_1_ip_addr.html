@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -128,13 +129,13 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_ip_addr.html','');});
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">IpAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">Internet Addressing (inet)</a></div></div>  </div>
+<div class="title">IpAddr Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__inet.html">inet (Internet Addressing)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A wrapper class for the EtcPal IP address type.  
- <a href="classetcpal_1_1_ip_addr.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A wrapper class for the EtcPal IP address type. </p>
+<p>Provides C++ syntactic sugar for working with IP addresses. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a523a252e7d40b2a5b8583f5f221adb1d"><td class="memItemLeft" align="right" valign="top"><a id="a523a252e7d40b2a5b8583f5f221adb1d"></a>
@@ -182,7 +183,7 @@ constexpr const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a
 <tr class="memdesc:a14185dd1b4566147495318504a551034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the scope ID of an IPv6 address.  <a href="#a14185dd1b4566147495318504a551034">More...</a><br /></td></tr>
 <tr class="separator:a14185dd1b4566147495318504a551034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d02bb05c3ab899ab6752bbab4e3dbcf"><td class="memItemLeft" align="right" valign="top"><a id="a6d02bb05c3ab899ab6752bbab4e3dbcf"></a>
-constexpr <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf">IsValid</a> () const noexcept</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf">IsValid</a> () const noexcept</td></tr>
 <tr class="memdesc:a6d02bb05c3ab899ab6752bbab4e3dbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a valid IPv4 or IPv6 address. <br /></td></tr>
 <tr class="separator:a6d02bb05c3ab899ab6752bbab4e3dbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6408a893e29a2fcb75d7c6c842db5902"><td class="memItemLeft" align="right" valign="top"><a id="a6408a893e29a2fcb75d7c6c842db5902"></a>
@@ -190,26 +191,26 @@ constexpr <a class="el" href="group__etcpal__cpp__inet.html#gaf149bcc08653396944
 <tr class="memdesc:a6408a893e29a2fcb75d7c6c842db5902"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the type of the IP address. <br /></td></tr>
 <tr class="separator:a6408a893e29a2fcb75d7c6c842db5902"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c808bdaebc8f534c871ac28bf379a7a"><td class="memItemLeft" align="right" valign="top"><a id="a3c808bdaebc8f534c871ac28bf379a7a"></a>
-constexpr <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a">IsV4</a> () const noexcept</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a">IsV4</a> () const noexcept</td></tr>
 <tr class="memdesc:a3c808bdaebc8f534c871ac28bf379a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a valid IPv4 address. <br /></td></tr>
 <tr class="separator:a3c808bdaebc8f534c871ac28bf379a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a35ea1e7f3f0a6047fbf28810d53e9"><td class="memItemLeft" align="right" valign="top"><a id="a08a35ea1e7f3f0a6047fbf28810d53e9"></a>
-constexpr <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9">IsV6</a> () const noexcept</td></tr>
+constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9">IsV6</a> () const noexcept</td></tr>
 <tr class="memdesc:a08a35ea1e7f3f0a6047fbf28810d53e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a valid IPv6 address. <br /></td></tr>
 <tr class="separator:a08a35ea1e7f3f0a6047fbf28810d53e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a211a72caa8aba79efd967fa3114e8c95"><td class="memItemLeft" align="right" valign="top"><a id="a211a72caa8aba79efd967fa3114e8c95"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a211a72caa8aba79efd967fa3114e8c95">IsLinkLocal</a> () const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a211a72caa8aba79efd967fa3114e8c95">IsLinkLocal</a> () const noexcept</td></tr>
 <tr class="memdesc:a211a72caa8aba79efd967fa3114e8c95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a link-local address. <br /></td></tr>
 <tr class="separator:a211a72caa8aba79efd967fa3114e8c95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4833f2d2e3f0434978f59f5020a7f84b"><td class="memItemLeft" align="right" valign="top"><a id="a4833f2d2e3f0434978f59f5020a7f84b"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b">IsLoopback</a> () const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b">IsLoopback</a> () const noexcept</td></tr>
 <tr class="memdesc:a4833f2d2e3f0434978f59f5020a7f84b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a loopback address. <br /></td></tr>
 <tr class="separator:a4833f2d2e3f0434978f59f5020a7f84b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f371a6bc900dd3ddcf0f7f16c5db00a"><td class="memItemLeft" align="right" valign="top"><a id="a2f371a6bc900dd3ddcf0f7f16c5db00a"></a>
-<a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a">IsMulticast</a> () const noexcept</td></tr>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a">IsMulticast</a> () const noexcept</td></tr>
 <tr class="memdesc:a2f371a6bc900dd3ddcf0f7f16c5db00a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a multicast address. <br /></td></tr>
 <tr class="separator:a2f371a6bc900dd3ddcf0f7f16c5db00a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac384adc1cbf470fe6672659bdef8358c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c">IsWildcard</a> () const noexcept</td></tr>
+<tr class="memitem:ac384adc1cbf470fe6672659bdef8358c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c">IsWildcard</a> () const noexcept</td></tr>
 <tr class="memdesc:ac384adc1cbf470fe6672659bdef8358c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Whether an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> contains a multicast address.  <a href="#ac384adc1cbf470fe6672659bdef8358c">More...</a><br /></td></tr>
 <tr class="separator:ac384adc1cbf470fe6672659bdef8358c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0613200b3e9958598089ca48824732be"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a0613200b3e9958598089ca48824732be">MaskLength</a> () const noexcept</td></tr>
@@ -227,6 +228,9 @@ constexpr <a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a431892e2354d1b617e2dd0278b8a9f30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_ip_addr.html">IpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a431892e2354d1b617e2dd0278b8a9f30">FromString</a> (const char *ip_str) noexcept</td></tr>
+<tr class="memdesc:a431892e2354d1b617e2dd0278b8a9f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> from a string representation.  <a href="#a431892e2354d1b617e2dd0278b8a9f30">More...</a><br /></td></tr>
+<tr class="separator:a431892e2354d1b617e2dd0278b8a9f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c2b23004b9bdca3df3142b5f4fbd8ac"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_ip_addr.html">IpAddr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_ip_addr.html#a5c2b23004b9bdca3df3142b5f4fbd8ac">FromString</a> (const std::string &amp;ip_str) noexcept</td></tr>
 <tr class="memdesc:a5c2b23004b9bdca3df3142b5f4fbd8ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> from a string representation.  <a href="#a5c2b23004b9bdca3df3142b5f4fbd8ac">More...</a><br /></td></tr>
 <tr class="separator:a5c2b23004b9bdca3df3142b5f4fbd8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,10 +253,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a517378a65c041aa6ee09fc02765a5a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a netmask of the type specifed given a length in bits.  <a href="#a517378a65c041aa6ee09fc02765a5a97">More...</a><br /></td></tr>
 <tr class="separator:a517378a65c041aa6ee09fc02765a5a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for the EtcPal IP address type. </p>
-<p>Provides C++ syntactic sugar for working with IP addresses. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af9b84482c3f11b17d4824c7214773c75"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af9b84482c3f11b17d4824c7214773c75">&#9670;&nbsp;</a></span>IpAddr() <span class="overload">[1/3]</span></h2>
 
@@ -368,8 +369,37 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a431892e2354d1b617e2dd0278b8a9f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a431892e2354d1b617e2dd0278b8a9f30">&#9670;&nbsp;</a></span>FromString() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_ip_addr.html">IpAddr</a> FromString </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>ip_str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct an <a class="el" href="classetcpal_1_1_ip_addr.html" title="A wrapper class for the EtcPal IP address type. ">IpAddr</a> from a string representation. </p>
+<p>See <a class="el" href="group__etcpal__inet.html#gacc09a02c09d9798f46d1fb6e9e84b900" title="Convert IPv4 and IPv6 addresses from text to binary form. ">etcpal_inet_pton()</a> for more information. </p>
+
+</div>
+</div>
 <a id="a5c2b23004b9bdca3df3142b5f4fbd8ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5c2b23004b9bdca3df3142b5f4fbd8ac">&#9670;&nbsp;</a></span>FromString()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c2b23004b9bdca3df3142b5f4fbd8ac">&#9670;&nbsp;</a></span>FromString() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -407,7 +437,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> IsWildcard </td>
+          <td class="memname">bool IsWildcard </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>

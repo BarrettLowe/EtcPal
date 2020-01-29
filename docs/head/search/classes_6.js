@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['uuid',['Uuid',['../classetcpal_1_1_uuid.html',1,'etcpal']]]
+  ['readguard',['ReadGuard',['../classetcpal_1_1_read_guard.html',1,'etcpal']]],
+  ['rwlock',['RwLock',['../classetcpal_1_1_rw_lock.html',1,'etcpal']]]
 ];

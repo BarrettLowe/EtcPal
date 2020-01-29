@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['memory_20pools_20_28mempool_29',['Memory Pools (mempool)',['../group__etcpal__mempool.html',1,'']]],
-  ['mutexes',['Mutexes',['../group__etcpal__mutex.html',1,'']]]
+  ['pack_20_28buffer_20packing_20and_20unpacking_29',['pack (Buffer Packing and Unpacking)',['../group__etcpal__pack.html',1,'']]]
 ];

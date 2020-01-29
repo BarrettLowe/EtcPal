@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,13 +128,14 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_mutex.html','');});
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a>  </div>
   <div class="headertitle">
-<div class="title">Mutex Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">EtcPal C++ Wrappers</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">Locks and Synchronization (lock)</a></div></div>  </div>
+<div class="title">Mutex Class Reference<div class="ingroups"><a class="el" href="group__etcpal__cpp.html">etcpal/cpp (C++ Wrappers)</a> &raquo; <a class="el" href="group__etcpal__cpp__lock.html">lock (Locks and Synchronization)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A wrapper class for the EtcPal mutex type.  
- <a href="classetcpal_1_1_mutex.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A wrapper class for the EtcPal mutex type. </p>
+<p>Note: The <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a> functions are not normally used directly - prefer usage of the RAII type <a class="el" href="classetcpal_1_1_mutex_guard.html" title="Lock guard around a mutex. ">etcpal::MutexGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>.</p>
+<p>Example usage: </p><div class="fragment"><div class="line"><span class="keyword">static</span> <span class="keywordtype">int</span> shared_counter;</div><div class="line"><a class="code" href="classetcpal_1_1_mutex.html">etcpal::Mutex</a> mutex;</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> CounterThread()</div><div class="line">{</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 10000; ++i)</div><div class="line">  {</div><div class="line">    <a class="code" href="classetcpal_1_1_mutex_guard.html">etcpal::MutexGuard</a> lock(mutex);</div><div class="line">    ++shared_counter;</div><div class="line">  }</div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> main()</div><div class="line">{</div><div class="line">  std::vector&lt;etcpal::Thread&gt; counter_threads;</div><div class="line">  counter_threads.reserve(5);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 5; ++i)</div><div class="line">  {</div><div class="line">    counter_threads.emplace_back(CounterThread);</div><div class="line">  }</div><div class="line"></div><div class="line">  <span class="comment">// Wait for the threads to finish</span></div><div class="line">  <a class="code" href="classetcpal_1_1_thread.html#abc8bb8ec9948b769e1189506ed635c9d">etcpal::Thread::Sleep</a>(1000);</div><div class="line">  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; thread : counter_threads)</div><div class="line">  {</div><div class="line">    thread.<a class="code" href="classetcpal_1_1_thread.html#a0fe525fdb9bcaccc319c79e1c74ee62e">Join</a>();</div><div class="line">  }</div><div class="line"></div><div class="line">  std::cout &lt;&lt; <span class="stringliteral">&quot;The counter is: &quot;</span> &lt;&lt; shared_counter &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>; <span class="comment">// Prints &quot;the counter is: 50000&quot;</span></div><div class="line"></div><div class="line">  <span class="keywordflow">return</span> 0;</div><div class="line">}</div></div><!-- fragment --><p>See <a class="el" href="group__etcpal__mutex.html">Mutexes</a> for more information. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a4b5dfbd24f5bc4c03b24b2da362f66d5"><td class="memItemLeft" align="right" valign="top"><a id="a4b5dfbd24f5bc4c03b24b2da362f66d5"></a>
@@ -156,12 +158,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cd26ea836a03dbd39db75a2a4e9f1be"><td class="memItemLeft" align="right" valign="top"><a id="a8cd26ea836a03dbd39db75a2a4e9f1be"></a>
 <a class="el" href="classetcpal_1_1_mutex.html">Mutex</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (<a class="el" href="classetcpal_1_1_mutex.html">Mutex</a> &amp;&amp;other)=delete</td></tr>
 <tr class="separator:a8cd26ea836a03dbd39db75a2a4e9f1be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747fd95916e116a6ed37cc641e394c69"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69">Lock</a> ()</td></tr>
+<tr class="memitem:a747fd95916e116a6ed37cc641e394c69"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69">Lock</a> ()</td></tr>
 <tr class="memdesc:a747fd95916e116a6ed37cc641e394c69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock the mutex.  <a href="#a747fd95916e116a6ed37cc641e394c69">More...</a><br /></td></tr>
 <tr class="separator:a747fd95916e116a6ed37cc641e394c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0fc3000efb073879e1c437d9e3d4e7f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6">TryLock</a> ()</td></tr>
-<tr class="memdesc:a0fc3000efb073879e1c437d9e3d4e7f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to lock the mutex.  <a href="#a0fc3000efb073879e1c437d9e3d4e7f6">More...</a><br /></td></tr>
-<tr class="separator:a0fc3000efb073879e1c437d9e3d4e7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ad93c25cdc665654314bba0797d37ef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef">TryLock</a> (int timeout_ms=0)</td></tr>
+<tr class="memdesc:a8ad93c25cdc665654314bba0797d37ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attempt to lock the mutex.  <a href="#a8ad93c25cdc665654314bba0797d37ef">More...</a><br /></td></tr>
+<tr class="separator:a8ad93c25cdc665654314bba0797d37ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b88a5d5517cb042431c4ea24d8ecb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_mutex.html#a91b88a5d5517cb042431c4ea24d8ecb7">Unlock</a> ()</td></tr>
 <tr class="memdesc:a91b88a5d5517cb042431c4ea24d8ecb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock the mutex.  <a href="#a91b88a5d5517cb042431c4ea24d8ecb7">More...</a><br /></td></tr>
 <tr class="separator:a91b88a5d5517cb042431c4ea24d8ecb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,11 +172,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a969165b5fad27bd7ae7a693703124645"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the underlying etcpal_mutex_t type. <br /></td></tr>
 <tr class="separator:a969165b5fad27bd7ae7a693703124645"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A wrapper class for the EtcPal mutex type. </p>
-<p>Note: The <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a> functions are not normally used directly - prefer usage of the RAII type <a class="el" href="classetcpal_1_1_mutex_guard.html" title="Lock guard around a mutex. ">etcpal::MutexGuard</a> to manage locking and unlocking of an <a class="el" href="classetcpal_1_1_mutex.html" title="A wrapper class for the EtcPal mutex type. ">etcpal::Mutex</a>.</p>
-<p>See <a class="el" href="group__etcpal__mutex.html">Mutexes</a> for more information. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a747fd95916e116a6ed37cc641e394c69"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a747fd95916e116a6ed37cc641e394c69">&#9670;&nbsp;</a></span>Lock()</h2>
 
@@ -185,7 +183,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> Lock </td>
+          <td class="memname">bool Lock </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -199,12 +197,12 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Lock the mutex. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__mutex.html#gac56c0f48e3bfc5e8e0d321a711816f67" title="Acquire a mutex. ">etcpal_mutex_take()</a> on the underlying mutex. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__mutex.html#gab53dcdc649c23fb797228f414bb67e34" title="Lock a mutex. ">etcpal_mutex_lock()</a> on the underlying mutex. </dd></dl>
 
 </div>
 </div>
-<a id="a0fc3000efb073879e1c437d9e3d4e7f6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0fc3000efb073879e1c437d9e3d4e7f6">&#9670;&nbsp;</a></span>TryLock()</h2>
+<a id="a8ad93c25cdc665654314bba0797d37ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ad93c25cdc665654314bba0797d37ef">&#9670;&nbsp;</a></span>TryLock()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,9 +211,10 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__bool.html#gabb452686968e48b67397da5f97445f5b">bool</a> TryLock </td>
+          <td class="memname">bool TryLock </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em> = <code>0</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -227,7 +226,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Attempt to lock the mutex. </p>
-<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__mutex.html#ga26e7c3d33f3ab2dd5a82de3cbc36d39e" title="Try to acquire a mutex. ">etcpal_mutex_try_take()</a> on the underlying mutex. </dd></dl>
+<p>Returns when either the mutex is acquired or the timeout expires. <b>NOTE</b>: Timeout values other than 0 or ETCPAL_WAIT_FOREVER are typically only honored on real-time platforms. See the table in <a class="el" href="group__etcpal__mutex.html">Mutexes</a> for more information. On platforms where timeouts are not honored, passing 0 for timeout_ms executes a poll for the mutex returning immediately, while any other value executes the equivalent of <a class="el" href="classetcpal_1_1_mutex.html#a747fd95916e116a6ed37cc641e394c69" title="Lock the mutex. ">Lock()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">timeout_ms</td><td>How long to wait to acquire the mutex, in milliseconds. Default is to poll and return immediately. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The result of <a class="el" href="group__etcpal__mutex.html#ga94809c21d2ddd2ab62bbb7c7d3f7f576" title="Try to lock a mutex, giving up after a timeout. ">etcpal_mutex_timed_lock()</a> on the underlying mutex. </dd></dl>
 
 </div>
 </div>
@@ -255,7 +261,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Unlock the mutex. </p>
-<p>See <a class="el" href="group__etcpal__mutex.html#ga5a1ceebcbb5856a98dab50a13f894bcf" title="Release a mutex. ">etcpal_mutex_give()</a>. </p>
+<p>See etcpal_mutex_give(). </p>
 
 </div>
 </div>

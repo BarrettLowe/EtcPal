@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,17 +128,16 @@ $(document).ready(function(){initNavTree('struct_etc_pal_log_params.html','');})
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPalLogParams Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__log.html">Logging (log)</a></div></div>  </div>
+<div class="title">EtcPalLogParams Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__log.html">log (Logging)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A set of parameters used for the etcpal_*log() functions.  
- <a href="struct_etc_pal_log_params.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A set of parameters used for the etcpal_*log() functions. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:a97b4c2de584d731ffb8d8ce759930691"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__log.html#ga10855f3c1f3816d0bd5e4687108ea1c5">etcpal_log_action_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#a97b4c2de584d731ffb8d8ce759930691">action</a></td></tr>
-<tr class="memdesc:a97b4c2de584d731ffb8d8ce759930691"><td class="mdescLeft">&#160;</td><td class="mdescRight">What should be done when <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message from a library module. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message from a library module with the list of format arguments already generated. ">etcpal_vlog()</a> is called.  <a href="#a97b4c2de584d731ffb8d8ce759930691">More...</a><br /></td></tr>
+<tr class="memdesc:a97b4c2de584d731ffb8d8ce759930691"><td class="mdescLeft">&#160;</td><td class="mdescRight">What should be done when <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> is called.  <a href="#a97b4c2de584d731ffb8d8ce759930691">More...</a><br /></td></tr>
 <tr class="separator:a97b4c2de584d731ffb8d8ce759930691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6659e83ffc5e4e7ab3c5ba5009f4e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82">EtcPalLogCallback</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#a9a6659e83ffc5e4e7ab3c5ba5009f4e7">log_fn</a></td></tr>
 <tr class="memdesc:a9a6659e83ffc5e4e7ab3c5ba5009f4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for the finished log string(s).  <a href="#a9a6659e83ffc5e4e7ab3c5ba5009f4e7">More...</a><br /></td></tr>
@@ -148,16 +148,14 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ac695d621aaa836a9d13d65a912be9518"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#ac695d621aaa836a9d13d65a912be9518">log_mask</a></td></tr>
 <tr class="memdesc:ac695d621aaa836a9d13d65a912be9518"><td class="mdescLeft">&#160;</td><td class="mdescRight">A mask value that determines which priority messages can be logged.  <a href="#ac695d621aaa836a9d13d65a912be9518">More...</a><br /></td></tr>
 <tr class="separator:ac695d621aaa836a9d13d65a912be9518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceff50b76400c01d88b158c0a68f32d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__log.html#ga3e3f125146999063f5d25dc98686744d">EtcPalLogTimeFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8">time_fn</a></td></tr>
-<tr class="memdesc:aceff50b76400c01d88b158c0a68f32d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message from a library module. ">etcpal_log()</a> and <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message from a library module with the list of format arguments already generated. ">etcpal_vlog()</a> functions to obtain the time from the application.  <a href="#aceff50b76400c01d88b158c0a68f32d8">More...</a><br /></td></tr>
+<tr class="memitem:aceff50b76400c01d88b158c0a68f32d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__log.html#gae62cd1cd05e3e42c5df41cab8df8e9e3">EtcPalLogTimeFn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8">time_fn</a></td></tr>
+<tr class="memdesc:aceff50b76400c01d88b158c0a68f32d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A callback function for the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> and <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> functions to obtain the time from the application.  <a href="#aceff50b76400c01d88b158c0a68f32d8">More...</a><br /></td></tr>
 <tr class="separator:aceff50b76400c01d88b158c0a68f32d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae376f130b17d169ee51be68077a89ed0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0">context</a></td></tr>
 <tr class="memdesc:ae376f130b17d169ee51be68077a89ed0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Application context that will be passed back with the log callback function.  <a href="#ae376f130b17d169ee51be68077a89ed0">More...</a><br /></td></tr>
 <tr class="separator:ae376f130b17d169ee51be68077a89ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A set of parameters used for the etcpal_*log() functions. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a97b4c2de584d731ffb8d8ce759930691"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a97b4c2de584d731ffb8d8ce759930691">&#9670;&nbsp;</a></span>action</h2>
 
@@ -170,7 +168,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>What should be done when <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message from a library module. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message from a library module with the list of format arguments already generated. ">etcpal_vlog()</a> is called. </p>
+<p>What should be done when <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> is called. </p>
 
 </div>
 </div>
@@ -245,12 +243,12 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__log.html#ga3e3f125146999063f5d25dc98686744d">EtcPalLogTimeFn</a> time_fn</td>
+          <td class="memname"><a class="el" href="group__etcpal__log.html#gae62cd1cd05e3e42c5df41cab8df8e9e3">EtcPalLogTimeFn</a> time_fn</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>A callback function for the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message from a library module. ">etcpal_log()</a> and <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message from a library module with the list of format arguments already generated. ">etcpal_vlog()</a> functions to obtain the time from the application. </p>
+<p>A callback function for the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> and <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> functions to obtain the time from the application. </p>
 <p>If NULL, no timestamp will be added to log messages. </p>
 
 </div>

@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,28 +128,43 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 <div class="textblock">Here is a list of all documented struct and union fields with links to the struct/union documentation for each field:</div>
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>Thread()
+: <a class="el" href="classetcpal_1_1_thread.html#acf0ebde1823ff6854a4add729b40a0c4">Thread</a>
+</li>
 <li>thread_name
 : <a class="el" href="struct_etc_pal_thread_params.html#af081a07b0c5074db7c1896da8fb72e81">EtcPalThreadParams</a>
 </li>
-<li>thread_priority
-: <a class="el" href="struct_etc_pal_thread_params.html#a9cc3e9ae3970c47e150dc77065abd75f">EtcPalThreadParams</a>
-</li>
 <li>time_fn
 : <a class="el" href="struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8">EtcPalLogParams</a>
+</li>
+<li>time_hi_and_version()
+: <a class="el" href="classetcpal_1_1_uuid.html#a0fd84d72db93c35ce9d86a1fff1b1067">Uuid</a>
+</li>
+<li>time_low()
+: <a class="el" href="classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb">Uuid</a>
+</li>
+<li>time_mid()
+: <a class="el" href="classetcpal_1_1_uuid.html#a5a3534e539c75eb5add173f7f660d45a">Uuid</a>
+</li>
+<li>TimePoint()
+: <a class="el" href="classetcpal_1_1_time_point.html#a6cfb1d6e8f8f7adda9f7e60d75812a6f">TimePoint</a>
+</li>
+<li>Timer()
+: <a class="el" href="classetcpal_1_1_timer.html#a17896e888578cea83217f4bbef07559a">Timer</a>
 </li>
 <li>ToArray()
 : <a class="el" href="classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce">MacAddr</a>
 </li>
 <li>ToCString()
-: <a class="el" href="classetcpal_1_1_result.html#aa4d860f883bc4c6bc997eb61f218a27e">Result</a>
+: <a class="el" href="classetcpal_1_1_error.html#aa4d860f883bc4c6bc997eb61f218a27e">Error</a>
 </li>
 <li>top
 : <a class="el" href="struct_etc_pal_rb_iter.html#ab9332a87d0af5aa12cac847eff68b7af">EtcPalRbIter</a>
 </li>
 <li>ToString()
-: <a class="el" href="classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0">IpAddr</a>
+: <a class="el" href="classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0">Error</a>
+, <a class="el" href="classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0">IpAddr</a>
 , <a class="el" href="classetcpal_1_1_mac_addr.html#a19c380b03cea21d7ac7325136a131ff0">MacAddr</a>
-, <a class="el" href="classetcpal_1_1_result.html#a19c380b03cea21d7ac7325136a131ff0">Result</a>
 , <a class="el" href="classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0">SockAddr</a>
 , <a class="el" href="classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0">Uuid</a>
 </li>
@@ -159,13 +175,17 @@ $(document).ready(function(){initNavTree('functions_t.html','');});
 : <a class="el" href="struct_etc_pal_rb_iter.html#a3dc7beb088200d742f70c0c895b376c4">EtcPalRbIter</a>
 </li>
 <li>TryLock()
-: <a class="el" href="classetcpal_1_1_mutex.html#a0fc3000efb073879e1c437d9e3d4e7f6">Mutex</a>
+: <a class="el" href="classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef">Mutex</a>
 </li>
 <li>TryReadLock()
-: <a class="el" href="classetcpal_1_1_rw_lock.html#a409d488d3b55cffa68f081ee05611764">RwLock</a>
+: <a class="el" href="classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535">RwLock</a>
+</li>
+<li>TryWait()
+: <a class="el" href="classetcpal_1_1_semaphore.html#aa5139da6cf3fc487370524d466cdadd7">Semaphore</a>
+, <a class="el" href="classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7">Signal</a>
 </li>
 <li>TryWriteLock()
-: <a class="el" href="classetcpal_1_1_rw_lock.html#a6c1151df4aab7df16590bee65e504873">RwLock</a>
+: <a class="el" href="classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f">RwLock</a>
 </li>
 <li>type()
 : <a class="el" href="classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902">IpAddr</a>

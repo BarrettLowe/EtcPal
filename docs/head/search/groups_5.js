@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['internet_20addressing_20_28inet_29',['Internet Addressing (inet)',['../group__etcpal__cpp__inet.html',1,'']]],
-  ['internet_20addressing_20_28inet_29',['Internet Addressing (inet)',['../group__etcpal__inet.html',1,'']]]
+  ['mempool_20_28memory_20pools_29',['mempool (Memory Pools)',['../group__etcpal__mempool.html',1,'']]],
+  ['mutexes',['Mutexes',['../group__etcpal__mutex.html',1,'']]]
 ];

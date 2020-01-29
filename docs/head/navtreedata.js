@@ -3,16 +3,14 @@ var NAVTREE =
   [ "EtcPal", "index.html", [
     [ "ETC Platform Abstraction Layer", "index.html", null ],
     [ "Modules", "modules.html", "modules" ],
-    [ "Data Structures", "annotated.html", [
-      [ "Data Structures", "annotated.html", "annotated_dup" ],
-      [ "Data Structure Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
-      [ "Data Fields", "functions.html", [
-        [ "All", "functions.html", "functions_dup" ],
-        [ "Functions", "functions_func.html", null ],
-        [ "Variables", "functions_vars.html", null ],
-        [ "Typedefs", "functions_type.html", null ]
-      ] ]
+    [ "Data Structures", "annotated.html", "annotated" ],
+    [ "Data Structure Index", "classes.html", null ],
+    [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+    [ "Data Fields", "functions.html", [
+      [ "All", "functions.html", "functions_dup" ],
+      [ "Functions", "functions_func.html", "functions_func" ],
+      [ "Variables", "functions_vars.html", null ],
+      [ "Typedefs", "functions_type.html", null ]
     ] ],
     [ "Files", null, [
       [ "File List", "files.html", "files" ],
@@ -28,9 +26,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"functions.html",
-"group__etcpal__pdu.html#gabb06693a6eb3ed13c253c8324f3efbb5",
-"struct_etc_pal_pdu.html#a3d12e161726566d24a1d0cf6c6b416bb"
+"classetcpal_1_1_uuid.html#a21b8e060baa6eeed3e5e45e6d760b54c",
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa735dc55ef30ad08cca792cb41a1dfeb1",
+"group__etcpal__socket.html#ga06b68eaa9d0e50e624659ed1b9c7f05a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

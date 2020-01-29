@@ -21,6 +21,7 @@
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
   <link href="doxygen.css" rel="stylesheet" type="text/css" />
+  <link href="dox_styles.css" rel="stylesheet" type="text/css"/>
   <!--BEGIN CUSTOM SCRIPT-->
   <script type="text/javascript">
     $(function() {
@@ -127,13 +128,13 @@ $(document).ready(function(){initNavTree('struct_etc_pal_rb_tree.html','');});
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">EtcPalRbTree Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">EtcPal</a> &raquo; <a class="el" href="group__etcpal__rbtree.html">Red-Black Trees (rbtree)</a></div></div>  </div>
+<div class="title">EtcPalRbTree Struct Reference<div class="ingroups"><a class="el" href="group__etcpal.html">etcpal (Core Modules)</a> &raquo; <a class="el" href="group__etcpal__rbtree.html">rbtree (Red-Black Trees)</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>A red-black tree.  
- <a href="struct_etc_pal_rb_tree.html#details">More...</a></p>
-<table class="memberdecls">
+<a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
+<div class="textblock"><p>A red-black tree. </p>
+<p>Initialize using <a class="el" href="group__etcpal__rbtree.html#ga82765df01bbb32545a67ec148536602a" title="Initialize a red-black tree node. ">etcpal_rbtree_init()</a> before carrying out any other operation on the tree. </p>
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
 <tr class="memitem:ae96f5aa846cba3ae538255b01f066bea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_etc_pal_rb_node.html">EtcPalRbNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_rb_tree.html#ae96f5aa846cba3ae538255b01f066bea">root</a></td></tr>
@@ -145,7 +146,7 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a854352f53b148adc24983a58a1866d66"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_rb_tree.html#a854352f53b148adc24983a58a1866d66">size</a></td></tr>
 <tr class="memdesc:a854352f53b148adc24983a58a1866d66"><td class="mdescLeft">&#160;</td><td class="mdescRight">The current count of nodes in the tree.  <a href="#a854352f53b148adc24983a58a1866d66">More...</a><br /></td></tr>
 <tr class="separator:a854352f53b148adc24983a58a1866d66"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2969aaea1ac7bf7f69dba4965e8b8d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990">EtcPalRbNodeAllocFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b">alloc_f</a></td></tr>
+<tr class="memitem:a2969aaea1ac7bf7f69dba4965e8b8d5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__rbtree.html#ga7e715765639ff5a6b66065858541b083">EtcPalRbNodeAllocFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_rb_tree.html#a2969aaea1ac7bf7f69dba4965e8b8d5b">alloc_f</a></td></tr>
 <tr class="memdesc:a2969aaea1ac7bf7f69dba4965e8b8d5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A function to use for allocating a new node.  <a href="#a2969aaea1ac7bf7f69dba4965e8b8d5b">More...</a><br /></td></tr>
 <tr class="separator:a2969aaea1ac7bf7f69dba4965e8b8d5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29c69388460d3c40b35a388dcbea6b58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__rbtree.html#gab04d15dd62a53956d6ea4b1e5dcbe930">EtcPalRbNodeDeallocFunc</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_rb_tree.html#a29c69388460d3c40b35a388dcbea6b58">dealloc_f</a></td></tr>
@@ -155,10 +156,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:acb1df3a0f703b05bc4971f79cabe2597"><td class="mdescLeft">&#160;</td><td class="mdescRight">User provided, not used by etcpal_rbtree.  <a href="#acb1df3a0f703b05bc4971f79cabe2597">More...</a><br /></td></tr>
 <tr class="separator:acb1df3a0f703b05bc4971f79cabe2597"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A red-black tree. </p>
-<p>Initialize using <a class="el" href="group__etcpal__rbtree.html#ga82765df01bbb32545a67ec148536602a" title="Initialize a red-black tree node. ">etcpal_rbtree_init()</a> before carrying out any other operation on the tree. </p>
-</div><h2 class="groupheader">Field Documentation</h2>
+<h2 class="groupheader">Field Documentation</h2>
 <a id="a2969aaea1ac7bf7f69dba4965e8b8d5b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2969aaea1ac7bf7f69dba4965e8b8d5b">&#9670;&nbsp;</a></span>alloc_f</h2>
 
@@ -166,7 +164,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990">EtcPalRbNodeAllocFunc</a> alloc_f</td>
+          <td class="memname"><a class="el" href="group__etcpal__rbtree.html#ga7e715765639ff5a6b66065858541b083">EtcPalRbNodeAllocFunc</a> alloc_f</td>
         </tr>
       </table>
 </div><div class="memdoc">
