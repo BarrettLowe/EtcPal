@@ -22,7 +22,7 @@ var group__etcpal__rbtree =
     ] ],
     [ "ETCPAL_RB_ITER_MAX_HEIGHT", "group__etcpal__rbtree.html#ga347976360fdafc669aab59abc1ff7d73", null ],
     [ "EtcPalRbIter", "group__etcpal__rbtree.html#gaca406625e86f809e1d5b8e52ca3d3e40", null ],
-    [ "EtcPalRbNodeAllocFunc", "group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990", null ],
+    [ "EtcPalRbNodeAllocFunc", "group__etcpal__rbtree.html#ga7e715765639ff5a6b66065858541b083", null ],
     [ "EtcPalRbNodeDeallocFunc", "group__etcpal__rbtree.html#gab04d15dd62a53956d6ea4b1e5dcbe930", null ],
     [ "EtcPalRbTreeNodeCmpFunc", "group__etcpal__rbtree.html#gaa92041a856567f1d411d6e2b74233ddc", null ],
     [ "EtcPalRbTreeNodeFunc", "group__etcpal__rbtree.html#ga6687d480b9c3f3583303d537190a47de", null ],

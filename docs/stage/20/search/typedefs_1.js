@@ -23,7 +23,7 @@ var searchData=
   ['etcpalpollcontext',['EtcPalPollContext',['../group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e',1,'socket.dox']]],
   ['etcpalpollevent',['EtcPalPollEvent',['../group__etcpal__socket.html#ga7b84da8c4de1182c5b7769a5f5b8034c',1,'socket.h']]],
   ['etcpalrbiter',['EtcPalRbIter',['../group__etcpal__rbtree.html#gaca406625e86f809e1d5b8e52ca3d3e40',1,'rbtree.h']]],
-  ['etcpalrbnodeallocfunc',['EtcPalRbNodeAllocFunc',['../group__etcpal__rbtree.html#ga0f5e94b3a86c36a4a4af25b167cc2990',1,'rbtree.h']]],
+  ['etcpalrbnodeallocfunc',['EtcPalRbNodeAllocFunc',['../group__etcpal__rbtree.html#ga7e715765639ff5a6b66065858541b083',1,'rbtree.h']]],
   ['etcpalrbnodedeallocfunc',['EtcPalRbNodeDeallocFunc',['../group__etcpal__rbtree.html#gab04d15dd62a53956d6ea4b1e5dcbe930',1,'rbtree.h']]],
   ['etcpalrbtreenodecmpfunc',['EtcPalRbTreeNodeCmpFunc',['../group__etcpal__rbtree.html#gaa92041a856567f1d411d6e2b74233ddc',1,'rbtree.h']]],
   ['etcpalrbtreenodefunc',['EtcPalRbTreeNodeFunc',['../group__etcpal__rbtree.html#ga6687d480b9c3f3583303d537190a47de',1,'rbtree.h']]],
