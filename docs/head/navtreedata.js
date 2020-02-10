@@ -19,16 +19,17 @@ var NAVTREE =
         [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
-    [ "Additional Documentation", "additional_docs.html", "additional_docs" ]
+    [ "Additional Documentation", "additional_docs.html", "additional_docs" ],
+    [ "Building EtcPal", "building_etcpal.html", "building_etcpal" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 ".html",
-"classetcpal_1_1_uuid.html#a21b8e060baa6eeed3e5e45e6d760b54c",
-"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa735dc55ef30ad08cca792cb41a1dfeb1",
-"group__etcpal__socket.html#ga06b68eaa9d0e50e624659ed1b9c7f05a"
+"classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb",
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f",
+"group__etcpal__socket.html#ga05f5bfa7ea20aa326aa97b2424481d99"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

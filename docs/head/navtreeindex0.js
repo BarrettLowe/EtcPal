@@ -6,6 +6,8 @@ var NAVTREEINDEX0 =
 "acn__rlp_8h_source.html":[6,0,0,0,3],
 "additional_docs.html":[7],
 "annotated.html":[2],
+"building_etcpal.html":[8],
+"building_for_embedded.html":[8,0],
 "classes.html":[3],
 "classetcpal_1_1_bad_expected_access.html":[1,1,0,1],
 "classetcpal_1_1_bad_expected_access.html#a408f3d0470d7f1a3330830eb96db77d9":[1,1,0,1,0],
@@ -247,7 +249,5 @@ var NAVTREEINDEX0 =
 "classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d":[1,1,5,1,12],
 "classetcpal_1_1_timer.html#ae12c1dee0d60a4db943b872af5879f76":[1,1,5,1,7],
 "classetcpal_1_1_uuid.html":[1,1,6,0],
-"classetcpal_1_1_uuid.html#a0fd84d72db93c35ce9d86a1fff1b1067":[1,1,6,0,10],
-"classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb":[1,1,6,0,11],
-"classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0":[1,1,6,0,13]
+"classetcpal_1_1_uuid.html#a0fd84d72db93c35ce9d86a1fff1b1067":[1,1,6,0,10]
 };

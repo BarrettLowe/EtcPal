@@ -136,10 +136,9 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p> 
 To jump right into the documentation, check out the <a href="modules.html">Modules Overview</a>.
 </p>
-<h2>Source Location</h2>
-<p>The sources for EtcPal are located in the heirarchy: </p><div class="fragment"><div class="line">src/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal sources]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal sources]</div></div><!-- fragment --><p>The includes are in the heirarchy: </p><div class="fragment"><div class="line">include/</div><div class="line">  etcpal/</div><div class="line">    [platform-neutral EtcPal headers]</div><div class="line">    cpp/</div><div class="line">      [EtcPal C++ wrappers]</div><div class="line">  os/</div><div class="line">    [OS or network stack provider]/</div><div class="line">      [platform-specific EtcPal headers]</div></div><!-- fragment --><p>Include the <code>etcpal/</code> prefix when including an EtcPal header: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/lock.h&quot;</span></div></div><!-- fragment --><p>Some EtcPal headers are platform-specific and duplicated for each platform. Platform-specific headers for the same module will always conform to an identical interface, as documented in that module's documentation.</p>
 <h2>Supported Platforms</h2>
 <p>EtcPal distinguishes between two major constructs which provide services to applications. 'OS' targets provide threading, synchronization and other utilities not provided by the C standard library. 'Network' targets provide a network stack.</p>
+<p>EtcPal is not written with any hardware architecture assumptions or dependencies, so it should be able to run on any target hardware or architecture.</p>
 <p>EtcPal is currently ported for the following OS targets:</p>
 <ul>
 <li>FreeRTOS</li>
@@ -157,21 +156,7 @@ To jump right into the documentation, check out the <a href="modules.html">Modul
 <li>MQX (RTCS)</li>
 </ul>
 <h3>Building EtcPal for Your Platform</h3>
-<p>EtcPal is built with <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator. CMake can also be used to include EtcPal as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
-<p>To configure and build EtcPal on its own using CMake, follow these steps:</p>
-<ol type="1">
-<li><a href="https://cmake.org/download/">Download and install</a> CMake version 3.3 or higher.</li>
-<li>Create a directory in your location of choice to hold your build projects or Makefiles: <div class="fragment"><div class="line">$ mkdir build</div><div class="line">$ cd build</div></div><!-- fragment --> This directory can be inside or outside the EtcPal repository.</li>
-<li>Optionally, provide a CMake toolchain file for cross-compilation. Those building native code can skip this step. There are some examples in <code>tools/cmake/cross-toolchains</code>.</li>
-</ol>
-<ol type="1">
-<li>Run CMake to configure the EtcPal project: <div class="fragment"><div class="line">$ cmake [-DCMAKE_TOOLCHAIN_FILE=path/to/toolchain/file] path/to/etcpal/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
-<li>Use CMake to invoke the generated build system to build the EtcPal library and unit tests: <div class="fragment"><div class="line">$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line">$ cmake --open .</div></div><!-- fragment --></li>
-<li><p class="startli">To run the unit tests after building: </p><div class="fragment"><div class="line">$ ctest [-C Configuration]</div></div><!-- fragment --><p> Or, if you are generating IDE project files, simply run the projects in the 'tests' folder in your IDE.</p>
-<p class="startli">Alternatively, you can define <code>ETCPAL_TEST_BUILD_AS_LIBRARIES=ON</code> to compile the unit and integration tests into static libraries, which is often useful for running tests on embedded targets.</p>
-</li>
-</ol>
-<p>Alternatively, if you don't want to use CMake, your project can simply build in the EtcPal sources directly using the appropriate directories for your target platform.</p>
+<p>See <a class="el" href="building_etcpal.html">Building EtcPal</a> for instructions on building EtcPal for your platform.</p>
 <h3>Platform Dependencies</h3>
 <p>The platform ports of EtcPal have the following dependencies:</p><ul>
 <li>FreeRTOS<ul>

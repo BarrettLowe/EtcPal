@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['network_20interface_20indexes',['Network Interface Indexes',['../interface_indexes.html',1,'additional_docs']]]
+  ['etc_20platform_20abstraction_20layer',['ETC Platform Abstraction Layer',['../index.html',1,'']]]
 ];

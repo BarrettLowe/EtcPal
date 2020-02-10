@@ -1,5 +1,7 @@
 var NAVTREEINDEX2 =
 {
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f":[1,0,2,1,1],
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa730afdd022ada726bdf8d940eda9759b":[1,0,2,1,26],
 "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa735dc55ef30ad08cca792cb41a1dfeb1":[1,0,2,1,6],
 "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa77e50551fc1c569578f0f9dd4d4a5712":[1,0,2,1,7],
 "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa8396c97054393b3faf3849541fc99c43":[1,0,2,1,8],
@@ -247,7 +249,5 @@ var NAVTREEINDEX2 =
 "group__etcpal__signal.html#gae27ec551b3bcdeb4c72e6ecea9ba3ca8":[1,0,13,1,1],
 "group__etcpal__signal.html#gafa2af190375bdb673563e2a029f0a89b":[1,0,13,1,5],
 "group__etcpal__socket.html":[1,0,9],
-"group__etcpal__socket.html#ga04ebfb989375a6cf612d69f229a74954":[1,0,9,23],
-"group__etcpal__socket.html#ga05f5bfa7ea20aa326aa97b2424481d99":[1,0,9,24],
-"group__etcpal__socket.html#ga068a8f93c435a18f79b13e21ff30cfd0":[1,0,9,30]
+"group__etcpal__socket.html#ga04ebfb989375a6cf612d69f229a74954":[1,0,9,23]
 };

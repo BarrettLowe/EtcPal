@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Related Pages</title>
+  <title>EtcPal: Building EtcPal</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -107,7 +107,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('pages.html','');});
+$(document).ready(function(){initNavTree('building_etcpal.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -126,20 +126,25 @@ $(document).ready(function(){initNavTree('pages.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Related Pages</div>  </div>
+<div class="title">Building EtcPal </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock">Here is a list of all related documentation pages:</div><div class="directory">
-<div class="levels">[detail level <span onclick="javascript:toggleLevel(1);">1</span><span onclick="javascript:toggleLevel(2);">2</span><span onclick="javascript:toggleLevel(3);">3</span>]</div><table class="directory">
-<tr id="row_0_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_0_" class="arrow" onclick="toggleFolder('0_')">&#9660;</span><a class="el" href="additional_docs.html" target="_self">Additional Documentation</a></td><td class="desc"></td></tr>
-<tr id="row_0_0_"><td class="entry"><span style="width:32px;display:inline-block;">&#160;</span><a class="el" href="interface_indexes.html" target="_self">Network Interface Indexes</a></td><td class="desc"></td></tr>
-<tr id="row_1_" class="even"><td class="entry"><span style="width:0px;display:inline-block;">&#160;</span><span id="arr_1_" class="arrow" onclick="toggleFolder('1_')">&#9660;</span><a class="el" href="building_etcpal.html" target="_self">Building EtcPal</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_"><td class="entry"><span style="width:16px;display:inline-block;">&#160;</span><span id="arr_1_0_" class="arrow" onclick="toggleFolder('1_0_')">&#9660;</span><a class="el" href="building_for_embedded.html" target="_self">Building EtcPal for an embedded target</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_0_" class="even"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="targeting_lwip.html" target="_self">Targeting lwIP</a></td><td class="desc"></td></tr>
-<tr id="row_1_0_1_"><td class="entry"><span style="width:48px;display:inline-block;">&#160;</span><a class="el" href="targeting_freertos.html" target="_self">Targeting FreeRTOS</a></td><td class="desc"></td></tr>
-</table>
-</div><!-- directory -->
-</div><!-- contents -->
+<div class="textblock"><p>EtcPal uses <a href="https://cmake.org">CMake</a>, a popular cross-platform build system generator, to generate build files. CMake can also be used to include EtcPal as a dependency to other projects, i.e. using the <code>add_subdirectory()</code> command.</p>
+<p>CMake can be downloaded <a href="https://cmake.org/download/">here</a>. EtcPal requires version 3.3 or higher.</p>
+<p>If you are building a native project, you can use the typical CMake build process outlined below. If you are cross-compiling and/or building for an embedded target, there is a little bit more configuration needed - see <a class="el" href="building_for_embedded.html">Building EtcPal for an embedded target</a> for more information.</p>
+<ol type="1">
+<li>Create a directory in your location of choice to hold your build projects or Makefiles: <div class="fragment"><div class="line">$ mkdir build</div><div class="line">$ cd build</div></div><!-- fragment --> This directory can be inside or outside the EtcPal repository.</li>
+<li>Run CMake to configure the EtcPal project: <div class="fragment"><div class="line">$ cmake path/to/etcpal/root</div></div><!-- fragment --> You can optionally specify your build system with the <code>-G</code> option; otherwise, CMake will choose a system-appropriate default. Use <code>cmake --help</code> to see all available options.</li>
+<li>Use CMake to invoke the generated build system to build the EtcPal library: <div class="fragment"><div class="line">$ cmake --build .</div></div><!-- fragment --> If you are generating IDE project files, you can use CMake to open the projects in the IDE: <div class="fragment"><div class="line">$ cmake --open .</div></div><!-- fragment --></li>
+<li><p class="startli">To run the unit tests after building: </p><div class="fragment"><div class="line">$ ctest [-C Configuration]</div></div><!-- fragment --><p> Or, if you are generating IDE project files, simply run the projects in the 'tests' folder in your IDE.</p>
+<p class="startli">Alternatively, you can define <code>ETCPAL_TEST_BUILD_AS_LIBRARIES=ON</code> to compile the unit and integration tests into static libraries, which is often useful for running tests on embedded targets.</p>
+</li>
+</ol>
+<p>Alternatively, if you don't want to use CMake, your project can simply build in the EtcPal sources directly using the appropriate directories for your target platform.</p>
+<ol type="1">
+<li>Optionally, provide a CMake toolchain file for cross-compilation. Those building native code can skip this step. There are some examples in <code>tools/cmake/cross-toolchains</code>. </li>
+</ol>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
