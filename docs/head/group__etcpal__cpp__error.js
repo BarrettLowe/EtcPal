@@ -12,7 +12,7 @@ var group__etcpal__cpp__error =
     ] ],
     [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html", [
       [ "BadExpectedAccess", "classetcpal_1_1_bad_expected_access.html#a408f3d0470d7f1a3330830eb96db77d9", null ],
-      [ "result", "classetcpal_1_1_bad_expected_access.html#a4c03ebceb6c40fe7f2ee3c215daa8c8d", null ]
+      [ "error", "classetcpal_1_1_bad_expected_access.html#aa64e8d28a7a913372edd18c2d6a15ab7", null ]
     ] ],
     [ "Expected", "classetcpal_1_1_expected.html", [
       [ "ValueType", "classetcpal_1_1_expected.html#aecaeabaa9da616ae42bb20787878260d", null ],

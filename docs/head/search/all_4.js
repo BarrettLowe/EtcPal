@@ -2,7 +2,7 @@ var searchData=
 [
   ['emergency',['Emergency',['../classetcpal_1_1_logger.html#a5a0fec997bc336f87f4897c5a09b5ab1',1,'etcpal::Logger']]],
   ['err',['err',['../struct_etc_pal_poll_event.html#a13b5fda068afcd9c79a54263a9fe7b07',1,'EtcPalPollEvent']]],
-  ['error',['Error',['../classetcpal_1_1_error.html',1,'Error'],['../classetcpal_1_1_error.html#acde5c53cc825c9794ffa980ea163a39a',1,'etcpal::Error::Error()'],['../classetcpal_1_1_logger.html#a4f9ab08aae7973ca510b477041857595',1,'etcpal::Logger::Error()'],['../classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6',1,'etcpal::Expected::error()']]],
+  ['error',['Error',['../classetcpal_1_1_error.html',1,'Error'],['../classetcpal_1_1_error.html#acde5c53cc825c9794ffa980ea163a39a',1,'etcpal::Error::Error()'],['../classetcpal_1_1_logger.html#a4f9ab08aae7973ca510b477041857595',1,'etcpal::Logger::Error()'],['../classetcpal_1_1_bad_expected_access.html#aa64e8d28a7a913372edd18c2d6a15ab7',1,'etcpal::BadExpectedAccess::error()'],['../classetcpal_1_1_expected.html#a60850b440a4ff7f769627b46d79043f6',1,'etcpal::Expected::error()']]],
   ['error_2eh',['error.h',['../cpp_2error_8h.html',1,'']]],
   ['error_5fcode',['error_code',['../classetcpal_1_1_expected.html#ad74bb8607bbb3705c22342bd852e16b8',1,'etcpal::Expected']]],
   ['etcpal_20_28core_20modules_29',['etcpal (Core Modules)',['../group__etcpal.html',1,'']]],
