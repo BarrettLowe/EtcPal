@@ -86,10 +86,12 @@ var group__etcpal__log =
       [ "kEtcPalLogCreateBoth", "group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5a8d083dc7d2d4359fd9ce6330b9d4c2bb", null ]
     ] ],
     [ "etcpal_can_log", "group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad", null ],
-    [ "etcpal_create_log_str", "group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56", null ],
-    [ "etcpal_create_syslog_str", "group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879", null ],
+    [ "etcpal_create_log_str", "group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f", null ],
+    [ "etcpal_create_syslog_str", "group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d", null ],
     [ "etcpal_log", "group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e", null ],
     [ "etcpal_sanitize_syslog_params", "group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318", null ],
     [ "etcpal_validate_log_params", "group__etcpal__log.html#ga949455773a4ecdd6a499940a19ec6080", null ],
+    [ "etcpal_vcreate_log_str", "group__etcpal__log.html#gadec7b676650d22a5315d97f3aeee1dd0", null ],
+    [ "etcpal_vcreate_syslog_str", "group__etcpal__log.html#ga943bb13f1d71efce45b30b466e757138", null ],
     [ "etcpal_vlog", "group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41", null ]
 ];

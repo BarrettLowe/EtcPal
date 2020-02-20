@@ -144,7 +144,7 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds state data used when parsing multiple PDUs in a PDU block.  <a href="struct_acn_pdu.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_acn_pdu_constraints.html">AcnPduConstraints</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains specific PDU info used by the generic helper etcpal_parse_acn_pdu().  <a href="struct_acn_pdu_constraints.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains specific PDU info used by the generic helper <a class="el" href="group__etcpal__acn__pdu.html#gab277ac11752967a19ded43f02e8bf0d4" title="Parse a generic ACN PDU. ">acn_parse_pdu()</a>.  <a href="struct_acn_pdu_constraints.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -171,7 +171,7 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:ga3628638e45db8db2868d39815491d690"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds state data used when parsing multiple PDUs in a PDU block.  <a href="#ga3628638e45db8db2868d39815491d690">More...</a><br /></td></tr>
 <tr class="separator:ga3628638e45db8db2868d39815491d690"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga30e387a60bcb97095e371f5fca5b5962"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="struct_acn_pdu_constraints.html">AcnPduConstraints</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__acn__pdu.html#ga30e387a60bcb97095e371f5fca5b5962">AcnPduConstraints</a></td></tr>
-<tr class="memdesc:ga30e387a60bcb97095e371f5fca5b5962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains specific PDU info used by the generic helper etcpal_parse_acn_pdu().  <a href="#ga30e387a60bcb97095e371f5fca5b5962">More...</a><br /></td></tr>
+<tr class="memdesc:ga30e387a60bcb97095e371f5fca5b5962"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains specific PDU info used by the generic helper <a class="el" href="group__etcpal__acn__pdu.html#gab277ac11752967a19ded43f02e8bf0d4" title="Parse a generic ACN PDU. ">acn_parse_pdu()</a>.  <a href="#ga30e387a60bcb97095e371f5fca5b5962">More...</a><br /></td></tr>
 <tr class="separator:ga30e387a60bcb97095e371f5fca5b5962"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -604,7 +604,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
       </table>
 </div><div class="memdoc">
 
-<p>Contains specific PDU info used by the generic helper etcpal_parse_acn_pdu(). </p>
+<p>Contains specific PDU info used by the generic helper <a class="el" href="group__etcpal__acn__pdu.html#gab277ac11752967a19ded43f02e8bf0d4" title="Parse a generic ACN PDU. ">acn_parse_pdu()</a>. </p>
 
 </div>
 </div>
@@ -648,7 +648,7 @@ Set the inheritance and length bits in a PDU Flags &amp; Length segment.</h2></t
 </div><div class="memdoc">
 
 <p>Parse a generic ACN PDU. </p>
-<p>A function to parse a generic ACN PDU. The specific PDU info needed for parsing is contained in a struct <a class="el" href="struct_acn_pdu_constraints.html" title="Contains specific PDU info used by the generic helper etcpal_parse_acn_pdu(). ">AcnPduConstraints</a>. Uses <a class="el" href="struct_acn_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">AcnPdu</a> to maintain state across multiple PDUs in a block.</p>
+<p>A function to parse a generic ACN PDU. The specific PDU info needed for parsing is contained in a struct <a class="el" href="struct_acn_pdu_constraints.html" title="Contains specific PDU info used by the generic helper acn_parse_pdu(). ">AcnPduConstraints</a>. Uses <a class="el" href="struct_acn_pdu.html" title="Holds state data used when parsing multiple PDUs in a PDU block. ">AcnPdu</a> to maintain state across multiple PDUs in a block.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">buf</td><td>Byte buffer containing a PDU. </td></tr>

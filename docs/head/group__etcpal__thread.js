@@ -7,10 +7,11 @@ var group__etcpal__thread =
       [ "thread_name", "struct_etc_pal_thread_params.html#af081a07b0c5074db7c1896da8fb72e81", null ]
     ] ],
     [ "ETCPAL_THREAD_DEFAULT_NAME", "group__etcpal__thread.html#ga41f1567e754166e758fc1fdda38fc300", null ],
-    [ "ETCPAL_THREAD_DEFAULT_PARAMS_INIT", "group__etcpal__thread.html#ga2a086e640c72d82dacd9c8f466479eff", null ],
     [ "ETCPAL_THREAD_DEFAULT_PRIORITY", "group__etcpal__thread.html#ga3539233977b6e793b9b5a4c071fd6e78", null ],
     [ "ETCPAL_THREAD_DEFAULT_STACK", "group__etcpal__thread.html#gac4147a48a462f0c5b9758334b41243a9", null ],
     [ "ETCPAL_THREAD_NAME_MAX_LENGTH", "group__etcpal__thread.html#ga5a0a37d186ac57231b94c287a58b54a0", null ],
+    [ "ETCPAL_THREAD_PARAMS_INIT", "group__etcpal__thread.html#ga7f21ced82782c355a30a8ad011aa5b91", null ],
+    [ "ETCPAL_THREAD_PARAMS_INIT_VALUES", "group__etcpal__thread.html#gacbaaaa3fb12075714725a11874b6b4ad", null ],
     [ "ETCPAL_THREAD_SET_DEFAULT_PARAMS", "group__etcpal__thread.html#gacb54f3a06ea1b8ae0f45b8daaae37efe", null ],
     [ "etcpal_thread_t", "group__etcpal__thread.html#ga6ea2bb55f405380e3ea296e3b6164ae8", null ],
     [ "EtcPalThreadParams", "group__etcpal__thread.html#gabb277d1d3fc2b021ca7513d8af038ed4", null ],

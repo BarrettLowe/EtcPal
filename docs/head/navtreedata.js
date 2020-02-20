@@ -29,7 +29,8 @@ var NAVTREEINDEX =
 ".html",
 "classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb",
 "group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f",
-"group__etcpal__socket.html#ga05f5bfa7ea20aa326aa97b2424481d99"
+"group__etcpal__socket.html",
+"version_8h.html#aa6b0f9dd6a270e78919e00960ee13d10"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

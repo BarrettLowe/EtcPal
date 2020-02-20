@@ -141,9 +141,9 @@ $(document).ready(function(){initNavTree('group__etcpal__log.html','');});
 <li><a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a></li>
 <li><a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a></li>
 </ul>
-<p>Initialize the module by calling <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> with the relevant feature mask: </p><div class="fragment"><div class="line"><a class="code" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843">etcpal_init</a>(<a class="code" href="group__etcpal.html#ga8c7c1f9430362540e56af3a2742a25d4">ETCPAL_FEATURE_LOGGING</a>);</div></div><!-- fragment --><p>This module can be used in two ways. Applications can use the lightweight <a class="el" href="group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a> and <a class="el" href="group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a> to create log messages with a header defined by the Syslog protocol or with a human-readable header defined by ETC.</p>
-<div class="fragment"><div class="line"><span class="keywordtype">char</span> msg_buf[<a class="code" href="group__etcpal__log.html#gaec05f1fdff3420181c0fe5ae92648e68">ETCPAL_LOG_STR_MAX_LEN</a>];</div><div class="line"><a class="code" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> current_time; <span class="comment">// Fill in with current time...</span></div><div class="line"><a class="code" href="group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56">etcpal_create_log_str</a>(msg_buf, <a class="code" href="group__etcpal__log.html#gaec05f1fdff3420181c0fe5ae92648e68">ETCPAL_LOG_STR_MAX_LEN</a>, &amp;current_time, <a class="code" href="group__etcpal__log.html#gac79a4a2a830ae8db541f33093b2d50df">ETCPAL_LOG_WARNING</a>,</div><div class="line">                      <span class="stringliteral">&quot;Something bad has happened: error code %d!&quot;</span>, 42);</div></div><!-- fragment --><p>The human-readable format consists of an ISO timestamp with the separating <code>T</code> replaced by a space, followed by a string indicating the priority and the message: </p><div class="fragment"><div class="line">1970-01-01 00:00:00.001-06:00 [WARN] Something bad has happened: error code 42!</div></div><!-- fragment --><p>The syslog format is prefixed with a header which is compliant with RFC 5424. It is appropriate when an application needs to build syslog-format messages but there is no syslog daemon or library available. When such libraries are present, they handle formatting and building the header and thus this function should not be used.</p>
-<div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> my_syslog_params;</div><div class="line">my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f">facility</a> = <a class="code" href="group__etcpal__log.html#ga2f6c98d265250c28e6102c97a10dee17">ETCPAL_LOG_LOCAL1</a>;</div><div class="line">strcpy(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#acf45ed2a37e15e83167bd1edcd9fbbbe">hostname</a>, <span class="stringliteral">&quot;10.101.13.37&quot;</span>);</div><div class="line">strcpy(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0">app_name</a>, <span class="stringliteral">&quot;My App&quot;</span>);</div><div class="line">sprintf(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#aa3d06040894562832d2218511875b444">procid</a>, <span class="stringliteral">&quot;%d&quot;</span>, my_proc_id);</div><div class="line"></div><div class="line"><a class="code" href="group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318">etcpal_sanitize_syslog_params</a>(&amp;my_syslog_params); <span class="comment">// Remove any invalid characters from the syslog params</span></div><div class="line"></div><div class="line"><span class="keywordtype">char</span> syslog_msg_buf[<a class="code" href="group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac">ETCPAL_SYSLOG_STR_MAX_LEN</a>];</div><div class="line"><a class="code" href="group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879">etcpal_create_syslog_str</a>(syslog_msg_buf, <a class="code" href="group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac">ETCPAL_SYSLOG_STR_MAX_LEN</a>, &amp;current_time, &amp;my_syslog_params,</div><div class="line">                         <a class="code" href="group__etcpal__log.html#gac79a4a2a830ae8db541f33093b2d50df">ETCPAL_LOG_WARNING</a>, <span class="stringliteral">&quot;Something bad has happened: error code %d!&quot;</span>, 42);</div></div><!-- fragment --><p>This module can also be used to enable other libraries to log messages via a callback function. Library functions can take a set of parameters (<a class="el" href="struct_etc_pal_log_params.html" title="A set of parameters used for the etcpal_*log() functions. ">EtcPalLogParams</a>) on initialization. They use these parameters and the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> functions to call back to the application to log messages. The application implements an <a class="el" href="group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82" title="Log callback function. ">EtcPalLogCallback</a> from which it dispatches the log messages in whatever way it chooses (print to console, syslog, etc.), and an <a class="el" href="group__etcpal__log.html#gae62cd1cd05e3e42c5df41cab8df8e9e3" title="Time callback function. ">EtcPalLogTimeFn</a> which is called to get the current time for each log message.</p>
+<p>Initialize the module by calling <a class="el" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843" title="Initialize the EtcPal library. ">etcpal_init()</a> with the relevant feature mask: </p><div class="fragment"><div class="line"><a class="code" href="group__etcpal.html#ga163b95dfe5ef6c68f2fb4d5b58a63843">etcpal_init</a>(<a class="code" href="group__etcpal.html#ga8c7c1f9430362540e56af3a2742a25d4">ETCPAL_FEATURE_LOGGING</a>);</div></div><!-- fragment --><p>This module can be used in two ways. Applications can use the lightweight <a class="el" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a> and <a class="el" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a> to create log messages with a header defined by the Syslog protocol or with a human-readable header defined by ETC.</p>
+<div class="fragment"><div class="line"><span class="keywordtype">char</span> msg_buf[<a class="code" href="group__etcpal__log.html#gaec05f1fdff3420181c0fe5ae92648e68">ETCPAL_LOG_STR_MAX_LEN</a>];</div><div class="line"><a class="code" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> current_time; <span class="comment">// Fill in with current time...</span></div><div class="line"><a class="code" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f">etcpal_create_log_str</a>(msg_buf, <a class="code" href="group__etcpal__log.html#gaec05f1fdff3420181c0fe5ae92648e68">ETCPAL_LOG_STR_MAX_LEN</a>, &amp;current_time, <a class="code" href="group__etcpal__log.html#gac79a4a2a830ae8db541f33093b2d50df">ETCPAL_LOG_WARNING</a>,</div><div class="line">                      <span class="stringliteral">&quot;Something bad has happened: error code %d!&quot;</span>, 42);</div></div><!-- fragment --><p>The human-readable format consists of an ISO timestamp with the separating <code>T</code> replaced by a space, followed by a string indicating the priority and the message: </p><div class="fragment"><div class="line">1970-01-01 00:00:00.001-06:00 [WARN] Something bad has happened: error code 42!</div></div><!-- fragment --><p>The syslog format is prefixed with a header which is compliant with RFC 5424. It is appropriate when an application needs to build syslog-format messages but there is no syslog daemon or library available. When such libraries are present, they handle formatting and building the header and thus this function should not be used.</p>
+<div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> my_syslog_params;</div><div class="line">my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#a213afa2e73e0c2102f43d4067e41b90f">facility</a> = <a class="code" href="group__etcpal__log.html#ga2f6c98d265250c28e6102c97a10dee17">ETCPAL_LOG_LOCAL1</a>;</div><div class="line">strcpy(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#acf45ed2a37e15e83167bd1edcd9fbbbe">hostname</a>, <span class="stringliteral">&quot;10.101.13.37&quot;</span>);</div><div class="line">strcpy(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#a6d20b2dcf8c2bc4f864b3d719ad00ad0">app_name</a>, <span class="stringliteral">&quot;My App&quot;</span>);</div><div class="line">sprintf(my_syslog_params.<a class="code" href="struct_etc_pal_syslog_params.html#aa3d06040894562832d2218511875b444">procid</a>, <span class="stringliteral">&quot;%d&quot;</span>, my_proc_id);</div><div class="line"></div><div class="line"><a class="code" href="group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318">etcpal_sanitize_syslog_params</a>(&amp;my_syslog_params); <span class="comment">// Remove any invalid characters from the syslog params</span></div><div class="line"></div><div class="line"><span class="keywordtype">char</span> syslog_msg_buf[<a class="code" href="group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac">ETCPAL_SYSLOG_STR_MAX_LEN</a>];</div><div class="line"><a class="code" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d">etcpal_create_syslog_str</a>(syslog_msg_buf, <a class="code" href="group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac">ETCPAL_SYSLOG_STR_MAX_LEN</a>, &amp;current_time, &amp;my_syslog_params,</div><div class="line">                         <a class="code" href="group__etcpal__log.html#gac79a4a2a830ae8db541f33093b2d50df">ETCPAL_LOG_WARNING</a>, <span class="stringliteral">&quot;Something bad has happened: error code %d!&quot;</span>, 42);</div></div><!-- fragment --><p>This module can also be used to enable other libraries to log messages via a callback function. Library functions can take a set of parameters (<a class="el" href="struct_etc_pal_log_params.html" title="A set of parameters used for the etcpal_*log() functions. ">EtcPalLogParams</a>) on initialization. They use these parameters and the <a class="el" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e" title="Log a message. ">etcpal_log()</a> or <a class="el" href="group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41" title="Log a message with the list of format arguments already generated. ">etcpal_vlog()</a> functions to call back to the application to log messages. The application implements an <a class="el" href="group__etcpal__log.html#gaf8d8eef393a51fca0f1ddbfd7cad9c82" title="Log callback function. ">EtcPalLogCallback</a> from which it dispatches the log messages in whatever way it chooses (print to console, syslog, etc.), and an <a class="el" href="group__etcpal__log.html#gae62cd1cd05e3e42c5df41cab8df8e9e3" title="Time callback function. ">EtcPalLogTimeFn</a> which is called to get the current time for each log message.</p>
 <div class="fragment"><div class="line"><span class="keywordtype">void</span> my_time_callback(<span class="keywordtype">void</span>* context, <a class="code" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a>* timestamp)</div><div class="line">{</div><div class="line">  <span class="comment">// Fill in timestamp with the current time...</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="keywordtype">void</span> my_log_callback(<span class="keywordtype">void</span>* context, <a class="code" href="struct_etc_pal_log_strings.html">EtcPalLogStrings</a>* log_strings)</div><div class="line">{</div><div class="line">  <span class="comment">// Use log_strings-&gt;syslog, log_strings-&gt;human_readable, and/or log_strings-&gt;raw as</span></div><div class="line">  <span class="comment">// appropriate based on how I configured my log params.</span></div><div class="line">}</div><div class="line"></div><div class="line"><span class="comment">// In an init function of some kind...</span></div><div class="line"><a class="code" href="struct_etc_pal_log_params.html">EtcPalLogParams</a> log_params;</div><div class="line">log_params.<a class="code" href="struct_etc_pal_log_params.html#a97b4c2de584d731ffb8d8ce759930691">action</a> = <a class="code" href="group__etcpal__log.html#gga10855f3c1f3816d0bd5e4687108ea1c5aa0ece7bdc03dd5b29a3be01c212f6b48">kEtcPalLogCreateHumanReadable</a>;</div><div class="line">log_params.<a class="code" href="struct_etc_pal_log_params.html#ac695d621aaa836a9d13d65a912be9518">log_mask</a> = <a class="code" href="group__etcpal__log.html#gaecd624f2fc15671bb3e4c01ede198a08">ETCPAL_LOG_UPTO</a>(<a class="code" href="group__etcpal__log.html#ga9f05a0ad034946dfd20477e11d2923a7">ETCPAL_LOG_INFO</a>); <span class="comment">// Log up to and including INFO, excluding DEBUG.</span></div><div class="line">log_params.<a class="code" href="struct_etc_pal_log_params.html#a9a6659e83ffc5e4e7ab3c5ba5009f4e7">log_fn</a> = my_log_callback;</div><div class="line">log_params.<a class="code" href="struct_etc_pal_log_params.html#aceff50b76400c01d88b158c0a68f32d8">time_fn</a> = my_time_callback;</div><div class="line">log_params.<a class="code" href="struct_etc_pal_log_params.html#ae376f130b17d169ee51be68077a89ed0">context</a> = NULL;</div><div class="line"><span class="comment">// If we set action to kEtcPalLogCreateSyslog or kEtcPalLogCreateBoth, we would also initialize</span></div><div class="line"><span class="comment">// log_params.syslog_params here.</span></div><div class="line"></div><div class="line"><span class="comment">// Pass to some library, maybe...</span></div><div class="line">somelib_init(&amp;log_params);</div><div class="line"></div><div class="line"><span class="comment">// Somewhere within the library, or elsewhere in my application...</span></div><div class="line"><a class="code" href="group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e">etcpal_log</a>(&amp;log_params, <a class="code" href="group__etcpal__log.html#gac79a4a2a830ae8db541f33093b2d50df">ETCPAL_LOG_WARNING</a>, <span class="stringliteral">&quot;Something bad has happened: error code %d!&quot;</span>, 42);</div><div class="line"><span class="comment">// Log message gets built and forwarded to my_log_callback, where I can do with it what I please.</span></div></div><!-- fragment --> <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
@@ -199,10 +199,10 @@ Macros</h2></td></tr>
 <tr class="memdesc:ga6463250841fd9f0b87d84574d5ed561f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of the syslog header.  <a href="#ga6463250841fd9f0b87d84574d5ed561f">More...</a><br /></td></tr>
 <tr class="separator:ga6463250841fd9f0b87d84574d5ed561f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2b86d5334ad5c012a7b81ce1e9c90e33"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga2b86d5334ad5c012a7b81ce1e9c90e33">ETCPAL_SYSLOG_STR_MIN_LEN</a>&#160;&#160;&#160;<a class="el" href="group__etcpal__log.html#ga6463250841fd9f0b87d84574d5ed561f">ETCPAL_SYSLOG_HEADER_MAX_LEN</a></td></tr>
-<tr class="memdesc:ga2b86d5334ad5c012a7b81ce1e9c90e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a>.  <a href="#ga2b86d5334ad5c012a7b81ce1e9c90e33">More...</a><br /></td></tr>
+<tr class="memdesc:ga2b86d5334ad5c012a7b81ce1e9c90e33"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a>.  <a href="#ga2b86d5334ad5c012a7b81ce1e9c90e33">More...</a><br /></td></tr>
 <tr class="separator:ga2b86d5334ad5c012a7b81ce1e9c90e33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5f7e222e2b3359ca02363b27f38e97b2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga5f7e222e2b3359ca02363b27f38e97b2">ETCPAL_LOG_STR_MIN_LEN</a>&#160;&#160;&#160;(<a class="el" href="group__etcpal__log.html#ga589d05713f16b04a0337399d5064e7c3">ETCPAL_LOG_TIMESTAMP_LEN</a> + 1u /*SP*/ + 6u /*pri*/ + 1u /*SP*/)</td></tr>
-<tr class="memdesc:ga5f7e222e2b3359ca02363b27f38e97b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a>.  <a href="#ga5f7e222e2b3359ca02363b27f38e97b2">More...</a><br /></td></tr>
+<tr class="memdesc:ga5f7e222e2b3359ca02363b27f38e97b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a>.  <a href="#ga5f7e222e2b3359ca02363b27f38e97b2">More...</a><br /></td></tr>
 <tr class="separator:ga5f7e222e2b3359ca02363b27f38e97b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae8f0782821bb95f1c2a0122b9819acac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gae8f0782821bb95f1c2a0122b9819acac">ETCPAL_SYSLOG_STR_MAX_LEN</a>&#160;&#160;&#160;(<a class="el" href="group__etcpal__log.html#ga6463250841fd9f0b87d84574d5ed561f">ETCPAL_SYSLOG_HEADER_MAX_LEN</a> + <a class="el" href="group__etcpal__log.html#ga23f61f04ce3dd5ee8ceaf88f99121999">ETCPAL_RAW_LOG_MSG_MAX_LEN</a>)</td></tr>
 <tr class="memdesc:gae8f0782821bb95f1c2a0122b9819acac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a syslog string that will be passed to an etcpal_log_callback function.  <a href="#gae8f0782821bb95f1c2a0122b9819acac">More...</a><br /></td></tr>
@@ -243,17 +243,23 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaa2365ff7f93fa95a0ca2522505d94879"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879">etcpal_create_syslog_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *time, const <a class="el" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> *syslog_params, int pri, const char *format,...)</td></tr>
-<tr class="memdesc:gaa2365ff7f93fa95a0ca2522505d94879"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log message with syslog header in the given buffer.  <a href="#gaa2365ff7f93fa95a0ca2522505d94879">More...</a><br /></td></tr>
-<tr class="separator:gaa2365ff7f93fa95a0ca2522505d94879"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac6729f206b5d6267dc0cd42a4150ff56"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56">etcpal_create_log_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *time, int pri, const char *format,...)</td></tr>
-<tr class="memdesc:gac6729f206b5d6267dc0cd42a4150ff56"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log message with a human-readable prefix in the given buffer.  <a href="#gac6729f206b5d6267dc0cd42a4150ff56">More...</a><br /></td></tr>
-<tr class="separator:gac6729f206b5d6267dc0cd42a4150ff56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacf54b7ce272d89f2a35a83c4cd3bda4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f">etcpal_create_log_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *timestamp, int pri, const char *format,...)</td></tr>
+<tr class="memdesc:gacf54b7ce272d89f2a35a83c4cd3bda4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log message with a human-readable prefix in the given buffer.  <a href="#gacf54b7ce272d89f2a35a83c4cd3bda4f">More...</a><br /></td></tr>
+<tr class="separator:gacf54b7ce272d89f2a35a83c4cd3bda4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadec7b676650d22a5315d97f3aeee1dd0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gadec7b676650d22a5315d97f3aeee1dd0">etcpal_vcreate_log_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *timestamp, int pri, const char *format, va_list args)</td></tr>
+<tr class="memdesc:gadec7b676650d22a5315d97f3aeee1dd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log a message with a human-readable prefix in the given buffer, with a list of format arguments already generated.  <a href="#gadec7b676650d22a5315d97f3aeee1dd0">More...</a><br /></td></tr>
+<tr class="separator:gadec7b676650d22a5315d97f3aeee1dd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac4f27cd13defcb0fbd39516b5d5844d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d">etcpal_create_syslog_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *timestamp, const <a class="el" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> *syslog_params, int pri, const char *format,...)</td></tr>
+<tr class="memdesc:gaac4f27cd13defcb0fbd39516b5d5844d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log message with syslog header in the given buffer.  <a href="#gaac4f27cd13defcb0fbd39516b5d5844d">More...</a><br /></td></tr>
+<tr class="separator:gaac4f27cd13defcb0fbd39516b5d5844d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga943bb13f1d71efce45b30b466e757138"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga943bb13f1d71efce45b30b466e757138">etcpal_vcreate_syslog_str</a> (char *buf, size_t buflen, const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *timestamp, const <a class="el" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> *syslog_params, int pri, const char *format, va_list args)</td></tr>
+<tr class="memdesc:ga943bb13f1d71efce45b30b466e757138"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a log a message with syslog header in the given buffer, with a list of format arguments already generated.  <a href="#ga943bb13f1d71efce45b30b466e757138">More...</a><br /></td></tr>
+<tr class="separator:ga943bb13f1d71efce45b30b466e757138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga895ff8dd5230b10b4ab6d955e556d318"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318">etcpal_sanitize_syslog_params</a> (<a class="el" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> *params)</td></tr>
 <tr class="memdesc:ga895ff8dd5230b10b4ab6d955e556d318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessary).  <a href="#ga895ff8dd5230b10b4ab6d955e556d318">More...</a><br /></td></tr>
 <tr class="separator:ga895ff8dd5230b10b4ab6d955e556d318"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga949455773a4ecdd6a499940a19ec6080"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga949455773a4ecdd6a499940a19ec6080">etcpal_validate_log_params</a> (<a class="el" href="struct_etc_pal_log_params.html">EtcPalLogParams</a> *params)</td></tr>
-<tr class="memdesc:ga949455773a4ecdd6a499940a19ec6080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given etcpal_log_params are valid.  <a href="#ga949455773a4ecdd6a499940a19ec6080">More...</a><br /></td></tr>
+<tr class="memdesc:ga949455773a4ecdd6a499940a19ec6080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given <a class="el" href="struct_etc_pal_log_params.html" title="A set of parameters used for the etcpal_*log() functions. ">EtcPalLogParams</a> are valid.  <a href="#ga949455773a4ecdd6a499940a19ec6080">More...</a><br /></td></tr>
 <tr class="separator:ga949455773a4ecdd6a499940a19ec6080"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac44c39be61d1bf95239f9bd6fb1f11ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad">etcpal_can_log</a> (const <a class="el" href="struct_etc_pal_log_params.html">EtcPalLogParams</a> *params, int pri)</td></tr>
 <tr class="memdesc:gac44c39be61d1bf95239f9bd6fb1f11ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a priority level can be logged given the mask present in the log params.  <a href="#gac44c39be61d1bf95239f9bd6fb1f11ad">More...</a><br /></td></tr>
@@ -922,7 +928,7 @@ Log Priority</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gac6729f206b5d6267dc0cd42a4150ff56" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a>. </p>
+<p>The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a>. </p>
 
 </div>
 </div>
@@ -1090,7 +1096,7 @@ Log Priority</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gaa2365ff7f93fa95a0ca2522505d94879" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a>. </p>
+<p>The minimum length of a buffer passed to <a class="el" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a>. </p>
 
 </div>
 </div>
@@ -1275,8 +1281,8 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
-<a id="gac6729f206b5d6267dc0cd42a4150ff56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gac6729f206b5d6267dc0cd42a4150ff56">&#9670;&nbsp;</a></span>etcpal_create_log_str()</h2>
+<a id="gacf54b7ce272d89f2a35a83c4cd3bda4f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacf54b7ce272d89f2a35a83c4cd3bda4f">&#9670;&nbsp;</a></span>etcpal_create_log_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1297,7 +1303,7 @@ Log Priority</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
+          <td class="paramname"><em>timestamp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1331,7 +1337,7 @@ Log Priority</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority of this log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
   </table>
@@ -1340,8 +1346,8 @@ Log Priority</h2></td></tr>
 
 </div>
 </div>
-<a id="gaa2365ff7f93fa95a0ca2522505d94879"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa2365ff7f93fa95a0ca2522505d94879">&#9670;&nbsp;</a></span>etcpal_create_syslog_str()</h2>
+<a id="gaac4f27cd13defcb0fbd39516b5d5844d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac4f27cd13defcb0fbd39516b5d5844d">&#9670;&nbsp;</a></span>etcpal_create_syslog_str()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1362,7 +1368,7 @@ Log Priority</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *&#160;</td>
-          <td class="paramname"><em>time</em>, </td>
+          <td class="paramname"><em>timestamp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1402,7 +1408,7 @@ Log Priority</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the syslog message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">time</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">syslog_params</td><td>A set of parameters for the syslog header. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority of this log message. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
@@ -1506,7 +1512,7 @@ Log Priority</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Ensure that the given etcpal_log_params are valid. </p>
+<p>Ensure that the given <a class="el" href="struct_etc_pal_log_params.html" title="A set of parameters used for the etcpal_*log() functions. ">EtcPalLogParams</a> are valid. </p>
 <p>This also sanitizes the syslog params using <a class="el" href="group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318" title="Ensure that the given syslog parameters are compliant with the syslog RFC (modifying them if necessar...">etcpal_sanitize_syslog_params()</a> if action is set to kEtcPalLogCreateSyslog or kEtcPalLogCreateBoth.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1515,6 +1521,145 @@ Log Priority</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true (params are valid) or false (params are invalid). </dd></dl>
+
+</div>
+</div>
+<a id="gadec7b676650d22a5315d97f3aeee1dd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadec7b676650d22a5315d97f3aeee1dd0">&#9670;&nbsp;</a></span>etcpal_vcreate_log_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool etcpal_vcreate_log_str </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a log a message with a human-readable prefix in the given buffer, with a list of format arguments already generated. </p>
+<p>Buffer must be at least <a class="el" href="group__etcpal__log.html#ga5f7e222e2b3359ca02363b27f38e97b2" title="The minimum length of a buffer passed to etcpal_create_log_str(). ">ETCPAL_LOG_STR_MIN_LEN</a> in length. This function is useful if you want to create a wrapper function around <a class="el" href="group__etcpal__log.html#gacf54b7ce272d89f2a35a83c4cd3bda4f" title="Create a log message with a human-readable prefix in the given buffer. ">etcpal_create_log_str()</a> which also takes variable format arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority of this log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Argument list for the format specifiers in format. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ga943bb13f1d71efce45b30b466e757138"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga943bb13f1d71efce45b30b466e757138">&#9670;&nbsp;</a></span>etcpal_vcreate_syslog_str()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool etcpal_vcreate_syslog_str </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>buflen</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_syslog_params.html">EtcPalSyslogParams</a> *&#160;</td>
+          <td class="paramname"><em>syslog_params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>pri</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>format</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Create a log a message with syslog header in the given buffer, with a list of format arguments already generated. </p>
+<p>Buffer must be at least <a class="el" href="group__etcpal__log.html#ga2b86d5334ad5c012a7b81ce1e9c90e33" title="The minimum length of a buffer passed to etcpal_create_syslog_str(). ">ETCPAL_SYSLOG_STR_MIN_LEN</a> in length. This function is useful if you want to create a wrapper function around <a class="el" href="group__etcpal__log.html#gaac4f27cd13defcb0fbd39516b5d5844d" title="Create a log message with syslog header in the given buffer. ">etcpal_create_syslog_str()</a> which also takes variable format arguments.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">buf</td><td>Buffer in which to build the syslog message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">buflen</td><td>Length in bytes of buf. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>A timestamp representing the current time. If NULL, no timestamp will be added to the log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">syslog_params</td><td>A set of parameters for the syslog header. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pri</td><td>Priority of this log message. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>Log message with printf-style format specifiers. Provide additional arguments as appropriate for format specifiers. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">args</td><td>Argument list for the format specifiers in format. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
