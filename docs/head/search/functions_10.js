@@ -22,7 +22,7 @@ var searchData=
   ['sockaddr_5fetcpal_5fto_5fos',['sockaddr_etcpal_to_os',['../group__etcpal__inet.html#gaa8d939a802f0ab99ae1a6e8f9253a83d',1,'inet.h']]],
   ['sockaddr_5fos_5fto_5fetcpal',['sockaddr_os_to_etcpal',['../group__etcpal__inet.html#ga087efaef8630f32173eb397b4cb1ae7f',1,'inet.h']]],
   ['stack_5fsize',['stack_size',['../classetcpal_1_1_thread.html#a1e4efbd2bc46e7d5a1b2077ff2038ad8',1,'etcpal::Thread']]],
-  ['start',['Start',['../classetcpal_1_1_thread.html#a63e85f031a9b180d9e932df21f7a2e64',1,'etcpal::Thread::Start()'],['../classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d',1,'etcpal::Timer::Start()']]],
+  ['start',['Start',['../classetcpal_1_1_thread.html#a63e85f031a9b180d9e932df21f7a2e64',1,'etcpal::Thread::Start()'],['../classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d',1,'etcpal::Timer::Start(uint32_t interval) noexcept'],['../classetcpal_1_1_timer.html#a5128bf0001713abf0599593ac6eba81d',1,'etcpal::Timer::Start(const std::chrono::duration&lt; Rep, Period &gt; &amp;interval) noexcept']]],
   ['startup',['Startup',['../classetcpal_1_1_logger.html#a84e487b1e20733405bd8b870e59f670c',1,'etcpal::Logger']]],
   ['syslog_5fapp_5fname',['syslog_app_name',['../classetcpal_1_1_logger.html#acb8556114216b68d3e01d9475f5a589b',1,'etcpal::Logger']]],
   ['syslog_5ffacility',['syslog_facility',['../classetcpal_1_1_logger.html#a86ddfb490c635f56281f619b19123eea',1,'etcpal::Logger']]],

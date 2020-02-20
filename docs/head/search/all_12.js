@@ -28,7 +28,7 @@ var searchData=
   ['sockaddr_5fos_5fto_5fetcpal',['sockaddr_os_to_etcpal',['../group__etcpal__inet.html#ga087efaef8630f32173eb397b4cb1ae7f',1,'inet.h']]],
   ['socket',['socket',['../struct_etc_pal_poll_event.html#ad32899ff82c07979513229c6f83c5f05',1,'EtcPalPollEvent']]],
   ['stack_5fsize',['stack_size',['../struct_etc_pal_thread_params.html#adde5266300e9cdd7ca1134daba9adf24',1,'EtcPalThreadParams::stack_size()'],['../classetcpal_1_1_thread.html#a1e4efbd2bc46e7d5a1b2077ff2038ad8',1,'etcpal::Thread::stack_size()']]],
-  ['start',['Start',['../classetcpal_1_1_thread.html#a63e85f031a9b180d9e932df21f7a2e64',1,'etcpal::Thread::Start()'],['../classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d',1,'etcpal::Timer::Start()']]],
+  ['start',['Start',['../classetcpal_1_1_thread.html#a63e85f031a9b180d9e932df21f7a2e64',1,'etcpal::Thread::Start()'],['../classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d',1,'etcpal::Timer::Start(uint32_t interval) noexcept'],['../classetcpal_1_1_timer.html#a5128bf0001713abf0599593ac6eba81d',1,'etcpal::Timer::Start(const std::chrono::duration&lt; Rep, Period &gt; &amp;interval) noexcept']]],
   ['startup',['Startup',['../classetcpal_1_1_logger.html#a84e487b1e20733405bd8b870e59f670c',1,'etcpal::Logger']]],
   ['syslog',['syslog',['../struct_etc_pal_log_strings.html#a5911dbe6a47cb2b9cfbab87a8881b5b6',1,'EtcPalLogStrings']]],
   ['syslog_5fapp_5fname',['syslog_app_name',['../classetcpal_1_1_logger.html#acb8556114216b68d3e01d9475f5a589b',1,'etcpal::Logger']]],

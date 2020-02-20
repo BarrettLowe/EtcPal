@@ -154,6 +154,10 @@ constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href=
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#a3fc5db10dfce0bef1c0eabfd21228c16">Timer</a> (uint32_t interval) noexcept</td></tr>
 <tr class="memdesc:a3fc5db10dfce0bef1c0eabfd21228c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and start a timer with the given interval in milliseconds. <br /></td></tr>
 <tr class="separator:a3fc5db10dfce0bef1c0eabfd21228c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300613c1ac94259feced37fe034e1430"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period &gt; </td></tr>
+<tr class="memitem:a300613c1ac94259feced37fe034e1430"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#a300613c1ac94259feced37fe034e1430">Timer</a> (const std::chrono::duration&lt; Rep, Period &gt; &amp;interval) noexcept</td></tr>
+<tr class="memdesc:a300613c1ac94259feced37fe034e1430"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create and start a timer with the given interval.  <a href="#a300613c1ac94259feced37fe034e1430">More...</a><br /></td></tr>
+<tr class="separator:a300613c1ac94259feced37fe034e1430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78a1cc79e6d7f30343b81d73de6d0c58"><td class="memItemLeft" align="right" valign="top"><a id="a78a1cc79e6d7f30343b81d73de6d0c58"></a>
 constexpr const <a class="el" href="struct_etc_pal_timer.html">EtcPalTimer</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#a78a1cc79e6d7f30343b81d73de6d0c58">get</a> () const noexcept</td></tr>
 <tr class="memdesc:a78a1cc79e6d7f30343b81d73de6d0c58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the underlying C type. <br /></td></tr>
@@ -185,14 +189,48 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:ac3e8095b413fff42c74287c5b8fcf17d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#ac3e8095b413fff42c74287c5b8fcf17d">Start</a> (uint32_t interval) noexcept</td></tr>
 <tr class="memdesc:ac3e8095b413fff42c74287c5b8fcf17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the timer with a new interval.  <a href="#ac3e8095b413fff42c74287c5b8fcf17d">More...</a><br /></td></tr>
 <tr class="separator:ac3e8095b413fff42c74287c5b8fcf17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5128bf0001713abf0599593ac6eba81d"><td class="memTemplParams" colspan="2">template&lt;typename Rep , typename Period &gt; </td></tr>
+<tr class="memitem:a5128bf0001713abf0599593ac6eba81d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#a5128bf0001713abf0599593ac6eba81d">Start</a> (const std::chrono::duration&lt; Rep, Period &gt; &amp;interval) noexcept</td></tr>
+<tr class="memdesc:a5128bf0001713abf0599593ac6eba81d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the timer with a new interval.  <a href="#a5128bf0001713abf0599593ac6eba81d">More...</a><br /></td></tr>
+<tr class="separator:a5128bf0001713abf0599593ac6eba81d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77ebf418c2f554f19db18aa5adcd0366"><td class="memItemLeft" align="right" valign="top"><a id="a77ebf418c2f554f19db18aa5adcd0366"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_timer.html#a77ebf418c2f554f19db18aa5adcd0366">Reset</a> () noexcept</td></tr>
 <tr class="memdesc:a77ebf418c2f554f19db18aa5adcd0366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset the timer while keeping the same interval. <br /></td></tr>
 <tr class="separator:a77ebf418c2f554f19db18aa5adcd0366"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a300613c1ac94259feced37fe034e1430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a300613c1ac94259feced37fe034e1430">&#9670;&nbsp;</a></span>Timer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_timer.html">Timer</a> </td>
+          <td>(</td>
+          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create and start a timer with the given interval. </p>
+<p>Note: interval will be clamped to [0, UINT32_MAX] milliseconds. </p>
+
+</div>
+</div>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="ac3e8095b413fff42c74287c5b8fcf17d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3e8095b413fff42c74287c5b8fcf17d">&#9670;&nbsp;</a></span>Start()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e8095b413fff42c74287c5b8fcf17d">&#9670;&nbsp;</a></span>Start() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,6 +257,40 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">interval</td><td>Interval to time, in milliseconds. An interval of 0 will result in a timer that is always expired. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a5128bf0001713abf0599593ac6eba81d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5128bf0001713abf0599593ac6eba81d">&#9670;&nbsp;</a></span>Start() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Start </td>
+          <td>(</td>
+          <td class="paramtype">const std::chrono::duration&lt; Rep, Period &gt; &amp;&#160;</td>
+          <td class="paramname"><em>interval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Start the timer with a new interval. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">interval</td><td>Interval to time. Will be clamped to [0, UINT32_MAX] milliseconds. An interval of 0 will result in a timer that is always expired. </td></tr>
   </table>
   </dd>
 </dl>

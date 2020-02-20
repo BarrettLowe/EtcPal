@@ -27,10 +27,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 ".html",
-"classetcpal_1_1_uuid.html#a197e772363eb4fb42ca981f6690cc6eb",
-"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa62c704cfc2d72f1fa91c04efe508c60f",
-"group__etcpal__socket.html",
-"version_8h.html#aa6b0f9dd6a270e78919e00960ee13d10"
+"classetcpal_1_1_uuid.html",
+"group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa4b119ec2231eb8bf73535b1375f5f232",
+"group__etcpal__signal.html#gae27ec551b3bcdeb4c72e6ecea9ba3ca8",
+"version_8h.html#a84fb4c7e51722f9142f1e4f9b280205a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
