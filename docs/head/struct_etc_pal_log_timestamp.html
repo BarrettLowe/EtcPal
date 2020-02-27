@@ -133,43 +133,44 @@ $(document).ready(function(){initNavTree('struct_etc_pal_log_timestamp.html','')
 <div class="contents">
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <div class="textblock"><p>A set of parameters which represent the current local time with millisecond resolution. </p>
+<p>The valid ranges for each member can be validated using <a class="el" href="group__etcpal__log.html#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028" title="Determine whether the given EtcPalLogTimestamp is valid. ">etcpal_validate_log_timestamp()</a>. </p>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:abeac221e38b7b9ce7df8722c842bf671"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#abeac221e38b7b9ce7df8722c842bf671">year</a></td></tr>
-<tr class="memdesc:abeac221e38b7b9ce7df8722c842bf671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute year.  <a href="#abeac221e38b7b9ce7df8722c842bf671">More...</a><br /></td></tr>
-<tr class="separator:abeac221e38b7b9ce7df8722c842bf671"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#aedb06abe5aff12fa3e7e0e71a374edfb">month</a></td></tr>
-<tr class="memdesc:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Month of the year.  <a href="#aedb06abe5aff12fa3e7e0e71a374edfb">More...</a><br /></td></tr>
-<tr class="separator:aedb06abe5aff12fa3e7e0e71a374edfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c11afc03fc3ee49bab660def6558f2a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a4c11afc03fc3ee49bab660def6558f2a">day</a></td></tr>
-<tr class="memdesc:a4c11afc03fc3ee49bab660def6558f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day of the month.  <a href="#a4c11afc03fc3ee49bab660def6558f2a">More...</a><br /></td></tr>
-<tr class="separator:a4c11afc03fc3ee49bab660def6558f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15df9ba285cfd842f284025f904edc9c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a15df9ba285cfd842f284025f904edc9c">hour</a></td></tr>
-<tr class="memdesc:a15df9ba285cfd842f284025f904edc9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hours since midnight.  <a href="#a15df9ba285cfd842f284025f904edc9c">More...</a><br /></td></tr>
-<tr class="separator:a15df9ba285cfd842f284025f904edc9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5edffad982a0566ad01d95005474eae3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a5edffad982a0566ad01d95005474eae3">minute</a></td></tr>
-<tr class="memdesc:a5edffad982a0566ad01d95005474eae3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minutes past the current hour.  <a href="#a5edffad982a0566ad01d95005474eae3">More...</a><br /></td></tr>
-<tr class="separator:a5edffad982a0566ad01d95005474eae3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf35be1947a62f134392fcb1b3c54d2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a6cf35be1947a62f134392fcb1b3c54d2">second</a></td></tr>
-<tr class="memdesc:a6cf35be1947a62f134392fcb1b3c54d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seconds past the current minute.  <a href="#a6cf35be1947a62f134392fcb1b3c54d2">More...</a><br /></td></tr>
-<tr class="separator:a6cf35be1947a62f134392fcb1b3c54d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad957f34cd6e8272740bc231865080b22"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#ad957f34cd6e8272740bc231865080b22">msec</a></td></tr>
-<tr class="memdesc:ad957f34cd6e8272740bc231865080b22"><td class="mdescLeft">&#160;</td><td class="mdescRight">Milliseconds past the current second.  <a href="#ad957f34cd6e8272740bc231865080b22">More...</a><br /></td></tr>
-<tr class="separator:ad957f34cd6e8272740bc231865080b22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c83bbc97dcf2390b043382b4dfe3c98"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a9c83bbc97dcf2390b043382b4dfe3c98">year</a></td></tr>
+<tr class="memdesc:a9c83bbc97dcf2390b043382b4dfe3c98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Absolute year.  <a href="#a9c83bbc97dcf2390b043382b4dfe3c98">More...</a><br /></td></tr>
+<tr class="separator:a9c83bbc97dcf2390b043382b4dfe3c98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c07e017c7b80f536d05c6134cae89ef"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a8c07e017c7b80f536d05c6134cae89ef">month</a></td></tr>
+<tr class="memdesc:a8c07e017c7b80f536d05c6134cae89ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Month of the year.  <a href="#a8c07e017c7b80f536d05c6134cae89ef">More...</a><br /></td></tr>
+<tr class="separator:a8c07e017c7b80f536d05c6134cae89ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2398ea43f7d25f677616371d3b545f59"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a2398ea43f7d25f677616371d3b545f59">day</a></td></tr>
+<tr class="memdesc:a2398ea43f7d25f677616371d3b545f59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Day of the month.  <a href="#a2398ea43f7d25f677616371d3b545f59">More...</a><br /></td></tr>
+<tr class="separator:a2398ea43f7d25f677616371d3b545f59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa64c18c25aeef9a0d7c92d89fa24a636"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#aa64c18c25aeef9a0d7c92d89fa24a636">hour</a></td></tr>
+<tr class="memdesc:aa64c18c25aeef9a0d7c92d89fa24a636"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hours since midnight.  <a href="#aa64c18c25aeef9a0d7c92d89fa24a636">More...</a><br /></td></tr>
+<tr class="separator:aa64c18c25aeef9a0d7c92d89fa24a636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ff63df03ff6549639b712d24a94adef"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a7ff63df03ff6549639b712d24a94adef">minute</a></td></tr>
+<tr class="memdesc:a7ff63df03ff6549639b712d24a94adef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Minutes past the current hour.  <a href="#a7ff63df03ff6549639b712d24a94adef">More...</a><br /></td></tr>
+<tr class="separator:a7ff63df03ff6549639b712d24a94adef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ab95bf164c7490d2855a7efcea6784a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a7ab95bf164c7490d2855a7efcea6784a">second</a></td></tr>
+<tr class="memdesc:a7ab95bf164c7490d2855a7efcea6784a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Seconds past the current minute.  <a href="#a7ab95bf164c7490d2855a7efcea6784a">More...</a><br /></td></tr>
+<tr class="separator:a7ab95bf164c7490d2855a7efcea6784a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7174bcdc6006eb03894beaa8664521c"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#ab7174bcdc6006eb03894beaa8664521c">msec</a></td></tr>
+<tr class="memdesc:ab7174bcdc6006eb03894beaa8664521c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Milliseconds past the current second.  <a href="#ab7174bcdc6006eb03894beaa8664521c">More...</a><br /></td></tr>
+<tr class="separator:ab7174bcdc6006eb03894beaa8664521c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d5ceb6295477b5931bf54c002e36fe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_log_timestamp.html#a0d5ceb6295477b5931bf54c002e36fe9">utc_offset</a></td></tr>
 <tr class="memdesc:a0d5ceb6295477b5931bf54c002e36fe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">The local offset from UTC in minutes.  <a href="#a0d5ceb6295477b5931bf54c002e36fe9">More...</a><br /></td></tr>
 <tr class="separator:a0d5ceb6295477b5931bf54c002e36fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a id="a4c11afc03fc3ee49bab660def6558f2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c11afc03fc3ee49bab660def6558f2a">&#9670;&nbsp;</a></span>day</h2>
+<a id="a2398ea43f7d25f677616371d3b545f59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2398ea43f7d25f677616371d3b545f59">&#9670;&nbsp;</a></span>day</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int day</td>
+          <td class="memname">unsigned int day</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,14 +180,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a15df9ba285cfd842f284025f904edc9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15df9ba285cfd842f284025f904edc9c">&#9670;&nbsp;</a></span>hour</h2>
+<a id="aa64c18c25aeef9a0d7c92d89fa24a636"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa64c18c25aeef9a0d7c92d89fa24a636">&#9670;&nbsp;</a></span>hour</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int hour</td>
+          <td class="memname">unsigned int hour</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -196,14 +197,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a5edffad982a0566ad01d95005474eae3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5edffad982a0566ad01d95005474eae3">&#9670;&nbsp;</a></span>minute</h2>
+<a id="a7ff63df03ff6549639b712d24a94adef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ff63df03ff6549639b712d24a94adef">&#9670;&nbsp;</a></span>minute</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int minute</td>
+          <td class="memname">unsigned int minute</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -213,14 +214,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="aedb06abe5aff12fa3e7e0e71a374edfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedb06abe5aff12fa3e7e0e71a374edfb">&#9670;&nbsp;</a></span>month</h2>
+<a id="a8c07e017c7b80f536d05c6134cae89ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c07e017c7b80f536d05c6134cae89ef">&#9670;&nbsp;</a></span>month</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int month</td>
+          <td class="memname">unsigned int month</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,14 +231,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="ad957f34cd6e8272740bc231865080b22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad957f34cd6e8272740bc231865080b22">&#9670;&nbsp;</a></span>msec</h2>
+<a id="ab7174bcdc6006eb03894beaa8664521c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7174bcdc6006eb03894beaa8664521c">&#9670;&nbsp;</a></span>msec</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int msec</td>
+          <td class="memname">unsigned int msec</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -247,14 +248,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="a6cf35be1947a62f134392fcb1b3c54d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6cf35be1947a62f134392fcb1b3c54d2">&#9670;&nbsp;</a></span>second</h2>
+<a id="a7ab95bf164c7490d2855a7efcea6784a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ab95bf164c7490d2855a7efcea6784a">&#9670;&nbsp;</a></span>second</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int second</td>
+          <td class="memname">unsigned int second</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -280,14 +281,14 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a id="abeac221e38b7b9ce7df8722c842bf671"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeac221e38b7b9ce7df8722c842bf671">&#9670;&nbsp;</a></span>year</h2>
+<a id="a9c83bbc97dcf2390b043382b4dfe3c98"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c83bbc97dcf2390b043382b4dfe3c98">&#9670;&nbsp;</a></span>year</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int year</td>
+          <td class="memname">unsigned int year</td>
         </tr>
       </table>
 </div><div class="memdoc">

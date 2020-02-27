@@ -1,14 +1,14 @@
 var group__etcpal__log =
 [
     [ "EtcPalLogTimestamp", "struct_etc_pal_log_timestamp.html", [
-      [ "day", "struct_etc_pal_log_timestamp.html#a4c11afc03fc3ee49bab660def6558f2a", null ],
-      [ "hour", "struct_etc_pal_log_timestamp.html#a15df9ba285cfd842f284025f904edc9c", null ],
-      [ "minute", "struct_etc_pal_log_timestamp.html#a5edffad982a0566ad01d95005474eae3", null ],
-      [ "month", "struct_etc_pal_log_timestamp.html#aedb06abe5aff12fa3e7e0e71a374edfb", null ],
-      [ "msec", "struct_etc_pal_log_timestamp.html#ad957f34cd6e8272740bc231865080b22", null ],
-      [ "second", "struct_etc_pal_log_timestamp.html#a6cf35be1947a62f134392fcb1b3c54d2", null ],
+      [ "day", "struct_etc_pal_log_timestamp.html#a2398ea43f7d25f677616371d3b545f59", null ],
+      [ "hour", "struct_etc_pal_log_timestamp.html#aa64c18c25aeef9a0d7c92d89fa24a636", null ],
+      [ "minute", "struct_etc_pal_log_timestamp.html#a7ff63df03ff6549639b712d24a94adef", null ],
+      [ "month", "struct_etc_pal_log_timestamp.html#a8c07e017c7b80f536d05c6134cae89ef", null ],
+      [ "msec", "struct_etc_pal_log_timestamp.html#ab7174bcdc6006eb03894beaa8664521c", null ],
+      [ "second", "struct_etc_pal_log_timestamp.html#a7ab95bf164c7490d2855a7efcea6784a", null ],
       [ "utc_offset", "struct_etc_pal_log_timestamp.html#a0d5ceb6295477b5931bf54c002e36fe9", null ],
-      [ "year", "struct_etc_pal_log_timestamp.html#abeac221e38b7b9ce7df8722c842bf671", null ]
+      [ "year", "struct_etc_pal_log_timestamp.html#a9c83bbc97dcf2390b043382b4dfe3c98", null ]
     ] ],
     [ "EtcPalLogStrings", "struct_etc_pal_log_strings.html", [
       [ "human_readable", "struct_etc_pal_log_strings.html#a4ac8b9667178849660fd3b1f99e93366", null ],
@@ -91,6 +91,7 @@ var group__etcpal__log =
     [ "etcpal_log", "group__etcpal__log.html#gab05a59d52b560561ce33a937f73aae5e", null ],
     [ "etcpal_sanitize_syslog_params", "group__etcpal__log.html#ga895ff8dd5230b10b4ab6d955e556d318", null ],
     [ "etcpal_validate_log_params", "group__etcpal__log.html#ga949455773a4ecdd6a499940a19ec6080", null ],
+    [ "etcpal_validate_log_timestamp", "group__etcpal__log.html#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028", null ],
     [ "etcpal_vcreate_log_str", "group__etcpal__log.html#gadec7b676650d22a5315d97f3aeee1dd0", null ],
     [ "etcpal_vcreate_syslog_str", "group__etcpal__log.html#ga943bb13f1d71efce45b30b466e757138", null ],
     [ "etcpal_vlog", "group__etcpal__log.html#ga2f8f5602ed9ad8a869d40c4af8ba8d41", null ]

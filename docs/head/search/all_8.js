@@ -8,6 +8,7 @@ var searchData=
   ['inet_2eh',['inet.h',['../cpp_2inet_8h.html',1,'']]],
   ['info',['Info',['../classetcpal_1_1_logger.html#a221110f73de7530eee4f76769cabaf2b',1,'etcpal::Logger::Info()'],['../struct_etc_pal_rb_tree.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbTree::info()'],['../struct_etc_pal_rb_iter.html#acb1df3a0f703b05bc4971f79cabe2597',1,'EtcPalRbIter::info()']]],
   ['interval',['interval',['../struct_etc_pal_timer.html#acd9ed1ccc44de55e1d3eff5569663695',1,'EtcPalTimer']]],
+  ['invalid',['Invalid',['../classetcpal_1_1_log_timestamp.html#ad9fe329da06c0386ffc6fd84b840dcc9',1,'etcpal::LogTimestamp']]],
   ['ip',['ip',['../struct_etc_pal_sock_addr.html#a19cc8016f534a565f984438cfe911a9e',1,'EtcPalSockAddr::ip()'],['../classetcpal_1_1_sock_addr.html#a3ab600814133b2eb30bfc9d2816d6acd',1,'etcpal::SockAddr::ip()']]],
   ['ip_5fetcpal_5fto_5fos',['ip_etcpal_to_os',['../group__etcpal__inet.html#gafe364c911711c469e0574821e30600e3',1,'inet.h']]],
   ['ip_5fos_5fto_5fetcpal',['ip_os_to_etcpal',['../group__etcpal__inet.html#gad3a164fa82579c3047f6053f7266e6a8',1,'inet.h']]],
@@ -22,6 +23,6 @@ var searchData=
   ['isok',['IsOk',['../classetcpal_1_1_error.html#a030d244ccd9a40a9f9ac813ea912a639',1,'etcpal::Error']]],
   ['isv4',['IsV4',['../classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr']]],
   ['isv6',['IsV6',['../classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr']]],
-  ['isvalid',['IsValid',['../classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr']]],
+  ['isvalid',['IsValid',['../classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['../classetcpal_1_1_log_timestamp.html#a472f705194218179e9cf26ffb288da6c',1,'etcpal::LogTimestamp::IsValid()']]],
   ['iswildcard',['IsWildcard',['../classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr']]]
 ];

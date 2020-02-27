@@ -261,6 +261,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga949455773a4ecdd6a499940a19ec6080"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga949455773a4ecdd6a499940a19ec6080">etcpal_validate_log_params</a> (<a class="el" href="struct_etc_pal_log_params.html">EtcPalLogParams</a> *params)</td></tr>
 <tr class="memdesc:ga949455773a4ecdd6a499940a19ec6080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ensure that the given <a class="el" href="struct_etc_pal_log_params.html" title="A set of parameters used for the etcpal_*log() functions. ">EtcPalLogParams</a> are valid.  <a href="#ga949455773a4ecdd6a499940a19ec6080">More...</a><br /></td></tr>
 <tr class="separator:ga949455773a4ecdd6a499940a19ec6080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8bdf4e7812a1fe1d3b2c5da3ffc4f028"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028">etcpal_validate_log_timestamp</a> (const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *timestamp)</td></tr>
+<tr class="memdesc:ga8bdf4e7812a1fe1d3b2c5da3ffc4f028"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether the given <a class="el" href="struct_etc_pal_log_timestamp.html" title="A set of parameters which represent the current local time with millisecond resolution. ">EtcPalLogTimestamp</a> is valid.  <a href="#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028">More...</a><br /></td></tr>
+<tr class="separator:ga8bdf4e7812a1fe1d3b2c5da3ffc4f028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac44c39be61d1bf95239f9bd6fb1f11ad"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__log.html#gac44c39be61d1bf95239f9bd6fb1f11ad">etcpal_can_log</a> (const <a class="el" href="struct_etc_pal_log_params.html">EtcPalLogParams</a> *params, int pri)</td></tr>
 <tr class="memdesc:gac44c39be61d1bf95239f9bd6fb1f11ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determine whether a priority level can be logged given the mask present in the log params.  <a href="#gac44c39be61d1bf95239f9bd6fb1f11ad">More...</a><br /></td></tr>
 <tr class="separator:gac44c39be61d1bf95239f9bd6fb1f11ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1197,6 +1200,7 @@ Log Priority</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A set of parameters which represent the current local time with millisecond resolution. </p>
+<p>The valid ranges for each member can be validated using <a class="el" href="group__etcpal__log.html#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028" title="Determine whether the given EtcPalLogTimestamp is valid. ">etcpal_validate_log_timestamp()</a>. </p>
 
 </div>
 </div>
@@ -1521,6 +1525,34 @@ Log Priority</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>true (params are valid) or false (params are invalid). </dd></dl>
+
+</div>
+</div>
+<a id="ga8bdf4e7812a1fe1d3b2c5da3ffc4f028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8bdf4e7812a1fe1d3b2c5da3ffc4f028">&#9670;&nbsp;</a></span>etcpal_validate_log_timestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool etcpal_validate_log_timestamp </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a> *&#160;</td>
+          <td class="paramname"><em>timestamp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Determine whether the given <a class="el" href="struct_etc_pal_log_timestamp.html" title="A set of parameters which represent the current local time with millisecond resolution. ">EtcPalLogTimestamp</a> is valid. </p>
+<p>Enforces the range rules defined in the structure documentation.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timestamp</td><td>Timestamp to validate. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the timestamp represents a valid time. </dd></dl>
 
 </div>
 </div>

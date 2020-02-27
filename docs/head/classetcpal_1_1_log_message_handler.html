@@ -137,15 +137,42 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_log_message_handler.ht
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9639d904b20db4a1e7a85e8d7901703f"><td class="memItemLeft" align="right" valign="top"><a id="a9639d904b20db4a1e7a85e8d7901703f"></a>
-virtual <a class="el" href="struct_etc_pal_log_timestamp.html">EtcPalLogTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_log_message_handler.html#a9639d904b20db4a1e7a85e8d7901703f">GetLogTimestamp</a> ()=0</td></tr>
-<tr class="memdesc:a9639d904b20db4a1e7a85e8d7901703f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return an <a class="el" href="struct_etc_pal_log_timestamp.html" title="A set of parameters which represent the current local time with millisecond resolution. ">EtcPalLogTimestamp</a> representing the current local time. <br /></td></tr>
-<tr class="separator:a9639d904b20db4a1e7a85e8d7901703f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecfa86ca440c2005c89f7181678eac94"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classetcpal_1_1_log_timestamp.html">LogTimestamp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_log_message_handler.html#aecfa86ca440c2005c89f7181678eac94">GetLogTimestamp</a> ()</td></tr>
+<tr class="memdesc:aecfa86ca440c2005c89f7181678eac94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="classetcpal_1_1_log_timestamp.html" title="An object representing the current local time with millisecond resolution for logging purposes...">LogTimestamp</a> representing the current local time.  <a href="#aecfa86ca440c2005c89f7181678eac94">More...</a><br /></td></tr>
+<tr class="separator:aecfa86ca440c2005c89f7181678eac94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d89d39c4e9149f340fe950da112ec6c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_log_message_handler.html#a9d89d39c4e9149f340fe950da112ec6c">HandleLogMessage</a> (const <a class="el" href="struct_etc_pal_log_strings.html">EtcPalLogStrings</a> &amp;strings)=0</td></tr>
 <tr class="memdesc:a9d89d39c4e9149f340fe950da112ec6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Define this function to handle log messages and determine what to do with them.  <a href="#a9d89d39c4e9149f340fe950da112ec6c">More...</a><br /></td></tr>
 <tr class="separator:a9d89d39c4e9149f340fe950da112ec6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="aecfa86ca440c2005c89f7181678eac94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aecfa86ca440c2005c89f7181678eac94">&#9670;&nbsp;</a></span>GetLogTimestamp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_log_timestamp.html">LogTimestamp</a> GetLogTimestamp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a <a class="el" href="classetcpal_1_1_log_timestamp.html" title="An object representing the current local time with millisecond resolution for logging purposes...">LogTimestamp</a> representing the current local time. </p>
+<p>Optional; the default implementation does not append a timestamp to log messages. </p>
+
+</div>
+</div>
 <a id="a9d89d39c4e9149f340fe950da112ec6c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9d89d39c4e9149f340fe950da112ec6c">&#9670;&nbsp;</a></span>HandleLogMessage()</h2>
 
