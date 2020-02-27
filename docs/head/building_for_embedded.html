@@ -134,8 +134,9 @@ $(document).ready(function(){initNavTree('building_for_embedded.html','');});
 <p>CMake can be configured to invoke your embedded cross-compilation toolchain directly to build EtcPal and other CMake libraries. This is done by providing a <a href="https://cmake.org/cmake/help/latest/manual/cmake-toolchains.7.html">CMake toolchain file</a> when configuring the library with CMake.</p>
 <p>The CMake toolchain file sets up CMake to find the tools you use to build your project and uses those tools to build the CMake libraries as well. There are some example toolchain files for various toolchains in the <code>cmake/cross-toolchains</code> directory. If your build tools use an Eclipse-based IDE with an arm-gcc toolchain (a common setup), the file <code>mcuxpresso-k65-freertos-lwip.cmake</code> serves as a good example.</p>
 <p>When using CMake to build EtcPal, some target platforms require special targets or configuration to allow EtcPal to find headers from external libraries. Special requirements for specific platforms are found on the pages below:</p><ul>
-<li><a class="el" href="targeting_lwip.html">Targeting lwIP</a></li>
 <li><a class="el" href="targeting_freertos.html">Targeting FreeRTOS</a></li>
+<li><a class="el" href="targeting_lwip.html">Targeting lwIP</a></li>
+<li><a class="el" href="targeting_mqx.html">Targeting MQX</a></li>
 </ul>
 <p>The method for including EtcPal via CMake is different depending on if your project already uses CMake or not.</p>
 <h3>If your project is a CMake project</h3>

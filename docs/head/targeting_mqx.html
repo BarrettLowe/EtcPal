@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=9" />
   <meta name="generator" content="Doxygen 1.8.13" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>EtcPal: Targeting FreeRTOS</title>
+  <title>EtcPal: Targeting MQX</title>
   <link href="tabs.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="jquery.js"></script>
   <script type="text/javascript" src="dynsections.js"></script>
@@ -107,7 +107,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(document).ready(function(){initNavTree('targeting_freertos.html','');});
+$(document).ready(function(){initNavTree('targeting_mqx.html','');});
 </script>
 <div id="doc-content">
 <!-- window showing the filter options -->
@@ -126,12 +126,12 @@ $(document).ready(function(){initNavTree('targeting_freertos.html','');});
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Targeting FreeRTOS </div>  </div>
+<div class="title">Targeting MQX </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>FreeRTOS is a real-time OS microkernel used as an OS target by EtcPal. To use EtcPal with FreeRTOS, you must set the <code>ETCPAL_OS_TARGET</code> variable to <code>freertos</code>.</p>
-<div class="fragment"><div class="line">set(ETCPAL_OS_TARGET freertos CACHE STRING &quot;The OS target for EtcPal&quot;)</div></div><!-- fragment --><p>Additionally, you must provide a target called FreeRTOS to help EtcPal find the FreeRTOS headers. If you are not building FreeRTOS from CMake (e.g. if your project is not a CMake project), this can simply be an <a href="https://cmake.org/cmake/help/latest/command/add_library.html#interface-libraries">interface library</a>:</p>
-<div class="fragment"><div class="line">add_library(FreeRTOS INTERFACE)</div><div class="line">target_include_directories(FreeRTOS INTERFACE [freertos/include/paths...])</div></div><!-- fragment --><p>If you are building FreeRTOS with CMake, make sure your FreeRTOs library target is called <code>FreeRTOS</code> exactly and has its include paths set using <code>PUBLIC</code> or <code>INTERFACE</code>. </p>
+<div class="textblock"><p>MQX is a flexible and configurable RTOS which includes a built-in network stack called RTCS. To use EtcPal with MQX, set both the <code>ETCPAL_OS_TARGET</code> and <code>ETCPAL_NET_TARGET</code> variables to <code>mqx</code>.</p>
+<div class="fragment"><div class="line">set(ETCPAL_OS_TARGET mqx CACHE STRING &quot;The OS target for EtcPal&quot;)</div><div class="line">set(ETCPAL_NET_TARGET mqx CACHE STRING &quot;The network target for EtcPal&quot;)</div></div><!-- fragment --><p>Additionally, you must provide a target called MQX to help EtcPal find the MQX headers. In most cases, an <a href="https://cmake.org/cmake/help/latest/command/add_library.html#interface-libraries">interface library</a> is sufficient:</p>
+<div class="fragment"><div class="line">add_library(MQX INTERFACE)</div><div class="line">target_include_directories(MQX INTERFACE [mqx/include/paths...])</div></div><!-- fragment --><p>The target must be called <code>MQX</code> exactly. The MQX include paths must include the BSP, PSP and RTCS headers. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
