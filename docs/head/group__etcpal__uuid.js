@@ -9,7 +9,7 @@ var group__etcpal__uuid =
     [ "ETCPAL_UUID_IS_NULL", "group__etcpal__uuid.html#ga3f7c7f1f596e00536adbefb78899ebd1", null ],
     [ "ETCPAL_UUID_STRING_BYTES", "group__etcpal__uuid.html#gabab14207e273082491f7be2a21275092", null ],
     [ "EtcPalUuid", "group__etcpal__uuid.html#ga472e79f55f51afda28c54c6967018922", null ],
-    [ "etcpal_generate_device_uuid", "group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602", null ],
+    [ "etcpal_generate_device_uuid", "group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda", null ],
     [ "etcpal_generate_os_preferred_uuid", "group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10", null ],
     [ "etcpal_generate_v1_uuid", "group__etcpal__uuid.html#ga7a2029b259cc4270fb721b976f21972a", null ],
     [ "etcpal_generate_v3_uuid", "group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083", null ],

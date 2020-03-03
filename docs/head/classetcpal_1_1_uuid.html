@@ -230,9 +230,12 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1ccf480526751a937afb32a2db7346a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#ae1ccf480526751a937afb32a2db7346a">OsPreferred</a> () noexcept</td></tr>
 <tr class="memdesc:ae1ccf480526751a937afb32a2db7346a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a UUID of the version preferred by the underlying OS.  <a href="#ae1ccf480526751a937afb32a2db7346a">More...</a><br /></td></tr>
 <tr class="separator:ae1ccf480526751a937afb32a2db7346a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1044c778e7f7ece83888dcf35c7613c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a1044c778e7f7ece83888dcf35c7613c3">Device</a> (const std::string &amp;device_str, const <a class="el" href="classetcpal_1_1_mac_addr.html">MacAddr</a> &amp;mac_addr, uint32_t uuid_num) noexcept</td></tr>
-<tr class="memdesc:a1044c778e7f7ece83888dcf35c7613c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Device UUID.  <a href="#a1044c778e7f7ece83888dcf35c7613c3">More...</a><br /></td></tr>
-<tr class="separator:a1044c778e7f7ece83888dcf35c7613c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a2f58b68d4d0e7d2ae6a63213a388a"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a30a2f58b68d4d0e7d2ae6a63213a388a">Device</a> (const std::string &amp;device_str, const uint8_t *mac_addr, uint32_t uuid_num) noexcept</td></tr>
+<tr class="memdesc:a30a2f58b68d4d0e7d2ae6a63213a388a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Device UUID.  <a href="#a30a2f58b68d4d0e7d2ae6a63213a388a">More...</a><br /></td></tr>
+<tr class="separator:a30a2f58b68d4d0e7d2ae6a63213a388a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8ba319ae1c2e12b6ed12742562d038"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classetcpal_1_1_uuid.html">Uuid</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_uuid.html#a2d8ba319ae1c2e12b6ed12742562d038">Device</a> (const std::string &amp;device_str, const std::array&lt; uint8_t, 6 &gt; &amp;mac_addr, uint32_t uuid_num) noexcept</td></tr>
+<tr class="memdesc:a2d8ba319ae1c2e12b6ed12742562d038"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate and return a Device UUID.  <a href="#a2d8ba319ae1c2e12b6ed12742562d038">More...</a><br /></td></tr>
+<tr class="separator:a2d8ba319ae1c2e12b6ed12742562d038"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa2f1033714bf728e62eafbc880d502b6"></a>
@@ -416,8 +419,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a1044c778e7f7ece83888dcf35c7613c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1044c778e7f7ece83888dcf35c7613c3">&#9670;&nbsp;</a></span>Device()</h2>
+<a id="a30a2f58b68d4d0e7d2ae6a63213a388a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a2f58b68d4d0e7d2ae6a63213a388a">&#9670;&nbsp;</a></span>Device() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -434,7 +437,7 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classetcpal_1_1_mac_addr.html">MacAddr</a> &amp;&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>mac_addr</em>, </td>
         </tr>
         <tr>
@@ -457,7 +460,52 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate and return a Device UUID. </p>
-<p>See <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> for more information. </p>
+<p>See <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> for more information. </p>
+
+</div>
+</div>
+<a id="a2d8ba319ae1c2e12b6ed12742562d038"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8ba319ae1c2e12b6ed12742562d038">&#9670;&nbsp;</a></span>Device() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_uuid.html">Uuid</a> Device </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>device_str</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; uint8_t, 6 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mac_addr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>uuid_num</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Generate and return a Device UUID. </p>
+<p>See <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> for more information. </p>
 
 </div>
 </div>

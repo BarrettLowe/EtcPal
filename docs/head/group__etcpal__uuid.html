@@ -138,7 +138,7 @@ $(document).ready(function(){initNavTree('group__etcpal__uuid.html','');});
 <a name="details" id="details"></a><h2 class="groupheader">Overview</h2>
 <p>Type and helper functions for a Universally Unique Identifier (UUID). </p>
 <p>UUIDs (per RFC 4122) are used in several libraries supported by EtcPal. This module contains a type for a UUID and functions to generate, inspect and manipulate them.</p>
-<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/uuid.h&quot;</span></div></div><!-- fragment --><p>The basic UUID type is quite simple - an array of 16 data bytes. Functions are provided to generate every current UUID type except Version 2, which is very rarely used. Additionally, <a class="el" href="group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10" title="Generate the preferred UUID version of the underlying OS. ">etcpal_generate_os_preferred_uuid()</a> generates the UUID type preferred by the underlying OS, and <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> generates a special type of V5 UUID which can be used to identify embedded devices.</p>
+<div class="fragment"><div class="line"><span class="preprocessor">#include &quot;etcpal/uuid.h&quot;</span></div></div><!-- fragment --><p>The basic UUID type is quite simple - an array of 16 data bytes. Functions are provided to generate every current UUID type except Version 2, which is very rarely used. Additionally, <a class="el" href="group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10" title="Generate the preferred UUID version of the underlying OS. ">etcpal_generate_os_preferred_uuid()</a> generates the UUID type preferred by the underlying OS, and <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> generates a special type of V5 UUID which can be used to identify embedded devices.</p>
 <p>The basic form of UUID generation is: </p><div class="fragment"><div class="line"><a class="code" href="struct_etc_pal_uuid.html">EtcPalUuid</a> uuid;</div><div class="line"><span class="keywordflow">if</span> (<a class="code" href="group__etcpal__uuid.html#ga7a2029b259cc4270fb721b976f21972a">etcpal_generate_v1_uuid</a>(&amp;uuid) == <a class="code" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d">kEtcPalErrOk</a>)</div><div class="line">{</div><div class="line">  <span class="comment">// uuid now contains a valid Version 1 UUID.</span></div><div class="line">}</div></div><!-- fragment --><p><b>Note:</b> Not all UUID types are available on all systems. V3, V5 and Device UUIDs are guaranteed to be available in all ports of EtcPal, but V1, V4 and os_preferred UUIDs are generally not available on embedded systems:</p>
 <table class="doxtable">
 <tr>
@@ -176,7 +176,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:gabab14207e273082491f7be2a21275092"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum number of bytes required to hold an ASCII string representation of a UUID.  <a href="#gabab14207e273082491f7be2a21275092">More...</a><br /></td></tr>
 <tr class="separator:gabab14207e273082491f7be2a21275092"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga191ac9542f1d4eaa95488b3740bb57bf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html#ga191ac9542f1d4eaa95488b3740bb57bf">ETCPAL_UUID_DEV_STR_MAX_LEN</a>&#160;&#160;&#160;32</td></tr>
-<tr class="memdesc:ga191ac9542f1d4eaa95488b3740bb57bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a device string used as an input to <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>.  <a href="#ga191ac9542f1d4eaa95488b3740bb57bf">More...</a><br /></td></tr>
+<tr class="memdesc:ga191ac9542f1d4eaa95488b3740bb57bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a device string used as an input to <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>.  <a href="#ga191ac9542f1d4eaa95488b3740bb57bf">More...</a><br /></td></tr>
 <tr class="separator:ga191ac9542f1d4eaa95488b3740bb57bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
@@ -208,9 +208,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gabb977b5a218b4b62224c016bf3932f10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html#gabb977b5a218b4b62224c016bf3932f10">etcpal_generate_os_preferred_uuid</a> (<a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> *uuid)</td></tr>
 <tr class="memdesc:gabb977b5a218b4b62224c016bf3932f10"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate the preferred UUID version of the underlying OS.  <a href="#gabb977b5a218b4b62224c016bf3932f10">More...</a><br /></td></tr>
 <tr class="separator:gabb977b5a218b4b62224c016bf3932f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga635340c4a730db10aa623f49d452c602"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602">etcpal_generate_device_uuid</a> (const char *dev_str, const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *mac_addr, uint32_t uuid_num, <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> *uuid)</td></tr>
-<tr class="memdesc:ga635340c4a730db10aa623f49d452c602"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a UUID from a combination of a custom string and MAC address.  <a href="#ga635340c4a730db10aa623f49d452c602">More...</a><br /></td></tr>
-<tr class="separator:ga635340c4a730db10aa623f49d452c602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1a5104de6a3c54113edf234e0840dcda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda">etcpal_generate_device_uuid</a> (const char *dev_str, const uint8_t *mac_addr, uint32_t uuid_num, <a class="el" href="struct_etc_pal_uuid.html">EtcPalUuid</a> *uuid)</td></tr>
+<tr class="memdesc:ga1a5104de6a3c54113edf234e0840dcda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate a UUID from a combination of a custom string and MAC address.  <a href="#ga1a5104de6a3c54113edf234e0840dcda">More...</a><br /></td></tr>
+<tr class="separator:ga1a5104de6a3c54113edf234e0840dcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -289,7 +289,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>The maximum length of a device string used as an input to <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>. </p>
+<p>The maximum length of a device string used as an input to <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>. </p>
 
 </div>
 </div>
@@ -355,8 +355,8 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga635340c4a730db10aa623f49d452c602"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga635340c4a730db10aa623f49d452c602">&#9670;&nbsp;</a></span>etcpal_generate_device_uuid()</h2>
+<a id="ga1a5104de6a3c54113edf234e0840dcda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1a5104de6a3c54113edf234e0840dcda">&#9670;&nbsp;</a></span>etcpal_generate_device_uuid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -370,7 +370,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *&#160;</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
           <td class="paramname"><em>mac_addr</em>, </td>
         </tr>
         <tr>
@@ -399,7 +399,7 @@ Variables</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">dev_str</td><td>The device-specific string, such as the model name. This should never change on the device. It also allows different programs running on the device to generate different UUID sets. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">mac_addr</td><td>The device's MAC address. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mac_addr</td><td>The device's MAC address; must be an array of 6 bytes. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">uuid_num</td><td>Component number. By changing this number, multiple unique UUIDs can be generated for the same device string-MAC address combination. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">uuid</td><td>UUID to fill in with the generation result. </td></tr>
   </table>
@@ -463,7 +463,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Generate a Version 1 UUID. </p>
-<p>This function uses the underlying OS API to create a UUID that is based on a combination of a local MAC address and the current system time. This method guarantees UUID uniqueness across space and time. Some OSes have deprecated this method because it creates a UUID that is traceable to the MAC address of the machine on which it was generated. If this type of security is a concern, <a class="el" href="group__etcpal__uuid.html#ga1cabb8b6f72752b1a2ae72f776301242" title="Generate a Version 4 UUID. ">etcpal_generate_v4_uuid()</a> should be preferred. If you want to generate UUIDs that are deterministic for a combination of inputs you provide, see <a class="el" href="group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083" title="Generate a Version 3 UUID. ">etcpal_generate_v3_uuid()</a>, <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> or <a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>.</p>
+<p>This function uses the underlying OS API to create a UUID that is based on a combination of a local MAC address and the current system time. This method guarantees UUID uniqueness across space and time. Some OSes have deprecated this method because it creates a UUID that is traceable to the MAC address of the machine on which it was generated. If this type of security is a concern, <a class="el" href="group__etcpal__uuid.html#ga1cabb8b6f72752b1a2ae72f776301242" title="Generate a Version 4 UUID. ">etcpal_generate_v4_uuid()</a> should be preferred. If you want to generate UUIDs that are deterministic for a combination of inputs you provide, see <a class="el" href="group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083" title="Generate a Version 3 UUID. ">etcpal_generate_v3_uuid()</a>, <a class="el" href="group__etcpal__uuid.html#gac74a0ebbade4f8c2b90a778529176c9b" title="Generate a Version 5 UUID. ">etcpal_generate_v5_uuid()</a> or <a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a>.</p>
 <p>This function may return <a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afad0b98165ec7fb9169790675a67850d52" title="A function or specific use of a function is not implemented yet. ">kEtcPalErrNotImpl</a> on platforms that do not have this functionality available (this is mostly a concern for RTOS-level embedded platforms).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -613,7 +613,7 @@ Variables</h2></td></tr>
 <p>Generate a Version 5 UUID. </p>
 <p>Version 5 UUIDs are "name-based"; they deterministically convert a combination of a "namespace" and "name" to a UUID. A namespace is another UUID of any type which represents a space within which UUIDs generated from different names are unique. A name is opaque data of any length. The same combination of namespace and name will always produce the same Version 5 UUID.</p>
 <p>Version 5 UUIDs use the SHA-1 hashing algorithm to convert their inputs into a UUID.</p>
-<p><a class="el" href="group__etcpal__uuid.html#ga635340c4a730db10aa623f49d452c602" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> provides a specialized form of this function which embedded devices can use to create UUIDs representing themselves.</p>
+<p><a class="el" href="group__etcpal__uuid.html#ga1a5104de6a3c54113edf234e0840dcda" title="Generate a UUID from a combination of a custom string and MAC address. ">etcpal_generate_device_uuid()</a> provides a specialized form of this function which embedded devices can use to create UUIDs representing themselves.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ns</td><td>UUID to use as a namespace. </td></tr>
