@@ -1,5 +1,11 @@
 var NAVTREEINDEX3 =
 {
+"group__etcpal__socket.html#ga837082b33f4ca260e78373ee40bd25ec":[1,0,9,20],
+"group__etcpal__socket.html#ga83e2e233e87a88a7edf037928d203550":[1,0,9,41],
+"group__etcpal__socket.html#ga86f8e53de9955be4f0ea33f632cc4b2a":[1,0,9,48],
+"group__etcpal__socket.html#ga89be7d2b1e4193d678e36dae7a49b4db":[1,0,9,47],
+"group__etcpal__socket.html#ga8cc1d9b7b5e8e2b88a337fc727b44535":[1,0,9,51],
+"group__etcpal__socket.html#ga906fd2bcb17663f4de3fefd0b335656e":[1,0,9,45],
 "group__etcpal__socket.html#ga972636e83a7c9cbc9bb0e5a950c9c241":[1,0,9,7],
 "group__etcpal__socket.html#ga9fb28d8ce3fc93272b41ebe7b5d87989":[1,0,9,32],
 "group__etcpal__socket.html#gaa8067f3bea534148c077f2dd720a6d51":[1,0,9,10],
@@ -62,8 +68,8 @@ var NAVTREEINDEX3 =
 "group__etcpal__uuid.html#gacede094cfd672660efa757fa2625e083":[1,0,12,10],
 "group__etcpal__uuid.html#gadfd6e6a51b681c03b6422d1454ddc954":[1,0,12,1],
 "group__etcpal__uuid.html#gae518c32bbc7d2266568ee9a703bb4f5e":[1,0,12,15],
-"index.html":[0],
 "index.html":[],
+"index.html":[0],
 "inet_8h_source.html":[2,0,0,0,6],
 "interface_indexes.html":[3,0],
 "lock_8h_source.html":[2,0,0,0,7],
