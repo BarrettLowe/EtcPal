@@ -9,10 +9,10 @@ var searchData=
   ['toarray',['ToArray',['../classetcpal_1_1_mac_addr.html#a9ef1e40476be6ec748b2cb8d1e7235ce',1,'etcpal::MacAddr']]],
   ['tocstring',['ToCString',['../classetcpal_1_1_error.html#aa4d860f883bc4c6bc997eb61f218a27e',1,'etcpal::Error']]],
   ['tostring',['ToString',['../classetcpal_1_1_error.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Error::ToString()'],['../classetcpal_1_1_ip_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::IpAddr::ToString()'],['../classetcpal_1_1_sock_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::SockAddr::ToString()'],['../classetcpal_1_1_mac_addr.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::MacAddr::ToString()'],['../classetcpal_1_1_uuid.html#a19c380b03cea21d7ac7325136a131ff0',1,'etcpal::Uuid::ToString()']]],
-  ['tov6array',['ToV6Array',['../classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59',1,'etcpal::IpAddr']]],
+  ['tov6array',['ToV6Array',['../classetcpal_1_1_ip_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59',1,'etcpal::IpAddr::ToV6Array()'],['../classetcpal_1_1_sock_addr.html#a9d6d96f2d5b5fb9fd6a16bcceb8dea59',1,'etcpal::SockAddr::ToV6Array()']]],
   ['trylock',['TryLock',['../classetcpal_1_1_mutex.html#a8ad93c25cdc665654314bba0797d37ef',1,'etcpal::Mutex']]],
   ['tryreadlock',['TryReadLock',['../classetcpal_1_1_rw_lock.html#ac46abb95ae4ab3f37da632ea31f01535',1,'etcpal::RwLock']]],
   ['trywait',['TryWait',['../classetcpal_1_1_signal.html#aa5139da6cf3fc487370524d466cdadd7',1,'etcpal::Signal::TryWait()'],['../classetcpal_1_1_semaphore.html#aa5139da6cf3fc487370524d466cdadd7',1,'etcpal::Semaphore::TryWait()']]],
   ['trywritelock',['TryWriteLock',['../classetcpal_1_1_rw_lock.html#adfd977b8c35b753a7341a6e64864fa6f',1,'etcpal::RwLock']]],
-  ['type',['type',['../classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::IpAddr']]]
+  ['type',['type',['../classetcpal_1_1_ip_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::IpAddr::type()'],['../classetcpal_1_1_sock_addr.html#a6408a893e29a2fcb75d7c6c842db5902',1,'etcpal::SockAddr::type()']]]
 ];

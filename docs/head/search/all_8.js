@@ -16,13 +16,13 @@ var searchData=
   ['ipaddrtype',['IpAddrType',['../group__etcpal__cpp__inet.html#gaf149bcc08653396944a3699b8c5a57c5',1,'etcpal']]],
   ['is_5fdefault',['is_default',['../struct_etc_pal_netint_info.html#a0c9f19a7b68ad0dad836ee153d3a230a',1,'EtcPalNetintInfo']]],
   ['isexpired',['IsExpired',['../classetcpal_1_1_timer.html#a3a79feefa8df553fd15b9997d0c3a719',1,'etcpal::Timer']]],
-  ['islinklocal',['IsLinkLocal',['../classetcpal_1_1_ip_addr.html#a211a72caa8aba79efd967fa3114e8c95',1,'etcpal::IpAddr']]],
-  ['isloopback',['IsLoopback',['../classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b',1,'etcpal::IpAddr']]],
-  ['ismulticast',['IsMulticast',['../classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a',1,'etcpal::IpAddr']]],
+  ['islinklocal',['IsLinkLocal',['../classetcpal_1_1_ip_addr.html#a211a72caa8aba79efd967fa3114e8c95',1,'etcpal::IpAddr::IsLinkLocal()'],['../classetcpal_1_1_sock_addr.html#a211a72caa8aba79efd967fa3114e8c95',1,'etcpal::SockAddr::IsLinkLocal()']]],
+  ['isloopback',['IsLoopback',['../classetcpal_1_1_ip_addr.html#a4833f2d2e3f0434978f59f5020a7f84b',1,'etcpal::IpAddr::IsLoopback()'],['../classetcpal_1_1_sock_addr.html#a4833f2d2e3f0434978f59f5020a7f84b',1,'etcpal::SockAddr::IsLoopback()']]],
+  ['ismulticast',['IsMulticast',['../classetcpal_1_1_ip_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a',1,'etcpal::IpAddr::IsMulticast()'],['../classetcpal_1_1_sock_addr.html#a2f371a6bc900dd3ddcf0f7f16c5db00a',1,'etcpal::SockAddr::IsMulticast()']]],
   ['isnull',['IsNull',['../classetcpal_1_1_mac_addr.html#a27909eb1d61b8b261d259be7c70c58dd',1,'etcpal::MacAddr::IsNull()'],['../classetcpal_1_1_uuid.html#a27909eb1d61b8b261d259be7c70c58dd',1,'etcpal::Uuid::IsNull()']]],
   ['isok',['IsOk',['../classetcpal_1_1_error.html#a030d244ccd9a40a9f9ac813ea912a639',1,'etcpal::Error']]],
-  ['isv4',['IsV4',['../classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr']]],
-  ['isv6',['IsV6',['../classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr']]],
-  ['isvalid',['IsValid',['../classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['../classetcpal_1_1_log_timestamp.html#a472f705194218179e9cf26ffb288da6c',1,'etcpal::LogTimestamp::IsValid()']]],
-  ['iswildcard',['IsWildcard',['../classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr']]]
+  ['isv4',['IsV4',['../classetcpal_1_1_ip_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::IpAddr::IsV4()'],['../classetcpal_1_1_sock_addr.html#a3c808bdaebc8f534c871ac28bf379a7a',1,'etcpal::SockAddr::IsV4()']]],
+  ['isv6',['IsV6',['../classetcpal_1_1_ip_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::IpAddr::IsV6()'],['../classetcpal_1_1_sock_addr.html#a08a35ea1e7f3f0a6047fbf28810d53e9',1,'etcpal::SockAddr::IsV6()']]],
+  ['isvalid',['IsValid',['../classetcpal_1_1_ip_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::IpAddr::IsValid()'],['../classetcpal_1_1_sock_addr.html#a6d02bb05c3ab899ab6752bbab4e3dbcf',1,'etcpal::SockAddr::IsValid()'],['../classetcpal_1_1_log_timestamp.html#a472f705194218179e9cf26ffb288da6c',1,'etcpal::LogTimestamp::IsValid()']]],
+  ['iswildcard',['IsWildcard',['../classetcpal_1_1_ip_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::IpAddr::IsWildcard()'],['../classetcpal_1_1_sock_addr.html#ac384adc1cbf470fe6672659bdef8358c',1,'etcpal::SockAddr::IsWildcard()']]]
 ];
