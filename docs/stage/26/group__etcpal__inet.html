@@ -783,7 +783,7 @@ EtcPalIpAddr macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">{                                      \</div><div class="line">    ETCPAL_IPV6_INIT_VALUES(__VA_ARGS__) \</div><div class="line">  }</div></div><!-- fragment -->
 <p>An initializer for an <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a> representing an IPv6 address. </p>
-<p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// 2001:db8::1234:5678</span></div><div class="line"><a class="code" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> v6 = <a class="code" href="group__etcpal__inet.html#gab26d4b7b0dd23818f02a54be33fa2bd2">ETCPAL_IPV6_INIT_VALUES</a>(0x20, 0x01, 0x0d, 0xb8, 0x00, 0x00, 0x00, 0x00,</div><div class="line">                                          0x00, 0x00, 0x00, 0x00, 0x12, 0x34, 0x56, 0x78);</div></div><!-- fragment --><p>Any number of initializer values can be used (the remaining IPv6 bytes will be initialized to 0).</p>
+<p>Usage: </p><div class="fragment"><div class="line"><span class="comment">// 2001:db8::1234:5678</span></div><div class="line"><a class="code" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> v6 = <a class="code" href="group__etcpal__inet.html#ga66c5a1296b2777b56a9caa013a6a67aa">ETCPAL_IPV6_INIT</a>(0x20, 0x01, 0x0d, 0xb8, 0x00, 0x00, 0x00, 0x00,</div><div class="line">                                   0x00, 0x00, 0x00, 0x00, 0x12, 0x34, 0x56, 0x78);</div></div><!-- fragment --><p>Any number of initializer values can be used (the remaining IPv6 bytes will be initialized to 0).</p>
 <p>Note: Using this macro requires support for variadic macros and C99 designated initializers in your compiler. </p>
 
 </div>
