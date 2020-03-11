@@ -1,7 +1,7 @@
 var group__etcpal__cpp__timer =
 [
     [ "TimePoint", "classetcpal_1_1_time_point.html", [
-      [ "TimePoint", "classetcpal_1_1_time_point.html#a6cfb1d6e8f8f7adda9f7e60d75812a6f", null ],
+      [ "TimePoint", "classetcpal_1_1_time_point.html#a93ecbb20d00c0710c4f157e7742284ec", null ],
       [ "TimePoint", "classetcpal_1_1_time_point.html#a9e33e8be45ccfa82649b1bf83c58dbf1", null ],
       [ "operator+=", "classetcpal_1_1_time_point.html#a6a14c3d43be754d39a7d9c2d99f1474b", null ],
       [ "operator-=", "classetcpal_1_1_time_point.html#a549bf3fd540fc1941bc8a1444f2aa674", null ],

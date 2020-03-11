@@ -141,10 +141,9 @@ $(document).ready(function(){initNavTree('classetcpal_1_1_time_point.html','');}
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a6cfb1d6e8f8f7adda9f7e60d75812a6f"><td class="memItemLeft" align="right" valign="top"><a id="a6cfb1d6e8f8f7adda9f7e60d75812a6f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_time_point.html#a6cfb1d6e8f8f7adda9f7e60d75812a6f">TimePoint</a> ()=delete</td></tr>
-<tr class="memdesc:a6cfb1d6e8f8f7adda9f7e60d75812a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">No default <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> value is meaningful; therefore this class cannot be default-constructed. <br /></td></tr>
-<tr class="separator:a6cfb1d6e8f8f7adda9f7e60d75812a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ecbb20d00c0710c4f157e7742284ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_time_point.html#a93ecbb20d00c0710c4f157e7742284ec">TimePoint</a> ()=default</td></tr>
+<tr class="memdesc:a93ecbb20d00c0710c4f157e7742284ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> with a value of 0 by default.  <a href="#a93ecbb20d00c0710c4f157e7742284ec">More...</a><br /></td></tr>
+<tr class="separator:a93ecbb20d00c0710c4f157e7742284ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e33e8be45ccfa82649b1bf83c58dbf1"><td class="memItemLeft" align="right" valign="top"><a id="a9e33e8be45ccfa82649b1bf83c58dbf1"></a>
 constexpr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classetcpal_1_1_time_point.html#a9e33e8be45ccfa82649b1bf83c58dbf1">TimePoint</a> (uint32_t ms)</td></tr>
 <tr class="memdesc:a9e33e8be45ccfa82649b1bf83c58dbf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> from a number of milliseconds elapsed since a point in the past. <br /></td></tr>
@@ -169,6 +168,35 @@ static <a class="el" href="classetcpal_1_1_time_point.html">TimePoint</a>&#160;<
 <tr class="memdesc:ac59e08d917c73620c51f17923428da50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> representing the current time. <br /></td></tr>
 <tr class="separator:ac59e08d917c73620c51f17923428da50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a93ecbb20d00c0710c4f157e7742284ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93ecbb20d00c0710c4f157e7742284ec">&#9670;&nbsp;</a></span>TimePoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classetcpal_1_1_time_point.html">TimePoint</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct a <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> with a value of 0 by default. </p>
+<p>Be careful when default-constructing TimePoints; since TimePoints store the number of milliseconds elapsed since an arbitrary point in the past, a default-constructed <a class="el" href="classetcpal_1_1_time_point.html" title="Represents a point in time. ">TimePoint</a> will compare equal to <a class="el" href="classetcpal_1_1_time_point.html#ac59e08d917c73620c51f17923428da50" title="Get a TimePoint representing the current time. ">etcpal::TimePoint::Now()</a> every 49.7 days. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/etcpal/cpp/<a class="el" href="cpp_2timer_8h_source.html">timer.h</a></li>
 </ul>
