@@ -175,12 +175,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga7f8d8782f4dea64648bb74e20db6d3c3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga7f8d8782f4dea64648bb74e20db6d3c3">ETCPAL_NETINTINFO_FRIENDLY_NAME_LEN</a>&#160;&#160;&#160;64</td></tr>
 <tr class="memdesc:ga7f8d8782f4dea64648bb74e20db6d3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The maximum length of a user-friendly network interface name.  <a href="#ga7f8d8782f4dea64648bb74e20db6d3c3">More...</a><br /></td></tr>
 <tr class="separator:ga7f8d8782f4dea64648bb74e20db6d3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab44293e291772ce05ffa42c1ad51e4e0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gab44293e291772ce05ffa42c1ad51e4e0">ETCPAL_INET_ADDRSTRLEN</a>&#160;&#160;&#160;16</td></tr>
-<tr class="memdesc:gab44293e291772ce05ffa42c1ad51e4e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IPv4 address.  <a href="#gab44293e291772ce05ffa42c1ad51e4e0">More...</a><br /></td></tr>
-<tr class="separator:gab44293e291772ce05ffa42c1ad51e4e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga71fa8216f8c0c7472c8786e793a7b280"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga71fa8216f8c0c7472c8786e793a7b280">ETCPAL_INET6_ADDRSTRLEN</a>&#160;&#160;&#160;46</td></tr>
-<tr class="memdesc:ga71fa8216f8c0c7472c8786e793a7b280"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IPv6 address.  <a href="#ga71fa8216f8c0c7472c8786e793a7b280">More...</a><br /></td></tr>
-<tr class="separator:ga71fa8216f8c0c7472c8786e793a7b280"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacd7ec0d81e171166483c7629669bf05d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d">ETCPAL_IP_STRING_BYTES</a>&#160;&#160;&#160;46</td></tr>
+<tr class="memdesc:gacd7ec0d81e171166483c7629669bf05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of an IP address.  <a href="#gacd7ec0d81e171166483c7629669bf05d">More...</a><br /></td></tr>
+<tr class="separator:gacd7ec0d81e171166483c7629669bf05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga73f73b31cc309024d3284ebcf4b66b45"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45">ETCPAL_MAC_STRING_BYTES</a>&#160;&#160;&#160;18</td></tr>
 <tr class="memdesc:ga73f73b31cc309024d3284ebcf4b66b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maximum length of the string representation of a MAC address.  <a href="#ga73f73b31cc309024d3284ebcf4b66b45">More...</a><br /></td></tr>
 <tr class="separator:ga73f73b31cc309024d3284ebcf4b66b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -253,15 +250,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gaa8d939a802f0ab99ae1a6e8f9253a83d"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaa8d939a802f0ab99ae1a6e8f9253a83d">sockaddr_etcpal_to_os</a> (const <a class="el" href="struct_etc_pal_sock_addr.html">EtcPalSockAddr</a> *sa, etcpal_os_sockaddr_t *os_sa)</td></tr>
 <tr class="memdesc:gaa8d939a802f0ab99ae1a6e8f9253a83d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert an <a class="el" href="struct_etc_pal_sock_addr.html" title="An IP address with associated interface and port. ">EtcPalSockAddr</a> to a platform-specific socket address.  <a href="#gaa8d939a802f0ab99ae1a6e8f9253a83d">More...</a><br /></td></tr>
 <tr class="separator:gaa8d939a802f0ab99ae1a6e8f9253a83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga8f8b3a64cec296d5d896e10bf7a60ac3">etcpal_inet_ntop</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *src, char *dest, size_t size)</td></tr>
-<tr class="memdesc:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from binary to text form.  <a href="#ga8f8b3a64cec296d5d896e10bf7a60ac3">More...</a><br /></td></tr>
-<tr class="separator:ga8f8b3a64cec296d5d896e10bf7a60ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gacc09a02c09d9798f46d1fb6e9e84b900">etcpal_inet_pton</a> (<a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> type, const char *src, <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *dest)</td></tr>
-<tr class="memdesc:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from text to binary form.  <a href="#gacc09a02c09d9798f46d1fb6e9e84b900">More...</a><br /></td></tr>
-<tr class="separator:gacc09a02c09d9798f46d1fb6e9e84b900"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4d0f54c9182caac7f69ec49116d42448"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga4d0f54c9182caac7f69ec49116d42448">etcpal_mac_to_string</a> (const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *src, char *dest, size_t size)</td></tr>
-<tr class="memdesc:ga4d0f54c9182caac7f69ec49116d42448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of a MAC address.  <a href="#ga4d0f54c9182caac7f69ec49116d42448">More...</a><br /></td></tr>
-<tr class="separator:ga4d0f54c9182caac7f69ec49116d42448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf98da0ae21f7960b5e046c55b8d79c4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaf98da0ae21f7960b5e046c55b8d79c4a">etcpal_ip_to_string</a> (const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *src, char *dest)</td></tr>
+<tr class="memdesc:gaf98da0ae21f7960b5e046c55b8d79c4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from binary to text form.  <a href="#gaf98da0ae21f7960b5e046c55b8d79c4a">More...</a><br /></td></tr>
+<tr class="separator:gaf98da0ae21f7960b5e046c55b8d79c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga92ba01cb2c81a8a97b9555ecf0ab2fe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">etcpal_string_to_ip</a> (<a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a> type, const char *src, <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *dest)</td></tr>
+<tr class="memdesc:ga92ba01cb2c81a8a97b9555ecf0ab2fe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert IPv4 and IPv6 addresses from text to binary form.  <a href="#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">More...</a><br /></td></tr>
+<tr class="separator:ga92ba01cb2c81a8a97b9555ecf0ab2fe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1e26c55e9ece4a8a17bd9953eca0886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gaf1e26c55e9ece4a8a17bd9953eca0886">etcpal_mac_to_string</a> (const <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *src, char *dest)</td></tr>
+<tr class="memdesc:gaf1e26c55e9ece4a8a17bd9953eca0886"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a string representation of a MAC address.  <a href="#gaf1e26c55e9ece4a8a17bd9953eca0886">More...</a><br /></td></tr>
+<tr class="separator:gaf1e26c55e9ece4a8a17bd9953eca0886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac2175076e5d4834fccf76e17a29bbbfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__inet.html#gac2175076e5d4834fccf76e17a29bbbfe">etcpal_string_to_mac</a> (const char *src, <a class="el" href="struct_etc_pal_mac_addr.html">EtcPalMacAddr</a> *dest)</td></tr>
 <tr class="memdesc:gac2175076e5d4834fccf76e17a29bbbfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a MAC address from a string representation.  <a href="#gac2175076e5d4834fccf76e17a29bbbfe">More...</a><br /></td></tr>
 <tr class="separator:gac2175076e5d4834fccf76e17a29bbbfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,38 +324,6 @@ EtcPalIpAddr macros</h2></td></tr>
 <tr class="separator:gab7df63744affbe2833fcb455e69b6ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ga71fa8216f8c0c7472c8786e793a7b280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga71fa8216f8c0c7472c8786e793a7b280">&#9670;&nbsp;</a></span>ETCPAL_INET6_ADDRSTRLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETCPAL_INET6_ADDRSTRLEN&#160;&#160;&#160;46</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of the string representation of an IPv6 address. </p>
-
-</div>
-</div>
-<a id="gab44293e291772ce05ffa42c1ad51e4e0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab44293e291772ce05ffa42c1ad51e4e0">&#9670;&nbsp;</a></span>ETCPAL_INET_ADDRSTRLEN</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETCPAL_INET_ADDRSTRLEN&#160;&#160;&#160;16</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maximum length of the string representation of an IPv4 address. </p>
-
-</div>
-</div>
 <a id="gad8ef4406c72bd87baad2ce085fb29daf"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gad8ef4406c72bd87baad2ce085fb29daf">&#9670;&nbsp;</a></span>ETCPAL_IP_INVALID_INIT</h2>
 
@@ -620,6 +585,22 @@ EtcPalIpAddr macros</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="gacd7ec0d81e171166483c7629669bf05d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd7ec0d81e171166483c7629669bf05d">&#9670;&nbsp;</a></span>ETCPAL_IP_STRING_BYTES</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_IP_STRING_BYTES&#160;&#160;&#160;46</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Maximum length of the string representation of an IP address. </p>
 
 </div>
 </div>
@@ -1038,108 +1019,6 @@ EtcPalIpAddr macros</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga8f8b3a64cec296d5d896e10bf7a60ac3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8f8b3a64cec296d5d896e10bf7a60ac3">&#9670;&nbsp;</a></span>etcpal_inet_ntop()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_inet_ntop </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert IPv4 and IPv6 addresses from binary to text form. </p>
-<p>Refer to your favorite inet_ntop() man page for more information.</p>
-<p>Differences from POSIX: af parameter is omitted because that information is contained in the <a class="el" href="struct_etc_pal_ip_addr.html" title="An IP address. ">EtcPalIpAddr</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Address to convert to string form. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the string-represented address. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size in bytes of dest buf. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
-
-</div>
-</div>
-<a id="gacc09a02c09d9798f46d1fb6e9e84b900"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gacc09a02c09d9798f46d1fb6e9e84b900">&#9670;&nbsp;</a></span>etcpal_inet_pton()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_inet_pton </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *&#160;</td>
-          <td class="paramname"><em>src</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
-          <td class="paramname"><em>dest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Convert IPv4 and IPv6 addresses from text to binary form. </p>
-<p>Refer to your favorite inet_pton() man page for more information.</p>
-<p>Differences from POSIX: etcpal_iptype_t used instead of AF_* value, since this function is only used for IP addresses.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Type of string-represented IP address pointed to by src. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Character string containing a string-represented IP address. </td></tr>
-    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the address. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
-<dd>
-<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
-
-</div>
-</div>
 <a id="gaf897a891bcf59ccb447845628c2a04c2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaf897a891bcf59ccb447845628c2a04c2">&#9670;&nbsp;</a></span>etcpal_ip_and_port_equal()</h2>
 
@@ -1503,8 +1382,51 @@ false: The network portions are not equal. </dd></dl>
 
 </div>
 </div>
-<a id="ga4d0f54c9182caac7f69ec49116d42448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga4d0f54c9182caac7f69ec49116d42448">&#9670;&nbsp;</a></span>etcpal_mac_to_string()</h2>
+<a id="gaf98da0ae21f7960b5e046c55b8d79c4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf98da0ae21f7960b5e046c55b8d79c4a">&#9670;&nbsp;</a></span>etcpal_ip_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_ip_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert IPv4 and IPv6 addresses from binary to text form. </p>
+<p>This function uses each platform's inet_ntop() function under the hood.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Address to convert to string form. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the string-represented address. To avoid undefined behavior, this buffer must be at least of size <a class="el" href="group__etcpal__inet.html#gacd7ec0d81e171166483c7629669bf05d" title="Maximum length of the string representation of an IP address. ">ETCPAL_IP_STRING_BYTES</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
+
+</div>
+</div>
+<a id="gaf1e26c55e9ece4a8a17bd9953eca0886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf1e26c55e9ece4a8a17bd9953eca0886">&#9670;&nbsp;</a></span>etcpal_mac_to_string()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1519,13 +1441,7 @@ false: The network portions are not equal. </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>dest</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size</em>&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1541,13 +1457,62 @@ false: The network portions are not equal. </dd></dl>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>MAC address to convert to a string. </td></tr>
     <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Character buffer to which to write the resulting string. Must be at least of size <a class="el" href="group__etcpal__inet.html#ga73f73b31cc309024d3284ebcf4b66b45" title="Maximum length of the string representation of a MAC address. ">ETCPAL_MAC_STRING_BYTES</a>. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>Size of destination buffer. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Conversion successful. </dd>
 <dd>
 <a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid argument. </dd></dl>
+
+</div>
+</div>
+<a id="ga92ba01cb2c81a8a97b9555ecf0ab2fe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga92ba01cb2c81a8a97b9555ecf0ab2fe5">&#9670;&nbsp;</a></span>etcpal_string_to_ip()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group__etcpal__error.html#ga743b0648f0ca798ef29c9f69c6e255af">etcpal_error_t</a> etcpal_string_to_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group__etcpal__inet.html#ga847282e3fd17bf75ec83292326c455ee">etcpal_iptype_t</a>&#160;</td>
+          <td class="paramname"><em>type</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_etc_pal_ip_addr.html">EtcPalIpAddr</a> *&#160;</td>
+          <td class="paramname"><em>dest</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Convert IPv4 and IPv6 addresses from text to binary form. </p>
+<p>This function uses each platform's inet_pton() function under the hood.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">type</td><td>Type of string-represented IP address pointed to by src. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>Character string containing a string-represented IP address. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">dest</td><td>Filled in on success with the address. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afae403d046b4ba4e81dce121266c2cca8d" title="The call was successful, no error occurred. ">kEtcPalErrOk</a>: Success. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afadb17bb2ec24e7755170e8afbd5b10bc2" title="An invalid argument was provided to an API function. ">kEtcPalErrInvalid</a>: Invalid parameter. </dd>
+<dd>
+<a class="el" href="group__etcpal__error.html#gga743b0648f0ca798ef29c9f69c6e255afa38404e113508a0e291dbcc6c73743ae8" title="A system call or C library call failed in a way not covered by other errors. ">kEtcPalErrSys</a>: System call failed. </dd></dl>
 
 </div>
 </div>

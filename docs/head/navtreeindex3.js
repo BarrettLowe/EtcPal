@@ -1,6 +1,5 @@
 var NAVTREEINDEX3 =
 {
-"group__etcpal__socket.html#ga625b9f37c09cda6d3f13330094fa97d9":[1,0,9,39],
 "group__etcpal__socket.html#ga653ed9405ec4cb21d958faab8b1c783e":[1,0,9,56],
 "group__etcpal__socket.html#ga669185d01901034d700f167fa23f3eb1":[1,0,9,58],
 "group__etcpal__socket.html#ga66aa3d038609a999ad33370a6c0c3284":[1,0,9,11],
