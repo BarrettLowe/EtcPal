@@ -156,9 +156,10 @@ $(document).ready(function(){initNavTree('building_for_embedded.html','');});
 <img src="mcuxpresso_pre_build.png" alt="mcuxpresso_pre_build.png"/>
 <div class="caption">
 MCUXpresso Pre-Build Step Example</div></div>
-<p> The pre-build step does the following:</p><ul>
+<p> The pre-build step is:</p>
+<div class="fragment"><div class="line">mkdir -p external</div><div class="line">cd external</div><div class="line">cmake -G &quot;Unix Makefiles&quot; -DCMAKE_TOOLCHAIN_FILE=../../external/toolchain_file.cmake -DCMAKE_BUILD_TYPE=${ConfigName} -DCMAKE_INSTALL_PREFIX=. ../../external</div><div class="line">make</div><div class="line">make install</div></div><!-- fragment --><p>and does the following:</p><ul>
 <li>Creates a new directory called "external" in the current build directory</li>
-<li>Configures EtcPal and its dependent libraries and generates build files in the new directory</li>
+<li>Configures EtcPal and its dependent libraries using your toolchain file and generates build files in the new directory</li>
 <li>Builds EtcPal and its dependent libraries</li>
 <li>Installs the built headers and artifacts in the new directory</li>
 </ul>
