@@ -127,6 +127,7 @@ $(document).ready(function(){initNavTree('group__etcpal__timer.html','');});
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
@@ -145,6 +146,12 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_etc_pal_timer.html">EtcPalTimer</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A millisecond-resolution timer.  <a href="struct_etc_pal_timer.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ga90572188aaa8e169a70ad52ce251ba9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__etcpal__timer.html#ga90572188aaa8e169a70ad52ce251ba9c">ETCPAL_TIME_ELAPSED_SINCE</a>(start_time)&#160;&#160;&#160;(uint32_t)(<a class="el" href="group__etcpal__timer.html#gad9f192bf100bebdab2d0169c44af066a">etcpal_getms</a>() - (uint32_t)start_time)</td></tr>
+<tr class="memdesc:ga90572188aaa8e169a70ad52ce251ba9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of time elapsed since the given time point in milliseconds.  <a href="#ga90572188aaa8e169a70ad52ce251ba9c">More...</a><br /></td></tr>
+<tr class="separator:ga90572188aaa8e169a70ad52ce251ba9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -173,6 +180,34 @@ Functions</h2></td></tr>
 <tr class="memdesc:ga8f0822e6e65f8e63b3776533ce1ff531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the amount of time remaining in a timer.  <a href="#ga8f0822e6e65f8e63b3776533ce1ff531">More...</a><br /></td></tr>
 <tr class="separator:ga8f0822e6e65f8e63b3776533ce1ff531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ga90572188aaa8e169a70ad52ce251ba9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga90572188aaa8e169a70ad52ce251ba9c">&#9670;&nbsp;</a></span>ETCPAL_TIME_ELAPSED_SINCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ETCPAL_TIME_ELAPSED_SINCE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">start_time</td><td>)</td>
+          <td>&#160;&#160;&#160;(uint32_t)(<a class="el" href="group__etcpal__timer.html#gad9f192bf100bebdab2d0169c44af066a">etcpal_getms</a>() - (uint32_t)start_time)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the amount of time elapsed since the given time point in milliseconds. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">start_time</td><td>(uint32_t) The start time to measure against. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The number of milliseconds elapsed since the start time. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="gaa8f82d792cb262d907daa7b9586220ad"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#gaa8f82d792cb262d907daa7b9586220ad">&#9670;&nbsp;</a></span>EtcPalTimer</h2>

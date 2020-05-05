@@ -4,6 +4,7 @@ var group__etcpal__timer =
       [ "interval", "struct_etc_pal_timer.html#acd9ed1ccc44de55e1d3eff5569663695", null ],
       [ "reset_time", "struct_etc_pal_timer.html#a8fb66f63094794fbbdacc69af5cc55fa", null ]
     ] ],
+    [ "ETCPAL_TIME_ELAPSED_SINCE", "group__etcpal__timer.html#ga90572188aaa8e169a70ad52ce251ba9c", null ],
     [ "EtcPalTimer", "group__etcpal__timer.html#gaa8f82d792cb262d907daa7b9586220ad", null ],
     [ "etcpal_getms", "group__etcpal__timer.html#gad9f192bf100bebdab2d0169c44af066a", null ],
     [ "etcpal_timer_elapsed", "group__etcpal__timer.html#ga5d73c9f8144f65719e8b319cdfdc05bb", null ],
