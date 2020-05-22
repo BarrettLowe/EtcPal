@@ -173,6 +173,7 @@ public:
   Thread& SetName(const char* name) noexcept;
   Thread& SetName(const std::string& name) noexcept;
   Thread& SetPlatformData(void* platform_data) noexcept;
+  Thread& SetShutdownTimeout(unsigned ms_timeout) noexcept;
   /// @}
 
   template <class Function, class... Args>
@@ -216,6 +217,7 @@ extern "C" inline void CppThreadFn(void* arg)
 template <class Function, class... Args>
 inline Thread::Thread(Function&& func, Args&&... args)
 {
+  max_shutdown_time_ = DEFAULT_MAX_SHUTDOWN_TIME;
   ETCPAL_THREAD_SET_DEFAULT_PARAMS(&params_);
   auto result = Start(std::forward<Function>(func), std::forward<Args>(args)...);
   if (!result)
@@ -360,6 +362,19 @@ inline Thread& Thread::SetName(const std::string& name) noexcept
 inline Thread& Thread::SetPlatformData(void* platform_data) noexcept
 {
   params_.platform_data = platform_data;
+  return *this;
+}
+
+/// \brief Set the timeout for shutting down the thread
+///
+/// This function sets the timeout for destructing a thread. If the thread has not stopped within the timeout, it is
+/// forcefully quit.
+///
+/// \param ms_timeout Number of milliseconds to wait before forcefully killing the thread upon destruction
+/// \return A reference to this thread, for method chaining.
+inline Thread& Thread::SetShutdownTimeout(unsigned ms_timeout) noexcept
+{
+  max_shutdown_time_ = ms_timeout;
   return *this;
 }
 
