@@ -190,6 +190,8 @@ public:
 private:
   std::unique_ptr<etcpal_thread_t> thread_;
   EtcPalThreadParams params_{ETCPAL_THREAD_PARAMS_INIT_VALUES};
+  static const unsigned DEFAULT_MAX_SHUTDOWN_TIME(500); /* half a second */
+  unsigned max_shutdown_time_;
 };
 
 /// \cond Internal thread function
@@ -227,7 +229,11 @@ inline Thread::Thread(Function&& func, Args&&... args)
 inline Thread::~Thread()
 {
   if (thread_)
+#if ETCPAL_THREAD_JOIN_CAN_TIMEOUT
+    etcpal_thread_timeout_join(thread_.get(), max_shutdown_time_);
+#else
     etcpal_thread_join(thread_.get());
+#endif
 }
 
 /// \brief Move another thread into this thread.
@@ -401,6 +407,7 @@ Error Thread::Start(Function&& func, Args&&... args)
 /// Blocks until the thread has exited.
 ///
 /// \return #kEtcPalErrOk: The thread was stopped; joinable() is now false.
+/// \return #kEtcPalErrTimeout: The thread did not join within the specified timeout.
 /// \return #kEtcPalErrInvalid: The thread was not running (`joinable() == false`).
 /// \return Other codes translated from system error codes are possible.
 inline Error Thread::Join() noexcept
