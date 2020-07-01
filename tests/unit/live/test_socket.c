@@ -29,9 +29,9 @@ static const char* test_hostname = "www.google.com";
 static const char* test_service = "http";
 #endif
 
-static const char* test_gai_ip_str = "10.101.1.1";
+static const char*    test_gai_ip_str = "10.101.1.1";
 static const uint32_t test_gai_ip = 0x0a650101;
-static const char* test_gai_port_str = "8080";
+static const char*    test_gai_port_str = "8080";
 static const uint16_t test_gai_port = 8080;
 
 TEST_GROUP(etcpal_socket);
@@ -50,7 +50,7 @@ TEST(etcpal_socket, bind_works_as_expected)
 {
   etcpal_socket_t sock = ETCPAL_SOCKET_INVALID;
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock));
   TEST_ASSERT_NOT_EQUAL(sock, ETCPAL_SOCKET_INVALID);
 
   // Make sure we can bind to the wildcard address and port
@@ -73,12 +73,12 @@ TEST(etcpal_socket, blocking_state_is_consistent)
 {
   etcpal_socket_t sock;
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_STREAM, &sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_STREAM, &sock));
   TEST_ASSERT_NOT_EQUAL(sock, ETCPAL_SOCKET_INVALID);
 
   // Set the socket to non-blocking, make sure it reads as non-blocking
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_setblocking(sock, false));
-  bool is_blocking;
+  bool           is_blocking;
   etcpal_error_t gb_result = etcpal_getblocking(sock, &is_blocking);
 
   // Special case - this function isn't implemented on all platforms, so we abort this test
@@ -111,7 +111,7 @@ TEST(etcpal_socket, poll_invalid_calls_fail)
   TEST_ASSERT_EQUAL(kEtcPalErrNoSockets, etcpal_poll_wait(&context, &event, 100));
 
   etcpal_socket_t sock;
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock));
   TEST_ASSERT_NOT_EQUAL(sock, ETCPAL_SOCKET_INVALID);
 
   // Deinit and make sure add of a valid socket fails
@@ -152,7 +152,7 @@ TEST(etcpal_socket, poll_add_remove_socket_works)
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_context_init(&context));
 
   etcpal_socket_t sock;
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock));
   TEST_ASSERT_NOT_EQUAL(sock, ETCPAL_SOCKET_INVALID);
 
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_add_socket(&context, sock, ETCPAL_POLL_IN, NULL));
@@ -167,8 +167,8 @@ TEST(etcpal_socket, poll_add_remove_socket_works)
 TEST(etcpal_socket, poll_user_data_works)
 {
   etcpal_socket_t sock_1, sock_2;
-  void* user_data_1 = (void*)1;
-  void* user_data_2 = (void*)2;
+  void*           user_data_1 = (void*)1;
+  void*           user_data_2 = (void*)2;
 
   EtcPalPollContext context;
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_context_init(&context));
@@ -176,8 +176,8 @@ TEST(etcpal_socket, poll_user_data_works)
   // Create two UDP sockets and poll for writability, make sure our user data gets passed back to us
   // intact.
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock_1));
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock_2));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock_1));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock_2));
 
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_add_socket(&context, sock_1, ETCPAL_POLL_OUT, user_data_1));
 
@@ -214,7 +214,7 @@ TEST(etcpal_socket, poll_modify_socket_works)
   EtcPalPollContext context;
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_context_init(&context));
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock));
   TEST_ASSERT_NOT_EQUAL(sock, ETCPAL_SOCKET_INVALID);
 
   // Bind the socket to the wildcard address and a specific port.
@@ -267,13 +267,13 @@ TEST(etcpal_socket, poll_for_readability_on_udp_sockets_works)
   EtcPalPollContext context;
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_context_init(&context));
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &rcvsock1));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &rcvsock1));
   TEST_ASSERT_NOT_EQUAL(rcvsock1, ETCPAL_SOCKET_INVALID);
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &rcvsock2));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &rcvsock2));
   TEST_ASSERT_NOT_EQUAL(rcvsock2, ETCPAL_SOCKET_INVALID);
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &send_sock));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &send_sock));
   TEST_ASSERT_NOT_EQUAL(send_sock, ETCPAL_SOCKET_INVALID);
 
   // Bind socket 1 to the wildcard address and a specific port.
@@ -312,7 +312,7 @@ TEST(etcpal_socket, poll_for_readability_on_udp_sockets_works)
   TEST_ASSERT_EQUAL(event.err, kEtcPalErrOk);
 
   // Receive data on the socket.
-  uint8_t recv_buf[POLL_UDP_IN_TEST_MESSAGE_LENGTH];
+  uint8_t        recv_buf[POLL_UDP_IN_TEST_MESSAGE_LENGTH];
   EtcPalSockAddr from_addr;
   TEST_ASSERT_EQUAL(POLL_UDP_IN_TEST_MESSAGE_LENGTH,
                     (size_t)etcpal_recvfrom(event.socket, recv_buf, POLL_UDP_IN_TEST_MESSAGE_LENGTH, 0, &from_addr));
@@ -346,8 +346,8 @@ TEST(etcpal_socket, poll_for_writability_on_udp_sockets_works)
   EtcPalPollContext context;
   TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_poll_context_init(&context));
 
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock_1));
-  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_DGRAM, &sock_2));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock_1));
+  TEST_ASSERT_EQUAL(kEtcPalErrOk, etcpal_socket(ETCPAL_AF_INET, ETCPAL_SOCK_DGRAM, &sock_2));
 
   // The sockets should poll as ready for output right away. Not sure what else there is to test
   // here.

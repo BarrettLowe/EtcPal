@@ -32,6 +32,22 @@ if(PROJECT_SOURCE_DIR_LC STREQUAL CMAKE_SOURCE_DIR_LC)
   # Allow folder grouping in generated IDE projects
   set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 
+  # Add a target to run Clang Format
+  file(GLOB_RECURSE FILES_TO_REFORMAT 
+    examples/*.c
+    examples/*.cpp
+    examples/*.h
+    include/*.h
+    src/*.c
+    src/*.cpp
+    src/*.h
+    tests/*.c
+    tests/*.cpp
+    tests/*.h
+  )
+  add_custom_target(reformat_all COMMAND clang-format -i ${FILES_TO_REFORMAT})
+  set_target_properties(reformat_all PROPERTIES FOLDER tools)
+
   set(OPTION_DEFAULTS ON)
 else()
   set(OPTION_DEFAULTS OFF)
@@ -40,8 +56,10 @@ endif()
 set(ETCPAL_ROOT ${CMAKE_CURRENT_LIST_DIR})
 
 option(ETCPAL_BUILD_MOCK_LIB "Build the EtcPalMock library" OFF)
-option(ETCPAL_BUILD_TESTS "Build the EtcPal unit tests" ${OPTION_DEFAULTS})
-option(ETCPAL_BUILD_EXAMPLES "Build the EtcPal example apps" ${OPTION_DEFAULTS})
+option(ETCPAL_BUILD_TESTS "Build the EtcPal unit tests" OFF)
+option(ETCPAL_BUILD_EXAMPLES "Build the EtcPal example apps" OFF)
+
+option(ETCPAL_EXPLICITLY_DISABLE_EXCEPTIONS "Disable throwing of exceptions throughout the EtcPal C++ headers" OFF)
 
 # Platform support
 include(${PROJECT_SOURCE_DIR}/cmake/etcpal-os.cmake)
