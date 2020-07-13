@@ -191,7 +191,7 @@ public:
 private:
   std::unique_ptr<etcpal_thread_t> thread_;
   EtcPalThreadParams 		   params_{ETCPAL_THREAD_PARAMS_INIT_VALUES};
-  static const unsigned 	   DEFAULT_MAX_SHUTDOWN_TIME(500); /* half a second */
+  static const unsigned 	   MAX_SHUTDOWN_TIME =500; /* half a second */
   unsigned 			   max_shutdown_time_;
 };
 
@@ -217,7 +217,7 @@ extern "C" inline void CppThreadFn(void* arg)
 template <class Function, class... Args>
 inline Thread::Thread(Function&& func, Args&&... args)
 {
-  max_shutdown_time_ = DEFAULT_MAX_SHUTDOWN_TIME;
+  max_shutdown_time_ = MAX_SHUTDOWN_TIME;
   ETCPAL_THREAD_SET_DEFAULT_PARAMS(&params_);
   auto result = Start(std::forward<Function>(func), std::forward<Args>(args)...);
   if (!result)
@@ -232,7 +232,7 @@ inline Thread::~Thread()
 {
   if (thread_)
 #if ETCPAL_THREAD_JOIN_CAN_TIMEOUT
-    etcpal_thread_timeout_join(thread_.get(), max_shutdown_time_);
+    etcpal_thread_timed_join(thread_.get(), max_shutdown_time_);
 #else
     etcpal_thread_join(thread_.get());
 #endif
